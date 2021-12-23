@@ -1,0 +1,74 @@
+.flw__subform__header {
+  min-height: 42px;
+  box-sizing: border-box;
+  padding: 4px 0;
+}
+
+.flw__subform__label {
+  width: 100%;
+  color: inherit;
+  padding: 0;
+  font-size: $flw-text-base;
+  font-size: var(--flw-text-base, $flw-text-base);
+  line-height: 1.4;
+  font-weight: bold;
+  padding-left: $flw-gutter;
+  padding-left: var(--flw-gutter, $flw-gutter);
+  display: inline;
+}
+
+.flw__subform__footer:not(:empty) {
+  margin: $flw-gutter;
+  margin: var(--flw-gutter, $flw-gutter);
+  text-align: right;
+  display: block;
+  padding: 12px 0;
+}
+
+.flw__subform__add-button:focus::-moz-focus-inner {
+  border: 0;
+}
+
+.flw__subform--show-delete-button__add-button {
+  margin-right: 26px;
+}
+
+.flw__subform__placeholder {
+  margin: $flw-gutter;
+  margin: var(--flw-gutter, $flw-gutter);
+  color: $flw-forms-muted-text-color;
+  color: var(--flw-forms-muted-text-color, $flw-forms-muted-text-color);
+}
+
+.flw__subform__collapse-button {
+  float: right;
+  margin-right: 10px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.flw__subform--showBorder__content-wrapper {
+  box-sizing: border-box;
+  border: 1px solid $flw-forms-border-color;
+  border: 1px solid var(--flw-forms-border-color, $flw-forms-border-color);
+  padding: $flw-gutter;
+  padding: var(--flw-gutter, $flw-gutter);
+  margin: $flw-gutter;
+  margin: var(--flw-gutter, $flw-gutter);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.flw__subform--showBorder .flw__subform-instance:not(:first-child) {
+  border-top: 1px solid $flw-forms-border-color;
+  border-top: 1px solid var(--flw-forms-border-color, $flw-forms-border-color);
+  padding-top: $flw-gutter;
+  padding-top: var(--flw-gutter, $flw-gutter);
+  padding-bottom: $flw-gutter;
+  padding-bottom: var(--flw-gutter, $flw-gutter);
+}
+
+.flw__subform--noHeaderLine__header {
+  border-bottom: none;
+}

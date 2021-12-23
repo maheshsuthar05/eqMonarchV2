@@ -1,0 +1,235 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 25 },
+              "lowerRight": { "x": 984, "y": 93 }
+            },
+            "stencilSuperIds": ["base-datatable", "Component"],
+            "stencilId": "cloud-datatable",
+            "customStencilId": null
+          },
+          "enabled": true,
+          "extraSettings": {
+            "dataSource": "Rest",
+            "queryUrl": "/eq-api/adminservice/matrix/stateRoleAssignmentMatrix",
+            "linkTargetView": "browse",
+            "storage": "Full",
+            "identity": "stateRoleAssignmentMatrixId",
+            "linkTarget": "_blank",
+            "infiniteScroll": false,
+            "showPagination": true,
+            "autoHidePagination": true,
+            "clientPagination": true,
+            "sortableColumns": true,
+            "columns": [
+              {
+                "label": "Role",
+                "id": "partyRoleType",
+                "accessor": "partyRoleType",
+                "alignment": "left",
+                "filterable": "true",
+                "sortable": "true",
+                "show": true
+              },
+              {
+                "label": "Role Assignment Name",
+                "id": "roleAssignmentName",
+                "accessor": "roleAssignmentName",
+                "alignment": "left",
+                "filterable": "true",
+                "sortable": "true",
+                "show": true
+              },
+              {
+                "label": "Investor ID",
+                "id": "stateRoleAssignmentInvestorXrefs",
+                "accessor": "stateRoleAssignmentInvestorXrefs[0].investorCode",
+                "alignment": "left",
+                "filterable": "true",
+                "sortable": "true",
+                "show": true
+              },
+              {
+                "label": "State",
+                "id": "stateRoleAssignmentStateXrefs",
+                "accessor": "stateRoleAssignmentStateXrefs[0].stateName",
+                "alignment": "left",
+                "filterable": "true",
+                "sortable": "true",
+                "show": true
+              },
+              {
+                "label": "User",
+                "id": "stateRoleAssignmentPartyXrefs",
+                "accessor": "stateRoleAssignmentPartyXrefs[0].individualFullName",
+                "alignment": "left",
+                "filterable": "true",
+                "sortable": "true",
+                "show": true
+              },
+              {
+                "label": "Action",
+                "id": "dropdown",
+                "accessor": "dropdown",
+                "alignment": "left",
+                "component": {
+                  "type": "buttonGroup",
+                  "value": "{{$item}}",
+                  "extraSettings": { "asDropdown": true },
+                  "alignment": "right",
+                  "buttonDefinitions": [
+                    {
+                      "type": "scriptButton",
+                      "value": "Edit",
+                      "extraSettings": {
+                        "text": "Edit",
+                        "script": "Edit",
+                        "fileDetails": "{{$item}}"
+                      }
+                    },
+                    {
+                      "type": "scriptButton",
+                      "value": "Delete",
+                      "extraSettings": {
+                        "text": "Delete",
+                        "script": "Delete",
+                        "fileDetails": "{{$item}}"
+                      }
+                    }
+                  ]
+                },
+                "filterable": "false",
+                "maxWidth": 75,
+                "sortable": "false",
+                "show": true
+              }
+            ],
+            "filterable": true,
+            "sortable": true,
+            "multiSort": false,
+            "pageSize": 20,
+            "pageSizeOptions": [20, 25, 50, 100],
+            "showTotalRecords": false,
+            "response": { "total": "page.totalElements" },
+            "showRefreshButton": true,
+            "refreshTime": "{{$payload.refreshForm}}",
+            "dataPollingOnInit": false,
+            "target": "_blank",
+            "noDataMessage": "No State Role Assignment List",
+            "nodataPosition": "middle-center"
+          },
+          "labelAlign": "top",
+          "value": "{{roleAssignment}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "isRequired": false,
+          "id": "datatable1",
+          "i18n": {
+            "en_us": {
+              "extraSettings": {
+                "columns": [
+                  {
+                    "label": "Role",
+                    "id": "partyRoleType",
+                    "accessor": "partyRoleType",
+                    "alignment": "left",
+                    "filterable": "true",
+                    "sortable": "true",
+                    "show": true
+                  },
+                  {
+                    "label": "Role Assignment Name",
+                    "id": "roleAssignmentName",
+                    "accessor": "roleAssignmentName",
+                    "alignment": "left",
+                    "filterable": "true",
+                    "sortable": "true",
+                    "show": true
+                  },
+                  {
+                    "label": "Investor ID",
+                    "id": "stateRoleAssignmentInvestorXrefs",
+                    "accessor": "stateRoleAssignmentInvestorXrefs[0].investorCode",
+                    "alignment": "left",
+                    "filterable": "true",
+                    "sortable": "true",
+                    "show": true
+                  },
+                  {
+                    "label": "State",
+                    "id": "stateRoleAssignmentStateXrefs",
+                    "accessor": "stateRoleAssignmentStateXrefs[0].stateName",
+                    "alignment": "left",
+                    "filterable": "true",
+                    "sortable": "true",
+                    "show": true
+                  },
+                  {
+                    "label": "User",
+                    "id": "stateRoleAssignmentPartyXrefs",
+                    "accessor": "stateRoleAssignmentPartyXrefs[0].individualFullName",
+                    "alignment": "left",
+                    "filterable": "true",
+                    "sortable": "true",
+                    "show": true
+                  },
+                  {
+                    "label": "Action",
+                    "id": "dropdown",
+                    "accessor": "dropdown",
+                    "alignment": "left",
+                    "component": {
+                      "type": "buttonGroup",
+                      "value": "{{$item}}",
+                      "extraSettings": { "asDropdown": true },
+                      "alignment": "right",
+                      "buttonDefinitions": [
+                        {
+                          "type": "scriptButton",
+                          "value": "Edit",
+                          "extraSettings": {
+                            "text": "Edit",
+                            "script": "Edit",
+                            "fileDetails": "{{$item}}"
+                          }
+                        },
+                        {
+                          "type": "scriptButton",
+                          "value": "Delete",
+                          "extraSettings": {
+                            "text": "Delete",
+                            "script": "Delete",
+                            "fileDetails": "{{$item}}"
+                          }
+                        }
+                      ]
+                    },
+                    "filterable": "false",
+                    "maxWidth": 75,
+                    "sortable": "false",
+                    "show": true
+                  }
+                ],
+                "noDataMessage": "No State Role Assignment List"
+              }
+            }
+          },
+          "type": "dataTable"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "key": "tenantAdminPropertyRoleAssignment",
+    "name": "tenantAdminPropertyRoleAssignment",
+    "description": "",
+    "version": "7",
+    "type": "2",
+    "flowableDesignVersion": 3090
+  }
+}

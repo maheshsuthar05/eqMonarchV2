@@ -1,0 +1,220 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": {
+                "x": 15,
+                "y": 25
+              },
+              "lowerRight": {
+                "x": 984,
+                "y": 73
+              }
+            },
+            "stencilSuperIds": ["base-text", "Component"],
+            "stencilId": "cloud-text",
+            "customStencilId": null
+          },
+          "type": "text",
+          "labelAlign": "top",
+          "value": "{{INVESTOR_CODE}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": true,
+          "label": "Investor Id",
+          "i18n": {
+            "en_us": {
+              "label": "Investor Id"
+            }
+          },
+          "id": "form_investor_id",
+          "extraSettings": {}
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": {
+                "x": 15,
+                "y": 98
+              },
+              "lowerRight": {
+                "x": 984,
+                "y": 146
+              }
+            },
+            "stencilSuperIds": ["base-text", "Component"],
+            "stencilId": "cloud-text",
+            "customStencilId": null
+          },
+          "type": "text",
+          "labelAlign": "top",
+          "value": "{{INVESTOR_NAME}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": true,
+          "label": "Investor Name",
+          "i18n": {
+            "en_us": {
+              "label": "Investor Name"
+            }
+          },
+          "id": "form_investor_name",
+          "extraSettings": {}
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": {
+                "x": 15,
+                "y": 171
+              },
+              "lowerRight": {
+                "x": 984,
+                "y": 219
+              }
+            },
+            "stencilSuperIds": ["base-text", "Component"],
+            "stencilId": "cloud-text",
+            "customStencilId": null
+          },
+          "type": "text",
+          "labelAlign": "top",
+          "value": "{{emailAddress}}",
+          "size": 12,
+          "ignore": false,
+          "visible": false,
+          "enabled": false,
+          "isRequired": false,
+          "customValidations": [],
+          "validationRegExp": "^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{1,5})$",
+          "i18n": {
+            "en_us": {
+              "customValidations": [],
+              "label": "Investor Email Address",
+              "validationRegExpErrorMessage": "Invalid Email Address"
+            }
+          },
+          "label": "Investor Email Address",
+          "id": "form_investor_email",
+          "validationRegExpErrorMessage": "Invalid Email Address",
+          "extraSettings": {}
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": {
+                "x": 15,
+                "y": 244
+              },
+              "lowerRight": {
+                "x": 984,
+                "y": 292
+              }
+            },
+            "stencilSuperIds": ["base-text", "Component"],
+            "stencilId": "cloud-text",
+            "customStencilId": null
+          },
+          "type": "text",
+          "labelAlign": "top",
+          "value": "{{secondEmail}}",
+          "size": 12,
+          "ignore": false,
+          "visible": false,
+          "enabled": false,
+          "isRequired": false,
+          "label": "Second Investor Email Address",
+          "validationRegExp": "^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{1,5})$",
+          "i18n": {
+            "en_us": {
+              "label": "Second Investor Email Address",
+              "validationRegExpErrorMessage": "Invalid Email Address"
+            }
+          },
+          "id": "form_investor_second_email",
+          "validationRegExpErrorMessage": "Invalid Email Address",
+          "extraSettings": {}
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": {
+                "x": 15,
+                "y": 317
+              },
+              "lowerRight": {
+                "x": 984,
+                "y": 365
+              }
+            },
+            "stencilSuperIds": ["base-single-select", "Component"],
+            "stencilId": "cloud-single-select",
+            "customStencilId": null
+          },
+          "type": "select",
+          "extraSettings": {
+            "enableAutocomplete": true,
+            "autocompleteMinLength": 0,
+            "tagsEnabled": false,
+            "preselectAll": false,
+            "clientSideFiltering": false,
+            "dataSource": "Rest",
+            "queryUrl": "{{additionalData.url}}?tempTenantCode={{additionalData.tenantCode}}&size=1000",
+            "lookupUrl": "investorGroup",
+            "path": "_embedded.investorGroups",
+            "linkTargetView": "browse",
+            "formatItem": "{{$item.investorGroup}}",
+            "storage": "Id",
+            "identity": "investorGroup",
+            "linkTarget": "_blank",
+            "multi": false
+          },
+          "enabled": true,
+          "labelAlign": "top",
+          "value": "{{INVESTOR_GROUP}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "isRequired": true,
+          "label": "Investor Group",
+          "i18n": {
+            "en_us": {
+              "label": "Investor Group"
+            }
+          },
+          "id": "form_investor_group"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "key": "addInvestorToGroup",
+    "name": "Add Investor to Group",
+    "description": "",
+    "version": "5",
+    "type": "2"
+  }
+}

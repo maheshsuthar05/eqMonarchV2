@@ -1,0 +1,301 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "type": "htmlComponent",
+          "i18n": {
+            "en_us": {
+              "value": "<p><span style=\"font-size:14px\"><strong>Roles<span style=\"color:#c0392b\">*</span></strong></span></p>\n"
+            },
+            "de_de": {},
+            "fr_fr": {},
+            "it_it": {},
+            "es_es": {}
+          },
+          "labelAlign": "top",
+          "value": "<p><span style=\"font-size:14px\"><strong>Roles<span style=\"color:#c0392b\">*</span></strong></span></p>\n",
+          "defaultValue": false,
+          "size": 6,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "output1",
+          "col": 0
+        },
+        {
+          "type": "htmlComponent",
+          "i18n": {
+            "en_us": {
+              "value": "<p><span style=\"font-size:14px\"><strong>Assigned Users<span style=\"color:#c0392b\">*</span></strong></span></p>\n"
+            },
+            "de_de": {},
+            "fr_fr": {},
+            "it_it": {},
+            "es_es": {}
+          },
+          "labelAlign": "top",
+          "value": "<p><span style=\"font-size:14px\"><strong>Assigned Users<span style=\"color:#c0392b\">*</span></strong></span></p>\n",
+          "defaultValue": false,
+          "size": 6,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "output2",
+          "col": 6
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "type": "hline",
+          "i18n": {
+            "en_us": {},
+            "de_de": {},
+            "fr_fr": {},
+            "it_it": {},
+            "es_es": {}
+          },
+          "labelAlign": "top",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "hline1",
+          "col": 0
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "type": "subform",
+          "labelAlign": "top",
+          "value": "{{customData}}",
+          "defaultValue": "",
+          "description": "",
+          "i18n": {
+            "en_us": {
+              "description": "",
+              "customValidations": "",
+              "label": "",
+              "extraSettings": {
+                "minItemsErrorMessage": "",
+                "maxItemsErrorMessage": "",
+                "addButtonText": ""
+              }
+            },
+            "de_de": {
+              "description": "",
+              "customValidations": "",
+              "label": "",
+              "extraSettings": {
+                "minItemsErrorMessage": "",
+                "maxItemsErrorMessage": "",
+                "addButtonText": ""
+              }
+            },
+            "fr_fr": {
+              "description": "",
+              "customValidations": "",
+              "label": "",
+              "extraSettings": {
+                "minItemsErrorMessage": "",
+                "maxItemsErrorMessage": "",
+                "addButtonText": ""
+              }
+            },
+            "it_it": {
+              "description": "",
+              "customValidations": "",
+              "label": "",
+              "extraSettings": {
+                "minItemsErrorMessage": "",
+                "maxItemsErrorMessage": "",
+                "addButtonText": ""
+              }
+            },
+            "es_es": {
+              "description": "",
+              "customValidations": "",
+              "label": "",
+              "extraSettings": {
+                "minItemsErrorMessage": "",
+                "maxItemsErrorMessage": "",
+                "addButtonText": ""
+              }
+            }
+          },
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "styleClass": "",
+          "customValidations": "",
+          "label": "",
+          "extraSettings": {
+            "showBorder": false,
+            "minItems": "",
+            "minItemsErrorMessage": "",
+            "maxItems": "",
+            "maxItemsErrorMessage": "",
+            "collapsible": false,
+            "collapsed": false,
+            "formRef": {
+              "id": "FORM_MODEL-728ee085-6500-4023-8185-18c8c3e97869",
+              "key": "assignRoleTabItem"
+            },
+            "multipleEntries": true,
+            "showAddButton": false,
+            "showDeleteButton": false,
+            "addButtonText": "",
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel1",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<h5>{{roleId}}</h5>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<h5>{{roleId}}</h5>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "multiSelect Role Name",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "select",
+                                  "extraSettings": {
+                                    "tagsEnabled": false,
+                                    "preselectAll": false,
+                                    "clientSideFiltering": false,
+                                    "enableAutocomplete": false,
+                                    "dataSource": "Rest",
+                                    "queryUrl": "{{additionalData.url}}/{{roleId}}",
+                                    "lookupUrl": "{{roleId}}",
+                                    "path": "members",
+                                    "formatItem": "{{$item}}",
+                                    "storage": "Full",
+                                    "linkTarget": "_blank",
+                                    "multi": false
+                                  },
+                                  "i18n": {},
+                                  "enabled": "{{additionalData.isSave}}",
+                                  "labelAlign": "top",
+                                  "value": "{{userId}}",
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "isRequired": true,
+                                  "id": "userSelected",
+                                  "col": 6
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "text",
+                                  "extraSettings": {},
+                                  "i18n": {
+                                    "en_us": {},
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{roleId}}",
+                                  "size": 12,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "userGroupId",
+                                  "col": 0
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "id": "Subform Assigned Role",
+          "col": 0
+        }
+      ]
+    }
+  ],
+  "outcomes": [
+    {
+      "label": "Cancel",
+      "value": "cancel.click",
+      "visible": "{{additionalData.isCancel}}",
+      "enabled": true,
+      "ignorePayload": false,
+      "styleClass": "altisource__button_secondary",
+      "navigationUrl": ""
+    },
+    {
+      "label": "Save",
+      "value": "RolesSave.click",
+      "visible": "{{additionalData.isSave}}",
+      "enabled": "{{$formValid}}",
+      "ignorePayload": false,
+      "styleClass": "altisource__button_primary",
+      "navigationUrl": ""
+    }
+  ],
+  "metadata": {
+    "key": "assignedRolesTab",
+    "name": "Assigned Role Tab Form",
+    "description": "",
+    "version": "4",
+    "type": "2"
+  }
+}

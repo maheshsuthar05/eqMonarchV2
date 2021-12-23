@@ -1,0 +1,285 @@
+.flw__richText {
+  @import "~react-draft-wysiwyg/dist/react-draft-wysiwyg";
+}
+
+.flw__richText .DraftEditor-editorContainer {
+  z-index: 0;
+}
+
+.flw__richText .rdw-editor-toolbar {
+  background: $flw-forms-background-color;
+  background: var(--flw-forms-background-color, $flw-forms-background-color);
+}
+
+.flw__richText .flw__richText__input:not(.flw__richText--disabled__input) {
+  box-sizing: border-box;
+  margin: 0;
+  border-radius: 5px;
+  font: inherit;
+  overflow: visible;
+  -webkit-appearance: none;
+  max-width: 100%;
+  width: 100%;
+  border: 0 none;
+  padding: 0 10px;
+  background: $flw-forms-background-color;
+  background: var(--flw-forms-background-color, $flw-forms-background-color);
+  color: $flw-forms-text-color;
+  color: var(--flw-forms-text-color, $flw-forms-text-color);
+  border: 1px solid $flw-forms-border-color;
+  border: 1px solid var(--flw-forms-border-color, $flw-forms-border-color);
+  transition: 0.2s ease-in-out;
+  transition-property: color, background-color, border;
+  height: 40px;
+  vertical-align: middle;
+  display: inline-block;
+  height: auto;
+}
+
+.flw__richText .flw__richText__input:not(.flw__richText--disabled__input):focus {
+  outline: none;
+  background-color: $flw-forms-background-color;
+  background-color: var(--flw-forms-background-color, $flw-forms-background-color);
+  color: $flw-forms-text-color;
+  color: var(--flw-forms-text-color, $flw-forms-text-color);
+  border-color: $flw-forms-color;
+  border-color: var(--flw-forms-color, $flw-forms-color);
+}
+
+.flw__richText .flw__richText__input:focus-within {
+  outline: none;
+  background-color: $flw-forms-background-color;
+  background-color: var(--flw-forms-background-color, $flw-forms-background-color);
+  color: $flw-forms-text-color;
+  color: var(--flw-forms-text-color, $flw-forms-text-color);
+  border-color: $flw-forms-color;
+  border-color: var(--flw-forms-color, $flw-forms-color);
+}
+
+.flw__richText .flw__richText__toolbar {
+  padding: var(--flw-gutter, $flw-gutter) 0 0 0;
+  border: none;
+  transition: max-height 0.3s, opacity 0.3s;
+  max-height: 300px;
+}
+
+.flw__richText .flw__richText__toolbar[aria-hidden="true"] {
+  max-height: 0;
+  opacity: 0;
+}
+
+.flw__richText .flw__richText__toolbar .rdw-option-wrapper {
+  margin-left: 0;
+}
+
+.flw__richText .flw__richText__toolbar .rdw-option-wrapper:hover {
+  box-shadow: none;
+  border-color: $flw-forms-color-hover;
+  border-color: var(--flw-forms-color-hover, $flw-forms-color-hover);
+}
+
+.flw__richText .flw__richText__toolbar .rdw-link-modal-target-option {
+  display: none;
+}
+
+.flw__richText .flw__richText--min-rows-1__content {
+  min-height: 50px;
+}
+
+.flw__richText .flw__richText--min-rows-2__content {
+  min-height: 85px;
+}
+
+.flw__richText .flw__richText--min-rows-3__content {
+  min-height: 120px;
+}
+
+.flw__richText .flw__richText--min-rows-4__content {
+  min-height: 155px;
+}
+
+.flw__richText .flw__richText--min-rows-5__content {
+  min-height: 190px;
+}
+
+.flw__richText .flw__richText--min-rows-6__content {
+  min-height: 225px;
+}
+
+.flw__richText .flw__richText--min-rows-7__content {
+  min-height: 260px;
+}
+
+.flw__richText .flw__richText--min-rows-8__content {
+  min-height: 295px;
+}
+
+.flw__richText .flw__richText--min-rows-9__content {
+  min-height: 330px;
+}
+
+.flw__richText .flw__richText--min-rows-10__content {
+  min-height: 365px;
+}
+
+.flw__richText .flw__richText--min-rows-11__content {
+  min-height: 400px;
+}
+
+.flw__richText .flw__richText--min-rows-12__content {
+  min-height: 435px;
+}
+
+.flw__richText .flw__richText--min-rows-13__content {
+  min-height: 470px;
+}
+
+.flw__richText .flw__richText--min-rows-14__content {
+  min-height: 505px;
+}
+
+.flw__richText .flw__richText--min-rows-15__content {
+  min-height: 540px;
+}
+
+.flw__richText .flw__richText--min-rows-16__content {
+  min-height: 575px;
+}
+
+.flw__richText .flw__richText--min-rows-17__content {
+  min-height: 610px;
+}
+
+.flw__richText .flw__richText--min-rows-18__content {
+  min-height: 645px;
+}
+
+.flw__richText .flw__richText--min-rows-19__content {
+  min-height: 680px;
+}
+
+.flw__richText .flw__richText--min-rows-20__content {
+  min-height: 715px;
+}
+
+.flw__richText .flw__richText--min-rows-21__content {
+  min-height: 750px;
+}
+
+.flw__richText .flw__richText--min-rows-22__content {
+  min-height: 785px;
+}
+
+.flw__richText .flw__richText--min-rows-23__content {
+  min-height: 820px;
+}
+
+.flw__richText .flw__richText--min-rows-24__content {
+  min-height: 855px;
+}
+
+.flw__richText .flw__richText--min-rows-25__content {
+  min-height: 890px;
+}
+
+.flw__richText .flw__richText__content {
+  overflow: hidden;
+}
+
+.flw__richText .flw__richText__content h1 {
+  margin: 0 0 20px 0;
+  font-family: $flw-font-sans;
+  font-family: var(--flw-font-sans, $flw-font-sans);
+  font-weight: 300;
+  color: $flw-forms-label-text-color;
+  color: var(--flw-forms-label-text-color, $flw-forms-label-text-color);
+  text-transform: none;
+  font-size: $flw-text-3xl;
+  font-size: var(--flw-text-3xl, $flw-text-3xl);
+  line-height: 1.2;
+}
+
+.flw__richText .flw__richText__content h2 {
+  margin: 0 0 20px 0;
+  font-family: $flw-font-sans;
+  font-family: var(--flw-font-sans, $flw-font-sans);
+  font-weight: 300;
+  color: $flw-forms-label-text-color;
+  color: var(--flw-forms-label-text-color, $flw-forms-label-text-color);
+  text-transform: none;
+  font-size: $flw-text-xl;
+  font-size: var(--flw-text-xl, $flw-text-xl);
+  line-height: 1.3;
+}
+
+.flw__richText .flw__richText__content h3 {
+  margin: 0 0 20px 0;
+  font-family: $flw-font-sans;
+  font-family: var(--flw-font-sans, $flw-font-sans);
+  font-weight: 300;
+  color: $flw-forms-label-text-color;
+  color: var(--flw-forms-label-text-color, $flw-forms-label-text-color);
+  text-transform: none;
+  font-size: $flw-text-lg;
+  font-size: var(--flw-text-lg, $flw-text-lg);
+  line-height: 1.4;
+}
+
+.flw__richText .flw__richText__content h4 {
+  margin: 0 0 20px 0;
+  font-family: $flw-font-sans;
+  font-family: var(--flw-font-sans, $flw-font-sans);
+  font-weight: 300;
+  color: $flw-forms-label-text-color;
+  color: var(--flw-forms-label-text-color, $flw-forms-label-text-color);
+  text-transform: none;
+  font-size: $flw-text-2xl;
+  font-size: var(--flw-text-2xl, $flw-text-2xl);
+  line-height: 1.4;
+}
+
+.flw__richText .flw__richText__content h5 {
+  margin: 0 0 20px 0;
+  font-family: $flw-font-sans;
+  font-family: var(--flw-font-sans, $flw-font-sans);
+  font-weight: 300;
+  color: $flw-forms-label-text-color;
+  color: var(--flw-forms-label-text-color, $flw-forms-label-text-color);
+  text-transform: none;
+  font-size: $flw-text-base;
+  font-size: var(--flw-text-base, $flw-text-base);
+  line-height: 1.4;
+}
+
+.flw__richText .flw__richText__content h6 {
+  margin: 0 0 20px 0;
+  font-family: $flw-font-sans;
+  font-family: var(--flw-font-sans, $flw-font-sans);
+  font-weight: 300;
+  color: $flw-forms-label-text-color;
+  color: var(--flw-forms-label-text-color, $flw-forms-label-text-color);
+  text-transform: none;
+  font-size: $flw-text-sm;
+  font-size: var(--flw-text-sm, $flw-text-sm);
+  line-height: 1.4;
+}
+
+.flw__richText .flw__richText--disabled__input {
+  background: $flw-forms-background-color;
+  background: var(--flw-forms-background-color, $flw-forms-background-color);
+}
+
+.flw__richText--left-aligned.flw__richText--left-aligned {
+  .flw__component__input {
+    display: flex;
+    width: 0;
+    flex-grow: 1;
+    flex-flow: row wrap;
+  }
+}
+.left-aligned-labels,
+.flw__richText--left-aligned.flw__richText--left-aligned {
+  .flw__richText__content {
+    width: 100%;
+  }
+}

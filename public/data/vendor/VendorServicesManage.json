@@ -1,0 +1,368 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "type": "subform",
+          "labelAlign": "top",
+          "value": "{{eqvmProductCategories}}",
+          "i18n": {},
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "styleClass": "vendor-account-services",
+          "extraSettings": {
+            "showBorder": false,
+            "minItems": 1,
+            "maxItems": 10000,
+            "collapsible": false,
+            "collapsed": false,
+            "formRef": {
+              "id": "FORM_MODEL-fbaa9767-968d-4c44-994f-5b9092fb15e6",
+              "key": "serviceSelection1"
+            },
+            "multipleEntries": true,
+            "showAddButton": true,
+            "showDeleteButton": true,
+            "showNoItemsMessage": true,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel1",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "select",
+                                  "extraSettings": {
+                                    "tagsEnabled": false,
+                                    "preselectAll": false,
+                                    "clientSideFiltering": false,
+                                    "enableAutocomplete": false,
+                                    "dataSource": "Rest",
+                                    "queryUrl": "/eq-api/party/eqvmProductCategories/search/findByProductCategoryTypeCode?productCategoryTypeCode=Vendor&tempTenantCode=internal",
+                                    "lookupUrl": "{{$id}}",
+                                    "path": "_embedded.eqvmProductCategories",
+                                    "formatItem": "{{$item.productCategoryName}}",
+                                    "storage": "Full",
+                                    "linkTarget": "_blank",
+                                    "multi": false
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "placeholder": "Select a service",
+                                      "tooltip": "Select a service",
+                                      "label": "Select a service"
+                                    }
+                                  },
+                                  "placeholder": "Select a service",
+                                  "enabled": true,
+                                  "labelAlign": "top",
+                                  "tooltip": "Select a service",
+                                  "value": "{{productCategoryId}}",
+                                  "size": 12,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "isRequired": true,
+                                  "label": "Select a service",
+                                  "id": "SelectAService",
+                                  "col": 0
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "select",
+                                  "extraSettings": {
+                                    "tagsEnabled": false,
+                                    "preselectAll": false,
+                                    "clientSideFiltering": false,
+                                    "minItems": 1,
+                                    "enableAutocomplete": false,
+                                    "dataSource": "Rest",
+                                    "queryUrl": "/eq-api/party/eqvmProductCategories/{{productCategoryId.productCategoryId}}/eqvmProducts?tempTenantCode=internal",
+                                    "lookupUrl": "productName",
+                                    "path": "_embedded.eqvmProducts",
+                                    "formatItem": "{{$item.productName}}",
+                                    "storage": "Id",
+                                    "identity": "productId",
+                                    "linkTarget": "_blank",
+                                    "multi": true
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "placeholder": "Select products associated to this service",
+                                      "tooltip": "Select products associated to this service",
+                                      "label": "Select products associated to this service"
+                                    }
+                                  },
+                                  "placeholder": "Select products associated to this service",
+                                  "enabled": true,
+                                  "labelAlign": "top",
+                                  "tooltip": "Select products associated to this service",
+                                  "value": "{{eqvmProducts}}",
+                                  "size": 12,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "isRequired": true,
+                                  "label": "Select products associated to this service",
+                                  "id": "SelectProducts",
+                                  "col": 0
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "select",
+                                  "extraSettings": {
+                                    "tagsEnabled": false,
+                                    "preselectAll": false,
+                                    "enableAutocomplete": false,
+                                    "dataSource": "Static",
+                                    "items": [
+                                      {
+                                        "text": "Nationwide",
+                                        "value": "Nationwide"
+                                      },
+                                      {
+                                        "text": "State wide",
+                                        "value": "Statewide"
+                                      },
+                                      {
+                                        "text": "County wide",
+                                        "value": "Countywide"
+                                      }
+                                    ],
+                                    "storage": "Id",
+                                    "identity": "value",
+                                    "linkTarget": "_blank",
+                                    "multi": false
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "items": [
+                                          {
+                                            "text": "Nationwide",
+                                            "value": "Nationwide"
+                                          },
+                                          {
+                                            "text": "State wide",
+                                            "value": "Statewide"
+                                          },
+                                          {
+                                            "text": "County wide",
+                                            "value": "Countywide"
+                                          }
+                                        ]
+                                      },
+                                      "placeholder": "Select Coverage",
+                                      "tooltip": "Select Coverage",
+                                      "label": "Select Coverage"
+                                    }
+                                  },
+                                  "placeholder": "Select Coverage",
+                                  "enabled": true,
+                                  "labelAlign": "top",
+                                  "tooltip": "Select Coverage",
+                                  "value": "{{eqvmVendorServiceAreas}}",
+                                  "size": 12,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "isRequired": true,
+                                  "label": "Select Coverage",
+                                  "id": "SelectCoverage",
+                                  "col": 0
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "select",
+                                  "extraSettings": {
+                                    "tagsEnabled": false,
+                                    "preselectAll": false,
+                                    "enableAutocomplete": false,
+                                    "dataSource": "Static",
+                                    "items": [
+                                      {
+                                        "text": "CA",
+                                        "value": "CA"
+                                      },
+                                      {
+                                        "text": "NY",
+                                        "value": "NY"
+                                      },
+                                      {
+                                        "text": "AZ",
+                                        "value": "AZ"
+                                      },
+                                      {
+                                        "text": "AL",
+                                        "value": "AL"
+                                      },
+                                      {
+                                        "text": "AK",
+                                        "value": "AK"
+                                      },
+                                      {
+                                        "text": "AR",
+                                        "value": "AR"
+                                      },
+                                      {
+                                        "text": "FL",
+                                        "value": "FL"
+                                      },
+                                      {
+                                        "text": "GA",
+                                        "value": "GA"
+                                      },
+                                      {
+                                        "text": "MI",
+                                        "value": "MI"
+                                      },
+                                      {
+                                        "text": "MN",
+                                        "value": "MN"
+                                      }
+                                    ],
+                                    "storage": "Id",
+                                    "identity": "value",
+                                    "linkTarget": "_blank",
+                                    "multi": false
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "items": [
+                                          {
+                                            "text": "CA",
+                                            "value": "CA"
+                                          },
+                                          {
+                                            "text": "NY",
+                                            "value": "NY"
+                                          },
+                                          {
+                                            "text": "AZ",
+                                            "value": "AZ"
+                                          },
+                                          {
+                                            "text": "AL",
+                                            "value": "AL"
+                                          },
+                                          {
+                                            "text": "AK",
+                                            "value": "AK"
+                                          },
+                                          {
+                                            "text": "AR",
+                                            "value": "AR"
+                                          },
+                                          {
+                                            "text": "FL",
+                                            "value": "FL"
+                                          },
+                                          {
+                                            "text": "GA",
+                                            "value": "GA"
+                                          },
+                                          {
+                                            "text": "MI",
+                                            "value": "MI"
+                                          },
+                                          {
+                                            "text": "MN",
+                                            "value": "MN"
+                                          }
+                                        ]
+                                      },
+                                      "placeholder": "Choose a state",
+                                      "tooltip": "Choose a state",
+                                      "label": "Choose a state"
+                                    }
+                                  },
+                                  "placeholder": "Choose a state",
+                                  "enabled": true,
+                                  "labelAlign": "top",
+                                  "tooltip": "Choose a state",
+                                  "value": "{{serviceAreaStateCode}}",
+                                  "size": 12,
+                                  "ignore": false,
+                                  "visible": "{{eqvmVendorServiceAreas=== \"Statewide\"}}",
+                                  "isRequired": false,
+                                  "label": "Choose a state",
+                                  "id": "SelectState",
+                                  "col": 0
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "text",
+                                  "extraSettings": {},
+                                  "i18n": {
+                                    "en_us": {
+                                      "label": "primary"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{primaryIndicator}}",
+                                  "defaultValue": 1,
+                                  "size": 12,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "label": "primary",
+                                  "id": "primaryIndicatorText",
+                                  "col": 0
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "id": "sub-form2",
+          "col": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "externalURLs": {
+    "dataStudio": "/eq-ui/datastudio/",
+    "dashboards": "/eq-ui/datastudio/public/dashboard/5ad37829-82f0-4902-9d26-1fd41192a401",
+    "businessProcessDesign": "/eq-ui/design/",
+    "diagnostics": "/diagnostics/app/uptime#/?_g=()",
+    "sla": "/diagnostics/app/uptime#/?_g=()&dateRangeStart=now-15d&dateRangeEnd=now",
+    "businessProcessControl": "/eq-ui/control/"
+  },
+  "dataStudioAuth": [
+    {
+      "username": "manoj.das@altisource.com",
+      "password": "Bangalore@1100",
+      "tenantId": "ASPS"
+    },
+    {
+      "username": "",
+      "password": "",
+      "tenantId": "BAC"
+    }
+  ]
+}

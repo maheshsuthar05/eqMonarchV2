@@ -1,0 +1,1810 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "type": "panel",
+          "label": "Upload Profile",
+          "i18n": {
+            "en_us": {
+              "label": "Upload Profile"
+            }
+          },
+          "labelAlign": "top",
+          "size": 12,
+          "ignore": false,
+          "visible": "{{additionalData.isAgent}}",
+          "enabled": true,
+          "isRequired": false,
+          "styleClass": "property-layout-column",
+          "id": "sub-panel1",
+          "extraSettings": {
+            "collapsible": false,
+            "collapsed": false,
+            "showBorder": false,
+            "saveButtonVisible": true,
+            "saveButtonEnabled": true,
+            "cancelButtonVisible": true,
+            "cancelButtonEnabled": true,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "type": "upload",
+                      "labelAlign": "top",
+                      "i18n": {
+                        "en_us": {
+                          "label": "Profile"
+                        }
+                      },
+                      "value": "{{profileImgURL}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "label": "Profile",
+                      "id": "attachment1",
+                      "extraSettings": {
+                        "autoupload": true,
+                        "downloadUrl": "rest/file/{{id}}",
+                        "allowDelete": "newOnly",
+                        "preview": "none"
+                      },
+                      "col": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "col": 0
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "type": "subform",
+          "labelAlign": "top",
+          "i18n": {},
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "extraSettings": {
+            "showBorder": false,
+            "collapsible": false,
+            "collapsed": false,
+            "formRef": {
+              "id": "FORM_MODEL-853214da-5fda-4469-a614-510400e2ab91",
+              "key": "editableAccountDetails"
+            },
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "label": "Account Details",
+                      "i18n": {
+                        "en_us": {
+                          "label": "Account Details"
+                        }
+                      },
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "styleClass": "property-layout-column",
+                      "id": "sub-panel1",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "text",
+                                  "extraSettings": {},
+                                  "i18n": {
+                                    "en_us": {
+                                      "placeholder": "First Name",
+                                      "tooltip": "First Name",
+                                      "label": "First Name:",
+                                      "validationRegExpErrorMessage": "Please enter the valid first name"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "placeholder": "First Name",
+                                  "labelAlign": "top",
+                                  "tooltip": "First Name",
+                                  "value": "{{individualFirstName}}",
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": true,
+                                  "label": "First Name:",
+                                  "id": "text1",
+                                  "validationRegExp": "[-\\w\\s]+$",
+                                  "validationRegExpErrorMessage": "Please enter the valid first name",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "text",
+                                  "extraSettings": {},
+                                  "i18n": {
+                                    "en_us": {
+                                      "placeholder": "Last Name",
+                                      "tooltip": "Last Name",
+                                      "label": "Last Name:",
+                                      "validationRegExpErrorMessage": "Please enter the valid last name"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "placeholder": "Last Name",
+                                  "labelAlign": "top",
+                                  "tooltip": "Last Name",
+                                  "value": "{{individualLastName}}",
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": true,
+                                  "label": "Last Name:",
+                                  "id": "text2",
+                                  "validationRegExp": "[-\\w\\s]+$",
+                                  "validationRegExpErrorMessage": "Please enter the valid last name",
+                                  "col": 3
+                                },
+                                {
+                                  "type": "subform",
+                                  "labelAlign": "top",
+                                  "value": "{{contactPoints}}",
+                                  "i18n": {},
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "extraSettings": {
+                                    "showBorder": false,
+                                    "minItems": 1,
+                                    "maxItems": 1,
+                                    "collapsible": false,
+                                    "collapsed": false,
+                                    "formRef": {
+                                      "id": "FORM_MODEL-97821e33-a905-4634-bd59-e9180cc4a5f9",
+                                      "key": "vendorContactPoints"
+                                    },
+                                    "multipleEntries": true,
+                                    "showAddButton": false,
+                                    "showDeleteButton": false,
+                                    "showNoItemsMessage": true,
+                                    "layoutDefinition": {
+                                      "rows": [
+                                        {
+                                          "cols": [
+                                            {
+                                              "type": "subform",
+                                              "labelAlign": "top",
+                                              "value": "{{contactPointEmails}}",
+                                              "i18n": {},
+                                              "size": 6,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "extraSettings": {
+                                                "showBorder": false,
+                                                "minItems": 1,
+                                                "maxItems": 1,
+                                                "collapsible": false,
+                                                "collapsed": false,
+                                                "formRef": {
+                                                  "id": "FORM_MODEL-7cef3ed1-2a3b-410b-ac67-304a799a9f94",
+                                                  "key": "vendorContactPointEmails"
+                                                },
+                                                "multipleEntries": true,
+                                                "showAddButton": false,
+                                                "showDeleteButton": false,
+                                                "showNoItemsMessage": true,
+                                                "layoutDefinition": {
+                                                  "rows": [
+                                                    {
+                                                      "cols": [
+                                                        {
+                                                          "type": "text",
+                                                          "extraSettings": {},
+                                                          "i18n": {
+                                                            "en_us": {
+                                                              "placeholder": "Email Address",
+                                                              "tooltip": "Email Address",
+                                                              "label": "Email Address:",
+                                                              "validationRegExpErrorMessage": "Please enter the valid email"
+                                                            },
+                                                            "de_de": {},
+                                                            "fr_fr": {},
+                                                            "it_it": {},
+                                                            "es_es": {}
+                                                          },
+                                                          "placeholder": "Email Address",
+                                                          "labelAlign": "top",
+                                                          "tooltip": "Email Address",
+                                                          "value": "{{contactPointEmailValue}}",
+                                                          "size": 12,
+                                                          "ignore": false,
+                                                          "visible": true,
+                                                          "enabled": true,
+                                                          "isRequired": true,
+                                                          "label": "Email Address:",
+                                                          "id": "text1",
+                                                          "validationRegExp": "^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{1,5})$",
+                                                          "validationRegExpErrorMessage": "Please enter the valid email",
+                                                          "col": 0
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              },
+                                              "id": "sub-form1",
+                                              "col": 0
+                                            },
+                                            {
+                                              "type": "subform",
+                                              "labelAlign": "top",
+                                              "value": "{{contactPointTelephones}}",
+                                              "i18n": {},
+                                              "size": 6,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "extraSettings": {
+                                                "showBorder": false,
+                                                "minItems": 1,
+                                                "maxItems": 1,
+                                                "collapsible": false,
+                                                "collapsed": false,
+                                                "formRef": {
+                                                  "id": "FORM_MODEL-d0588fbf-a586-4ba1-b6c9-6f3ffba9d83e",
+                                                  "key": "vendorContactPointTelephones"
+                                                },
+                                                "multipleEntries": true,
+                                                "showAddButton": false,
+                                                "showDeleteButton": false,
+                                                "showNoItemsMessage": true,
+                                                "layoutDefinition": {
+                                                  "rows": [
+                                                    {
+                                                      "cols": [
+                                                        {
+                                                          "type": "text",
+                                                          "extraSettings": {},
+                                                          "i18n": {
+                                                            "en_us": {
+                                                              "placeholder": "Mobile",
+                                                              "tooltip": "Mobile",
+                                                              "label": "Mobile:",
+                                                              "validationMaskErrorMessage": "Please enter the valid mobile number"
+                                                            },
+                                                            "de_de": {},
+                                                            "fr_fr": {},
+                                                            "it_it": {},
+                                                            "es_es": {}
+                                                          },
+                                                          "placeholder": "Mobile",
+                                                          "labelAlign": "top",
+                                                          "tooltip": "Mobile",
+                                                          "value": "{{contactPointTelephoneValue}}",
+                                                          "size": 12,
+                                                          "ignore": false,
+                                                          "visible": true,
+                                                          "enabled": true,
+                                                          "isRequired": true,
+                                                          "label": "Mobile:",
+                                                          "id": "text1",
+                                                          "validationMask": "999-999-9999",
+                                                          "validationMaskErrorMessage": "Please enter the valid mobile number",
+                                                          "col": 0
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              },
+                                              "id": "sub-form2",
+                                              "col": 6
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "id": "sub-form1",
+                                  "col": 6
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "panel",
+                                  "label": "License Information:",
+                                  "i18n": {
+                                    "en_us": {
+                                      "label": "License Information:"
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "size": 12,
+                                  "ignore": false,
+                                  "visible": "{{additionalData.isVendor}}",
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "sub-panel5",
+                                  "extraSettings": {
+                                    "collapsible": false,
+                                    "collapsed": false,
+                                    "showBorder": false,
+                                    "saveButtonVisible": true,
+                                    "saveButtonEnabled": true,
+                                    "cancelButtonVisible": true,
+                                    "cancelButtonEnabled": true,
+                                    "layoutDefinition": {
+                                      "rows": [
+                                        {
+                                          "cols": [
+                                            {
+                                              "type": "subform",
+                                              "labelAlign": "top",
+                                              "value": "{{roles}}",
+                                              "i18n": {},
+                                              "size": 12,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "extraSettings": {
+                                                "showBorder": false,
+                                                "minItems": 1,
+                                                "maxItems": 1,
+                                                "collapsible": false,
+                                                "collapsed": false,
+                                                "formRef": {
+                                                  "id": "FORM_MODEL-0aee0e2a-99c5-44f1-bc44-c06e25802367",
+                                                  "key": "vendorRolesForm"
+                                                },
+                                                "multipleEntries": true,
+                                                "showAddButton": false,
+                                                "showDeleteButton": false,
+                                                "showNoItemsMessage": true,
+                                                "layoutDefinition": {
+                                                  "rows": [
+                                                    {
+                                                      "cols": [
+                                                        {
+                                                          "type": "subform",
+                                                          "labelAlign": "top",
+                                                          "value": "{{licenses}}",
+                                                          "i18n": {},
+                                                          "size": 12,
+                                                          "ignore": false,
+                                                          "visible": true,
+                                                          "enabled": true,
+                                                          "isRequired": false,
+                                                          "extraSettings": {
+                                                            "showBorder": false,
+                                                            "minItems": 1,
+                                                            "maxItems": 1,
+                                                            "collapsible": false,
+                                                            "collapsed": false,
+                                                            "formRef": {
+                                                              "id": "FORM_MODEL-7a0c1c56-4b59-4b45-81e3-760d93c00e73",
+                                                              "key": "vendorLicensesForm"
+                                                            },
+                                                            "multipleEntries": true,
+                                                            "showAddButton": false,
+                                                            "showDeleteButton": false,
+                                                            "showNoItemsMessage": true,
+                                                            "layoutDefinition": {
+                                                              "rows": [
+                                                                {
+                                                                  "cols": [
+                                                                    {
+                                                                      "type": "text",
+                                                                      "extraSettings": {},
+                                                                      "i18n": {
+                                                                        "en_us": {
+                                                                          "placeholder": "Number",
+                                                                          "tooltip": "Number",
+                                                                          "label": "Number",
+                                                                          "validationRegExpErrorMessage": "Please enter the valid number"
+                                                                        },
+                                                                        "de_de": {},
+                                                                        "fr_fr": {},
+                                                                        "it_it": {},
+                                                                        "es_es": {}
+                                                                      },
+                                                                      "placeholder": "Number",
+                                                                      "labelAlign": "top",
+                                                                      "tooltip": "Number",
+                                                                      "value": "{{licenseIssuingAuthorityName}}",
+                                                                      "size": 3,
+                                                                      "ignore": false,
+                                                                      "visible": true,
+                                                                      "enabled": true,
+                                                                      "isRequired": false,
+                                                                      "label": "Number",
+                                                                      "id": "text1",
+                                                                      "validationRegExp": "[-\\w\\s]+$",
+                                                                      "validationRegExpErrorMessage": "Please enter the valid number",
+                                                                      "col": 0
+                                                                    },
+                                                                    {
+                                                                      "type": "date",
+                                                                      "placeholder": "Expiry Date",
+                                                                      "i18n": {
+                                                                        "en_us": {
+                                                                          "placeholder": "Expiry Date",
+                                                                          "tooltip": "Expiry Date",
+                                                                          "label": "Expiry Date"
+                                                                        }
+                                                                      },
+                                                                      "labelAlign": "top",
+                                                                      "tooltip": "Expiry Date",
+                                                                      "value": "{{licenseExpirationDate}}",
+                                                                      "size": 3,
+                                                                      "ignore": false,
+                                                                      "visible": true,
+                                                                      "enabled": true,
+                                                                      "isRequired": false,
+                                                                      "label": "Expiry Date",
+                                                                      "id": "date1",
+                                                                      "extraSettings": {
+                                                                        "enableTime": false,
+                                                                        "storeWithoutTime": true,
+                                                                        "format": "MM/DD/YYYY"
+                                                                      },
+                                                                      "col": 3
+                                                                    },
+                                                                    {
+                                                                      "type": "select",
+                                                                      "extraSettings": {
+                                                                        "tagsEnabled": false,
+                                                                        "preselectAll": false,
+                                                                        "clientSideFiltering": true,
+                                                                        "enableAutocomplete": true,
+                                                                        "autocompleteMinLength": 0,
+                                                                        "dataSource": "Rest",
+                                                                        "queryUrl": "/eq-api/adminservice/states?page=0&size=100",
+                                                                        "lookupUrl": "/eq-api/adminservice/states?page=0&size=100",
+                                                                        "path": "_embedded.states",
+                                                                        "formatItem": "{{$item.stateName}}",
+                                                                        "storage": "Id",
+                                                                        "identity": "stateName",
+                                                                        "linkTarget": "_blank",
+                                                                        "multi": false
+                                                                      },
+                                                                      "i18n": {
+                                                                        "en_us": {
+                                                                          "placeholder": "State",
+                                                                          "tooltip": "State",
+                                                                          "label": "State"
+                                                                        }
+                                                                      },
+                                                                      "placeholder": "State",
+                                                                      "enabled": true,
+                                                                      "labelAlign": "top",
+                                                                      "tooltip": "State",
+                                                                      "value": "{{licenseIssuingAuthorityStateName}}",
+                                                                      "size": 3,
+                                                                      "ignore": false,
+                                                                      "visible": true,
+                                                                      "isRequired": false,
+                                                                      "label": "State",
+                                                                      "id": "single-select1",
+                                                                      "col": 6
+                                                                    },
+                                                                    {
+                                                                      "type": "radio",
+                                                                      "i18n": {
+                                                                        "en_us": {
+                                                                          "extraSettings": {
+                                                                            "items": [
+                                                                              {
+                                                                                "text": "Agent",
+                                                                                "value": "agent",
+                                                                                "checked": "true"
+                                                                              },
+                                                                              {
+                                                                                "text": "Broker",
+                                                                                "value": "broker"
+                                                                              },
+                                                                              {
+                                                                                "text": "Attorny",
+                                                                                "value": "attorny"
+                                                                              }
+                                                                            ]
+                                                                          },
+                                                                          "tooltip": "License Type",
+                                                                          "label": "License Type:"
+                                                                        }
+                                                                      },
+                                                                      "enabled": true,
+                                                                      "extraSettings": {
+                                                                        "dataSource": "Static",
+                                                                        "items": [
+                                                                          {
+                                                                            "text": "Agent",
+                                                                            "value": "agent",
+                                                                            "checked": "true"
+                                                                          },
+                                                                          {
+                                                                            "text": "Broker",
+                                                                            "value": "broker"
+                                                                          },
+                                                                          {
+                                                                            "text": "Attorny",
+                                                                            "value": "attorny"
+                                                                          }
+                                                                        ],
+                                                                        "storage": "Id",
+                                                                        "identity": "value",
+                                                                        "linkTarget": "_blank",
+                                                                        "display": "Horizontal"
+                                                                      },
+                                                                      "labelAlign": "top",
+                                                                      "tooltip": "License Type",
+                                                                      "value": "{{licenseAuthorityLevelType}}",
+                                                                      "size": 3,
+                                                                      "ignore": false,
+                                                                      "visible": true,
+                                                                      "isRequired": false,
+                                                                      "label": "License Type:",
+                                                                      "id": "radiobuttons1",
+                                                                      "col": 9
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          },
+                                                          "id": "sub-form1",
+                                                          "col": 0
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              },
+                                              "id": "sub-form2",
+                                              "col": 0
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "col": 0
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "id": "sub-form1",
+          "col": 0
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "type": "subform",
+          "labelAlign": "top",
+          "i18n": {},
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "extraSettings": {
+            "showBorder": false,
+            "collapsible": false,
+            "collapsed": false,
+            "formRef": {
+              "id": "FORM_MODEL-85a96049-c867-4f86-a53f-dc66236483b4",
+              "key": "editableContactDetails"
+            },
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "label": "Contact",
+                      "i18n": {
+                        "en_us": {
+                          "label": "Contact"
+                        }
+                      },
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "styleClass": "property-layout-column",
+                      "id": "sub-panel3",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "text",
+                                  "extraSettings": {},
+                                  "i18n": {
+                                    "en_us": {
+                                      "placeholder": "Company Name",
+                                      "tooltip": "Company Name",
+                                      "label": "Company Name:",
+                                      "validationRegExpErrorMessage": "Please enter the valid company name"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "placeholder": "Company Name",
+                                  "labelAlign": "top",
+                                  "tooltip": "Company Name",
+                                  "value": "{{individualFullName}}",
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "label": "Company Name:",
+                                  "id": "text11",
+                                  "validationRegExp": "[-\\w\\s]+$",
+                                  "validationRegExpErrorMessage": "Please enter the valid company name",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "subform",
+                                  "labelAlign": "top",
+                                  "value": "{{partyAddresses}}",
+                                  "i18n": {},
+                                  "size": 9,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "extraSettings": {
+                                    "showBorder": false,
+                                    "minItems": 1,
+                                    "maxItems": 1,
+                                    "collapsible": false,
+                                    "collapsed": false,
+                                    "formRef": {
+                                      "id": "FORM_MODEL-7f6b4a30-cc77-4195-9593-0dd6ab6b65c3",
+                                      "key": "vendorPartyAddressesForm"
+                                    },
+                                    "multipleEntries": true,
+                                    "showAddButton": false,
+                                    "showDeleteButton": false,
+                                    "showNoItemsMessage": true,
+                                    "layoutDefinition": {
+                                      "rows": [
+                                        {
+                                          "cols": [
+                                            {
+                                              "type": "text",
+                                              "extraSettings": {},
+                                              "i18n": {
+                                                "en_us": {
+                                                  "placeholder": "Address",
+                                                  "tooltip": "Address",
+                                                  "label": "Address:",
+                                                  "validationRegExpErrorMessage": "Please enter the valid address"
+                                                },
+                                                "de_de": {},
+                                                "fr_fr": {},
+                                                "it_it": {},
+                                                "es_es": {}
+                                              },
+                                              "placeholder": "Address",
+                                              "labelAlign": "top",
+                                              "tooltip": "Address",
+                                              "value": "{{addressLineText}}",
+                                              "size": 3,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": true,
+                                              "label": "Address:",
+                                              "id": "text1",
+                                              "validationRegExp": "[-\\w\\s]+$",
+                                              "validationRegExpErrorMessage": "Please enter the valid address",
+                                              "col": 0
+                                            },
+                                            {
+                                              "type": "text",
+                                              "extraSettings": {},
+                                              "i18n": {
+                                                "en_us": {
+                                                  "placeholder": "City",
+                                                  "tooltip": "City",
+                                                  "label": "City:",
+                                                  "validationRegExpErrorMessage": "Please enter the valid city"
+                                                },
+                                                "de_de": {},
+                                                "fr_fr": {},
+                                                "it_it": {},
+                                                "es_es": {}
+                                              },
+                                              "placeholder": "City",
+                                              "labelAlign": "top",
+                                              "tooltip": "City",
+                                              "value": "{{cityName}}",
+                                              "size": 3,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "label": "City:",
+                                              "id": "text2",
+                                              "validationRegExp": "[-\\w\\s]+$",
+                                              "validationRegExpErrorMessage": "Please enter the valid city",
+                                              "col": 3
+                                            },
+                                            {
+                                              "type": "select",
+                                              "extraSettings": {
+                                                "tagsEnabled": false,
+                                                "preselectAll": false,
+                                                "clientSideFiltering": true,
+                                                "enableAutocomplete": true,
+                                                "autocompleteMinLength": 0,
+                                                "dataSource": "Rest",
+                                                "queryUrl": "/eq-api/adminservice/states?page=0&size=100",
+                                                "lookupUrl": "/eq-api/adminservice/states?page=0&size=100",
+                                                "path": "_embedded.states",
+                                                "formatItem": "{{$item.stateName}}",
+                                                "storage": "Id",
+                                                "identity": "stateName",
+                                                "linkTarget": "_blank",
+                                                "multi": false
+                                              },
+                                              "i18n": {
+                                                "en_us": {
+                                                  "placeholder": "State",
+                                                  "tooltip": "State",
+                                                  "label": "State:"
+                                                }
+                                              },
+                                              "placeholder": "State",
+                                              "enabled": true,
+                                              "labelAlign": "top",
+                                              "tooltip": "State",
+                                              "value": "{{stateName}}",
+                                              "size": 3,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "isRequired": false,
+                                              "label": "State:",
+                                              "id": "single-select1",
+                                              "col": 6
+                                            },
+                                            {
+                                              "type": "text",
+                                              "extraSettings": {},
+                                              "i18n": {
+                                                "en_us": {
+                                                  "placeholder": "Zip",
+                                                  "tooltip": "Zip",
+                                                  "label": "Zip:",
+                                                  "validationRegExpErrorMessage": "Please enter the valid zip"
+                                                },
+                                                "de_de": {},
+                                                "fr_fr": {},
+                                                "it_it": {},
+                                                "es_es": {}
+                                              },
+                                              "placeholder": "Zip",
+                                              "labelAlign": "top",
+                                              "tooltip": "Zip",
+                                              "value": "{{postalCode}}",
+                                              "size": 3,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "label": "Zip:",
+                                              "id": "text3",
+                                              "validationRegExp": "[-\\w\\s]+$",
+                                              "validationRegExpErrorMessage": "Please enter the valid zip",
+                                              "col": 9
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "id": "sub-form1",
+                                  "col": 3
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "panel",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{brokerInformation}}",
+                                  "size": 12,
+                                  "ignore": false,
+                                  "visible": "{{additionalData.isAgent}}",
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "sub-panel6",
+                                  "extraSettings": {
+                                    "collapsible": false,
+                                    "collapsed": false,
+                                    "showBorder": false,
+                                    "saveButtonVisible": true,
+                                    "saveButtonEnabled": true,
+                                    "cancelButtonVisible": true,
+                                    "cancelButtonEnabled": true,
+                                    "layoutDefinition": {
+                                      "rows": [
+                                        {
+                                          "cols": [
+                                            {
+                                              "type": "htmlComponent",
+                                              "i18n": {
+                                                "en_us": {
+                                                  "value": "<h4>Broker</h4>\n"
+                                                },
+                                                "de_de": {},
+                                                "fr_fr": {},
+                                                "it_it": {},
+                                                "es_es": {}
+                                              },
+                                              "labelAlign": "top",
+                                              "value": "<h4>Broker</h4>\n",
+                                              "defaultValue": false,
+                                              "size": 12,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "id": "output2",
+                                              "col": 0
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "cols": [
+                                            {
+                                              "type": "boolean",
+                                              "i18n": {
+                                                "en_us": {
+                                                  "tooltip": "My company and broker information same",
+                                                  "label": "My company and broker information same"
+                                                },
+                                                "de_de": {},
+                                                "fr_fr": {},
+                                                "it_it": {},
+                                                "es_es": {}
+                                              },
+                                              "labelAlign": "top",
+                                              "tooltip": "My company and broker information same",
+                                              "value": "{{isChecked}}",
+                                              "defaultValue": false,
+                                              "size": 3,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "label": "My company and broker information same",
+                                              "id": "checkbox1",
+                                              "col": 0
+                                            },
+                                            {
+                                              "type": "text",
+                                              "extraSettings": {},
+                                              "i18n": {
+                                                "en_us": {
+                                                  "placeholder": "Broker of record name",
+                                                  "tooltip": "Broker of record name",
+                                                  "label": "Broker of record name",
+                                                  "validationRegExpErrorMessage": "Please enter the valid record name"
+                                                },
+                                                "de_de": {},
+                                                "fr_fr": {},
+                                                "it_it": {},
+                                                "es_es": {}
+                                              },
+                                              "placeholder": "Broker of record name",
+                                              "labelAlign": "top",
+                                              "tooltip": "Broker of record name",
+                                              "value": "{{brokerRecordName}}",
+                                              "size": 3,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "label": "Broker of record name",
+                                              "id": "text21",
+                                              "validationRegExp": "[-\\w\\s]+$",
+                                              "validationRegExpErrorMessage": "Please enter the valid record name",
+                                              "col": 3
+                                            },
+                                            {
+                                              "type": "text",
+                                              "extraSettings": {},
+                                              "i18n": {
+                                                "en_us": {
+                                                  "placeholder": "Broker Company Name",
+                                                  "tooltip": "Broker Company Name",
+                                                  "label": "Broker Company Name:",
+                                                  "validationRegExpErrorMessage": "Please enter the valid company name"
+                                                },
+                                                "de_de": {},
+                                                "fr_fr": {},
+                                                "it_it": {},
+                                                "es_es": {}
+                                              },
+                                              "placeholder": "Broker Company Name",
+                                              "labelAlign": "top",
+                                              "tooltip": "Broker Company Name",
+                                              "value": "{{individualFullName}}",
+                                              "size": 3,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "label": "Broker Company Name:",
+                                              "id": "text22",
+                                              "validationRegExp": "[-\\w\\s]+$",
+                                              "validationRegExpErrorMessage": "Please enter the valid company name",
+                                              "col": 6
+                                            },
+                                            {
+                                              "type": "text",
+                                              "extraSettings": {},
+                                              "i18n": {
+                                                "en_us": {
+                                                  "placeholder": "Broker Address",
+                                                  "tooltip": "Broker Address",
+                                                  "label": "Broker Address:",
+                                                  "validationRegExpErrorMessage": "Please enter the valid address"
+                                                },
+                                                "de_de": {},
+                                                "fr_fr": {},
+                                                "it_it": {},
+                                                "es_es": {}
+                                              },
+                                              "placeholder": "Broker Address",
+                                              "labelAlign": "top",
+                                              "tooltip": "Broker Address",
+                                              "value": "{{brokerAddress}}",
+                                              "size": 3,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "label": "Broker Address:",
+                                              "id": "text24",
+                                              "validationRegExp": "[-\\w\\s]+$",
+                                              "validationRegExpErrorMessage": "Please enter the valid address",
+                                              "col": 9
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "cols": [
+                                            {
+                                              "type": "text",
+                                              "extraSettings": {},
+                                              "i18n": {
+                                                "en_us": {
+                                                  "placeholder": "Broker City",
+                                                  "tooltip": "Broker City",
+                                                  "label": "Broker City:",
+                                                  "validationRegExpErrorMessage": "Please enter the valid city"
+                                                },
+                                                "de_de": {},
+                                                "fr_fr": {},
+                                                "it_it": {},
+                                                "es_es": {}
+                                              },
+                                              "placeholder": "Broker City",
+                                              "labelAlign": "top",
+                                              "tooltip": "Broker City",
+                                              "value": "{{brokerCity}}",
+                                              "size": 3,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "label": "Broker City:",
+                                              "id": "text25",
+                                              "validationRegExp": "[-\\w\\s]+$",
+                                              "validationRegExpErrorMessage": "Please enter the valid city",
+                                              "col": 0
+                                            },
+                                            {
+                                              "type": "select",
+                                              "extraSettings": {
+                                                "tagsEnabled": false,
+                                                "preselectAll": false,
+                                                "clientSideFiltering": true,
+                                                "enableAutocomplete": true,
+                                                "autocompleteMinLength": 0,
+                                                "dataSource": "Rest",
+                                                "queryUrl": "/eq-api/adminservice/states?page=0&size=100",
+                                                "lookupUrl": "/eq-api/adminservice/states?page=0&size=100",
+                                                "path": "_embedded.states",
+                                                "formatItem": "{{$item.stateName}}",
+                                                "storage": "Full",
+                                                "linkTarget": "_blank",
+                                                "multi": false
+                                              },
+                                              "i18n": {
+                                                "en_us": {
+                                                  "placeholder": "Broker State",
+                                                  "tooltip": "Broker State",
+                                                  "label": "Broker State:"
+                                                }
+                                              },
+                                              "placeholder": "Broker State",
+                                              "enabled": true,
+                                              "labelAlign": "top",
+                                              "tooltip": "Broker State",
+                                              "value": "{{brokerState}}",
+                                              "size": 3,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "isRequired": false,
+                                              "label": "Broker State:",
+                                              "id": "single-select1",
+                                              "col": 3
+                                            },
+                                            {
+                                              "type": "text",
+                                              "extraSettings": {},
+                                              "i18n": {
+                                                "en_us": {
+                                                  "placeholder": "Broker Zip",
+                                                  "tooltip": "Broker Zip",
+                                                  "label": "Broker Zip",
+                                                  "validationRegExpErrorMessage": "Please enter the valid zip"
+                                                },
+                                                "de_de": {},
+                                                "fr_fr": {},
+                                                "it_it": {},
+                                                "es_es": {}
+                                              },
+                                              "placeholder": "Broker Zip",
+                                              "labelAlign": "top",
+                                              "tooltip": "Broker Zip",
+                                              "value": "{{brokerZip}}",
+                                              "size": 3,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "label": "Broker Zip",
+                                              "id": "text28",
+                                              "validationRegExp": "[-\\w\\s]+$",
+                                              "validationRegExpErrorMessage": "Please enter the valid zip",
+                                              "col": 6
+                                            },
+                                            {
+                                              "type": "text",
+                                              "extraSettings": {},
+                                              "i18n": {
+                                                "en_us": {
+                                                  "placeholder": "Broker Telephone Number",
+                                                  "tooltip": "Broker Telephone Number",
+                                                  "label": "Broker Telephone Number",
+                                                  "validationRegExpErrorMessage": "Please enter the valid phone number"
+                                                },
+                                                "de_de": {},
+                                                "fr_fr": {},
+                                                "it_it": {},
+                                                "es_es": {}
+                                              },
+                                              "placeholder": "Broker Telephone Number",
+                                              "labelAlign": "top",
+                                              "tooltip": "Broker Telephone Number",
+                                              "value": "{{brokerTelephoneNumber}}",
+                                              "size": 3,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "label": "Broker Telephone Number",
+                                              "id": "text29",
+                                              "validationRegExpErrorMessage": "Please enter the valid phone number",
+                                              "validationMask": "999-999-9999",
+                                              "col": 9
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "cols": [
+                                            {
+                                              "type": "text",
+                                              "extraSettings": {},
+                                              "i18n": {
+                                                "en_us": {
+                                                  "placeholder": "Broker Web address",
+                                                  "tooltip": "Broker Web address",
+                                                  "label": "Broker Web address",
+                                                  "validationRegExpErrorMessage": "Please enter the valid web address"
+                                                },
+                                                "de_de": {},
+                                                "fr_fr": {},
+                                                "it_it": {},
+                                                "es_es": {}
+                                              },
+                                              "placeholder": "Broker Web address",
+                                              "labelAlign": "top",
+                                              "tooltip": "Broker Web address",
+                                              "value": "{{brokerWebaddress}}",
+                                              "size": 3,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "label": "Broker Web address",
+                                              "id": "text23",
+                                              "validationRegExp": "[-\\w\\s]+$",
+                                              "validationRegExpErrorMessage": "Please enter the valid web address",
+                                              "col": 0
+                                            },
+                                            {
+                                              "type": "text",
+                                              "extraSettings": {},
+                                              "i18n": {
+                                                "en_us": {
+                                                  "placeholder": "Broker License number",
+                                                  "tooltip": "Broker License number",
+                                                  "label": "Broker License number",
+                                                  "validationRegExpErrorMessage": "Please enter the valid broker license number"
+                                                },
+                                                "de_de": {},
+                                                "fr_fr": {},
+                                                "it_it": {},
+                                                "es_es": {}
+                                              },
+                                              "placeholder": "Broker License number",
+                                              "labelAlign": "top",
+                                              "tooltip": "Broker License number",
+                                              "value": "{{brokerLicenceNumber}}",
+                                              "size": 3,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "label": "Broker License number",
+                                              "id": "text30",
+                                              "validationRegExp": "[-\\w\\s]+$",
+                                              "validationRegExpErrorMessage": "Please enter the valid broker license number",
+                                              "col": 3
+                                            },
+                                            {
+                                              "type": "date",
+                                              "placeholder": "Broker License Expire date",
+                                              "i18n": {
+                                                "en_us": {
+                                                  "placeholder": "Broker License Expire date",
+                                                  "tooltip": "Broker License Expire date",
+                                                  "label": "Broker License Expire date"
+                                                }
+                                              },
+                                              "labelAlign": "top",
+                                              "tooltip": "Broker License Expire date",
+                                              "value": "{{brokerLicenceExpireDate}}",
+                                              "size": 3,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "label": "Broker License Expire date",
+                                              "id": "date2",
+                                              "extraSettings": {
+                                                "enableTime": false,
+                                                "storeWithoutTime": true
+                                              },
+                                              "col": 6
+                                            },
+                                            {
+                                              "size": 1
+                                            },
+                                            {
+                                              "size": 1
+                                            },
+                                            {
+                                              "size": 1
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "col": 0
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "id": "sub-form2",
+          "col": 0
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "type": "subform",
+          "labelAlign": "top",
+          "value": "{{partyEmailOptions}}",
+          "i18n": {},
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "extraSettings": {
+            "showBorder": false,
+            "collapsible": false,
+            "collapsed": false,
+            "formRef": {
+              "id": "FORM_MODEL-3626abc7-ec93-476e-914d-e3154ca585b9",
+              "key": "editCommunicationDetails"
+            },
+            "multipleEntries": false,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "label": "Communication",
+                      "i18n": {
+                        "en_us": {
+                          "label": "Communication"
+                        }
+                      },
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "styleClass": "property-layout-column communication-column",
+                      "id": "sub-panel4",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "radio",
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "items": [
+                                          {
+                                            "text": "Yes",
+                                            "value": "{{1}}",
+                                            "checked": "true"
+                                          },
+                                          {
+                                            "text": "No",
+                                            "value": "{{0}}"
+                                          }
+                                        ]
+                                      },
+                                      "tooltip": "Receive Equator Platform-related Emails?",
+                                      "label": "Receive Equator Platform-related Emails?"
+                                    }
+                                  },
+                                  "enabled": true,
+                                  "extraSettings": {
+                                    "dataSource": "Static",
+                                    "items": [
+                                      {
+                                        "text": "Yes",
+                                        "value": "{{1}}",
+                                        "checked": "true"
+                                      },
+                                      {
+                                        "text": "No",
+                                        "value": "{{0}}"
+                                      }
+                                    ],
+                                    "storage": "Id",
+                                    "identity": "value",
+                                    "linkTarget": "_blank",
+                                    "display": "Horizontal"
+                                  },
+                                  "labelAlign": "left",
+                                  "tooltip": "Receive Equator Platform-related Emails?",
+                                  "value": "{{receiveEqPlatformRelatedEmailIndicator}}",
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "isRequired": false,
+                                  "label": "Receive Equator Platform-related Emails?",
+                                  "id": "radiobuttons1",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "radio",
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "items": [
+                                          {
+                                            "text": "Yes",
+                                            "value": "{{1}}",
+                                            "checked": "true"
+                                          },
+                                          {
+                                            "text": "No",
+                                            "value": "{{0}}"
+                                          }
+                                        ]
+                                      },
+                                      "tooltip": "Receive Third Party Emails?",
+                                      "label": "Receive Third Party Emails?"
+                                    }
+                                  },
+                                  "enabled": true,
+                                  "extraSettings": {
+                                    "dataSource": "Static",
+                                    "items": [
+                                      {
+                                        "text": "Yes",
+                                        "value": "{{1}}",
+                                        "checked": "true"
+                                      },
+                                      {
+                                        "text": "No",
+                                        "value": "{{0}}"
+                                      }
+                                    ],
+                                    "storage": "Id",
+                                    "identity": "value",
+                                    "linkTarget": "_blank",
+                                    "display": "Horizontal"
+                                  },
+                                  "labelAlign": "left",
+                                  "tooltip": "Receive Third Party Emails?",
+                                  "value": "{{receiveThirdPartyEmailIndicator}}",
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "isRequired": false,
+                                  "label": "Receive Third Party Emails?",
+                                  "id": "radiobuttons3",
+                                  "col": 3
+                                },
+                                {
+                                  "type": "radio",
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "items": [
+                                          {
+                                            "text": "Yes",
+                                            "value": "{{1}}",
+                                            "checked": "true"
+                                          },
+                                          {
+                                            "text": "No",
+                                            "value": "{{0}}"
+                                          }
+                                        ]
+                                      },
+                                      "tooltip": "Hide New Task/Deliverable Messages in Inbox",
+                                      "label": "Hide New Task/Deliverable Messages in Inbox"
+                                    }
+                                  },
+                                  "enabled": true,
+                                  "extraSettings": {
+                                    "dataSource": "Static",
+                                    "items": [
+                                      {
+                                        "text": "Yes",
+                                        "value": "{{1}}",
+                                        "checked": "true"
+                                      },
+                                      {
+                                        "text": "No",
+                                        "value": "{{0}}"
+                                      }
+                                    ],
+                                    "storage": "Id",
+                                    "identity": "value",
+                                    "linkTarget": "_blank",
+                                    "display": "Horizontal"
+                                  },
+                                  "labelAlign": "left",
+                                  "tooltip": "Hide New Task/Deliverable Messages in Inbox",
+                                  "value": "{{hideNewTaskMessagesInInboxIndicator}}",
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "isRequired": false,
+                                  "label": "Hide New Task/Deliverable Messages in Inbox",
+                                  "id": "radiobuttons7",
+                                  "col": 6
+                                },
+                                {
+                                  "type": "radio",
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "items": [
+                                          {
+                                            "text": "Yes",
+                                            "value": "{{1}}",
+                                            "checked": "true"
+                                          },
+                                          {
+                                            "text": "No",
+                                            "value": "{{0}}"
+                                          }
+                                        ]
+                                      },
+                                      "tooltip": "Receive Equator Offers,News and Other Emails?",
+                                      "label": "Receive Equator Offers,News and Other Emails?"
+                                    }
+                                  },
+                                  "enabled": true,
+                                  "extraSettings": {
+                                    "dataSource": "Static",
+                                    "items": [
+                                      {
+                                        "text": "Yes",
+                                        "value": "{{1}}",
+                                        "checked": "true"
+                                      },
+                                      {
+                                        "text": "No",
+                                        "value": "{{0}}"
+                                      }
+                                    ],
+                                    "storage": "Id",
+                                    "identity": "value",
+                                    "linkTarget": "_blank",
+                                    "display": "Horizontal"
+                                  },
+                                  "labelAlign": "left",
+                                  "tooltip": "Receive Equator Offers,News and Other Emails?",
+                                  "value": "{{receiveEqOffersNewsOtherEmailIndicator}}",
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "isRequired": false,
+                                  "label": "Receive Equator Offers,News and Other Emails?",
+                                  "id": "radiobuttons2",
+                                  "col": 9
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "radio",
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "items": [
+                                          {
+                                            "text": "HTML",
+                                            "value": "html",
+                                            "checked": "true"
+                                          },
+                                          {
+                                            "text": "Text",
+                                            "value": "text"
+                                          }
+                                        ]
+                                      },
+                                      "tooltip": "Email Format",
+                                      "label": "Email Format"
+                                    }
+                                  },
+                                  "enabled": true,
+                                  "extraSettings": {
+                                    "dataSource": "Static",
+                                    "items": [
+                                      {
+                                        "text": "HTML",
+                                        "value": "html",
+                                        "checked": "true"
+                                      },
+                                      {
+                                        "text": "Text",
+                                        "value": "text"
+                                      }
+                                    ],
+                                    "storage": "Id",
+                                    "identity": "value",
+                                    "linkTarget": "_blank",
+                                    "display": "Horizontal"
+                                  },
+                                  "labelAlign": "top",
+                                  "tooltip": "Email Format",
+                                  "value": "{{emailFormatType}}",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "isRequired": false,
+                                  "label": "Email Format",
+                                  "id": "radiobuttons4",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "radio",
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "items": [
+                                          {
+                                            "text": "Yes",
+                                            "value": "{{1}}",
+                                            "checked": "true"
+                                          },
+                                          {
+                                            "text": "No",
+                                            "value": "{{0}}"
+                                          }
+                                        ]
+                                      },
+                                      "tooltip": "Out of Office",
+                                      "label": "Out of Office:"
+                                    }
+                                  },
+                                  "enabled": true,
+                                  "extraSettings": {
+                                    "dataSource": "Static",
+                                    "items": [
+                                      {
+                                        "text": "Yes",
+                                        "value": "{{1}}",
+                                        "checked": "true"
+                                      },
+                                      {
+                                        "text": "No",
+                                        "value": "{{0}}"
+                                      }
+                                    ],
+                                    "storage": "Id",
+                                    "identity": "value",
+                                    "linkTarget": "_blank",
+                                    "display": "Horizontal"
+                                  },
+                                  "labelAlign": "top",
+                                  "tooltip": "Out of Office",
+                                  "value": "{{isOutOfOfficeIndicator}}",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "isRequired": false,
+                                  "label": "Out of Office:",
+                                  "id": "radiobuttons5",
+                                  "col": 2
+                                },
+                                {
+                                  "type": "radio",
+                                  "placeholder": "Email Field",
+                                  "i18n": {
+                                    "en_us": {
+                                      "placeholder": "Email Field",
+                                      "extraSettings": {
+                                        "items": [
+                                          {
+                                            "text": "Yes",
+                                            "value": "{{1}}",
+                                            "checked": "true"
+                                          },
+                                          {
+                                            "text": "No",
+                                            "value": "{{0}}"
+                                          }
+                                        ]
+                                      },
+                                      "tooltip": "Emails?",
+                                      "label": "Emails?"
+                                    }
+                                  },
+                                  "enabled": true,
+                                  "extraSettings": {
+                                    "dataSource": "Static",
+                                    "items": [
+                                      {
+                                        "text": "Yes",
+                                        "value": "{{1}}",
+                                        "checked": "true"
+                                      },
+                                      {
+                                        "text": "No",
+                                        "value": "{{0}}"
+                                      }
+                                    ],
+                                    "storage": "Id",
+                                    "identity": "value",
+                                    "linkTarget": "_blank",
+                                    "display": "Horizontal"
+                                  },
+                                  "labelAlign": "top",
+                                  "tooltip": "Emails?",
+                                  "value": "{{receiveBposIndicator}}",
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "isRequired": false,
+                                  "label": "Emails?",
+                                  "id": "radiobuttons8",
+                                  "col": 4
+                                },
+                                {
+                                  "type": "text",
+                                  "extraSettings": {},
+                                  "i18n": {
+                                    "en_us": {
+                                      "tooltip": "CC Email",
+                                      "label": "CC Email:"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "tooltip": "CC Email",
+                                  "value": "{{ccEmail}}",
+                                  "size": 5,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "label": "CC Email:",
+                                  "id": "text2",
+                                  "col": 7
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "textarea",
+                                  "extraSettings": {},
+                                  "i18n": {
+                                    "en_us": {
+                                      "placeholder": "Signature",
+                                      "tooltip": "Signature",
+                                      "label": "Signature:"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "placeholder": "Signature",
+                                  "labelAlign": "top",
+                                  "tooltip": "Signature",
+                                  "value": "{{signature}}",
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "label": "Signature:",
+                                  "id": "text-area1",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "textarea",
+                                  "extraSettings": {},
+                                  "i18n": {
+                                    "en_us": {
+                                      "placeholder": "Message",
+                                      "tooltip": "Message",
+                                      "label": "Message:"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "placeholder": "Message",
+                                  "labelAlign": "top",
+                                  "tooltip": "Message",
+                                  "value": "{{out_of_office_Message}}",
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "label": "Message:",
+                                  "id": "text-area2",
+                                  "col": 6
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "id": "sub-form3",
+          "col": 0
+        }
+      ]
+    }
+  ]
+}

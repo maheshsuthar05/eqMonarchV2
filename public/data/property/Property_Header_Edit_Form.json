@@ -1,0 +1,1048 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 25 },
+              "lowerRight": { "x": 984, "y": 369 }
+            },
+            "stencilSuperIds": ["Tabs"],
+            "stencilId": "cloud-tabs",
+            "customStencilId": null
+          },
+          "type": "tabs",
+          "labelAlign": "top",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "tabs2",
+          "extraSettings": {
+            "tabsorder": ["tab-panel3", "tab-panel4"],
+            "activetab": "tab-panel3",
+            "showBorder": false,
+            "sections": [
+              {
+                "designInfo": {
+                  "bounds": {
+                    "upperLeft": { "x": 25, "y": 25 },
+                    "lowerRight": { "x": 944, "y": 465 }
+                  },
+                  "stencilSuperIds": ["SubSlotPanel"],
+                  "stencilId": "cloud-tab-panel",
+                  "customStencilId": null
+                },
+                "type": "panel",
+                "label": "Default",
+                "i18n": { "en_us": { "label": "Default" } },
+                "labelAlign": "top",
+                "size": 12,
+                "ignore": false,
+                "visible": true,
+                "enabled": true,
+                "isRequired": false,
+                "id": "tab-panel3",
+                "extraSettings": {
+                  "serverValidationMethod": "GET",
+                  "layoutDefinition": {
+                    "rows": [
+                      {
+                        "cols": [
+                          {
+                            "designInfo": {
+                              "bounds": {
+                                "upperLeft": { "x": 15, "y": 25 },
+                                "lowerRight": { "x": 907, "y": 415 }
+                              },
+                              "stencilSuperIds": ["SubSlotPanel"],
+                              "stencilId": "cloud-sub-panel",
+                              "customStencilId": null
+                            },
+                            "type": "panel",
+                            "labelAlign": "top",
+                            "size": 12,
+                            "ignore": false,
+                            "visible": true,
+                            "enabled": true,
+                            "isRequired": false,
+                            "id": "sub-panel11",
+                            "extraSettings": {
+                              "collapsible": false,
+                              "collapsed": false,
+                              "showBorder": false,
+                              "saveButtonVisible": true,
+                              "saveButtonEnabled": true,
+                              "cancelButtonVisible": true,
+                              "cancelButtonEnabled": true,
+                              "layoutDefinition": {
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "designInfo": {
+                                          "bounds": {
+                                            "upperLeft": { "x": 15, "y": 25 },
+                                            "lowerRight": { "x": 219, "y": 73 }
+                                          },
+                                          "stencilSuperIds": [
+                                            "base-text",
+                                            "Component"
+                                          ],
+                                          "stencilId": "cloud-text",
+                                          "customStencilId": null
+                                        },
+                                        "type": "text",
+                                        "placeholder": "Loan number",
+                                        "i18n": {
+                                          "en_us": {
+                                            "placeholder": "Loan number",
+                                            "label": "Loan number"
+                                          }
+                                        },
+                                        "labelAlign": "top",
+                                        "value": "{{loan.loanNumber}}",
+                                        "size": 3,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "isRequired": false,
+                                        "label": "Loan number",
+                                        "id": "text2",
+                                        "extraSettings": {}
+                                      },
+                                      {
+                                        "designInfo": {
+                                          "bounds": {
+                                            "upperLeft": { "x": 234, "y": 25 },
+                                            "lowerRight": { "x": 438, "y": 73 }
+                                          },
+                                          "stencilSuperIds": [
+                                            "base-text",
+                                            "Component"
+                                          ],
+                                          "stencilId": "cloud-text",
+                                          "customStencilId": null
+                                        },
+                                        "type": "text",
+                                        "labelAlign": "top",
+                                        "value": "{{propertyREO.division}}",
+                                        "defaultValue": "CLMS",
+                                        "size": 3,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "isRequired": false,
+                                        "label": "Division",
+                                        "i18n": {
+                                          "en_us": { "label": "Division" }
+                                        },
+                                        "id": "text3",
+                                        "extraSettings": {}
+                                      },
+                                      {
+                                        "designInfo": {
+                                          "bounds": {
+                                            "upperLeft": { "x": 453, "y": 25 },
+                                            "lowerRight": { "x": 658, "y": 73 }
+                                          },
+                                          "stencilSuperIds": [
+                                            "base-text",
+                                            "Component"
+                                          ],
+                                          "stencilId": "cloud-text",
+                                          "customStencilId": null
+                                        },
+                                        "type": "text",
+                                        "labelAlign": "top",
+                                        "value": "{{propertyAddressesObj.addressLineText}}",
+                                        "size": 3,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "isRequired": false,
+                                        "label": "Address",
+                                        "i18n": {
+                                          "en_us": { "label": "Address" }
+                                        },
+                                        "id": "text4",
+                                        "extraSettings": {}
+                                      },
+                                      {
+                                        "designInfo": {
+                                          "bounds": {
+                                            "upperLeft": { "x": 673, "y": 25 },
+                                            "lowerRight": { "x": 877, "y": 73 }
+                                          },
+                                          "stencilSuperIds": [
+                                            "base-text",
+                                            "Component"
+                                          ],
+                                          "stencilId": "cloud-text",
+                                          "customStencilId": null
+                                        },
+                                        "type": "text",
+                                        "labelAlign": "top",
+                                        "value": "{{marketingplan.strategyType}}",
+                                        "size": 3,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "isRequired": false,
+                                        "label": "Strategy",
+                                        "i18n": {
+                                          "en_us": { "label": "Strategy" }
+                                        },
+                                        "id": "text13",
+                                        "extraSettings": {}
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "cols": [
+                                      {
+                                        "designInfo": {
+                                          "bounds": {
+                                            "upperLeft": { "x": 15, "y": 98 },
+                                            "lowerRight": { "x": 219, "y": 146 }
+                                          },
+                                          "stencilSuperIds": [
+                                            "base-text",
+                                            "Component"
+                                          ],
+                                          "stencilId": "cloud-text",
+                                          "customStencilId": null
+                                        },
+                                        "type": "text",
+                                        "labelAlign": "top",
+                                        "value": "{{property.listDate}}",
+                                        "defaultValue": "Not Assigned",
+                                        "size": 3,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "isRequired": false,
+                                        "label": "List DT",
+                                        "i18n": {
+                                          "en_us": { "label": "List DT" }
+                                        },
+                                        "id": "text9",
+                                        "extraSettings": {}
+                                      },
+                                      {
+                                        "designInfo": {
+                                          "bounds": {
+                                            "upperLeft": { "x": 234, "y": 98 },
+                                            "lowerRight": { "x": 438, "y": 146 }
+                                          },
+                                          "stencilSuperIds": [
+                                            "base-text",
+                                            "Component"
+                                          ],
+                                          "stencilId": "cloud-text",
+                                          "customStencilId": null
+                                        },
+                                        "type": "text",
+                                        "labelAlign": "top",
+                                        "value": "{{propertyREOlistingAgreement.legalEntityName}}",
+                                        "size": 3,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "isRequired": false,
+                                        "label": "List Agree Exp",
+                                        "i18n": {
+                                          "en_us": { "label": "List Agree Exp" }
+                                        },
+                                        "id": "text10",
+                                        "extraSettings": {}
+                                      },
+                                      {
+                                        "designInfo": {
+                                          "bounds": {
+                                            "upperLeft": { "x": 453, "y": 98 },
+                                            "lowerRight": { "x": 658, "y": 146 }
+                                          },
+                                          "stencilSuperIds": [
+                                            "base-text",
+                                            "Component"
+                                          ],
+                                          "stencilId": "cloud-text",
+                                          "customStencilId": null
+                                        },
+                                        "type": "text",
+                                        "labelAlign": "top",
+                                        "value": "{{foreclosure.foreclosureSaleActualDate}}",
+                                        "defaultValue": "10/05/20",
+                                        "size": 3,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "isRequired": false,
+                                        "label": "FC Date",
+                                        "i18n": {
+                                          "en_us": { "label": "FC Date" }
+                                        },
+                                        "id": "text11",
+                                        "extraSettings": {}
+                                      },
+                                      {
+                                        "designInfo": {
+                                          "bounds": {
+                                            "upperLeft": { "x": 673, "y": 98 },
+                                            "lowerRight": { "x": 877, "y": 146 }
+                                          },
+                                          "stencilSuperIds": [
+                                            "base-text",
+                                            "Component"
+                                          ],
+                                          "stencilId": "cloud-text",
+                                          "customStencilId": null
+                                        },
+                                        "type": "text",
+                                        "labelAlign": "top",
+                                        "value": "{{property.propertyPriorOwnerFullName}}",
+                                        "size": 3,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "isRequired": false,
+                                        "label": "Prior",
+                                        "i18n": {
+                                          "en_us": { "label": "Prior" }
+                                        },
+                                        "id": "text5",
+                                        "extraSettings": {}
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "cols": [
+                                      {
+                                        "designInfo": {
+                                          "bounds": {
+                                            "upperLeft": { "x": 15, "y": 171 },
+                                            "lowerRight": { "x": 219, "y": 219 }
+                                          },
+                                          "stencilSuperIds": [
+                                            "base-text",
+                                            "Component"
+                                          ],
+                                          "stencilId": "cloud-text",
+                                          "customStencilId": null
+                                        },
+                                        "type": "text",
+                                        "labelAlign": "top",
+                                        "value": "{{listingInformation.currentlistPriceAmount}}",
+                                        "defaultValue": "$200,000.00",
+                                        "size": 3,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "isRequired": false,
+                                        "label": "List Price",
+                                        "i18n": {
+                                          "en_us": { "label": "List Price" }
+                                        },
+                                        "id": "text18",
+                                        "extraSettings": {}
+                                      },
+                                      {
+                                        "designInfo": {
+                                          "bounds": {
+                                            "upperLeft": { "x": 234, "y": 171 },
+                                            "lowerRight": { "x": 438, "y": 219 }
+                                          },
+                                          "stencilSuperIds": [
+                                            "base-text",
+                                            "Component"
+                                          ],
+                                          "stencilId": "cloud-text",
+                                          "customStencilId": null
+                                        },
+                                        "type": "text",
+                                        "labelAlign": "top",
+                                        "value": "{{marketingPlan.asIsFairMarketValueAmount}}",
+                                        "size": 3,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "isRequired": false,
+                                        "label": "FMV",
+                                        "i18n": { "en_us": { "label": "FMV" } },
+                                        "id": "text19",
+                                        "extraSettings": {}
+                                      },
+                                      {
+                                        "designInfo": {
+                                          "bounds": {
+                                            "upperLeft": { "x": 453, "y": 171 },
+                                            "lowerRight": { "x": 658, "y": 219 }
+                                          },
+                                          "stencilSuperIds": [
+                                            "base-text",
+                                            "Component"
+                                          ],
+                                          "stencilId": "cloud-text",
+                                          "customStencilId": null
+                                        },
+                                        "type": "text",
+                                        "labelAlign": "top",
+                                        "value": "{{foreclosure.foreclosureSaleMarketValueAmount}}",
+                                        "defaultValue": "$0.00",
+                                        "size": 3,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "isRequired": false,
+                                        "label": "FC Value",
+                                        "i18n": {
+                                          "en_us": { "label": "FC Value" }
+                                        },
+                                        "id": "text20",
+                                        "extraSettings": {}
+                                      },
+                                      {
+                                        "designInfo": {
+                                          "bounds": {
+                                            "upperLeft": { "x": 673, "y": 171 },
+                                            "lowerRight": { "x": 877, "y": 219 }
+                                          },
+                                          "stencilSuperIds": [
+                                            "base-text",
+                                            "Component"
+                                          ],
+                                          "stencilId": "cloud-text",
+                                          "customStencilId": null
+                                        },
+                                        "type": "text",
+                                        "labelAlign": "top",
+                                        "value": "{{assetManager.individualFullName}}",
+                                        "defaultValue": "J. Gabbert",
+                                        "size": 3,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "isRequired": false,
+                                        "label": "Asset Manager",
+                                        "i18n": {
+                                          "en_us": { "label": "Asset Manager" }
+                                        },
+                                        "id": "text21",
+                                        "extraSettings": {}
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "cols": [
+                                      {
+                                        "designInfo": {
+                                          "bounds": {
+                                            "upperLeft": { "x": 15, "y": 244 },
+                                            "lowerRight": { "x": 219, "y": 292 }
+                                          },
+                                          "stencilSuperIds": [
+                                            "base-text",
+                                            "Component"
+                                          ],
+                                          "stencilId": "cloud-text",
+                                          "customStencilId": null
+                                        },
+                                        "type": "text",
+                                        "labelAlign": "top",
+                                        "value": "{{propertyAddressesObj.countyName}}",
+                                        "size": 3,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "isRequired": false,
+                                        "label": "County",
+                                        "i18n": {
+                                          "en_us": { "label": "County" }
+                                        },
+                                        "id": "text12",
+                                        "extraSettings": {}
+                                      },
+                                      {
+                                        "designInfo": {
+                                          "bounds": {
+                                            "upperLeft": { "x": 234, "y": 244 },
+                                            "lowerRight": { "x": 438, "y": 292 }
+                                          },
+                                          "stencilSuperIds": [
+                                            "base-text",
+                                            "Component"
+                                          ],
+                                          "stencilId": "cloud-text",
+                                          "customStencilId": null
+                                        },
+                                        "type": "text",
+                                        "labelAlign": "top",
+                                        "value": "{{loan.miCertificationStatusType}}",
+                                        "defaultValue": "YES-PAID",
+                                        "size": 3,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "isRequired": false,
+                                        "label": "MI/PAID",
+                                        "i18n": {
+                                          "en_us": { "label": "MI/PAID" }
+                                        },
+                                        "id": "text6",
+                                        "extraSettings": {}
+                                      },
+                                      {
+                                        "designInfo": {
+                                          "bounds": {
+                                            "upperLeft": { "x": 453, "y": 244 },
+                                            "lowerRight": { "x": 658, "y": 292 }
+                                          },
+                                          "stencilSuperIds": [
+                                            "base-text",
+                                            "Component"
+                                          ],
+                                          "stencilId": "cloud-text",
+                                          "customStencilId": null
+                                        },
+                                        "type": "text",
+                                        "labelAlign": "top",
+                                        "value": "{{property.propertyStatus}}",
+                                        "size": 3,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "isRequired": false,
+                                        "label": "Status",
+                                        "i18n": {
+                                          "en_us": { "label": "Status" }
+                                        },
+                                        "id": "text8",
+                                        "extraSettings": {}
+                                      },
+                                      {
+                                        "designInfo": {
+                                          "bounds": {
+                                            "upperLeft": { "x": 673, "y": 244 },
+                                            "lowerRight": { "x": 877, "y": 292 }
+                                          },
+                                          "stencilSuperIds": [
+                                            "base-text",
+                                            "Component"
+                                          ],
+                                          "stencilId": "cloud-text",
+                                          "customStencilId": null
+                                        },
+                                        "type": "text",
+                                        "labelAlign": "top",
+                                        "value": "{{agent.individualFullName}}",
+                                        "defaultValue": "RHSS Assistant",
+                                        "size": 3,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "isRequired": false,
+                                        "label": "Agent",
+                                        "i18n": {
+                                          "en_us": { "label": "Agent" }
+                                        },
+                                        "id": "text22",
+                                        "extraSettings": {}
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "cols": [
+                                      {
+                                        "designInfo": {
+                                          "bounds": {
+                                            "upperLeft": { "x": 15, "y": 317 },
+                                            "lowerRight": { "x": 219, "y": 365 }
+                                          },
+                                          "stencilSuperIds": [
+                                            "base-text",
+                                            "Component"
+                                          ],
+                                          "stencilId": "cloud-text",
+                                          "customStencilId": null
+                                        },
+                                        "type": "text",
+                                        "labelAlign": "top",
+                                        "value": "{{agentGrade}}",
+                                        "size": 3,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "isRequired": false,
+                                        "label": "Agent Grade",
+                                        "i18n": {
+                                          "en_us": { "label": "Agent Grade" }
+                                        },
+                                        "id": "text23",
+                                        "extraSettings": {}
+                                      },
+                                      {
+                                        "designInfo": {
+                                          "bounds": {
+                                            "upperLeft": { "x": 234, "y": 317 },
+                                            "lowerRight": { "x": 438, "y": 365 }
+                                          },
+                                          "stencilSuperIds": [
+                                            "base-text",
+                                            "Component"
+                                          ],
+                                          "stencilId": "cloud-text",
+                                          "customStencilId": null
+                                        },
+                                        "type": "text",
+                                        "labelAlign": "top",
+                                        "value": "{{loan.activeLitigationIndicator}}",
+                                        "defaultValue": "None",
+                                        "size": 3,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "isRequired": false,
+                                        "label": "Litigation",
+                                        "i18n": {
+                                          "en_us": { "label": "Litigation" }
+                                        },
+                                        "id": "text15",
+                                        "extraSettings": {}
+                                      },
+                                      {
+                                        "designInfo": {
+                                          "bounds": {
+                                            "upperLeft": { "x": 0, "y": 0 },
+                                            "lowerRight": { "x": 0, "y": 0 }
+                                          },
+                                          "stencilSuperIds": [],
+                                          "stencilId": null,
+                                          "customStencilId": null
+                                        },
+                                        "type": "",
+                                        "size": 6
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "designInfo": {
+                  "bounds": {
+                    "upperLeft": { "x": 25, "y": 25 },
+                    "lowerRight": { "x": 944, "y": 319 }
+                  },
+                  "stencilSuperIds": ["SubSlotPanel"],
+                  "stencilId": "cloud-tab-panel",
+                  "customStencilId": null
+                },
+                "type": "panel",
+                "label": "Extended Fields",
+                "i18n": { "en_us": { "label": "Extended Fields" } },
+                "labelAlign": "top",
+                "size": 12,
+                "ignore": false,
+                "visible": true,
+                "enabled": true,
+                "isRequired": false,
+                "id": "tab-panel4",
+                "extraSettings": {
+                  "serverValidationMethod": "GET",
+                  "layoutDefinition": {
+                    "rows": [
+                      {
+                        "cols": [
+                          {
+                            "designInfo": {
+                              "bounds": {
+                                "upperLeft": { "x": 15, "y": 25 },
+                                "lowerRight": { "x": 907, "y": 269 }
+                              },
+                              "stencilSuperIds": ["SubSlotPanel"],
+                              "stencilId": "cloud-sub-panel",
+                              "customStencilId": null
+                            },
+                            "type": "panel",
+                            "labelAlign": "top",
+                            "size": 12,
+                            "ignore": false,
+                            "visible": true,
+                            "enabled": true,
+                            "isRequired": false,
+                            "id": "sub-panel21",
+                            "extraSettings": {
+                              "collapsible": false,
+                              "collapsed": false,
+                              "showBorder": false,
+                              "saveButtonVisible": true,
+                              "saveButtonEnabled": true,
+                              "cancelButtonVisible": true,
+                              "cancelButtonEnabled": true,
+                              "layoutDefinition": {
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "designInfo": {
+                                          "bounds": {
+                                            "upperLeft": { "x": 15, "y": 25 },
+                                            "lowerRight": { "x": 219, "y": 73 }
+                                          },
+                                          "stencilSuperIds": [
+                                            "base-text",
+                                            "Component"
+                                          ],
+                                          "stencilId": "cloud-text",
+                                          "customStencilId": null
+                                        },
+                                        "type": "text",
+                                        "labelAlign": "top",
+                                        "value": "{{property.propertyCurrentOccupancyType}}",
+                                        "size": 3,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "enabled": true,
+                                        "isRequired": false,
+                                        "label": "Occupancy",
+                                        "i18n": {
+                                          "en_us": { "label": "Occupancy" }
+                                        },
+                                        "id": "text46",
+                                        "extraSettings": {}
+                                      },
+                                      {
+                                        "designInfo": {
+                                          "bounds": {
+                                            "upperLeft": { "x": 234, "y": 25 },
+                                            "lowerRight": { "x": 438, "y": 73 }
+                                          },
+                                          "stencilSuperIds": [
+                                            "base-text",
+                                            "Component"
+                                          ],
+                                          "stencilId": "cloud-text",
+                                          "customStencilId": null
+                                        },
+                                        "type": "text",
+                                        "labelAlign": "top",
+                                        "value": "{{propertyclosingsale.closingDate}}",
+                                        "defaultValue": "None",
+                                        "size": 3,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "enabled": true,
+                                        "isRequired": false,
+                                        "label": "Close DT",
+                                        "i18n": {
+                                          "en_us": { "label": "Close DT" }
+                                        },
+                                        "id": "text47",
+                                        "extraSettings": {}
+                                      },
+                                      {
+                                        "designInfo": {
+                                          "bounds": {
+                                            "upperLeft": { "x": 453, "y": 25 },
+                                            "lowerRight": { "x": 658, "y": 73 }
+                                          },
+                                          "stencilSuperIds": [
+                                            "base-text",
+                                            "Component"
+                                          ],
+                                          "stencilId": "cloud-text",
+                                          "customStencilId": null
+                                        },
+                                        "type": "text",
+                                        "labelAlign": "top",
+                                        "value": "{{property.listingType}}",
+                                        "size": 3,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "enabled": true,
+                                        "isRequired": false,
+                                        "label": "Listing Type",
+                                        "i18n": {
+                                          "en_us": { "label": "Listing Type" }
+                                        },
+                                        "id": "text48",
+                                        "extraSettings": {}
+                                      },
+                                      {
+                                        "designInfo": {
+                                          "bounds": {
+                                            "upperLeft": { "x": 673, "y": 25 },
+                                            "lowerRight": { "x": 877, "y": 73 }
+                                          },
+                                          "stencilSuperIds": [
+                                            "base-text",
+                                            "Component"
+                                          ],
+                                          "stencilId": "cloud-text",
+                                          "customStencilId": null
+                                        },
+                                        "type": "text",
+                                        "labelAlign": "top",
+                                        "value": "{{PropertyListingAuctionSaleDetail.auctionStatusType}}",
+                                        "size": 3,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "enabled": true,
+                                        "isRequired": false,
+                                        "label": "Auction Status",
+                                        "i18n": {
+                                          "en_us": { "label": "Auction Status" }
+                                        },
+                                        "id": "text50",
+                                        "extraSettings": {}
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "cols": [
+                                      {
+                                        "designInfo": {
+                                          "bounds": {
+                                            "upperLeft": { "x": 15, "y": 98 },
+                                            "lowerRight": { "x": 219, "y": 146 }
+                                          },
+                                          "stencilSuperIds": [
+                                            "base-text",
+                                            "Component"
+                                          ],
+                                          "stencilId": "cloud-text",
+                                          "customStencilId": null
+                                        },
+                                        "type": "text",
+                                        "labelAlign": "top",
+                                        "value": "{{reoredemption.redemptionPeriodExpirationDate}}",
+                                        "size": 3,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "enabled": true,
+                                        "isRequired": false,
+                                        "label": "Red Exp DT",
+                                        "i18n": {
+                                          "en_us": { "label": "Red Exp DT" }
+                                        },
+                                        "id": "text58",
+                                        "extraSettings": {}
+                                      },
+                                      {
+                                        "designInfo": {
+                                          "bounds": {
+                                            "upperLeft": { "x": 234, "y": 98 },
+                                            "lowerRight": { "x": 438, "y": 146 }
+                                          },
+                                          "stencilSuperIds": [
+                                            "base-text",
+                                            "Component"
+                                          ],
+                                          "stencilId": "cloud-text",
+                                          "customStencilId": null
+                                        },
+                                        "type": "text",
+                                        "labelAlign": "top",
+                                        "value": "{{title}}",
+                                        "size": 3,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "enabled": true,
+                                        "isRequired": false,
+                                        "label": "Title",
+                                        "i18n": {
+                                          "en_us": { "label": "Title" }
+                                        },
+                                        "id": "text63",
+                                        "extraSettings": {}
+                                      },
+                                      {
+                                        "designInfo": {
+                                          "bounds": {
+                                            "upperLeft": { "x": 453, "y": 98 },
+                                            "lowerRight": { "x": 658, "y": 146 }
+                                          },
+                                          "stencilSuperIds": [
+                                            "base-text",
+                                            "Component"
+                                          ],
+                                          "stencilId": "cloud-text",
+                                          "customStencilId": null
+                                        },
+                                        "type": "text",
+                                        "labelAlign": "top",
+                                        "value": "{{PropertyListingAuctionSaleDetail.reservePriceAmount}}",
+                                        "size": 3,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "enabled": true,
+                                        "isRequired": false,
+                                        "label": "Reserve Price",
+                                        "i18n": {
+                                          "en_us": { "label": "Reserve Price" }
+                                        },
+                                        "id": "text60",
+                                        "extraSettings": {}
+                                      },
+                                      {
+                                        "designInfo": {
+                                          "bounds": {
+                                            "upperLeft": { "x": 673, "y": 98 },
+                                            "lowerRight": { "x": 877, "y": 146 }
+                                          },
+                                          "stencilSuperIds": [
+                                            "base-text",
+                                            "Component"
+                                          ],
+                                          "stencilId": "cloud-text",
+                                          "customStencilId": null
+                                        },
+                                        "type": "text",
+                                        "labelAlign": "top",
+                                        "value": "{{PropertyListingAuctionSaleDetail.currentAuctionNumber}}",
+                                        "size": 3,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "enabled": true,
+                                        "isRequired": false,
+                                        "label": "Auction Cycle",
+                                        "i18n": {
+                                          "en_us": { "label": "Auction Cycle" }
+                                        },
+                                        "id": "text51",
+                                        "extraSettings": {}
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "cols": [
+                                      {
+                                        "designInfo": {
+                                          "bounds": {
+                                            "upperLeft": { "x": 15, "y": 171 },
+                                            "lowerRight": { "x": 219, "y": 219 }
+                                          },
+                                          "stencilSuperIds": [
+                                            "base-text",
+                                            "Component"
+                                          ],
+                                          "stencilId": "cloud-text",
+                                          "customStencilId": null
+                                        },
+                                        "type": "text",
+                                        "labelAlign": "top",
+                                        "value": "{{investorLoanInformationsObj.investorGroup}}",
+                                        "size": 3,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "enabled": true,
+                                        "isRequired": false,
+                                        "label": "Investor Group",
+                                        "i18n": {
+                                          "en_us": { "label": "Investor Group" }
+                                        },
+                                        "id": "text62",
+                                        "extraSettings": {}
+                                      },
+                                      {
+                                        "designInfo": {
+                                          "bounds": {
+                                            "upperLeft": { "x": 234, "y": 171 },
+                                            "lowerRight": { "x": 438, "y": 219 }
+                                          },
+                                          "stencilSuperIds": [
+                                            "base-text",
+                                            "Component"
+                                          ],
+                                          "stencilId": "cloud-text",
+                                          "customStencilId": null
+                                        },
+                                        "type": "text",
+                                        "labelAlign": "top",
+                                        "value": "{{investorLoanInformationsObj.investorName}}",
+                                        "size": 3,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "enabled": true,
+                                        "isRequired": false,
+                                        "label": "Inv Name (ID)",
+                                        "i18n": {
+                                          "en_us": { "label": "Inv Name (ID)" }
+                                        },
+                                        "id": "text59",
+                                        "extraSettings": {}
+                                      },
+                                      {
+                                        "designInfo": {
+                                          "bounds": {
+                                            "upperLeft": { "x": 453, "y": 171 },
+                                            "lowerRight": { "x": 658, "y": 219 }
+                                          },
+                                          "stencilSuperIds": [
+                                            "base-text",
+                                            "Component"
+                                          ],
+                                          "stencilId": "cloud-text",
+                                          "customStencilId": null
+                                        },
+                                        "type": "text",
+                                        "labelAlign": "top",
+                                        "value": "{{PropertyListingAuctionSaleDetail.numberOfViewsCount}}",
+                                        "size": 3,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "enabled": true,
+                                        "isRequired": false,
+                                        "label": "# of Views",
+                                        "i18n": {
+                                          "en_us": { "label": "# of Views" }
+                                        },
+                                        "id": "text49",
+                                        "extraSettings": {}
+                                      },
+                                      {
+                                        "designInfo": {
+                                          "bounds": {
+                                            "upperLeft": { "x": 673, "y": 171 },
+                                            "lowerRight": { "x": 877, "y": 219 }
+                                          },
+                                          "stencilSuperIds": [
+                                            "base-text",
+                                            "Component"
+                                          ],
+                                          "stencilId": "cloud-text",
+                                          "customStencilId": null
+                                        },
+                                        "type": "text",
+                                        "labelAlign": "top",
+                                        "value": "{{PropertyListingAuctionSaleDetail.numberOfWatchesCount}}",
+                                        "size": 3,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "enabled": true,
+                                        "isRequired": false,
+                                        "label": "# of Watches",
+                                        "i18n": {
+                                          "en_us": { "label": "# of Watches" }
+                                        },
+                                        "id": "text61",
+                                        "extraSettings": {}
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "key": "propertyHeaderEditForm",
+    "name": "Property Header Edit Form",
+    "description": "",
+    "version": "6",
+    "type": "2"
+  }
+}

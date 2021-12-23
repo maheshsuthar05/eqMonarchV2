@@ -1,0 +1,19 @@
+.flw__script-button__icon,
+.flw__rest-button__icon {
+  vertical-align: middle;
+  color: $flw-forms-color;
+  color: var(--flw-forms-color, $flw-forms-color);
+  max-height: 2em;
+}
+
+.flw__script-button__icon--left,
+.flw__rest-button__icon--left {
+  margin-right: $flw-gutter;
+  margin-right: var(--flw-gutter, $flw-gutter);
+}
+
+.flw__script-button__icon--right,
+.flw__rest-button__icon--right {
+  margin-left: $flw-gutter;
+  margin-left: var(--flw-gutter, $flw-gutter);
+}

@@ -1,0 +1,1 @@
+export const PAGE_REDIRECTION = 'PAGE_REDIRECTION';

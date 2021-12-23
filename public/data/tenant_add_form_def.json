@@ -1,0 +1,604 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 25 },
+              "lowerRight": { "x": 493, "y": 561 }
+            },
+            "stencilSuperIds": ["SubSlotPanel"],
+            "stencilId": "cloud-sub-panel",
+            "customStencilId": null
+          },
+          "type": "panel",
+          "labelAlign": "top",
+          "size": 6,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "sub-panel1",
+          "extraSettings": {
+            "collapsible": false,
+            "collapsed": false,
+            "showBorder": false,
+            "saveButtonVisible": true,
+            "saveButtonEnabled": true,
+            "cancelButtonVisible": true,
+            "cancelButtonEnabled": true,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 25 },
+                          "lowerRight": { "x": 463, "y": 75 }
+                        },
+                        "stencilSuperIds": ["HtmlComponent"],
+                        "stencilId": "cloud-html-component",
+                        "customStencilId": null
+                      },
+                      "type": "htmlComponent",
+                      "labelAlign": "top",
+                      "value": "<p><span style=\"font-size:14px\"><strong>Tenant</strong></span></p>",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "html-component1",
+                      "i18n": {
+                        "en_us": {
+                          "value": "<p><span style=\"font-size:14px\"><strong>Tenant</strong></span></p>"
+                        }
+                      },
+                      "extraSettings": {
+                        "showBorder": false,
+                        "params": [],
+                        "method": "GET"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 98 },
+                          "lowerRight": { "x": 463, "y": 146 }
+                        },
+                        "stencilSuperIds": ["base-text", "Component"],
+                        "stencilId": "cloud-text",
+                        "customStencilId": null
+                      },
+                      "type": "text",
+                      "placeholder": "Tenant Code",
+                      "i18n": {
+                        "en_us": {
+                          "placeholder": "Tenant Code",
+                          "tooltip": "Tenant Code",
+                          "label": "Tenant Code",
+                          "validationRegExpErrorMessage": "Please enter the valid tenant code"
+                        }
+                      },
+                      "labelAlign": "top",
+                      "tooltip": "Tenant Code",
+                      "value": "{{tenantCode}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": true,
+                      "label": "Tenant Code",
+                      "id": "text1",
+                      "validationRegExp": "[-\\w\\s]+$",
+                      "validationRegExpErrorMessage": "Please enter the valid tenant code",
+                      "extraSettings": {}
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 171 },
+                          "lowerRight": { "x": 463, "y": 219 }
+                        },
+                        "stencilSuperIds": ["base-text", "Component"],
+                        "stencilId": "cloud-text",
+                        "customStencilId": null
+                      },
+                      "type": "text",
+                      "placeholder": "Tenant Name",
+                      "i18n": {
+                        "en_us": {
+                          "placeholder": "Tenant Name",
+                          "tooltip": "Tenant Name",
+                          "label": "Tenant Name",
+                          "validationRegExpErrorMessage": "Please enter the valid tenant name"
+                        }
+                      },
+                      "labelAlign": "top",
+                      "tooltip": "Tenant Name",
+                      "value": "{{tenantName}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": true,
+                      "label": "Tenant Name",
+                      "id": "text2",
+                      "validationRegExp": "[-\\w\\s]+$",
+                      "validationRegExpErrorMessage": "Please enter the valid tenant name",
+                      "extraSettings": {}
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 244 },
+                          "lowerRight": { "x": 463, "y": 292 }
+                        },
+                        "stencilSuperIds": ["base-text", "Component"],
+                        "stencilId": "cloud-text",
+                        "customStencilId": null
+                      },
+                      "type": "text",
+                      "placeholder": "Website URL",
+                      "i18n": {
+                        "en_us": {
+                          "placeholder": "Website URL",
+                          "tooltip": "Website URL",
+                          "label": "Website URL",
+                          "validationRegExpErrorMessage": "Please enter the valid URL"
+                        }
+                      },
+                      "labelAlign": "top",
+                      "tooltip": "Website URL",
+                      "value": "{{websiteURL}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "label": "Website URL",
+                      "id": "text4",
+                      "validationRegExp": "^([-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*))$",
+                      "validationRegExpErrorMessage": "Please enter the valid URL",
+                      "extraSettings": {}
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 317 },
+                          "lowerRight": { "x": 463, "y": 365 }
+                        },
+                        "stencilSuperIds": ["base-text", "Component"],
+                        "stencilId": "cloud-text",
+                        "customStencilId": null
+                      },
+                      "type": "text",
+                      "placeholder": "Description",
+                      "i18n": {
+                        "en_us": {
+                          "placeholder": "Description",
+                          "tooltip": "Description",
+                          "label": "Description",
+                          "validationRegExpErrorMessage": "Please enter the valid description"
+                        }
+                      },
+                      "labelAlign": "top",
+                      "tooltip": "Description",
+                      "value": "{{description}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "label": "Description",
+                      "id": "text3",
+                      "validationRegExp": "[-\\w\\s]+$",
+                      "validationRegExpErrorMessage": "Please enter the valid description",
+                      "extraSettings": {}
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 390 },
+                          "lowerRight": { "x": 463, "y": 438 }
+                        },
+                        "stencilSuperIds": ["base-text", "Component"],
+                        "stencilId": "cloud-text",
+                        "customStencilId": null
+                      },
+                      "type": "text",
+                      "placeholder": "Phone Number",
+                      "i18n": {
+                        "en_us": {
+                          "placeholder": "Phone Number",
+                          "tooltip": "Phone Number",
+                          "label": "Phone Number",
+                          "validationMaskErrorMessage": "Please enter the valid phone number"
+                        }
+                      },
+                      "labelAlign": "top",
+                      "tooltip": "Phone Number",
+                      "value": "{{phoneNumber}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "label": "Phone Number",
+                      "id": "text5",
+                      "validationMask": "999-999-9999",
+                      "validationMaskErrorMessage": "Please enter the valid phone number",
+                      "extraSettings": {}
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 463 },
+                          "lowerRight": { "x": 463, "y": 511 }
+                        },
+                        "stencilSuperIds": ["base-text", "Component"],
+                        "stencilId": "cloud-text",
+                        "customStencilId": null
+                      },
+                      "type": "text",
+                      "placeholder": "E-Mail",
+                      "i18n": {
+                        "en_us": {
+                          "placeholder": "E-Mail",
+                          "tooltip": "E-Mail",
+                          "label": "E-Mail",
+                          "validationRegExpErrorMessage": "Please enter the valid email"
+                        }
+                      },
+                      "labelAlign": "top",
+                      "tooltip": "E-Mail",
+                      "value": "{{email}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "label": "E-Mail",
+                      "id": "text6",
+                      "validationRegExp": "^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{1,5})$",
+                      "validationRegExpErrorMessage": "Please enter the valid email",
+                      "extraSettings": {}
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 507, "y": 25 },
+              "lowerRight": { "x": 985, "y": 561 }
+            },
+            "stencilSuperIds": ["SubSlotPanel"],
+            "stencilId": "cloud-sub-panel",
+            "customStencilId": null
+          },
+          "type": "panel",
+          "labelAlign": "top",
+          "size": 6,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "sub-panel2",
+          "extraSettings": {
+            "collapsible": false,
+            "collapsed": false,
+            "showBorder": false,
+            "saveButtonVisible": true,
+            "saveButtonEnabled": true,
+            "cancelButtonVisible": true,
+            "cancelButtonEnabled": true,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 25 },
+                          "lowerRight": { "x": 463, "y": 75 }
+                        },
+                        "stencilSuperIds": ["HtmlComponent"],
+                        "stencilId": "cloud-html-component",
+                        "customStencilId": null
+                      },
+                      "type": "htmlComponent",
+                      "labelAlign": "top",
+                      "value": "<p><span style=\"font-size:14px\"><strong>Address</strong></span></p>",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "html-component2",
+                      "i18n": {
+                        "en_us": {
+                          "value": "<p><span style=\"font-size:14px\"><strong>Address</strong></span></p>"
+                        }
+                      },
+                      "extraSettings": {
+                        "showBorder": false,
+                        "params": [],
+                        "method": "GET"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 98 },
+                          "lowerRight": { "x": 463, "y": 146 }
+                        },
+                        "stencilSuperIds": ["base-text", "Component"],
+                        "stencilId": "cloud-text",
+                        "customStencilId": null
+                      },
+                      "type": "text",
+                      "placeholder": "Address 1",
+                      "i18n": {
+                        "en_us": {
+                          "placeholder": "Address 1",
+                          "tooltip": "Address 1",
+                          "label": "Address 1",
+                          "validationRegExpErrorMessage": "Please enter the valid address"
+                        }
+                      },
+                      "labelAlign": "top",
+                      "tooltip": "Address 1",
+                      "value": "{{address1}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "label": "Address 1",
+                      "id": "text7",
+                      "validationRegExp": "[-\\w\\s]+$",
+                      "validationRegExpErrorMessage": "Please enter the valid address",
+                      "extraSettings": {}
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 171 },
+                          "lowerRight": { "x": 463, "y": 219 }
+                        },
+                        "stencilSuperIds": ["base-text", "Component"],
+                        "stencilId": "cloud-text",
+                        "customStencilId": null
+                      },
+                      "type": "text",
+                      "placeholder": "Address 2",
+                      "i18n": {
+                        "en_us": {
+                          "placeholder": "Address 2",
+                          "tooltip": "Address 2",
+                          "label": "Address 2",
+                          "validationRegExpErrorMessage": "Please enter the valid address"
+                        }
+                      },
+                      "labelAlign": "top",
+                      "tooltip": "Address 2",
+                      "value": "{{address2}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "label": "Address 2",
+                      "id": "text8",
+                      "validationRegExp": "[-\\w\\s]+$",
+                      "validationRegExpErrorMessage": "Please enter the valid address",
+                      "extraSettings": {}
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 244 },
+                          "lowerRight": { "x": 463, "y": 292 }
+                        },
+                        "stencilSuperIds": ["base-text", "Component"],
+                        "stencilId": "cloud-text",
+                        "customStencilId": null
+                      },
+                      "type": "text",
+                      "placeholder": "City",
+                      "i18n": {
+                        "en_us": {
+                          "placeholder": "City",
+                          "tooltip": "City",
+                          "label": "City",
+                          "validationRegExpErrorMessage": "Please enter the valid city"
+                        }
+                      },
+                      "labelAlign": "top",
+                      "tooltip": "City",
+                      "value": "{{city}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "label": "City",
+                      "id": "text9",
+                      "validationRegExp": "[-\\w\\s]+$",
+                      "validationRegExpErrorMessage": "Please enter the valid city",
+                      "extraSettings": {}
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 317 },
+                          "lowerRight": { "x": 463, "y": 365 }
+                        },
+                        "stencilSuperIds": ["base-text", "Component"],
+                        "stencilId": "cloud-text",
+                        "customStencilId": null
+                      },
+                      "type": "text",
+                      "placeholder": "State",
+                      "i18n": {
+                        "en_us": {
+                          "placeholder": "State",
+                          "tooltip": "State",
+                          "label": "State",
+                          "validationRegExpErrorMessage": "Please enter the valid state name"
+                        }
+                      },
+                      "labelAlign": "top",
+                      "tooltip": "State",
+                      "value": "{{stateName}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "label": "State",
+                      "id": "text10",
+                      "validationRegExp": "[-\\w\\s]+$",
+                      "validationRegExpErrorMessage": "Please enter the valid state name",
+                      "extraSettings": {}
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 390 },
+                          "lowerRight": { "x": 463, "y": 438 }
+                        },
+                        "stencilSuperIds": ["base-text", "Component"],
+                        "stencilId": "cloud-text",
+                        "customStencilId": null
+                      },
+                      "type": "text",
+                      "placeholder": "Zip Code",
+                      "i18n": {
+                        "en_us": {
+                          "placeholder": "Zip Code",
+                          "tooltip": "Zip Code",
+                          "label": "Zip Code",
+                          "validationRegExpErrorMessage": "Please enter the valid valid zip code"
+                        }
+                      },
+                      "labelAlign": "top",
+                      "tooltip": "Zip Code",
+                      "value": "{{zipCode}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "label": "Zip Code",
+                      "id": "text11",
+                      "validationRegExp": "^(\\d{5})$",
+                      "validationRegExpErrorMessage": "Please enter the valid valid zip code",
+                      "extraSettings": {}
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 463 },
+                          "lowerRight": { "x": 463, "y": 511 }
+                        },
+                        "stencilSuperIds": ["base-text", "Component"],
+                        "stencilId": "cloud-text",
+                        "customStencilId": null
+                      },
+                      "type": "text",
+                      "placeholder": "Country",
+                      "i18n": {
+                        "en_us": {
+                          "placeholder": "Country",
+                          "tooltip": "Country",
+                          "label": "Country",
+                          "validationRegExpErrorMessage": "Please enter the valid country"
+                        }
+                      },
+                      "labelAlign": "top",
+                      "tooltip": "Country",
+                      "value": "{{country}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "label": "Country",
+                      "id": "text12",
+                      "validationRegExp": "[-\\w\\s]+$",
+                      "validationRegExpErrorMessage": "Please enter the valid country",
+                      "extraSettings": {}
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "key": "tenantUpdateDetails",
+    "name": "tenantUpdateDetails",
+    "description": "",
+    "version": "9",
+    "type": "2",
+    "flowableDesignVersion": 3087
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "type": "dataTable",
+          "i18n": {
+            "en_us": {
+              "extraSettings": {
+                "columns": [
+                  {
+                    "label": "Sender Id",
+                    "id": "SENDER_ID",
+                    "accessor": "SENDER_ID",
+                    "alignment": "center",
+                    "show": true,
+                    "sortable": true
+                  },
+                  {
+                    "label": "Subject",
+                    "id": "MAIN_CONTENT_TYPE",
+                    "accessor": "MAIN_CONTENT_TYPE",
+                    "alignment": "center",
+                    "show": true,
+                    "sortable": true
+                  },
+                  {
+                    "id": "createdDate",
+                    "alignment": "center",
+                    "show": true,
+                    "label": "Date",
+                    "sortable": true,
+                    "accessor": "createdDate"
+                  },
+                  {
+                    "label": "Tags",
+                    "id": "html",
+                    "alignment": "center",
+                    "component": {
+                      "type": "htmlComponent",
+                      "value": "<div class='mail-box-tags'><span class='mail-box-tags-tenant'>{{$item.TENANT_ID}}</span><span class={{$item.LOAN_NUMBER==null?'':'mail-box-tags-loan'}}>{{$item.LOAN_NUMBER}}</span></div>"
+                    },
+                    "sortable": false,
+                    "show": true
+                  }
+                ],
+                "noDataMessage": "No data found"
+              }
+            },
+            "de_de": {
+              "extraSettings": {}
+            },
+            "fr_fr": {
+              "extraSettings": {}
+            },
+            "it_it": {
+              "extraSettings": {}
+            },
+            "es_es": {
+              "extraSettings": {}
+            }
+          },
+          "enabled": true,
+          "extraSettings": {
+            "dataSource": "Static",
+            "items": "{{mailBoxListData}}",
+            "storage": "Full",
+            "linkTarget": "_blank",
+            "selectable": "Multiple",
+            "output": {},
+            "infiniteScroll": false,
+            "showPagination": true,
+            "autoHidePagination": true,
+            "clientPagination": true,
+            "sortableColumns": false,
+            "columns": [
+              {
+                "label": "Sender Id",
+                "id": "SENDER_ID",
+                "accessor": "SENDER_ID",
+                "alignment": "center",
+                "show": true,
+                "sortable": true
+              },
+              {
+                "label": "Subject",
+                "id": "MAIN_CONTENT",
+                "accessor": "MAIN_CONTENT",
+                "alignment": "center",
+                "show": true,
+                "sortable": true
+              },
+              {
+                "id": "createdDate",
+                "alignment": "center",
+                "show": true,
+                "label": "Date",
+                "sortable": true,
+                "accessor": "createdDate"
+              },
+              {
+                "label": "Tags",
+                "id": "html",
+                "alignment": "center",
+                "component": {
+                  "type": "htmlComponent",
+                  "value": "<div class='mail-box-tags'><span class='mail-box-tags-tenant'>{{$item.TENANT_ID}}</span><span class='mail-box-tags-loan'>{{$item.LOAN_NUMBER}}</span></div>"
+                },
+                "sortable": false,
+                "show": true
+              }
+            ],
+            "filterable": true,
+            "sortable": true,
+            "multiSort": false,
+            "pageSize": 20,
+            "pageSizeOptions": [
+              5,
+              10,
+              20,
+              25,
+              50,
+              100
+            ],
+            "showTotalRecords": false,
+            "dataPollingOnInit": false,
+            "noDataMessage": "NO_EMAIL",
+            "nodataPosition": "middle-center",
+            "conditionalFormatting": [
+              {
+                "condition": "{{$row.IS_READ === 0}}",
+                "styleClass": "mail-unread"
+              }
+            ]
+          },
+          "labelAlign": "top",
+          "value": "{{mailBoxList}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "isRequired": false,
+          "styleClass": "mail-box-list-v2",
+          "id": "datatable1",
+          "col": 0
+        }
+      ]
+    }
+  ],
+  "forceValidation":true
+}

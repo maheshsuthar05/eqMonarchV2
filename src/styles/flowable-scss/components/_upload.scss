@@ -1,0 +1,41 @@
+.flw__upload--left-aligned {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+}
+
+.flw__upload--left-aligned .flw__label {
+  width: auto;
+  flex: 0 0 200px;
+  padding-right: 10px;
+  max-width: 40%;
+}
+
+.flw__upload--left-aligned .flw__component__input {
+  display: flex;
+  width: 0;
+  flex-grow: 1;
+  flex-flow: row wrap;
+}
+
+.flw__upload--left-aligned .flw__description,
+.flw__upload--left-aligned .flw__error-list {
+  display: block;
+  width: 100%;
+  text-align: right;
+}
+
+.flw__upload--left-aligned .flw__fileSelector {
+  display: flex;
+  flex-grow: 1;
+  flex-flow: row wrap;
+}
+
+.flw__upload--left-aligned .flw__message {
+  display: block;
+  width: 100%;
+}
+
+.flw__upload--invalid-subErrors__error-list__error-list-item {
+  display: block;
+}

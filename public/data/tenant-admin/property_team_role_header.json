@@ -1,0 +1,177 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 25 },
+              "lowerRight": { "x": 493, "y": 123 }
+            },
+            "stencilSuperIds": ["SubSlotPanel"],
+            "stencilId": "cloud-sub-panel",
+            "customStencilId": null
+          },
+          "labelAlign": "top",
+          "size": 6,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "sub-panel1",
+          "extraSettings": {
+            "collapsible": false,
+            "collapsed": false,
+            "showBorder": false,
+            "saveButtonVisible": true,
+            "saveButtonEnabled": true,
+            "cancelButtonVisible": true,
+            "cancelButtonEnabled": true,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 25 },
+                          "lowerRight": { "x": 386, "y": 73 }
+                        },
+                        "stencilSuperIds": ["base-single-select", "Component"],
+                        "stencilId": "cloud-single-select",
+                        "customStencilId": null
+                      },
+                      "extraSettings": {
+                        "tagsEnabled": false,
+                        "preselectAll": false,
+                        "clientSideFiltering": false,
+                        "enableAutocomplete": false,
+                        "autocompleteMinLength": 1,
+                        "dataSource": "Rest",
+                        "queryUrl": "/eq-api/party/partyRoleTypes/search/findAllTeamLeadRoles",
+                        "lookupUrl": "/eq-api/party/partyRoleTypes/search/findAllTeamLeadRoles",
+                        "path": "_embedded.partyRoleTypes",
+                        "linkTargetView": "browse",
+                        "formatItem": "{{$item.partyRoleTypeDisplay}}",
+                        "storage": "Id",
+                        "identity": "partyRoleType",
+                        "linkTarget": "_blank",
+                        "multi": false
+                      },
+                      "placeholder": "Select team lead role",
+                      "i18n": {
+                        "en_us": {
+                          "placeholder": "Select team lead role",
+                          "label": "Team Lead Role"
+                        }
+                      },
+                      "enabled": true,
+                      "labelAlign": "top",
+                      "value": "{{teamLeadRole}}",
+                      "size": 10,
+                      "ignore": false,
+                      "visible": true,
+                      "isRequired": true,
+                      "label": "Team Lead Role",
+                      "id": "teamLeadRole",
+                      "type": "select"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "type": "panel"
+        },
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 507, "y": 25 },
+              "lowerRight": { "x": 985, "y": 123 }
+            },
+            "stencilSuperIds": ["SubSlotPanel"],
+            "stencilId": "cloud-sub-panel",
+            "customStencilId": null
+          },
+          "labelAlign": "top",
+          "size": 6,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "sub-panel2",
+          "extraSettings": {
+            "collapsible": false,
+            "collapsed": false,
+            "showBorder": false,
+            "saveButtonVisible": true,
+            "saveButtonEnabled": true,
+            "cancelButtonVisible": true,
+            "cancelButtonEnabled": true,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 25 },
+                          "lowerRight": { "x": 463, "y": 73 }
+                        },
+                        "stencilSuperIds": ["base-single-select", "Component"],
+                        "stencilId": "cloud-single-select",
+                        "customStencilId": null
+                      },
+                      "extraSettings": {
+                        "tagsEnabled": false,
+                        "preselectAll": false,
+                        "clientSideFiltering": true,
+                        "enableAutocomplete": true,
+                        "autocompleteMinLength": 0,
+                        "dataSource": "Rest",
+                        "queryUrl": "/eq-api/party/parties/search/findAllpartyRoleTypes?partyRoleType={{teamLeadRole}}",
+                        "lookupUrl": "/eq-api/party/parties/search/findAllpartyRoleTypes?partyRoleType={{teamLeadRole}}",
+                        "path": "_embedded.parties",
+                        "linkTargetView": "browse",
+                        "formatItem": "{{$item.individualFullName}}",
+                        "storage": "Full",
+                        "linkTarget": "_blank",
+                        "multi": false
+                      },
+                      "placeholder": "Select team lead",
+                      "i18n": {
+                        "en_us": {
+                          "placeholder": "Select team lead",
+                          "label": "Team Lead"
+                        }
+                      },
+                      "enabled": true,
+                      "labelAlign": "top",
+                      "value": "{{teamLead}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "isRequired": true,
+                      "label": "Team Lead",
+                      "id": "teamLead",
+                      "type": "select"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "type": "panel"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "key": "teamRoleHeader",
+    "name": "teamRoleHeader",
+    "description": null,
+    "version": "7",
+    "type": "2",
+    "flowableDesignVersion": 3090
+  }
+}

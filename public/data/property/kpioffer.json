@@ -1,0 +1,292 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "type": "htmlComponent",
+          "i18n": {
+            "en_us": {
+              "value": "<p style=\"text-align:center\">KPI's</p>\n"
+            },
+            "de_de": {},
+            "fr_fr": {},
+            "it_it": {},
+            "es_es": {}
+          },
+          "labelAlign": "top",
+          "value": "<p style=\"text-align:center\">KPI's</p>\n",
+          "defaultValue": false,
+          "size": 1,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "output1",
+          "col": 0
+        },
+        {
+          "type": "dataTable",
+          "i18n": {
+            "en_us": {
+              "extraSettings": {
+                "columns": [
+                  {
+                    "label": "Listing Price",
+                    "id": "listingPrice",
+                    "accessor": "listingPrice",
+                    "alignment": "left",
+                    "show": true
+                  },
+                  {
+                    "label": "Valuation",
+                    "id": "valuationAmount",
+                    "accessor": "valuationAmount",
+                    "alignment": "left",
+                    "show": true
+                  },
+                  {
+                    "label": "Days in REO",
+                    "id": "daysInREO",
+                    "accessor": "daysInREO",
+                    "alignment": "left",
+                    "show": true
+                  },
+                  {
+                    "label": "Open",
+                    "id": "openTaskCount",
+                    "accessor": "openTaskCount",
+                    "alignment": "left",
+                    "show": true
+                  },
+                  {
+                    "label": "Completed",
+                    "id": "closeTaskCount",
+                    "accessor": "closeTaskCount",
+                    "alignment": "left",
+                    "show": true
+                  }
+                ]
+              }
+            },
+            "de_de": {
+              "extraSettings": {}
+            },
+            "fr_fr": {
+              "extraSettings": {}
+            },
+            "it_it": {
+              "extraSettings": {}
+            },
+            "es_es": {
+              "extraSettings": {}
+            }
+          },
+          "enabled": true,
+          "extraSettings": {
+            "dataSource": "Static",
+            "storage": "Id",
+            "identity": "value",
+            "linkTarget": "_blank",
+            "output": {},
+            "infiniteScroll": true,
+            "sortableColumns": false,
+            "columns": [
+              {
+                "label": "Listing Price",
+                "id": "listingPrice",
+                "accessor": "listingPrice",
+                "alignment": "left",
+                "show": true
+              },
+              {
+                "label": "Valuation",
+                "id": "valuationAmount",
+                "accessor": "valuationAmount",
+                "alignment": "left",
+                "show": true
+              },
+              {
+                "label": "Days in REO",
+                "id": "daysInREO",
+                "accessor": "daysInREO",
+                "alignment": "left",
+                "show": true
+              },
+              {
+                "label": "Open",
+                "id": "openTaskCount",
+                "accessor": "openTaskCount",
+                "alignment": "left",
+                "show": true
+              },
+              {
+                "label": "Completed",
+                "id": "closeTaskCount",
+                "accessor": "closeTaskCount",
+                "alignment": "left",
+                "show": true
+              }
+            ],
+            "filterable": false,
+            "sortable": false,
+            "showTotalRecords": false,
+            "dataPollingOnInit": false,
+            "nodataPosition": "middle-center",
+            "favorite": {}
+          },
+          "labelAlign": "top",
+          "value": "{{kpioffer}}",
+          "size": 5,
+          "ignore": false,
+          "visible": true,
+          "isRequired": false,
+          "id": "datatable1",
+          "col": 1
+        },
+        {
+          "type": "htmlComponent",
+          "i18n": {
+            "en_us": {
+              "value": "<p style=\"text-align:center\">Offers</p>\n"
+            },
+            "de_de": {},
+            "fr_fr": {},
+            "it_it": {},
+            "es_es": {}
+          },
+          "labelAlign": "top",
+          "value": "<p style=\"text-align:center\">Offers</p>\n",
+          "defaultValue": false,
+          "size": 1,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "output2",
+          "col": 6
+        },
+        {
+          "type": "dataTable",
+          "i18n": {
+            "en_us": {
+              "extraSettings": {
+                "columns": [
+                  {
+                    "label": "New",
+                    "id": "New",
+                    "accessor": "New",
+                    "alignment": "left",
+                    "show": true
+                  },
+                  {
+                    "label": "Accepted",
+                    "id": "Accepted",
+                    "accessor": "Accepted",
+                    "alignment": "left",
+                    "show": true
+                  },
+                  {
+                    "label": "Negotiating",
+                    "id": "Negotiating",
+                    "accessor": "Negotiating",
+                    "alignment": "left",
+                    "show": true
+                  },
+                  {
+                    "label": "Held",
+                    "id": "Held",
+                    "accessor": "Held",
+                    "alignment": "left",
+                    "show": true
+                  },
+                  {
+                    "label": "Rejected",
+                    "id": "Rejected",
+                    "accessor": "Rejected",
+                    "alignment": "left",
+                    "show": true
+                  }
+                ]
+              }
+            },
+            "de_de": {
+              "extraSettings": {}
+            },
+            "fr_fr": {
+              "extraSettings": {}
+            },
+            "it_it": {
+              "extraSettings": {}
+            },
+            "es_es": {
+              "extraSettings": {}
+            }
+          },
+          "enabled": true,
+          "extraSettings": {
+            "dataSource": "Rest",
+            "queryUrl": "/eq-api/offermeta/offer/offerList?searchText={{propertyId}}",
+            "storage": "Id",
+            "identity": "value",
+            "linkTarget": "_blank",
+            "output": {},
+            "infiniteScroll": true,
+            "sortableColumns": false,
+            "columns": [
+              {
+                "label": "New",
+                "id": "New",
+                "accessor": "New",
+                "alignment": "left",
+                "show": true
+              },
+              {
+                "label": "Accepted",
+                "id": "Accepted",
+                "accessor": "Accepted",
+                "alignment": "left",
+                "show": true
+              },
+              {
+                "label": "Negotiating",
+                "id": "Negotiating",
+                "accessor": "Negotiating",
+                "alignment": "left",
+                "show": true
+              },
+              {
+                "label": "Held",
+                "id": "Held",
+                "accessor": "Held",
+                "alignment": "left",
+                "show": true
+              },
+              {
+                "label": "Rejected",
+                "id": "Rejected",
+                "accessor": "Rejected",
+                "alignment": "left",
+                "show": true
+              }
+            ],
+            "filterable": false,
+            "sortable": false,
+            "showTotalRecords": false,
+            "response": {},
+            "dataPollingOnInit": false,
+            "nodataPosition": "middle-center",
+            "favorite": {}
+          },
+          "labelAlign": "top",
+          "value": "{{kpioffer}}",
+          "size": 5,
+          "ignore": false,
+          "visible": true,
+          "isRequired": false,
+          "id": "datatable2",
+          "col": 7
+        }
+      ]
+    }
+  ]
+}

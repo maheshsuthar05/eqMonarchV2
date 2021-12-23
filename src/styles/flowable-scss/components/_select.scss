@@ -1,0 +1,214 @@
+div.flw__select__control {
+  border-radius: 0px;
+  background-color: $flw-forms-background-color;
+  background-color: var(
+    --flw-forms-background-color,
+    $flw-forms-background-color
+  );
+
+  border: 1px solid $flw-forms-border-muted-color;
+  border: 1px solid var(--flw-forms-border-color, $flw-forms-border-muted-color);
+  &:hover {
+    border-color: $flw-forms-border-color;
+    border-color: var(--flw-forms-border-color, $flw-forms-border-color);
+  }
+}
+div.flw__select__input {
+  color: $flw-forms-text-color;
+  color: var(--flw-forms-text-color, $flw-forms-text-color);
+}
+span.flw__select__indicator-separator {
+  background-color: $flw-forms-select-border-color;
+  background-color: var(--flw-forms-select-border-color, $flw-forms-select-border-color);
+}
+
+div.flw__select__control--is-disabled {
+  background-color: $flw-forms-muted-background-color;
+  background-color: var(
+    --flw-forms-muted-background-color,
+    $flw-forms-muted-background-color
+  );
+  border: 1px solid $flw-forms-border-muted-color;
+  border: 1px solid var(--flw-forms-border-color, $flw-forms-border-muted-color);
+  border-radius: 0px;
+}
+
+div.flw__select__indicator {
+  color: $flw-color-lightgray;
+  color: var(--flw-color-lightgray, $flw-color-lightgray);
+}
+
+div.flw__select__control--is-focused,
+div.flw__select__control--is-focused:hover {
+  box-shadow: none;
+
+  div.flw__select__indicator {
+    color: $flw-forms-text-color;
+    color: var(--flw-forms-$flw-forms-text-color, $flw-forms-text-color);
+  }
+}
+
+div.flw__select__menu {
+  margin-top: 0;
+  border-radius: 5px;
+  border-top: none;
+  box-shadow: none;
+  left: 0;
+  background-color: $flw-forms-background-color;
+  background-color: var(
+    --flw-forms-background-color,
+    $flw-forms-background-color
+  );
+}
+
+div.flw__select__option {
+  background-color: $flw-forms-background-color;
+  background-color: var(
+    --flw-forms-background-color,
+    $flw-forms-background-color
+  );
+}
+div.flw__select__option:active {
+  background-color: $flw-forms-background-color;
+  background-color: var(
+    --flw-forms-background-color,
+    $flw-forms-background-color
+  );
+  color: $flw-forms-text-color;
+  color: var(--flw-forms-text-color, $flw-forms-text-color);
+}
+
+div.flw__select__option--is-selected {
+  background-color: $flw-forms-background-color;
+  background-color: var(
+    --flw-forms-background-color,
+    $flw-forms-background-color
+  );
+  color: $flw-forms-text-color;
+  color: var(--flw-forms-text-color, $flw-forms-text-color);
+  font-weight: bold;
+}
+
+div.flw__select__option--is-focused {
+  background-color: $flw-forms-dropdowncolor;
+  background-color: var(--flw-forms-dropdowncolor, $flw-forms-dropdowncolor);
+  color: $flw-forms-label-text-color;
+  color: var(--$flw-forms-label-text-color, $flw-forms-label-text-color);
+}
+
+div.flw__select__multi-value {
+  color: #ffffff;
+}
+
+div.flw__select__multi-value__label {
+  color: $flw-forms-background-color;
+  color: var(--flw-forms-background-color, $flw-forms-background-color);
+}
+
+div.flw__select__multi-value__remove {
+  padding-top: 2px;
+}
+
+div.flw__select__multi-value__remove:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+div.flw__select__multi-value--is-disabled {
+  background-color: $flw-forms-muted-background-color;
+  background-color: var(
+    --flw-forms-muted-background-color,
+    $flw-forms-muted-background-color
+  );
+  border: 1px solid $flw-forms-border-color;
+  border: 1px solid var(--flw-forms-border-color, $flw-forms-border-color);
+}
+
+div.flw__select__multi-value--is-disabled .flw__select__multi-value__label {
+  color: $flw-forms-text-color;
+  color: var(--flw-forms-text-color, $flw-forms-text-color);
+}
+
+div.flw__select__multi-value--is-disabled .flw__select__multi-value__remove {
+  display: none;
+}
+
+div.flw__select__indicators {
+  cursor: pointer;
+}
+
+div.flw__select__single-value a,
+div.flw__select__single-value a:link,
+div.flw__select__single-value a:active,
+div.flw__select__single-value a:visited {
+  color: $flw-forms-color;
+  color: var(--flw-forms-color, $flw-forms-color);
+}
+
+div.flw__select__multi-value__label a,
+div.flw__select__multi-value__label a:link,
+div.flw__select__multi-value__label a:active,
+div.flw__select__multi-value__label a:visited {
+  color: $flw-forms-background-color;
+  color: var(--flw-forms-background-color, $flw-forms-background-color);
+}
+
+div.flw__select--left-aligned .flw__select__control {
+  display: flex;
+  width: auto;
+  flex-grow: 1;
+  flex-flow: row wrap;
+}
+
+div.flw__select__placeholder {
+  color: var(
+    --flw-forms-muted-text-color,
+    $flw-forms-muted-text-color
+  ) !important;
+  color: $flw-forms-muted-text-color;
+  color: var(--flw-forms-muted-text-color, $flw-forms-muted-text-color);
+}
+
+.flw__select--menu-top__input .flw__select__menu {
+  margin-top: unset;
+  border: 1px solid $flw-forms-color;
+  border: 1px solid var(--flw-forms-color, $flw-forms-color);
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+div.flw__select.flw-readonly .flw__select__control,
+div.flw__select.flw-readonly .flw__select__input {
+  border: none;
+  background: none;
+  min-height: auto;
+}
+
+div.flw__select.flw-readonly .flw__select__value-container {
+  padding: 0;
+}
+
+div.flw__select.flw-readonly .flw__select__indicators {
+  display: none;
+}
+
+div.flw__select.flw-readonly .flw__select__multi-value {
+  border: none;
+  background: none;
+  margin: 0;
+}
+
+div.flw__select.flw-readonly .flw__select__multi-value:not(:last-child)::after {
+  content: ', ';
+  font-size: $flw-text-sm;
+  font-size: var(--flw-text-sm, $flw-text-sm);
+  margin-right: 4px;
+}
+
+div.flw__select.flw-readonly .flw__select__multi-value__label {
+  padding: 0 !important;
+}
+
+div.flw__select__control:hover{
+  border-color: #cccccc !important;
+}

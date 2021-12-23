@@ -1,0 +1,605 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "type": "panel",
+          "label": "Contact",
+          "i18n": {
+            "en_us": {
+              "label": "Contact"
+            }
+          },
+          "labelAlign": "top",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "styleClass": "property-layout-column",
+          "id": "sub-panel3",
+          "extraSettings": {
+            "collapsible": false,
+            "collapsed": false,
+            "showBorder": false,
+            "saveButtonVisible": true,
+            "saveButtonEnabled": true,
+            "cancelButtonVisible": true,
+            "cancelButtonEnabled": true,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "type": "htmlComponent",
+                      "i18n": {
+                        "en_us": {
+                          "value": "<h4><strong>Company</strong></h4>\n"
+                        },
+                        "de_de": {},
+                        "fr_fr": {},
+                        "it_it": {},
+                        "es_es": {}
+                      },
+                      "labelAlign": "top",
+                      "value": "<h4><strong>Company</strong></h4>\n",
+                      "defaultValue": false,
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "output1",
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "text",
+                      "extraSettings": {},
+                      "i18n": {
+                        "en_us": {
+                          "label": "Company Name:"
+                        },
+                        "de_de": {},
+                        "fr_fr": {},
+                        "it_it": {},
+                        "es_es": {}
+                      },
+                      "labelAlign": "left",
+                      "value": "{{tenantId[0]}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "label": "Company Name:",
+                      "id": "text11",
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "text",
+                      "extraSettings": {},
+                      "i18n": {
+                        "en_us": {
+                          "label": "Address:"
+                        },
+                        "de_de": {},
+                        "fr_fr": {},
+                        "it_it": {},
+                        "es_es": {}
+                      },
+                      "labelAlign": "left",
+                      "value": "{{postalAddress[0]}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "label": "Address:",
+                      "id": "text13",
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "text",
+                      "extraSettings": {},
+                      "i18n": {
+                        "en_us": {
+                          "label": "City:"
+                        },
+                        "de_de": {},
+                        "fr_fr": {},
+                        "it_it": {},
+                        "es_es": {}
+                      },
+                      "labelAlign": "left",
+                      "value": "{{city}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "label": "City:",
+                      "id": "text14",
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "text",
+                      "extraSettings": {},
+                      "i18n": {
+                        "en_us": {
+                          "label": "State:"
+                        },
+                        "de_de": {},
+                        "fr_fr": {},
+                        "it_it": {},
+                        "es_es": {}
+                      },
+                      "labelAlign": "left",
+                      "value": "{{postalAddress[0]}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "label": "State:",
+                      "id": "text27",
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "text",
+                      "extraSettings": {},
+                      "i18n": {
+                        "en_us": {
+                          "label": "Zip:"
+                        },
+                        "de_de": {},
+                        "fr_fr": {},
+                        "it_it": {},
+                        "es_es": {}
+                      },
+                      "labelAlign": "left",
+                      "value": "{{postalCode[0]}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "label": "Zip:",
+                      "id": "text16",
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "text",
+                      "extraSettings": {},
+                      "i18n": {
+                        "en_us": {
+                          "label": "Phone:"
+                        },
+                        "de_de": {},
+                        "fr_fr": {},
+                        "it_it": {},
+                        "es_es": {}
+                      },
+                      "labelAlign": "left",
+                      "value": "{{telephoneNumber[0]}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "label": "Phone:",
+                      "id": "text17",
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "text",
+                      "extraSettings": {},
+                      "i18n": {
+                        "en_us": {
+                          "label": "Fax:"
+                        },
+                        "de_de": {},
+                        "fr_fr": {},
+                        "it_it": {},
+                        "es_es": {}
+                      },
+                      "labelAlign": "left",
+                      "value": "{{fax}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "label": "Fax:",
+                      "id": "text18",
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": "{{!additionalData.isVendor}}",
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel6",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<h4><strong>Broker</strong></h4>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<h4><strong>Broker</strong></h4>\n",
+                                  "defaultValue": false,
+                                  "size": 12,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output2",
+                                  "col": 0
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "boolean",
+                                  "i18n": {
+                                    "en_us": {
+                                      "label": "My company and broker information same"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{myCompanyAndBrokerAddressAreSame}}",
+                                  "defaultValue": false,
+                                  "size": 12,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "label": "My company and broker information same",
+                                  "id": "checkbox1",
+                                  "col": 0
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "text",
+                                  "extraSettings": {},
+                                  "i18n": {
+                                    "en_us": {
+                                      "label": "Broker of record name"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "left",
+                                  "value": "{{companyName}}",
+                                  "size": 12,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "label": "Broker of record name",
+                                  "id": "text21",
+                                  "col": 0
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "text",
+                                  "extraSettings": {},
+                                  "i18n": {
+                                    "en_us": {
+                                      "label": "Broker Company Name:"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "left",
+                                  "value": "{{companyName}}",
+                                  "size": 12,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "label": "Broker Company Name:",
+                                  "id": "text22",
+                                  "col": 0
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "text",
+                                  "extraSettings": {},
+                                  "i18n": {
+                                    "en_us": {
+                                      "label": "Broker Address:"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "left",
+                                  "value": "{{address}}",
+                                  "size": 12,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "label": "Broker Address:",
+                                  "id": "text24",
+                                  "col": 0
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "text",
+                                  "extraSettings": {},
+                                  "i18n": {
+                                    "en_us": {
+                                      "label": "Broker City:"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "left",
+                                  "value": "{{city}}",
+                                  "size": 12,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "label": "Broker City:",
+                                  "id": "text25",
+                                  "col": 0
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "text",
+                                  "extraSettings": {},
+                                  "i18n": {
+                                    "en_us": {
+                                      "label": "Broker State:"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "left",
+                                  "value": "{{selectedState}}",
+                                  "size": 12,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "label": "Broker State:",
+                                  "id": "text26",
+                                  "col": 0
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "text",
+                                  "extraSettings": {},
+                                  "i18n": {
+                                    "en_us": {
+                                      "label": "Broker Zip"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "left",
+                                  "value": "{{zip}}",
+                                  "size": 12,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "label": "Broker Zip",
+                                  "id": "text28",
+                                  "col": 0
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "text",
+                                  "extraSettings": {},
+                                  "i18n": {
+                                    "en_us": {
+                                      "label": "Broker Telephone Number"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "left",
+                                  "value": "{{brokerTelephoneNumber}}",
+                                  "size": 12,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "label": "Broker Telephone Number",
+                                  "id": "text29",
+                                  "col": 0
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "text",
+                                  "extraSettings": {},
+                                  "i18n": {
+                                    "en_us": {
+                                      "label": "Broker Web address"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "left",
+                                  "value": "{{webaddress}}",
+                                  "size": 12,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "label": "Broker Web address",
+                                  "id": "text23",
+                                  "col": 0
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "text",
+                                  "extraSettings": {},
+                                  "i18n": {
+                                    "en_us": {
+                                      "label": "Broker License number"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "left",
+                                  "value": "{{brokerLicenceNumber}}",
+                                  "size": 12,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "label": "Broker License number",
+                                  "id": "text30",
+                                  "col": 0
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "date",
+                                  "i18n": {
+                                    "en_us": {
+                                      "label": "Broker License Expire date"
+                                    }
+                                  },
+                                  "labelAlign": "left",
+                                  "value": "{{brokerLicenceExpireDate}}",
+                                  "size": 12,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "label": "Broker License Expire date",
+                                  "id": "date2",
+                                  "extraSettings": {
+                                    "enableTime": false,
+                                    "storeWithoutTime": true
+                                  },
+                                  "col": 0
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "col": 0
+        }
+      ]
+    }
+  ]
+}

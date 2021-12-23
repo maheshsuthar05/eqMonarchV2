@@ -1,0 +1,961 @@
+{
+    "rows": [
+      {
+        "cols": [
+          {
+            "type": "panel",
+            "i18n": {},
+            "labelAlign": "top",
+            "size": 12,
+            "ignore": false,
+            "visible": true,
+            "enabled": true,
+            "isRequired": false,
+            "id": "sub-panel9",
+            "extraSettings": {
+              "collapsible": false,
+              "collapsed": false,
+              "showBorder": false,
+              "saveButtonVisible": true,
+              "saveButtonEnabled": true,
+              "cancelButtonVisible": true,
+              "cancelButtonEnabled": true,
+              "layoutDefinition": {
+                "rows": [
+                  {
+                    "cols": [
+                      {
+                        "type": "htmlComponent",
+                        "i18n": {
+                          "en_us": {
+                            "value": "<p><span style=\"font-size:16px\"><strong>{{propertyAddresses[0].addressLineText}}, {{propertyAddresses[0].cityName}}, {{propertyAddresses[0].stateName}} {{propertyAddresses[0].postalCode}} </strong><span style=\"margin-left: 100px\">Loan:</span><strong> {{loan.loanNumber}}</strong></span></p>\n"
+                          },
+                          "de_de": {},
+                          "fr_fr": {},
+                          "it_it": {},
+                          "es_es": {}
+                        },
+                        "labelAlign": "top",
+                        "value": "<p><span style=\"font-size:16px\"><strong>{{propertyAddresses[0].addressLineText}}, {{propertyAddresses[0].cityName}}, {{propertyAddresses[0].stateName}} {{propertyAddresses[0].postalCode}} </strong><span style=\"margin-left: 100px\">Loan:</span><strong> {{loan.loanNumber}}</strong></span></p>\n",
+                        "defaultValue": false,
+                        "size": 9,
+                        "ignore": false,
+                        "visible": true,
+                        "enabled": true,
+                        "isRequired": false,
+                        "styleClass": "property-header-line",
+                        "id": "property-header-address",
+                        "col": 0
+                      },
+                      {
+                        "type": "panel",
+                        "i18n": {},
+                        "labelAlign": "top",
+                        "size": 3,
+                        "ignore": false,
+                        "visible": true,
+                        "enabled": true,
+                        "isRequired": false,
+                        "id": "sub-panel15",
+                        "extraSettings": {
+                          "collapsible": false,
+                          "collapsed": false,
+                          "showBorder": false,
+                          "saveButtonVisible": true,
+                          "saveButtonEnabled": true,
+                          "cancelButtonVisible": true,
+                          "cancelButtonEnabled": true,
+                          "layoutDefinition": {
+                            "rows": [
+                              {
+                                "cols": [
+                                  {
+                                    "type": "link",
+                                    "extraSettings": {
+                                      "target": "_self"
+                                    },
+                                    "i18n": {
+                                      "en_us": {
+                                        "value": "{{additionalData.currentStageOverviewName}}"
+                                      }
+                                    },
+                                    "labelAlign": "top",
+                                    "value": "{{additionalData.currentStageOverviewName}}",
+                                    "size": 5,
+                                    "ignore": false,
+                                    "visible": true,
+                                    "enabled": true,
+                                    "isRequired": false,
+                                    "styleClass": "truncate font-bold items-end property-header-link",
+                                    "id": "link-instance-diagram-currentStageOverviewName",
+                                    "col": 0
+                                  },
+                                  {
+                                    "size": 1,
+                                    "type": ""
+                                  },
+                                  {
+                                    "type": "link",
+                                    "extraSettings": {
+                                      "target": "_self"
+                                    },
+                                    "i18n": {
+                                      "en_us": {
+                                        "value": "{{additionalData.caseDefinitionName}}"
+                                      }
+                                    },
+                                    "labelAlign": "top",
+                                    "value": "{{additionalData.caseDefinitionName}}",
+                                    "size": 6,
+                                    "ignore": false,
+                                    "visible": true,
+                                    "enabled": true,
+                                    "isRequired": false,
+                                    "styleClass": "truncate font-bold vl property-header-link items-end",
+                                    "id": "link-instance-diagram-caseDefinitionName",
+                                    "col": 6
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        "col": 9
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "image",
+                        "i18n": {
+                          "en_us": {},
+                          "de_de": {},
+                          "fr_fr": {},
+                          "it_it": {},
+                          "es_es": {}
+                        },
+                        "labelAlign": "top",
+                        "value": "{{propertyImage}}",
+                        "size": 2,
+                        "ignore": false,
+                        "visible": true,
+                        "enabled": true,
+                        "isRequired": false,
+                        "id": "image2",
+                        "extraSettings": {
+                          "maxHeight": 175
+                        },
+                        "col": 0
+                      },
+                      {
+                        "type": "tabs",
+                        "i18n": {
+                          "en_us": {},
+                          "de_de": {},
+                          "fr_fr": {},
+                          "it_it": {},
+                          "es_es": {}
+                        },
+                        "labelAlign": "top",
+                        "size": 9,
+                        "ignore": false,
+                        "visible": true,
+                        "enabled": true,
+                        "isRequired": false,
+                        "id": "tabs2",
+                        "extraSettings": {
+                          "tabsorder": [
+                            "tab-panel3",
+                            "tab-panel4"
+                          ],
+                          "showBorder": false,
+                          "sections": [
+                            {
+                              "type": "panel",
+                              "label": "Default",
+                              "i18n": {
+                                "en_us": {
+                                  "label": "Default"
+                                },
+                                "de_de": {},
+                                "fr_fr": {},
+                                "it_it": {},
+                                "es_es": {}
+                              },
+                              "labelAlign": "top",
+                              "size": 1,
+                              "ignore": false,
+                              "visible": true,
+                              "enabled": true,
+                              "isRequired": false,
+                              "id": "tab-panel3",
+                              "extraSettings": {
+                                "serverValidationMethod": "GET",
+                                "layoutDefinition": {
+                                  "rows": [
+                                    {
+                                      "cols": [
+                                        {
+                                          "type": "panel",
+                                          "i18n": {},
+                                          "labelAlign": "top",
+                                          "size": 3,
+                                          "ignore": false,
+                                          "visible": true,
+                                          "enabled": true,
+                                          "isRequired": false,
+                                          "id": "sub-panel11",
+                                          "extraSettings": {
+                                            "collapsible": false,
+                                            "collapsed": false,
+                                            "showBorder": false,
+                                            "saveButtonVisible": true,
+                                            "saveButtonEnabled": true,
+                                            "cancelButtonVisible": true,
+                                            "cancelButtonEnabled": true,
+                                            "layoutDefinition": {
+                                              "rows": [
+                                                {
+                                                  "cols": [
+                                                    {
+                                                      "type": "text",
+                                                      "extraSettings": {},
+                                                      "i18n": {
+                                                        "en_us": {
+                                                          "placeholder": "Loan number",
+                                                          "label": "Loan number"
+                                                        },
+                                                        "de_de": {},
+                                                        "fr_fr": {},
+                                                        "it_it": {},
+                                                        "es_es": {}
+                                                      },
+                                                      "placeholder": "Loan number",
+                                                      "labelAlign": "top",
+                                                      "value": "{{loan.loanNumber}}",
+                                                      "size": 12,
+                                                      "ignore": false,
+                                                      "visible": true,
+                                                      "enabled": "{{$temp.editMode}}",
+                                                      "isRequired": true,
+                                                      "label": "Loan number",
+                                                      "id": "text2",
+                                                      "col": 0
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "cols": [
+                                                    {
+                                                      "type": "number",
+                                                      "placeholder": "Bid amount",
+                                                      "i18n": {
+                                                        "en_us": {
+                                                          "placeholder": "Bid amount",
+                                                          "label": "Bid amount"
+                                                        }
+                                                      },
+                                                      "labelAlign": "top",
+                                                      "value": "{{foreclosure.bidActualAmount}}",
+                                                      "size": 12,
+                                                      "ignore": false,
+                                                      "visible": true,
+                                                      "enabled": "{{$temp.editMode}}",
+                                                      "isRequired": true,
+                                                      "label": "Bid amount",
+                                                      "id": "integer-number2",
+                                                      "extraSettings": {
+                                                        "numberType": "integer",
+                                                        "fractionSize": 0,
+                                                        "type": "one"
+                                                      },
+                                                      "col": 0
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "col": 0
+                                        },
+                                        {
+                                          "type": "subform",
+                                          "labelAlign": "top",
+                                          "value": "{{propertyAddresses}}",
+                                          "defaultValue": "",
+                                          "description": "",
+                                          "i18n": {
+                                            "en_us": {
+                                              "description": "",
+                                              "customValidations": "",
+                                              "label": "",
+                                              "extraSettings": {
+                                                "minItemsErrorMessage": "",
+                                                "maxItemsErrorMessage": "",
+                                                "addButtonText": ""
+                                              }
+                                            },
+                                            "de_de": {
+                                              "description": "",
+                                              "customValidations": "",
+                                              "label": "",
+                                              "extraSettings": {
+                                                "minItemsErrorMessage": "",
+                                                "maxItemsErrorMessage": "",
+                                                "addButtonText": ""
+                                              }
+                                            },
+                                            "fr_fr": {
+                                              "description": "",
+                                              "customValidations": "",
+                                              "label": "",
+                                              "extraSettings": {
+                                                "minItemsErrorMessage": "",
+                                                "maxItemsErrorMessage": "",
+                                                "addButtonText": ""
+                                              }
+                                            },
+                                            "it_it": {
+                                              "description": "",
+                                              "customValidations": "",
+                                              "label": "",
+                                              "extraSettings": {
+                                                "minItemsErrorMessage": "",
+                                                "maxItemsErrorMessage": "",
+                                                "addButtonText": ""
+                                              }
+                                            },
+                                            "es_es": {
+                                              "description": "",
+                                              "customValidations": "",
+                                              "label": "",
+                                              "extraSettings": {
+                                                "minItemsErrorMessage": "",
+                                                "maxItemsErrorMessage": "",
+                                                "addButtonText": ""
+                                              }
+                                            }
+                                          },
+                                          "size": 9,
+                                          "ignore": false,
+                                          "visible": true,
+                                          "enabled": true,
+                                          "isRequired": false,
+                                          "styleClass": "",
+                                          "customValidations": "",
+                                          "label": "",
+                                          "extraSettings": {
+                                            "showBorder": false,
+                                            "minItems": 1,
+                                            "minItemsErrorMessage": "",
+                                            "maxItems": 1,
+                                            "maxItemsErrorMessage": "",
+                                            "collapsible": false,
+                                            "collapsed": false,
+                                            "formRef": {
+                                              "id": "FORM_MODEL-cca72eed-4863-40fe-9b76-2dc37d57b21f",
+                                              "key": "propertyHeaderAddressSubForm"
+                                            },
+                                            "multipleEntries": true,
+                                            "showAddButton": false,
+                                            "showDeleteButton": false,
+                                            "addButtonText": "",
+                                            "layoutDefinition": {
+                                              "rows": [
+                                                {
+                                                  "cols": [
+                                                    {
+                                                      "type": "text",
+                                                      "extraSettings": {},
+                                                      "i18n": {
+                                                        "en_us": {
+                                                          "placeholder": "Address 1",
+                                                          "label": "Address 1"
+                                                        },
+                                                        "de_de": {},
+                                                        "fr_fr": {},
+                                                        "it_it": {},
+                                                        "es_es": {}
+                                                      },
+                                                      "placeholder": "Address 1",
+                                                      "labelAlign": "top",
+                                                      "value": "{{addressLineText}}",
+                                                      "size": 4,
+                                                      "ignore": false,
+                                                      "visible": true,
+                                                      "enabled": "{{$payload.$temp.editMode}}",
+                                                      "isRequired": true,
+                                                      "label": "Address 1",
+                                                      "id": "text-addressLineText",
+                                                      "col": 0
+                                                    },
+                                                    {
+                                                      "type": "text",
+                                                      "extraSettings": {},
+                                                      "i18n": {
+                                                        "en_us": {
+                                                          "placeholder": "City",
+                                                          "label": "City"
+                                                        },
+                                                        "de_de": {},
+                                                        "fr_fr": {},
+                                                        "it_it": {},
+                                                        "es_es": {}
+                                                      },
+                                                      "placeholder": "City",
+                                                      "labelAlign": "top",
+                                                      "value": "{{cityName}}",
+                                                      "size": 4,
+                                                      "ignore": false,
+                                                      "visible": true,
+                                                      "enabled": "{{$payload.$temp.editMode}}",
+                                                      "isRequired": true,
+                                                      "label": "City",
+                                                      "id": "text-cityName",
+                                                      "col": 4
+                                                    },
+                                                    {
+                                                      "type": "text",
+                                                      "extraSettings": {},
+                                                      "i18n": {
+                                                        "en_us": {
+                                                          "placeholder": "Zip code",
+                                                          "label": "Zip code"
+                                                        },
+                                                        "de_de": {},
+                                                        "fr_fr": {},
+                                                        "it_it": {},
+                                                        "es_es": {}
+                                                      },
+                                                      "placeholder": "Zip code",
+                                                      "labelAlign": "top",
+                                                      "value": "{{postalCode}}",
+                                                      "size": 4,
+                                                      "ignore": false,
+                                                      "visible": true,
+                                                      "enabled": "{{$payload.$temp.editMode}}",
+                                                      "isRequired": true,
+                                                      "label": "Zip code",
+                                                      "id": "text-postalCode",
+                                                      "col": 8
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "cols": [
+                                                    {
+                                                      "type": "text",
+                                                      "extraSettings": {},
+                                                      "i18n": {
+                                                        "en_us": {
+                                                          "placeholder": "Address 2",
+                                                          "label": "Address 2"
+                                                        },
+                                                        "de_de": {},
+                                                        "fr_fr": {},
+                                                        "it_it": {},
+                                                        "es_es": {}
+                                                      },
+                                                      "placeholder": "Address 2",
+                                                      "labelAlign": "top",
+                                                      "value": "{{addressAdditionalLineText}}",
+                                                      "size": 4,
+                                                      "ignore": false,
+                                                      "visible": true,
+                                                      "enabled": "{{$payload.$temp.editMode}}",
+                                                      "isRequired": false,
+                                                      "label": "Address 2",
+                                                      "id": "text-addressAdditionalLineText",
+                                                      "col": 0
+                                                    },
+                                                    {
+                                                      "type": "text",
+                                                      "extraSettings": {},
+                                                      "i18n": {
+                                                        "en_us": {
+                                                          "placeholder": "State code",
+                                                          "label": "State code"
+                                                        },
+                                                        "de_de": {},
+                                                        "fr_fr": {},
+                                                        "it_it": {},
+                                                        "es_es": {}
+                                                      },
+                                                      "placeholder": "State code",
+                                                      "labelAlign": "top",
+                                                      "value": "{{stateCode}}",
+                                                      "size": 4,
+                                                      "ignore": false,
+                                                      "visible": true,
+                                                      "enabled": "{{$payload.$temp.editMode}}",
+                                                      "isRequired": true,
+                                                      "label": "State code",
+                                                      "id": "text-stateCode",
+                                                      "col": 4
+                                                    },
+                                                    {
+                                                      "type": "text",
+                                                      "extraSettings": {},
+                                                      "i18n": {
+                                                        "en_us": {
+                                                          "placeholder": "County name",
+                                                          "label": "County name"
+                                                        },
+                                                        "de_de": {},
+                                                        "fr_fr": {},
+                                                        "it_it": {},
+                                                        "es_es": {}
+                                                      },
+                                                      "placeholder": "County name",
+                                                      "labelAlign": "top",
+                                                      "value": "{{countyName}}",
+                                                      "size": 4,
+                                                      "ignore": false,
+                                                      "visible": true,
+                                                      "enabled": "{{$payload.$temp.editMode}}",
+                                                      "isRequired": false,
+                                                      "label": "County name",
+                                                      "id": "text-countyName",
+                                                      "col": 8
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "id": "sub-form3",
+                                          "col": 3
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              },
+                              "col": 0
+                            },
+                            {
+                              "type": "panel",
+                              "label": "Extended Properties",
+                              "i18n": {
+                                "en_us": {
+                                  "label": "Extended Properties"
+                                },
+                                "de_de": {},
+                                "fr_fr": {},
+                                "it_it": {},
+                                "es_es": {}
+                              },
+                              "labelAlign": "top",
+                              "size": 1,
+                              "ignore": false,
+                              "visible": true,
+                              "enabled": true,
+                              "isRequired": false,
+                              "id": "tab-panel4",
+                              "extraSettings": {
+                                "serverValidationMethod": "GET",
+                                "layoutDefinition": {
+                                  "rows": [
+                                    {
+                                      "cols": [
+                                        {
+                                          "type": "panel",
+                                          "i18n": {},
+                                          "labelAlign": "top",
+                                          "size": 3,
+                                          "ignore": false,
+                                          "visible": true,
+                                          "enabled": true,
+                                          "isRequired": false,
+                                          "id": "sub-panel13",
+                                          "extraSettings": {
+                                            "collapsible": false,
+                                            "collapsed": false,
+                                            "showBorder": false,
+                                            "saveButtonVisible": true,
+                                            "saveButtonEnabled": true,
+                                            "cancelButtonVisible": true,
+                                            "cancelButtonEnabled": true,
+                                            "layoutDefinition": {
+                                              "rows": [
+                                                {
+                                                  "cols": [
+                                                    {
+                                                      "type": "date",
+                                                      "placeholder": "FC sale date",
+                                                      "i18n": {
+                                                        "en_us": {
+                                                          "placeholder": "FC sale date",
+                                                          "label": "FC sale date"
+                                                        }
+                                                      },
+                                                      "labelAlign": "top",
+                                                      "value": "{{foreclosure.foreclosureSaleMarketValueDate}}",
+                                                      "size": 12,
+                                                      "ignore": false,
+                                                      "visible": true,
+                                                      "enabled": "{{$temp.editMode}}",
+                                                      "isRequired": true,
+                                                      "label": "FC sale date",
+                                                      "id": "date4",
+                                                      "extraSettings": {
+                                                        "enableTime": false
+                                                      },
+                                                      "col": 0
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "cols": [
+                                                    {
+                                                      "type": "number",
+                                                      "placeholder": "FC sale value",
+                                                      "i18n": {
+                                                        "en_us": {
+                                                          "placeholder": "FC sale value",
+                                                          "label": "FC sale value"
+                                                        }
+                                                      },
+                                                      "labelAlign": "top",
+                                                      "value": "{{foreclosure.foreclosureSaleMarketValueAmount}}",
+                                                      "size": 12,
+                                                      "ignore": false,
+                                                      "visible": true,
+                                                      "enabled": "{{$temp.editMode}}",
+                                                      "isRequired": false,
+                                                      "label": "FC sale value",
+                                                      "id": "float-number6",
+                                                      "extraSettings": {
+                                                        "numberType": "float",
+                                                        "fractionSize": 2,
+                                                        "type": "one"
+                                                      },
+                                                      "col": 0
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "col": 0
+                                        },
+                                        {
+                                          "type": "subform",
+                                          "labelAlign": "top",
+                                          "value": "{{miData}}",
+                                          "defaultValue": "",
+                                          "description": "",
+                                          "i18n": {
+                                            "en_us": {
+                                              "description": "",
+                                              "customValidations": "",
+                                              "label": "",
+                                              "extraSettings": {
+                                                "minItemsErrorMessage": "",
+                                                "maxItemsErrorMessage": "",
+                                                "addButtonText": ""
+                                              }
+                                            },
+                                            "de_de": {
+                                              "description": "",
+                                              "customValidations": "",
+                                              "label": "",
+                                              "extraSettings": {
+                                                "minItemsErrorMessage": "",
+                                                "maxItemsErrorMessage": "",
+                                                "addButtonText": ""
+                                              }
+                                            },
+                                            "fr_fr": {
+                                              "description": "",
+                                              "customValidations": "",
+                                              "label": "",
+                                              "extraSettings": {
+                                                "minItemsErrorMessage": "",
+                                                "maxItemsErrorMessage": "",
+                                                "addButtonText": ""
+                                              }
+                                            },
+                                            "it_it": {
+                                              "description": "",
+                                              "customValidations": "",
+                                              "label": "",
+                                              "extraSettings": {
+                                                "minItemsErrorMessage": "",
+                                                "maxItemsErrorMessage": "",
+                                                "addButtonText": ""
+                                              }
+                                            },
+                                            "es_es": {
+                                              "description": "",
+                                              "customValidations": "",
+                                              "label": "",
+                                              "extraSettings": {
+                                                "minItemsErrorMessage": "",
+                                                "maxItemsErrorMessage": "",
+                                                "addButtonText": ""
+                                              }
+                                            }
+                                          },
+                                          "size": 6,
+                                          "ignore": false,
+                                          "visible": true,
+                                          "enabled": true,
+                                          "isRequired": false,
+                                          "styleClass": "",
+                                          "customValidations": "",
+                                          "label": "",
+                                          "extraSettings": {
+                                            "showBorder": false,
+                                            "minItems": 1,
+                                            "minItemsErrorMessage": "",
+                                            "maxItems": 1,
+                                            "maxItemsErrorMessage": "",
+                                            "collapsible": false,
+                                            "collapsed": false,
+                                            "formRef": {
+                                              "id": "FORM_MODEL-d41962be-9440-4f40-9320-69b091448992",
+                                              "key": "propertyHeaderMiDataSubForm"
+                                            },
+                                            "multipleEntries": true,
+                                            "showAddButton": false,
+                                            "showDeleteButton": false,
+                                            "addButtonText": "",
+                                            "layoutDefinition": {
+                                              "rows": [
+                                                {
+                                                  "cols": [
+                                                    {
+                                                      "type": "text",
+                                                      "extraSettings": {},
+                                                      "i18n": {
+                                                        "en_us": {
+                                                          "placeholder": "Code",
+                                                          "label": "MI Code"
+                                                        },
+                                                        "de_de": {},
+                                                        "fr_fr": {},
+                                                        "it_it": {},
+                                                        "es_es": {}
+                                                      },
+                                                      "placeholder": "Code",
+                                                      "labelAlign": "top",
+                                                      "value": "{{miCompanyNameType}}",
+                                                      "size": 6,
+                                                      "ignore": false,
+                                                      "visible": true,
+                                                      "enabled": "{{$payload.$temp.editMode && ('' + $payload.loan.miCoverageExistsIndicator) === \"1\"}}",
+                                                      "isRequired": "{{('' + $payload.loan.miCoverageExistsIndicator) === \"1\"}}",
+                                                      "label": "MI Code",
+                                                      "id": "text18",
+                                                      "col": 0
+                                                    },
+                                                    {
+                                                      "type": "text",
+                                                      "extraSettings": {},
+                                                      "i18n": {
+                                                        "en_us": {
+                                                          "placeholder": "Certificate Number",
+                                                          "label": "Certificate Number"
+                                                        },
+                                                        "de_de": {},
+                                                        "fr_fr": {},
+                                                        "it_it": {},
+                                                        "es_es": {}
+                                                      },
+                                                      "placeholder": "Certificate Number",
+                                                      "labelAlign": "top",
+                                                      "value": "{{miCertificateIdentifier}}",
+                                                      "size": 6,
+                                                      "ignore": false,
+                                                      "visible": true,
+                                                      "enabled": "{{$payload.$temp.editMode && ('' + $payload.loan.miCoverageExistsIndicator) === \"1\"}}",
+                                                      "isRequired": false,
+                                                      "label": "Certificate Number",
+                                                      "id": "text19",
+                                                      "col": 6
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "cols": [
+                                                    {
+                                                      "type": "text",
+                                                      "extraSettings": {},
+                                                      "i18n": {
+                                                        "en_us": {
+                                                          "placeholder": "Pool number",
+                                                          "label": "Pool number"
+                                                        },
+                                                        "de_de": {},
+                                                        "fr_fr": {},
+                                                        "it_it": {},
+                                                        "es_es": {}
+                                                      },
+                                                      "placeholder": "Pool number",
+                                                      "labelAlign": "top",
+                                                      "value": "{{miPoolInsuranceCertificateIdentifier}}",
+                                                      "size": 6,
+                                                      "ignore": false,
+                                                      "visible": true,
+                                                      "enabled": "{{$payload.$temp.editMode && ('' + $payload.loan.miCoverageExistsIndicator) === \"1\"}}",
+                                                      "isRequired": false,
+                                                      "label": "Pool number",
+                                                      "id": "text20",
+                                                      "col": 0
+                                                    },
+                                                    {
+                                                      "size": 1,
+                                                      "type": ""
+                                                    },
+                                                    {
+                                                      "size": 1,
+                                                      "type": ""
+                                                    },
+                                                    {
+                                                      "size": 1,
+                                                      "type": ""
+                                                    },
+                                                    {
+                                                      "size": 1,
+                                                      "type": ""
+                                                    },
+                                                    {
+                                                      "size": 1,
+                                                      "type": ""
+                                                    },
+                                                    {
+                                                      "size": 1,
+                                                      "type": ""
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "id": "sub-form4",
+                                          "col": 3
+                                        },
+                                        {
+                                          "size": 1,
+                                          "type": ""
+                                        },
+                                        {
+                                          "size": 1,
+                                          "type": ""
+                                        },
+                                        {
+                                          "size": 1,
+                                          "type": ""
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              },
+                              "col": 0
+                            }
+                          ]
+                        },
+                        "col": 2
+                      },
+                      {
+                        "type": "panel",
+                        "i18n": {},
+                        "labelAlign": "top",
+                        "size": 1,
+                        "ignore": false,
+                        "visible": true,
+                        "enabled": true,
+                        "isRequired": false,
+                        "styleClass": "editableHeaderLinks",
+                        "id": "sub-panel14",
+                        "extraSettings": {
+                          "collapsible": false,
+                          "collapsed": false,
+                          "showBorder": false,
+                          "saveButtonVisible": true,
+                          "saveButtonEnabled": true,
+                          "cancelButtonVisible": true,
+                          "cancelButtonEnabled": true,
+                          "layoutDefinition": {
+                            "rows": [
+                              {
+                                "cols": [
+                                  {
+                                    "type": "scriptButton",
+                                    "extraSettings": {
+                                      "text": "{{!$temp.editMode ? 'Edit' : 'Cancel'}}",
+                                      "script": "{{!$temp.editMode}}",
+                                      "autoExecute": false,
+                                      "alignment": "left",
+                                      "iconAlignment": "right"
+                                    },
+                                    "i18n": {
+                                      "en_us": {
+                                        "extraSettings": {
+                                          "text": "{{!$temp.editMode ? 'Edit' : 'Cancel'}}"
+                                        }
+                                      }
+                                    },
+                                    "labelAlign": "top",
+                                    "value": "{{$temp.editMode}}",
+                                    "defaultValue": false,
+                                    "size": 12,
+                                    "ignore": false,
+                                    "visible": true,
+                                    "enabled": true,
+                                    "isRequired": false,
+                                    "styleClass": "items-end w-100px",
+                                    "id": "script-button3",
+                                    "col": 0
+                                  }
+                                ]
+                              },
+                              {
+                                "cols": [
+                                  {
+                                    "type": "scriptButton",
+                                    "extraSettings": {
+                                      "text": "Save",
+                                      "script": "{{!$temp.editMode}}",
+                                      "autoExecute": false,
+                                      "alignment": "left",
+                                      "iconAlignment": "right"
+                                    },
+                                    "i18n": {
+                                      "en_us": {
+                                        "extraSettings": {
+                                          "text": "Save"
+                                        }
+                                      }
+                                    },
+                                    "labelAlign": "top",
+                                    "value": "{{$temp.editMode}}",
+                                    "size": 12,
+                                    "ignore": false,
+                                    "visible": "{{$temp.editMode}}",
+                                    "isRequired": false,
+                                    "styleClass": "items-end w-100px",
+                                    "id": "script-button4",
+                                    "col": 0
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        "col": 11
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            "col": 0
+          }
+        ]
+      }
+    ]
+  }

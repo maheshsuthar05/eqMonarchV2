@@ -1,0 +1,77 @@
+.flw__boolean__checkbox {
+  margin-top: 19px;
+}
+
+.flw__boolean__input {
+  margin-right: $flw-gutter;
+  margin-right: var(--flw-gutter, $flw-gutter);
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  overflow: hidden;
+  margin-top: -4px;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: $flw-forms-transparent;
+  background-color: var(--flw-forms-transparent, $flw-forms-transparent);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: 1px solid $flw-color-lightgray;
+  border: 1px solid var(--flw-color-lightgray, $flw-color-lightgray);
+  transition: 0.2s ease-in-out;
+  transition-property: background-color, border;
+  cursor: pointer;
+  margin-top: -1px;
+  margin-left: 0;
+  background-color: $flw-forms-background-color;
+  background-color: var(--flw-forms-background-color, $flw-forms-background-color);
+}
+
+.flw__boolean__input:focus {
+  outline: none;
+  border-color: $flw-forms-color;
+  border-color: var(--flw-forms-color, $flw-forms-color);
+}
+
+.flw__boolean__input:checked {
+  background-color: $flw-forms-color;
+  background-color: var(--flw-forms-color, $flw-forms-color);
+  border-color: $flw-forms-transparent;
+  border-color: var(--flw-forms-transparent, $flw-forms-transparent);
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2214%22%20height%3D%2211%22%20viewBox%3D%220%200%2014%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23fff%22%20points%3D%2212%201%205%207.5%202%205%201%205.5%205%2010%2013%201.5%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+
+.flw__boolean__input[disabled] {
+  background-color: $flw-forms-muted-background-color;
+  background-color: var(--flw-forms-muted-background-color, $flw-forms-muted-background-color);
+  border: 1px solid $flw-forms-border-color;
+  border: 1px solid var(--flw-forms-border-color, $flw-forms-border-color);
+}
+
+.flw__boolean__label {
+  cursor: pointer;
+  display: inline;
+}
+
+.flw__boolean--disabled__input {
+  background-color: $flw-forms-muted-background-color;
+  background-color: var(--flw-forms-muted-background-color, $flw-forms-muted-background-color);
+  border-color: $flw-forms-border-color;
+  border-color: var(--flw-forms-border-color, $flw-forms-border-color);
+  cursor: default;
+}
+
+.flw__boolean--disabled__input:checked {
+  background-color: $flw-forms-muted-background-color;
+  background-color: var(--flw-forms-muted-background-color, $flw-forms-muted-background-color);
+  border-color: $flw-forms-border-color;
+  border-color: var(--flw-forms-border-color, $flw-forms-border-color);
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2214%22%20height%3D%2211%22%20viewBox%3D%220%200%2014%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23999%22%20points%3D%2212%201%205%207.5%202%205%201%205.5%205%2010%2013%201.5%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+
+.flw__boolean--disabled__label {
+  color: $flw-forms-muted-text-color;
+  color: var(--flw-forms-muted-text-color, $flw-forms-muted-text-color);
+  cursor: default;
+}

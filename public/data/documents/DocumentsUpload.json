@@ -1,0 +1,175 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "type": "panel",
+          "i18n": {},
+          "labelAlign": "top",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "sub-panel1",
+          "extraSettings": {
+            "collapsible": false,
+            "collapsed": false,
+            "showBorder": true,
+            "saveButtonVisible": true,
+            "saveButtonEnabled": true,
+            "cancelButtonVisible": true,
+            "cancelButtonEnabled": true,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "type": "select",
+                      "extraSettings": {
+                        "tagsEnabled": false,
+                        "preselectAll": false,
+                        "enableAutocomplete": false,
+                        "dataSource": "Static",
+                        "items": "{{$payload.dropDownList}}",
+                        "formatItem": "{{$item.name}}",
+                        "storage": "Id",
+                        "identity": "value",
+                        "linkTarget": "_blank",
+                        "multi": false
+                      },
+                      "i18n": {
+                        "en_us": {
+                          "extraSettings": {
+                            "items": "{{$payload.dropDownList}}"
+                          },
+                          "label": "File Category Type",
+                          "tooltip": "File Category Type"
+                        }
+                      },
+                      "enabled": true,
+                      "labelAlign": "top",
+                      "value": "{{fileCategoryType}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "isRequired": true,
+                      "tooltip": "File Category Type",
+                      "label": "File Category Type",
+                      "id": "single-select1",
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "upload",
+                      "labelAlign": "top",
+                      "i18n": {
+                        "en_us": {
+                          "label": "Select File",
+                          "tooltip": "Select File"
+                        }
+                      },
+                      "value": "{{lenderFileUpload}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": true,
+                      "tooltip": "Select File",
+                      "label": "Select File",
+                      "id": "attachment1",
+                      "extraSettings": {
+                        "autoupload": false,
+                        "downloadUrl": "rest/file/{{id}}",
+                        "allowDelete": "newOnly",
+                        "preview": "none",
+                        "minFiles": 1,
+                        "maxFiles": 1,
+                        "acceptFileTypes": "{{fileCategoryType == 'propertyimage'?'.png,.jpeg,.jpg,.gif,.tiff' : false}}",
+                        "hasFileType": true,
+                        "requireFileType": false
+                      },
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "size": 1,
+                      "type": ""
+                    },
+                    {
+                      "size": 1,
+                      "type": ""
+                    },
+                    {
+                      "size": 1,
+                      "type": ""
+                    },
+                    {
+                      "size": 1,
+                      "type": ""
+                    },
+                    {
+                      "size": 1,
+                      "type": ""
+                    },
+                    {
+                      "size": 1,
+                      "type": ""
+                    },
+                    {
+                      "size": 1,
+                      "type": ""
+                    },
+                    {
+                      "size": 1,
+                      "type": ""
+                    },
+                    {
+                      "size": 1,
+                      "type": ""
+                    },
+                    {
+                      "type": "scriptButton",
+                      "extraSettings": {
+                        "text": "Upload",
+                        "script": "{{example + 1}}",
+                        "autoExecute": false,
+                        "alignment": "left",
+                        "iconAlignment": "right"
+                      },
+                      "i18n": {
+                        "en_us": {
+                          "extraSettings": {
+                            "text": "Upload"
+                          }
+                        }
+                      },
+                      "primary": false,
+                      "labelAlign": "top",
+                      "size": 3,
+                      "ignore": false,
+                      "visible": false,
+                      "enabled": "{{fileCategoryType.length && lenderFileUpload.length}}",
+                      "isRequired": false,
+                      "styleClass": "altisource__button_primary",
+                      "id": "script-button1",
+                      "col": 9
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "col": 0
+        }
+      ]
+    }
+  ],
+  "forceValidation": false
+}

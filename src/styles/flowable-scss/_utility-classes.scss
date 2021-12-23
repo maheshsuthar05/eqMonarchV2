@@ -1,0 +1,91 @@
+.flw-keep-lines {
+  white-space: pre;
+}
+
+.flw-blue {
+  background: $flw-forms-blue-background-color;
+  background: var(--flw-forms-blue-background-color, $flw-forms-blue-background-color);
+  color: $flw-forms-color;
+  color: var(--flw-forms-color, $flw-forms-color);
+}
+
+.flw-green {
+  background: $flw-forms-green-background-color;
+  background: var(--flw-forms-green-background-color, $flw-forms-green-background-color);
+  color: $flw-forms-success-color;
+  color: var(--flw-forms-success-color, $flw-forms-success-color);
+}
+
+.flw-orange {
+  background: $flw-forms-orange-background-color;
+  background: var(--flw-forms-orange-background-color, $flw-forms-orange-background-color);
+  color: $flw-forms-orange-color;
+  color: var(--flw-forms-orange-color, $flw-forms-orange-color);
+}
+
+.flw-red {
+  background: $flw-forms-red-background-color;
+  background: var(--flw-forms-red-background-color, $flw-forms-red-background-color);
+  color: $flw-forms-error-color;
+  color: var(--flw-forms-error-color, $flw-forms-error-color);
+}
+
+.flw-bg-whitesmoke {
+  background-color: $flw-forms-muted-background-color;
+  background-color: var(--flw-forms-muted-background-color, $flw-forms-muted-background-color);
+}
+
+.flw-padding-normal {
+  padding: $flw-gutter;
+  padding: var(--flw-gutter, $flw-gutter);
+}
+
+.flw-margin-normal {
+  margin: $flw-gutter;
+  margin: var(--flw-gutter, $flw-gutter);
+}
+
+.flw-content-blue > *:not(label):not(.flw__description):not(.flw__error-list) {
+  color: $flw-forms-color;
+  color: var(--flw-forms-color, $flw-forms-color);
+}
+
+.flw-out-padding-top-25 {
+  padding-top: 25px;
+}
+
+.flw-in-min-height-100 .flw__component__input {
+  min-height: 100px;
+}
+
+.flw-in-min-height-150 .flw__component__input {
+  min-height: 150px;
+}
+
+.flw-in-min-height-200 .flw__component__input {
+  min-height: 200px;
+}
+
+.flw-in-min-height-250 .flw__component__input {
+  min-height: 250px;
+}
+
+.flw-in-min-height-300 .flw__component__input {
+  min-height: 300px;
+}
+
+.flw-in-min-height-350 .flw__component__input {
+  min-height: 350px;
+}
+
+.flw-in-min-height-400 .flw__component__input {
+  min-height: 400px;
+}
+
+.flw-in-min-height-450 .flw__component__input {
+  min-height: 450px;
+}
+
+.flw-in-min-height-500 .flw__component__input {
+  min-height: 500px;
+}

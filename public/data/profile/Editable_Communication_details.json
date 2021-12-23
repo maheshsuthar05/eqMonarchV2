@@ -1,0 +1,491 @@
+{
+    "rows": [
+      {
+        "cols": [
+          {
+            "type": "panel",
+            "label": "Communication",
+            "i18n": {
+              "en_us": {
+                "label": "Communication"
+              }
+            },
+            "labelAlign": "top",
+            "size": 12,
+            "ignore": false,
+            "visible": true,
+            "enabled": true,
+            "isRequired": false,
+            "styleClass": "property-layout-column communication-column",
+            "id": "sub-panel4",
+            "extraSettings": {
+              "collapsible": false,
+              "collapsed": false,
+              "showBorder": false,
+              "saveButtonVisible": true,
+              "saveButtonEnabled": true,
+              "cancelButtonVisible": true,
+              "cancelButtonEnabled": true,
+              "layoutDefinition": {
+                "rows": [
+                  {
+                    "cols": [
+                      {
+                        "type": "radio",
+                        "i18n": {
+                          "en_us": {
+                            "extraSettings": {
+                              "items": [
+                                {
+                                  "text": "Yes",
+                                  "value": "Yes",
+                                  "checked": "true"
+                                },
+                                {
+                                  "text": "No",
+                                  "value": "No"
+                                }
+                              ]
+                            },
+                            "label": "Receive Equator Platform-related Emails?"
+                          }
+                        },
+                        "enabled": true,
+                        "extraSettings": {
+                          "dataSource": "Static",
+                          "items": [
+                            {
+                              "text": "Yes",
+                              "value": "Yes",
+                              "checked": "true"
+                            },
+                            {
+                              "text": "No",
+                              "value": "No"
+                            }
+                          ],
+                          "storage": "Id",
+                          "identity": "value",
+                          "linkTarget": "_blank",
+                          "display": "Horizontal"
+                        },
+                        "labelAlign": "left",
+                        "value": "{{receiveEquatorPlatformRelatedEmails}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "isRequired": false,
+                        "label": "Receive Equator Platform-related Emails?",
+                        "id": "radiobuttons1",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "radio",
+                        "i18n": {
+                          "en_us": {
+                            "extraSettings": {
+                              "items": [
+                                {
+                                  "text": "Yes",
+                                  "value": "Yes",
+                                  "checked": "true"
+                                },
+                                {
+                                  "text": "No",
+                                  "value": "No"
+                                }
+                              ]
+                            },
+                            "label": "Receive Equator Offers,News and Other Emails?"
+                          }
+                        },
+                        "enabled": true,
+                        "extraSettings": {
+                          "dataSource": "Static",
+                          "items": [
+                            {
+                              "text": "Yes",
+                              "value": "Yes",
+                              "checked": "true"
+                            },
+                            {
+                              "text": "No",
+                              "value": "No"
+                            }
+                          ],
+                          "storage": "Id",
+                          "identity": "value",
+                          "linkTarget": "_blank",
+                          "display": "Horizontal"
+                        },
+                        "labelAlign": "left",
+                        "value": "{{receiveEquatorOffersNewsAndOtherEmails}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "isRequired": false,
+                        "label": "Receive Equator Offers,News and Other Emails?",
+                        "id": "radiobuttons2",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "radio",
+                        "i18n": {
+                          "en_us": {
+                            "extraSettings": {
+                              "items": [
+                                {
+                                  "text": "Yes",
+                                  "value": "Yes",
+                                  "checked": "true"
+                                },
+                                {
+                                  "text": "No",
+                                  "value": "No"
+                                }
+                              ]
+                            },
+                            "label": "Receive Third Party Emails?"
+                          }
+                        },
+                        "enabled": true,
+                        "extraSettings": {
+                          "dataSource": "Static",
+                          "items": [
+                            {
+                              "text": "Yes",
+                              "value": "Yes",
+                              "checked": "true"
+                            },
+                            {
+                              "text": "No",
+                              "value": "No"
+                            }
+                          ],
+                          "storage": "Id",
+                          "identity": "value",
+                          "linkTarget": "_blank",
+                          "display": "Horizontal"
+                        },
+                        "labelAlign": "left",
+                        "value": "{{receiveThirdPartyEmails}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "isRequired": false,
+                        "label": "Receive Third Party Emails?",
+                        "id": "radiobuttons3",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "radio",
+                        "i18n": {
+                          "en_us": {
+                            "extraSettings": {
+                              "items": [
+                                {
+                                  "text": "HTML",
+                                  "value": "html",
+                                  "checked": "true"
+                                },
+                                {
+                                  "text": "Text",
+                                  "value": "text"
+                                }
+                              ]
+                            },
+                            "label": "Email Format"
+                          }
+                        },
+                        "enabled": true,
+                        "extraSettings": {
+                          "dataSource": "Static",
+                          "items": [
+                            {
+                              "text": "HTML",
+                              "value": "html",
+                              "checked": "true"
+                            },
+                            {
+                              "text": "Text",
+                              "value": "text"
+                            }
+                          ],
+                          "storage": "Id",
+                          "identity": "value",
+                          "linkTarget": "_blank",
+                          "display": "Horizontal"
+                        },
+                        "labelAlign": "left",
+                        "value": "{{emailFormat}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "isRequired": false,
+                        "label": "Email Format",
+                        "id": "radiobuttons4",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "textarea",
+                        "extraSettings": {},
+                        "i18n": {
+                          "en_us": {
+                            "label": "Signature:"
+                          },
+                          "de_de": {},
+                          "fr_fr": {},
+                          "it_it": {},
+                          "es_es": {}
+                        },
+                        "labelAlign": "left",
+                        "value": "{{signature}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "enabled": true,
+                        "isRequired": false,
+                        "label": "Signature:",
+                        "id": "text-area1",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "radio",
+                        "i18n": {
+                          "en_us": {
+                            "extraSettings": {
+                              "items": [
+                                {
+                                  "text": "Yes",
+                                  "value": "Yes",
+                                  "checked": "true"
+                                },
+                                {
+                                  "text": "No",
+                                  "value": "No"
+                                }
+                              ]
+                            },
+                            "label": "Out of Office:"
+                          }
+                        },
+                        "enabled": true,
+                        "extraSettings": {
+                          "dataSource": "Static",
+                          "items": [
+                            {
+                              "text": "Yes",
+                              "value": "Yes",
+                              "checked": "true"
+                            },
+                            {
+                              "text": "No",
+                              "value": "No"
+                            }
+                          ],
+                          "storage": "Id",
+                          "identity": "value",
+                          "linkTarget": "_blank",
+                          "display": "Horizontal"
+                        },
+                        "labelAlign": "left",
+                        "value": "{{outOfOffice}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "isRequired": false,
+                        "label": "Out of Office:",
+                        "id": "radiobuttons5",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "textarea",
+                        "extraSettings": {},
+                        "i18n": {
+                          "en_us": {
+                            "label": "Message:"
+                          },
+                          "de_de": {},
+                          "fr_fr": {},
+                          "it_it": {},
+                          "es_es": {}
+                        },
+                        "labelAlign": "left",
+                        "value": "{{message}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "enabled": true,
+                        "isRequired": false,
+                        "label": "Message:",
+                        "id": "text-area2",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "radio",
+                        "i18n": {
+                          "en_us": {
+                            "extraSettings": {
+                              "items": [
+                                {
+                                  "text": "Yes",
+                                  "value": "Yes",
+                                  "checked": "true"
+                                },
+                                {
+                                  "text": "No",
+                                  "value": "No"
+                                }
+                              ]
+                            },
+                            "label": "CC Email:"
+                          }
+                        },
+                        "enabled": true,
+                        "extraSettings": {
+                          "dataSource": "Static",
+                          "items": [
+                            {
+                              "text": "Yes",
+                              "value": "Yes",
+                              "checked": "true"
+                            },
+                            {
+                              "text": "No",
+                              "value": "No"
+                            }
+                          ],
+                          "storage": "Id",
+                          "identity": "value",
+                          "linkTarget": "_blank",
+                          "display": "Horizontal"
+                        },
+                        "labelAlign": "left",
+                        "value": "{{cCEmail}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "isRequired": false,
+                        "label": "CC Email:",
+                        "id": "radiobuttons6",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "text",
+                        "extraSettings": {},
+                        "i18n": {
+                          "en_us": {
+                            "label": "Email Field:"
+                          },
+                          "de_de": {},
+                          "fr_fr": {},
+                          "it_it": {},
+                          "es_es": {}
+                        },
+                        "labelAlign": "left",
+                        "value": "{{emailField}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "enabled": true,
+                        "isRequired": false,
+                        "label": "Email Field:",
+                        "id": "text19",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "radio",
+                        "i18n": {
+                          "en_us": {
+                            "extraSettings": {
+                              "items": [
+                                {
+                                  "text": "Yes",
+                                  "value": "Yes",
+                                  "checked": "true"
+                                },
+                                {
+                                  "text": "No",
+                                  "value": "No"
+                                }
+                              ]
+                            },
+                            "label": "Hide New Task/Deliverable Messages in Inbox"
+                          }
+                        },
+                        "enabled": true,
+                        "extraSettings": {
+                          "dataSource": "Static",
+                          "items": [
+                            {
+                              "text": "Yes",
+                              "value": "Yes",
+                              "checked": "true"
+                            },
+                            {
+                              "text": "No",
+                              "value": "No"
+                            }
+                          ],
+                          "storage": "Id",
+                          "identity": "value",
+                          "linkTarget": "_blank",
+                          "display": "Horizontal"
+                        },
+                        "labelAlign": "left",
+                        "value": "{{hideMessagesInbox}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "isRequired": false,
+                        "label": "Hide New Task/Deliverable Messages in Inbox",
+                        "id": "radiobuttons7",
+                        "col": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            "col": 0
+          }
+        ]
+      }
+    ]
+  }

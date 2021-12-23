@@ -1,0 +1,168 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "type": "htmlComponent",
+          "i18n": {
+            "en_us": {
+              "value": "<p><span style=\"font-size:14px\"><strong>Roles<span style=\"color:#c0392b\">*</span></strong></span></p>"
+            },
+            "de_de": {},
+            "fr_fr": {},
+            "it_it": {},
+            "es_es": {}
+          },
+          "labelAlign": "top",
+          "value": "<p><span style=\"font-size:14px\"><strong>Roles<span style=\"color:#c0392b\">*</span></strong></span></p>",
+          "size": 6,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "html-component1",
+          "extraSettings": {
+            "showBorder": false
+          },
+          "col": 0
+        },
+        {
+          "type": "htmlComponent",
+          "i18n": {
+            "en_us": {
+              "value": "<p><span style=\"font-size:14px\"><strong>Assigned Users<span style=\"color:#c0392b\">*</span></strong></span></p>"
+            },
+            "de_de": {},
+            "fr_fr": {},
+            "it_it": {},
+            "es_es": {}
+          },
+          "labelAlign": "top",
+          "value": "<p><span style=\"font-size:14px\"><strong>Assigned Users<span style=\"color:#c0392b\">*</span></strong></span></p>",
+          "size": 6,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "html-component2",
+          "extraSettings": {
+            "showBorder": false
+          },
+          "col": 6
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "type": "hline",
+          "i18n": {
+            "en_us": {},
+            "de_de": {},
+            "fr_fr": {},
+            "it_it": {},
+            "es_es": {}
+          },
+          "labelAlign": "top",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "hline1",
+          "col": 0
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "type": "subform",
+          "labelAlign": "top",
+          "value": "{{customData}}",
+          "i18n": {},
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "extraSettings": {
+            "showBorder": false,
+            "collapsible": false,
+            "collapsed": false,
+            "formRef": {
+              "id": "FORM_MODEL-a495fbb3-4a21-4325-a9eb-2790f23e3d84",
+              "key": "propertyRolesEditSubForm"
+            },
+            "multipleEntries": true,
+            "showAddButton": false,
+            "showDeleteButton": false,
+            "showNoItemsMessage": true,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "type": "htmlComponent",
+                      "i18n": {
+                        "en_us": {
+                          "value": "<h5>{{partyRoleType}}</h5>\n<span>{{productName==null? \" \": \"( \"+\"Product:\" + productName+\")\"}}</span>"
+                        },
+                        "de_de": {},
+                        "fr_fr": {},
+                        "it_it": {},
+                        "es_es": {}
+                      },
+                      "labelAlign": "top",
+                      "value": "<h5>{{partyRoleType}}</h5>\n<span>{{productName==null? \" \": \"( \"+\"Product:\" + productName+\")\"}}</span>",
+                      "defaultValue": false,
+                      "size": 6,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "html-component1",
+                      "extraSettings": {
+                        "showBorder": false
+                      },
+                      "col": 0
+                    },
+                    {
+                      "type": "select",
+                      "extraSettings": {
+                        "tagsEnabled": false,
+                        "preselectAll": false,
+                        "clientSideFiltering": true,
+                        "enableAutocomplete": true,
+                        "autocompleteMinLength": 0,
+                        "dataSource": "Rest",
+                        "queryUrl": "{{additionalData.url}}={{partyRoleType}}",
+                        "lookupUrl": "{{partyRoleType}}",
+                        "formatItem": "{{$item.individualFullName}}",
+                        "storage": "Full",
+                        "identity": "displayName",
+                        "linkTarget": "_blank",
+                        "multi": false
+                      },
+                      "i18n": {},
+                      "enabled": "{{platformPartyIndicator === 0 ? true : false}}",
+                      "value": "{{displayName}}",
+                      "size": 6,
+                      "ignore": false,
+                      "visible": true,
+                      "isRequired": true,
+                      "id": "single-select1",
+                      "col": 6
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "id": "sub-form1",
+          "col": 0
+        }
+      ]
+    }
+  ]
+}

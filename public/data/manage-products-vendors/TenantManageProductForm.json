@@ -1,0 +1,180 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "type": "subform",
+          "labelAlign": "top",
+          "value": "{{ListOfProducts}}",
+          "defaultValue": "",
+          "description": "",
+          "i18n": {
+            "en_us": {
+              "description": "",
+              "customValidations": "",
+              "label": "",
+              "extraSettings": {
+                "minItemsErrorMessage": 1,
+                "maxItemsErrorMessage": "",
+                "addButtonText": "Add"
+              }
+            },
+            "de_de": {
+              "description": "",
+              "customValidations": "",
+              "label": "",
+              "extraSettings": {
+                "minItemsErrorMessage": "",
+                "maxItemsErrorMessage": "",
+                "addButtonText": ""
+              }
+            },
+            "fr_fr": {
+              "description": "",
+              "customValidations": "",
+              "label": "",
+              "extraSettings": {
+                "minItemsErrorMessage": "",
+                "maxItemsErrorMessage": "",
+                "addButtonText": ""
+              }
+            },
+            "it_it": {
+              "description": "",
+              "customValidations": "",
+              "label": "",
+              "extraSettings": {
+                "minItemsErrorMessage": "",
+                "maxItemsErrorMessage": "",
+                "addButtonText": ""
+              }
+            },
+            "es_es": {
+              "description": "",
+              "customValidations": "",
+              "label": "",
+              "extraSettings": {
+                "minItemsErrorMessage": "",
+                "maxItemsErrorMessage": "",
+                "addButtonText": ""
+              }
+            }
+          },
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "styleClass": "vendor-account-services",
+          "customValidations": "",
+          "label": "",
+          "extraSettings": {
+            "showBorder": false,
+            "minItems": 1,
+            "minItemsErrorMessage": 1,
+            "maxItems": "",
+            "maxItemsErrorMessage": "",
+            "collapsible": false,
+            "collapsed": false,
+            "formRef": {
+              "id": "FORM_MODEL-896597d9-10e4-4584-8478-0c96bc2f093d",
+              "key": "tenantManageProductForm"
+            },
+            "multipleEntries": true,
+            "showAddButton": true,
+            "showDeleteButton": true,
+            "addButtonText": "Add",
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "type": "select",
+                      "extraSettings": {
+                        "tagsEnabled": false,
+                        "preselectAll": false,
+                        "clientSideFiltering": false,
+                        "enableAutocomplete": false,
+                        "dataSource": "Rest",
+                        "queryUrl": "/eq-api/party/eqvmProductCategories/search/findByProductCategoryTypeCode?productCategoryTypeCode=Vendor&tempTenantCode=internal",
+                        "lookupUrl": "productCategoryName",
+                        "path": "_embedded.eqvmProductCategories",
+                        "formatItem": "{{$item.productCategoryName}}",
+                        "storage": "Full",
+                        "linkTarget": "_blank",
+                        "multi": false
+                      },
+                      "i18n": {
+                        "en_us": {
+                          "placeholder": "Select a service",
+                          "tooltip": "Select a service",
+                          "label": "Select a service"
+                        }
+                      },
+                      "enabled": true,
+                      "labelAlign": "top",
+                      "value": "{{productCategory}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "isRequired": true,
+                      "placeholder": "Select a service",
+                      "tooltip": "Select a service",
+                      "label": "Select a service",
+                      "id": "single-select2",
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "select",
+                      "extraSettings": {
+                        "tagsEnabled": false,
+                        "preselectAll": false,
+                        "clientSideFiltering": false,
+                        "minItems": 1,
+                        "enableAutocomplete": false,
+                        "dataSource": "Rest",
+                        "queryUrl": "/eq-api/party/eqvmProductCategories/{{productCategory.productCategoryId}}/eqvmProducts?tempTenantCode=internal",
+                        "lookupUrl": "productName",
+                        "path": "_embedded.eqvmProducts",
+                        "formatItem": "{{$item.productName}}",
+                        "storage": "Id",
+                        "identity": "productId",
+                        "linkTarget": "_blank",
+                        "multi": true
+                      },
+                      "i18n": {
+                        "en_us": {
+                          "placeholder":"Select products associated {{productCategory.productCategoryTypeCode ? productCategory.productCategoryTypeCode : 'service'}}",
+                          "tooltip":"Select products associated {{productCategory.productCategoryTypeCode ? productCategory.productCategoryTypeCode : 'service'}}",
+                          "label": "Select products associated {{productCategory.productCategoryTypeCode ? productCategory.productCategoryTypeCode : 'service'}}"
+                        }
+                      },
+                      "enabled": true,
+                      "labelAlign": "top",
+                      "value": "{{eqvmProducts}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "isRequired": true,
+                      "placeholder":"Select products associated {{productCategory.productCategoryTypeCode ? productCategory.productCategoryTypeCode : 'service'}}",
+                      "tooltip":"Select products associated {{productCategory.productCategoryTypeCode ? productCategory.productCategoryTypeCode : 'service'}}",
+                      "label": "Select products associated {{productCategory.productCategoryTypeCode ? productCategory.productCategoryTypeCode : 'service'}}",
+                      "id": "multi-select2",
+                      "col": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "id": "manageProductForm",
+          "col": 0
+        }
+      ]
+    }
+  ]
+}

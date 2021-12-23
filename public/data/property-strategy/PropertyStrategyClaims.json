@@ -1,0 +1,2141 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "type": "panel",
+          "i18n": {},
+          "labelAlign": "top",
+          "size": 3,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "sub-panel7",
+          "extraSettings": {
+            "collapsible": false,
+            "collapsed": false,
+            "showBorder": true,
+            "saveButtonVisible": true,
+            "saveButtonEnabled": true,
+            "cancelButtonVisible": true,
+            "cancelButtonEnabled": true,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "type": "htmlComponent",
+                      "i18n": {
+                        "en_us": {
+                          "value": "<div style = \"\n    \t\t\tmargin: 15px 0 10px 0;\n              \">\n<h3 style = \"\n             \tmargin-top: 0;\n    \t\t\t    color: #122230;\n    font-size: 12px;\n    font-weight: bold !Important;\n    \t\t\tmargin-bottom: 5px;\n             \">\nCWCOT\n</h3>\n</div>"
+                        },
+                        "de_de": {},
+                        "fr_fr": {},
+                        "it_it": {},
+                        "es_es": {}
+                      },
+                      "labelAlign": "top",
+                      "value": "<div style = \"\n    \t\t\tmargin: 15px 0 10px 0;\n              \">\n<h3 style = \"\n             \tmargin-top: 0;\n    \t\t\t    color: #122230;\n    font-size: 12px;\n    font-weight: bold !Important;\n    \t\t\tmargin-bottom: 5px;\n             \">\nCWCOT\n</h3>\n</div>",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "html-component2",
+                      "extraSettings": {
+                        "showBorder": false
+                      },
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel8",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Part A</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Part A</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output8",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.claims_cwcot_part_a}}",
+                                  "defaultValue": 0,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "float-number7",
+                                  "extraSettings": {
+                                    "numberType": "float",
+                                    "fractionSize": 2,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>UPB</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>UPB</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output9",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.claims_cwcot_upb}}",
+                                  "defaultValue": "{{propertyProjectionsResults.reo_as_is_net_loss_upb}}",
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "float-number8",
+                                  "extraSettings": {
+                                    "numberType": "float",
+                                    "fractionSize": 2,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Deb. Interest</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Deb. Interest</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output10",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.claims_cwcot_debenture_interest}}",
+                                  "defaultValue": 0,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "float-number9",
+                                  "extraSettings": {
+                                    "numberType": "float",
+                                    "fractionSize": 2,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Advances</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Advances</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output11",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.claims_cwcot_advances}}",
+                                  "defaultValue": 0,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "float-number10",
+                                  "extraSettings": {
+                                    "numberType": "float",
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Escrow</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Escrow</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output12",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.claims_cwcot_escrow}}",
+                                  "defaultValue": "{{propertyProjectionsResults.reo_as_is_net_loss_escrow}}",
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "float-number11",
+                                  "extraSettings": {
+                                    "numberType": "float",
+                                    "fractionSize": 2,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "panel",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "size": 12,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "sub-panel9",
+                                  "extraSettings": {
+                                    "collapsible": false,
+                                    "collapsed": false,
+                                    "showBorder": false,
+                                    "saveButtonVisible": true,
+                                    "saveButtonEnabled": true,
+                                    "cancelButtonVisible": true,
+                                    "cancelButtonEnabled": true,
+                                    "layoutDefinition": {
+                                      "rows": [
+                                        {
+                                          "cols": [
+                                            {
+                                              "type": "htmlComponent",
+                                              "i18n": {
+                                                "en_us": {
+                                                  "value": "<br/><br/>"
+                                                },
+                                                "de_de": {},
+                                                "fr_fr": {},
+                                                "it_it": {},
+                                                "es_es": {}
+                                              },
+                                              "labelAlign": "top",
+                                              "value": "<br/><br/>",
+                                              "size": 12,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "id": "html-component6",
+                                              "extraSettings": {
+                                                "showBorder": false
+                                              },
+                                              "col": 0
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "col": 0
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Part B</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Part B</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output13",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.claims_cwcot_part_b}}",
+                                  "defaultValue": 0,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "float-number12",
+                                  "extraSettings": {
+                                    "numberType": "float",
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p><strong>Total</strong></p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p><strong>Total</strong></p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output14",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>$ {{propertyProjectionsResults.claims_cwcot_total}}</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>$ {{propertyProjectionsResults.claims_cwcot_total}}</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output31",
+                                  "col": 6
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "col": 0
+        },
+        {
+          "type": "panel",
+          "i18n": {},
+          "labelAlign": "top",
+          "size": 3,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "sub-panel1",
+          "extraSettings": {
+            "collapsible": false,
+            "collapsed": false,
+            "showBorder": true,
+            "saveButtonVisible": true,
+            "saveButtonEnabled": true,
+            "cancelButtonVisible": true,
+            "cancelButtonEnabled": true,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "type": "htmlComponent",
+                      "i18n": {
+                        "en_us": {
+                          "value": "<div style = \"\n    \t\t\tmargin: 15px 0 10px 0;\n              \">\n<h3 style = \"\n             \tmargin-top: 0;\n    \t\t\t    color: #122230;\n    font-size: 12px;\n    font-weight: bold !Important;\n    \t\t\tmargin-bottom: 5px;\n             \">\nConveyance\n</h3>\n</div>"
+                        },
+                        "de_de": {},
+                        "fr_fr": {},
+                        "it_it": {},
+                        "es_es": {}
+                      },
+                      "labelAlign": "top",
+                      "value": "<div style = \"\n    \t\t\tmargin: 15px 0 10px 0;\n              \">\n<h3 style = \"\n             \tmargin-top: 0;\n    \t\t\t    color: #122230;\n    font-size: 12px;\n    font-weight: bold !Important;\n    \t\t\tmargin-bottom: 5px;\n             \">\nConveyance\n</h3>\n</div>",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "html-component1",
+                      "extraSettings": {
+                        "showBorder": false
+                      },
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel5",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Part A</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Part A</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output1",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.claims_conveyance_part_a}}",
+                                  "defaultValue": 0,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "float-number1",
+                                  "extraSettings": {
+                                    "numberType": "float",
+                                    "fractionSize": 2,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>UPB</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>UPB</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output2",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.claims_conveyance_upb}}",
+                                  "defaultValue": "{{propertyProjectionsResults.reo_as_is_net_loss_upb}}",
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "float-number2",
+                                  "extraSettings": {
+                                    "numberType": "float",
+                                    "fractionSize": 2,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Deb. Interest</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Deb. Interest</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output3",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.claims_conveyance_debenture_interest}}",
+                                  "defaultValue": 0,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "float-number3",
+                                  "extraSettings": {
+                                    "numberType": "float",
+                                    "fractionSize": 2,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Advances</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Advances</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output4",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.claims_conveyance_advances}}",
+                                  "defaultValue": 0,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "float-number4",
+                                  "extraSettings": {
+                                    "numberType": "float",
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Escrow</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Escrow</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output5",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.claims_conveyance_escrow}}",
+                                  "defaultValue": "{{propertyProjectionsResults.reo_as_is_net_loss_escrow}}",
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "float-number5",
+                                  "extraSettings": {
+                                    "numberType": "float",
+                                    "fractionSize": 2,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "panel",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "size": 12,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "sub-panel6",
+                                  "extraSettings": {
+                                    "collapsible": false,
+                                    "collapsed": false,
+                                    "showBorder": false,
+                                    "saveButtonVisible": true,
+                                    "saveButtonEnabled": true,
+                                    "cancelButtonVisible": true,
+                                    "cancelButtonEnabled": true,
+                                    "layoutDefinition": {
+                                      "rows": [
+                                        {
+                                          "cols": [
+                                            {
+                                              "type": "htmlComponent",
+                                              "i18n": {
+                                                "en_us": {
+                                                  "value": "<br/><br/>"
+                                                },
+                                                "de_de": {},
+                                                "fr_fr": {},
+                                                "it_it": {},
+                                                "es_es": {}
+                                              },
+                                              "labelAlign": "top",
+                                              "value": "<br/><br/>",
+                                              "size": 12,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "id": "html-component5",
+                                              "extraSettings": {
+                                                "showBorder": false
+                                              },
+                                              "col": 0
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "col": 0
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Part B</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Part B</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output6",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.claims_conveyance_part_b}}",
+                                  "defaultValue": 0,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "float-number6",
+                                  "extraSettings": {
+                                    "numberType": "float",
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p><strong>Total</strong></p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p><strong>Total</strong></p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output7",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>$ {{propertyProjectionsResults.claims_conveyance_total}}</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>$ {{propertyProjectionsResults.claims_conveyance_total}}</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output30",
+                                  "col": 6
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "col": 3
+        },
+        {
+          "type": "panel",
+          "i18n": {},
+          "labelAlign": "top",
+          "size": 3,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "sub-panel10",
+          "extraSettings": {
+            "collapsible": false,
+            "collapsed": false,
+            "showBorder": true,
+            "saveButtonVisible": true,
+            "saveButtonEnabled": true,
+            "cancelButtonVisible": true,
+            "cancelButtonEnabled": true,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "type": "htmlComponent",
+                      "i18n": {
+                        "en_us": {
+                          "value": "<div style = \"\n    \t\t\tmargin: 15px 0 10px 0;\n              \">\n<h3 style = \"\n             \tmargin-top: 0;\n    \t\t\t    color: #122230;\n    font-size: 12px;\n    font-weight: bold !Important;\n    \t\t\tmargin-bottom: 5px;\n             \">\nREO As Is\n</h3>\n</div>"
+                        },
+                        "de_de": {},
+                        "fr_fr": {},
+                        "it_it": {},
+                        "es_es": {}
+                      },
+                      "labelAlign": "top",
+                      "value": "<div style = \"\n    \t\t\tmargin: 15px 0 10px 0;\n              \">\n<h3 style = \"\n             \tmargin-top: 0;\n    \t\t\t    color: #122230;\n    font-size: 12px;\n    font-weight: bold !Important;\n    \t\t\tmargin-bottom: 5px;\n             \">\nREO As Is\n</h3>\n</div>",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "html-component3",
+                      "extraSettings": {
+                        "showBorder": false
+                      },
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel11",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Part A</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Part A</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output15",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.claims_reo_as_is_part_a}}",
+                                  "defaultValue": 0,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "float-number13",
+                                  "extraSettings": {
+                                    "numberType": "float",
+                                    "fractionSize": 2,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>UPB</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>UPB</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output16",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.claims_reo_as_is_upb}}",
+                                  "defaultValue": "{{propertyProjectionsResults.reo_as_is_net_loss_upb}}",
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "float-number14",
+                                  "extraSettings": {
+                                    "numberType": "float",
+                                    "fractionSize": 2,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Deb. Interest</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Deb. Interest</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output17",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.claims_reo_as_is_debenture_interest}}",
+                                  "defaultValue": 0,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "float-number15",
+                                  "extraSettings": {
+                                    "numberType": "float",
+                                    "fractionSize": 2,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Advances</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Advances</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output18",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.claims_reo_as_is_advances}}",
+                                  "defaultValue": 0,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "float-number16",
+                                  "extraSettings": {
+                                    "numberType": "float",
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Escrow</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Escrow</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output19",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.claims_reo_as_is_escrow}}",
+                                  "defaultValue": "{{propertyProjectionsResults.reo_as_is_net_loss_escrow}}",
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "float-number17",
+                                  "extraSettings": {
+                                    "numberType": "float",
+                                    "fractionSize": 2,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>CAFMV / FC Sale</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>CAFMV / FC Sale</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output34",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.claims_reo_as_is_cafmv}}",
+                                  "defaultValue": 0,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "float-number25",
+                                  "extraSettings": {
+                                    "numberType": "float",
+                                    "fractionSize": 2,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Part B</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Part B</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output20",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.claims_reo_as_is_part_b}}",
+                                  "defaultValue": 0,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "float-number18",
+                                  "extraSettings": {
+                                    "numberType": "float",
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p><strong>Total</strong></p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p><strong>Total</strong></p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output21",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>$ {{propertyProjectionsResults.claims_reo_as_is_total}}</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>$ {{propertyProjectionsResults.claims_reo_as_is_total}}</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output32",
+                                  "col": 6
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "col": 6
+        },
+        {
+          "type": "panel",
+          "i18n": {},
+          "labelAlign": "top",
+          "size": 3,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "sub-panel16",
+          "extraSettings": {
+            "collapsible": false,
+            "collapsed": false,
+            "showBorder": true,
+            "saveButtonVisible": true,
+            "saveButtonEnabled": true,
+            "cancelButtonVisible": true,
+            "cancelButtonEnabled": true,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "type": "htmlComponent",
+                      "i18n": {
+                        "en_us": {
+                          "value": "<div style = \"\n    \t\t\tmargin: 15px 0 10px 0;\n              \">\n<h3 style = \"\n             \tmargin-top: 0;\n    \t\t\t    color: #122230;\n    font-size: 12px;\n    font-weight: bold !Important;\n    \t\t\tmargin-bottom: 5px;\n             \">\nREO Repair\n</h3>\n</div>"
+                        },
+                        "de_de": {},
+                        "fr_fr": {},
+                        "it_it": {},
+                        "es_es": {}
+                      },
+                      "labelAlign": "top",
+                      "value": "<div style = \"\n    \t\t\tmargin: 15px 0 10px 0;\n              \">\n<h3 style = \"\n             \tmargin-top: 0;\n    \t\t\t    color: #122230;\n    font-size: 12px;\n    font-weight: bold !Important;\n    \t\t\tmargin-bottom: 5px;\n             \">\nREO Repair\n</h3>\n</div>",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "html-component9",
+                      "extraSettings": {
+                        "showBorder": false
+                      },
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel17",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Part A</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Part A</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output36",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.claims_reo_repair_part_a}}",
+                                  "defaultValue": 0,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "float-number27",
+                                  "extraSettings": {
+                                    "numberType": "float",
+                                    "fractionSize": 2,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>UPB</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>UPB</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output37",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.claims_reo_repair_upb}}",
+                                  "defaultValue": "{{propertyProjectionsResults.reo_repair_net_loss_upb}}",
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "float-number28",
+                                  "extraSettings": {
+                                    "numberType": "float",
+                                    "fractionSize": 2,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Deb. Interest</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Deb. Interest</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output38",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.claims_reo_repair_debenture_interest}}",
+                                  "defaultValue": 0,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "float-number29",
+                                  "extraSettings": {
+                                    "numberType": "float",
+                                    "fractionSize": 2,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Advances</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Advances</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output39",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.claims_reo_repair_advances}}",
+                                  "defaultValue": 0,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "float-number30",
+                                  "extraSettings": {
+                                    "numberType": "float",
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Escrow</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Escrow</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output40",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.claims_reo_repair_escrow}}",
+                                  "defaultValue": "{{propertyProjectionsResults.reo_repair_net_loss_escrow}}",
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "float-number31",
+                                  "extraSettings": {
+                                    "numberType": "float",
+                                    "fractionSize": 2,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>CAFMV / FC Sale</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>CAFMV / FC Sale</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output44",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.claims_reo_repair_cafmv}}",
+                                  "defaultValue": 0,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "float-number33",
+                                  "extraSettings": {
+                                    "numberType": "float",
+                                    "fractionSize": 2,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Part B</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Part B</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output41",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.claims_reo_repair_part_b}}",
+                                  "defaultValue": 0,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "float-number32",
+                                  "extraSettings": {
+                                    "numberType": "float",
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p><strong>Total</strong></p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p><strong>Total</strong></p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output42",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>$ {{propertyProjectionsResults.claims_reo_repair_total}}</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>$ {{propertyProjectionsResults.claims_reo_repair_total}}</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output43",
+                                  "col": 6
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "col": 9
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "type": "scriptButton",
+          "extraSettings": {
+            "text": "conveyance part a",
+            "script": "{{flw.sum([propertyProjectionsResults.claims_conveyance_upb,propertyProjectionsResults.claims_conveyance_debenture_interest,propertyProjectionsResults.claims_conveyance_advances,propertyProjectionsResults.claims_conveyance_escrow])}}",
+            "timer": 2,
+            "autoExecute": true,
+            "alignment": "left",
+            "iconAlignment": "right"
+          },
+          "i18n": {
+            "en_us": {
+              "extraSettings": {
+                "text": "conveyance part a"
+              }
+            }
+          },
+          "labelAlign": "top",
+          "value": "{{propertyProjectionsResults.claims_conveyance_part_a}}",
+          "size": 3,
+          "ignore": false,
+          "visible": false,
+          "enabled": true,
+          "isRequired": false,
+          "id": "script-button1",
+          "col": 0
+        },
+        {
+          "type": "scriptButton",
+          "extraSettings": {
+            "text": "cwcot part a",
+            "script": "{{flw.sum([propertyProjectionsResults.claims_cwcot_upb,propertyProjectionsResults.claims_cwcot_debenture_interest,propertyProjectionsResults.claims_cwcot_advances,propertyProjectionsResults.claims_cwcot_escrow])}}",
+            "timer": 2,
+            "autoExecute": true,
+            "alignment": "left",
+            "iconAlignment": "right"
+          },
+          "i18n": {
+            "en_us": {
+              "extraSettings": {
+                "text": "cwcot part a"
+              }
+            }
+          },
+          "labelAlign": "top",
+          "value": "{{propertyProjectionsResults.claims_cwcot_part_a}}",
+          "size": 3,
+          "ignore": false,
+          "visible": false,
+          "enabled": true,
+          "isRequired": false,
+          "id": "script-button2",
+          "col": 3
+        },
+        {
+          "type": "scriptButton",
+          "extraSettings": {
+            "text": "reo As Is part a",
+            "script": "{{flw.sum([propertyProjectionsResults.claims_reo_as_is_upb,propertyProjectionsResults.claims_reo_as_is_debenture_interest,propertyProjectionsResults.claims_reo_as_is_advances,propertyProjectionsResults.claims_reo_as_is_escrow,propertyProjectionsResults.claims_reo_as_is_cafmv])}}",
+            "timer": 2,
+            "autoExecute": true,
+            "alignment": "left",
+            "iconAlignment": "right"
+          },
+          "i18n": {
+            "en_us": {
+              "extraSettings": {
+                "text": "reo As Is part a"
+              }
+            }
+          },
+          "labelAlign": "top",
+          "value": "{{propertyProjectionsResults.claims_reo_as_is_part_a}}",
+          "size": 3,
+          "ignore": false,
+          "visible": false,
+          "enabled": true,
+          "isRequired": false,
+          "id": "script-button7",
+          "col": 6
+        },
+        {
+          "type": "scriptButton",
+          "extraSettings": {
+            "text": "reo repair part a",
+            "script": "{{flw.sum([propertyProjectionsResults.claims_reo_repair_upb,propertyProjectionsResults.claims_reo_repair_debenture_interest,propertyProjectionsResults.claims_reo_repair_advances,propertyProjectionsResults.claims_reo_repair_escrow,propertyProjectionsResults.claims_reo_repair_cafmv])}}",
+            "timer": 2,
+            "autoExecute": true,
+            "alignment": "left",
+            "iconAlignment": "right"
+          },
+          "i18n": {
+            "en_us": {
+              "extraSettings": {
+                "text": "reo repair part a"
+              }
+            }
+          },
+          "labelAlign": "top",
+          "value": "{{propertyProjectionsResults.claims_reo_repair_part_a}}",
+          "size": 3,
+          "ignore": false,
+          "visible": false,
+          "enabled": true,
+          "isRequired": false,
+          "id": "script-button8",
+          "col": 9
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "type": "scriptButton",
+          "extraSettings": {
+            "text": "conveyance debt. interest",
+            "script": "{{propertyProjectionsResults.conveyance_total_baseline_interest_loss+propertyProjectionsResults.Convey_total_first_two_months_interest_total}}",
+            "timer": 2,
+            "autoExecute": true,
+            "alignment": "left",
+            "iconAlignment": "right"
+          },
+          "i18n": {
+            "en_us": {
+              "extraSettings": {
+                "text": "conveyance debt. interest"
+              }
+            }
+          },
+          "labelAlign": "top",
+          "value": "{{propertyProjectionsResults.claims_conveyance_debenture_interest}}",
+          "defaultValue": 0,
+          "size": 3,
+          "ignore": false,
+          "visible": false,
+          "enabled": true,
+          "isRequired": false,
+          "id": "script-button3",
+          "col": 0
+        },
+        {
+          "type": "scriptButton",
+          "extraSettings": {
+            "text": "cwcot debt. interest",
+            "script": "{{propertyProjectionsResults.cwcot_total_baseline_interest_loss+propertyProjectionsResults.cwcot_total_first_two_months_interest}}",
+            "timer": 2,
+            "autoExecute": true,
+            "alignment": "left",
+            "iconAlignment": "right"
+          },
+          "i18n": {
+            "en_us": {
+              "extraSettings": {
+                "text": "cwcot debt. interest"
+              }
+            }
+          },
+          "labelAlign": "top",
+          "value": "{{propertyProjectionsResults.claims_cwcot_debenture_interest}}",
+          "size": 3,
+          "ignore": false,
+          "visible": false,
+          "enabled": true,
+          "isRequired": false,
+          "id": "script-button4",
+          "col": 3
+        },
+        {
+          "type": "scriptButton",
+          "extraSettings": {
+            "text": "reo as is debt . interest",
+            "script": "{{propertyProjectionsResults.cwcot_total_baseline_interest_loss+propertyProjectionsResults.cwcot_total_first_two_months_interest}}",
+            "timer": 2,
+            "autoExecute": true,
+            "alignment": "left",
+            "iconAlignment": "right"
+          },
+          "i18n": {
+            "en_us": {
+              "extraSettings": {
+                "text": "reo as is debt . interest"
+              }
+            }
+          },
+          "labelAlign": "top",
+          "value": "{{propertyProjectionsResults.claims_reo_as_is_debenture_interest}}",
+          "size": 3,
+          "ignore": false,
+          "visible": false,
+          "enabled": true,
+          "isRequired": false,
+          "id": "script-button9",
+          "col": 6
+        },
+        {
+          "type": "scriptButton",
+          "extraSettings": {
+            "text": "reo repair debt. interest",
+            "script": "{{propertyProjectionsResults.cwcot_total_baseline_interest_loss+propertyProjectionsResults.cwcot_total_first_two_months_interest}}",
+            "timer": 2,
+            "autoExecute": true,
+            "alignment": "left",
+            "iconAlignment": "right"
+          },
+          "i18n": {
+            "en_us": {
+              "extraSettings": {
+                "text": "reo repair debt. interest"
+              }
+            }
+          },
+          "labelAlign": "top",
+          "value": "{{propertyProjectionsResults.claims_reo_repair_debenture_interest}}",
+          "size": 3,
+          "ignore": false,
+          "visible": false,
+          "enabled": true,
+          "isRequired": false,
+          "id": "script-button10",
+          "col": 9
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "type": "scriptButton",
+          "extraSettings": {
+            "text": "conveyance total",
+            "script": "{{propertyProjectionsResults.claims_conveyance_part_a+propertyProjectionsResults.claims_conveyance_part_b}}",
+            "timer": 2,
+            "autoExecute": true,
+            "alignment": "left",
+            "iconAlignment": "right"
+          },
+          "i18n": {
+            "en_us": {
+              "extraSettings": {
+                "text": "conveyance total"
+              }
+            }
+          },
+          "labelAlign": "top",
+          "value": "{{propertyProjectionsResults.claims_conveyance_total}}",
+          "size": 3,
+          "ignore": false,
+          "visible": false,
+          "enabled": true,
+          "isRequired": false,
+          "id": "script-button5",
+          "col": 0
+        },
+        {
+          "type": "scriptButton",
+          "extraSettings": {
+            "text": "cwcot total",
+            "script": "{{propertyProjectionsResults.claims_cwcot_part_a+propertyProjectionsResults.claims_cwcot_part_b}}",
+            "timer": 2,
+            "autoExecute": true,
+            "alignment": "left",
+            "iconAlignment": "right"
+          },
+          "i18n": {
+            "en_us": {
+              "extraSettings": {
+                "text": "cwcot total"
+              }
+            }
+          },
+          "labelAlign": "top",
+          "value": "{{propertyProjectionsResults.claims_cwcot_total}}",
+          "size": 3,
+          "ignore": false,
+          "visible": false,
+          "enabled": true,
+          "isRequired": false,
+          "id": "script-button6",
+          "col": 3
+        },
+        {
+          "type": "scriptButton",
+          "extraSettings": {
+            "text": "res as is total",
+            "script": "{{propertyProjectionsResults.claims_reo_as_is_part_a+propertyProjectionsResults.claims_reo_as_is_part_b}}",
+            "timer": 2,
+            "autoExecute": true,
+            "alignment": "left",
+            "iconAlignment": "right"
+          },
+          "i18n": {
+            "en_us": {
+              "extraSettings": {
+                "text": "res as is total"
+              }
+            }
+          },
+          "labelAlign": "top",
+          "value": "{{propertyProjectionsResults.claims_reo_as_is_total}}",
+          "size": 3,
+          "ignore": false,
+          "visible": false,
+          "enabled": true,
+          "isRequired": false,
+          "id": "script-button11",
+          "col": 6
+        },
+        {
+          "type": "scriptButton",
+          "extraSettings": {
+            "text": "reo repair total",
+            "script": "{{propertyProjectionsResults.claims_reo_repair_part_a+propertyProjectionsResults.claims_reo_repair_part_b}}",
+            "timer": 2,
+            "autoExecute": true,
+            "alignment": "left",
+            "iconAlignment": "right"
+          },
+          "i18n": {
+            "en_us": {
+              "extraSettings": {
+                "text": "reo repair total"
+              }
+            }
+          },
+          "labelAlign": "top",
+          "value": "{{propertyProjectionsResults.claims_reo_repair_total}}",
+          "size": 3,
+          "ignore": false,
+          "visible": false,
+          "enabled": true,
+          "isRequired": false,
+          "id": "script-button12",
+          "col": 9
+        }
+      ]
+    }
+  ]
+}

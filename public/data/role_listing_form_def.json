@@ -1,0 +1,271 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "type": "linkButton",
+          "extraSettings": {
+            "target": "_self",
+            "alignment": "left",
+            "iconAlignment": "right",
+            "showAsButton": true,
+            "type": "one"
+          },
+          "i18n": {
+            "en_us": {
+              "value": "Add Group"
+            }
+          },
+          "labelAlign": "top",
+          "value": "Add Group",
+          "size": 2,
+          "styleClass": "altisource__model_primary",
+          "ignore": false,
+          "visible": false,
+          "enabled": true,
+          "isRequired": false,
+          "id": "link-button1",
+          "col": 10
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "type": "dataTable",
+          "label": "Access Groups",
+          "i18n": {
+            "en_us": {
+              "label": "Access Groups",
+              "extraSettings": {
+                "columns": [
+                  {
+                    "label": "Group Name",
+                    "id": "name",
+                    "accessor": "name",
+                    "alignment": "left",
+                    "filterable": true,
+                    "sortable": true,
+                    "show": true
+                  },
+                  {
+                    "label": "Group Description",
+                    "id": "description",
+                    "accessor": "description",
+                    "alignment": "left",
+                    "filterable": true,
+                    "sortable": true,
+                    "show": true
+                  },
+                  {
+                    "label": "Created On",
+                    "id": "creationDate",
+                    "accessor": "creationDate",
+                    "alignment": "left",
+                    "filterable": true,
+                    "sortable": true,
+                    "show": true,
+                    "component": {
+                      "type": "htmlComponent",
+                      "value": "{{flw.formatDate(flw.parseDate($item.creationDate), 'MM/DD/YY HH:mm')}}"
+                    }
+                  },
+                  {
+                    "id": "dropdown",
+                    "accessor": "dropdown",
+                    "alignment": "left",
+                    "component": {
+                      "type": "buttonGroup",
+                      "value": "{{$item}}",
+                      "extraSettings": {
+                        "asDropdown": true
+                      },
+                      "alignment": "right",
+                      "buttonDefinitions": [
+                        {
+                          "type": "scriptButton",
+                          "value": "{{operationListActionButton}}",
+                          "extraSettings": {
+                            "text": "View",
+                            "script": "Edit",
+                            "fileDetails": "{{$item}}"
+                          }
+                        },
+                        {
+                          "type": "scriptButton",
+                          "value": "{{operationListActionButton}}",
+                          "extraSettings": {
+                            "text": "Delete",
+                            "script": "Delete",
+                            "fileDetails": "{{$item}}"
+                          }
+                        }
+                      ]
+                    },
+                    "filterable": false,
+                    "sortable": false,
+                    "show": true,
+                    "label": "Action",
+                    "maxWidth": 75
+                  }
+                ]
+              }
+            },
+            "de_de": {
+              "extraSettings": {}
+            },
+            "fr_fr": {
+              "extraSettings": {}
+            },
+            "it_it": {
+              "extraSettings": {}
+            },
+            "es_es": {
+              "extraSettings": {}
+            }
+          },
+          "enabled": true,
+          "extraSettings": {
+            "dataSource": "Rest",
+            "queryUrl": "/eq-api/core/fam/v2/roles",
+            "path": "",
+            "storage": "Full",
+            "linkTarget": "_blank",
+            "output": {},
+            "showPagination": true,
+            "autoHidePagination": true,
+            "clientPagination": true,
+            "sortableColumns": false,
+            "columns": [
+              {
+                "label": "Role Name",
+                "id": "name",
+                "accessor": "name",
+                "alignment": "left",
+                "filterable": true,
+                "sortable": true,
+                "show": true
+              },
+              {
+                "label": "Role Description",
+                "id": "description",
+                "accessor": "description",
+                "alignment": "left",
+                "filterable": true,
+                "sortable": true,
+                "show": true
+              },
+              {
+                "label": "Created On",
+                "id": "creationDate",
+                "accessor": "creationDate",
+                "alignment": "left",
+                "filterable": true,
+                "sortable": true,
+                "show": true,
+                "component": {
+                  "type": "htmlComponent",
+                  "value": "{{flw.formatDate(flw.parseDate($item.creationDate), 'MM/DD/YY HH:mm')}}"
+                }
+              },
+              {
+                "id": "dropdown",
+                "accessor": "dropdown",
+                "alignment": "left",
+                "component": {
+                  "type": "buttonGroup",
+                  "value": "{{$item}}",
+                  "extraSettings": {
+                    "asDropdown": true
+                  },
+                  "alignment": "right",
+                  "buttonDefinitions": [
+                    {
+                      "type": "scriptButton",
+                      "value": "{{operationListActionButton}}",
+                      "extraSettings": {
+                        "text": "View",
+                        "script": "Edit",
+                        "fileDetails": "{{$item}}"
+                      }
+                    },
+                    {
+                      "type": "scriptButton",
+                      "value": "{{operationListActionButton}}",
+                      "extraSettings": {
+                        "text": "Delete",
+                        "script": "Delete",
+                        "fileDetails": "{{$item}}"
+                      }
+                    }
+                  ]
+                },
+                "filterable": false,
+                "sortable": false,
+                "show": true,
+                "label": "Action",
+                "maxWidth": 75
+              }
+            ],
+            "filterable": true,
+            "sortable": true,
+            "multiSort": false,
+            "pageSize": 20,
+            "pageSizeOptions": [5, 10, 20, 25, 50, 100],
+            "showTotalRecords": true,
+            "response": {},
+            "showRefreshButton": true
+          },
+          "labelAlign": "top",
+          "value": "{{roleListData}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "isRequired": false,
+          "id": "datatable1",
+          "col": 0
+        }
+      ]
+    }
+  ]
+}

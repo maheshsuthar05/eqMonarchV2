@@ -1,0 +1,271 @@
+{
+    "rows": [
+      {
+        "cols": [
+          {
+            "type": "panel",
+            "i18n": {},
+            "labelAlign": "top",
+            "size": 12,
+            "ignore": false,
+            "visible": true,
+            "enabled": true,
+            "isRequired": false,
+            "styleClass": "dataTranferMultiSelect",
+            "id": "sub-panel1",
+            "extraSettings": {
+              "collapsible": false,
+              "collapsed": false,
+              "showBorder": false,
+              "saveButtonVisible": true,
+              "saveButtonEnabled": true,
+              "cancelButtonVisible": true,
+              "cancelButtonEnabled": true,
+              "layoutDefinition": {
+                "rows": [
+                  {
+                    "cols": [
+                      {
+                        "type": "dataTable",
+                        "i18n": {
+                          "en_us": {
+                            "extraSettings": {
+                              "columns": [
+                                {
+                                  "label": "agency_confirmation",
+                                  "id": "agency_confirmation",
+                                  "accessor": "agency_confirmation",
+                                  "alignment": "left",
+                                  "show": true
+                                },
+                                {
+                                  "label": "first_name",
+                                  "id": "first_name",
+                                  "accessor": "first_name",
+                                  "alignment": "left",
+                                  "show": true
+                                },
+                                {
+                                  "label": "last_name",
+                                  "id": "last_name",
+                                  "accessor": "last_name",
+                                  "alignment": "left",
+                                  "show": true
+                                },
+                                {
+                                  "label": "listing_broker_first_name",
+                                  "id": "listing_broker_first_name",
+                                  "accessor": "listing_broker_first_name",
+                                  "alignment": "left",
+                                  "show": true
+                                },
+                                {
+                                  "label": "listing_broker_last_name",
+                                  "id": "listing_broker_last_name",
+                                  "accessor": "listing_broker_last_name",
+                                  "alignment": "left",
+                                  "show": true
+                                },
+                                {
+                                  "label": "Offer_Status_Value",
+                                  "id": "Offer_Status_Value",
+                                  "accessor": "Offer_Status_Value",
+                                  "alignment": "left",
+                                  "show": true
+                                },
+                                {
+                                  "label": "Offer_Type",
+                                  "id": "Offer_Type",
+                                  "accessor": "Offer_Type",
+                                  "alignment": "left",
+                                  "show": true
+                                },
+                                {
+                                  "label": "selling_broker_first_name",
+                                  "id": "selling_broker_first_name",
+                                  "accessor": "selling_broker_first_name",
+                                  "alignment": "left",
+                                  "show": true
+                                },
+                                {
+                                  "label": "selling_broker_last_name",
+                                  "id": "selling_broker_last_name",
+                                  "accessor": "selling_broker_last_name",
+                                  "alignment": "left",
+                                  "show": true
+                                }
+                              ],
+                              "noDataMessage": "No Data Found"
+                            }
+                          },
+                          "de_de": {
+                            "extraSettings": {}
+                          },
+                          "fr_fr": {
+                            "extraSettings": {}
+                          },
+                          "it_it": {
+                            "extraSettings": {}
+                          },
+                          "es_es": {
+                            "extraSettings": {}
+                          }
+                        },
+                        "enabled": true,
+                        "extraSettings": {
+                          "dataSource": "Static",
+                          "items": [
+                            {
+                              "agency_confirmation": "Text comes here",
+                              "first_name": "Text comes here",
+                              "last_name": "Text comes here",
+                              "listing_broker_first_name": "Text comes here"
+                            },
+                            {
+                              "agency_confirmation": "Text comes here",
+                              "first_name": "Text comes here",
+                              "last_name": "Text comes here",
+                              "listing_broker_first_name": "Text comes here"
+                            },
+                            {
+                              "agency_confirmation": "Text comes here",
+                              "first_name": "Text comes here"
+                            }
+                          ],
+                          "storage": "Full",
+                          "linkTarget": "_blank",
+                          "selectable": "Multiple",
+                          "output": {},
+                          "infiniteScroll": false,
+                          "showPagination": true,
+                          "autoHidePagination": true,
+                          "clientPagination": true,
+                          "sortableColumns": false,
+                          "columns": [
+                            {
+                              "label": "agency_confirmation",
+                              "id": "agency_confirmation",
+                              "accessor": "agency_confirmation",
+                              "alignment": "left",
+                              "show": true
+                            },
+                            {
+                              "label": "first_name",
+                              "id": "first_name",
+                              "accessor": "first_name",
+                              "alignment": "left",
+                              "show": true
+                            },
+                            {
+                              "label": "last_name",
+                              "id": "last_name",
+                              "accessor": "last_name",
+                              "alignment": "left",
+                              "show": true
+                            },
+                            {
+                              "label": "listing_broker_first_name",
+                              "id": "listing_broker_first_name",
+                              "accessor": "listing_broker_first_name",
+                              "alignment": "left",
+                              "show": true
+                            },
+                            {
+                              "label": "listing_broker_last_name",
+                              "id": "listing_broker_last_name",
+                              "accessor": "listing_broker_last_name",
+                              "alignment": "left",
+                              "show": true
+                            },
+                            {
+                              "label": "Offer_Status_Value",
+                              "id": "Offer_Status_Value",
+                              "accessor": "Offer_Status_Value",
+                              "alignment": "left",
+                              "show": true
+                            },
+                            {
+                              "label": "Offer_Type",
+                              "id": "Offer_Type",
+                              "accessor": "Offer_Type",
+                              "alignment": "left",
+                              "show": true
+                            },
+                            {
+                              "label": "selling_broker_first_name",
+                              "id": "selling_broker_first_name",
+                              "accessor": "selling_broker_first_name",
+                              "alignment": "left",
+                              "show": true
+                            },
+                            {
+                              "label": "selling_broker_last_name",
+                              "id": "selling_broker_last_name",
+                              "accessor": "selling_broker_last_name",
+                              "alignment": "left",
+                              "show": true
+                            }
+                          ],
+                          "filterable": true,
+                          "sortable": false,
+                          "pageSize": 20,
+                          "pageSizeOptions": [
+                            5,
+                            10,
+                            20,
+                            25,
+                            50,
+                            100
+                          ],
+                          "showTotalRecords": false,
+                          "dataPollingOnInit": false,
+                          "noDataMessage": "No Data Found",
+                          "nodataPosition": "middle-center",
+                          "favorite": {}
+                        },
+                        "labelAlign": "top",
+                        "value": "{{changeLogOffers}}",
+                        "size": 7,
+                        "ignore": false,
+                        "visible": true,
+                        "isRequired": false,
+                        "styleClass": "dataTranferLeft",
+                        "id": "datatable1",
+                        "col": 0
+                      },
+                      {
+                        "type": "htmlComponent",
+                        "i18n": {
+                          "en_us": {
+                            "value": "<div class=\"flex w-full\">\n                  <table class=\"table-auto ml-8 text-center\">\n                    <thead class=\"text-center\">\n                      <tr>\n                        <th class=\"bg-white\">&nbsp;</th>\n                        <th>Previous</th>\n                        <th>Current</th>\n                      </tr>\n                    </thead>\n                    <tbody>\n                      <tr>\n                        <td class=\"p-4 text-right pr-16\">Agency confirmation </td>\n                        <td class=\"p-4\">6404 international Parkway,dallas</td>\n                        <td class=\"p-4\">abcd,NYC,AR,56007</td>\n                      </tr>\n                      <tr>\n                        <td class=\"p-4 text-right pr-16\">First name </td>\n                        <td class=\"p-4 bg-yellow-400\">VILLA, MD</td>\n                        <td class=\"p-4 bg-yellow-400\">GETZ, D</td>\n                      </tr>\n                      <tr>\n                        <td class=\"p-4 text-right pr-16\">Lats name </td>\n                        <td class=\"p-4\">12/02/2020</td>\n                        <td class=\"p-4\">12/02/2020</td>\n                      </tr>\n                      <tr>\n                        <td class=\"p-4 text-right pr-16\">Listing broker first name </td>\n                        <td class=\"p-4 bg-yellow-400\">25/02/2018</td>\n                        <td class=\"p-4 bg-yellow-400\">12/02/2020</td>\n                      </tr>\n                      <tr>\n                        <td class=\"p-4 text-right pr-16\">Listing broker last name </td>\n                        <td class=\"p-4\">0.00</td>\n                        <td class=\"p-4\">0.00</td>\n                      </tr>\n                      <tr>\n                        <td class=\"p-4 text-right pr-16\">Offer_Status_Value</td>\n                        <td class=\"p-4\">6404 international Parkway,dallas</td>\n                        <td class=\"p-4\">abcd,NYC,AR,56007</td>\n                      </tr>\n                      <tr>\n                        <td class=\"p-4 text-right pr-16\">Offer Type</td>\n                        <td class=\"p-4 bg-yellow-400\">VILLA, MD</td>\n                        <td class=\"p-4 bg-yellow-400\">GETZ, D</td>\n                      </tr>\n                      <tr>\n                        <td class=\"p-4 text-right pr-16\">selling broker first name</td>\n                        <td class=\"p-4\">12/02/2020</td>\n                        <td class=\"p-4\">12/02/2020</td>\n                      </tr>\n                      <tr>\n                        <td class=\"p-4 text-right pr-16\">selling broker last name </td>\n                        <td class=\"p-4 bg-yellow-400\">25/02/2018</td>\n                        <td class=\"p-4 bg-yellow-400\">12/02/2020</td>\n                      </tr>\n\n                    </tbody>\n                  </table>\n</div>\n\n"
+                          },
+                          "de_de": {},
+                          "fr_fr": {},
+                          "it_it": {},
+                          "es_es": {}
+                        },
+                        "labelAlign": "top",
+                        "value": "<div class=\"flex w-full\">\n                  <table class=\"table-auto ml-8 text-center\">\n                    <thead class=\"text-center\">\n                      <tr>\n                        <th class=\"bg-white\">&nbsp;</th>\n                        <th>Previous</th>\n                        <th>Current</th>\n                      </tr>\n                    </thead>\n                    <tbody>\n                      <tr>\n                        <td class=\"p-4 text-right pr-16\">Agency confirmation </td>\n                        <td class=\"p-4\">6404 international Parkway,dallas</td>\n                        <td class=\"p-4\">abcd,NYC,AR,56007</td>\n                      </tr>\n                      <tr>\n                        <td class=\"p-4 text-right pr-16\">First name </td>\n                        <td class=\"p-4 bg-yellow-400\">VILLA, MD</td>\n                        <td class=\"p-4 bg-yellow-400\">GETZ, D</td>\n                      </tr>\n                      <tr>\n                        <td class=\"p-4 text-right pr-16\">Lats name </td>\n                        <td class=\"p-4\">12/02/2020</td>\n                        <td class=\"p-4\">12/02/2020</td>\n                      </tr>\n                      <tr>\n                        <td class=\"p-4 text-right pr-16\">Listing broker first name </td>\n                        <td class=\"p-4 bg-yellow-400\">25/02/2018</td>\n                        <td class=\"p-4 bg-yellow-400\">12/02/2020</td>\n                      </tr>\n                      <tr>\n                        <td class=\"p-4 text-right pr-16\">Listing broker last name </td>\n                        <td class=\"p-4\">0.00</td>\n                        <td class=\"p-4\">0.00</td>\n                      </tr>\n                      <tr>\n                        <td class=\"p-4 text-right pr-16\">Offer_Status_Value</td>\n                        <td class=\"p-4\">6404 international Parkway,dallas</td>\n                        <td class=\"p-4\">abcd,NYC,AR,56007</td>\n                      </tr>\n                      <tr>\n                        <td class=\"p-4 text-right pr-16\">Offer Type</td>\n                        <td class=\"p-4 bg-yellow-400\">VILLA, MD</td>\n                        <td class=\"p-4 bg-yellow-400\">GETZ, D</td>\n                      </tr>\n                      <tr>\n                        <td class=\"p-4 text-right pr-16\">selling broker first name</td>\n                        <td class=\"p-4\">12/02/2020</td>\n                        <td class=\"p-4\">12/02/2020</td>\n                      </tr>\n                      <tr>\n                        <td class=\"p-4 text-right pr-16\">selling broker last name </td>\n                        <td class=\"p-4 bg-yellow-400\">25/02/2018</td>\n                        <td class=\"p-4 bg-yellow-400\">12/02/2020</td>\n                      </tr>\n\n                    </tbody>\n                  </table>\n</div>\n\n",
+                        "size": 5,
+                        "ignore": false,
+                        "visible": true,
+                        "enabled": true,
+                        "isRequired": false,
+                        "styleClass": "changeLogSection",
+                        "id": "html-component1",
+                        "extraSettings": {
+                          "showBorder": false
+                        },
+                        "col": 7
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            "col": 0
+          }
+        ]
+      }
+    ]
+  }

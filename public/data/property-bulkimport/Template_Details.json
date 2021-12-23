@@ -1,0 +1,175 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "type": "htmlComponent",
+          "i18n": {
+            "en_us": {
+              "value": "<p><span style=\"font-size:14px\">{{batchError > 20 ? '<strong style=\"margin-left:-8%\">This below list depicts the detail of the processed file (max 20). Please download the processing file for more detail</strong>' : '<strong>This list will show the list of success and error data that was parsed from excel file</strong>'}}</span></p>\n"
+            },
+            "de_de": {},
+            "fr_fr": {},
+            "it_it": {},
+            "es_es": {}
+          },
+          "labelAlign": "top",
+          "value": "<p><span style=\"font-size:14px\">{{batchError > 20 ? '<strong style=\"margin-left:-8%\">This below list depicts the detail of the processed file (max 20). Please download the processing file for more detail</strong>' : '<strong>This list will show the list of success and error data that was parsed from excel file</strong>'}}</span></p>\n",
+          "defaultValue": false,
+          "size": 8,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "html-component1",
+          "extraSettings": {
+            "showBorder": false
+          },
+          "col": 3
+        },
+        {
+          "size": 1,
+          "type": ""
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "type": "dataTable",
+          "i18n": {
+            "en_us": {
+              "extraSettings": {
+                "columns": [
+                  {
+                    "label": "Loan Number",
+                    "id": "LOAN_NUMBER",
+                    "alignment": "left",
+                    "show": true,
+                    "accessor": "LOAN_NUMBER"
+                  },
+                  {
+                    "label": "Failure Type",
+                    "id": "EXCEPTION_TYPE",
+                    "alignment": "left",
+                    "show": true,
+                    "accessor": "EXCEPTION_TYPE"
+                  },
+                  {
+                    "label": "Failure Field",
+                    "id": "EXCEPTION_FIELD",
+                    "alignment": "left",
+                    "show": true,
+                    "accessor": "EXCEPTION_FIELD"
+                  },
+                  {
+                    "label": "Failure Reason",
+                    "id": "EXCEPTION_MESSAGE",
+                    "alignment": "left",
+                    "show": true,
+                    "accessor": "EXCEPTION_MESSAGE"
+                  }
+                ],
+                "noDataMessage": "No details"
+              }
+            },
+            "de_de": {
+              "extraSettings": {}
+            },
+            "fr_fr": {
+              "extraSettings": {}
+            },
+            "it_it": {
+              "extraSettings": {}
+            },
+            "es_es": {
+              "extraSettings": {}
+            }
+          },
+          "enabled": true,
+          "extraSettings": {
+            "dataSource": "Rest",
+            "queryUrl": "/eq-api/bulk-upload/batch-error-listing/batchExceptionList?batchId={{batchId}}",
+            "path": "hits",
+            "storage": "Full",
+            "linkTarget": "_blank",
+            "output": {},
+            "infiniteScroll": false,
+            "showPagination": false,
+            "autoHidePagination": false,
+            "clientPagination": false,
+            "sortableColumns": true,
+            "columns": [
+              {
+                "label": "Loan Number",
+                "id": "LOAN_NUMBER",
+                "alignment": "left",
+                "show": true,
+                "accessor": "LOAN_NUMBER"
+              },
+              {
+                "label": "Failure Type",
+                "id": "EXCEPTION_TYPE",
+                "alignment": "left",
+                "show": true,
+                "accessor": "EXCEPTION_TYPE"
+              },
+              {
+                "label": "Failure Field",
+                "id": "EXCEPTION_FIELD",
+                "alignment": "left",
+                "show": true,
+                "accessor": "EXCEPTION_FIELD"
+              },
+              {
+                "label": "Failure Reason",
+                "id": "EXCEPTION_MESSAGE",
+                "alignment": "left",
+                "show": true,
+                "accessor": "EXCEPTION_MESSAGE"
+              }
+            ],
+            "filterable": false,
+            "sortable": true,
+            "multiSort": false,
+            "pageSize": 20,
+            "pageSizeOptions": [
+              5,
+              10,
+              20,
+              25,
+              50,
+              100
+            ],
+            "showTotalRecords": false,
+            "response": {},
+            "showRefreshButton": true,
+            "dataPollingOnInit": false,
+            "noDataMessage": "No details",
+            "nodataPosition": "middle-center"
+          },
+          "labelAlign": "top",
+          "value": "{{uploadTemplateDetails}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "isRequired": false,
+          "id": "datatable1",
+          "col": 0
+        }
+      ]
+    }
+  ]
+}

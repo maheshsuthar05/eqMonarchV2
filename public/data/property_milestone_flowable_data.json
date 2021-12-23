@@ -1,0 +1,16 @@
+{
+  "customData": [
+    {
+      "processMilestoneId": "Pre-Listing",
+      "milestoneName": "Pre-Listing"
+    },
+    {
+      "processMilestoneId": "Marketing",
+      "milestoneName": "Marketing"
+    },
+    {
+      "processMilestoneId": "Closing",
+      "milestoneName": "Closing"
+    }
+  ]
+}

@@ -1,0 +1,315 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 25 },
+              "lowerRight": { "x": 984, "y": 93 }
+            },
+            "stencilSuperIds": ["base-datatable", "Component"],
+            "stencilId": "cloud-datatable",
+            "customStencilId": null
+          },
+          "enabled": true,
+          "extraSettings": {
+            "dataSource": "Rest",
+            "queryUrl": "{{additionalData.url}}?key=adminManageSetReservePrice&latest=true&tenantId=internal&tempTenantCode={{additionalData.tenantCode}}&&from={{$start}}&size={{$pageSize}}&sortOrder={{$sort || 'DESC'}}{{$filter}}",
+            "path": "data",
+            "linkTargetView": "browse",
+            "storage": "Full",
+            "identity": "caseDefinitionId",
+            "linkTarget": "_blank",
+            "infiniteScroll": false,
+            "showPagination": true,
+            "autoHidePagination": true,
+            "clientPagination": true,
+            "sortableColumns": false,
+            "columns": [
+              {
+                "label": "Investor Group",
+                "id": "investorGroup",
+                "accessor": "investorGroup",
+                "alignment": "left",
+                "component": {
+                  "type": "htmlComponent",
+                  "value": "<span>{{flw.find($item.variables, 'name', 'investorGroup').value}}</span>"
+                },
+                "filterable": "false",
+                "sortable": "true",
+                "show": true
+              },
+              {
+                "label": "Reserve Price",
+                "id": "reservePrice",
+                "accessor": "reservePrice",
+                "alignment": "left",
+                "component": {
+                  "type": "htmlComponent",
+                  "value": "<span>{{flw.find($item.variables, 'name', 'reservePrice').value}}</span>"
+                },
+                "filterable": "false",
+                "sortable": "true",
+                "show": true
+              },
+              {
+                "label": "Close Bidde",
+                "id": "closeBidderIndicator",
+                "accessor": "closeBidderIndicator",
+                "alignment": "left",
+                "component": {
+                  "type": "htmlComponent",
+                  "value": "<span>{{flw.find($item.variables, 'name', 'closeBidderIndicator').value}}</span>"
+                },
+                "filterable": "false",
+                "sortable": "true",
+                "show": true
+              },
+              {
+                "label": "Starting Bid Amount",
+                "id": "startingBidAmount",
+                "accessor": "startingBidAmount",
+                "alignment": "left",
+                "component": {
+                  "type": "htmlComponent",
+                  "value": "<span>{{flw.find($item.variables, 'name', 'startingBidAmount').value}}</span>"
+                },
+                "filterable": "false",
+                "sortable": "true",
+                "show": true
+              },
+              {
+                "label": "Minimum Offer Percentage",
+                "id": "minimumOfferPercentage",
+                "accessor": "minimumOfferPercentage",
+                "alignment": "left",
+                "component": {
+                  "type": "htmlComponent",
+                  "value": "<span>{{flw.find($item.variables, 'name', 'minimumOfferPercentage').value}}</span>%"
+                },
+                "filterable": "false",
+                "sortable": "true",
+                "show": true
+              },
+              {
+                "label": "Acceptable Range",
+                "id": "acceptableRangeIndicator",
+                "accessor": "acceptableRangeIndicator",
+                "alignment": "left",
+                "component": {
+                  "type": "htmlComponent",
+                  "value": "<span>{{flw.find($item.variables, 'name', 'acceptableRangeIndicator').value}}</span>%"
+                },
+                "filterable": "false",
+                "sortable": "true",
+                "show": true
+              },
+              {
+                "label": "Automated Acceptance",
+                "id": "automatedAcceptance",
+                "accessor": "automatedAcceptance",
+                "alignment": "left",
+                "component": {
+                  "type": "htmlComponent",
+                  "value": "<span>{{flw.find($item.variables, 'name', 'automatedAcceptance').value}}</span>%"
+                },
+                "filterable": "false",
+                "sortable": "true",
+                "show": true
+              },
+              {
+                "label": "Action",
+                "id": "dropdown",
+                "accessor": "dropdown",
+                "alignment": "left",
+                "component": {
+                  "type": "buttonGroup",
+                  "value": "{{$item}}",
+                  "extraSettings": { "asDropdown": true },
+                  "alignment": "right",
+                  "buttonDefinitions": [
+                    {
+                      "type": "scriptButton",
+                      "extraSettings": {
+                        "text": "Edit",
+                        "tooltip": "Edit",
+                        "script": { "key": "Edit", "DATA": "{{$item}}" }
+                      }
+                    },
+                    {
+                      "type": "scriptButton",
+                      "extraSettings": {
+                        "text": "Delete",
+                        "tooltip": "Delete",
+                        "script": { "key": "Delete", "DATA": "{{$item}}" }
+                      }
+                    }
+                  ]
+                },
+                "show": true
+              }
+            ],
+            "filterable": false,
+            "sortable": true,
+            "multiSort": false,
+            "pageSize": 20,
+            "pageSizeOptions": [20, 25, 50, 100],
+            "showTotalRecords": false,
+            "response": { "total": "total" },
+            "refreshTime": "{{$payload.refreshForm}}",
+            "dataPollingOnInit": false,
+            "target": "_blank",
+            "nodataPosition": "middle-center"
+          },
+          "labelAlign": "top",
+          "value": "{{manageSetReservePrice}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "isRequired": false,
+          "id": "manageSetReservePrice",
+          "i18n": {
+            "en_us": {
+              "extraSettings": {
+                "columns": [
+                  {
+                    "label": "Investor Group",
+                    "id": "investorGroup",
+                    "accessor": "investorGroup",
+                    "alignment": "left",
+                    "component": {
+                      "type": "htmlComponent",
+                      "value": "<span>{{flw.find($item.variables, 'name', 'investorGroup').value}}</span>"
+                    },
+                    "filterable": "false",
+                    "sortable": "true",
+                    "show": true
+                  },
+                  {
+                    "label": "Reserve Price",
+                    "id": "reservePrice",
+                    "accessor": "reservePrice",
+                    "alignment": "left",
+                    "component": {
+                      "type": "htmlComponent",
+                      "value": "<span>{{flw.find($item.variables, 'name', 'reservePrice').value}}</span>"
+                    },
+                    "filterable": "false",
+                    "sortable": "true",
+                    "show": true
+                  },
+                  {
+                    "label": "Close Bidde",
+                    "id": "closeBidderIndicator",
+                    "accessor": "closeBidderIndicator",
+                    "alignment": "left",
+                    "component": {
+                      "type": "htmlComponent",
+                      "value": "<span>{{flw.find($item.variables, 'name', 'closeBidderIndicator').value}}</span>"
+                    },
+                    "filterable": "false",
+                    "sortable": "true",
+                    "show": true
+                  },
+                  {
+                    "label": "Starting Bid Amount",
+                    "id": "startingBidAmount",
+                    "accessor": "startingBidAmount",
+                    "alignment": "left",
+                    "component": {
+                      "type": "htmlComponent",
+                      "value": "<span>{{flw.find($item.variables, 'name', 'startingBidAmount').value}}</span>"
+                    },
+                    "filterable": "false",
+                    "sortable": "true",
+                    "show": true
+                  },
+                  {
+                    "label": "Minimum Offer Percentage",
+                    "id": "minimumOfferPercentage",
+                    "accessor": "minimumOfferPercentage",
+                    "alignment": "left",
+                    "component": {
+                      "type": "htmlComponent",
+                      "value": "<span>{{flw.find($item.variables, 'name', 'minimumOfferPercentage').value}}</span>%"
+                    },
+                    "filterable": "false",
+                    "sortable": "true",
+                    "show": true
+                  },
+                  {
+                    "label": "Acceptable Range",
+                    "id": "acceptableRangeIndicator",
+                    "accessor": "acceptableRangeIndicator",
+                    "alignment": "left",
+                    "component": {
+                      "type": "htmlComponent",
+                      "value": "<span>{{flw.find($item.variables, 'name', 'acceptableRangeIndicator').value}}</span>"
+                    },
+                    "filterable": "false",
+                    "sortable": "true",
+                    "show": true
+                  },
+                  {
+                    "label": "Automated Acceptance",
+                    "id": "automatedAcceptance",
+                    "accessor": "automatedAcceptance",
+                    "alignment": "left",
+                    "component": {
+                      "type": "htmlComponent",
+                      "value": "<span>{{flw.find($item.variables, 'name', 'automatedAcceptance').value}}</span>"
+                    },
+                    "filterable": "false",
+                    "sortable": "true",
+                    "show": true
+                  },
+                  {
+                    "label": "Action",
+                    "id": "dropdown",
+                    "accessor": "dropdown",
+                    "alignment": "left",
+                    "component": {
+                      "type": "buttonGroup",
+                      "value": "{{$item}}",
+                      "extraSettings": { "asDropdown": true },
+                      "alignment": "right",
+                      "buttonDefinitions": [
+                        {
+                          "type": "scriptButton",
+                          "extraSettings": {
+                            "text": "Edit",
+                            "tooltip": "Edit",
+                            "script": { "key": "Edit", "DATA": "{{$item}}" }
+                          }
+                        },
+                        {
+                          "type": "scriptButton",
+                          "extraSettings": {
+                            "text": "Delete",
+                            "tooltip": "Delete",
+                            "script": { "key": "Delete", "DATA": "{{$item}}" }
+                          }
+                        }
+                      ]
+                    },
+                    "show": true
+                  }
+                ]
+              }
+            }
+          },
+          "type": "dataTable"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "key": "manageSetReserePriceListing",
+    "name": "Manage Set Resere Price Listing",
+    "description": "",
+    "version": "4",
+    "type": "2",
+    "flowableDesignVersion": 3090
+  }
+}

@@ -1,0 +1,513 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "type": "tabs",
+          "i18n": {
+            "en_us": {},
+            "de_de": {},
+            "fr_fr": {},
+            "it_it": {},
+            "es_es": {}
+          },
+          "labelAlign": "top",
+          "size": 11,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "tabs1",
+          "extraSettings": {
+            "tabsorder": ["tab-panel1", "tab-panel3"],
+            "showBorder": false,
+            "sections": [
+              {
+                "type": "panel",
+                "label": "Tenant Details",
+                "i18n": {
+                  "en_us": {
+                    "label": "Tenant Details"
+                  },
+                  "de_de": {},
+                  "fr_fr": {},
+                  "it_it": {},
+                  "es_es": {}
+                },
+                "labelAlign": "top",
+                "ignore": false,
+                "visible": true,
+                "enabled": true,
+                "isRequired": false,
+                "id": "tab-panel1",
+                "extraSettings": {
+                  "serverValidationMethod": "GET",
+                  "layoutDefinition": {
+                    "rows": [
+                      {
+                        "cols": [
+                          {
+                            "type": "text",
+                            "extraSettings": {},
+                            "i18n": {
+                              "en_us": {
+                                "label": "Tenant Code"
+                              },
+                              "de_de": {},
+                              "fr_fr": {},
+                              "it_it": {},
+                              "es_es": {}
+                            },
+                            "labelAlign": "top",
+                            "value": "{{tenantCode}}",
+                            "size": 3,
+                            "ignore": false,
+                            "visible": true,
+                            "enabled": "{{$temp.editMode}}",
+                            "isRequired": false,
+                            "label": "Tenant Code",
+                            "id": "text1",
+                            "col": 0
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "type": "text",
+                            "extraSettings": {},
+                            "i18n": {
+                              "en_us": {
+                                "label": "Tenant Name"
+                              },
+                              "de_de": {},
+                              "fr_fr": {},
+                              "it_it": {},
+                              "es_es": {}
+                            },
+                            "labelAlign": "top",
+                            "value": "{{tenantName}}",
+                            "size": 3,
+                            "ignore": false,
+                            "visible": true,
+                            "enabled": "{{$temp.editMode}}",
+                            "isRequired": false,
+                            "label": "Tenant Name",
+                            "id": "text2",
+                            "col": 4
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "type": "text",
+                            "extraSettings": {},
+                            "i18n": {
+                              "en_us": {
+                                "label": "Website URL"
+                              },
+                              "de_de": {},
+                              "fr_fr": {},
+                              "it_it": {},
+                              "es_es": {}
+                            },
+                            "labelAlign": "top",
+                            "value": "{{websiteUrl}}",
+                            "size": 3,
+                            "ignore": false,
+                            "visible": true,
+                            "enabled": "{{$temp.editMode}}",
+                            "isRequired": false,
+                            "label": "Website URL",
+                            "id": "text3",
+                            "col": 8
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          }
+                        ]
+                      },
+                      {
+                        "cols": [
+                          {
+                            "type": "text",
+                            "extraSettings": {},
+                            "i18n": {
+                              "en_us": {
+                                "label": "Description"
+                              },
+                              "de_de": {},
+                              "fr_fr": {},
+                              "it_it": {},
+                              "es_es": {}
+                            },
+                            "labelAlign": "top",
+                            "value": "{{description}}",
+                            "size": 3,
+                            "ignore": false,
+                            "visible": true,
+                            "enabled": "{{$temp.editMode}}",
+                            "isRequired": false,
+                            "label": "Description",
+                            "id": "text5",
+                            "col": 0
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "type": "text",
+                            "extraSettings": {},
+                            "i18n": {
+                              "en_us": {
+                                "label": "Phone Number"
+                              },
+                              "de_de": {},
+                              "fr_fr": {},
+                              "it_it": {},
+                              "es_es": {}
+                            },
+                            "labelAlign": "top",
+                            "value": "{{tenantTelephones[0].tenantTelephoneValue}}",
+                            "size": 3,
+                            "ignore": false,
+                            "visible": true,
+                            "enabled": "{{$temp.editMode}}",
+                            "isRequired": false,
+                            "label": "Phone Number",
+                            "id": "text4",
+                            "col": 4
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "type": "text",
+                            "extraSettings": {},
+                            "i18n": {
+                              "en_us": {
+                                "label": "E Mail"
+                              },
+                              "de_de": {},
+                              "fr_fr": {},
+                              "it_it": {},
+                              "es_es": {}
+                            },
+                            "labelAlign": "top",
+                            "value": "{{tenantEmails[0].tenantEmailValue}}",
+                            "size": 3,
+                            "ignore": false,
+                            "visible": true,
+                            "enabled": "{{$temp.editMode}}",
+                            "isRequired": false,
+                            "label": "E Mail",
+                            "id": "text6",
+                            "col": 8
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "col": 0
+              },
+              {
+                "type": "panel",
+                "label": "EXTENDED PROPERTIES",
+                "i18n": {
+                  "en_us": {
+                    "label": "EXTENDED PROPERTIES"
+                  },
+                  "de_de": {},
+                  "fr_fr": {},
+                  "it_it": {},
+                  "es_es": {}
+                },
+                "labelAlign": "top",
+                "ignore": false,
+                "visible": false,
+                "enabled": true,
+                "isRequired": false,
+                "id": "tab-panel3",
+                "extraSettings": {
+                  "serverValidationMethod": "GET",
+                  "layoutDefinition": {
+                    "rows": [
+                      {
+                        "cols": [
+                          {
+                            "type": "text",
+                            "extraSettings": {},
+                            "i18n": {
+                              "en_us": {
+                                "label": "Address 1"
+                              },
+                              "de_de": {},
+                              "fr_fr": {},
+                              "it_it": {},
+                              "es_es": {}
+                            },
+                            "labelAlign": "top",
+                            "value": "{{tenantAddresses[0].addressLineText}}",
+                            "size": 3,
+                            "ignore": false,
+                            "visible": true,
+                            "enabled": "{{$temp.editMode}}",
+                            "isRequired": false,
+                            "label": "Address 1",
+                            "id": "text7",
+                            "col": 0
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "type": "text",
+                            "extraSettings": {},
+                            "i18n": {
+                              "en_us": {
+                                "label": "Address 2"
+                              },
+                              "de_de": {},
+                              "fr_fr": {},
+                              "it_it": {},
+                              "es_es": {}
+                            },
+                            "labelAlign": "top",
+                            "value": "{{tenantAddresses[0].addressAdditionalLineText}}",
+                            "size": 3,
+                            "ignore": false,
+                            "visible": true,
+                            "enabled": "{{$temp.editMode}}",
+                            "isRequired": false,
+                            "label": "Address 2",
+                            "id": "text8",
+                            "col": 4
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "type": "text",
+                            "extraSettings": {},
+                            "i18n": {
+                              "en_us": {
+                                "label": "City"
+                              },
+                              "de_de": {},
+                              "fr_fr": {},
+                              "it_it": {},
+                              "es_es": {}
+                            },
+                            "labelAlign": "top",
+                            "value": "{{tenantAddresses[0].cityName}}",
+                            "size": 3,
+                            "ignore": false,
+                            "visible": true,
+                            "enabled": "{{$temp.editMode}}",
+                            "isRequired": false,
+                            "label": "City",
+                            "id": "text9",
+                            "col": 8
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          }
+                        ]
+                      },
+                      {
+                        "cols": [
+                          {
+                            "type": "text",
+                            "extraSettings": {},
+                            "i18n": {
+                              "en_us": {
+                                "label": "State"
+                              },
+                              "de_de": {},
+                              "fr_fr": {},
+                              "it_it": {},
+                              "es_es": {}
+                            },
+                            "labelAlign": "top",
+                            "value": "{{tenantAddresses[0].stateName}}",
+                            "size": 3,
+                            "ignore": false,
+                            "visible": true,
+                            "enabled": "{{$temp.editMode}}",
+                            "isRequired": false,
+                            "label": "State",
+                            "id": "text11",
+                            "col": 0
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "type": "text",
+                            "extraSettings": {},
+                            "i18n": {
+                              "en_us": {
+                                "label": "Zip Code"
+                              },
+                              "de_de": {},
+                              "fr_fr": {},
+                              "it_it": {},
+                              "es_es": {}
+                            },
+                            "labelAlign": "top",
+                            "value": "{{tenantAddresses[0].plusFourZipCode}}",
+                            "size": 3,
+                            "ignore": false,
+                            "visible": true,
+                            "enabled": "{{$temp.editMode}}",
+                            "isRequired": false,
+                            "label": "Zip Code",
+                            "id": "text10",
+                            "col": 4
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "type": "text",
+                            "extraSettings": {},
+                            "i18n": {
+                              "en_us": {
+                                "label": "Country"
+                              },
+                              "de_de": {},
+                              "fr_fr": {},
+                              "it_it": {},
+                              "es_es": {}
+                            },
+                            "labelAlign": "top",
+                            "value": "{{tenantAddresses[0].countryName}}",
+                            "size": 3,
+                            "ignore": false,
+                            "visible": true,
+                            "enabled": "{{$temp.editMode}}",
+                            "isRequired": false,
+                            "label": "Country",
+                            "id": "text12",
+                            "col": 8
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "col": 0
+              }
+            ]
+          },
+          "col": 0
+        },
+        {
+          "type": "panel",
+          "i18n": {},
+          "labelAlign": "top",
+          "size": 1,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "sub-panel1",
+          "extraSettings": {
+            "collapsible": false,
+            "collapsed": false,
+            "showBorder": false,
+            "saveButtonVisible": true,
+            "saveButtonEnabled": true,
+            "cancelButtonVisible": true,
+            "cancelButtonEnabled": true,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "type": "scriptButton",
+                      "extraSettings": {
+                        "text": "{{!$temp.editMode ? 'Edit' : 'Cancel'}}",
+                        "script": "{{!$temp.editMode}}",
+                        "autoExecute": false,
+                        "alignment": "left",
+                        "iconAlignment": "right"
+                      },
+                      "i18n": {
+                        "en_us": {
+                          "extraSettings": {
+                            "text": "{{!$temp.editMode ? 'Edit' : 'Cancel'}}"
+                          }
+                        }
+                      },
+                      "labelAlign": "top",
+                      "value": "{{$temp.editMode}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": false,
+                      "enabled": true,
+                      "isRequired": false,
+                      "styleClass": "altisource__button_secondary",
+                      "id": "script-button1",
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "scriptButton",
+                      "extraSettings": {
+                        "text": "Save",
+                        "script": "{{!$temp.editMode}}",
+                        "autoExecute": false,
+                        "alignment": "left",
+                        "iconAlignment": "right"
+                      },
+                      "i18n": {
+                        "en_us": {
+                          "extraSettings": {
+                            "text": "Save"
+                          }
+                        }
+                      },
+                      "labelAlign": "top",
+                      "value": "{{$temp.editMode}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": "{{$temp.editMode}}",
+                      "enabled": "{{$temp.editMode}}",
+                      "isRequired": false,
+                      "styleClass": "altisource__button_primary",
+                      "id": "script-button2",
+                      "col": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "col": 11
+        }
+      ]
+    }
+  ]
+}

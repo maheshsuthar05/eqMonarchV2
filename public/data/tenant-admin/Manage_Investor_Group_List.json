@@ -1,0 +1,185 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "type": "panel",
+          "label": "",
+          "i18n": {},
+          "labelAlign": "top",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "sub-panel1",
+          "extraSettings": {
+            "collapsible": false,
+            "collapsed": false,
+            "showBorder": false,
+            "saveButtonVisible": false,
+            "saveButtonEnabled": false,
+            "cancelButtonVisible": false,
+            "cancelButtonEnabled": false,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "type": "dataTable",
+                      "en_us": {
+                        "extraSettings": {
+                          "columns": [
+                            {
+                              "label": "Investor Group",
+                              "id": "investorGroup",
+                              "alignment": "left",
+                              "show": true,
+                              "accessor": "investorGroup"
+                            },
+                            {
+                              "alignment": "right",
+                              "sortable": false,
+                              "component": {
+                                "type": "buttonGroup",
+                                "extraSettings": {
+                                  "asDropdown": true
+                                },
+                                "alignment": "right",
+                                "buttonDefinitions": [
+                                  {
+                                    "type": "scriptButton",
+                                    "extraSettings": {
+                                      "text": "Delete"
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ],
+                          "noDataMessage": "No Investor Group found"
+                        }
+                      },
+                      "de_de": {
+                        "extraSettings": {}
+                      },
+                      "fr_fr": {
+                        "extraSettings": {}
+                      },
+                      "it_it": {
+                        "extraSettings": {}
+                      },
+                      "es_es": {
+                        "extraSettings": {}
+                      },
+                      "enabled": true,
+                      "extraSettings": {
+                        "dataSource": "Rest",
+                        "queryUrl": "{{additionalData.url}}?tempTenantCode={{additionalData.tenantCode}}&page={{$page}}&size={{$pageSize}}&sortOrder={{!$sortDirection ? searchCriteria.sortOrder : $sortDirection.toUpperCase()}}&sortFieldName={{!$sortColumn ? searchCriteria.sortFieldName : $sortColumn}}&{{$filter}}",
+                        "path": "_embedded.investorGroups",
+                        "filterSeparator": "&",
+                        "filterPattern": "{{$filterItem.id}}={{$filterItem.value}}",
+                        "storage": "Full",
+                        "target": "_blank",
+                        "output": {
+                          "numRows": "{{page.totalHits}}"
+                        },
+                        "showPagination": true,
+                        "autoHidePagination": true,
+                        "clientPagination": false,
+                        "sortableColumns": true,
+                        "columns": [
+                          {
+                            "label": "Investor Group",
+                            "id": "investorGroup",
+                            "alignment": "left",
+                            "show": true,
+                            "accessor": "investorGroup"
+                          },
+                          {
+                            "label": "Rule Creation",
+                            "id": "rulesEnabledIndicator",
+                            "alignment": "center",
+                            "show": true,
+                            "accessor": "rulesEnabledIndicator",
+                            "component": {
+                              "type": "htmlComponent",
+                              "value": "<div style=\"overflow:auto; max-height:100px; white-space: normal\">{{$item.rulesEnabledIndicator == 1 ? 'Completed' : 'Not Created'}}</div>"
+                            }
+                          },
+                          {
+                            "label": "Action",
+                            "alignment": "right",
+                            "sortable": false,
+                            "filterable": false,
+                            "maxWidth": 75,
+                            "component": {
+                              "type": "buttonGroup",
+                              "extraSettings": {
+                                "asDropdown": true
+                              },
+                              "alignment": "right",
+                              "buttonDefinitions": [
+                                {
+                                  "id": "action.edit.click",
+                                  "type": "scriptButton",
+                                  "data": "{{$item}}",
+                                  "extraSettings": {
+                                    "text": "Edit"
+                                  }
+                                },
+                                {
+                                  "id": "action.clone.rule.click",
+                                  "type": "scriptButton",
+                                  "data": "{{$item}}",
+                                  "visible": "{{$item.rulesEnabledIndicator == 0}}",
+                                  "extraSettings": {
+                                    "text": "Create Rule"
+                                  }
+                                },
+                                {
+                                  "id": "action.delete.click",
+                                  "type": "scriptButton",
+                                  "data": "{{$item}}",
+                                  "visible": false,
+                                  "extraSettings": {
+                                    "text": "Delete"
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ],
+                        "filterable": true,
+                        "sortable": true,
+                        "multiSort": false,
+                        "pageSize": 20,
+                        "pageSizeOptions": [20, 25, 50, 100],
+                        "showTotalRecords": false,
+                        "response": {
+                          "total": "page.totalElements"
+                        },
+                        "showRefreshButton": false,
+                        "refreshTime": "{{$payload.refreshForm}}",
+                        "noDataMessage": "No properties found"
+                      },
+                      "labelAlign": "top",
+                      "value": "{{selectedProperty}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "isRequired": false,
+                      "id": "propertyListingDataTable",
+                      "col": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "col": 0
+        }
+      ]
+    }
+  ]
+}

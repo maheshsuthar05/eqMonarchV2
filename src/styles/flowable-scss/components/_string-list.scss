@@ -1,0 +1,98 @@
+div.flw__string-list__control {
+  border-radius: 0;
+}
+
+div.flw__string-list__control--is-disabled {
+  background-color: $flw-forms-muted-background-color;
+  background-color: var(--flw-forms-muted-background-color, $flw-forms-muted-background-color);
+  border: 1px solid $flw-forms-border-color;
+  border: 1px solid var(--flw-forms-border-color, $flw-forms-border-color);
+  color: $flw-forms-muted-text-color;
+  color: var(--flw-forms-muted-text-color, $flw-forms-muted-text-color);
+}
+
+div.flw__string-list__control--is-focused {
+  border-color: $flw-forms-color;
+  border-color: var(--flw-forms-color, $flw-forms-color);
+  box-shadow: none;
+}
+
+div.flw__string-list__option:active {
+  background-color: $flw-forms-background-color;
+  background-color: var(--flw-forms-background-color, $flw-forms-background-color);
+  color: $flw-forms-text-color;
+  color: var(--flw-forms-text-color, $flw-forms-text-color);
+}
+
+div.flw__string-list__option--is-selected {
+  background-color: $flw-forms-background-color;
+  background-color: var(--flw-forms-background-color, $flw-forms-background-color);
+  color: $flw-forms-text-color;
+  color: var(--flw-forms-text-color, $flw-forms-text-color);
+  font-weight: bold;
+}
+
+div.flw__string-list__option--is-focused {
+  background-color: $flw-forms-color;
+  background-color: var(--flw-forms-color, $flw-forms-color);
+  color: $flw-forms-background-color;
+  color: var(--flw-forms-background-color, $flw-forms-background-color);
+}
+
+div.flw__string-list__multi-value {
+  background-color: $flw-forms-color;
+  background-color: var(--flw-forms-color, $flw-forms-color);
+  color: $flw-forms-border-color;
+  color: var(--flw-forms-border-color, $flw-forms-border-color);
+}
+
+div.flw__string-list__multi-value__label {
+  color: $flw-forms-background-color;
+  color: var(--flw-forms-background-color, $flw-forms-background-color);
+}
+
+div.flw__string-list__multi-value__remove {
+  padding-top: 2px;
+}
+
+div.flw__string-list__multi-value__remove:hover {
+  background-color: $flw-forms-color;
+  background-color: var(--flw-forms-color, $flw-forms-color);
+  color: $flw-forms-background-color;
+  color: var(--flw-forms-background-color, $flw-forms-background-color);
+  cursor: pointer;
+}
+
+div.flw__string-list__multi-value--is-disabled {
+  background-color: $flw-forms-muted-background-color;
+  background-color: var(--flw-forms-muted-background-color, $flw-forms-muted-background-color);
+  border: 1px solid $flw-forms-border-color;
+  border: 1px solid var(--flw-forms-border-color, $flw-forms-border-color);
+}
+
+div.flw__string-list__multi-value--is-disabled .flw__string-list__multi-value__label {
+  color: $flw-forms-text-color;
+  color: var(--flw-forms-text-color, $flw-forms-text-color);
+}
+
+div.flw__string-list__multi-value--is-disabled .flw__string-list__multi-value__remove {
+  display: none;
+}
+
+div.flw__string-list__indicators {
+  cursor: pointer;
+}
+
+div.flw__string-list--left-aligned .flw__component__input,
+div.flw__string-list--left-aligned .flw__string-list__control {
+  display: flex;
+  width: auto;
+  flex-grow: 1;
+  flex-flow: row wrap;
+}
+
+div.flw__string-list__placeholder {
+  color: var(--flw-forms-muted-text-color, $flw-forms-muted-text-color) !important;
+  color: $flw-forms-muted-text-color;
+  color: var(--flw-forms-muted-text-color, $flw-forms-muted-text-color);
+}

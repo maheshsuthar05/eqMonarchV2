@@ -1,0 +1,180 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 0, "y": 0 },
+              "lowerRight": { "x": 0, "y": 0 }
+            },
+            "stencilSuperIds": [],
+            "stencilId": null,
+            "customStencilId": null
+          },
+          "type": "",
+          "size": 10
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 74 },
+              "lowerRight": { "x": 984, "y": 166 }
+            },
+            "stencilSuperIds": ["base-datatable", "Component"],
+            "stencilId": "cloud-datatable",
+            "customStencilId": null
+          },
+          "type": "dataTable",
+          "label": "Legal Entities",
+          "i18n": {
+            "en_us": {
+              "label": "Legal Entities",
+              "extraSettings": {
+                "columns": [
+                  {
+                    "label": "Legal Entity Name",
+                    "id": "legalEntityName",
+                    "accessor": "legalEntityName",
+                    "alignment": "left",
+                    "filterable": true,
+                    "sortable": true,
+                    "show": true
+                  },
+                  {
+                    "label": "Action",
+                    "id": "dropdown",
+                    "accessor": "dropdown",
+                    "alignment": "left",
+                    "component": {
+                      "type": "buttonGroup",
+                      "value": "{{$item}}",
+                      "extraSettings": { "asDropdown": true },
+                      "alignment": "right",
+                      "buttonDefinitions": [
+                        {
+                          "type": "scriptButton",
+                          "value": "{{$payload.addLegalEntityModal}}",
+                          "extraSettings": {
+                            "text": "Edit",
+                            "script": "Edit",
+                            "fileDetails": "{{$item}}"
+                          }
+                        },
+                        {
+                          "type": "scriptButton",
+                          "value": "{{operationListActionButton}}",
+                          "extraSettings": {
+                            "text": "Delete",
+                            "script": "Delete",
+                            "fileDetails": "{{$item}}"
+                          }
+                        }
+                      ]
+                    },
+                    "filterable": false,
+                    "maxWidth": 75,
+                    "sortable": false,
+                    "show": true
+                  }
+                ]
+              }
+            }
+          },
+          "enabled": true,
+          "extraSettings": {
+            "dataSource": "Rest",
+            "queryUrl": "/eq-api/adminservice/legalEntities?page={{$page}}&size={{$pageSize}}&sort={{$sortColumn}},{{$sortDirection}}",
+            "path": "_embedded.legalEntities",
+            "linkTargetView": "browse",
+            "storage": "Full",
+            "linkTarget": "_blank",
+            "selectable": "Multiple",
+            "infiniteScroll": false,
+            "showPagination": true,
+            "autoHidePagination": true,
+            "clientPagination": true,
+            "sortableColumns": false,
+            "columns": [
+              {
+                "label": "Legal Entity Name",
+                "id": "legalEntityName",
+                "accessor": "legalEntityName",
+                "alignment": "left",
+                "filterable": true,
+                "sortable": true,
+                "show": true
+              },
+              {
+                "label": "Action",
+                "id": "dropdown",
+                "accessor": "dropdown",
+                "alignment": "left",
+                "component": {
+                  "type": "buttonGroup",
+                  "value": "{{$item}}",
+                  "extraSettings": { "asDropdown": true },
+                  "alignment": "right",
+                  "buttonDefinitions": [
+                    {
+                      "type": "scriptButton",
+                      "value": "{{$payload.addLegalEntityModal}}",
+                      "extraSettings": {
+                        "text": "Edit",
+                        "script": "Edit",
+                        "fileDetails": "{{$item}}"
+                      }
+                    },
+                    {
+                      "type": "scriptButton",
+                      "value": "{{operationListActionButton}}",
+                      "extraSettings": {
+                        "text": "Delete",
+                        "script": "Delete",
+                        "fileDetails": "{{$item}}"
+                      }
+                    }
+                  ]
+                },
+                "filterable": false,
+                "maxWidth": 75,
+                "sortable": false,
+                "show": true
+              }
+            ],
+            "filterable": true,
+            "sortable": true,
+            "multiSort": false,
+            "pageSize": 20,
+            "pageSizeOptions": [5, 10, 20, 25, 50, 100],
+            "showTotalRecords": true,
+            "response": {},
+            "refreshTime": "{{tableRefresh}}",
+            "showRefreshButton": true,
+            "dataPollingOnInit": false,
+            "target": "_blank",
+            "nodataPosition": "middle-center"
+          },
+          "labelAlign": "top",
+          "value": "{{legalEntitiesData}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "isRequired": false,
+          "id": "datatable1"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "key": "legal-entity-list",
+    "name": "Legal Entity List",
+    "description": "Legal Entity List",
+    "version": "26",
+    "type": "2"
+  }
+}

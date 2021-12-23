@@ -1,0 +1,3743 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "type": "panel",
+          "i18n": {},
+          "labelAlign": "top",
+          "size": 2,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "sub-panel189",
+          "extraSettings": {
+            "collapsible": false,
+            "collapsed": false,
+            "showBorder": false,
+            "saveButtonVisible": true,
+            "saveButtonEnabled": true,
+            "cancelButtonVisible": true,
+            "cancelButtonEnabled": true,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "type": "htmlComponent",
+                      "i18n": {
+                        "en_us": {
+                          "value": "<p>Actuals : {{propertyProjectionsResults.actual_net_loss_total}}</p>\n"
+                        },
+                        "de_de": {},
+                        "fr_fr": {},
+                        "it_it": {},
+                        "es_es": {}
+                      },
+                      "labelAlign": "top",
+                      "value": "<p>Actuals : {{propertyProjectionsResults.actual_net_loss_total}}</p>\n",
+                      "defaultValue": false,
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "output42",
+                      "col": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "col": 0
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "type": "panel",
+          "i18n": {},
+          "labelAlign": "top",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "sub-panel171",
+          "extraSettings": {
+            "collapsible": false,
+            "collapsed": false,
+            "showBorder": false,
+            "saveButtonVisible": true,
+            "saveButtonEnabled": true,
+            "cancelButtonVisible": true,
+            "cancelButtonEnabled": true,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel172",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p><strong>Item</strong></p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p><strong>Item</strong></p>\n",
+                                  "defaultValue": false,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output22",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p><strong>Months</strong></p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p><strong>Months</strong></p>\n",
+                                  "defaultValue": false,
+                                  "size": 1,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output43",
+                                  "col": 3
+                                },
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p><strong>$/mo</strong></p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p><strong>$/mo</strong></p>\n",
+                                  "defaultValue": false,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output23",
+                                  "col": 4
+                                },
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p><strong>Total</strong></p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p><strong>Total</strong></p>\n",
+                                  "defaultValue": false,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output24",
+                                  "col": 6
+                                },
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p><strong>Allowed</strong></p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p><strong>Allowed</strong></p>\n",
+                                  "defaultValue": false,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output25",
+                                  "col": 8
+                                },
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p><strong>Net</strong></p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p><strong>Net</strong></p>\n",
+                                  "defaultValue": false,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output26",
+                                  "col": 10
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel173",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Eviction</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Eviction</p>\n",
+                                  "defaultValue": false,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output27",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{value}}",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number458",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 4
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_total_eviction}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number459",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.allowance_eviction}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number460",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 8
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_net_loss_eviction}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number461",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 10
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel174",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>CFK</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>CFK</p>\n",
+                                  "defaultValue": false,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output28",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{value}}",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number462",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 4
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_total_cfk}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number465",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.allowance_cfk}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number464",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 8
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_net_loss_cfk}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number463",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 10
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel175",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Baseline Interest Loss</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Baseline Interest Loss</p>\n",
+                                  "defaultValue": false,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output29",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{value}}",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number466",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 4
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_total_baseline_interest_loss}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number467",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_allowed_baseline_interest_loss}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number468",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 8
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_net_loss_baseline_interest_loss}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number469",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 10
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel176",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Curtailment Interest Loss</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Curtailment Interest Loss</p>\n",
+                                  "defaultValue": false,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output30",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{value}}",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number470",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 4
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_total_curtailment_interest_loss}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number473",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_allowed_curtailment_interest_loss}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number471",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 8
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_net_loss_curtailment_interest_loss}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number472",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 10
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel177",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>First 2 Months Interest</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>First 2 Months Interest</p>\n",
+                                  "defaultValue": false,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output31",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{value}}",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number474",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 4
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_total_first_two_months_interest}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number475",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_allowed_first_two_months_interest}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number477",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 8
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_net_loss_first_two_months_itnerest}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number476",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 10
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel178",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Other Costs</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Other Costs</p>\n",
+                                  "defaultValue": false,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output32",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{value}}",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number478",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 4
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_total_other_cost}}",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number479",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{value}}",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number480",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 8
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_netloss_other_cost}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number481",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 10
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel179",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Carrying Costs</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Carrying Costs</p>\n",
+                                  "defaultValue": false,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output33",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "text",
+                                  "extraSettings": {},
+                                  "i18n": {
+                                    "en_us": {},
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_carrying_costs}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "text255",
+                                  "col": 4
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.total_carrying_cost_actual}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number483",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_allowance_carrying_costs}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number484",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 8
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_net_loss_carrying_costs}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number485",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 10
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel180",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p><strong><em>HOA</em></strong></p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p><strong><em>HOA</em></strong></p>\n",
+                                  "defaultValue": false,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output34",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_months_hoa}}",
+                                  "defaultValue": 0,
+                                  "size": 1,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "float-number1",
+                                  "extraSettings": {
+                                    "numberType": "float",
+                                    "fractionSize": 2,
+                                    "type": "one"
+                                  },
+                                  "col": 3
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_hoa}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number486",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 4
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.total_hoa_actual}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number487",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_allowance_hoa}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number489",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 8
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_net_loss_hoa}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number488",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 10
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel181",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p><strong><em>Utilities</em></strong></p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p><strong><em>Utilities</em></strong></p>\n",
+                                  "defaultValue": false,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output35",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual__months_utilities}}",
+                                  "defaultValue": 0,
+                                  "size": 1,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "float-number2",
+                                  "extraSettings": {
+                                    "numberType": "float",
+                                    "fractionSize": 2,
+                                    "type": "one"
+                                  },
+                                  "col": 3
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_utilities}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number490",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 4
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.total_Utilities_actual}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number491",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_allowance_utilities}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number493",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 8
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_net_loss_utilities}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number492",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 10
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel182",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p><strong><em>Maintenance</em></strong></p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p><strong><em>Maintenance</em></strong></p>\n",
+                                  "defaultValue": false,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output36",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_months_maintenance}}",
+                                  "defaultValue": 0,
+                                  "size": 1,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "float-number3",
+                                  "extraSettings": {
+                                    "numberType": "float",
+                                    "fractionSize": 2,
+                                    "type": "one"
+                                  },
+                                  "col": 3
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_maintenance}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number497",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 4
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.total_Maintenance_actual}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number496",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_allowance_maintenance}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number495",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 8
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_net_loss_maintenance}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number494",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 10
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel183",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p><strong><em>Taxes</em></strong> </p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p><strong><em>Taxes</em></strong> </p>\n",
+                                  "defaultValue": false,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output37",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_months_taxes}}",
+                                  "defaultValue": 0,
+                                  "size": 1,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "float-number4",
+                                  "extraSettings": {
+                                    "numberType": "float",
+                                    "fractionSize": 2,
+                                    "type": "one"
+                                  },
+                                  "col": 3
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_taxes}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number498",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 4
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.total_Taxes_actual}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number499",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_allowance_taxes}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number501",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 8
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_net_loss_taxes}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number500",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 10
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel184",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p><strong><em>Insurance</em></strong> </p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p><strong><em>Insurance</em></strong> </p>\n",
+                                  "defaultValue": false,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output38",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_months_insurance}}",
+                                  "defaultValue": 0,
+                                  "size": 1,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "float-number5",
+                                  "extraSettings": {
+                                    "numberType": "float",
+                                    "fractionSize": 2,
+                                    "type": "one"
+                                  },
+                                  "col": 3
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_insurance_cost}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number502",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 4
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.total_Insurance_actual}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number503",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_allowance_insurance}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number504",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 8
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_net_loss_insurance}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number505",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 10
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel185",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Repair</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Repair</p>\n",
+                                  "defaultValue": false,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output39",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{value}}",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number506",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 4
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.total_Repair_actual}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number507",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_allowance_repair}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number508",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 8
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_net_loss_repair}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number509",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 10
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel186",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Foreclosure Costs</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Foreclosure Costs</p>\n",
+                                  "defaultValue": false,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output40",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{value}}",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number510",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 4
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.total_Foreclosure_actual}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number511",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_allowance_foreclosure_closts}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number513",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 8
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_net_loss_foreclosure_cost}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number512",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 10
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel187",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Total</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Total</p>\n",
+                                  "defaultValue": false,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output41",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "text",
+                                  "extraSettings": {},
+                                  "i18n": {
+                                    "en_us": {},
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_total}}",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "text248",
+                                  "col": 4
+                                },
+                                {
+                                  "type": "text",
+                                  "extraSettings": {},
+                                  "i18n": {
+                                    "en_us": {},
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.total_actual}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "text249",
+                                  "col": 6
+                                },
+                                {
+                                  "type": "text",
+                                  "extraSettings": {},
+                                  "i18n": {
+                                    "en_us": {},
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_allowance_total}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "text250",
+                                  "col": 8
+                                },
+                                {
+                                  "type": "text",
+                                  "extraSettings": {},
+                                  "i18n": {
+                                    "en_us": {},
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_net_loss_total}}",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "text251",
+                                  "col": 10
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "$/month total",
+                                    "script": "{{propertyProjectionsResults.actual_hoa+propertyProjectionsResults.actual_utilities+propertyProjectionsResults.actual_maintenance+propertyProjectionsResults.actual_taxes+propertyProjectionsResults.actual_insurance_cost}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "$/month total"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_total}}",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button9",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "total_carrying_cost",
+                                    "script": "{{flw.sum([propertyProjectionsResults.total_hoa_actual,propertyProjectionsResults.total_Utilities_actual,propertyProjectionsResults.total_Maintenance_actual,propertyProjectionsResults.total_Taxes_actual,propertyProjectionsResults.total_Insurance_actual])}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "total_carrying_cost"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.total_carrying_cost_actual}}",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button14",
+                                  "col": 3
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "allowed_total",
+                                    "script": "{{flw.sum([propertyProjectionsResults.actual_allowed_first_two_months_interest,propertyProjectionsResults.actual_allowed_curtailment_interest_loss,propertyProjectionsResults.actual_allowed_baseline_interest_loss,propertyProjectionsResults.allowance_eviction,propertyProjectionsResults.allowance_cfk,propertyProjectionsResults.actual_allowance_hoa,propertyProjectionsResults.actual_allowance_utilities,propertyProjectionsResults.actual_allowance_maintenance,propertyProjectionsResults.actual_allowance_taxes,propertyProjectionsResults.actual_allowance_insurance,propertyProjectionsResults.actual_allowance_repair,propertyProjectionsResults.actual_allowance_foreclosure_closts])}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "allowed_total"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_allowance_total}}",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button11",
+                                  "col": 6
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "net_loss_eviction",
+                                    "script": "{{propertyProjectionsResults.allowance_eviction-propertyProjectionsResults.actual_total_eviction}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "net_loss_eviction"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_net_loss_eviction}}",
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button20",
+                                  "col": 9
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "allowed carrying cost total",
+                                    "script": "{{flw.sum([propertyProjectionsResults.actual_allowance_hoa,propertyProjectionsResults.actual_allowance_utilities,propertyProjectionsResults.actual_allowance_maintenance,propertyProjectionsResults.actual_allowance_taxes,propertyProjectionsResults.actual_allowance_insurance])}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "allowed carrying cost total"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_allowance_carrying_costs}}",
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button33",
+                                  "col": 6
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "total_hoa",
+                                    "script": "{{flw.round(propertyProjectionsResults.actual_months_hoa*propertyProjectionsResults.actual_hoa)}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "total_hoa"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.total_hoa_actual}}",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button15",
+                                  "col": 3
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "net_loss_cfk",
+                                    "script": "{{propertyProjectionsResults.allowance_cfk-propertyProjectionsResults.actual_total_cfk}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "net_loss_cfk"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_net_loss_cfk}}",
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button21",
+                                  "col": 9
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "net_loss_baseline",
+                                    "script": "{{propertyProjectionsResults.actual_allowed_baseline_interest_loss-propertyProjectionsResults.actual_total_baseline_interest_loss}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "net_loss_baseline"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_net_loss_baseline_interest_loss}}",
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button30",
+                                  "col": 9
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "net_loss_curtailment",
+                                    "script": "{{propertyProjectionsResults.actual_allowed_curtailment_interest_loss-propertyProjectionsResults.actual_total_curtailment_interest_loss}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "net_loss_curtailment"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_net_loss_curtailment_interest_loss}}",
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button31",
+                                  "col": 9
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "net_loss_first2month",
+                                    "script": "{{propertyProjectionsResults.actual_allowed_first_two_months_interest-propertyProjectionsResults.actual_total_first_two_months_interest}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "net_loss_first2month"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_net_loss_first_two_months_itnerest}}",
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button32",
+                                  "col": 9
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "total_utilities",
+                                    "script": "{{flw.round(propertyProjectionsResults.actual__months_utilities*propertyProjectionsResults.actual_utilities)}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "total_utilities"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.total_Utilities_actual}}",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button16",
+                                  "col": 3
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "net_loss_carrying_cost",
+                                    "script": "{{propertyProjectionsResults.actual_allowance_carrying_costs-propertyProjectionsResults.total_carrying_cost_actual}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "net_loss_carrying_cost"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_net_loss_carrying_costs}}",
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button22",
+                                  "col": 9
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "net_loss_hoa",
+                                    "script": "{{propertyProjectionsResults.actual_allowance_hoa-propertyProjectionsResults.total_hoa_actual}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "net_loss_hoa"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_net_loss_hoa}}",
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button23",
+                                  "col": 9
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "net_loss_utilities",
+                                    "script": "{{propertyProjectionsResults.actual_allowance_utilities-propertyProjectionsResults.total_Utilities_actual}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "net_loss_utilities"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_net_loss_utilities}}",
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button24",
+                                  "col": 9
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "net_loss_maintenance",
+                                    "script": "{{propertyProjectionsResults.actual_allowance_maintenance-propertyProjectionsResults.total_Maintenance_actual}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "net_loss_maintenance"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_net_loss_maintenance}}",
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button25",
+                                  "col": 9
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "net_loss_taxes",
+                                    "script": "{{propertyProjectionsResults.actual_allowance_taxes-propertyProjectionsResults.total_Taxes_actual}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "net_loss_taxes"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_net_loss_taxes}}",
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button26",
+                                  "col": 9
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "net_loss_insurance",
+                                    "script": "{{propertyProjectionsResults.actual_allowance_insurance-propertyProjectionsResults.total_Insurance_actual}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "net_loss_insurance"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_net_loss_insurance}}",
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button27",
+                                  "col": 9
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "net_loss_repair",
+                                    "script": "{{propertyProjectionsResults.actual_allowance_repair-propertyProjectionsResults.total_Repair_actual}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "net_loss_repair"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_net_loss_repair}}",
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button28",
+                                  "col": 9
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "net_loss_foreclosure_cost",
+                                    "script": "{{propertyProjectionsResults.actual_allowance_foreclosure_closts-propertyProjectionsResults.total_Foreclosure_actual}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "net_loss_foreclosure_cost"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_net_loss_foreclosure_cost}}",
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button29",
+                                  "col": 9
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "total_maintanance",
+                                    "script": "{{flw.round(propertyProjectionsResults.actual_months_maintenance*propertyProjectionsResults.actual_maintenance)}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "total_maintanance"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.total_Maintenance_actual}}",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button17",
+                                  "col": 3
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "net_loss_total",
+                                    "script": "{{propertyProjectionsResults.actual_allowance_total-propertyProjectionsResults.total_actual}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "net_loss_total"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_net_loss_total}}",
+                                  "defaultValue": 0,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button12",
+                                  "col": 9
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "month_carrying_cost",
+                                    "script": "{{flw.sum([propertyProjectionsResults.actual_hoa,propertyProjectionsResults.actual_utilities,propertyProjectionsResults.actual_maintenance,propertyProjectionsResults.actual_taxes,propertyProjectionsResults.actual_insurance_cost])}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "month_carrying_cost"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.actual_carrying_costs}}",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button13",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "total_taxes",
+                                    "script": "{{flw.round(propertyProjectionsResults.actual_months_taxes*propertyProjectionsResults.actual_taxes)}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "total_taxes"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.total_Taxes_actual}}",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button18",
+                                  "col": 3
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "total_insurance",
+                                    "script": "{{flw.round(propertyProjectionsResults.actual_months_insurance*propertyProjectionsResults.actual_insurance_cost)}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "total_insurance"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.total_Insurance_actual}}",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button19",
+                                  "col": 3
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "total_total",
+                                    "script": "{{flw.sum([propertyProjectionsResults.actual_total_eviction,propertyProjectionsResults.actual_total_cfk,propertyProjectionsResults.actual_total_baseline_interest_loss,propertyProjectionsResults.actual_total_curtailment_interest_loss,propertyProjectionsResults.actual_total_first_two_months_interest,propertyProjectionsResults.actual_total_other_cost,propertyProjectionsResults.total_hoa_actual,propertyProjectionsResults.total_Utilities_actual,propertyProjectionsResults.total_Maintenance_actual,propertyProjectionsResults.total_Taxes_actual,propertyProjectionsResults.total_Insurance_actual,propertyProjectionsResults.total_Repair_actual,propertyProjectionsResults.total_Foreclosure_actual])}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "total_total"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.total_actual}}",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button10",
+                                  "col": 3
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "col": 0
+        }
+      ]
+    }
+  ]
+}

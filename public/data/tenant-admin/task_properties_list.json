@@ -1,0 +1,201 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "type": "dataTable",
+          "label": "Task Properties",
+          "i18n": {
+            "en_us": {
+              "label": "Task Properties",
+              "extraSettings": {
+                "columns": [
+                  {
+                    "label": "Task Name",
+                    "id": "taskDisplayName",
+                    "alignment": "left",
+                    "show": true,
+                    "sortable": true,
+                    "accessor": "taskDisplayName"
+                  },
+                  {
+                    "label": "Phase",
+                    "id": "phaseName",
+                    "alignment": "left",
+                    "show": true,
+                    "sortable": true,
+                    "accessor": "phaseName"
+                  },
+                  {
+                    "label": "Process",
+                    "id": "processName",
+                    "alignment": "left",
+                    "show": true,
+                    "sortable": true,
+                    "accessor": "processName"
+                  },
+                  {
+                    "label": "Role",
+                    "id": "targetPartyRoleType",
+                    "alignment": "left",
+                    "show": true,
+                    "sortable": true,
+                    "accessor": "targetPartyRoleType"
+                  },
+                  {
+                    "label": "Action",
+                    "id": "dropdown",
+                    "alignment": "left",
+                    "filterable": false,
+                    "maxWidth": 75,
+                    "sortable": false,
+                    "show": true,
+                    "accessor": "dropdown",
+                    "component": {
+                      "type": "buttonGroup",
+                      "value": "{{$item}}",
+                      "extraSettings": {
+                        "asDropdown": true
+                      },
+                      "alignment": "right",
+                      "buttonDefinitions": [
+                        {
+                          "type": "scriptButton",
+                          "value": "Edit",
+                          "extraSettings": {
+                            "text": "Edit",
+                            "script": "Edit",
+                            "fileDetails": "{{$item}}"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "noDataMessage": "No Task"
+              }
+            },
+            "de_de": {
+              "extraSettings": {}
+            },
+            "fr_fr": {
+              "extraSettings": {}
+            },
+            "it_it": {
+              "extraSettings": {}
+            },
+            "es_es": {
+              "extraSettings": {}
+            }
+          },
+          "enabled": true,
+          "extraSettings": {
+            "dataSource": "Rest",
+            "queryUrl": "/eq-api/adminservice/taskConfigurations?page=0&size=1000",
+            "path": "_embedded.taskConfigurations",
+            "storage": "Full",
+            "linkTarget": "_blank",
+            "output": {},
+            "infiniteScroll": false,
+            "showPagination": true,
+            "autoHidePagination": true,
+            "clientPagination": true,
+            "sortableColumns": true,
+            "response": {
+              "total": "page.totalElements"
+            },
+            "columns": [
+              {
+                "label": "Task Name",
+                "id": "taskDisplayName",
+                "alignment": "left",
+                "show": true,
+                "sortable": true,
+                "accessor": "taskDisplayName"
+              },
+              {
+                "label": "Phase",
+                "id": "phaseName",
+                "alignment": "left",
+                "show": true,
+                "sortable": true,
+                "accessor": "phaseName"
+              },
+              {
+                "label": "Process",
+                "id": "processName",
+                "alignment": "left",
+                "show": true,
+                "sortable": true,
+                "accessor": "processName"
+              },
+              {
+                "label": "Role",
+                "id": "targetPartyRoleType",
+                "alignment": "left",
+                "show": true,
+                "sortable": true,
+                "accessor": "targetPartyRoleType"
+              },
+              {
+                "label": "Action",
+                "id": "dropdown",
+                "alignment": "left",
+                "filterable": false,
+                "maxWidth": 75,
+                "sortable": false,
+                "show": true,
+                "accessor": "dropdown",
+                "component": {
+                  "type": "buttonGroup",
+                  "value": "{{$item}}",
+                  "extraSettings": {
+                    "asDropdown": true
+                  },
+                  "alignment": "right",
+                  "buttonDefinitions": [
+                    {
+                      "type": "scriptButton",
+                      "value": "Edit",
+                      "extraSettings": {
+                        "text": "Edit",
+                        "script": "Edit",
+                        "fileDetails": "{{$item}}"
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "filterable": true,
+            "sortable": true,
+            "multiSort": false,
+            "pageSize": 20,
+            "pageSizeOptions": [
+              5,
+              10,
+              20,
+              25,
+              50,
+              100
+            ],
+            "showTotalRecords": true,
+            "showRefreshButton": true,
+            "refreshTime": "{{tableRefresh}}",
+            "dataPollingOnInit": false,
+            "noDataMessage": "No Task",
+            "nodataPosition": "middle-center"
+          },
+          "labelAlign": "top",
+          "value": "{{taskList}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "isRequired": false,
+          "id": "datatable1",
+          "col": 0
+        }
+      ]
+    }
+  ]
+}

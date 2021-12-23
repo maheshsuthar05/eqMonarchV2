@@ -1,0 +1,2818 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": {
+                "x": 15,
+                "y": 25
+              },
+              "lowerRight": {
+                "x": 985,
+                "y": 211
+              }
+            },
+            "stencilSuperIds": [
+              "SubSlotPanel"
+            ],
+            "stencilId": "cloud-sub-panel",
+            "customStencilId": null
+          },
+          "labelAlign": "top",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "styleClass": "taskDescription",
+          "id": "sub-panel10",
+          "extraSettings": {
+            "collapsible": false,
+            "collapsed": false,
+            "showBorder": false,
+            "saveButtonVisible": true,
+            "saveButtonEnabled": true,
+            "cancelButtonVisible": true,
+            "cancelButtonEnabled": true,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 15,
+                            "y": 25
+                          },
+                          "lowerRight": {
+                            "x": 477,
+                            "y": 73
+                          }
+                        },
+                        "stencilSuperIds": [
+                          "base-text",
+                          "Component"
+                        ],
+                        "stencilId": "cloud-text",
+                        "customStencilId": null
+                      },
+                      "placeholder": "Task Description",
+                      "i18n": {
+                        "en_us": {
+                          "placeholder": "Task Description",
+                          "label": "Task Description",
+                          "validationRegExpErrorMessage": "Please enter the valid description"
+                        }
+                      },
+                      "labelAlign": "top",
+                      "value": "{{taskDisplayName}}",
+                      "size": 6,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "label": "Task Description",
+                      "id": "text1",
+                      "validationRegExp": "[-\\w\\s^/]+$",
+                      "validationRegExpErrorMessage": "Please enter the valid description",
+                      "type": "text",
+                      "extraSettings": {}
+                    },
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 492,
+                            "y": 25
+                          },
+                          "lowerRight": {
+                            "x": 955,
+                            "y": 73
+                          }
+                        },
+                        "stencilSuperIds": [
+                          "IntegerNumber"
+                        ],
+                        "stencilId": "cloud-integer-number",
+                        "customStencilId": null
+                      },
+                      "placeholder": "Max # of Days to Pause",
+                      "i18n": {
+                        "en_us": {
+                          "placeholder": "Max # of Days to Pause",
+                          "label": "Max # of Days to Pause"
+                        }
+                      },
+                      "labelAlign": "top",
+                      "value": "{{maxDaysToPause}}",
+                      "size": 6,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "label": "Max # of Days to Pause",
+                      "id": "integer-number1",
+                      "extraSettings": {
+                        "numberType": "integer",
+                        "fractionSize": 0,
+                        "type": "one"
+                      },
+                      "type": "number"
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 15,
+                            "y": 98
+                          },
+                          "lowerRight": {
+                            "x": 238,
+                            "y": 161
+                          }
+                        },
+                        "stencilSuperIds": [
+                          "base-radiobuttons",
+                          "Component"
+                        ],
+                        "stencilId": "cloud-radiobuttons",
+                        "customStencilId": null
+                      },
+                      "enabled": true,
+                      "extraSettings": {
+                        "dataSource": "Static",
+                        "items": [
+                          {
+                            "text": "Yes",
+                            "value": "Yes",
+                            "checked": "true"
+                          },
+                          {
+                            "text": "No",
+                            "value": "No"
+                          }
+                        ],
+                        "linkTargetView": "browse",
+                        "storage": "Id",
+                        "identity": "value",
+                        "linkTarget": "_blank",
+                        "display": "Horizontal"
+                      },
+                      "i18n": {
+                        "en_us": {
+                          "extraSettings": {
+                            "items": [
+                              {
+                                "text": "Yes",
+                                "value": "Yes",
+                                "checked": "true"
+                              },
+                              {
+                                "text": "No",
+                                "value": "No"
+                              }
+                            ]
+                          },
+                          "label": "Can be Paused?"
+                        }
+                      },
+                      "labelAlign": "top",
+                      "value": "{{canPauseIndicator}}",
+                      "size": 3,
+                      "ignore": false,
+                      "visible": true,
+                      "isRequired": false,
+                      "label": "Can be Paused?",
+                      "id": "radiobuttons1",
+                      "type": "radio"
+                    },
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 253,
+                            "y": 98
+                          },
+                          "lowerRight": {
+                            "x": 477,
+                            "y": 161
+                          }
+                        },
+                        "stencilSuperIds": [
+                          "base-radiobuttons",
+                          "Component"
+                        ],
+                        "stencilId": "cloud-radiobuttons",
+                        "customStencilId": null
+                      },
+                      "enabled": true,
+                      "extraSettings": {
+                        "dataSource": "Static",
+                        "items": [
+                          {
+                            "text": "Yes",
+                            "value": "Yes",
+                            "checked": "true"
+                          },
+                          {
+                            "text": "No",
+                            "value": "No"
+                          }
+                        ],
+                        "linkTargetView": "browse",
+                        "storage": "Id",
+                        "identity": "value",
+                        "linkTarget": "_blank",
+                        "display": "Horizontal"
+                      },
+                      "i18n": {
+                        "en_us": {
+                          "extraSettings": {
+                            "items": [
+                              {
+                                "text": "Yes",
+                                "value": "Yes",
+                                "checked": "true"
+                              },
+                              {
+                                "text": "No",
+                                "value": "No"
+                              }
+                            ]
+                          },
+                          "label": "Can be Un-Paused?"
+                        }
+                      },
+                      "labelAlign": "top",
+                      "value": "{{canUnpauseIndicator}}",
+                      "size": 3,
+                      "ignore": false,
+                      "visible": true,
+                      "isRequired": false,
+                      "label": "Can be Un-Paused?",
+                      "id": "radiobuttons2",
+                      "type": "radio"
+                    },
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 492,
+                            "y": 98
+                          },
+                          "lowerRight": {
+                            "x": 716,
+                            "y": 161
+                          }
+                        },
+                        "stencilSuperIds": [
+                          "base-radiobuttons",
+                          "Component"
+                        ],
+                        "stencilId": "cloud-radiobuttons",
+                        "customStencilId": null
+                      },
+                      "enabled": true,
+                      "extraSettings": {
+                        "dataSource": "Static",
+                        "items": [
+                          {
+                            "text": "Yes",
+                            "value": "Yes",
+                            "checked": "true"
+                          },
+                          {
+                            "text": "No",
+                            "value": "No"
+                          }
+                        ],
+                        "linkTargetView": "browse",
+                        "storage": "Id",
+                        "identity": "value",
+                        "linkTarget": "_blank",
+                        "display": "Horizontal"
+                      },
+                      "i18n": {
+                        "en_us": {
+                          "extraSettings": {
+                            "items": [
+                              {
+                                "text": "Yes",
+                                "value": "Yes",
+                                "checked": "true"
+                              },
+                              {
+                                "text": "No",
+                                "value": "No"
+                              }
+                            ]
+                          },
+                          "label": "Can be Skipped?"
+                        }
+                      },
+                      "labelAlign": "top",
+                      "value": "{{canSkipIndicator}}",
+                      "size": 3,
+                      "ignore": false,
+                      "visible": true,
+                      "isRequired": false,
+                      "label": "Can be Skipped?",
+                      "id": "radiobuttons5",
+                      "type": "radio"
+                    },
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 731,
+                            "y": 98
+                          },
+                          "lowerRight": {
+                            "x": 955,
+                            "y": 161
+                          }
+                        },
+                        "stencilSuperIds": [
+                          "base-radiobuttons",
+                          "Component"
+                        ],
+                        "stencilId": "cloud-radiobuttons",
+                        "customStencilId": null
+                      },
+                      "enabled": true,
+                      "extraSettings": {
+                        "dataSource": "Static",
+                        "items": [
+                          {
+                            "text": "Yes",
+                            "value": "Yes",
+                            "checked": "true"
+                          },
+                          {
+                            "text": "No",
+                            "value": "No"
+                          }
+                        ],
+                        "linkTargetView": "browse",
+                        "storage": "Id",
+                        "identity": "value",
+                        "linkTarget": "_blank",
+                        "display": "Horizontal"
+                      },
+                      "i18n": {
+                        "en_us": {
+                          "extraSettings": {
+                            "items": [
+                              {
+                                "text": "Yes",
+                                "value": "Yes",
+                                "checked": "true"
+                              },
+                              {
+                                "text": "No",
+                                "value": "No"
+                              }
+                            ]
+                          },
+                          "label": "Can be Re-Opened?"
+                        }
+                      },
+                      "labelAlign": "top",
+                      "value": "{{userCanReopenIndicator}}",
+                      "size": 3,
+                      "ignore": false,
+                      "visible": true,
+                      "isRequired": false,
+                      "label": "Can be Re-Opened?",
+                      "id": "radiobuttons6",
+                      "type": "radio"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "type": "panel"
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": {
+                "x": 15,
+                "y": 236
+              },
+              "lowerRight": {
+                "x": 985,
+                "y": 553
+              }
+            },
+            "stencilSuperIds": [
+              "SubSlotPanel"
+            ],
+            "stencilId": "cloud-sub-panel",
+            "customStencilId": null
+          },
+          "labelAlign": "top",
+          "value": "{{eqConnectPartnerCan}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "sub-panel1",
+          "extraSettings": {
+            "collapsible": false,
+            "collapsed": false,
+            "showBorder": false,
+            "saveButtonVisible": false,
+            "saveButtonEnabled": false,
+            "cancelButtonVisible": false,
+            "cancelButtonEnabled": false,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 15,
+                            "y": 25
+                          },
+                          "lowerRight": {
+                            "x": 398,
+                            "y": 75
+                          }
+                        },
+                        "stencilSuperIds": [
+                          "Output"
+                        ],
+                        "stencilId": "cloud-output",
+                        "customStencilId": null
+                      },
+                      "labelAlign": "top",
+                      "value": "<p>EQ Connect Partners Can</p>\n",
+                      "defaultValue": false,
+                      "size": 5,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "output5",
+                      "i18n": {
+                        "en_us": {
+                          "value": "<p>EQ Connect Partners Can</p>\n"
+                        }
+                      },
+                      "type": "htmlComponent",
+                      "extraSettings": {}
+                    },
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "lowerRight": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        "stencilSuperIds": [],
+                        "stencilId": null,
+                        "customStencilId": null
+                      },
+                      "size": 1,
+                      "type": ""
+                    },
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 492,
+                            "y": 25
+                          },
+                          "lowerRight": {
+                            "x": 637,
+                            "y": 75
+                          }
+                        },
+                        "stencilSuperIds": [
+                          "Output"
+                        ],
+                        "stencilId": "cloud-output",
+                        "customStencilId": null
+                      },
+                      "labelAlign": "top",
+                      "value": "<p>View When Complete</p>\n",
+                      "defaultValue": false,
+                      "size": 2,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "output6",
+                      "i18n": {
+                        "en_us": {
+                          "value": "<p>View When Complete</p>\n"
+                        }
+                      },
+                      "type": "htmlComponent",
+                      "extraSettings": {}
+                    },
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 652,
+                            "y": 25
+                          },
+                          "lowerRight": {
+                            "x": 796,
+                            "y": 75
+                          }
+                        },
+                        "stencilSuperIds": [
+                          "Output"
+                        ],
+                        "stencilId": "cloud-output",
+                        "customStencilId": null
+                      },
+                      "labelAlign": "top",
+                      "value": "<p>View When Open</p>\n",
+                      "defaultValue": false,
+                      "size": 2,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "output7",
+                      "i18n": {
+                        "en_us": {
+                          "value": "<p>View When Open</p>\n"
+                        }
+                      },
+                      "type": "htmlComponent",
+                      "extraSettings": {}
+                    },
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 811,
+                            "y": 25
+                          },
+                          "lowerRight": {
+                            "x": 955,
+                            "y": 75
+                          }
+                        },
+                        "stencilSuperIds": [
+                          "Output"
+                        ],
+                        "stencilId": "cloud-output",
+                        "customStencilId": null
+                      },
+                      "labelAlign": "top",
+                      "value": "<p>Complete</p>\n",
+                      "defaultValue": false,
+                      "size": 2,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "output8",
+                      "i18n": {
+                        "en_us": {
+                          "value": "<p>Complete</p>\n"
+                        }
+                      },
+                      "type": "htmlComponent",
+                      "extraSettings": {}
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 15,
+                            "y": 98
+                          },
+                          "lowerRight": {
+                            "x": 398,
+                            "y": 148
+                          }
+                        },
+                        "stencilSuperIds": [
+                          "Output"
+                        ],
+                        "stencilId": "cloud-output",
+                        "customStencilId": null
+                      },
+                      "labelAlign": "top",
+                      "value": "<p>Investor</p>\n",
+                      "defaultValue": false,
+                      "size": 5,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "output9",
+                      "i18n": {
+                        "en_us": {
+                          "value": "<p>Investor</p>\n"
+                        }
+                      },
+                      "type": "htmlComponent",
+                      "extraSettings": {}
+                    },
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "lowerRight": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        "stencilSuperIds": [],
+                        "stencilId": null,
+                        "customStencilId": null
+                      },
+                      "size": 1,
+                      "type": ""
+                    },
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 492,
+                            "y": 98
+                          },
+                          "lowerRight": {
+                            "x": 637,
+                            "y": 124
+                          }
+                        },
+                        "stencilSuperIds": [
+                          "base-checkbox",
+                          "Component"
+                        ],
+                        "stencilId": "cloud-checkbox",
+                        "customStencilId": null
+                      },
+                      "labelAlign": "top",
+                      "value": "{{investorwhenComplete}}",
+                      "defaultValue": false,
+                      "size": 2,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "checkbox1",
+                      "type": "boolean",
+                      "extraSettings": {}
+                    },
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 652,
+                            "y": 98
+                          },
+                          "lowerRight": {
+                            "x": 796,
+                            "y": 124
+                          }
+                        },
+                        "stencilSuperIds": [
+                          "base-checkbox",
+                          "Component"
+                        ],
+                        "stencilId": "cloud-checkbox",
+                        "customStencilId": null
+                      },
+                      "labelAlign": "top",
+                      "value": "{{investorwhenOpen}}",
+                      "defaultValue": false,
+                      "size": 2,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "checkbox2",
+                      "type": "boolean",
+                      "extraSettings": {}
+                    },
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 811,
+                            "y": 98
+                          },
+                          "lowerRight": {
+                            "x": 955,
+                            "y": 124
+                          }
+                        },
+                        "stencilSuperIds": [
+                          "base-checkbox",
+                          "Component"
+                        ],
+                        "stencilId": "cloud-checkbox",
+                        "customStencilId": null
+                      },
+                      "labelAlign": "top",
+                      "value": "{{investorComplete}}",
+                      "defaultValue": false,
+                      "size": 2,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "checkbox4",
+                      "type": "boolean",
+                      "extraSettings": {}
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 15,
+                            "y": 171
+                          },
+                          "lowerRight": {
+                            "x": 398,
+                            "y": 221
+                          }
+                        },
+                        "stencilSuperIds": [
+                          "Output"
+                        ],
+                        "stencilId": "cloud-output",
+                        "customStencilId": null
+                      },
+                      "labelAlign": "top",
+                      "value": "<p>MI Company</p>\n",
+                      "defaultValue": false,
+                      "size": 5,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "output10",
+                      "i18n": {
+                        "en_us": {
+                          "value": "<p>MI Company</p>\n"
+                        }
+                      },
+                      "type": "htmlComponent",
+                      "extraSettings": {}
+                    },
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "lowerRight": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        "stencilSuperIds": [],
+                        "stencilId": null,
+                        "customStencilId": null
+                      },
+                      "size": 1,
+                      "type": ""
+                    },
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 492,
+                            "y": 171
+                          },
+                          "lowerRight": {
+                            "x": 637,
+                            "y": 197
+                          }
+                        },
+                        "stencilSuperIds": [
+                          "base-checkbox",
+                          "Component"
+                        ],
+                        "stencilId": "cloud-checkbox",
+                        "customStencilId": null
+                      },
+                      "labelAlign": "top",
+                      "value": "{{MICompanyWhenComplete}}",
+                      "defaultValue": false,
+                      "size": 2,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "checkbox3",
+                      "type": "boolean",
+                      "extraSettings": {}
+                    },
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 652,
+                            "y": 171
+                          },
+                          "lowerRight": {
+                            "x": 796,
+                            "y": 197
+                          }
+                        },
+                        "stencilSuperIds": [
+                          "base-checkbox",
+                          "Component"
+                        ],
+                        "stencilId": "cloud-checkbox",
+                        "customStencilId": null
+                      },
+                      "labelAlign": "top",
+                      "value": "{{MICompanyWhenOpen}}",
+                      "defaultValue": false,
+                      "size": 2,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "checkbox5",
+                      "type": "boolean",
+                      "extraSettings": {}
+                    },
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 811,
+                            "y": 171
+                          },
+                          "lowerRight": {
+                            "x": 955,
+                            "y": 197
+                          }
+                        },
+                        "stencilSuperIds": [
+                          "base-checkbox",
+                          "Component"
+                        ],
+                        "stencilId": "cloud-checkbox",
+                        "customStencilId": null
+                      },
+                      "labelAlign": "top",
+                      "value": "{{MICompanyComplete}}",
+                      "defaultValue": false,
+                      "size": 2,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "checkbox6",
+                      "type": "boolean",
+                      "extraSettings": {}
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 15,
+                            "y": 244
+                          },
+                          "lowerRight": {
+                            "x": 398,
+                            "y": 294
+                          }
+                        },
+                        "stencilSuperIds": [
+                          "Output"
+                        ],
+                        "stencilId": "cloud-output",
+                        "customStencilId": null
+                      },
+                      "labelAlign": "top",
+                      "value": "<p>Servicer</p>\n",
+                      "defaultValue": false,
+                      "size": 5,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "output11",
+                      "i18n": {
+                        "en_us": {
+                          "value": "<p>Servicer</p>\n"
+                        }
+                      },
+                      "type": "htmlComponent",
+                      "extraSettings": {}
+                    },
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "lowerRight": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        "stencilSuperIds": [],
+                        "stencilId": null,
+                        "customStencilId": null
+                      },
+                      "size": 1,
+                      "type": ""
+                    },
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 492,
+                            "y": 244
+                          },
+                          "lowerRight": {
+                            "x": 637,
+                            "y": 270
+                          }
+                        },
+                        "stencilSuperIds": [
+                          "base-checkbox",
+                          "Component"
+                        ],
+                        "stencilId": "cloud-checkbox",
+                        "customStencilId": null
+                      },
+                      "labelAlign": "top",
+                      "value": "{{servicerWhenComplete}}",
+                      "defaultValue": false,
+                      "size": 2,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "checkbox8",
+                      "type": "boolean",
+                      "extraSettings": {}
+                    },
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 652,
+                            "y": 244
+                          },
+                          "lowerRight": {
+                            "x": 796,
+                            "y": 270
+                          }
+                        },
+                        "stencilSuperIds": [
+                          "base-checkbox",
+                          "Component"
+                        ],
+                        "stencilId": "cloud-checkbox",
+                        "customStencilId": null
+                      },
+                      "labelAlign": "top",
+                      "value": "{{servicerWhenOpen}}",
+                      "defaultValue": false,
+                      "size": 2,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "checkbox7",
+                      "type": "boolean",
+                      "extraSettings": {}
+                    },
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 811,
+                            "y": 244
+                          },
+                          "lowerRight": {
+                            "x": 955,
+                            "y": 270
+                          }
+                        },
+                        "stencilSuperIds": [
+                          "base-checkbox",
+                          "Component"
+                        ],
+                        "stencilId": "cloud-checkbox",
+                        "customStencilId": null
+                      },
+                      "labelAlign": "top",
+                      "value": "{{servicerComplete}}",
+                      "defaultValue": false,
+                      "size": 2,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "checkbox9",
+                      "type": "boolean",
+                      "extraSettings": {}
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "type": "panel"
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": {
+                "x": 15,
+                "y": 578
+              },
+              "lowerRight": {
+                "x": 492,
+                "y": 626
+              }
+            },
+            "stencilSuperIds": [
+              "IntegerNumber"
+            ],
+            "stencilId": "cloud-integer-number",
+            "customStencilId": null
+          },
+          "placeholder": "Days to Warning",
+          "i18n": {
+            "en_us": {
+              "placeholder": "Days to Warning",
+              "label": "Days to Warning"
+            }
+          },
+          "labelAlign": "top",
+          "value": "{{daysToWarning}}",
+          "size": 6,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "label": "Days to Warning",
+          "id": "integer-number2",
+          "extraSettings": {
+            "numberType": "integer",
+            "fractionSize": 0,
+            "type": "one"
+          },
+          "type": "number"
+        },
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": {
+                "x": 507,
+                "y": 578
+              },
+              "lowerRight": {
+                "x": 984,
+                "y": 626
+              }
+            },
+            "stencilSuperIds": [
+              "IntegerNumber"
+            ],
+            "stencilId": "cloud-integer-number",
+            "customStencilId": null
+          },
+          "placeholder": "Days to Complete",
+          "i18n": {
+            "en_us": {
+              "placeholder": "Days to Complete",
+              "label": "Days to Complete"
+            }
+          },
+          "labelAlign": "top",
+          "value": "{{daysToComplete}}",
+          "size": 6,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "label": "Days to Complete",
+          "id": "integer-number3",
+          "extraSettings": {
+            "numberType": "integer",
+            "fractionSize": 0,
+            "type": "one"
+          },
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": {
+                "x": 15,
+                "y": 651
+              },
+              "lowerRight": {
+                "x": 985,
+                "y": 844
+              }
+            },
+            "stencilSuperIds": [
+              "SubSlotPanel"
+            ],
+            "stencilId": "cloud-sub-panel",
+            "customStencilId": null
+          },
+          "label": "Comments Viewable by Agent/Vendor",
+          "i18n": {
+            "en_us": {
+              "label": "Comments Viewable by Agent/Vendor"
+            }
+          },
+          "labelAlign": "top",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "styleClass": "dataTranferMultiSelect",
+          "id": "sub-panel9",
+          "extraSettings": {
+            "collapsible": false,
+            "collapsed": false,
+            "showBorder": false,
+            "saveButtonVisible": false,
+            "saveButtonEnabled": false,
+            "cancelButtonVisible": false,
+            "cancelButtonEnabled": false,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 15,
+                            "y": 49
+                          },
+                          "lowerRight": {
+                            "x": 79,
+                            "y": 75
+                          }
+                        },
+                        "stencilSuperIds": [
+                          "base-checkbox",
+                          "Component"
+                        ],
+                        "stencilId": "cloud-checkbox",
+                        "customStencilId": null
+                      },
+                      "labelAlign": "right",
+                      "value": "{{selectAll}}",
+                      "defaultValue": false,
+                      "size": 1,
+                      "ignore": false,
+                      "visible": false,
+                      "enabled": true,
+                      "isRequired": false,
+                      "styleClass": "dataSelectAll",
+                      "label": "Label",
+                      "i18n": {
+                        "en_us": {
+                          "label": "Label"
+                        }
+                      },
+                      "id": "checkbox13",
+                      "type": "boolean",
+                      "extraSettings": {}
+                    },
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "lowerRight": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        "stencilSuperIds": [],
+                        "stencilId": null,
+                        "customStencilId": null
+                      },
+                      "size": 11,
+                      "type": ""
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 15,
+                            "y": 100
+                          },
+                          "lowerRight": {
+                            "x": 477,
+                            "y": 168
+                          }
+                        },
+                        "stencilSuperIds": [
+                          "base-datatable",
+                          "Component"
+                        ],
+                        "stencilId": "cloud-datatable",
+                        "customStencilId": null
+                      },
+                      "enabled": true,
+                      "extraSettings": {
+                        "dataSource": "Rest",
+                        "queryUrl": "/eq-api/party/partyRoleTypes?size=100",
+                        "path": "_embedded.partyRoleTypes",
+                        "linkTargetView": "browse",
+                        "storage": "Full",
+                        "linkTarget": "_blank",
+                        "selectable": "Multiple",
+                        "infiniteScroll": false,
+                        "showPagination": true,
+                        "autoHidePagination": true,
+                        "clientPagination": true,
+                        "sortableColumns": false,
+                        "columns": [
+                          {
+                            "label": "Unassigned Roles",
+                            "id": "partyRoleTypeDisplay",
+                            "accessor": "partyRoleTypeDisplay",
+                            "alignment": "center",
+                            "filterable": "true",
+                            "sortable": "true",
+                            "show": true
+                          }
+                        ],
+                        "filterable": true,
+                        "sortable": false,
+                        "multiSort": false,
+                        "pageSize": 5,
+                        "pageSizeOptions": [
+                          5,
+                          10,
+                          20,
+                          25,
+                          50,
+                          100
+                        ],
+                        "showTotalRecords": false,
+                        "response": {},
+                        "dataPollingOnInit": false,
+                        "target": "_blank",
+                        "nodataPosition": "middle-center"
+                      },
+                      "labelAlign": "top",
+                      "value": "{{commentsByAgentVendor}}",
+                      "size": 6,
+                      "ignore": false,
+                      "visible": true,
+                      "isRequired": false,
+                      "styleClass": "dataTranferLeft",
+                      "id": "datatable7",
+                      "i18n": {
+                        "en_us": {
+                          "extraSettings": {
+                            "columns": [
+                              {
+                                "label": "Unassigned Roles",
+                                "id": "partyRoleTypeDisplay",
+                                "accessor": "partyRoleTypeDisplay",
+                                "alignment": "center",
+                                "filterable": "true",
+                                "sortable": "true",
+                                "show": true
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "type": "dataTable"
+                    },
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 492,
+                            "y": 100
+                          },
+                          "lowerRight": {
+                            "x": 955,
+                            "y": 168
+                          }
+                        },
+                        "stencilSuperIds": [
+                          "base-datatable",
+                          "Component"
+                        ],
+                        "stencilId": "cloud-datatable",
+                        "customStencilId": null
+                      },
+                      "enabled": true,
+                      "extraSettings": {
+                        "dataSource": "Static",
+                        "items": "{{commentsByAgentVendor}}",
+                        "linkTargetView": "browse",
+                        "storage": "Full",
+                        "linkTarget": "_blank",
+                        "infiniteScroll": false,
+                        "showPagination": true,
+                        "autoHidePagination": true,
+                        "clientPagination": true,
+                        "sortableColumns": false,
+                        "columns": [
+                          {
+                            "label": "Assigned Roles",
+                            "id": "partyRoleTypeDisplay",
+                            "accessor": "partyRoleTypeDisplay",
+                            "alignment": "center",
+                            "filterable": "true",
+                            "sortable": "true",
+                            "show": true
+                          }
+                        ],
+                        "filterable": true,
+                        "sortable": false,
+                        "multiSort": false,
+                        "pageSize": 5,
+                        "pageSizeOptions": [
+                          5,
+                          10,
+                          20,
+                          25,
+                          50,
+                          100
+                        ],
+                        "showTotalRecords": false,
+                        "response": {},
+                        "dataPollingOnInit": false,
+                        "target": "_blank",
+                        "noDataMessage": "Please select Roles",
+                        "nodataPosition": "middle-center"
+                      },
+                      "labelAlign": "top",
+                      "value": "{{selectedCommentsByAgentVendor}}",
+                      "size": 6,
+                      "ignore": false,
+                      "visible": true,
+                      "isRequired": false,
+                      "styleClass": "dataTranferRight",
+                      "id": "datatable8",
+                      "i18n": {
+                        "en_us": {
+                          "extraSettings": {
+                            "columns": [
+                              {
+                                "label": "Assigned Roles",
+                                "id": "partyRoleTypeDisplay",
+                                "accessor": "partyRoleTypeDisplay",
+                                "alignment": "center",
+                                "filterable": "true",
+                                "sortable": "true",
+                                "show": true
+                              }
+                            ],
+                            "noDataMessage": "Please select Roles"
+                          }
+                        }
+                      },
+                      "type": "dataTable"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "type": "panel"
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": {
+                "x": 15,
+                "y": 867
+              },
+              "lowerRight": {
+                "x": 985,
+                "y": 1060
+              }
+            },
+            "stencilSuperIds": [
+              "SubSlotPanel"
+            ],
+            "stencilId": "cloud-sub-panel",
+            "customStencilId": null
+          },
+          "label": "Select Associated Product",
+          "i18n": {
+            "en_us": {
+              "label": "Select Associated Product"
+            }
+          },
+          "labelAlign": "top",
+          "size": 12,
+          "ignore": false,
+          "visible": false,
+          "enabled": true,
+          "isRequired": false,
+          "styleClass": "dataTranferMultiSelect",
+          "id": "sub-panel8",
+          "extraSettings": {
+            "collapsible": false,
+            "collapsed": false,
+            "showBorder": false,
+            "saveButtonVisible": false,
+            "saveButtonEnabled": false,
+            "cancelButtonVisible": false,
+            "cancelButtonEnabled": false,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 15,
+                            "y": 49
+                          },
+                          "lowerRight": {
+                            "x": 79,
+                            "y": 75
+                          }
+                        },
+                        "stencilSuperIds": [
+                          "base-checkbox",
+                          "Component"
+                        ],
+                        "stencilId": "cloud-checkbox",
+                        "customStencilId": null
+                      },
+                      "labelAlign": "right",
+                      "value": "{{selectAll}}",
+                      "defaultValue": false,
+                      "size": 1,
+                      "ignore": false,
+                      "visible": false,
+                      "enabled": true,
+                      "isRequired": false,
+                      "styleClass": "dataSelectAll",
+                      "label": "Label",
+                      "i18n": {
+                        "en_us": {
+                          "label": "Label"
+                        }
+                      },
+                      "id": "checkbox12",
+                      "type": "boolean",
+                      "extraSettings": {}
+                    },
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "lowerRight": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        "stencilSuperIds": [],
+                        "stencilId": null,
+                        "customStencilId": null
+                      },
+                      "size": 11,
+                      "type": ""
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 15,
+                            "y": 100
+                          },
+                          "lowerRight": {
+                            "x": 477,
+                            "y": 168
+                          }
+                        },
+                        "stencilSuperIds": [
+                          "base-datatable",
+                          "Component"
+                        ],
+                        "stencilId": "cloud-datatable",
+                        "customStencilId": null
+                      },
+                      "enabled": true,
+                      "extraSettings": {
+                        "dataSource": "Static",
+                        "linkTargetView": "browse",
+                        "storage": "Id",
+                        "identity": "unassignedRoles",
+                        "linkTarget": "_blank",
+                        "selectable": "Multiple",
+                        "infiniteScroll": false,
+                        "showPagination": true,
+                        "autoHidePagination": true,
+                        "clientPagination": true,
+                        "sortableColumns": false,
+                        "columns": [
+                          {
+                            "label": "Unassigned Products",
+                            "id": "unassignedRoles",
+                            "accessor": "unassignedRoles",
+                            "alignment": "center",
+                            "filterable": "true",
+                            "sortable": "true",
+                            "show": true
+                          }
+                        ],
+                        "filterable": true,
+                        "sortable": false,
+                        "multiSort": false,
+                        "pageSize": 5,
+                        "pageSizeOptions": [
+                          5,
+                          10,
+                          20,
+                          25,
+                          50,
+                          100
+                        ],
+                        "showTotalRecords": false,
+                        "response": {},
+                        "dataPollingOnInit": false,
+                        "target": "_blank",
+                        "nodataPosition": "middle-center"
+                      },
+                      "labelAlign": "top",
+                      "value": "{{bindingData}}",
+                      "size": 6,
+                      "ignore": false,
+                      "visible": true,
+                      "isRequired": false,
+                      "styleClass": "dataTranferLeft",
+                      "id": "datatable5",
+                      "i18n": {
+                        "en_us": {
+                          "extraSettings": {
+                            "columns": [
+                              {
+                                "label": "Unassigned Products",
+                                "id": "unassignedRoles",
+                                "accessor": "unassignedRoles",
+                                "alignment": "center",
+                                "filterable": "true",
+                                "sortable": "true",
+                                "show": true
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "type": "dataTable"
+                    },
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 492,
+                            "y": 100
+                          },
+                          "lowerRight": {
+                            "x": 955,
+                            "y": 168
+                          }
+                        },
+                        "stencilSuperIds": [
+                          "base-datatable",
+                          "Component"
+                        ],
+                        "stencilId": "cloud-datatable",
+                        "customStencilId": null
+                      },
+                      "enabled": true,
+                      "extraSettings": {
+                        "dataSource": "Static",
+                        "items": "{{bindingData}}",
+                        "linkTargetView": "browse",
+                        "storage": "Full",
+                        "linkTarget": "_blank",
+                        "infiniteScroll": true,
+                        "showPagination": true,
+                        "autoHidePagination": true,
+                        "clientPagination": true,
+                        "sortableColumns": false,
+                        "columns": [
+                          {
+                            "label": "Assigned Products",
+                            "id": "assignedRoles",
+                            "accessor": "unassignedRoles",
+                            "alignment": "center",
+                            "filterable": "true",
+                            "sortable": "true",
+                            "show": true
+                          }
+                        ],
+                        "filterable": true,
+                        "sortable": false,
+                        "multiSort": false,
+                        "pageSizeOptions": [
+                          5,
+                          10,
+                          20,
+                          25,
+                          50,
+                          100
+                        ],
+                        "showTotalRecords": false,
+                        "response": {},
+                        "dataPollingOnInit": false,
+                        "target": "_blank",
+                        "noDataMessage": "Please Select the Products",
+                        "nodataPosition": "middle-center"
+                      },
+                      "labelAlign": "top",
+                      "size": 6,
+                      "ignore": false,
+                      "visible": true,
+                      "isRequired": false,
+                      "styleClass": "dataTranferRight",
+                      "id": "datatable6",
+                      "i18n": {
+                        "en_us": {
+                          "extraSettings": {
+                            "columns": [
+                              {
+                                "label": "Assigned Products",
+                                "id": "assignedRoles",
+                                "accessor": "unassignedRoles",
+                                "alignment": "center",
+                                "filterable": "true",
+                                "sortable": "true",
+                                "show": true
+                              }
+                            ],
+                            "noDataMessage": "Please Select the Products"
+                          }
+                        }
+                      },
+                      "type": "dataTable"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "type": "panel"
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": {
+                "x": 15,
+                "y": 1083
+              },
+              "lowerRight": {
+                "x": 984,
+                "y": 1122
+              }
+            },
+            "stencilSuperIds": [
+              "base-radiobuttons",
+              "Component"
+            ],
+            "stencilId": "cloud-radiobuttons",
+            "customStencilId": null
+          },
+          "enabled": true,
+          "extraSettings": {
+            "dataSource": "Static",
+            "items": [
+              {
+                "text": "Yes",
+                "value": "Yes",
+                "checked": "true"
+              },
+              {
+                "text": "No",
+                "value": "No"
+              }
+            ],
+            "linkTargetView": "browse",
+            "storage": "Id",
+            "identity": "value",
+            "linkTarget": "_blank",
+            "display": "Horizontal"
+          },
+          "i18n": {
+            "en_us": {
+              "extraSettings": {
+                "items": [
+                  {
+                    "text": "Yes",
+                    "value": "Yes",
+                    "checked": "true"
+                  },
+                  {
+                    "text": "No",
+                    "value": "No"
+                  }
+                ]
+              },
+              "label": "Assigned Role Received Notification when task opens:​​​​​"
+            }
+          },
+          "labelAlign": "left",
+          "value": "{{notifyEmailIndicator}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "isRequired": false,
+          "label": "Assigned Role Received Notification when task opens:​​​​​",
+          "id": "radiobuttons3",
+          "type": "radio"
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": {
+                "x": 15,
+                "y": 1147
+              },
+              "lowerRight": {
+                "x": 985,
+                "y": 1558
+              }
+            },
+            "stencilSuperIds": [
+              "SubSlotPanel"
+            ],
+            "stencilId": "cloud-sub-panel",
+            "customStencilId": null
+          },
+          "labelAlign": "top",
+          "size": 12,
+          "ignore": false,
+          "visible": "{{notifyEmailIndicator===\"Yes\"}}",
+          "enabled": true,
+          "isRequired": false,
+          "id": "sub-panel2",
+          "extraSettings": {
+            "collapsible": false,
+            "collapsed": false,
+            "showBorder": false,
+            "saveButtonVisible": true,
+            "saveButtonEnabled": true,
+            "cancelButtonVisible": true,
+            "cancelButtonEnabled": true,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 15,
+                            "y": 25
+                          },
+                          "lowerRight": {
+                            "x": 957,
+                            "y": 216
+                          }
+                        },
+                        "stencilSuperIds": [
+                          "SubSlotPanel"
+                        ],
+                        "stencilId": "cloud-sub-panel",
+                        "customStencilId": null
+                      },
+                      "label": "Select Roles For Task Open Notification",
+                      "i18n": {
+                        "en_us": {
+                          "label": "Select Roles For Task Open Notification"
+                        }
+                      },
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "styleClass": "dataTranferMultiSelect",
+                      "id": "sub-panel7",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": false,
+                        "saveButtonEnabled": false,
+                        "cancelButtonVisible": false,
+                        "cancelButtonEnabled": false,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "designInfo": {
+                                    "bounds": {
+                                      "upperLeft": {
+                                        "x": 15,
+                                        "y": 49
+                                      },
+                                      "lowerRight": {
+                                        "x": 77,
+                                        "y": 75
+                                      }
+                                    },
+                                    "stencilSuperIds": [
+                                      "base-checkbox",
+                                      "Component"
+                                    ],
+                                    "stencilId": "cloud-checkbox",
+                                    "customStencilId": null
+                                  },
+                                  "labelAlign": "right",
+                                  "value": "{{selectAll}}",
+                                  "defaultValue": false,
+                                  "size": 1,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "styleClass": "dataSelectAll",
+                                  "label": "Label",
+                                  "i18n": {
+                                    "en_us": {
+                                      "label": "Label"
+                                    }
+                                  },
+                                  "id": "checkbox11",
+                                  "type": "boolean",
+                                  "extraSettings": {}
+                                },
+                                {
+                                  "designInfo": {
+                                    "bounds": {
+                                      "upperLeft": {
+                                        "x": 0,
+                                        "y": 0
+                                      },
+                                      "lowerRight": {
+                                        "x": 0,
+                                        "y": 0
+                                      }
+                                    },
+                                    "stencilSuperIds": [],
+                                    "stencilId": null,
+                                    "customStencilId": null
+                                  },
+                                  "size": 11,
+                                  "type": ""
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "designInfo": {
+                                    "bounds": {
+                                      "upperLeft": {
+                                        "x": 15,
+                                        "y": 98
+                                      },
+                                      "lowerRight": {
+                                        "x": 463,
+                                        "y": 166
+                                      }
+                                    },
+                                    "stencilSuperIds": [
+                                      "base-datatable",
+                                      "Component"
+                                    ],
+                                    "stencilId": "cloud-datatable",
+                                    "customStencilId": null
+                                  },
+                                  "enabled": true,
+                                  "extraSettings": {
+                                    "dataSource": "Rest",
+                                    "queryUrl": "/eq-api/party/partyRoleTypes?size=100",
+                                    "path": "_embedded.partyRoleTypes",
+                                    "linkTargetView": "browse",
+                                    "storage": "Full",
+                                    "linkTarget": "_blank",
+                                    "selectable": "Multiple",
+                                    "infiniteScroll": false,
+                                    "showPagination": true,
+                                    "autoHidePagination": true,
+                                    "clientPagination": true,
+                                    "sortableColumns": false,
+                                    "columns": [
+                                      {
+                                        "label": "Unassigned Roles",
+                                        "id": "partyRoleTypeDisplay",
+                                        "accessor": "partyRoleTypeDisplay",
+                                        "alignment": "center",
+                                        "filterable": "true",
+                                        "sortable": "true",
+                                        "show": true
+                                      }
+                                    ],
+                                    "filterable": true,
+                                    "sortable": true,
+                                    "multiSort": false,
+                                    "pageSize": 5,
+                                    "pageSizeOptions": [
+                                      5,
+                                      10,
+                                      20,
+                                      25,
+                                      50,
+                                      100
+                                    ],
+                                    "showTotalRecords": false,
+                                    "response": {},
+                                    "dataPollingOnInit": false,
+                                    "target": "_blank",
+                                    "nodataPosition": "middle-center"
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{openTaskNotification}}",
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "isRequired": "{{notifyEmailIndicator===\"Yes\"}}",
+                                  "styleClass": "dataTranferLeft",
+                                  "id": "data-id7",
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "columns": [
+                                          {
+                                            "label": "Unassigned Roles",
+                                            "id": "partyRoleTypeDisplay",
+                                            "accessor": "partyRoleTypeDisplay",
+                                            "alignment": "center",
+                                            "filterable": "true",
+                                            "sortable": "true",
+                                            "show": true
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  },
+                                  "type": "dataTable"
+                                },
+                                {
+                                  "designInfo": {
+                                    "bounds": {
+                                      "upperLeft": {
+                                        "x": 478,
+                                        "y": 98
+                                      },
+                                      "lowerRight": {
+                                        "x": 927,
+                                        "y": 166
+                                      }
+                                    },
+                                    "stencilSuperIds": [
+                                      "base-datatable",
+                                      "Component"
+                                    ],
+                                    "stencilId": "cloud-datatable",
+                                    "customStencilId": null
+                                  },
+                                  "enabled": true,
+                                  "extraSettings": {
+                                    "dataSource": "Static",
+                                    "items": "{{openTaskNotification}}",
+                                    "linkTargetView": "browse",
+                                    "storage": "Full",
+                                    "linkTarget": "_blank",
+                                    "infiniteScroll": false,
+                                    "showPagination": true,
+                                    "autoHidePagination": true,
+                                    "clientPagination": true,
+                                    "sortableColumns": false,
+                                    "columns": [
+                                      {
+                                        "label": "Assigned Roles",
+                                        "id": "partyRoleTypeDisplay",
+                                        "accessor": "partyRoleTypeDisplay",
+                                        "alignment": "center",
+                                        "filterable": "true",
+                                        "sortable": "true",
+                                        "show": true
+                                      }
+                                    ],
+                                    "filterable": true,
+                                    "sortable": false,
+                                    "multiSort": false,
+                                    "pageSize": 5,
+                                    "pageSizeOptions": [
+                                      5,
+                                      10,
+                                      20,
+                                      25,
+                                      50,
+                                      100
+                                    ],
+                                    "showTotalRecords": false,
+                                    "response": {},
+                                    "dataPollingOnInit": false,
+                                    "target": "_blank",
+                                    "noDataMessage": "Please select the Roles",
+                                    "nodataPosition": "middle-center"
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{openNotification}}",
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "isRequired": false,
+                                  "styleClass": "dataTranferRight",
+                                  "id": "datatable4",
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "columns": [
+                                          {
+                                            "label": "Assigned Roles",
+                                            "id": "partyRoleTypeDisplay",
+                                            "accessor": "partyRoleTypeDisplay",
+                                            "alignment": "center",
+                                            "filterable": "true",
+                                            "sortable": "true",
+                                            "show": true
+                                          }
+                                        ],
+                                        "noDataMessage": "Please select the Roles"
+                                      }
+                                    }
+                                  },
+                                  "type": "dataTable"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "type": "panel"
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 15,
+                            "y": 241
+                          },
+                          "lowerRight": {
+                            "x": 955,
+                            "y": 313
+                          }
+                        },
+                        "stencilSuperIds": [
+                          "base-text-area",
+                          "Component"
+                        ],
+                        "stencilId": "cloud-text-area",
+                        "customStencilId": null
+                      },
+                      "placeholder": "Enter message to be sent to selected role(s)",
+                      "i18n": {
+                        "en_us": {
+                          "placeholder": "Enter message to be sent to selected role(s)",
+                          "label": "Message For Task Open Notification"
+                        }
+                      },
+                      "labelAlign": "top",
+                      "value": "{{messageTextOpen}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": "{{notifyEmailIndicator===\"Yes\"}}",
+                      "label": "Message For Task Open Notification",
+                      "id": "text-area1",
+                      "type": "textarea",
+                      "extraSettings": {}
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "lowerRight": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        "stencilSuperIds": [],
+                        "stencilId": null,
+                        "customStencilId": null
+                      },
+                      "size": 5,
+                      "type": ""
+                    },
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 413,
+                            "y": 338
+                          },
+                          "lowerRight": {
+                            "x": 637,
+                            "y": 386
+                          }
+                        },
+                        "stencilSuperIds": [
+                          "base-attachment",
+                          "Component"
+                        ],
+                        "stencilId": "cloud-attachment",
+                        "customStencilId": null
+                      },
+                      "labelAlign": "top",
+                      "value": "{{openAttach}}",
+                      "size": 3,
+                      "ignore": false,
+                      "visible": false,
+                      "enabled": true,
+                      "isRequired": false,
+                      "label": "Upload Attachments to be sent to selected role(s)",
+                      "i18n": {
+                        "en_us": {
+                          "label": "Upload Attachments to be sent to selected role(s)"
+                        }
+                      },
+                      "id": "attachment1",
+                      "extraSettings": {
+                        "autoupload": true,
+                        "downloadUrl": "rest/file/{{id}}",
+                        "allowDelete": "newOnly",
+                        "preview": "none"
+                      },
+                      "type": "upload"
+                    },
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "lowerRight": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        "stencilSuperIds": [],
+                        "stencilId": null,
+                        "customStencilId": null
+                      },
+                      "size": 4,
+                      "type": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "type": "panel"
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": {
+                "x": 15,
+                "y": 1585
+              },
+              "lowerRight": {
+                "x": 984,
+                "y": 1624
+              }
+            },
+            "stencilSuperIds": [
+              "base-radiobuttons",
+              "Component"
+            ],
+            "stencilId": "cloud-radiobuttons",
+            "customStencilId": null
+          },
+          "enabled": true,
+          "extraSettings": {
+            "dataSource": "Static",
+            "items": [
+              {
+                "text": "Yes",
+                "value": "Yes",
+                "checked": "true"
+              },
+              {
+                "text": "No",
+                "value": "No"
+              }
+            ],
+            "linkTargetView": "browse",
+            "storage": "Id",
+            "identity": "value",
+            "linkTarget": "_blank",
+            "display": "Horizontal"
+          },
+          "i18n": {
+            "en_us": {
+              "extraSettings": {
+                "items": [
+                  {
+                    "text": "Yes",
+                    "value": "Yes",
+                    "checked": "true"
+                  },
+                  {
+                    "text": "No",
+                    "value": "No"
+                  }
+                ]
+              },
+              "label": "Assigned Role Received Notification when task completes:"
+            }
+          },
+          "labelAlign": "left",
+          "value": "{{notifyOnCloseIndicator}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "isRequired": false,
+          "label": "Assigned Role Received Notification when task completes:",
+          "id": "radiobuttons4",
+          "type": "radio"
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": {
+                "x": 15,
+                "y": 1649
+              },
+              "lowerRight": {
+                "x": 985,
+                "y": 2060
+              }
+            },
+            "stencilSuperIds": [
+              "SubSlotPanel"
+            ],
+            "stencilId": "cloud-sub-panel",
+            "customStencilId": null
+          },
+          "labelAlign": "top",
+          "size": 12,
+          "ignore": false,
+          "visible": "{{notifyOnCloseIndicator===\"Yes\"}}",
+          "enabled": true,
+          "isRequired": false,
+          "id": "sub-panel3",
+          "extraSettings": {
+            "collapsible": false,
+            "collapsed": false,
+            "showBorder": false,
+            "saveButtonVisible": true,
+            "saveButtonEnabled": true,
+            "cancelButtonVisible": true,
+            "cancelButtonEnabled": true,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 15,
+                            "y": 25
+                          },
+                          "lowerRight": {
+                            "x": 957,
+                            "y": 216
+                          }
+                        },
+                        "stencilSuperIds": [
+                          "SubSlotPanel"
+                        ],
+                        "stencilId": "cloud-sub-panel",
+                        "customStencilId": null
+                      },
+                      "label": "Select Roles For Task Complete Notification",
+                      "i18n": {
+                        "en_us": {
+                          "label": "Select Roles For Task Complete Notification"
+                        }
+                      },
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "styleClass": "dataTranferMultiSelect",
+                      "id": "sub-panel6",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": false,
+                        "saveButtonEnabled": false,
+                        "cancelButtonVisible": false,
+                        "cancelButtonEnabled": false,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "designInfo": {
+                                    "bounds": {
+                                      "upperLeft": {
+                                        "x": 15,
+                                        "y": 49
+                                      },
+                                      "lowerRight": {
+                                        "x": 77,
+                                        "y": 75
+                                      }
+                                    },
+                                    "stencilSuperIds": [
+                                      "base-checkbox",
+                                      "Component"
+                                    ],
+                                    "stencilId": "cloud-checkbox",
+                                    "customStencilId": null
+                                  },
+                                  "labelAlign": "right",
+                                  "value": "{{selectAll}}",
+                                  "defaultValue": false,
+                                  "size": 1,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "styleClass": "dataSelectAll",
+                                  "label": "Label",
+                                  "i18n": {
+                                    "en_us": {
+                                      "label": "Label"
+                                    }
+                                  },
+                                  "id": "checkbox10",
+                                  "type": "boolean",
+                                  "extraSettings": {}
+                                },
+                                {
+                                  "designInfo": {
+                                    "bounds": {
+                                      "upperLeft": {
+                                        "x": 0,
+                                        "y": 0
+                                      },
+                                      "lowerRight": {
+                                        "x": 0,
+                                        "y": 0
+                                      }
+                                    },
+                                    "stencilSuperIds": [],
+                                    "stencilId": null,
+                                    "customStencilId": null
+                                  },
+                                  "size": 11,
+                                  "type": ""
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "designInfo": {
+                                    "bounds": {
+                                      "upperLeft": {
+                                        "x": 15,
+                                        "y": 98
+                                      },
+                                      "lowerRight": {
+                                        "x": 463,
+                                        "y": 166
+                                      }
+                                    },
+                                    "stencilSuperIds": [
+                                      "base-datatable",
+                                      "Component"
+                                    ],
+                                    "stencilId": "cloud-datatable",
+                                    "customStencilId": null
+                                  },
+                                  "enabled": true,
+                                  "extraSettings": {
+                                    "dataSource": "Rest",
+                                    "queryUrl": "/eq-api/party/partyRoleTypes?size=100",
+                                    "path": "_embedded.partyRoleTypes",
+                                    "linkTargetView": "browse",
+                                    "storage": "Full",
+                                    "linkTarget": "_blank",
+                                    "selectable": "Multiple",
+                                    "infiniteScroll": false,
+                                    "showPagination": true,
+                                    "autoHidePagination": true,
+                                    "clientPagination": true,
+                                    "sortableColumns": false,
+                                    "columns": [
+                                      {
+                                        "label": "Unassigned Roles",
+                                        "id": "partyRoleTypeDisplay",
+                                        "accessor": "partyRoleTypeDisplay",
+                                        "alignment": "center",
+                                        "filterable": "true",
+                                        "sortable": "true",
+                                        "show": true
+                                      }
+                                    ],
+                                    "filterable": true,
+                                    "sortable": false,
+                                    "multiSort": false,
+                                    "pageSize": 5,
+                                    "pageSizeOptions": [
+                                      5,
+                                      10,
+                                      20,
+                                      25,
+                                      50,
+                                      100
+                                    ],
+                                    "showTotalRecords": false,
+                                    "response": {},
+                                    "dataPollingOnInit": false,
+                                    "target": "_blank",
+                                    "noDataMessage": "No Data",
+                                    "nodataPosition": "middle-center"
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{completedTaskNotification}}",
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "isRequired": "{{notifyOnCloseIndicator===\"Yes\"}}",
+                                  "styleClass": "dataTranferLeft",
+                                  "id": "data-id4",
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "columns": [
+                                          {
+                                            "label": "Unassigned Roles",
+                                            "id": "partyRoleTypeDisplay",
+                                            "accessor": "partyRoleTypeDisplay",
+                                            "alignment": "center",
+                                            "filterable": "true",
+                                            "sortable": "true",
+                                            "show": true
+                                          }
+                                        ],
+                                        "noDataMessage": "No Data"
+                                      }
+                                    }
+                                  },
+                                  "type": "dataTable"
+                                },
+                                {
+                                  "designInfo": {
+                                    "bounds": {
+                                      "upperLeft": {
+                                        "x": 478,
+                                        "y": 98
+                                      },
+                                      "lowerRight": {
+                                        "x": 927,
+                                        "y": 166
+                                      }
+                                    },
+                                    "stencilSuperIds": [
+                                      "base-datatable",
+                                      "Component"
+                                    ],
+                                    "stencilId": "cloud-datatable",
+                                    "customStencilId": null
+                                  },
+                                  "enabled": true,
+                                  "extraSettings": {
+                                    "dataSource": "Static",
+                                    "items": "{{completedTaskNotification}}",
+                                    "linkTargetView": "browse",
+                                    "storage": "Full",
+                                    "linkTarget": "_blank",
+                                    "infiniteScroll": false,
+                                    "showPagination": true,
+                                    "autoHidePagination": true,
+                                    "clientPagination": true,
+                                    "sortableColumns": false,
+                                    "columns": [
+                                      {
+                                        "label": "Assigned Roles",
+                                        "id": "partyRoleTypeDisplay",
+                                        "accessor": "partyRoleTypeDisplay",
+                                        "alignment": "center",
+                                        "filterable": "true",
+                                        "sortable": "true",
+                                        "show": true
+                                      }
+                                    ],
+                                    "filterable": true,
+                                    "sortable": true,
+                                    "multiSort": false,
+                                    "pageSize": 20,
+                                    "pageSizeOptions": [
+                                      5,
+                                      10,
+                                      20,
+                                      25,
+                                      50,
+                                      100
+                                    ],
+                                    "showTotalRecords": false,
+                                    "response": {},
+                                    "dataPollingOnInit": false,
+                                    "target": "_blank",
+                                    "noDataMessage": "Please select the Roles",
+                                    "nodataPosition": "middle-center"
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{closedNotification}}",
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "isRequired": false,
+                                  "styleClass": "dataTranferRight",
+                                  "id": "datatable2",
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "columns": [
+                                          {
+                                            "label": "Assigned Roles",
+                                            "id": "partyRoleTypeDisplay",
+                                            "accessor": "partyRoleTypeDisplay",
+                                            "alignment": "center",
+                                            "filterable": "true",
+                                            "sortable": "true",
+                                            "show": true
+                                          }
+                                        ],
+                                        "noDataMessage": "Please select the Roles"
+                                      }
+                                    }
+                                  },
+                                  "type": "dataTable"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "type": "panel"
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 15,
+                            "y": 241
+                          },
+                          "lowerRight": {
+                            "x": 955,
+                            "y": 313
+                          }
+                        },
+                        "stencilSuperIds": [
+                          "base-text-area",
+                          "Component"
+                        ],
+                        "stencilId": "cloud-text-area",
+                        "customStencilId": null
+                      },
+                      "placeholder": "Enter message to be sent to selected role(s)",
+                      "i18n": {
+                        "en_us": {
+                          "placeholder": "Enter message to be sent to selected role(s)",
+                          "label": "Message For Task Complete Notification"
+                        }
+                      },
+                      "labelAlign": "top",
+                      "value": "{{messageTextCompleted}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": "{{notifyOnCloseIndicator===\"Yes\"}}",
+                      "label": "Message For Task Complete Notification",
+                      "id": "text-area2",
+                      "type": "textarea",
+                      "extraSettings": {}
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "lowerRight": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        "stencilSuperIds": [],
+                        "stencilId": null,
+                        "customStencilId": null
+                      },
+                      "size": 5,
+                      "type": ""
+                    },
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 413,
+                            "y": 338
+                          },
+                          "lowerRight": {
+                            "x": 637,
+                            "y": 386
+                          }
+                        },
+                        "stencilSuperIds": [
+                          "base-attachment",
+                          "Component"
+                        ],
+                        "stencilId": "cloud-attachment",
+                        "customStencilId": null
+                      },
+                      "labelAlign": "top",
+                      "value": "{{openAttach}}",
+                      "size": 3,
+                      "ignore": false,
+                      "visible": false,
+                      "enabled": true,
+                      "isRequired": false,
+                      "label": "Attachment(s) for Task Completes Notification",
+                      "i18n": {
+                        "en_us": {
+                          "label": "Attachment(s) for Task Completes Notification"
+                        }
+                      },
+                      "id": "attachment2",
+                      "extraSettings": {
+                        "autoupload": true,
+                        "downloadUrl": "rest/file/{{id}}",
+                        "allowDelete": "newOnly",
+                        "preview": "none"
+                      },
+                      "type": "upload"
+                    },
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "lowerRight": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        "stencilSuperIds": [],
+                        "stencilId": null,
+                        "customStencilId": null
+                      },
+                      "size": 4,
+                      "type": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "type": "panel"
+        }
+      ]
+    }
+  ],
+  "forceValidation": true,
+  "metadata": {
+    "key": "taskEditTenantAdmin",
+    "name": "taskEditTenantAdmin",
+    "description": "",
+    "version": "29",
+    "type": "2",
+    "flowableDesignVersion": 3090
+  }
+}

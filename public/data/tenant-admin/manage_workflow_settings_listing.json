@@ -1,0 +1,372 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 25 },
+              "lowerRight": { "x": 984, "y": 117 }
+            },
+            "stencilSuperIds": ["base-datatable", "Component"],
+            "stencilId": "cloud-datatable",
+            "customStencilId": null
+          },
+          "label": "Manage Workflow Settings",
+          "i18n": {
+            "en_us": {
+              "label": "Manage Workflow Settings",
+              "extraSettings": {
+                "columns": [
+                  {
+                    "label": "Investor Group",
+                    "id": "investorGroup",
+                    "accessor": "investorGroup",
+                    "alignment": "left",
+                    "component": {
+                      "type": "htmlComponent",
+                      "value": "<span>{{flw.find($item.variables, 'name', 'investorGroups').value}}</span>"
+                    },
+                    "filterable": "false",
+                    "sortable": true,
+                    "show": true
+                  },
+                  {
+                    "label": "Property Preservation",
+                    "id": "propertyPreservation",
+                    "accessor": "propertyPreservation",
+                    "alignment": "left",
+                    "component": {
+                      "type": "htmlComponent",
+                      "value": "<span>{{flw.find($item.variables, 'name', 'propertyPreservation').value}}"
+                    },
+                    "filterable": "false",
+                    "sortable": "true",
+                    "show": true
+                  },
+                  {
+                    "label": "Closing Notification",
+                    "id": "closingNotification",
+                    "accessor": "closingNotification",
+                    "alignment": "left",
+                    "component": {
+                      "type": "htmlComponent",
+                      "value": "<table><tbody> <tr> <td>is Required</td><td><b>{{flw.find($item.variables, 'name', 'closingNotification').value.isRequired}}</b></td></tr><tr> <td>No of Days</td><td class=\"w-1/4\"><b>{{flw.find($item.variables, 'name', 'closingNotification').value.isRequired === 'No' ? 'n/a' : flw.find($item.variables, 'name', 'closingNotification').value.numberOfDays}}</b></td></tr></tbody></table>"
+                    },
+                    "filterable": "false",
+                    "sortable": "true",
+                    "show": true
+                  },
+                  {
+                    "label": "Review Marketing Plan Fire",
+                    "id": "reviewMarketingPlan",
+                    "accessor": "reviewMarketingPlan",
+                    "alignment": "left",
+                    "component": {
+                      "type": "htmlComponent",
+                      "value": "<table><tbody> <tr> <td>is Required</td><td><b>{{flw.find($item.variables, 'name', 'reviewMarketingPlan').value.isRequired}}</b></td></tr><tr> <td>No of Days</td><td class=\"w-1/4\"><b>{{flw.find($item.variables, 'name', 'reviewMarketingPlan').value.isRequired === 'No' ? 'n/a' : flw.find($item.variables, 'name', 'reviewMarketingPlan').value.numberOfDays}}</b></td></tr></tbody></table>"
+                    },
+                    "filterable": "false",
+                    "maxWidth": 250,
+                    "minWidth": 250,
+                    "sortable": "true",
+                    "show": true
+                  },
+                  {
+                    "label": "Re Trigger Initial Marketing Valuations",
+                    "id": "numberOfDaysToReTriggerInitialMarketingValuations",
+                    "accessor": "numberOfDaysToReTriggerInitialMarketingValuations",
+                    "alignment": "left",
+                    "component": {
+                      "type": "htmlComponent",
+                      "value": "<span>{{flw.find($item.variables, 'name', 'numberOfDaysToReTriggerInitialMarketingValuations').value}} days"
+                    },
+                    "filterable": "false",
+                    "maxWidth": 300,
+                    "minWidth": 300,
+                    "sortable": "true",
+                    "show": true
+                  },
+                  {
+                    "label": "Review Marketing Plan Occupied",
+                    "id": "reviewMarketingPlanOccupied",
+                    "accessor": "reviewMarketingPlanOccupied",
+                    "alignment": "left",
+                    "component": {
+                      "type": "htmlComponent",
+                      "value": "<table><tbody> <tr> <td>is Required</td><td><b>{{flw.find($item.variables, 'name', 'reviewMarketingPlanOccupied').value.isRequired}}</b></td></tr><tr> <td>No of Days</td><td class=\"w-1/4\"><b>{{flw.find($item.variables, 'name', 'reviewMarketingPlanOccupied').value.isRequired === 'No' ? 'n/a' : flw.find($item.variables, 'name', 'reviewMarketingPlanOccupied').value.numberOfDays}}</b></td></tr></tbody></table>"
+                    },
+                    "filterable": "false",
+                    "maxWidth": 300,
+                    "minWidth": 300,
+                    "sortable": "true",
+                    "show": true
+                  },
+                  {
+                    "label": "Valuation Boarding Parameters",
+                    "id": "valuationBoardingParameters",
+                    "accessor": "valuationBoardingParameters",
+                    "alignment": "left",
+                    "component": {
+                      "type": "htmlComponent",
+                      "value": "<table><tbody> <tr> <td>Value</td><td><b>{{flw.find($item.variables, 'name', 'valuationBoardingParameters').value.value}}</b></td></tr><tr> <td>No of Days</td><td class=\"w-1/4\"><b>{{flw.find($item.variables, 'name', 'valuationBoardingParameters').value.numberOfDays}}</b></td></tr></tbody></table>"
+                    },
+                    "filterable": "false",
+                    "maxWidth": 300,
+                    "minWidth": 300,
+                    "sortable": "true",
+                    "show": true
+                  },
+                  {
+                    "label": "High Value",
+                    "id": "highValue",
+                    "accessor": "highValue",
+                    "alignment": "left",
+                    "component": {
+                      "type": "htmlComponent",
+                      "value": "<span>{{flw.find($item.variables, 'name', 'highValue').value}}"
+                    },
+                    "filterable": "false",
+                    "sortable": "true",
+                    "show": true
+                  },
+                  {
+                    "label": "Action",
+                    "id": "dropdown",
+                    "accessor": "dropdown",
+                    "alignment": "left",
+                    "component": {
+                      "type": "buttonGroup",
+                      "value": "{{$item}}",
+                      "extraSettings": { "asDropdown": true },
+                      "alignment": "right",
+                      "buttonDefinitions": [
+                        {
+                          "type": "scriptButton",
+                          "extraSettings": {
+                            "text": "Edit",
+                            "tooltip": "Edit",
+                            "script": { "key": "Edit", "DATA": "{{$item}}" }
+                          }
+                        },
+                        {
+                          "type": "scriptButton",
+                          "extraSettings": {
+                            "text": "Delete",
+                            "tooltip": "Delete",
+                            "script": { "key": "Delete", "DATA": "{{$item}}" }
+                          }
+                        }
+                      ]
+                    },
+                    "filterable": false,
+                    "maxWidth": 75,
+                    "sortable": false,
+                    "show": true
+                  }
+                ]
+              }
+            }
+          },
+          "enabled": true,
+          "extraSettings": {
+            "dataSource": "Rest",
+            "queryUrl": "{{additionalData.url}}?key=adminValuation&latest=true&tenantId=internal&tempTenantCode={{additionalData.tenantCode}}&&from={{$start}}&size={{$pageSize}}&sortOrder={{$sort || 'DESC'}}{{$filter}}",
+            "path": "data",
+            "linkTargetView": "browse",
+            "storage": "Full",
+            "identity": "caseDefinitionId",
+            "linkTarget": "_blank",
+            "output": { "numRows": "total" },
+            "infiniteScroll": false,
+            "showPagination": true,
+            "autoHidePagination": true,
+            "clientPagination": true,
+            "sortableColumns": false,
+            "columns": [
+              {
+                "label": "Investor Group",
+                "id": "investorGroup",
+                "accessor": "investorGroup",
+                "alignment": "left",
+                "component": {
+                  "type": "htmlComponent",
+                  "value": "<span>{{flw.find($item.variables, 'name', 'investorGroups').value}}</span>"
+                },
+                "filterable": "false",
+                "sortable": true,
+                "show": true
+              },
+              {
+                "label": "Property Preservation",
+                "id": "propertyPreservation",
+                "accessor": "propertyPreservation",
+                "alignment": "left",
+                "component": {
+                  "type": "htmlComponent",
+                  "value": "<span>{{flw.find($item.variables, 'name', 'propertyPreservation').value}}"
+                },
+                "filterable": "false",
+                "sortable": "true",
+                "show": true
+              },
+              {
+                "label": "Closing Notification",
+                "id": "closingNotification",
+                "accessor": "closingNotification",
+                "alignment": "left",
+                "component": {
+                  "type": "htmlComponent",
+                  "value": "<table><tbody> <tr> <td>is Required</td><td><b>{{flw.find($item.variables, 'name', 'closingNotification').value.isRequired}}</b></td></tr><tr> <td>No of Days</td><td class=\"w-1/4\"><b>{{flw.find($item.variables, 'name', 'closingNotification').value.isRequired === 'No' ? 'n/a' : flw.find($item.variables, 'name', 'closingNotification').value.numberOfDays}}</b></td></tr></tbody></table>"
+                },
+                "filterable": "false",
+                "sortable": "true",
+                "show": true
+              },
+              {
+                "label": "Review Marketing Plan Fire",
+                "id": "reviewMarketingPlan",
+                "accessor": "reviewMarketingPlan",
+                "alignment": "left",
+                "component": {
+                  "type": "htmlComponent",
+                  "value": "<table><tbody> <tr> <td>is Required</td><td><b>{{flw.find($item.variables, 'name', 'reviewMarketingPlan').value.isRequired}}</b></td></tr><tr> <td>No of Days</td><td class=\"w-1/4\"><b>{{flw.find($item.variables, 'name', 'reviewMarketingPlan').value.isRequired === 'No' ? 'n/a' : flw.find($item.variables, 'name', 'reviewMarketingPlan').value.numberOfDays}}</b></td></tr></tbody></table>"
+                },
+                "filterable": "false",
+                "maxWidth": 250,
+                "minWidth": 250,
+                "sortable": "true",
+                "show": true
+              },
+              {
+                "label": "Re Trigger Initial Marketing Valuations",
+                "id": "numberOfDaysToReTriggerInitialMarketingValuations",
+                "accessor": "numberOfDaysToReTriggerInitialMarketingValuations",
+                "alignment": "left",
+                "component": {
+                  "type": "htmlComponent",
+                  "value": "<span>{{flw.find($item.variables, 'name', 'numberOfDaysToReTriggerInitialMarketingValuations').value}} days"
+                },
+                "filterable": "false",
+                "maxWidth": 300,
+                "minWidth": 300,
+                "sortable": "true",
+                "show": true
+              },
+              {
+                "label": "Review Marketing Plan Occupied",
+                "id": "reviewMarketingPlanOccupied",
+                "accessor": "reviewMarketingPlanOccupied",
+                "alignment": "left",
+                "component": {
+                  "type": "htmlComponent",
+                  "value": "<table><tbody> <tr> <td>is Required</td><td><b>{{flw.find($item.variables, 'name', 'reviewMarketingPlanOccupied').value.isRequired}}</b></td></tr><tr> <td>No of Days</td><td class=\"w-1/4\"><b>{{flw.find($item.variables, 'name', 'reviewMarketingPlanOccupied').value.isRequired === 'No' ? 'n/a' : flw.find($item.variables, 'name', 'reviewMarketingPlanOccupied').value.numberOfDays}}</b></td></tr></tbody></table>"
+                },
+                "filterable": "false",
+                "maxWidth": 300,
+                "minWidth": 300,
+                "sortable": "true",
+                "show": true
+              },
+              {
+                "label": "Valuation Boarding Parameters",
+                "id": "valuationBoardingParameters",
+                "accessor": "valuationBoardingParameters",
+                "alignment": "left",
+                "component": {
+                  "type": "htmlComponent",
+                  "value": "<table><tbody> <tr> <td>Value</td><td><b>{{flw.find($item.variables, 'name', 'valuationBoardingParameters').value.value}}</b></td></tr><tr> <td>No of Days</td><td class=\"w-1/4\"><b>{{flw.find($item.variables, 'name', 'valuationBoardingParameters').value.numberOfDays}}</b></td></tr></tbody></table>"
+                },
+                "filterable": "false",
+                "maxWidth": 300,
+                "minWidth": 300,
+                "sortable": "true",
+                "show": true
+              },
+              {
+                "label": "High Value",
+                "id": "highValue",
+                "accessor": "highValue",
+                "alignment": "left",
+                "component": {
+                  "type": "htmlComponent",
+                  "value": "<span>{{flw.find($item.variables, 'name', 'highValue').value}}"
+                },
+                "filterable": "false",
+                "sortable": "true",
+                "show": true
+              },
+              {
+                "label": "Action",
+                "id": "dropdown",
+                "accessor": "dropdown",
+                "alignment": "left",
+                "component": {
+                  "type": "buttonGroup",
+                  "value": "{{$item}}",
+                  "extraSettings": { "asDropdown": true },
+                  "alignment": "right",
+                  "buttonDefinitions": [
+                    {
+                      "type": "scriptButton",
+                      "extraSettings": {
+                        "text": "Edit",
+                        "tooltip": "Edit",
+                        "script": { "key": "Edit", "DATA": "{{$item}}" }
+                      }
+                    },
+                    {
+                      "type": "scriptButton",
+                      "extraSettings": {
+                        "text": "Delete",
+                        "tooltip": "Delete",
+                        "script": { "key": "Delete", "DATA": "{{$item}}" }
+                      }
+                    }
+                  ]
+                },
+                "filterable": false,
+                "maxWidth": 75,
+                "sortable": false,
+                "show": true
+              }
+            ],
+            "filterable": false,
+            "sortable": true,
+            "multiSort": false,
+            "pageSize": 20,
+            "pageSizeOptions": [20, 25, 50, 100],
+            "showTotalRecords": false,
+            "response": { "total": "total" },
+            "showRefreshButton": false,
+            "refreshTime": "{{$payload.refreshForm}}",
+            "dataPollingOnInit": false,
+            "target": "_blank",
+            "sortAsc": "ASC",
+            "sortDesc": "DESC",
+            "sortPattern": "{{$sortItem.direction}}",
+            "sortSeparator": ",",
+            "filterPattern": "&{{$filterItem.id}}={{$filterItem.value}}",
+            "nodataPosition": "middle-center"
+          },
+          "labelAlign": "top",
+          "value": "{{manageWorkflowSettingsList}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "isRequired": false,
+          "id": "datatable2",
+          "type": "dataTable"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "key": "manageWorkflowSettings",
+    "name": "Manage Workflow Settings",
+    "description": "",
+    "version": "12",
+    "type": "2",
+    "flowableDesignVersion": 3090
+  }
+}

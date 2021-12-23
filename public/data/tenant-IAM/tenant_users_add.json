@@ -1,0 +1,732 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 25 },
+              "lowerRight": { "x": 985, "y": 1014 }
+            },
+            "stencilSuperIds": ["SubSlotPanel"],
+            "stencilId": "cloud-sub-panel",
+            "customStencilId": null
+          },
+          "labelAlign": "top",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "sub-panel3",
+          "extraSettings": {
+            "collapsible": false,
+            "collapsed": false,
+            "showBorder": false,
+            "saveButtonVisible": true,
+            "saveButtonEnabled": true,
+            "cancelButtonVisible": true,
+            "cancelButtonEnabled": true,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 25 },
+                          "lowerRight": { "x": 955, "y": 73 }
+                        },
+                        "stencilSuperIds": ["base-text", "Component"],
+                        "stencilId": "cloud-text",
+                        "customStencilId": null
+                      },
+                      "placeholder": "User Id",
+                      "i18n": {
+                        "en_us": { "placeholder": "User Id", "label": "Id" }
+                      },
+                      "labelAlign": "top",
+                      "value": "{{userList.id}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": false,
+                      "enabled": true,
+                      "isRequired": false,
+                      "label": "Id",
+                      "id": "text11",
+                      "type": "text",
+                      "extraSettings": {}
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 98 },
+                          "lowerRight": { "x": 955, "y": 146 }
+                        },
+                        "stencilSuperIds": ["base-text", "Component"],
+                        "stencilId": "cloud-text",
+                        "customStencilId": null
+                      },
+                      "placeholder": "First Name",
+                      "i18n": {
+                        "en_us": {
+                          "placeholder": "First Name",
+                          "label": "First Name",
+                          "validationRegExpErrorMessage": "Please Enter the Valid first name"
+                        }
+                      },
+                      "labelAlign": "top",
+                      "value": "{{$payload.userList.firstName}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": true,
+                      "label": "First Name",
+                      "id": "text12",
+                      "validationRegExp": "[-\\w\\s]+$",
+                      "validationRegExpErrorMessage": "Please Enter the Valid first name",
+                      "type": "text",
+                      "extraSettings": {}
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 171 },
+                          "lowerRight": { "x": 955, "y": 219 }
+                        },
+                        "stencilSuperIds": ["base-text", "Component"],
+                        "stencilId": "cloud-text",
+                        "customStencilId": null
+                      },
+                      "placeholder": "Last Name",
+                      "i18n": {
+                        "en_us": {
+                          "placeholder": "Last Name",
+                          "label": "Last Name",
+                          "validationRegExpErrorMessage": "Please Enter the valid last name"
+                        }
+                      },
+                      "labelAlign": "top",
+                      "value": "{{userList.lastName}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": true,
+                      "label": "Last Name",
+                      "id": "text13",
+                      "validationRegExp": "[-\\w\\s]+$",
+                      "validationRegExpErrorMessage": "Please Enter the valid last name",
+                      "type": "text",
+                      "extraSettings": {}
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 244 },
+                          "lowerRight": { "x": 955, "y": 292 }
+                        },
+                        "stencilSuperIds": ["base-text", "Component"],
+                        "stencilId": "cloud-text",
+                        "customStencilId": null
+                      },
+                      "placeholder": "E Mail",
+                      "i18n": {
+                        "en_us": {
+                          "placeholder": "E Mail",
+                          "customValidations": [
+                            {
+                              "expression": "{{emailValidation.id===userList.mail?false:true}}",
+                              "errorMsg": "Email already exists"
+                            }
+                          ],
+                          "label": "E Mail",
+                          "validationRegExpErrorMessage": "Please Enter the valid mail"
+                        }
+                      },
+                      "labelAlign": "top",
+                      "value": "{{userList.mail}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": "{{!isEdit}}",
+                      "isRequired": true,
+                      "customValidations": [
+                        {
+                          "expression": "{{emailValidation.id===userList.mail?false:true}}",
+                          "errorMsg": "Email already exists"
+                        }
+                      ],
+                      "label": "E Mail",
+                      "id": "text14",
+                      "validationRegExp": "^([\\w\\.\\-]+)@([\\w\\-]+)((\\.(\\w){2,3})+)$",
+                      "validationRegExpErrorMessage": "Please Enter the valid mail",
+                      "type": "text",
+                      "extraSettings": {}
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 317 },
+                          "lowerRight": { "x": 955, "y": 365 }
+                        },
+                        "stencilSuperIds": ["Password"],
+                        "stencilId": "cloud-password",
+                        "customStencilId": null
+                      },
+                      "extraSettings": { "minLength": 8 },
+                      "minLengthErrorMessage": "Password should be minimum 8 character",
+                      "i18n": {
+                        "en_us": {
+                          "minLengthErrorMessage": "Password should be minimum 8 character",
+                          "placeholder": "Password",
+                          "customValidations": [],
+                          "label": "Password"
+                        }
+                      },
+                      "placeholder": "Password",
+                      "labelAlign": "top",
+                      "value": "{{userList.userPassword}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": false,
+                      "enabled": true,
+                      "isRequired": false,
+                      "customValidations": [],
+                      "label": "Password",
+                      "id": "password4",
+                      "type": "password"
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 390 },
+                          "lowerRight": { "x": 955, "y": 438 }
+                        },
+                        "stencilSuperIds": ["Password"],
+                        "stencilId": "cloud-password",
+                        "customStencilId": null
+                      },
+                      "extraSettings": { "minLength": 8 },
+                      "minLengthErrorMessage": "Password should be minimum 8 character",
+                      "i18n": {
+                        "en_us": {
+                          "minLengthErrorMessage": "Password should be minimum 8 character",
+                          "placeholder": "Confirm Password",
+                          "customValidations": [
+                            {
+                              "expression": "{{(userPassword == confirmPassword)}}",
+                              "errorMsg": "Passwords do not match"
+                            }
+                          ],
+                          "label": "Confirm Password"
+                        }
+                      },
+                      "placeholder": "Confirm Password",
+                      "labelAlign": "top",
+                      "value": "{{userList.confirmPassword}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": false,
+                      "enabled": true,
+                      "isRequired": false,
+                      "customValidations": [
+                        {
+                          "expression": "{{(userPassword == confirmPassword)}}",
+                          "errorMsg": "Passwords do not match"
+                        }
+                      ],
+                      "label": "Confirm Password",
+                      "id": "password5",
+                      "type": "password"
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 463 },
+                          "lowerRight": { "x": 955, "y": 511 }
+                        },
+                        "stencilSuperIds": ["base-text", "Component"],
+                        "stencilId": "cloud-text",
+                        "customStencilId": null
+                      },
+                      "placeholder": "Employee Number",
+                      "i18n": {
+                        "en_us": {
+                          "placeholder": "Employee Number",
+                          "label": "Employee Number",
+                          "validationRegExpErrorMessage": "Please Enter the valid employee number"
+                        }
+                      },
+                      "labelAlign": "top",
+                      "value": "{{userList.employeeNumber}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "label": "Employee Number",
+                      "id": "text15",
+                      "validationRegExp": "[-\\w\\s]+$",
+                      "validationRegExpErrorMessage": "Please Enter the valid employee number",
+                      "type": "text",
+                      "extraSettings": {}
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 536 },
+                          "lowerRight": { "x": 955, "y": 584 }
+                        },
+                        "stencilSuperIds": ["base-text", "Component"],
+                        "stencilId": "cloud-text",
+                        "customStencilId": null
+                      },
+                      "placeholder": "Phone Number",
+                      "i18n": {
+                        "en_us": {
+                          "placeholder": "Phone Number",
+                          "label": "Phone Number",
+                          "validationMaskErrorMessage": "Please Enter the valid phone number"
+                        }
+                      },
+                      "labelAlign": "top",
+                      "value": "{{userList.telephoneNumber}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "label": "Phone Number",
+                      "id": "text16",
+                      "validationMask": "999-999-9999",
+                      "validationMaskErrorMessage": "Please Enter the valid phone number",
+                      "type": "text",
+                      "extraSettings": {}
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 609 },
+                          "lowerRight": { "x": 955, "y": 657 }
+                        },
+                        "stencilSuperIds": ["base-text", "Component"],
+                        "stencilId": "cloud-text",
+                        "customStencilId": null
+                      },
+                      "placeholder": "Address",
+                      "i18n": {
+                        "en_us": {
+                          "placeholder": "Address",
+                          "label": "Address",
+                          "validationRegExpErrorMessage": "Please enter the valid address"
+                        }
+                      },
+                      "labelAlign": "top",
+                      "value": "{{userList.postalAddress}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "label": "Address",
+                      "id": "text17",
+                      "validationRegExp": "[-\\w\\s]+$",
+                      "validationRegExpErrorMessage": "Please enter the valid address",
+                      "type": "text",
+                      "extraSettings": {}
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 682 },
+                          "lowerRight": { "x": 955, "y": 730 }
+                        },
+                        "stencilSuperIds": ["base-multi-select", "Component"],
+                        "stencilId": "cloud-multi-select",
+                        "customStencilId": null
+                      },
+                      "extraSettings": {
+                        "tagsEnabled": false,
+                        "preselectAll": false,
+                        "clientSideFiltering": false,
+                        "enableAutocomplete": true,
+                        "autocompleteMinLength": 0,
+                        "dataSource": "Static",
+                        "items": "{{tenants}}",
+                        "linkTargetView": "browse",
+                        "formatItem": "{{$item.tenantCode}}",
+                        "storage": "Id",
+                        "identity": "tenantCode",
+                        "linkTarget": "_blank",
+                        "multi": true
+                      },
+                      "placeholder": "Available Tenants",
+                      "i18n": {
+                        "en_us": {
+                          "placeholder": "Available Tenants",
+                          "extraSettings": { "items": "{{tenants}}" },
+                          "label": "Available Tenants"
+                        }
+                      },
+                      "enabled": true,
+                      "labelAlign": "top",
+                      "value": "{{userList.tenantId}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "isRequired": false,
+                      "label": "Available Tenants",
+                      "id": "multi-select7",
+                      "type": "select"
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 755 },
+                          "lowerRight": { "x": 955, "y": 818 }
+                        },
+                        "stencilSuperIds": ["base-radiobuttons", "Component"],
+                        "stencilId": "cloud-radiobuttons",
+                        "customStencilId": null
+                      },
+                      "enabled": true,
+                      "extraSettings": {
+                        "dataSource": "Static",
+                        "items": [
+                          {
+                            "text": "True",
+                            "value": "true",
+                            "checked": "true"
+                          },
+                          { "text": "False", "value": "false" }
+                        ],
+                        "linkTargetView": "browse",
+                        "storage": "Id",
+                        "identity": "value",
+                        "linkTarget": "_blank",
+                        "display": "Horizontal"
+                      },
+                      "i18n": {
+                        "en_us": {
+                          "extraSettings": {
+                            "items": [
+                              {
+                                "text": "True",
+                                "value": "true",
+                                "checked": "true"
+                              },
+                              { "text": "False", "value": "false" }
+                            ]
+                          },
+                          "label": "Data Masking"
+                        }
+                      },
+                      "labelAlign": "top",
+                      "value": "{{userList.masked}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "isRequired": true,
+                      "label": "Data Masking",
+                      "id": "radiobuttons2",
+                      "type": "radio"
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 843 },
+                          "lowerRight": { "x": 955, "y": 891 }
+                        },
+                        "stencilSuperIds": ["base-single-select", "Component"],
+                        "stencilId": "cloud-single-select",
+                        "customStencilId": null
+                      },
+                      "extraSettings": {
+                        "tagsEnabled": false,
+                        "preselectAll": false,
+                        "clientSideFiltering": false,
+                        "enableAutocomplete": false,
+                        "autocompleteMinLength": 1,
+                        "dataSource": "Static",
+                        "items": [
+                          { "text": "Active", "value": "active" },
+                          { "text": "Inactive", "value": "inactive" }
+                        ],
+                        "linkTargetView": "browse",
+                        "storage": "Id",
+                        "identity": "value",
+                        "linkTarget": "_blank",
+                        "multi": false
+                      },
+                      "placeholder": "User Status",
+                      "i18n": {
+                        "en_us": {
+                          "placeholder": "User Status",
+                          "extraSettings": {
+                            "items": [
+                              { "text": "Active", "value": "active" },
+                              { "text": "Inactive", "value": "inactive" }
+                            ]
+                          },
+                          "label": "User Status"
+                        }
+                      },
+                      "enabled": true,
+                      "labelAlign": "top",
+                      "value": "{{userList.inetUserStatus}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "isRequired": true,
+                      "label": "User Status",
+                      "id": "single-select3",
+                      "type": "select"
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 916 },
+                          "lowerRight": { "x": 955, "y": 964 }
+                        },
+                        "stencilSuperIds": ["base-single-select", "Component"],
+                        "stencilId": "cloud-single-select",
+                        "customStencilId": null
+                      },
+                      "extraSettings": {
+                        "tagsEnabled": false,
+                        "preselectAll": false,
+                        "clientSideFiltering": false,
+                        "enableAutocomplete": true,
+                        "autocompleteMinLength": 0,
+                        "dataSource": "Static",
+                        "items": [
+                          { "text": "Servicer", "value": "servicer" },
+                          { "text": "Agent", "value": "agent" },
+                          { "text": "Vendor", "value": "vendor" },
+                          { "text": "Marketplace", "value": "marketplace" }
+                        ],
+                        "linkTargetView": "browse",
+                        "storage": "Id",
+                        "identity": "value",
+                        "linkTarget": "_blank",
+                        "multi": false
+                      },
+                      "placeholder": "Access Scope",
+                      "i18n": {
+                        "en_us": {
+                          "placeholder": "Access Scope",
+                          "extraSettings": {
+                            "items": [
+                              { "text": "Servicer", "value": "servicer" },
+                              { "text": "Agent", "value": "agent" },
+                              { "text": "Vendor", "value": "vendor" },
+                              { "text": "Marketplace", "value": "marketplace" }
+                            ]
+                          },
+                          "label": "Access Scope"
+                        }
+                      },
+                      "enabled": true,
+                      "labelAlign": "top",
+                      "value": "{{userList.userType}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "isRequired": true,
+                      "label": "Access Scope",
+                      "id": "single-select4",
+                      "type": "select"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "type": "panel"
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 0, "y": 0 },
+              "lowerRight": { "x": 0, "y": 0 }
+            },
+            "stencilSuperIds": [],
+            "stencilId": null,
+            "customStencilId": null
+          },
+          "size": 5,
+          "type": ""
+        },
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 425, "y": 1039 },
+              "lowerRight": { "x": 574, "y": 1065 }
+            },
+            "stencilSuperIds": ["Button"],
+            "stencilId": "cloud-rest-button",
+            "customStencilId": null
+          },
+          "extraSettings": {
+            "alignment": "left",
+            "iconAlignment": "right",
+            "url": "/eq-api/core/fam/user/{{userList.id}}",
+            "autoExecute": "{{isEdit && userList.id}}",
+            "executeAlways": true
+          },
+          "primary": false,
+          "labelAlign": "top",
+          "value": "{{userList}}",
+          "size": 2,
+          "ignore": false,
+          "visible": false,
+          "enabled": true,
+          "isRequired": false,
+          "id": "rest-button2",
+          "type": "restButton"
+        },
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 589, "y": 1039 },
+              "lowerRight": { "x": 656, "y": 1087 }
+            },
+            "stencilSuperIds": ["Button"],
+            "stencilId": "cloud-rest-button",
+            "customStencilId": null
+          },
+          "label": "Email Validation",
+          "i18n": { "en_us": { "label": "Email Validation" } },
+          "extraSettings": {
+            "alignment": "left",
+            "iconAlignment": "right",
+            "url": "/eq-api/core/fam/user/{{userList.mail}}",
+            "autoExecute": "{{!isEdit && userList.mail}}",
+            "executeAlways": true
+          },
+          "primary": false,
+          "labelAlign": "top",
+          "value": "{{emailValidation}}",
+          "size": 1,
+          "ignore": false,
+          "visible": false,
+          "enabled": true,
+          "isRequired": false,
+          "id": "emailValidation-button",
+          "type": "restButton"
+        },
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 671, "y": 1039 },
+              "lowerRight": { "x": 820, "y": 1087 }
+            },
+            "stencilSuperIds": ["Button"],
+            "stencilId": "cloud-script-button",
+            "customStencilId": null
+          },
+          "extraSettings": {
+            "text": "userList.id",
+            "script": "{{ userList.mail ? userList.mail : ''}}",
+            "autoExecute": "{{!isEdit && userList.mail}}",
+            "executeAlways": false,
+            "alignment": "left",
+            "iconAlignment": "right"
+          },
+          "i18n": {
+            "en_us": {
+              "extraSettings": { "text": "userList.id" },
+              "label": "userList.id"
+            }
+          },
+          "label": "userList.id",
+          "primary": false,
+          "labelAlign": "top",
+          "value": "{{userList.id}}",
+          "size": 2,
+          "ignore": false,
+          "visible": false,
+          "enabled": "{{$formValid}}",
+          "isRequired": false,
+          "id": "script-button2",
+          "type": "scriptButton"
+        },
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 0, "y": 0 },
+              "lowerRight": { "x": 0, "y": 0 }
+            },
+            "stencilSuperIds": [],
+            "stencilId": null,
+            "customStencilId": null
+          },
+          "size": 2,
+          "type": ""
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "key": "addUserUpdated",
+    "name": "Add user updated",
+    "description": "",
+    "version": "21",
+    "type": "2",
+    "flowableDesignVersion": 3090
+  }
+}

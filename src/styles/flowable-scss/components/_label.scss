@@ -1,0 +1,59 @@
+.flw__label {
+  margin: 0;
+  color: $flw-forms-label-text-color;
+  color: var(--flw-forms-label-text-color, $flw-forms-label-text-color);
+  // font-size: $flw-text-xs;
+  // font-size: var(--flw-text-xs, $flw-text-xs);
+  padding: 2px 0;
+}
+
+.flw__label__tooltip {
+  background-image: url(svg-encode($flw-question-icon, #000, #666));
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  background-size: contain;
+  margin: 2px 4px;
+  vertical-align: text-bottom;
+  position: relative;
+  pointer-events: all;
+}
+
+.flw__label__tooltip__text {
+  left: 0;
+  top: 20px;
+  // width: 200px;
+  width: max-content;
+  display: none;
+  position: absolute;
+  z-index: 1030;
+  box-sizing: border-box;
+  max-width: 200px;
+  padding: 5px 15px;
+  // padding: 3px $flw-gutter;
+  // padding: 3px var(--flw-gutter, $flw-gutter);
+  background: $flw-forms-text-color;
+  background: var(--flw-forms-text-color, $flw-forms-text-color);
+  border-radius: 2px;
+  color: $flw-forms-background-color;
+  color: var(--flw-forms-background-color, $flw-forms-background-color);
+  // font-size: $flw-text-sm;
+  // font-size: var(--flw-text-sm, $flw-text-sm);
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0;
+  transition-delay: 0.1s;
+  white-space: pre-line;
+}
+
+.flw__label__tooltip:hover {
+  background-image: url(svg-encode($flw-question-icon, nothing-to-replace));
+}
+
+.flw__label__tooltip:hover .flw__label__tooltip__text {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.3s;
+  transition-delay: 0s;
+}

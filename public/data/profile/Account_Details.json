@@ -1,0 +1,45 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 25 },
+              "lowerRight": { "x": 984, "y": 75 }
+            },
+            "stencilSuperIds": ["HtmlComponent"],
+            "stencilId": "cloud-html-component",
+            "customStencilId": null
+          },
+          "type": "htmlComponent",
+          "labelAlign": "top",
+          "value": "<table class=\"flex justify-center\">\n\t\t\t<tbody>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary\"> First Name </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{firstName}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary\"> Last Name </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{lastName}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary\"> Email Address </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{email}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary\"> Mobile </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{telephoneNumber}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n              <tr class={{!additionalData.isVendor ? 'show' : 'hidden'}}>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary\"> License Information </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{licenceInfo}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n              <tr class={{!additionalData.isVendor ? 'show' : 'hidden'}}>\n                <td class=\"text-right\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary\"> License Number </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{licenceInfo}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n               <tr class={{!additionalData.isVendor ? 'show' : 'hidden'}}>\n                <td class=\"text-right\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary\"> License Expiry date </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{expiryDate}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n              <tr class={{!additionalData.isVendor ? 'show' : 'hidden'}}>\n                <td class=\"text-right\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary\"> License state </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{licenceState}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n              <tr class={{!additionalData.isVendor ? 'show' : 'hidden'}}>\n                <td class=\"text-right\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary\"> License Type </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{licenceType}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t</tbody>\n\t\t</table>",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "html-component1",
+          "i18n": {
+            "en_us": {
+              "value": "<table class=\"flex justify-center\">\n\t\t\t<tbody>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary\"> First Name </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{firstName}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary\"> Last Name </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{lastName}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary\"> Email Address </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{email}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary\"> Mobile </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{telephoneNumber}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n              <tr class={{!additionalData.isVendor ? 'show' : 'hidden'}}>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary\"> License Information </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{licenceInfo}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n              <tr class={{!additionalData.isVendor ? 'show' : 'hidden'}}>\n                <td class=\"text-right\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary\"> License Number </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{licenceInfo}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n               <tr class={{!additionalData.isVendor ? 'show' : 'hidden'}}>\n                <td class=\"text-right\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary\"> License Expiry date </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{expiryDate}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n              <tr class={{!additionalData.isVendor ? 'show' : 'hidden'}}>\n                <td class=\"text-right\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary\"> License state </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{licenceState}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n              <tr class={{!additionalData.isVendor ? 'show' : 'hidden'}}>\n                <td class=\"text-right\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary\"> License Type </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{licenceType}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t</tbody>\n\t\t</table>"
+            }
+          },
+          "extraSettings": {
+            "showBorder": false,
+            "params": [],
+            "method": "GET"
+          }
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "key": "accountDetails",
+    "name": "Account Details",
+    "description": "Account Details",
+    "version": "2",
+    "type": "2"
+  }
+}

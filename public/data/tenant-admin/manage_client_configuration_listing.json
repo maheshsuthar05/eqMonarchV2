@@ -1,0 +1,366 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 25 },
+              "lowerRight": { "x": 985, "y": 388 }
+            },
+            "stencilSuperIds": ["SubSlotPanel"],
+            "stencilId": "cloud-sub-panel",
+            "customStencilId": null
+          },
+          "type": "panel",
+          "labelAlign": "top",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "sub-panel2",
+          "extraSettings": {
+            "collapsible": false,
+            "collapsed": false,
+            "showBorder": false,
+            "saveButtonVisible": true,
+            "saveButtonEnabled": true,
+            "cancelButtonVisible": true,
+            "cancelButtonEnabled": true,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 0, "y": 0 },
+                          "lowerRight": { "x": 0, "y": 0 }
+                        },
+                        "stencilSuperIds": [],
+                        "stencilId": null,
+                        "customStencilId": null
+                      },
+                      "type": "",
+                      "size": 10
+                    },
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 811, "y": 25 },
+                          "lowerRight": { "x": 955, "y": 51 }
+                        },
+                        "stencilSuperIds": ["Button"],
+                        "stencilId": "cloud-script-button",
+                        "customStencilId": null
+                      },
+                      "type": "scriptButton",
+                      "extraSettings": {
+                        "text": "Add Client",
+                        "script": "{{example + 1}}",
+                        "autoExecute": false,
+                        "alignment": "left",
+                        "iconAlignment": "right"
+                      },
+                      "i18n": {
+                        "en_us": { "extraSettings": { "text": "Add Client" } }
+                      },
+                      "labelAlign": "top",
+                      "value": "{{$payload.manageValuationModal}}",
+                      "size": 2,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "script-button1"
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 74 },
+                          "lowerRight": { "x": 955, "y": 166 }
+                        },
+                        "stencilSuperIds": ["base-datatable", "Component"],
+                        "stencilId": "cloud-datatable",
+                        "customStencilId": null
+                      },
+                      "type": "dataTable",
+                      "label": "Manage Client Configuration",
+                      "i18n": {
+                        "en_us": {
+                          "label": "Manage Client Configuration",
+                          "extraSettings": {
+                            "columns": [
+                              {
+                                "label": "Record ID",
+                                "id": "recordId",
+                                "accessor": "recordId",
+                                "alignment": "left",
+                                "filterable": "true",
+                                "sortable": "true",
+                                "show": true
+                              },
+                              {
+                                "label": "Unique Client ID",
+                                "id": "uniqueClientId",
+                                "accessor": "uniqueClientId",
+                                "alignment": "left",
+                                "filterable": "true",
+                                "sortable": "true",
+                                "show": true
+                              },
+                              {
+                                "label": "Action",
+                                "id": "dropdown",
+                                "accessor": "dropdown",
+                                "alignment": "left",
+                                "component": {
+                                  "type": "buttonGroup",
+                                  "value": "{{$item}}",
+                                  "extraSettings": { "asDropdown": true },
+                                  "alignment": "right",
+                                  "buttonDefinitions": [
+                                    {
+                                      "type": "scriptButton",
+                                      "value": "{{$payload.addLegalEntityModal}}",
+                                      "extraSettings": {
+                                        "text": "Edit",
+                                        "script": "Edit",
+                                        "fileDetails": "{{$item}}"
+                                      }
+                                    },
+                                    {
+                                      "type": "scriptButton",
+                                      "value": "{{operationListActionButton}}",
+                                      "extraSettings": {
+                                        "text": "Delete",
+                                        "script": "Delete",
+                                        "fileDetails": "{{$item}}"
+                                      }
+                                    }
+                                  ]
+                                },
+                                "filterable": "false",
+                                "maxWidth": 75,
+                                "sortable": "false",
+                                "show": true
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "enabled": true,
+                      "extraSettings": {
+                        "dataSource": "Static",
+                        "items": [
+                          { "recordId": "558278", "uniqueClientId": "RCN" },
+                          { "recordId": "558292", "uniqueClientId": "DayMark" }
+                        ],
+                        "linkTargetView": "browse",
+                        "storage": "Full",
+                        "linkTarget": "_blank",
+                        "selectable": "Multiple",
+                        "showPagination": true,
+                        "autoHidePagination": false,
+                        "clientPagination": true,
+                        "sortableColumns": false,
+                        "columns": [
+                          {
+                            "label": "Record ID",
+                            "id": "recordId",
+                            "accessor": "recordId",
+                            "alignment": "left",
+                            "filterable": "true",
+                            "sortable": "true",
+                            "show": true
+                          },
+                          {
+                            "label": "Unique Client ID",
+                            "id": "uniqueClientId",
+                            "accessor": "uniqueClientId",
+                            "alignment": "left",
+                            "filterable": "true",
+                            "sortable": "true",
+                            "show": true
+                          },
+                          {
+                            "label": "Action",
+                            "id": "dropdown",
+                            "accessor": "dropdown",
+                            "alignment": "left",
+                            "component": {
+                              "type": "buttonGroup",
+                              "value": "{{$item}}",
+                              "extraSettings": { "asDropdown": true },
+                              "alignment": "right",
+                              "buttonDefinitions": [
+                                {
+                                  "type": "scriptButton",
+                                  "value": "{{$payload.addLegalEntityModal}}",
+                                  "extraSettings": {
+                                    "text": "Edit",
+                                    "script": "Edit",
+                                    "fileDetails": "{{$item}}"
+                                  }
+                                },
+                                {
+                                  "type": "scriptButton",
+                                  "value": "{{operationListActionButton}}",
+                                  "extraSettings": {
+                                    "text": "Delete",
+                                    "script": "Delete",
+                                    "fileDetails": "{{$item}}"
+                                  }
+                                }
+                              ]
+                            },
+                            "filterable": "false",
+                            "maxWidth": 75,
+                            "sortable": "false",
+                            "show": true
+                          }
+                        ],
+                        "filterable": true,
+                        "sortable": true,
+                        "multiSort": false,
+                        "pageSize": 20,
+                        "pageSizeOptions": [5, 10, 20, 25, 50, 100],
+                        "showTotalRecords": true,
+                        "response": {},
+                        "target": "_blank"
+                      },
+                      "labelAlign": "top",
+                      "value": "{{manageClientConfigurationList}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "isRequired": false,
+                      "id": "datatable2"
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 191 },
+                          "lowerRight": { "x": 957, "y": 338 }
+                        },
+                        "stencilSuperIds": ["SubSlotPanel"],
+                        "stencilId": "cloud-modal-dialog",
+                        "customStencilId": null
+                      },
+                      "type": "modal",
+                      "label": "Edit Client Configuration",
+                      "i18n": {
+                        "en_us": { "label": "Edit Client Configuration" }
+                      },
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "modal-dialog1",
+                      "extraSettings": {
+                        "modalOpen": "{{$payload.manageValuationModal}}",
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "designInfo": {
+                                    "bounds": {
+                                      "upperLeft": { "x": 15, "y": 49 },
+                                      "lowerRight": { "x": 927, "y": 75 }
+                                    },
+                                    "stencilSuperIds": [
+                                      "base-text",
+                                      "Component"
+                                    ],
+                                    "stencilId": "cloud-text",
+                                    "customStencilId": null
+                                  },
+                                  "type": "text",
+                                  "labelAlign": "left",
+                                  "value": "{{recordID}}",
+                                  "size": 12,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "label": "Record ID:",
+                                  "i18n": {
+                                    "en_us": { "label": "Record ID:" }
+                                  },
+                                  "id": "text2",
+                                  "extraSettings": {}
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "designInfo": {
+                                    "bounds": {
+                                      "upperLeft": { "x": 15, "y": 98 },
+                                      "lowerRight": { "x": 927, "y": 124 }
+                                    },
+                                    "stencilSuperIds": [
+                                      "base-text",
+                                      "Component"
+                                    ],
+                                    "stencilId": "cloud-text",
+                                    "customStencilId": null
+                                  },
+                                  "type": "text",
+                                  "labelAlign": "left",
+                                  "value": "{{uniqueClientId}}",
+                                  "size": 12,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "label": "Unique Client ID:",
+                                  "i18n": {
+                                    "en_us": { "label": "Unique Client ID:" }
+                                  },
+                                  "id": "text1",
+                                  "extraSettings": {}
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "key": "manageClientConfiguration",
+    "name": "Manage Client Configuration",
+    "description": "Manage Client Configuration",
+    "version": "11",
+    "type": "2"
+  }
+}

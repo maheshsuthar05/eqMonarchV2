@@ -1,0 +1,97 @@
+{
+    "rows": [
+      {
+        "cols": [
+          {
+            "type": "upload",
+            "labelAlign": "top",
+            "value": "{{serviceData}}",
+            "i18n": {},
+            "size": 12,
+            "ignore": false,
+            "visible": true,
+            "enabled": true,
+            "isRequired": true,
+            "id": "attachment1",
+            "extraSettings": {
+              "autoupload": false,
+              "downloadUrl": "rest/file/{{id}}",
+              "allowDelete": "newOnly",
+              "preview": "none",
+              "acceptFileTypes": ".json"
+            },
+            "col": 0
+          }
+        ]
+      },
+      {
+        "cols": [
+          {
+            "size": 1,
+            "type": ""
+          },
+          {
+            "size": 1,
+            "type": ""
+          },
+          {
+            "size": 1,
+            "type": ""
+          },
+          {
+            "size": 1,
+            "type": ""
+          },
+          {
+            "size": 1,
+            "type": ""
+          },
+          {
+            "size": 1,
+            "type": ""
+          },
+          {
+            "size": 1,
+            "type": ""
+          },
+          {
+            "size": 1,
+            "type": ""
+          },
+          {
+            "size": 1,
+            "type": ""
+          },
+          {
+            "size": 1,
+            "type": ""
+          },
+          {
+            "type": "scriptButton",
+            "extraSettings": {
+              "text": "Upload",
+              "script": "{{$formValid}}",
+              "autoExecute": false,
+              "alignment": "left",
+              "iconAlignment": "right"
+            },
+            "i18n": {
+              "en_us": {
+                "extraSettings": {
+                  "text": "Upload"
+                }
+              }
+            },
+            "labelAlign": "top",
+            "size": 2,
+            "ignore": false,
+            "visible": true,
+            "enabled": "{{$formValid}}",
+            "isRequired": false,
+            "id": "script-button2",
+            "col": 10
+          }
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,69 @@
+.flw__subform-instance {
+  position: relative;
+}
+
+.flw__subform-instance--show-delete-button {
+  padding-right: 26px;
+}
+
+.flw__subform-instance--show-delete-button__delete-button {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  margin-top: -9px;
+  border-color: $flw-forms-error-color;
+  border-color: var(--flw-forms-error-color, $flw-forms-error-color);
+  opacity: 0;
+  border-radius: 50%;
+  background-color: $flw-forms-background-color;
+  background-color: var(--flw-forms-background-color, $flw-forms-background-color);
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+}
+
+.flw__subform-instance--show-delete-button__delete-button:focus {
+  outline: none;
+}
+
+.flw__subform-instance--show-delete-button__delete-button:before {
+  content: "";
+  background-image: url(svg-encode($flw-close-icon-image, #000, #f0506e));
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -7px;
+  margin-top: -7px;
+  transform: scale(0.5);
+}
+
+.flw__subform-instance--show-delete-button__delete-button:hover:enabled,
+.flw__subform-instance--show-delete-button__delete-button:focus:enabled {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 0 $flw-forms-shadow-color-0-15;
+  box-shadow: 0 2px 0 var(--flw-forms-shadow-color-0-15, $flw-forms-shadow-color-0-15);
+  opacity: 1;
+}
+
+.flw__subform-instance--show-delete-button__delete-button:hover:enabled::-moz-focus-inner,
+.flw__subform-instance--show-delete-button__delete-button:focus:enabled::-moz-focus-inner {
+  border: 0;
+}
+
+.flw__subform-instance--show-delete-button__delete-button:hover:enabled::after,
+.flw__subform-instance--show-delete-button__delete-button:focus:enabled::after {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  content: "";
+}
+
+.flw__subform-instance:not(.flw__subform-instance--disabled):hover > .flw__subform-instance__delete-button {
+  opacity: 1;
+}

@@ -1,0 +1,451 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 25 },
+              "lowerRight": { "x": 410, "y": 75 }
+            },
+            "stencilSuperIds": ["Output"],
+            "stencilId": "cloud-output",
+            "customStencilId": null
+          },
+          "labelAlign": "top",
+          "value": "<p>Role</p>\n",
+          "defaultValue": false,
+          "size": 5,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "output1",
+          "i18n": { "en_us": { "value": "<p>Role</p>\n" } },
+          "type": "htmlComponent",
+          "extraSettings": {}
+        },
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 425, "y": 25 },
+              "lowerRight": { "x": 984, "y": 51 }
+            },
+            "stencilSuperIds": ["base-single-select", "Component"],
+            "stencilId": "cloud-single-select",
+            "customStencilId": null
+          },
+          "extraSettings": {
+            "tagsEnabled": false,
+            "preselectAll": false,
+            "clientSideFiltering": true,
+            "enableAutocomplete": true,
+            "autocompleteMinLength": 0,
+            "dataSource": "Rest",
+            "queryUrl": "/eq-api/party/partyRoleTypes?size=100",
+            "lookupUrl": "/eq-api/party/partyRoleTypes?size=100",
+            "path": "_embedded.partyRoleTypes",
+            "linkTargetView": "browse",
+            "formatItem": "{{$item.partyRoleType}}",
+            "storage": "Id",
+            "identity": "partyRoleType",
+            "linkTarget": "_blank",
+            "multi": false
+          },
+          "enabled": true,
+          "labelAlign": "top",
+          "value": "{{partyRoleType}}",
+          "size": 7,
+          "ignore": false,
+          "visible": true,
+          "isRequired": true,
+          "id": "single-select1",
+          "type": "select"
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 98 },
+              "lowerRight": { "x": 410, "y": 148 }
+            },
+            "stencilSuperIds": ["Output"],
+            "stencilId": "cloud-output",
+            "customStencilId": null
+          },
+          "labelAlign": "top",
+          "value": "<p>Auto Generate Role Assignment Name</p>\n",
+          "defaultValue": false,
+          "size": 5,
+          "ignore": false,
+          "visible": "{{!$payload.isEdit}}",
+          "enabled": "{{!$payload.isEdit}}",
+          "isRequired": false,
+          "id": "output2",
+          "i18n": {
+            "en_us": { "value": "<p>Auto Generate Role Assignment Name</p>\n" }
+          },
+          "type": "htmlComponent",
+          "extraSettings": {}
+        },
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 425, "y": 98 },
+              "lowerRight": { "x": 984, "y": 137 }
+            },
+            "stencilSuperIds": ["base-radiobuttons", "Component"],
+            "stencilId": "cloud-radiobuttons",
+            "customStencilId": null
+          },
+          "enabled": "{{!$payload.isEdit}}",
+          "extraSettings": {
+            "dataSource": "Static",
+            "items": [
+              { "text": "Yes", "value": "Yes", "checked": "true" },
+              { "text": "No", "value": "No" }
+            ],
+            "linkTargetView": "browse",
+            "storage": "Id",
+            "identity": "value",
+            "linkTarget": "_blank",
+            "display": "Horizontal"
+          },
+          "i18n": {
+            "en_us": {
+              "extraSettings": {
+                "items": [
+                  { "text": "Yes", "value": "Yes", "checked": "true" },
+                  { "text": "No", "value": "No" }
+                ]
+              }
+            }
+          },
+          "labelAlign": "top",
+          "value": "{{autoGenerateNameIndicator}}",
+          "size": 7,
+          "ignore": false,
+          "visible": "{{!$payload.isEdit}}",
+          "isRequired": true,
+          "id": "radiobuttons1",
+          "type": "radio"
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 171 },
+              "lowerRight": { "x": 410, "y": 221 }
+            },
+            "stencilSuperIds": ["Output"],
+            "stencilId": "cloud-output",
+            "customStencilId": null
+          },
+          "labelAlign": "top",
+          "value": "<p>Role Assignment Name</p>\n",
+          "defaultValue": false,
+          "size": 5,
+          "ignore": false,
+          "visible": "{{autoGenerateNameIndicator==\"No\" || $payload.isEdit}}",
+          "enabled": true,
+          "isRequired": false,
+          "id": "output7",
+          "i18n": { "en_us": { "value": "<p>Role Assignment Name</p>\n" } },
+          "type": "htmlComponent",
+          "extraSettings": {}
+        },
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 425, "y": 171 },
+              "lowerRight": { "x": 984, "y": 197 }
+            },
+            "stencilSuperIds": ["base-text", "Component"],
+            "stencilId": "cloud-text",
+            "customStencilId": null
+          },
+          "labelAlign": "top",
+          "value": "{{roleAssignmentName}}",
+          "size": 7,
+          "ignore": false,
+          "visible": "{{autoGenerateNameIndicator==\"No\"  || $payload.isEdit}}",
+          "enabled": "{{autoGenerateNameIndicator==\"No\"  || $payload.isEdit}}",
+          "isRequired": true,
+          "id": "text1",
+          "type": "text",
+          "extraSettings": {}
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 246 },
+              "lowerRight": { "x": 410, "y": 296 }
+            },
+            "stencilSuperIds": ["Output"],
+            "stencilId": "cloud-output",
+            "customStencilId": null
+          },
+          "labelAlign": "top",
+          "value": "<p>Investor Group</p>\n",
+          "defaultValue": false,
+          "size": 5,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "output3",
+          "i18n": { "en_us": { "value": "<p>Investor Group</p>\n" } },
+          "type": "htmlComponent",
+          "extraSettings": {}
+        },
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 425, "y": 246 },
+              "lowerRight": { "x": 984, "y": 272 }
+            },
+            "stencilSuperIds": ["base-multi-select", "Component"],
+            "stencilId": "cloud-multi-select",
+            "customStencilId": null
+          },
+          "extraSettings": {
+            "tagsEnabled": false,
+            "preselectAll": false,
+            "clientSideFiltering": true,
+            "enableAutocomplete": false,
+            "autocompleteMinLength": 1,
+            "dataSource": "Rest",
+            "queryUrl": "/eq-api/adminservice/investorGroups",
+            "lookupUrl": "/eq-api/adminservice/investorGroups",
+            "path": "_embedded.investorGroups",
+            "linkTargetView": "browse",
+            "formatItem": "{{$item.investorGroup}}",
+            "storage": "Full",
+            "identity": "investorGroupId",
+            "linkTarget": "_blank",
+            "multi": true
+          },
+          "enabled": true,
+          "labelAlign": "top",
+          "value": "{{stateRoleAssignmentInvestorGroupXrefs}}",
+          "size": 7,
+          "ignore": false,
+          "visible": true,
+          "isRequired": false,
+          "id": "multi-select5",
+          "type": "select"
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 321 },
+              "lowerRight": { "x": 410, "y": 371 }
+            },
+            "stencilSuperIds": ["Output"],
+            "stencilId": "cloud-output",
+            "customStencilId": null
+          },
+          "labelAlign": "top",
+          "value": "<p>Investor ID</p>\n",
+          "defaultValue": false,
+          "size": 5,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "output4",
+          "i18n": { "en_us": { "value": "<p>Investor ID</p>\n" } },
+          "type": "htmlComponent",
+          "extraSettings": {}
+        },
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 425, "y": 321 },
+              "lowerRight": { "x": 984, "y": 347 }
+            },
+            "stencilSuperIds": ["base-multi-select", "Component"],
+            "stencilId": "cloud-multi-select",
+            "customStencilId": null
+          },
+          "extraSettings": {
+            "tagsEnabled": false,
+            "preselectAll": false,
+            "clientSideFiltering": true,
+            "enableAutocomplete": false,
+            "autocompleteMinLength": 1,
+            "dataSource": "Rest",
+            "queryUrl": "/eq-api/party/investors/search/findAllInvestorBasedOnListOfInvestorGroups?sorted=true&investorGroups={{flw.mapAttr(stateRoleAssignmentInvestorGroupXrefs,'investorGroup')}}",
+            "lookupUrl": "/eq-api/party/investors/search/findAllInvestorBasedOnListOfInvestorGroups?sorted=true&investorGroups={{flw.mapAttr(stateRoleAssignmentInvestorGroupXrefs,'investorGroup')}}",
+            "path": "_embedded.investors",
+            "linkTargetView": "browse",
+            "formatItem": "{{$item.investorCode}}",
+            "storage": "Full",
+            "identity": "investorId",
+            "linkTarget": "_blank",
+            "multi": true
+          },
+          "enabled": true,
+          "labelAlign": "top",
+          "value": "{{stateRoleAssignmentInvestorXrefs}}",
+          "size": 7,
+          "ignore": false,
+          "visible": true,
+          "isRequired": false,
+          "id": "multi-select2",
+          "type": "select"
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 396 },
+              "lowerRight": { "x": 410, "y": 446 }
+            },
+            "stencilSuperIds": ["Output"],
+            "stencilId": "cloud-output",
+            "customStencilId": null
+          },
+          "labelAlign": "top",
+          "value": "<p>State</p>\n",
+          "defaultValue": false,
+          "size": 5,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "output5",
+          "i18n": { "en_us": { "value": "<p>State</p>\n" } },
+          "type": "htmlComponent",
+          "extraSettings": {}
+        },
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 425, "y": 396 },
+              "lowerRight": { "x": 984, "y": 422 }
+            },
+            "stencilSuperIds": ["base-multi-select", "Component"],
+            "stencilId": "cloud-multi-select",
+            "customStencilId": null
+          },
+          "extraSettings": {
+            "tagsEnabled": false,
+            "preselectAll": false,
+            "clientSideFiltering": true,
+            "enableAutocomplete": false,
+            "autocompleteMinLength": 1,
+            "dataSource": "Rest",
+            "queryUrl": "/eq-api/adminservice/states?page=0&size=1000",
+            "lookupUrl": "/eq-api/adminservice/states?page=0&size=1000",
+            "path": "_embedded.states",
+            "linkTargetView": "browse",
+            "formatItem": "{{$item.stateName}}",
+            "storage": "Full",
+            "identity": "stateCode",
+            "linkTarget": "_blank",
+            "multi": true
+          },
+          "enabled": true,
+          "labelAlign": "top",
+          "value": "{{stateRoleAssignmentStateXrefs}}",
+          "size": 7,
+          "ignore": false,
+          "visible": true,
+          "isRequired": true,
+          "id": "multi-select3",
+          "type": "select"
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 471 },
+              "lowerRight": { "x": 410, "y": 521 }
+            },
+            "stencilSuperIds": ["Output"],
+            "stencilId": "cloud-output",
+            "customStencilId": null
+          },
+          "labelAlign": "top",
+          "value": "<p>Users</p>\n",
+          "defaultValue": false,
+          "size": 5,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "output6",
+          "i18n": { "en_us": { "value": "<p>Users</p>\n" } },
+          "type": "htmlComponent",
+          "extraSettings": {}
+        },
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 425, "y": 471 },
+              "lowerRight": { "x": 984, "y": 497 }
+            },
+            "stencilSuperIds": ["base-multi-select", "Component"],
+            "stencilId": "cloud-multi-select",
+            "customStencilId": null
+          },
+          "extraSettings": {
+            "tagsEnabled": false,
+            "preselectAll": false,
+            "clientSideFiltering": true,
+            "enableAutocomplete": false,
+            "autocompleteMinLength": 1,
+            "dataSource": "Rest",
+            "queryUrl": "/eq-api/party/parties/search/findAllpartyRoleTypes?partyRoleType={{partyRoleType}}",
+            "lookupUrl": "/eq-api/party/parties/search/findAllpartyRoleTypes?partyRoleType={{partyRoleType}}",
+            "path": "_embedded.parties",
+            "linkTargetView": "browse",
+            "formatItem": "{{$item.individualFullName}}",
+            "storage": "Full",
+            "identity": "partyId",
+            "linkTarget": "_blank",
+            "multi": true
+          },
+          "enabled": true,
+          "labelAlign": "top",
+          "value": "{{stateRoleAssignmentPartyXrefs}}",
+          "size": 7,
+          "ignore": false,
+          "visible": true,
+          "isRequired": true,
+          "id": "multi-select4",
+          "type": "select"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "key": "tenantAdminPropertyRoleAssignmentEdit",
+    "name": "tenantAdminPropertyRoleAssignmentEdit",
+    "description": "",
+    "version": "11",
+    "type": "2",
+    "flowableDesignVersion": 3090
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "type": "panel",
+          "label": "",
+          "i18n": {},
+          "labelAlign": "top",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "sub-panel1",
+          "extraSettings": {
+            "collapsible": false,
+            "collapsed": false,
+            "showBorder": false,
+            "saveButtonVisible": false,
+            "saveButtonEnabled": false,
+            "cancelButtonVisible": false,
+            "cancelButtonEnabled": false,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "type": "dataTable",
+                      "i18n": {
+                        "en_us": {
+                          "extraSettings": {
+                            "columns": [
+                              {
+                                "label": "Loan Number",
+                                "id": "LOAN_NUMBER",
+                                "alignment": "left",
+                                "show": true,
+                                "accessor": "LOAN_NUMBER"
+                              },
+                              {
+                                "label": "REO Number",
+                                "id": "REO_NUMBER",
+                                "alignment": "left",
+                                "show": true,
+                                "accessor": "REO_NUMBER"
+                              },
+                              {
+                                "label": "Address",
+                                "id": "ADDRESS",
+                                "alignment": "left",
+                                "show": true,
+                                "accessor": "ADDRESS",
+                                "component": {
+                                  "type": "htmlComponent",
+                                  "value": "<span>{{$item.ADDRESS}}, {{$item.CITY}}, {{$item.STATE}} {{$item.ZIP}}</span>"
+                                },
+                                "minWidth": 200
+                              },
+                              {
+                                "label": "Property Status",
+                                "id": "PROPERTY_STATUS",
+                                "alignment": "left",
+                                "show": true,
+                                "accessor": "PROPERTY_STATUS"
+                              },
+                              {
+                                "label": "Property Type",
+                                "id": "PROPERTY_TYPE",
+                                "alignment": "left",
+                                "show": true,
+                                "accessor": "PROPERTY_TYPE"
+                              },
+                              {
+                                "label": "Servicer",
+                                "id": "Servicer",
+                                "alignment": "left",
+                                "show": true,
+                                "accessor": "TENANT_ID"
+                              },
+                              {
+                                "label": "List Price",
+                                "id": "list_price",
+                                "alignment": "left",
+                                "show": true,
+                                "accessor": "LIST_PRICE"
+                              }
+                            ],
+                            "noDataMessage": "No properties found"
+                          }
+                        },
+                        "de_de": {
+                          "extraSettings": {}
+                        },
+                        "fr_fr": {
+                          "extraSettings": {}
+                        },
+                        "it_it": {
+                          "extraSettings": {}
+                        },
+                        "es_es": {
+                          "extraSettings": {}
+                        }
+                      },
+                      "enabled": true,
+                      "extraSettings": {
+                        "dataSource": "Rest",
+                        "queryUrl": "{{additionalData.url}}?searchText={{searchCriteria.search}}&bathRoomCount={{searchCriteria.numOfBath}}&bedRoomCount={{searchCriteria.numOfBed}}&livingAreaFrom={{searchCriteria.livingMinArea}}&livingAreaTo={{searchCriteria.livingMaxArea}}&lotSizeFrom={{searchCriteria.lotSizeMin}}&lotSizeTo={{searchCriteria.lotSizeMax}}&builtYearFrom={{searchCriteria.buildYearMin}}&builtYearTo={{searchCriteria.buildYearMax}}&from={{$page * $pageSize}}&size={{$pageSize}}&sortOrder={{!$sortDirection ? searchCriteria.sortOrder : $sortDirection.toUpperCase()}}&sortFieldName={{!$sortColumn ? searchCriteria.sortFieldName : $sortColumn}}&tempTenantCode=internal",
+                        "path": "hits",
+                        "storage": "Full",
+                        "linkTarget": "_blank",
+                        "selectable": "Single",
+                        "output": {
+                          "numRows": "{{totalProperties}}"
+                        },
+                        "showPagination": true,
+                        "autoHidePagination": false,
+                        "clientPagination": false,
+                        "sortableColumns": true,
+                        "columns": [
+                          {
+                            "label": "Loan Number",
+                            "id": "LOAN_NUMBER",
+                            "alignment": "left",
+                            "show": true,
+                            "accessor": "LOAN_NUMBER"
+                          },
+                          {
+                            "label": "REO Number",
+                            "id": "REO_NUMBER",
+                            "alignment": "left",
+                            "show": true,
+                            "accessor": "REO_NUMBER"
+                          },
+                          {
+                            "label": "Address",
+                            "id": "ADDRESS",
+                            "alignment": "left",
+                            "show": true,
+                            "accessor": "ADDRESS",
+                            "component": {
+                              "type": "htmlComponent",
+                              "value": "<span>{{$item.ADDRESS}}, {{$item.CITY}}, {{$item.STATE}} {{$item.ZIP}}</span>"
+                            },
+                            "minWidth": 200
+                          },
+                          {
+                            "label": "Property Status",
+                            "id": "PROPERTY_STATUS",
+                            "alignment": "left",
+                            "show": true,
+                            "accessor": "PROPERTY_STATUS"
+                          },
+                          {
+                            "label": "Loan Type",
+                            "id": "PROPERTY_TYPE",
+                            "alignment": "left",
+                            "show": true,
+                            "accessor": "PROPERTY_TYPE"
+                          },
+                          {
+                            "label": "Servicer",
+                            "id": "Servicer",
+                            "alignment": "left",
+                            "show": true,
+                            "accessor": "TENANT_ID"
+                          },
+                          {
+                            "label": "List Price",
+                            "id": "list_price",
+                            "alignment": "left",
+                            "show": true,
+                            "accessor": "LIST_PRICE"
+                          }
+                        ],
+                        "filterable": false,
+                        "sortable": true,
+                        "multiSort": false,
+                        "pageSize": 20,
+                        "pageSizeOptions": [5, 10, 15, 20, 25, 50, 100],
+                        "showTotalRecords": false,
+                        "response": { "total": "totalHits" },
+                        "showRefreshButton": true,
+                        "noDataMessage": "No properties found"
+                      },
+                      "labelAlign": "top",
+                      "value": "{{selectedProperty}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "isRequired": false,
+                      "id": "propertyListingDataTable",
+                      "col": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "col": 0
+        }
+      ]
+    }
+  ]
+}

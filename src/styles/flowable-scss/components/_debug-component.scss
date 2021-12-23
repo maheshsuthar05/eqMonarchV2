@@ -1,0 +1,4 @@
+.flw__debug-component {
+  outline: 2px solid $flw-forms-debug-border;
+  outline: 2px solid var(--flw-forms-debug-border, $flw-forms-debug-border);
+}

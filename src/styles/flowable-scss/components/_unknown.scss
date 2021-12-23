@@ -1,0 +1,15 @@
+.flw__unknown {
+  flex: 1;
+  width: 100%;
+}
+
+.flw__unknown__definition {
+  font-family: $flw-font-monospace;
+  font-family: var(--flw-font-monospace, $flw-font-monospace);
+  font-size: $flw-text-xs;
+  font-size: var(--flw-text-xs, $flw-text-xs);
+  background: $flw-forms-muted-background-color;
+  background: var(--flw-forms-muted-background-color, $flw-forms-muted-background-color);
+  max-height: 200px;
+  overflow: auto;
+}

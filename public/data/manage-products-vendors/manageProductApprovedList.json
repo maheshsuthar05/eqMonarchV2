@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 0, "y": 0 },
+              "lowerRight": { "x": 0, "y": 0 }
+            },
+            "stencilSuperIds": [],
+            "stencilId": null,
+            "customStencilId": null
+          },
+          "type": "",
+          "size": 7
+        },
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 492, "y": 25 },
+              "lowerRight": { "x": 955, "y": 73 }
+            },
+            "stencilSuperIds": ["base-text", "Component"],
+            "stencilId": "cloud-text",
+            "customStencilId": null
+          },
+          "type": "text",
+          "placeholder": "search",
+          "i18n": { "en_us": { "placeholder": "search" } },
+          "labelAlign": "top",
+          "value": "{{searchText}}",
+          "size": 5,
+          "ignore": false,
+          "visible": false,
+          "enabled": true,
+          "isRequired": false,
+          "id": "productsearch",
+          "extraSettings": {}
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 74 },
+              "lowerRight": { "x": 984, "y": 166 }
+            },
+            "stencilSuperIds": ["base-datatable", "Component"],
+            "stencilId": "cloud-datatable",
+            "customStencilId": null
+          },
+          "type": "dataTable",
+          "label": "",
+          "i18n": {
+            "en_us": {
+              "label": "",
+              "extraSettings": {
+                "columns": [
+                  {
+                    "label": "Service Group",
+                    "id": "serviceGroup",
+                    "accessor": "PRODUCT_CATEGORY_NAME",
+                    "alignment": "justify",
+                    "filterable": true,
+                    "sortable": true,
+                    "show": true
+                  },
+                  {
+                    "label": "Product",
+                    "id": "product",
+                    "accessor": "PRODUCT_NAME",
+                    "alignment": "justify",
+                    "filterable": true,
+                    "sortable": true,
+                    "show": true
+                  },
+                  {
+                    "label": "Product Description",
+                    "id": "productDescription",
+                    "accessor": "PRODUCT_DESCRIPTION",
+                    "alignment": "justify",
+                    "filterable": true,
+                    "sortable": true,
+                    "show": true
+                  },
+                  {
+                    "label": "Actions",
+                    "id": "deleteButtons",
+                    "accessor": "deleteButtons",
+                    "alignment": "left",
+                    "component": {
+                        "type": "scriptButton",
+                        "size": 2,
+                        "value":"{{ $item }}",
+                        "extraSettings": {
+                            "text": "Delete",
+                            "tooltip": "Delete",
+                            "script": {
+                                "key": "Delete",
+                                "PRODUCT_KEY": "{{$item.PRODUCT_KEY}}",
+                              "PRODUCT_ID": "{{$item.PRODUCT_ID}}",
+                              "PRODUCT_NAME": "{{$item.PRODUCT_NAME}}"
+                            }
+                        }
+                    },
+                    "filterable": false,
+                    "maxWidth": 100,
+                    "minWidth": 100,
+                    "sortable": false,
+                    "show": true
+                }
+                ]
+              }
+            }
+          },
+          "enabled": true,
+          "extraSettings": {
+            "dataSource": "Rest",
+            "queryUrl": "/eq-api/prlisting/product/productList?productCategoryTypeCode=Vendor",
+            "path": "hits",
+            "linkTargetView": "browse",
+            "storage": "Full",
+            "linkTarget": "_blank",
+            "showPagination": true,
+            "autoHidePagination": true,
+            "clientPagination": true,
+            "sortableColumns": false,
+            "columns": [
+              {
+                "label": "Service Group",
+                "id": "serviceGroup",
+                "accessor": "PRODUCT_CATEGORY_NAME",
+                "alignment": "justify",
+                "filterable": "true",
+                "sortable": false,
+                "show": true
+              },
+              {
+                "label": "Product",
+                "id": "product",
+                "accessor": "PRODUCT_NAME",
+                "alignment": "justify",
+                "filterable": "true",
+                "sortable": false,
+                "show": true
+              },
+              {
+                "label": "Product Description",
+                "id": "productDescription",
+                "accessor": "PRODUCT_DESCRIPTION",
+                "alignment": "justify",
+                "filterable": "true",
+                "sortable": false,
+                "show": true
+              },
+              {
+                "label": "Actions",
+                "id": "buttonGroup",
+                "alignment": "right",
+                "component": {
+                  "type": "buttonGroup",
+                  "extraSettings": { "asDropdown": true },
+                  "alignment": "right",
+                  "buttonDefinitions": [
+                    {
+                      "type": "scriptButton",
+                      "extraSettings": {
+                        "text": "Delete",
+                        "tooltip": "delete",
+                        "script": {
+                          "key": "Delete",
+                          "PRODUCT_KEY": "{{$item.PRODUCT_KEY}}",
+                          "PRODUCT_ID": "{{$item.PRODUCT_ID}}",
+                          "PRODUCT_NAME": "{{$item.PRODUCT_NAME}}"
+                        }
+                      }
+                    }
+                  ]
+                },
+                "filterable": false,
+                "sortable": false,
+                "show": true
+              }
+            ],
+            "filterable": true,
+            "sortable": true,
+            "multiSort": true,
+            "pageSize": 20,
+            "pageSizeOptions": [5, 10, 20, 25, 50, 100],
+            "showTotalRecords": false,
+            "response": {},
+            "showRefreshButton": true,
+            "target": "_blank"
+          },
+          "labelAlign": "top",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "isRequired": false,
+          "id": "manageProducts"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "key": "manageProductApprovedList",
+    "name": "manageProductApprovedList",
+    "description": "",
+    "version": "14",
+    "type": "2"
+  }
+}

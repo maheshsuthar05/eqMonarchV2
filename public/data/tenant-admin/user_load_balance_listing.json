@@ -1,0 +1,628 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 25 },
+              "lowerRight": { "x": 985, "y": 632 }
+            },
+            "stencilSuperIds": ["SubSlotPanel"],
+            "stencilId": "cloud-sub-panel",
+            "customStencilId": null
+          },
+          "type": "panel",
+          "labelAlign": "top",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "sub-panel2",
+          "extraSettings": {
+            "collapsible": false,
+            "collapsed": false,
+            "showBorder": false,
+            "saveButtonVisible": true,
+            "saveButtonEnabled": true,
+            "cancelButtonVisible": true,
+            "cancelButtonEnabled": true,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 0, "y": 0 },
+                          "lowerRight": { "x": 0, "y": 0 }
+                        },
+                        "stencilSuperIds": [],
+                        "stencilId": null,
+                        "customStencilId": null
+                      },
+                      "type": "",
+                      "size": 9
+                    },
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 731, "y": 25 },
+                          "lowerRight": { "x": 955, "y": 51 }
+                        },
+                        "stencilSuperIds": ["Button"],
+                        "stencilId": "cloud-script-button",
+                        "customStencilId": null
+                      },
+                      "type": "scriptButton",
+                      "extraSettings": {
+                        "text": "Add User Case Load",
+                        "script": "{{example + 1}}",
+                        "autoExecute": false,
+                        "alignment": "left",
+                        "iconAlignment": "right"
+                      },
+                      "i18n": {
+                        "en_us": {
+                          "extraSettings": { "text": "Add User Case Load" }
+                        }
+                      },
+                      "labelAlign": "top",
+                      "value": "{{$payload.addUserCaseLoadModal}}",
+                      "size": 3,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "script-button1"
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 74 },
+                          "lowerRight": { "x": 955, "y": 166 }
+                        },
+                        "stencilSuperIds": ["base-datatable", "Component"],
+                        "stencilId": "cloud-datatable",
+                        "customStencilId": null
+                      },
+                      "type": "dataTable",
+                      "label": "User Load Balance",
+                      "i18n": {
+                        "en_us": {
+                          "label": "User Load Balance",
+                          "extraSettings": {
+                            "columns": [
+                              {
+                                "label": "Role",
+                                "id": "role",
+                                "accessor": "role",
+                                "alignment": "left",
+                                "filterable": "true",
+                                "sortable": "true",
+                                "show": true
+                              },
+                              {
+                                "label": "User Name",
+                                "id": "userName",
+                                "accessor": "userName",
+                                "alignment": "left",
+                                "filterable": "true",
+                                "sortable": "true",
+                                "show": true
+                              },
+                              {
+                                "label": "Max Caseload",
+                                "id": "maxCaseload",
+                                "accessor": "maxCaseload",
+                                "alignment": "left",
+                                "filterable": "true",
+                                "sortable": "true",
+                                "show": true
+                              },
+                              {
+                                "label": "Current Caseload",
+                                "id": "currentCaseload",
+                                "accessor": "currentCaseload",
+                                "alignment": "left",
+                                "filterable": "true",
+                                "sortable": "true",
+                                "show": true
+                              },
+                              {
+                                "label": "Daily Max Load",
+                                "id": "dailyMaxLoad",
+                                "accessor": "dailyMaxLoad",
+                                "alignment": "left",
+                                "filterable": "true",
+                                "sortable": "true",
+                                "show": true
+                              },
+                              {
+                                "label": "Today`s Load",
+                                "id": "todaysLoad",
+                                "accessor": "todaysLoad",
+                                "alignment": "left",
+                                "filterable": "true",
+                                "sortable": "true",
+                                "show": true
+                              },
+                              {
+                                "label": "Action",
+                                "id": "dropdown",
+                                "accessor": "dropdown",
+                                "alignment": "left",
+                                "component": {
+                                  "type": "buttonGroup",
+                                  "value": "{{$item}}",
+                                  "extraSettings": { "asDropdown": true },
+                                  "alignment": "right",
+                                  "buttonDefinitions": [
+                                    {
+                                      "type": "scriptButton",
+                                      "value": "{{$payload.addUserCaseLoadModal}}",
+                                      "extraSettings": {
+                                        "text": "Edit",
+                                        "script": "Edit",
+                                        "fileDetails": "{{$item}}"
+                                      }
+                                    },
+                                    {
+                                      "type": "scriptButton",
+                                      "value": "{{operationListActionButton}}",
+                                      "extraSettings": {
+                                        "text": "Delete",
+                                        "script": "Delete",
+                                        "fileDetails": "{{$item}}"
+                                      }
+                                    }
+                                  ]
+                                },
+                                "filterable": "false",
+                                "maxWidth": 75,
+                                "sortable": "false",
+                                "show": true
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "enabled": true,
+                      "extraSettings": {
+                        "dataSource": "Static",
+                        "items": [
+                          {
+                            "role": "ASSET MANAGER",
+                            "userName": "VASANI, SWEETY",
+                            "maxCaseload": "0",
+                            "currentCaseload": "0",
+                            "dailyMaxLoad": "0",
+                            "todaysLoad": "0"
+                          },
+                          {
+                            "role": "BUSINESS DEV MANAGER",
+                            "userName": "WADHWA, AMRATA",
+                            "maxCaseload": "0",
+                            "currentCaseload": "0",
+                            "dailyMaxLoad": "0",
+                            "todaysLoad": "0"
+                          },
+                          {
+                            "role": "CFR COORDINATOR",
+                            "userName": "GREENFIELD, CHAD",
+                            "maxCaseload": "0",
+                            "currentCaseload": "0",
+                            "dailyMaxLoad": "0",
+                            "todaysLoad": "0"
+                          },
+                          {
+                            "role": "DOCUMENT PROCESSOR",
+                            "userName": "GREENFIELD, CHAD",
+                            "maxCaseload": "0",
+                            "currentCaseload": "0",
+                            "dailyMaxLoad": "0",
+                            "todaysLoad": "0"
+                          },
+                          {
+                            "role": "EVICTION COORDINATOR",
+                            "userName": "GREENFIELD, CHAD",
+                            "maxCaseload": "0",
+                            "currentCaseload": "0",
+                            "dailyMaxLoad": "0",
+                            "todaysLoad": "0"
+                          }
+                        ],
+                        "linkTargetView": "browse",
+                        "storage": "Id",
+                        "identity": "value",
+                        "linkTarget": "_blank",
+                        "selectable": "Multiple",
+                        "showPagination": true,
+                        "autoHidePagination": false,
+                        "clientPagination": true,
+                        "sortableColumns": false,
+                        "columns": [
+                          {
+                            "label": "Role",
+                            "id": "role",
+                            "accessor": "role",
+                            "alignment": "left",
+                            "filterable": "true",
+                            "sortable": "true",
+                            "show": true
+                          },
+                          {
+                            "label": "User Name",
+                            "id": "userName",
+                            "accessor": "userName",
+                            "alignment": "left",
+                            "filterable": "true",
+                            "sortable": "true",
+                            "show": true
+                          },
+                          {
+                            "label": "Max Caseload",
+                            "id": "maxCaseload",
+                            "accessor": "maxCaseload",
+                            "alignment": "left",
+                            "filterable": "true",
+                            "sortable": "true",
+                            "show": true
+                          },
+                          {
+                            "label": "Current Caseload",
+                            "id": "currentCaseload",
+                            "accessor": "currentCaseload",
+                            "alignment": "left",
+                            "filterable": "true",
+                            "sortable": "true",
+                            "show": true
+                          },
+                          {
+                            "label": "Daily Max Load",
+                            "id": "dailyMaxLoad",
+                            "accessor": "dailyMaxLoad",
+                            "alignment": "left",
+                            "filterable": "true",
+                            "sortable": "true",
+                            "show": true
+                          },
+                          {
+                            "label": "Today`s Load",
+                            "id": "todaysLoad",
+                            "accessor": "todaysLoad",
+                            "alignment": "left",
+                            "filterable": "true",
+                            "sortable": "true",
+                            "show": true
+                          },
+                          {
+                            "label": "Action",
+                            "id": "dropdown",
+                            "accessor": "dropdown",
+                            "alignment": "left",
+                            "component": {
+                              "type": "buttonGroup",
+                              "value": "{{$item}}",
+                              "extraSettings": { "asDropdown": true },
+                              "alignment": "right",
+                              "buttonDefinitions": [
+                                {
+                                  "type": "scriptButton",
+                                  "value": "{{$payload.addUserCaseLoadModal}}",
+                                  "extraSettings": {
+                                    "text": "Edit",
+                                    "script": "Edit",
+                                    "fileDetails": "{{$item}}"
+                                  }
+                                },
+                                {
+                                  "type": "scriptButton",
+                                  "value": "{{operationListActionButton}}",
+                                  "extraSettings": {
+                                    "text": "Delete",
+                                    "script": "Delete",
+                                    "fileDetails": "{{$item}}"
+                                  }
+                                }
+                              ]
+                            },
+                            "filterable": "false",
+                            "maxWidth": 75,
+                            "sortable": "false",
+                            "show": true
+                          }
+                        ],
+                        "filterable": true,
+                        "sortable": true,
+                        "multiSort": false,
+                        "pageSizeOptions": [5, 10, 20, 25, 50, 100],
+                        "showTotalRecords": true,
+                        "response": {},
+                        "target": "_blank"
+                      },
+                      "labelAlign": "top",
+                      "value": "{{userLoadBalance}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "isRequired": false,
+                      "id": "datatable1"
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 191 },
+                          "lowerRight": { "x": 957, "y": 582 }
+                        },
+                        "stencilSuperIds": ["SubSlotPanel"],
+                        "stencilId": "cloud-modal-dialog",
+                        "customStencilId": null
+                      },
+                      "type": "modal",
+                      "label": "Add User Case Load",
+                      "i18n": { "en_us": { "label": "Add User Case Load" } },
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "modal-dialog1",
+                      "extraSettings": {
+                        "modalOpen": "{{$payload.addUserCaseLoadModal}}",
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "designInfo": {
+                                    "bounds": {
+                                      "upperLeft": { "x": 15, "y": 49 },
+                                      "lowerRight": { "x": 929, "y": 366 }
+                                    },
+                                    "stencilSuperIds": ["SubSlotPanel"],
+                                    "stencilId": "cloud-sub-panel",
+                                    "customStencilId": null
+                                  },
+                                  "type": "panel",
+                                  "labelAlign": "top",
+                                  "size": 12,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "sub-panel1",
+                                  "extraSettings": {
+                                    "collapsible": false,
+                                    "collapsed": false,
+                                    "showBorder": false,
+                                    "saveButtonVisible": true,
+                                    "saveButtonEnabled": true,
+                                    "cancelButtonVisible": true,
+                                    "cancelButtonEnabled": true,
+                                    "layoutDefinition": {
+                                      "rows": [
+                                        {
+                                          "cols": [
+                                            {
+                                              "designInfo": {
+                                                "bounds": {
+                                                  "upperLeft": {
+                                                    "x": 15,
+                                                    "y": 25
+                                                  },
+                                                  "lowerRight": {
+                                                    "x": 899,
+                                                    "y": 73
+                                                  }
+                                                },
+                                                "stencilSuperIds": [
+                                                  "base-single-select",
+                                                  "Component"
+                                                ],
+                                                "stencilId": "cloud-single-select",
+                                                "customStencilId": null
+                                              },
+                                              "type": "select",
+                                              "extraSettings": {
+                                                "tagsEnabled": false,
+                                                "preselectAll": false,
+                                                "clientSideFiltering": false,
+                                                "enableAutocomplete": false,
+                                                "autocompleteMinLength": 1,
+                                                "dataSource": "Static",
+                                                "linkTargetView": "browse",
+                                                "storage": "Id",
+                                                "identity": "value",
+                                                "linkTarget": "_blank",
+                                                "multi": false
+                                              },
+                                              "enabled": true,
+                                              "labelAlign": "top",
+                                              "value": "{{role}}",
+                                              "size": 12,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "isRequired": false,
+                                              "label": "Role:",
+                                              "i18n": {
+                                                "en_us": { "label": "Role:" }
+                                              },
+                                              "id": "single-select2"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "cols": [
+                                            {
+                                              "designInfo": {
+                                                "bounds": {
+                                                  "upperLeft": {
+                                                    "x": 15,
+                                                    "y": 98
+                                                  },
+                                                  "lowerRight": {
+                                                    "x": 899,
+                                                    "y": 146
+                                                  }
+                                                },
+                                                "stencilSuperIds": [
+                                                  "base-single-select",
+                                                  "Component"
+                                                ],
+                                                "stencilId": "cloud-single-select",
+                                                "customStencilId": null
+                                              },
+                                              "type": "select",
+                                              "extraSettings": {
+                                                "tagsEnabled": false,
+                                                "preselectAll": false,
+                                                "clientSideFiltering": false,
+                                                "enableAutocomplete": false,
+                                                "autocompleteMinLength": 1,
+                                                "dataSource": "Static",
+                                                "linkTargetView": "browse",
+                                                "storage": "Id",
+                                                "identity": "value",
+                                                "linkTarget": "_blank",
+                                                "multi": false
+                                              },
+                                              "enabled": true,
+                                              "labelAlign": "top",
+                                              "value": "{{user}}",
+                                              "size": 12,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "isRequired": false,
+                                              "label": "User:",
+                                              "i18n": {
+                                                "en_us": { "label": "User:" }
+                                              },
+                                              "id": "single-select3"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "cols": [
+                                            {
+                                              "designInfo": {
+                                                "bounds": {
+                                                  "upperLeft": {
+                                                    "x": 15,
+                                                    "y": 171
+                                                  },
+                                                  "lowerRight": {
+                                                    "x": 899,
+                                                    "y": 219
+                                                  }
+                                                },
+                                                "stencilSuperIds": [
+                                                  "base-text",
+                                                  "Component"
+                                                ],
+                                                "stencilId": "cloud-text",
+                                                "customStencilId": null
+                                              },
+                                              "type": "text",
+                                              "labelAlign": "top",
+                                              "value": "{{maxCaseload}}",
+                                              "size": 12,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "label": "Max Caseload:",
+                                              "i18n": {
+                                                "en_us": {
+                                                  "label": "Max Caseload:"
+                                                }
+                                              },
+                                              "id": "text1",
+                                              "extraSettings": {}
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "cols": [
+                                            {
+                                              "designInfo": {
+                                                "bounds": {
+                                                  "upperLeft": {
+                                                    "x": 15,
+                                                    "y": 244
+                                                  },
+                                                  "lowerRight": {
+                                                    "x": 899,
+                                                    "y": 292
+                                                  }
+                                                },
+                                                "stencilSuperIds": [
+                                                  "base-text",
+                                                  "Component"
+                                                ],
+                                                "stencilId": "cloud-text",
+                                                "customStencilId": null
+                                              },
+                                              "type": "text",
+                                              "labelAlign": "top",
+                                              "value": "{{dailyMaxLoad}}",
+                                              "size": 12,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "label": "Daily Max Load:",
+                                              "i18n": {
+                                                "en_us": {
+                                                  "label": "Daily Max Load:"
+                                                }
+                                              },
+                                              "id": "text2",
+                                              "extraSettings": {}
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "key": "userLoadBalance",
+    "name": "User Load Balance",
+    "description": "User Load Balance",
+    "version": "5",
+    "type": "2"
+  }
+}

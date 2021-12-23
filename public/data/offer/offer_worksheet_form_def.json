@@ -1,0 +1,32 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "type": "pdfViewer",
+          "i18n": {
+            "en_us": {},
+            "de_de": {},
+            "fr_fr": {},
+            "it_it": {},
+            "es_es": {}
+          },
+          "labelAlign": "top",
+          "value": "{{fileURL}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "previewFile",
+          "extraSettings": {
+            "height": 600,
+            "showBorder": true,
+            "type": "pdf"
+          },
+          "col": 0
+        }
+      ]
+    }
+  ]
+}

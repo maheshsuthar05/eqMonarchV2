@@ -1,0 +1,261 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "type": "panel",
+          "i18n": {},
+          "labelAlign": "top",
+          "size": 10,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "sub-panel1",
+          "extraSettings": {
+            "collapsible": false,
+            "collapsed": false,
+            "showBorder": false,
+            "saveButtonVisible": true,
+            "saveButtonEnabled": true,
+            "cancelButtonVisible": true,
+            "cancelButtonEnabled": true,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "type": "htmlComponent",
+                      "i18n": {
+                        "en_us": {
+                          "value": "<div class=\"saving-cls\">${{propertyProjectionsResults.savings_summary}}<div>\n  <style>\n    .saving-cls{\n    font-size: 3.6rem;\n      color: #F44336;\n          font-family: Muli,Roboto,\"Helvetica\",Arial,sans-serif;\n      font-weight: 300;\n    }\n  </style>  "
+                        },
+                        "de_de": {},
+                        "fr_fr": {},
+                        "it_it": {},
+                        "es_es": {}
+                      },
+                      "labelAlign": "top",
+                      "value": "<div class=\"saving-cls\">${{propertyProjectionsResults.savings_summary}}<div>\n  <style>\n    .saving-cls{\n    font-size: 3.6rem;\n      color: #F44336;\n          font-family: Muli,Roboto,\"Helvetica\",Arial,sans-serif;\n      font-weight: 300;\n    }\n  </style>  ",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "html-component1",
+                      "extraSettings": {
+                        "showBorder": false
+                      },
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "htmlComponent",
+                      "i18n": {
+                        "en_us": {
+                          "value": "<p>1st Recommend</p>\n"
+                        },
+                        "de_de": {},
+                        "fr_fr": {},
+                        "it_it": {},
+                        "es_es": {}
+                      },
+                      "labelAlign": "top",
+                      "value": "<p>1st Recommend</p>\n",
+                      "defaultValue": false,
+                      "size": 8,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "output1",
+                      "col": 0
+                    },
+                    {
+                      "type": "htmlComponent",
+                      "i18n": {
+                        "en_us": {
+                          "value": "<p>${{propertyProjectionsResults.savings_first_recommend}}</p>\n"
+                        },
+                        "de_de": {},
+                        "fr_fr": {},
+                        "it_it": {},
+                        "es_es": {}
+                      },
+                      "labelAlign": "top",
+                      "value": "<p>${{propertyProjectionsResults.savings_first_recommend}}</p>\n",
+                      "defaultValue": false,
+                      "size": 2,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "output2",
+                      "col": 8
+                    },
+                    {
+                      "size": 1,
+                      "type": ""
+                    },
+                    {
+                      "size": 1,
+                      "type": ""
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "htmlComponent",
+                      "i18n": {
+                        "en_us": {
+                          "value": "<p>Gain Loss</p>\n"
+                        },
+                        "de_de": {},
+                        "fr_fr": {},
+                        "it_it": {},
+                        "es_es": {}
+                      },
+                      "labelAlign": "top",
+                      "value": "<p>Gain Loss</p>\n",
+                      "defaultValue": false,
+                      "size": 8,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "output3",
+                      "col": 0
+                    },
+                    {
+                      "type": "htmlComponent",
+                      "i18n": {
+                        "en_us": {
+                          "value": "<p>${{propertyProjectionsResults.savings_gain}}</p>\n"
+                        },
+                        "de_de": {},
+                        "fr_fr": {},
+                        "it_it": {},
+                        "es_es": {}
+                      },
+                      "labelAlign": "top",
+                      "value": "<p>${{propertyProjectionsResults.savings_gain}}</p>\n",
+                      "defaultValue": false,
+                      "size": 3,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "output5",
+                      "col": 8
+                    },
+                    {
+                      "size": 1,
+                      "type": ""
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "htmlComponent",
+                      "i18n": {
+                        "en_us": {
+                          "value": "<p>Savings</p>\n"
+                        },
+                        "de_de": {},
+                        "fr_fr": {},
+                        "it_it": {},
+                        "es_es": {}
+                      },
+                      "labelAlign": "top",
+                      "value": "<p>Savings</p>\n",
+                      "defaultValue": false,
+                      "size": 8,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "output6",
+                      "col": 0
+                    },
+                    {
+                      "type": "htmlComponent",
+                      "i18n": {
+                        "en_us": {
+                          "value": "<p>${{propertyProjectionsResults.savings_summary}}</p>\n"
+                        },
+                        "de_de": {},
+                        "fr_fr": {},
+                        "it_it": {},
+                        "es_es": {}
+                      },
+                      "labelAlign": "top",
+                      "value": "<p>${{propertyProjectionsResults.savings_summary}}</p>\n",
+                      "defaultValue": false,
+                      "size": 3,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "output7",
+                      "col": 8
+                    },
+                    {
+                      "size": 1,
+                      "type": ""
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "scriptButton",
+                      "extraSettings": {
+                        "text": "total savings",
+                        "script": "{{propertyProjectionsResults.savings_first_recommend-propertyProjectionsResults.savings_gain}}",
+                        "timer": 2,
+                        "autoExecute": true,
+                        "alignment": "left",
+                        "iconAlignment": "right"
+                      },
+                      "i18n": {
+                        "en_us": {
+                          "extraSettings": {
+                            "text": "total savings"
+                          }
+                        }
+                      },
+                      "labelAlign": "top",
+                      "value": "{{propertyProjectionsResults.savings_summary}}",
+                      "defaultValue": 0,
+                      "size": 12,
+                      "ignore": false,
+                      "visible": false,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "script-button1",
+                      "col": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "col": 0
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        }
+      ]
+    }
+  ]
+}

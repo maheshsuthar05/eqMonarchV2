@@ -1,0 +1,1814 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "type": "htmlComponent",
+          "i18n": {
+            "en_us": {
+              "value": "<div style = \"\n             \tfont-size: 14px;\n    \t\t\tfont-weight: 600;\n    \t\t\tcolor: #44494C;\n    \t\t\tborder-bottom: 1px solid #D7D7D7;\n    \t\t\tmargin: 15px 0 10px 0;\n}\n              \"\n>\n<h2>Baseline Debenture Interest Loss<h2>\n  \n  <div>"
+            },
+            "de_de": {},
+            "fr_fr": {},
+            "it_it": {},
+            "es_es": {}
+          },
+          "labelAlign": "top",
+          "value": "<div style = \"\n             \tfont-size: 14px;\n    \t\t\tfont-weight: 600;\n    \t\t\tcolor: #44494C;\n    \t\t\tborder-bottom: 1px solid #D7D7D7;\n    \t\t\tmargin: 15px 0 10px 0;\n}\n              \"\n>\n<h2>Baseline Debenture Interest Loss<h2>\n  \n  <div>",
+          "size": 12,
+          "ignore": false,
+          "visible": false,
+          "enabled": true,
+          "isRequired": false,
+          "id": "html-component12",
+          "extraSettings": {
+            "showBorder": false
+          },
+          "col": 0
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "type": "panel",
+          "i18n": {},
+          "labelAlign": "top",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "sub-panel14",
+          "extraSettings": {
+            "collapsible": false,
+            "collapsed": false,
+            "showBorder": false,
+            "saveButtonVisible": true,
+            "saveButtonEnabled": true,
+            "cancelButtonVisible": true,
+            "cancelButtonEnabled": true,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 3,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel15",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": true,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<div style = \"\n              \tfont-size: 14px;\n    \t\t\tfont-weight: 600;\n    \t\t\tcolor: #44494C;\n    \t\t\tmargin: 15px 0 10px 0;\n              \">\n<h3 style = \"\n             \tmargin-top: 0;\n             color: #122230;\n    font-size: 12px;\n    font-weight: bold !Important;\n    \t\t\tmargin-bottom: 5px;\n             \">\nDefault\n</h3>\n</div>"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<div style = \"\n              \tfont-size: 14px;\n    \t\t\tfont-weight: 600;\n    \t\t\tcolor: #44494C;\n    \t\t\tmargin: 15px 0 10px 0;\n              \">\n<h3 style = \"\n             \tmargin-top: 0;\n             color: #122230;\n    font-size: 12px;\n    font-weight: bold !Important;\n    \t\t\tmargin-bottom: 5px;\n             \">\nDefault\n</h3>\n</div>",
+                                  "size": 12,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "html-component13",
+                                  "extraSettings": {
+                                    "showBorder": false
+                                  },
+                                  "col": 0
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Next Due Date</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Next Due Date</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output2",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "date",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.baseline_debenture_interest_next_due_date_actual}}",
+                                  "size": 5,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "date12",
+                                  "extraSettings": {
+                                    "enableTime": false
+                                  },
+                                  "col": 7
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Default Date</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Default Date</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output3",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "date",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.baseline_debenture_interest_default_date_actual}}",
+                                  "size": 5,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "date11",
+                                  "extraSettings": {
+                                    "enableTime": false
+                                  },
+                                  "col": 7
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    },
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 3,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel16",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": true,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<div style = \"\n              \tfont-size: 14px;\n    \t\t\tfont-weight: 600;\n    \t\t\tcolor: #44494C;\n    \t\t\tmargin: 15px 0 10px 0;\n              \">\n<h3 style = \"\n             \tmargin-top: 0;\n             color: #122230;\n    font-size: 12px;\n    font-weight: bold !Important;\n    \t\t\tmargin-bottom: 5px;\n             \">\nFirst Legal\n</h3>\n</div>"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<div style = \"\n              \tfont-size: 14px;\n    \t\t\tfont-weight: 600;\n    \t\t\tcolor: #44494C;\n    \t\t\tmargin: 15px 0 10px 0;\n              \">\n<h3 style = \"\n             \tmargin-top: 0;\n             color: #122230;\n    font-size: 12px;\n    font-weight: bold !Important;\n    \t\t\tmargin-bottom: 5px;\n             \">\nFirst Legal\n</h3>\n</div>",
+                                  "size": 12,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "html-component14",
+                                  "extraSettings": {
+                                    "showBorder": false
+                                  },
+                                  "col": 0
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Current Deadline</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Current Deadline</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output5",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "date",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.baseline_debenture_interest_first_legal_deadline}}",
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "date13",
+                                  "extraSettings": {
+                                    "enableTime": false
+                                  },
+                                  "col": 6
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Actual</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Actual</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output8",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "date",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.baseline_debenture_interest_first_legal_date_actual}}",
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "date14",
+                                  "extraSettings": {
+                                    "enableTime": false
+                                  },
+                                  "col": 6
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Curtailment</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Curtailment</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output9",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>${{propertyProjectionsResults.baseline_debenture_interest_first_legal_curtailment}}</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>${{propertyProjectionsResults.baseline_debenture_interest_first_legal_curtailment}}</p>\n",
+                                  "defaultValue": false,
+                                  "size": 5,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output10",
+                                  "col": 7
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 3
+                    },
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 3,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel17",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": true,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<div style = \"\n              \tfont-size: 14px;\n    \t\t\tfont-weight: 600;\n    \t\t\tcolor: #44494C;\n    \t\t\tmargin: 15px 0 10px 0;\n              \">\n<h3 style = \"\n             \tmargin-top: 0;\n             color: #122230;\n    font-size: 12px;\n    font-weight: bold !Important;\n    \t\t\tmargin-bottom: 5px;\n             \">\nFC Diligence\n</h3>"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<div style = \"\n              \tfont-size: 14px;\n    \t\t\tfont-weight: 600;\n    \t\t\tcolor: #44494C;\n    \t\t\tmargin: 15px 0 10px 0;\n              \">\n<h3 style = \"\n             \tmargin-top: 0;\n             color: #122230;\n    font-size: 12px;\n    font-weight: bold !Important;\n    \t\t\tmargin-bottom: 5px;\n             \">\nFC Diligence\n</h3>",
+                                  "size": 12,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "html-component15",
+                                  "extraSettings": {
+                                    "showBorder": false
+                                  },
+                                  "col": 0
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Current Deadline</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Current Deadline</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output11",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "date",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.baseline_debenture_interest_fc_diligence_deadline}}",
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "date15",
+                                  "extraSettings": {
+                                    "enableTime": false
+                                  },
+                                  "col": 6
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Actual</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Actual</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output12",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "date",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.baseline_debenture_interest_fc_diligence_actual}}",
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "date16",
+                                  "extraSettings": {
+                                    "enableTime": false
+                                  },
+                                  "col": 6
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Curtailment</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Curtailment</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output13",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>${{propertyProjectionsResults.baseline_debenture_interest_fc_diligence_curtailment}}</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>${{propertyProjectionsResults.baseline_debenture_interest_fc_diligence_curtailment}}</p>\n",
+                                  "defaultValue": false,
+                                  "size": 5,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output14",
+                                  "col": 7
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 6
+                    },
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 3,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel18",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": true,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<div style = \"\n              \tfont-size: 14px;\n    \t\t\tfont-weight: 600;\n    \t\t\tcolor: #44494C;\n    \t\t\tmargin: 15px 0 10px 0;\n              \">\n<h3 style = \"\n             \tmargin-top: 0;\n             color: #122230;\n    font-size: 12px;\n    font-weight: bold !Important;\n    \t\t\tmargin-bottom: 5px;\n             \">\nConveyance\n</h3>"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<div style = \"\n              \tfont-size: 14px;\n    \t\t\tfont-weight: 600;\n    \t\t\tcolor: #44494C;\n    \t\t\tmargin: 15px 0 10px 0;\n              \">\n<h3 style = \"\n             \tmargin-top: 0;\n             color: #122230;\n    font-size: 12px;\n    font-weight: bold !Important;\n    \t\t\tmargin-bottom: 5px;\n             \">\nConveyance\n</h3>",
+                                  "size": 12,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "html-component16",
+                                  "extraSettings": {
+                                    "showBorder": false
+                                  },
+                                  "col": 0
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Current Deadline</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Current Deadline</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output15",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "date",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.baseline_debenture_interest_conveyance_deadline}}",
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "date17",
+                                  "extraSettings": {
+                                    "enableTime": false
+                                  },
+                                  "col": 6
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Actual</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Actual</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output16",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "date",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.baseline_debenture_interest_conveyance_actual}}",
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "date18",
+                                  "extraSettings": {
+                                    "enableTime": false
+                                  },
+                                  "col": 6
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Curtailment</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Curtailment</p>\n",
+                                  "defaultValue": false,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output17",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>${{propertyProjectionsResults.baseline_debenture_interest_conveyance_curtailment}}</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>${{propertyProjectionsResults.baseline_debenture_interest_conveyance_curtailment}}</p>\n",
+                                  "defaultValue": false,
+                                  "size": 5,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output18",
+                                  "col": 7
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 9
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "styleClass": "baseline_interest_loss",
+                      "id": "sub-panel19",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "panel",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "size": 12,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "sub-panel27",
+                                  "extraSettings": {
+                                    "collapsible": false,
+                                    "collapsed": false,
+                                    "showBorder": false,
+                                    "saveButtonVisible": true,
+                                    "saveButtonEnabled": true,
+                                    "cancelButtonVisible": true,
+                                    "cancelButtonEnabled": true,
+                                    "layoutDefinition": {
+                                      "rows": [
+                                        {
+                                          "cols": [
+                                            {
+                                              "type": "htmlComponent",
+                                              "i18n": {
+                                                "en_us": {
+                                                  "value": "<div style = \"\n              \tfont-size: 14px;\n    \t\t\tfont-weight: 600;\n    \t\t\tcolor: #44494C;\n    \t\t\tmargin: 15px 0 10px 0;\n              \">\n<h3 style = \"\n             \tmargin-top: 0;\n    \t\t\tfont-size: 14px;\n    \t\t\tcolor: #44494C;\n             \tfont-weight: bold;\n    \t\t\tmargin-bottom: 5px;\n             \">\nBaseline Debenture Interest Loss\n</h3>\n</div>"
+                                                },
+                                                "de_de": {},
+                                                "fr_fr": {},
+                                                "it_it": {},
+                                                "es_es": {}
+                                              },
+                                              "labelAlign": "top",
+                                              "value": "<div style = \"\n              \tfont-size: 14px;\n    \t\t\tfont-weight: 600;\n    \t\t\tcolor: #44494C;\n    \t\t\tmargin: 15px 0 10px 0;\n              \">\n<h3 style = \"\n             \tmargin-top: 0;\n    \t\t\tfont-size: 14px;\n    \t\t\tcolor: #44494C;\n             \tfont-weight: bold;\n    \t\t\tmargin-bottom: 5px;\n             \">\nBaseline Debenture Interest Loss\n</h3>\n</div>",
+                                              "size": 7,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "id": "html-component17",
+                                              "extraSettings": {
+                                                "showBorder": false
+                                              },
+                                              "col": 0
+                                            },
+                                            {
+                                              "size": 1,
+                                              "type": ""
+                                            },
+                                            {
+                                              "size": 1,
+                                              "type": ""
+                                            },
+                                            {
+                                              "type": "number",
+                                              "i18n": {},
+                                              "labelAlign": "top",
+                                              "value": "{{propertyProjectionsResults.Baseline_Debenture_Interest_Loss}}",
+                                              "defaultValue": 0,
+                                              "size": 2,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "id": "float-number11",
+                                              "extraSettings": {
+                                                "numberType": "float",
+                                                "type": "one"
+                                              },
+                                              "col": 9
+                                            },
+                                            {
+                                              "size": 1,
+                                              "type": ""
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "col": 0
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<div style = \"\n              \tfont-size: 14px;\n    \t\t\tfont-weight: 600;\n    \t\t\tcolor: #44494C;\n    \t\t\tmargin: 15px 0 10px 0;\n              \">\n<h3 style = \"\n             \tmargin-top: 0;\n    \t\t\tfont-size: 14px;\n    \t\t\tcolor: #44494C;\n             \tfont-weight: bold;\n    \t\t\tmargin-bottom: 5px;\n             \">\nMilestone\n</h3>"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<div style = \"\n              \tfont-size: 14px;\n    \t\t\tfont-weight: 600;\n    \t\t\tcolor: #44494C;\n    \t\t\tmargin: 15px 0 10px 0;\n              \">\n<h3 style = \"\n             \tmargin-top: 0;\n    \t\t\tfont-size: 14px;\n    \t\t\tcolor: #44494C;\n             \tfont-weight: bold;\n    \t\t\tmargin-bottom: 5px;\n             \">\nMilestone\n</h3>",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "html-component31",
+                                  "extraSettings": {
+                                    "showBorder": false
+                                  },
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<div style = \"\n              \tfont-size: 14px;\n    \t\t\tfont-weight: 600;\n    \t\t\tcolor: #44494C;\n    \t\t\tmargin: 15px 0 10px 0;\n              \">\n<h3 style = \"\n             \tmargin-top: 0;\n    \t\t\tfont-size: 14px;\n    \t\t\tcolor: #44494C;\n             \tfont-weight: bold;\n    \t\t\tmargin-bottom: 5px;\n             \">\nDeadline\n</h3>"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<div style = \"\n              \tfont-size: 14px;\n    \t\t\tfont-weight: 600;\n    \t\t\tcolor: #44494C;\n    \t\t\tmargin: 15px 0 10px 0;\n              \">\n<h3 style = \"\n             \tmargin-top: 0;\n    \t\t\tfont-size: 14px;\n    \t\t\tcolor: #44494C;\n             \tfont-weight: bold;\n    \t\t\tmargin-bottom: 5px;\n             \">\nDeadline\n</h3>",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "html-component30",
+                                  "extraSettings": {
+                                    "showBorder": false
+                                  },
+                                  "col": 3
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<div style = \"\n              \tfont-size: 14px;\n    \t\t\tfont-weight: 600;\n    \t\t\tcolor: #44494C;\n    \t\t\tmargin: 15px 0 10px 0;\n              \">\n<h3 style = \"\n             \tmargin-top: 0;\n    \t\t\tfont-size: 14px;\n    \t\t\tcolor: #44494C;\n             \tfont-weight: bold;\n    \t\t\tmargin-bottom: 5px;\n             \">\nActual\n</h3>"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<div style = \"\n              \tfont-size: 14px;\n    \t\t\tfont-weight: 600;\n    \t\t\tcolor: #44494C;\n    \t\t\tmargin: 15px 0 10px 0;\n              \">\n<h3 style = \"\n             \tmargin-top: 0;\n    \t\t\tfont-size: 14px;\n    \t\t\tcolor: #44494C;\n             \tfont-weight: bold;\n    \t\t\tmargin-bottom: 5px;\n             \">\nActual\n</h3>",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "html-component29",
+                                  "extraSettings": {
+                                    "showBorder": false
+                                  },
+                                  "col": 6
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<div style = \"\n              \tfont-size: 14px;\n    \t\t\tfont-weight: 600;\n    \t\t\tcolor: #44494C;\n    \t\t\tmargin: 15px 0 10px 0;\n              \">\n<h3 style = \"\n             \tmargin-top: 0;\n    \t\t\tfont-size: 14px;\n    \t\t\tcolor: #44494C;\n             \tfont-weight: bold;\n    \t\t\tmargin-bottom: 5px;\n             \">\nCurtailment\n</h3>"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<div style = \"\n              \tfont-size: 14px;\n    \t\t\tfont-weight: 600;\n    \t\t\tcolor: #44494C;\n    \t\t\tmargin: 15px 0 10px 0;\n              \">\n<h3 style = \"\n             \tmargin-top: 0;\n    \t\t\tfont-size: 14px;\n    \t\t\tcolor: #44494C;\n             \tfont-weight: bold;\n    \t\t\tmargin-bottom: 5px;\n             \">\nCurtailment\n</h3>",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "html-component28",
+                                  "extraSettings": {
+                                    "showBorder": false
+                                  },
+                                  "col": 9
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<div style = \"\n    \t\t\tborder-bottom: 1px solid #D7D7D7;\n              \"\n>\n<div>"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<div style = \"\n    \t\t\tborder-bottom: 1px solid #D7D7D7;\n              \"\n>\n<div>",
+                                  "size": 12,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "html-component18",
+                                  "extraSettings": {
+                                    "showBorder": false
+                                  },
+                                  "col": 0
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "panel",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "size": 12,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "sub-panel20",
+                                  "extraSettings": {
+                                    "collapsible": false,
+                                    "collapsed": false,
+                                    "showBorder": false,
+                                    "saveButtonVisible": true,
+                                    "saveButtonEnabled": true,
+                                    "cancelButtonVisible": true,
+                                    "cancelButtonEnabled": true,
+                                    "layoutDefinition": {
+                                      "rows": [
+                                        {
+                                          "cols": [
+                                            {
+                                              "type": "htmlComponent",
+                                              "i18n": {
+                                                "en_us": {
+                                                  "value": "<div style = \"\n              \tfont-size: 14px;\n    \t\t\tfont-weight: 600;\n    \t\t\tcolor: #44494C;\n    \t\t\tmargin: 15px 0 10px 0;\n              \">\n<h3 style = \"\n             \tmargin-top: 0;\n    \t\t\tfont-size: 14px;\n    \t\t\tcolor: #44494C;\n             \tfont-weight: bold;\n    \t\t\tmargin-bottom: 5px;\n             \">\nNext Due Date\n</h3>\n</div>"
+                                                },
+                                                "de_de": {},
+                                                "fr_fr": {},
+                                                "it_it": {},
+                                                "es_es": {}
+                                              },
+                                              "labelAlign": "top",
+                                              "value": "<div style = \"\n              \tfont-size: 14px;\n    \t\t\tfont-weight: 600;\n    \t\t\tcolor: #44494C;\n    \t\t\tmargin: 15px 0 10px 0;\n              \">\n<h3 style = \"\n             \tmargin-top: 0;\n    \t\t\tfont-size: 14px;\n    \t\t\tcolor: #44494C;\n             \tfont-weight: bold;\n    \t\t\tmargin-bottom: 5px;\n             \">\nNext Due Date\n</h3>\n</div>",
+                                              "size": 2,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "id": "html-component20",
+                                              "extraSettings": {
+                                                "showBorder": false
+                                              },
+                                              "col": 0
+                                            },
+                                            {
+                                              "size": 1,
+                                              "type": ""
+                                            },
+                                            {
+                                              "type": "number",
+                                              "i18n": {},
+                                              "labelAlign": "top",
+                                              "value": "{{propertyProjectionsResults.baseline_debenture_interest_next_due_date_deadline}}",
+                                              "size": 2,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": false,
+                                              "isRequired": false,
+                                              "id": "float-number2",
+                                              "extraSettings": {
+                                                "numberType": "float",
+                                                "fractionSize": 2,
+                                                "type": "one"
+                                              },
+                                              "col": 3
+                                            },
+                                            {
+                                              "size": 1,
+                                              "type": ""
+                                            },
+                                            {
+                                              "type": "date",
+                                              "i18n": {},
+                                              "labelAlign": "top",
+                                              "value": "{{propertyProjectionsResults.baseline_debenture_interest_next_due_date_actual}}",
+                                              "size": 2,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "id": "date1",
+                                              "extraSettings": {
+                                                "enableTime": false
+                                              },
+                                              "col": 6
+                                            },
+                                            {
+                                              "size": 1,
+                                              "type": ""
+                                            },
+                                            {
+                                              "type": "number",
+                                              "i18n": {},
+                                              "labelAlign": "top",
+                                              "value": "{{propertyProjectionsResults.baseline_debenture_interest_next_due_date_curtailment}}",
+                                              "size": 2,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": false,
+                                              "isRequired": false,
+                                              "id": "float-number3",
+                                              "extraSettings": {
+                                                "numberType": "float",
+                                                "fractionSize": 2,
+                                                "type": "one"
+                                              },
+                                              "col": 9
+                                            },
+                                            {
+                                              "size": 1,
+                                              "type": ""
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "col": 0
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "panel",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "size": 12,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "sub-panel21",
+                                  "extraSettings": {
+                                    "collapsible": false,
+                                    "collapsed": false,
+                                    "showBorder": false,
+                                    "saveButtonVisible": true,
+                                    "saveButtonEnabled": true,
+                                    "cancelButtonVisible": true,
+                                    "cancelButtonEnabled": true,
+                                    "layoutDefinition": {
+                                      "rows": [
+                                        {
+                                          "cols": [
+                                            {
+                                              "type": "htmlComponent",
+                                              "i18n": {
+                                                "en_us": {
+                                                  "value": "<div style = \"\n              \tfont-size: 14px;\n    \t\t\tfont-weight: 600;\n    \t\t\tcolor: #44494C;\n    \t\t\tmargin: 15px 0 10px 0;\n              \">\n<h3 style = \"\n             \tmargin-top: 0;\n    \t\t\tfont-size: 14px;\n    \t\t\tcolor: #44494C;\n             \tfont-weight: bold;\n    \t\t\tmargin-bottom: 5px;\n             \">\nDefault Date\n</h3>\n</div>"
+                                                },
+                                                "de_de": {},
+                                                "fr_fr": {},
+                                                "it_it": {},
+                                                "es_es": {}
+                                              },
+                                              "labelAlign": "top",
+                                              "value": "<div style = \"\n              \tfont-size: 14px;\n    \t\t\tfont-weight: 600;\n    \t\t\tcolor: #44494C;\n    \t\t\tmargin: 15px 0 10px 0;\n              \">\n<h3 style = \"\n             \tmargin-top: 0;\n    \t\t\tfont-size: 14px;\n    \t\t\tcolor: #44494C;\n             \tfont-weight: bold;\n    \t\t\tmargin-bottom: 5px;\n             \">\nDefault Date\n</h3>\n</div>",
+                                              "size": 2,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "id": "html-component26",
+                                              "extraSettings": {
+                                                "showBorder": false
+                                              },
+                                              "col": 0
+                                            },
+                                            {
+                                              "size": 1,
+                                              "type": ""
+                                            },
+                                            {
+                                              "type": "date",
+                                              "i18n": {},
+                                              "labelAlign": "top",
+                                              "value": "{{propertyProjectionsResults.baseline_debenture_interest_default_date_deadline}}",
+                                              "size": 2,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "id": "date2",
+                                              "extraSettings": {
+                                                "enableTime": false
+                                              },
+                                              "col": 3
+                                            },
+                                            {
+                                              "size": 1,
+                                              "type": ""
+                                            },
+                                            {
+                                              "type": "date",
+                                              "i18n": {},
+                                              "labelAlign": "top",
+                                              "value": "{{propertyProjectionsResults.baseline_debenture_interest_default_date_actual}}",
+                                              "size": 2,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "id": "date3",
+                                              "extraSettings": {
+                                                "enableTime": false
+                                              },
+                                              "col": 6
+                                            },
+                                            {
+                                              "size": 1,
+                                              "type": ""
+                                            },
+                                            {
+                                              "type": "number",
+                                              "i18n": {},
+                                              "labelAlign": "top",
+                                              "value": "{{propertyProjectionsResults.baseline_debenture_interest_default_date_curtailment}}",
+                                              "size": 2,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": false,
+                                              "isRequired": false,
+                                              "id": "float-number4",
+                                              "extraSettings": {
+                                                "numberType": "float",
+                                                "fractionSize": 2,
+                                                "type": "one"
+                                              },
+                                              "col": 9
+                                            },
+                                            {
+                                              "size": 1,
+                                              "type": ""
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "col": 0
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "panel",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "size": 12,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "sub-panel22",
+                                  "extraSettings": {
+                                    "collapsible": false,
+                                    "collapsed": false,
+                                    "showBorder": false,
+                                    "saveButtonVisible": true,
+                                    "saveButtonEnabled": true,
+                                    "cancelButtonVisible": true,
+                                    "cancelButtonEnabled": true,
+                                    "layoutDefinition": {
+                                      "rows": [
+                                        {
+                                          "cols": [
+                                            {
+                                              "type": "htmlComponent",
+                                              "i18n": {
+                                                "en_us": {
+                                                  "value": "<div style = \"\n              \tfont-size: 14px;\n    \t\t\tfont-weight: 600;\n    \t\t\tcolor: #44494C;\n    \t\t\tmargin: 15px 0 10px 0;\n              \">\n<h3 style = \"\n             \tmargin-top: 0;\n    \t\t\tfont-size: 14px;\n    \t\t\tcolor: #44494C;\n             \tfont-weight: bold;\n    \t\t\tmargin-bottom: 5px;\n             \">\nFirst Legal\n</h3>\n</div>"
+                                                },
+                                                "de_de": {},
+                                                "fr_fr": {},
+                                                "it_it": {},
+                                                "es_es": {}
+                                              },
+                                              "labelAlign": "top",
+                                              "value": "<div style = \"\n              \tfont-size: 14px;\n    \t\t\tfont-weight: 600;\n    \t\t\tcolor: #44494C;\n    \t\t\tmargin: 15px 0 10px 0;\n              \">\n<h3 style = \"\n             \tmargin-top: 0;\n    \t\t\tfont-size: 14px;\n    \t\t\tcolor: #44494C;\n             \tfont-weight: bold;\n    \t\t\tmargin-bottom: 5px;\n             \">\nFirst Legal\n</h3>\n</div>",
+                                              "size": 2,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "id": "html-component21",
+                                              "extraSettings": {
+                                                "showBorder": false
+                                              },
+                                              "col": 0
+                                            },
+                                            {
+                                              "size": 1,
+                                              "type": ""
+                                            },
+                                            {
+                                              "type": "date",
+                                              "i18n": {},
+                                              "labelAlign": "top",
+                                              "value": "{{propertyProjectionsResults.baseline_debenture_interest_first_legal_deadline}}",
+                                              "size": 2,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "id": "date4",
+                                              "extraSettings": {
+                                                "enableTime": false
+                                              },
+                                              "col": 3
+                                            },
+                                            {
+                                              "size": 1,
+                                              "type": ""
+                                            },
+                                            {
+                                              "type": "date",
+                                              "i18n": {},
+                                              "labelAlign": "top",
+                                              "value": "{{propertyProjectionsResults.baseline_debenture_interest_first_legal_date_actual}}",
+                                              "size": 2,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "id": "date5",
+                                              "extraSettings": {
+                                                "enableTime": false
+                                              },
+                                              "col": 6
+                                            },
+                                            {
+                                              "size": 1,
+                                              "type": ""
+                                            },
+                                            {
+                                              "type": "number",
+                                              "i18n": {},
+                                              "labelAlign": "top",
+                                              "value": "{{propertyProjectionsResults.baseline_debenture_interest_first_legal_curtailment}}",
+                                              "defaultValue": 0,
+                                              "size": 2,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "id": "float-number5",
+                                              "extraSettings": {
+                                                "numberType": "float",
+                                                "type": "one"
+                                              },
+                                              "col": 9
+                                            },
+                                            {
+                                              "size": 1,
+                                              "type": ""
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "col": 0
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "panel",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "size": 12,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "sub-panel23",
+                                  "extraSettings": {
+                                    "collapsible": false,
+                                    "collapsed": false,
+                                    "showBorder": false,
+                                    "saveButtonVisible": true,
+                                    "saveButtonEnabled": true,
+                                    "cancelButtonVisible": true,
+                                    "cancelButtonEnabled": true,
+                                    "layoutDefinition": {
+                                      "rows": [
+                                        {
+                                          "cols": [
+                                            {
+                                              "type": "htmlComponent",
+                                              "i18n": {
+                                                "en_us": {
+                                                  "value": "<div style = \"\n              \tfont-size: 14px;\n    \t\t\tfont-weight: 600;\n    \t\t\tcolor: #44494C;\n    \t\t\tmargin: 15px 0 10px 0;\n              \">\n<h3 style = \"\n             \tmargin-top: 0;\n    \t\t\tfont-size: 14px;\n    \t\t\tcolor: #44494C;\n             \tfont-weight: bold;\n    \t\t\tmargin-bottom: 5px;\n             \">\nFC Diligence\n</h3>"
+                                                },
+                                                "de_de": {},
+                                                "fr_fr": {},
+                                                "it_it": {},
+                                                "es_es": {}
+                                              },
+                                              "labelAlign": "top",
+                                              "value": "<div style = \"\n              \tfont-size: 14px;\n    \t\t\tfont-weight: 600;\n    \t\t\tcolor: #44494C;\n    \t\t\tmargin: 15px 0 10px 0;\n              \">\n<h3 style = \"\n             \tmargin-top: 0;\n    \t\t\tfont-size: 14px;\n    \t\t\tcolor: #44494C;\n             \tfont-weight: bold;\n    \t\t\tmargin-bottom: 5px;\n             \">\nFC Diligence\n</h3>",
+                                              "size": 2,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "id": "html-component22",
+                                              "extraSettings": {
+                                                "showBorder": false
+                                              },
+                                              "col": 0
+                                            },
+                                            {
+                                              "size": 1,
+                                              "type": ""
+                                            },
+                                            {
+                                              "type": "date",
+                                              "i18n": {},
+                                              "labelAlign": "top",
+                                              "value": "{{propertyProjectionsResults.baseline_debenture_interest_fc_diligence_deadline}}",
+                                              "size": 2,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "id": "date6",
+                                              "extraSettings": {
+                                                "enableTime": false
+                                              },
+                                              "col": 3
+                                            },
+                                            {
+                                              "size": 1,
+                                              "type": ""
+                                            },
+                                            {
+                                              "type": "date",
+                                              "i18n": {},
+                                              "labelAlign": "top",
+                                              "value": "{{propertyProjectionsResults.baseline_debenture_interest_fc_diligence_actual}}",
+                                              "size": 2,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "id": "date7",
+                                              "extraSettings": {
+                                                "enableTime": false
+                                              },
+                                              "col": 6
+                                            },
+                                            {
+                                              "size": 1,
+                                              "type": ""
+                                            },
+                                            {
+                                              "type": "number",
+                                              "i18n": {},
+                                              "labelAlign": "top",
+                                              "value": "{{propertyProjectionsResults.baseline_debenture_interest_fc_diligence_curtailment}}",
+                                              "defaultValue": 0,
+                                              "size": 2,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "id": "float-number6",
+                                              "extraSettings": {
+                                                "numberType": "float",
+                                                "type": "one"
+                                              },
+                                              "col": 9
+                                            },
+                                            {
+                                              "size": 1,
+                                              "type": ""
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "col": 0
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "panel",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "size": 12,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "sub-panel24",
+                                  "extraSettings": {
+                                    "collapsible": false,
+                                    "collapsed": false,
+                                    "showBorder": false,
+                                    "saveButtonVisible": true,
+                                    "saveButtonEnabled": true,
+                                    "cancelButtonVisible": true,
+                                    "cancelButtonEnabled": true,
+                                    "layoutDefinition": {
+                                      "rows": [
+                                        {
+                                          "cols": [
+                                            {
+                                              "type": "htmlComponent",
+                                              "i18n": {
+                                                "en_us": {
+                                                  "value": "<div style = \"\n              \tfont-size: 14px;\n    \t\t\tfont-weight: 600;\n    \t\t\tcolor: #44494C;\n    \t\t\tmargin: 15px 0 10px 0;\n              \">\n<h3 style = \"\n             \tmargin-top: 0;\n    \t\t\tfont-size: 14px;\n    \t\t\tcolor: #44494C;\n             \tfont-weight: bold;\n    \t\t\tmargin-bottom: 5px;\n             \">\nConveyance\n</h3>"
+                                                },
+                                                "de_de": {},
+                                                "fr_fr": {},
+                                                "it_it": {},
+                                                "es_es": {}
+                                              },
+                                              "labelAlign": "top",
+                                              "value": "<div style = \"\n              \tfont-size: 14px;\n    \t\t\tfont-weight: 600;\n    \t\t\tcolor: #44494C;\n    \t\t\tmargin: 15px 0 10px 0;\n              \">\n<h3 style = \"\n             \tmargin-top: 0;\n    \t\t\tfont-size: 14px;\n    \t\t\tcolor: #44494C;\n             \tfont-weight: bold;\n    \t\t\tmargin-bottom: 5px;\n             \">\nConveyance\n</h3>",
+                                              "size": 2,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "id": "html-component23",
+                                              "extraSettings": {
+                                                "showBorder": false
+                                              },
+                                              "col": 0
+                                            },
+                                            {
+                                              "size": 1,
+                                              "type": ""
+                                            },
+                                            {
+                                              "type": "date",
+                                              "i18n": {},
+                                              "labelAlign": "top",
+                                              "value": "{{propertyProjectionsResults.baseline_debenture_interest_conveyance_deadline}}",
+                                              "size": 2,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "id": "date8",
+                                              "extraSettings": {
+                                                "enableTime": false
+                                              },
+                                              "col": 3
+                                            },
+                                            {
+                                              "size": 1,
+                                              "type": ""
+                                            },
+                                            {
+                                              "type": "date",
+                                              "i18n": {},
+                                              "labelAlign": "top",
+                                              "value": "{{propertyProjectionsResults.baseline_debenture_interest_conveyance_actual}}",
+                                              "size": 2,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "id": "date9",
+                                              "extraSettings": {
+                                                "enableTime": false
+                                              },
+                                              "col": 6
+                                            },
+                                            {
+                                              "size": 1,
+                                              "type": ""
+                                            },
+                                            {
+                                              "type": "number",
+                                              "i18n": {},
+                                              "labelAlign": "top",
+                                              "value": "{{propertyProjectionsResults.baseline_debenture_interest_conveyance_curtailment}}",
+                                              "defaultValue": 0,
+                                              "size": 2,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "id": "float-number8",
+                                              "extraSettings": {
+                                                "numberType": "float",
+                                                "type": "one"
+                                              },
+                                              "col": 9
+                                            },
+                                            {
+                                              "size": 1,
+                                              "type": ""
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "col": 0
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "panel",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "size": 12,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "sub-panel26",
+                                  "extraSettings": {
+                                    "collapsible": false,
+                                    "collapsed": false,
+                                    "showBorder": false,
+                                    "saveButtonVisible": true,
+                                    "saveButtonEnabled": true,
+                                    "cancelButtonVisible": true,
+                                    "cancelButtonEnabled": true,
+                                    "layoutDefinition": {
+                                      "rows": [
+                                        {
+                                          "cols": [
+                                            {
+                                              "type": "htmlComponent",
+                                              "i18n": {
+                                                "en_us": {
+                                                  "value": "<div style = \"\n              \tfont-size: 14px;\n    \t\t\tfont-weight: 600;\n    \t\t\tcolor: #44494C;\n    \t\t\tmargin: 15px 0 10px 0;\n              \">\n<h3 style = \"\n             \tmargin-top: 0;\n    \t\t\tfont-size: 14px;\n    \t\t\tcolor: #44494C;\n             \tfont-weight: bold;\n    \t\t\tmargin-bottom: 5px;\n             \">\nCurtailment Interest Loss\t\n</h3>"
+                                                },
+                                                "de_de": {},
+                                                "fr_fr": {},
+                                                "it_it": {},
+                                                "es_es": {}
+                                              },
+                                              "labelAlign": "top",
+                                              "value": "<div style = \"\n              \tfont-size: 14px;\n    \t\t\tfont-weight: 600;\n    \t\t\tcolor: #44494C;\n    \t\t\tmargin: 15px 0 10px 0;\n              \">\n<h3 style = \"\n             \tmargin-top: 0;\n    \t\t\tfont-size: 14px;\n    \t\t\tcolor: #44494C;\n             \tfont-weight: bold;\n    \t\t\tmargin-bottom: 5px;\n             \">\nCurtailment Interest Loss\t\n</h3>",
+                                              "size": 2,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "id": "html-component25",
+                                              "extraSettings": {
+                                                "showBorder": false
+                                              },
+                                              "col": 0
+                                            },
+                                            {
+                                              "size": 1,
+                                              "type": ""
+                                            },
+                                            {
+                                              "type": "number",
+                                              "i18n": {},
+                                              "labelAlign": "top",
+                                              "value": "{{empty}}",
+                                              "size": 2,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": false,
+                                              "isRequired": false,
+                                              "id": "float-number7",
+                                              "extraSettings": {
+                                                "numberType": "float",
+                                                "fractionSize": 2,
+                                                "type": "one"
+                                              },
+                                              "col": 3
+                                            },
+                                            {
+                                              "size": 1,
+                                              "type": ""
+                                            },
+                                            {
+                                              "type": "number",
+                                              "i18n": {},
+                                              "labelAlign": "top",
+                                              "value": "{{empty}}",
+                                              "size": 2,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": false,
+                                              "isRequired": false,
+                                              "id": "float-number9",
+                                              "extraSettings": {
+                                                "numberType": "float",
+                                                "fractionSize": 2,
+                                                "type": "one"
+                                              },
+                                              "col": 6
+                                            },
+                                            {
+                                              "size": 1,
+                                              "type": ""
+                                            },
+                                            {
+                                              "type": "number",
+                                              "i18n": {},
+                                              "labelAlign": "top",
+                                              "value": "{{propertyProjectionsResults.baseline_debenture_interest_curtailment_interest_lost}}",
+                                              "defaultValue": 0,
+                                              "size": 2,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": false,
+                                              "isRequired": false,
+                                              "id": "float-number10",
+                                              "extraSettings": {
+                                                "numberType": "float",
+                                                "fractionSize": 2,
+                                                "type": "one"
+                                              },
+                                              "col": 9
+                                            },
+                                            {
+                                              "size": 1,
+                                              "type": ""
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "col": 0
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "scriptButton",
+                      "extraSettings": {
+                        "text": "contailment interest loss",
+                        "script": "{{flw.sum([propertyProjectionsResults.baseline_debenture_interest_first_legal_curtailment,propertyProjectionsResults.baseline_debenture_interest_fc_diligence_curtailment,propertyProjectionsResults.baseline_debenture_interest_conveyance_curtailment])}}",
+                        "timer": 2,
+                        "autoExecute": true,
+                        "alignment": "left",
+                        "iconAlignment": "right"
+                      },
+                      "i18n": {
+                        "en_us": {
+                          "extraSettings": {
+                            "text": "contailment interest loss"
+                          }
+                        }
+                      },
+                      "labelAlign": "top",
+                      "value": "{{propertyProjectionsResults.baseline_debenture_interest_curtailment_interest_lost}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": false,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "script-button1",
+                      "col": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "col": 0
+        }
+      ]
+    }
+  ]
+}

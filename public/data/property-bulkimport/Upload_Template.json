@@ -1,0 +1,103 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "type": "htmlComponent",
+          "i18n": {
+            "en_us": {
+              "value": "<p>Template</p>\n"
+            },
+            "de_de": {},
+            "fr_fr": {},
+            "it_it": {},
+            "es_es": {}
+          },
+          "labelAlign": "top",
+          "value": "<p>Template</p>\n",
+          "defaultValue": false,
+          "size": 3,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "output1",
+          "col": 0
+        },
+        {
+          "type": "select",
+          "extraSettings": {
+            "tagsEnabled": false,
+            "preselectAll": false,
+            "clientSideFiltering": false,
+            "enableAutocomplete": false,
+            "dataSource": "Rest",
+            "queryUrl": "/eq-api/fileDetails/search/findAllByFileCategoryTypeOrPropLoanId?fileCategoryType=property_bulk_template",
+            "lookupUrl": "/eq-api/fileDetails/search/findAllByFileCategoryTypeOrPropLoanId?fileCategoryType=property_bulk_template",
+            "path": "_embedded.eqFiles",
+            "formatItem": "{{$item.fileName}}",
+            "storage": "Full",
+            "linkTarget": "_blank",
+            "multi": false
+          },
+          "i18n": {},
+          "enabled": true,
+          "labelAlign": "top",
+          "value": "{{selectTemplate}}",
+          "size": 9,
+          "ignore": false,
+          "visible": true,
+          "isRequired": false,
+          "id": "single-select1",
+          "col": 3
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "type": "htmlComponent",
+          "i18n": {
+            "en_us": {
+              "value": "<p>Select File</p>\n"
+            },
+            "de_de": {},
+            "fr_fr": {},
+            "it_it": {},
+            "es_es": {}
+          },
+          "labelAlign": "top",
+          "value": "<p>Select File</p>\n",
+          "defaultValue": false,
+          "size": 3,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "output2",
+          "col": 0
+        },
+        {
+          "type": "upload",
+          "labelAlign": "top",
+          "value": "{{selectFile}}",
+          "i18n": {},
+          "size": 9,
+          "visible": true,
+          "enabled": true,
+          "isRequired": true,
+          "id": "attachment1",
+          "extraSettings": {
+            "autoupload": false,
+            "downloadUrl": "rest/file/{{id}}",
+            "allowDelete": "newOnly",
+            "preview": "none",
+            "maxFiles": 1,
+            "acceptFileTypes": ".xlsx,.xls"
+          },
+          "col": 3
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+.flw__flw-form,
+.flw__buttongroup {
+  font-family: $flw-font-sans;
+  font-family: var(--flw-font-sans, $flw-font-sans);
+  // font-size: $flw-text-base;
+  // font-size: var(--flw-text-base, $flw-text-base);
+  font-weight: normal;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  background: $flw-forms-background-color;
+  background: var(--flw-forms-background-color, $flw-forms-background-color);
+  color: $flw-forms-text-color;
+  color: var(--flw-forms-text-color, $flw-forms-text-color);
+  margin: 0;
+  background-color: $flw-forms-background-color;
+  background-color: var(--flw-forms-background-color, $flw-forms-background-color);
+  padding: $flw-gutter;
+  padding: var(--flw-gutter, $flw-gutter);
+  width: auto;
+}
+
+.flw__flw-form ::-ms-clear,
+.flw__buttongroup ::-ms-clear {
+  display: none;
+}
+
+.flw__flw-form ::-ms-reveal,
+.flw__buttongroup ::-ms-reveal {
+  display: none;
+}

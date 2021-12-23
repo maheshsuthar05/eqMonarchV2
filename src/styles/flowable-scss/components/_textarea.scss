@@ -1,0 +1,60 @@
+.flw__textarea__input {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  vertical-align: top;
+  min-height: 60px;
+  height: auto;
+  border-radius: 0px
+}
+
+.flw__textarea__input::placeholder {
+  color: var(--flw-forms-muted-text-color, $flw-forms-muted-text-color) !important;
+  color: $flw-forms-muted-text-color;
+  color: var(--flw-forms-muted-text-color, $flw-forms-muted-text-color);
+}
+
+.flw__textarea h1 {
+  margin: 0 0 20px 0;
+  font-family: $flw-font-sans;
+  font-family: var(--flw-font-sans, $flw-font-sans);
+  font-weight: 300;
+  color: $flw-forms-label-text-color;
+  color: var(--flw-forms-label-text-color, $flw-forms-label-text-color);
+  text-transform: none;
+  font-size: $flw-text-3xl;
+  font-size: var(--flw-text-3xl, $flw-text-3xl);
+  line-height: 1.2;
+}
+
+.flw__textarea__html-input {
+  display: block;
+  unicode-bidi: embed;
+  white-space: pre;
+}
+
+.flw__textarea--left-aligned {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+}
+
+.flw__textarea--left-aligned .flw__label {
+  width: auto;
+  flex: 0 0 200px;
+  padding-right: 10px;
+  max-width: 40%;
+}
+
+.flw__textarea--left-aligned .flw__component__input {
+  display: flex;
+  width: 0;
+  flex-grow: 1;
+  flex-flow: row wrap;
+}
+
+.flw__textarea--left-aligned .flw__description,
+.flw__textarea--left-aligned .flw__error-list {
+  display: block;
+  width: 100%;
+  text-align: right;
+}

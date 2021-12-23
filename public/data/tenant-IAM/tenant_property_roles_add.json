@@ -1,0 +1,259 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 25 },
+              "lowerRight": { "x": 984, "y": 95 }
+            },
+            "stencilSuperIds": ["base-text", "Component"],
+            "stencilId": "cloud-text",
+            "customStencilId": null
+          },
+          "placeholder": "Enter Party role type",
+          "i18n": {
+            "en_us": {
+              "placeholder": "Enter Party role type",
+              "customValidations": [
+                {
+                  "expression": "{{roleTypeFlag}}",
+                  "errorMsg": "The role type you have entered already exists in database"
+                }
+              ],
+              "label": "Role Type",
+              "validationRegExpErrorMessage": "Please enter the valid role type"
+            }
+          },
+          "labelAlign": "top",
+          "value": "{{partyRoleType}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": "{{isEdit}}",
+          "isRequired": true,
+          "customValidations": [
+            {
+              "expression": "{{roleTypeFlag}}",
+              "errorMsg": "The role type you have entered already exists in database"
+            }
+          ],
+          "label": "Role Type",
+          "id": "text1",
+          "validationRegExp": "[-\\w\\s]+$",
+          "validationRegExpErrorMessage": "Please enter the valid role type",
+          "type": "text",
+          "extraSettings": {}
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 120 },
+              "lowerRight": { "x": 984, "y": 191 }
+            },
+            "stencilSuperIds": ["base-text", "Component"],
+            "stencilId": "cloud-text",
+            "customStencilId": null
+          },
+          "placeholder": "Enter Display Name",
+          "i18n": {
+            "en_us": {
+              "placeholder": "Enter Display Name",
+              "label": "Display Name",
+              "validationRegExpErrorMessage": "Please enter the valid display name"
+            }
+          },
+          "labelAlign": "top",
+          "value": "{{partyRoleTypeDisplay}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": true,
+          "label": "Display Name",
+          "id": "text2",
+          "validationRegExp": "[-\\w\\s]+$",
+          "validationRegExpErrorMessage": "Please enter the valid display name",
+          "type": "text",
+          "extraSettings": {}
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 216 },
+              "lowerRight": { "x": 984, "y": 288 }
+            },
+            "stencilSuperIds": ["base-text-area", "Component"],
+            "stencilId": "cloud-text-area",
+            "customStencilId": null
+          },
+          "placeholder": "Enter Description",
+          "i18n": {
+            "en_us": {
+              "placeholder": "Enter Description",
+              "label": "Description"
+            }
+          },
+          "labelAlign": "top",
+          "value": "{{partyRoleTypeDescription}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "label": "Description",
+          "id": "text-area1",
+          "type": "textarea",
+          "extraSettings": {}
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 313 },
+              "lowerRight": { "x": 984, "y": 361 }
+            },
+            "stencilSuperIds": ["base-checkbox", "Component"],
+            "stencilId": "cloud-checkbox",
+            "customStencilId": null
+          },
+          "labelAlign": "top",
+          "value": "{{partyRoleTypeTeamLeadIndicator}}",
+          "defaultValue": false,
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "label": "Team Lead Indicator",
+          "i18n": { "en_us": { "label": "Team Lead Indicator" } },
+          "id": "checkbox4",
+          "type": "boolean",
+          "extraSettings": {}
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 386 },
+              "lowerRight": { "x": 984, "y": 434 }
+            },
+            "stencilSuperIds": ["base-checkbox", "Component"],
+            "stencilId": "cloud-checkbox",
+            "customStencilId": null
+          },
+          "labelAlign": "top",
+          "value": "{{requiresDefaultPartyIndicator}}",
+          "defaultValue": false,
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "label": "Default Indicator",
+          "i18n": { "en_us": { "label": "Default Indicator" } },
+          "id": "checkbox5",
+          "type": "boolean",
+          "extraSettings": {}
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 459 },
+              "lowerRight": { "x": 984, "y": 507 }
+            },
+            "stencilSuperIds": ["base-checkbox", "Component"],
+            "stencilId": "cloud-checkbox",
+            "customStencilId": null
+          },
+          "labelAlign": "top",
+          "value": "{{autoAssignIndicator}}",
+          "defaultValue": false,
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "label": "Auto Assignment Indicator",
+          "i18n": { "en_us": { "label": "Auto Assignment Indicator" } },
+          "id": "checkbox3",
+          "type": "boolean",
+          "extraSettings": {}
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 532 },
+              "lowerRight": { "x": 984, "y": 603 }
+            },
+            "stencilSuperIds": ["base-multi-select", "Component"],
+            "stencilId": "cloud-multi-select",
+            "customStencilId": null
+          },
+          "extraSettings": {
+            "tagsEnabled": false,
+            "preselectAll": false,
+            "clientSideFiltering": true,
+            "enableAutocomplete": true,
+            "autocompleteMinLength": 0,
+            "dataSource": "Rest",
+            "queryUrl": "/eq-api/party/parties/search/getAllPartiesWithUserIds",
+            "lookupUrl": "/eq-api/party/parties/search/getAllPartiesWithUserIds",
+            "path": "_embedded.parties",
+            "linkTargetView": "browse",
+            "formatItem": "{{$item.individualFullName}}",
+            "storage": "Full",
+            "identity": "userId",
+            "linkTarget": "_blank",
+            "multi": true
+          },
+          "placeholder": "Select Users",
+          "i18n": {
+            "en_us": { "placeholder": "Select Users", "label": "Users" }
+          },
+          "enabled": true,
+          "labelAlign": "top",
+          "value": "{{listForAdd}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "isRequired": true,
+          "label": "Users",
+          "id": "multi-select1",
+          "type": "select"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "key": "iAMPropertyRolesAdd",
+    "name": "IAMPropertyRolesAdd",
+    "description": "",
+    "version": "4",
+    "type": "2",
+    "flowableDesignVersion": 3090
+  }
+}

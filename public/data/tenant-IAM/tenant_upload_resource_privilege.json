@@ -1,0 +1,58 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 25 },
+              "lowerRight": { "x": 984, "y": 73 }
+            },
+            "stencilSuperIds": ["base-attachment", "Component"],
+            "stencilId": "cloud-attachment",
+            "customStencilId": null
+          },
+          "type": "upload",
+          "labelAlign": "top",
+          "tooltip": "Upload resource file",
+          "i18n": {
+            "en_us": {
+              "tooltip": "Upload resource file",
+              "label": "Upload",
+              "extraSettings": {
+                "minFilesErrorMessage": "Please select the documents"
+              }
+            }
+          },
+          "value": "{{resFile}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": true,
+          "styleClass": "tenant-iam-resouce-privilige-documents-upload",
+          "label": "Upload",
+          "id": "attachment1",
+          "extraSettings": {
+            "autoupload": false,
+            "downloadUrl": "rest/file/{{id}}",
+            "allowDelete": "newOnly",
+            "preview": "none",
+            "minFiles": 1,
+            "minFilesErrorMessage": "Please select the documents",
+            "maxFiles": 1,
+            "acceptFileTypes": ".csv"
+          }
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "key": "uploadResourcePrivilegesTenantIAM",
+    "name": "UploadResourcePrivilegesTenantIAM",
+    "description": "",
+    "version": "2",
+    "type": "2",
+    "flowableDesignVersion": 3087
+  }
+}

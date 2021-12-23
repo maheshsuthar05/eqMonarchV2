@@ -1,0 +1,13 @@
+.flw__error-list__error-list-item {
+  display: block;
+  padding: 2px 0;
+  font-size: $flw-text-sm;
+  font-size: var(--flw-text-sm, $flw-text-sm);
+  color: $flw-forms-error-color;
+  color: var(--flw-forms-error-color, $flw-forms-error-color);
+  font-family: $flw-font-sans;
+  font-family: var(--flw-font-sans, $flw-font-sans);
+}
+.flw__container--invalid-subErrors__error-list__error-list-item {
+  display: none;
+}

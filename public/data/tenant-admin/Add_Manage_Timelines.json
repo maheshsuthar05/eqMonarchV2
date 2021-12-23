@@ -1,0 +1,920 @@
+{
+    "rows": [
+      {
+        "cols": [
+          {
+            "type": "panel",
+            "i18n": {},
+            "labelAlign": "top",
+            "size": 12,
+            "ignore": false,
+            "visible": true,
+            "enabled": true,
+            "isRequired": false,
+            "id": "sub-panel2",
+            "extraSettings": {
+              "collapsible": false,
+              "collapsed": false,
+              "showBorder": false,
+              "saveButtonVisible": true,
+              "saveButtonEnabled": true,
+              "cancelButtonVisible": true,
+              "cancelButtonEnabled": true,
+              "layoutDefinition": {
+                "rows": [
+                  {
+                    "cols": [
+                      {
+                        "type": "select",
+                        "extraSettings": {
+                          "tagsEnabled": false,
+                          "preselectAll": false,
+                          "clientSideFiltering": false,
+                          "enableAutocomplete": true,
+                          "autocompleteMinLength": 0,
+                          "dataSource": "Rest",
+                          "queryUrl": "{{additionalData.url}}?tempTenantCode={{additionalData.tenantCode}}&size=1000",
+                          "lookupUrl": "{{additionalData.url}}?tempTenantCode={{additionalData.tenantCode}}&size=1000",
+                          "path": "_embedded.investorGroups",
+                          "formatItem": "{{$item.investorGroup}}",
+                          "storage": "Id",
+                          "identity": "investorGroup",
+                          "linkTarget": "_blank",
+                          "multi": true
+                        },
+                        "i18n": {
+                          "en_us": {
+                            "label": "Investor Group:"
+                          }
+                        },
+                        "enabled": true,
+                        "labelAlign": "left",
+                        "value": "{{investorGroupList}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "isRequired": true,
+                        "label": "Investor Group:",
+                        "id": "multi-select1",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "select",
+                        "extraSettings": {
+                          "tagsEnabled": false,
+                          "preselectAll": false,
+                          "clientSideFiltering": false,
+                          "enableAutocomplete": true,
+                          "autocompleteMinLength": 0,
+                          "dataSource": "Rest",
+                          "queryUrl": "{{additionalData.vendorURL}}/?searchText= AND APPROVED",
+                          "lookupUrl": "{{additionalData.vendorURL}}/?searchText= AND APPROVED",
+                          "path": "hits",
+                          "formatItem": "{{$item.PRODUCT_NAME}}",
+                          "storage": "Full",
+                          "linkTarget": "_blank",
+                          "multi": false
+                        },
+                        "i18n": {
+                          "en_us": {
+                            "label": "Vendor:"
+                          }
+                        },
+                        "enabled": "{{additionalData.isEdit}}",
+                        "labelAlign": "left",
+                        "value": "{{vendorName}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "isRequired": true,
+                        "label": "Vendor:",
+                        "id": "single-select1",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "select",
+                        "extraSettings": {
+                          "tagsEnabled": false,
+                          "preselectAll": false,
+                          "enableAutocomplete": true,
+                          "autocompleteMinLength": 0,
+                          "dataSource": "Static",
+                          "items": "{{additionalData.agentTypeList}}",
+                          "formatItem": "{{$item.enumerationDisplayName}}",
+                          "storage": "Id",
+                          "identity": "enumerationDisplayName",
+                          "linkTarget": "_blank",
+                          "multi": true
+                        },
+                        "i18n": {
+                          "en_us": {
+                            "extraSettings": {
+                              "items": "{{additionalData.agentTypeList}}"
+                            },
+                            "label": "Agent Type:"
+                          }
+                        },
+                        "enabled": true,
+                        "labelAlign": "left",
+                        "value": "{{AgentTypeList}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "isRequired": true,
+                        "label": "Agent Type:",
+                        "id": "multi-select3",
+                        "col": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            "col": 0
+          }
+        ]
+      },
+      {
+        "cols": [
+          {
+            "type": "panel",
+            "i18n": {},
+            "labelAlign": "top",
+            "size": 12,
+            "ignore": false,
+            "visible": true,
+            "enabled": true,
+            "isRequired": false,
+            "id": "sub-panel3",
+            "extraSettings": {
+              "collapsible": false,
+              "collapsed": false,
+              "showBorder": false,
+              "saveButtonVisible": false,
+              "saveButtonEnabled": false,
+              "cancelButtonVisible": false,
+              "cancelButtonEnabled": false,
+              "layoutDefinition": {
+                "rows": [
+                  {
+                    "cols": [
+                      {
+                        "type": "radio",
+                        "i18n": {
+                          "en_us": {
+                            "extraSettings": {
+                              "items": [
+                                {
+                                  "text": "Yes",
+                                  "value": "true",
+                                  "checked": "true"
+                                },
+                                {
+                                  "text": "No",
+                                  "value": "false"
+                                }
+                              ]
+                            },
+                            "label": "Updated Agent Value Should Fire:"
+                          }
+                        },
+                        "enabled": true,
+                        "extraSettings": {
+                          "dataSource": "Static",
+                          "items": [
+                            {
+                              "text": "Yes",
+                              "value": "true",
+                              "checked": "true"
+                            },
+                            {
+                              "text": "No",
+                              "value": "false"
+                            }
+                          ],
+                          "storage": "Id",
+                          "identity": "value",
+                          "linkTarget": "_blank",
+                          "display": "Horizontal"
+                        },
+                        "labelAlign": "left",
+                        "value": "{{fireUpdatedAgentValue}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "isRequired": true,
+                        "label": "Updated Agent Value Should Fire:",
+                        "id": "radiobuttons1",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "number",
+                        "i18n": {
+                          "en_us": {
+                            "label": "Number of Days"
+                          }
+                        },
+                        "labelAlign": "left",
+                        "value": "{{numOfDaysForUAVF}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": "{{fireUpdatedAgentValue == 'true'}}",
+                        "enabled": true,
+                        "isRequired": "{{fireUpdatedAgentValue == 'true'}}",
+                        "label": "Number of Days",
+                        "id": "integer-number1",
+                        "extraSettings": {
+                          "numberType": "integer",
+                          "fractionSize": 0,
+                          "type": "one"
+                        },
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "radio",
+                        "i18n": {
+                          "en_us": {
+                            "extraSettings": {
+                              "items": [
+                                {
+                                  "text": "Yes",
+                                  "value": "Yes"
+                                },
+                                {
+                                  "text": "No",
+                                  "value": "No"
+                                }
+                              ]
+                            },
+                            "label": "Order Appraisal Should Fire When Vacant:"
+                          }
+                        },
+                        "enabled": true,
+                        "extraSettings": {
+                          "dataSource": "Static",
+                          "items": [
+                            {
+                              "text": "Yes",
+                              "value": "Yes"
+                            },
+                            {
+                              "text": "No",
+                              "value": "No"
+                            }
+                          ],
+                          "storage": "Id",
+                          "identity": "value",
+                          "linkTarget": "_blank",
+                          "display": "Horizontal"
+                        },
+                        "labelAlign": "left",
+                        "value": "{{fireOrderAppraisalVacant}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "isRequired": true,
+                        "label": "Order Appraisal Should Fire When Vacant:",
+                        "id": "radiobuttons2",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "number",
+                        "i18n": {
+                          "en_us": {
+                            "label": "Number of Days"
+                          }
+                        },
+                        "labelAlign": "left",
+                        "value": "{{numOfDaysForOAV}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": "{{fireOrderAppraisalVacant == \"true\"}}",
+                        "enabled": true,
+                        "isRequired": "{{fireOrderAppraisalVacant == \"true\"}}",
+                        "label": "Number of Days",
+                        "id": "integer-number2",
+                        "extraSettings": {
+                          "numberType": "integer",
+                          "fractionSize": 0,
+                          "type": "one"
+                        },
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "radio",
+                        "i18n": {
+                          "en_us": {
+                            "extraSettings": {
+                              "items": [
+                                {
+                                  "text": "Yes",
+                                  "value": "true",
+                                  "checked": "true"
+                                },
+                                {
+                                  "text": "No",
+                                  "value": "false"
+                                }
+                              ]
+                            },
+                            "label": "Independent BPO Should Fire When Vacant:"
+                          }
+                        },
+                        "enabled": true,
+                        "extraSettings": {
+                          "dataSource": "Static",
+                          "items": [
+                            {
+                              "text": "Yes",
+                              "value": "true",
+                              "checked": "true"
+                            },
+                            {
+                              "text": "No",
+                              "value": "false"
+                            }
+                          ],
+                          "storage": "Id",
+                          "identity": "value",
+                          "linkTarget": "_blank",
+                          "display": "Horizontal"
+                        },
+                        "labelAlign": "left",
+                        "value": "{{fireBpoVacant}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "isRequired": true,
+                        "label": "Independent BPO Should Fire When Vacant:",
+                        "id": "radiobuttons3",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "number",
+                        "i18n": {
+                          "en_us": {
+                            "label": "Number of Days"
+                          }
+                        },
+                        "labelAlign": "left",
+                        "value": "{{numOfDaysForIndependentBPOVacant}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": "{{fireBpoVacant == \"true\"}}",
+                        "enabled": true,
+                        "isRequired": "{{fireBpoVacant == \"true\"}}",
+                        "label": "Number of Days",
+                        "id": "integer-number3",
+                        "extraSettings": {
+                          "numberType": "integer",
+                          "fractionSize": 0,
+                          "type": "one"
+                        },
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "radio",
+                        "i18n": {
+                          "en_us": {
+                            "extraSettings": {
+                              "items": [
+                                {
+                                  "text": "Yes",
+                                  "value": "true",
+                                  "checked": "true"
+                                },
+                                {
+                                  "text": "No",
+                                  "value": "false"
+                                }
+                              ]
+                            },
+                            "label": "Order Exterior Appraisal Should Fire When Occupied:"
+                          }
+                        },
+                        "enabled": true,
+                        "extraSettings": {
+                          "dataSource": "Static",
+                          "items": [
+                            {
+                              "text": "Yes",
+                              "value": "true",
+                              "checked": "true"
+                            },
+                            {
+                              "text": "No",
+                              "value": "false"
+                            }
+                          ],
+                          "storage": "Id",
+                          "identity": "value",
+                          "linkTarget": "_blank",
+                          "display": "Horizontal"
+                        },
+                        "labelAlign": "left",
+                        "value": "{{fireOrderAppraisalOccupied}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "isRequired": true,
+                        "label": "Order Exterior Appraisal Should Fire When Occupied:",
+                        "id": "radiobuttons4",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "number",
+                        "i18n": {
+                          "en_us": {
+                            "label": "Number of Days"
+                          }
+                        },
+                        "labelAlign": "left",
+                        "value": "{{numOfDaysForOEAOccupied}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": "{{fireOrderAppraisalOccupied == \"true\"}}",
+                        "enabled": true,
+                        "isRequired": "{{fireOrderAppraisalOccupied == \"true\"}}",
+                        "label": "Number of Days",
+                        "id": "integer-number4",
+                        "extraSettings": {
+                          "numberType": "integer",
+                          "fractionSize": 0,
+                          "type": "one"
+                        },
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "radio",
+                        "i18n": {
+                          "en_us": {
+                            "extraSettings": {
+                              "items": [
+                                {
+                                  "text": "Yes",
+                                  "value": "true",
+                                  "checked": "true"
+                                },
+                                {
+                                  "text": "No",
+                                  "value": "false"
+                                }
+                              ]
+                            },
+                            "label": "Independent BPO Should Fire When Occupied:"
+                          }
+                        },
+                        "enabled": true,
+                        "extraSettings": {
+                          "dataSource": "Static",
+                          "items": [
+                            {
+                              "text": "Yes",
+                              "value": "true",
+                              "checked": "true"
+                            },
+                            {
+                              "text": "No",
+                              "value": "false"
+                            }
+                          ],
+                          "storage": "Id",
+                          "identity": "value",
+                          "linkTarget": "_blank",
+                          "display": "Horizontal"
+                        },
+                        "labelAlign": "left",
+                        "value": "{{fireIndependentBPOOccupied}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "isRequired": true,
+                        "label": "Independent BPO Should Fire When Occupied:",
+                        "id": "radiobuttons5",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "number",
+                        "i18n": {
+                          "en_us": {
+                            "label": "Number of Days"
+                          }
+                        },
+                        "labelAlign": "left",
+                        "value": "{{numOfDaysForIndependentBPOOccupied}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": "{{fireIndependentBPOOccupied == \"true\"}}",
+                        "enabled": true,
+                        "isRequired": "{{fireIndependentBPOOccupied == \"true\"}}",
+                        "label": "Number of Days",
+                        "id": "integer-number5",
+                        "extraSettings": {
+                          "numberType": "integer",
+                          "fractionSize": 0,
+                          "type": "one"
+                        },
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "radio",
+                        "i18n": {
+                          "en_us": {
+                            "extraSettings": {
+                              "items": [
+                                {
+                                  "text": "Yes",
+                                  "value": "true",
+                                  "checked": "true"
+                                },
+                                {
+                                  "text": "No",
+                                  "value": "false"
+                                }
+                              ]
+                            },
+                            "label": "Independent BPO Should Fire When Unavailable:"
+                          }
+                        },
+                        "enabled": true,
+                        "extraSettings": {
+                          "dataSource": "Static",
+                          "items": [
+                            {
+                              "text": "Yes",
+                              "value": "true",
+                              "checked": "true"
+                            },
+                            {
+                              "text": "No",
+                              "value": "false"
+                            }
+                          ],
+                          "storage": "Id",
+                          "identity": "value",
+                          "linkTarget": "_blank",
+                          "display": "Horizontal"
+                        },
+                        "labelAlign": "left",
+                        "value": "{{fireIndependentBPOUnavailable}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "isRequired": true,
+                        "label": "Independent BPO Should Fire When Unavailable:",
+                        "id": "radiobuttons6",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "number",
+                        "i18n": {
+                          "en_us": {
+                            "label": "Number of Days"
+                          }
+                        },
+                        "labelAlign": "left",
+                        "value": "{{numOfDaysBPOUnavailable}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": "{{fireIndependentBPOUnavailable == \"true\"}}",
+                        "enabled": true,
+                        "isRequired": "{{fireIndependentBPOUnavailable == \"true\"}}",
+                        "label": "Number of Days",
+                        "id": "integer-number6",
+                        "extraSettings": {
+                          "numberType": "integer",
+                          "fractionSize": 0,
+                          "type": "one"
+                        },
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "radio",
+                        "i18n": {
+                          "en_us": {
+                            "extraSettings": {
+                              "items": [
+                                {
+                                  "text": "Yes",
+                                  "value": "true",
+                                  "checked": "true"
+                                },
+                                {
+                                  "text": "No",
+                                  "value": "false"
+                                }
+                              ]
+                            },
+                            "label": "Order Desk Review should fire when Vacant:"
+                          }
+                        },
+                        "enabled": true,
+                        "extraSettings": {
+                          "dataSource": "Static",
+                          "items": [
+                            {
+                              "text": "Yes",
+                              "value": "true",
+                              "checked": "true"
+                            },
+                            {
+                              "text": "No",
+                              "value": "false"
+                            }
+                          ],
+                          "storage": "Id",
+                          "identity": "value",
+                          "linkTarget": "_blank",
+                          "display": "Horizontal"
+                        },
+                        "labelAlign": "left",
+                        "value": "{{fireOrderDeskReviewVacant}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "isRequired": true,
+                        "label": "Order Desk Review should fire when Vacant:",
+                        "id": "radiobuttons7",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "number",
+                        "i18n": {
+                          "en_us": {
+                            "label": "Number of Days"
+                          }
+                        },
+                        "labelAlign": "left",
+                        "value": "{{numOfDaysForOrderDeskRiviewVacant}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": "{{fireOrderDeskReviewVacant == \"true\"}}",
+                        "enabled": true,
+                        "isRequired": "{{fireOrderDeskReviewVacant == \"true\"}}",
+                        "label": "Number of Days",
+                        "id": "integer-number7",
+                        "extraSettings": {
+                          "numberType": "integer",
+                          "fractionSize": 0,
+                          "type": "one"
+                        },
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "radio",
+                        "i18n": {
+                          "en_us": {
+                            "extraSettings": {
+                              "items": [
+                                {
+                                  "text": "Yes",
+                                  "value": "true",
+                                  "checked": "true"
+                                },
+                                {
+                                  "text": "No",
+                                  "value": "false"
+                                }
+                              ]
+                            },
+                            "label": "Order Desk Review should fire when Occupied:"
+                          }
+                        },
+                        "enabled": true,
+                        "extraSettings": {
+                          "dataSource": "Static",
+                          "items": [
+                            {
+                              "text": "Yes",
+                              "value": "true",
+                              "checked": "true"
+                            },
+                            {
+                              "text": "No",
+                              "value": "false"
+                            }
+                          ],
+                          "storage": "Id",
+                          "identity": "value",
+                          "linkTarget": "_blank",
+                          "display": "Horizontal"
+                        },
+                        "labelAlign": "left",
+                        "value": "{{fireOrderDeskReviewOccupied}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "isRequired": true,
+                        "label": "Order Desk Review should fire when Occupied:",
+                        "id": "radiobuttons8",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "number",
+                        "i18n": {
+                          "en_us": {
+                            "label": "Number of Days"
+                          }
+                        },
+                        "labelAlign": "left",
+                        "value": "{{numOfDaysForOrderDeskRiviewOccupied}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": "{{fireOrderDeskReviewOccupied==\"true\"}}",
+                        "enabled": true,
+                        "isRequired": "{{fireOrderDeskReviewOccupied==\"true\"}}",
+                        "label": "Number of Days",
+                        "id": "integer-number8",
+                        "extraSettings": {
+                          "numberType": "integer",
+                          "fractionSize": 0,
+                          "type": "one"
+                        },
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "radio",
+                        "i18n": {
+                          "en_us": {
+                            "extraSettings": {
+                              "items": [
+                                {
+                                  "text": "Yes",
+                                  "value": "true",
+                                  "checked": "true"
+                                },
+                                {
+                                  "text": "No",
+                                  "value": "false"
+                                }
+                              ]
+                            },
+                            "label": "Order Desk Review should fire when Unavailable:"
+                          }
+                        },
+                        "enabled": true,
+                        "extraSettings": {
+                          "dataSource": "Static",
+                          "items": [
+                            {
+                              "text": "Yes",
+                              "value": "true",
+                              "checked": "true"
+                            },
+                            {
+                              "text": "No",
+                              "value": "false"
+                            }
+                          ],
+                          "storage": "Id",
+                          "identity": "value",
+                          "linkTarget": "_blank",
+                          "display": "Horizontal"
+                        },
+                        "labelAlign": "left",
+                        "value": "{{fireOrderDeskReviewUnavailable}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "isRequired": true,
+                        "label": "Order Desk Review should fire when Unavailable:",
+                        "id": "radiobuttons9",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "number",
+                        "i18n": {
+                          "en_us": {
+                            "label": "Number of Days"
+                          }
+                        },
+                        "labelAlign": "left",
+                        "value": "{{numOfDaysForOrderDeskReviewUnavailable}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": "{{fireOrderDeskReviewUnavailable==\"true\"}}",
+                        "enabled": true,
+                        "isRequired": "{{fireOrderDeskReviewUnavailable==\"true\"}}",
+                        "label": "Number of Days",
+                        "id": "integer-number9",
+                        "extraSettings": {
+                          "numberType": "integer",
+                          "fractionSize": 0,
+                          "type": "one"
+                        },
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "textarea",
+                        "extraSettings": {},
+                        "i18n": {
+                          "en_us": {
+                            "label": "Comments:"
+                          },
+                          "de_de": {},
+                          "fr_fr": {},
+                          "it_it": {},
+                          "es_es": {}
+                        },
+                        "labelAlign": "left",
+                        "value": "{{comments}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "enabled": true,
+                        "isRequired": true,
+                        "label": "Comments:",
+                        "id": "text-area2",
+                        "col": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            "col": 0
+          }
+        ]
+      }
+    ]
+  }

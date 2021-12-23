@@ -1,0 +1,155 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 25 },
+              "lowerRight": { "x": 493, "y": 147 }
+            },
+            "stencilSuperIds": ["SubSlotPanel"],
+            "stencilId": "cloud-sub-panel",
+            "customStencilId": null
+          },
+          "type": "panel",
+          "label": "Contact Information",
+          "i18n": { "en_us": { "label": "Contact Information" } },
+          "labelAlign": "top",
+          "size": 6,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "sub-panel1",
+          "extraSettings": {
+            "collapsible": false,
+            "collapsed": false,
+            "showBorder": false,
+            "saveButtonVisible": true,
+            "saveButtonEnabled": true,
+            "cancelButtonVisible": true,
+            "cancelButtonEnabled": true,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 49 },
+                          "lowerRight": { "x": 463, "y": 99 }
+                        },
+                        "stencilSuperIds": ["Output"],
+                        "stencilId": "cloud-output",
+                        "customStencilId": null
+                      },
+                      "type": "htmlComponent",
+                      "labelAlign": "top",
+                      "value": "<p>Name : {{LEGAL_ENTITY_FULL_NAME}}</p>\n\n<p>Email : </p>\n\n<p>Phone:</p>\n",
+                      "defaultValue": false,
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "output1",
+                      "i18n": {
+                        "en_us": {
+                          "value": "<p>Name : {{LEGAL_ENTITY_FULL_NAME}}</p>\n\n<p>Email : </p>\n\n<p>Phone:</p>\n"
+                        }
+                      },
+                      "extraSettings": {}
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 507, "y": 25 },
+              "lowerRight": { "x": 984, "y": 73 }
+            },
+            "stencilSuperIds": ["base-single-select", "Component"],
+            "stencilId": "cloud-single-select",
+            "customStencilId": null
+          },
+          "type": "select",
+          "extraSettings": {
+            "tagsEnabled": false,
+            "preselectAll": false,
+            "clientSideFiltering": false,
+            "enableAutocomplete": false,
+            "autocompleteMinLength": 1,
+            "dataSource": "Static",
+            "items": [
+              { "text": "APPROVED", "value": 1 },
+              { "text": "UNAPPROVED", "value": 0 }
+            ],
+            "linkTargetView": "browse",
+            "storage": "Id",
+            "identity": "value",
+            "linkTarget": "_blank",
+            "multi": false
+          },
+          "enabled": true,
+          "i18n": {
+            "en_us": {
+              "extraSettings": {
+                "items": [
+                  { "text": "APPROVED", "value": 1 },
+                  { "text": "UNAPPROVED", "value": 0 }
+                ]
+              },
+              "label": "Approval Status"
+            }
+          },
+          "labelAlign": "top",
+          "value": "{{STATUS}}",
+          "defaultValue": "{{STATUS}}",
+          "size": 6,
+          "visible": true,
+          "isRequired": true,
+          "label": "Approval Status",
+          "id": "single-select1"
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 172 },
+              "lowerRight": { "x": 984, "y": 198 }
+            },
+            "stencilSuperIds": ["base-text", "Component"],
+            "stencilId": "cloud-text",
+            "customStencilId": null
+          },
+          "type": "text",
+          "labelAlign": "top",
+          "value": "{{VENDOR_PRODUCT_ID}}",
+          "defaultValue": "{{VENDOR_PRODUCT_ID}}",
+          "size": 12,
+          "ignore": false,
+          "visible": false,
+          "enabled": false,
+          "isRequired": false,
+          "id": "text1",
+          "extraSettings": {}
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "key": "manageVendorApprovalDialog",
+    "name": "manageVendorApprovalDialog",
+    "description": "",
+    "version": "22",
+    "type": "2"
+  }
+}

@@ -1,0 +1,45 @@
+.flw__html-component h1 {
+  margin: 0 0 20px 0;
+  font-family: $flw-font-sans;
+  font-family: var(--flw-font-sans, $flw-font-sans);
+  font-weight: 300;
+  color: $flw-forms-label-text-color;
+  color: var(--flw-forms-label-text-color, $flw-forms-label-text-color);
+  text-transform: none;
+  font-size: $flw-text-3xl;
+  font-size: var(--flw-text-3xl, $flw-text-3xl);
+  line-height: 1.2;
+}
+
+.flw__html-component h2 {
+  margin: 0 0 20px 0;
+  font-family: $flw-font-sans;
+  font-family: var(--flw-font-sans, $flw-font-sans);
+  font-weight: 300;
+  color: $flw-forms-label-text-color;
+  color: var(--flw-forms-label-text-color, $flw-forms-label-text-color);
+  text-transform: none;
+  font-size: $flw-text-xl;
+  font-size: var(--flw-text-xl, $flw-text-xl);
+  line-height: 1.3;
+}
+
+.flw__html-component h3 {
+  margin: 0 0 20px 0;
+  font-family: $flw-font-sans;
+  font-family: var(--flw-font-sans, $flw-font-sans);
+  font-weight: 300;
+  color: $flw-forms-label-text-color;
+  color: var(--flw-forms-label-text-color, $flw-forms-label-text-color);
+  text-transform: none;
+  font-size: $flw-table-header;
+  font-size: var(--flw-table-header, $flw-table-header);
+  line-height: 1.4;
+}
+
+.flw__html-component--showBorder__html-input {
+  box-sizing: border-box;
+  border: 1px solid $flw-forms-border-color;
+  border: 1px solid var(--flw-forms-border-color, $flw-forms-border-color);
+  padding: 4px;
+}

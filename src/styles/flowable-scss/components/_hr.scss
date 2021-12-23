@@ -1,0 +1,16 @@
+.flw__hr {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) calc(50% - 1px),
+    #e5e5e5 calc(50%),
+    rgba(0, 0, 0, 0) calc(50% + 1px)
+  );
+  align-items: center;
+  min-height: 1px;
+}
+
+.flw__hr__label {
+  background-color: $flw-forms-background-color;
+  background-color: var(--flw-forms-background-color, $flw-forms-background-color);
+  padding: 0 5px;
+}

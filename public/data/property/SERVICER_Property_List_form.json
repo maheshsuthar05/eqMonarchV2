@@ -1,0 +1,823 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "type": "panel",
+          "label": "",
+          "i18n": {},
+          "labelAlign": "top",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "sub-panel1",
+          "extraSettings": {
+            "collapsible": false,
+            "collapsed": false,
+            "showBorder": false,
+            "saveButtonVisible": false,
+            "saveButtonEnabled": false,
+            "cancelButtonVisible": false,
+            "cancelButtonEnabled": false,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "type": "flexlayout",
+                      "extraSettings": {
+                        "direction": "row",
+                        "align": "center",
+                        "justify": "end",
+                        "sections": [
+                          {
+                            "type": "panel",
+                            "extraSettings": {
+                              "layoutDefinition": {
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "type": "text",
+                                        "extraSettings": {},
+                                        "i18n": {
+                                          "en_us": {
+                                            "placeholder": "Search"
+                                          },
+                                          "de_de": {},
+                                          "fr_fr": {},
+                                          "it_it": {},
+                                          "es_es": {}
+                                        },
+                                        "placeholder": "Search",
+                                        "labelAlign": "top",
+                                        "value": "{{searchCriteria.search}}",
+                                        "ignore": false,
+                                        "visible": true,
+                                        "enabled": true,
+                                        "isRequired": false,
+                                        "styleClass": "altisource__search_box",
+                                        "id": "searchBox",
+                                        "col": 0
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "type": "modal",
+                            "label": "Filter",
+                            "labelAlign": "top",
+                            "size": 7,
+                            "ignore": false,
+                            "visible": true,
+                            "enabled": true,
+                            "isRequired": false,
+                            "styleClass": "altisource__model_secondary",
+                            "id": "{{additionalData.MODAL_MORE_ID}}",
+                            "extraSettings": {
+                              "modalButtonText": "More",
+                              "collapsible": false,
+                              "collapsed": false,
+                              "showBorder": false,
+                              "saveButtonText": "Done",
+                              "saveButtonVisible": true,
+                              "saveButtonEnabled": true,
+                              "cancelButtonVisible": false,
+                              "cancelButtonEnabled": false,
+                              "layoutDefinition": {
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "type": "tabs",
+                                        "labelAlign": "top",
+                                        "size": 12,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "enabled": true,
+                                        "isRequired": false,
+                                        "id": "filterTab",
+                                        "extraSettings": {
+                                          "tabsorder": [
+                                            "tab-filter",
+                                            "tab-savedSearch"
+                                          ],
+                                          "showBorder": false,
+                                          "activetab": "tab-filter",
+                                          "sections": [
+                                            {
+                                              "type": "panel",
+                                              "label": "Filter",
+                                              "labelAlign": "top",
+                                              "size": 1,
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "id": "tab-filter",
+                                              "extraSettings": {
+                                                "layoutDefinition": {
+                                                  "rows": [
+                                                    {
+                                                      "cols": [
+                                                        {
+                                                          "type": "subform",
+                                                          "labelAlign": "top",
+                                                          "tooltip": "",
+                                                          "value": "",
+                                                          "defaultValue": "",
+                                                          "description": "",
+                                                          "size": 12,
+                                                          "ignore": false,
+                                                          "visible": true,
+                                                          "enabled": true,
+                                                          "isRequired": false,
+                                                          "styleClass": "",
+                                                          "customValidations": "",
+                                                          "label": "",
+                                                          "extraSettings": {
+                                                            "showBorder": false,
+                                                            "collapsible": false,
+                                                            "collapsed": false,
+                                                            "formRef": {
+                                                              "id": "FORM_MODEL-65ee63c2-c1a7-435c-a911-c983a79e82e9",
+                                                              "key": "propertyFiproperty_filterlter"
+                                                            },
+                                                            "addButtonText": "",
+                                                            "layoutDefinition": {
+                                                              "rows": [
+                                                                {
+                                                                  "cols": [
+                                                                    {
+                                                                      "type": "select",
+                                                                      "extraSettings": {
+                                                                        "tagsEnabled": false,
+                                                                        "preselectAll": false,
+                                                                        "enableAutocomplete": false,
+                                                                        "dataSource": "Static",
+                                                                        "items": [
+                                                                          {
+                                                                            "text": "1+",
+                                                                            "value": 1
+                                                                          },
+                                                                          {
+                                                                            "text": "2+",
+                                                                            "value": 2
+                                                                          },
+                                                                          {
+                                                                            "text": "3+",
+                                                                            "value": 3
+                                                                          },
+                                                                          {
+                                                                            "text": "4+",
+                                                                            "value": 4
+                                                                          },
+                                                                          {
+                                                                            "text": "5+",
+                                                                            "value": 5
+                                                                          }
+                                                                        ],
+                                                                        "storage": "Id",
+                                                                        "identity": "value",
+                                                                        "linkTarget": "_blank",
+                                                                        "multi": false
+                                                                      },
+                                                                      "enabled": true,
+                                                                      "labelAlign": "top",
+                                                                      "value": "{{searchCriteria.numOfBed}}",
+                                                                      "size": 12,
+                                                                      "ignore": false,
+                                                                      "visible": true,
+                                                                      "isRequired": false,
+                                                                      "label": "Bedrooms",
+                                                                      "id": "single-select5",
+                                                                      "col": 0
+                                                                    }
+                                                                  ]
+                                                                },
+                                                                {
+                                                                  "cols": [
+                                                                    {
+                                                                      "type": "select",
+                                                                      "extraSettings": {
+                                                                        "tagsEnabled": false,
+                                                                        "preselectAll": false,
+                                                                        "enableAutocomplete": false,
+                                                                        "dataSource": "Static",
+                                                                        "items": [
+                                                                          {
+                                                                            "text": "1+",
+                                                                            "value": 1
+                                                                          },
+                                                                          {
+                                                                            "text": "2+",
+                                                                            "value": 2
+                                                                          },
+                                                                          {
+                                                                            "text": "3+",
+                                                                            "value": 3
+                                                                          },
+                                                                          {
+                                                                            "text": "4+",
+                                                                            "value": 4
+                                                                          },
+                                                                          {
+                                                                            "text": "5+",
+                                                                            "value": 5
+                                                                          }
+                                                                        ],
+                                                                        "storage": "Id",
+                                                                        "identity": "value",
+                                                                        "linkTarget": "_blank",
+                                                                        "multi": false
+                                                                      },
+                                                                      "enabled": true,
+                                                                      "labelAlign": "top",
+                                                                      "value": "{{searchCriteria.numOfBath}}",
+                                                                      "size": 12,
+                                                                      "ignore": false,
+                                                                      "visible": true,
+                                                                      "isRequired": false,
+                                                                      "label": "Bathrooms",
+                                                                      "id": "single-select6",
+                                                                      "col": 0
+                                                                    }
+                                                                  ]
+                                                                },
+                                                                {
+                                                                  "cols": [
+                                                                    {
+                                                                      "type": "select",
+                                                                      "extraSettings": {
+                                                                        "tagsEnabled": false,
+                                                                        "preselectAll": false,
+                                                                        "enableAutocomplete": false,
+                                                                        "dataSource": "Static",
+                                                                        "items": "{{uiVariable.livingAreaListMin}}",
+                                                                        "storage": "Id",
+                                                                        "identity": "value",
+                                                                        "linkTarget": "_blank",
+                                                                        "multi": false
+                                                                      },
+                                                                      "enabled": true,
+                                                                      "labelAlign": "top",
+                                                                      "value": "{{searchCriteria.livingMinArea}}",
+                                                                      "size": 5,
+                                                                      "ignore": false,
+                                                                      "visible": true,
+                                                                      "isRequired": false,
+                                                                      "label": "Living Area (Min)",
+                                                                      "id": "single-select1",
+                                                                      "col": 0
+                                                                    },
+                                                                    {
+                                                                      "size": 1,
+                                                                      "type": ""
+                                                                    },
+                                                                    {
+                                                                      "size": 1,
+                                                                      "type": ""
+                                                                    },
+                                                                    {
+                                                                      "type": "select",
+                                                                      "extraSettings": {
+                                                                        "tagsEnabled": false,
+                                                                        "preselectAll": false,
+                                                                        "enableAutocomplete": false,
+                                                                        "dataSource": "Static",
+                                                                        "items": "{{uiVariable.livingAreaListMax}}",
+                                                                        "storage": "Id",
+                                                                        "identity": "value",
+                                                                        "linkTarget": "_blank",
+                                                                        "multi": false
+                                                                      },
+                                                                      "enabled": true,
+                                                                      "labelAlign": "top",
+                                                                      "value": "{{searchCriteria.livingMaxArea}}",
+                                                                      "size": 5,
+                                                                      "ignore": false,
+                                                                      "visible": true,
+                                                                      "isRequired": false,
+                                                                      "label": "Max",
+                                                                      "id": "single-select2",
+                                                                      "col": 7
+                                                                    }
+                                                                  ]
+                                                                },
+                                                                {
+                                                                  "cols": [
+                                                                    {
+                                                                      "type": "number",
+                                                                      "extraSettings": {
+                                                                        "tagsEnabled": false,
+                                                                        "preselectAll": false,
+                                                                        "enableAutocomplete": false,
+                                                                        "dataSource": "Static",
+                                                                        "storage": "Id",
+                                                                        "identity": "value",
+                                                                        "linkTarget": "_blank",
+                                                                        "multi": false
+                                                                      },
+                                                                      "i18n": {
+                                                                        "en_us": {
+                                                                          "label": "Lot Size (Min Sq.)"
+                                                                        }
+                                                                      },
+                                                                      "enabled": true,
+                                                                      "labelAlign": "top",
+                                                                      "value": "{{searchCriteria.lotSizeMin}}",
+                                                                      "size": 5,
+                                                                      "ignore": false,
+                                                                      "visible": true,
+                                                                      "isRequired": false,
+                                                                      "label": "Lot Size (Min Sq.)",
+                                                                      "id": "single-select3",
+                                                                      "col": 0
+                                                                    },
+                                                                    {
+                                                                      "size": 1,
+                                                                      "type": ""
+                                                                    },
+                                                                    {
+                                                                      "size": 1,
+                                                                      "type": ""
+                                                                    },
+                                                                    {
+                                                                      "type": "number",
+                                                                      "extraSettings": {
+                                                                        "tagsEnabled": false,
+                                                                        "preselectAll": false,
+                                                                        "enableAutocomplete": false,
+                                                                        "dataSource": "Static",
+                                                                        "storage": "Id",
+                                                                        "identity": "value",
+                                                                        "linkTarget": "_blank",
+                                                                        "multi": false
+                                                                      },
+                                                                      "i18n": {
+                                                                        "en_us": {
+                                                                          "label": "Max Sq."
+                                                                        }
+                                                                      },
+                                                                      "enabled": true,
+                                                                      "labelAlign": "top",
+                                                                      "value": "{{searchCriteria.lotSizeMax}}",
+                                                                      "size": 5,
+                                                                      "ignore": false,
+                                                                      "visible": true,
+                                                                      "isRequired": false,
+                                                                      "label": "Max Sq.",
+                                                                      "id": "single-select4",
+                                                                      "col": 7
+                                                                    }
+                                                                  ]
+                                                                },
+                                                                {
+                                                                  "cols": [
+                                                                    {
+                                                                      "type": "number",
+                                                                      "i18n": {
+                                                                        "en_us": {
+                                                                          "label": "Year Build (Min)"
+                                                                        }
+                                                                      },
+                                                                      "labelAlign": "top",
+                                                                      "value": "{{searchCriteria.buildYearMin}}",
+                                                                      "size": 5,
+                                                                      "ignore": false,
+                                                                      "visible": true,
+                                                                      "enabled": true,
+                                                                      "isRequired": false,
+                                                                      "label": "Year Build (Min)",
+                                                                      "id": "integer-number7",
+                                                                      "extraSettings": {
+                                                                        "numberType": "integer",
+                                                                        "fractionSize": 0,
+                                                                        "type": "one"
+                                                                      },
+                                                                      "col": 0
+                                                                    },
+                                                                    {
+                                                                      "size": 1,
+                                                                      "type": ""
+                                                                    },
+                                                                    {
+                                                                      "size": 1,
+                                                                      "type": ""
+                                                                    },
+                                                                    {
+                                                                      "type": "number",
+                                                                      "i18n": {
+                                                                        "en_us": {
+                                                                          "label": "Max"
+                                                                        }
+                                                                      },
+                                                                      "labelAlign": "top",
+                                                                      "value": "{{searchCriteria.buildYearMax}}",
+                                                                      "size": 5,
+                                                                      "ignore": false,
+                                                                      "visible": true,
+                                                                      "enabled": true,
+                                                                      "isRequired": false,
+                                                                      "label": "Max",
+                                                                      "id": "integer-number8",
+                                                                      "extraSettings": {
+                                                                        "numberType": "integer",
+                                                                        "fractionSize": 0,
+                                                                        "type": "one"
+                                                                      },
+                                                                      "col": 7
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          },
+                                                          "id": "sub-form1",
+                                                          "col": 0
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              },
+                                              "col": 0
+                                            },
+                                            {
+                                              "type": "panel",
+                                              "label": "Saved Search",
+                                              "labelAlign": "top",
+                                              "ignore": false,
+                                              "visible": true,
+                                              "enabled": true,
+                                              "isRequired": false,
+                                              "id": "tab-savedSearch",
+                                              "extraSettings": {
+                                                "layoutDefinition": {
+                                                  "rows": [
+                                                    {
+                                                      "cols": [
+                                                        {
+                                                          "type": "linear-progress",
+                                                          "size": 12,
+                                                          "visible": "{{uiVariable.filterModalProgress}}",
+                                                          "color": "secondary",
+                                                          "extraSettings": null
+                                                        },
+                                                        {
+                                                          "type": "htmlComponent",
+                                                          "value": "No Saved Search is Found. ",
+                                                          "visible": "{{!savedCriteria || savedCriteria.length <= 0}}"
+                                                        }
+                                                      ]
+                                                    },
+                                                    {
+                                                      "cols": [
+                                                        {
+                                                          "type": "subform",
+                                                          "size": 12,
+                                                          "label": "",
+                                                          "value": "{{savedCriteria}}",
+                                                          "extraSettings": {
+                                                            "multipleEntries": true,
+                                                            "layoutDefinition": {
+                                                              "rows": [
+                                                                {
+                                                                  "cols": [
+                                                                    {
+                                                                      "type": "linkButton",
+                                                                      "value": "{{name}}",
+                                                                      "systemId": "{{id}}",
+                                                                      "criteria": "{{criteria}}",
+                                                                      "id": "{{additionalData.SAVED_SEARCH_LINK_ID}}",
+                                                                      "styleClass": "altisource__button_LIST",
+                                                                      "size": 11,
+                                                                      "col": 0,
+                                                                      "extraSettings": {}
+                                                                    },
+                                                                    {
+                                                                      "type": "linkButton",
+                                                                      "value": "X",
+                                                                      "systemId": "{{id}}",
+                                                                      "id": "{{additionalData.SAVED_SEARCH_LINK_DELETE_ID}}",
+                                                                      "styleClass": "altisource__button_DELETE",
+                                                                      "size": 1,
+                                                                      "col": 11,
+                                                                      "extraSettings": {
+                                                                        "tooltip": "Delete"
+                                                                      }
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            },
+                                                            "showAddButton": false,
+                                                            "showDeleteButton": false
+                                                          },
+                                                          "visible": "{{!uiVariable.filterModalProgress}}"
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              },
+                                              "col": 0
+                                            }
+                                          ]
+                                        },
+                                        "col": 0
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            },
+                            "col": 5
+                          },
+                          {
+                            "type": "modal",
+                            "label": "Save Search",
+                            "styleClass": "altisource__model_primary",
+                            "labelAlign": "top",
+                            "ignore": false,
+                            "visible": true,
+                            "enabled": true,
+                            "isRequired": false,
+                            "id": "{{additionalData.MODAL_SEARCH_NAME_ID}}",
+                            "extraSettings": {
+                              "modalButtonText": "Save Search",
+                              "collapsible": false,
+                              "collapsed": false,
+                              "showBorder": false,
+                              "saveButtonText": "Save",
+                              "saveButtonVisible": true,
+                              "saveButtonEnabled": "{{!!searchName}}",
+                              "cancelButtonText": "Cancel",
+                              "cancelButtonVisible": true,
+                              "cancelButtonEnabled": true,
+                              "layoutDefinition": {
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "type": "text",
+                                        "extraSettings": {},
+                                        "i18n": {
+                                          "en_us": {
+                                            "label": "Name"
+                                          },
+                                          "de_de": {},
+                                          "fr_fr": {},
+                                          "it_it": {},
+                                          "es_es": {}
+                                        },
+                                        "labelAlign": "top",
+                                        "value": "{{searchName}}",
+                                        "size": 12,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "enabled": true,
+                                        "isRequired": false,
+                                        "label": "Name",
+                                        "id": "input-searchName",
+                                        "col": 0
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "type": "panel",
+                            "extraSettings": {
+                              "layoutDefinition": {
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "type": "linkButton",
+                                        "styleClass": "altisource__linkButton_primary",
+                                        "extraSettings": {
+                                          "autoExecute": false,
+                                          "alignment": "left",
+                                          "iconAlignment": "right",
+                                          "text": "Clear Filter"
+                                        },
+                                        "value": "Clear Filter",
+                                        "ignore": false,
+                                        "visible": true,
+                                        "enabled": true,
+                                        "isRequired": false,
+                                        "id": "button-clear-filter"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "dataTable",
+                      "i18n": {
+                        "en_us": {
+                          "extraSettings": {
+                            "columns": [
+                              {
+                                "label": "Loan Number",
+                                "id": "LOAN_NUMBER",
+                                "alignment": "left",
+                                "show": true,
+                                "accessor": "LOAN_NUMBER"
+                              },
+                              {
+                                "label": "REO Number",
+                                "id": "REO_NUMBER",
+                                "alignment": "left",
+                                "show": true,
+                                "accessor": "REO_NUMBER"
+                              },
+                              {
+                                "label": "Address",
+                                "id": "ADDRESS",
+                                "alignment": "left",
+                                "show": true,
+                                "accessor": "ADDRESS",
+                                "component": {
+                                  "type": "htmlComponent",
+                                  "value": "<span>{{$item.ADDRESS}}, {{$item.CITY}}, {{$item.STATE}} {{$item.ZIP}}</span>"
+                                },
+                                "minWidth": 200
+                              },
+                              {
+                                "label": "Property Status",
+                                "id": "PROPERTY_STATUS",
+                                "alignment": "left",
+                                "show": true,
+                                "accessor": "PROPERTY_STATUS"
+                              },
+                              {
+                                "label": "Property Type",
+                                "id": "PROPERTY_TYPE",
+                                "alignment": "left",
+                                "show": true,
+                                "accessor": "PROPERTY_TYPE"
+                              },
+                              {
+                                "label": "2nd Loan #",
+                                "id": "SECOND_LOAN_NUMBER",
+                                "alignment": "left",
+                                "show": true,
+                                "accessor": "SECOND_LOAN_NUMBER"
+                              },
+                              {
+                                "label": "Servicer Loan #",
+                                "id": "SERVICER_LOAN_NUMBER",
+                                "alignment": "left",
+                                "show": true,
+                                "accessor": "SERVICER_LOAN_NUMBER"
+                              },
+                              {
+                                "label": "Investor ID",
+                                "id": "INVESTOR_ID",
+                                "alignment": "left",
+                                "show": true,
+                                "accessor": "INVESTOR_ID"
+                              }
+                            ],
+                            "noDataMessage": "No properties found"
+                          }
+                        },
+                        "de_de": {
+                          "extraSettings": {}
+                        },
+                        "fr_fr": {
+                          "extraSettings": {}
+                        },
+                        "it_it": {
+                          "extraSettings": {}
+                        },
+                        "es_es": {
+                          "extraSettings": {}
+                        }
+                      },
+                      "enabled": true,
+                      "extraSettings": {
+                        "dataSource": "Rest",
+                        "queryUrl": "{{additionalData.url}}?searchText={{searchCriteria.search}}&bathRoomCount={{searchCriteria.numOfBath}}&bedRoomCount={{searchCriteria.numOfBed}}&livingAreaFrom={{searchCriteria.livingMinArea}}&livingAreaTo={{searchCriteria.livingMaxArea}}&lotSizeFrom={{searchCriteria.lotSizeMin}}&lotSizeTo={{searchCriteria.lotSizeMax}}&builtYearFrom={{searchCriteria.buildYearMin}}&builtYearTo={{searchCriteria.buildYearMax}}&from={{$page * $pageSize}}&size={{$pageSize}}&sortOrder={{!$sortDirection ? searchCriteria.sortOrder : $sortDirection.toUpperCase()}}&sortFieldName={{!$sortColumn ? searchCriteria.sortFieldName : $sortColumn}}",
+                        "path": "hits",
+                        "storage": "Full",
+                        "linkTarget": "_blank",
+                        "selectable": "Single",
+                        "output": {
+                          "numRows": "{{totalProperties}}"
+                        },
+                        "showPagination": true,
+                        "autoHidePagination": false,
+                        "clientPagination": false,
+                        "sortableColumns": true,
+                        "columns": [
+                          {
+                            "label": "Loan Number",
+                            "id": "LOAN_NUMBER",
+                            "alignment": "left",
+                            "show": true,
+                            "accessor": "LOAN_NUMBER"
+                          },
+                          {
+                            "label": "REO Number",
+                            "id": "REO_NUMBER",
+                            "alignment": "left",
+                            "show": true,
+                            "accessor": "REO_NUMBER"
+                          },
+                          {
+                            "label": "Address",
+                            "id": "ADDRESS",
+                            "alignment": "left",
+                            "show": true,
+                            "accessor": "ADDRESS",
+                            "component": {
+                              "type": "htmlComponent",
+                              "value": "<span>{{$item.ADDRESS}}, {{$item.CITY}}, {{$item.STATE}} {{$item.ZIP}}</span>"
+                            },
+                            "minWidth": 200
+                          },
+                          {
+                            "label": "Property Status",
+                            "id": "PROPERTY_STATUS",
+                            "alignment": "left",
+                            "show": true,
+                            "accessor": "PROPERTY_STATUS"
+                          },
+                          {
+                            "label": "Loan Type",
+                            "id": "PROPERTY_TYPE",
+                            "alignment": "left",
+                            "show": true,
+                            "accessor": "PROPERTY_TYPE"
+                          },
+                          {
+                            "label": "2nd Loan #",
+                            "id": "SECOND_LOAN_NUMBER",
+                            "alignment": "left",
+                            "show": true,
+                            "accessor": "SECOND_LOAN_NUMBER"
+                          },
+                          {
+                            "label": "Servicer Loan #",
+                            "id": "SERVICER_LOAN_NUMBER",
+                            "alignment": "left",
+                            "show": true,
+                            "accessor": "SERVICER_LOAN_NUMBER"
+                          },
+                          {
+                            "label": "Investor ID",
+                            "id": "INVESTOR_ID",
+                            "alignment": "left",
+                            "show": true,
+                            "accessor": "INVESTOR_ID"
+                          }
+                        ],
+                        "filterable": false,
+                        "sortable": true,
+                        "multiSort": false,
+                        "pageSize": 20,
+                        "pageSizeOptions": [5, 10, 15, 20, 25, 50, 100],
+                        "showTotalRecords": false,
+                        "response": { "total": "totalHits" },
+                        "showRefreshButton": true,
+                        "noDataMessage": "No properties found"
+                      },
+                      "labelAlign": "top",
+                      "value": "{{selectedProperty}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "isRequired": false,
+                      "id": "propertyListingDataTable",
+                      "col": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "col": 0
+        }
+      ]
+    }
+  ]
+}

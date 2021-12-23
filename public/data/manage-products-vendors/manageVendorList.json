@@ -1,0 +1,231 @@
+{
+    "rows": [
+        {
+            "cols": [
+                {
+                    "designInfo": {
+                        "bounds": {
+                            "upperLeft": {
+                                "x": 15,
+                                "y": 25
+                            },
+                            "lowerRight": {
+                                "x": 984,
+                                "y": 93
+                            }
+                        },
+                        "stencilSuperIds": [
+                            "base-datatable", "Component"
+                        ],
+                        "stencilId": "cloud-datatable",
+                        "customStencilId": null
+                    },
+                    "enabled": true,
+                    "extraSettings": {
+                        "dataSource": "Rest",
+                        "queryUrl": "/eq-api/venlisting/vendor/vendorList?searchText= {{ searchText }}&size=1000",
+                        "path": "hits",
+                        "linkTargetView": "browse",
+                        "storage": "Full",
+                        "linkTarget": "_blank",
+                        "infiniteScroll": false,
+                        "showPagination": true,
+                        "autoHidePagination": true,
+                        "clientPagination": true,
+                        "sortableColumns": false,
+                        "columns": [
+                            {
+                                "label": "Vendor",
+                                "id": "vendor",
+                                "accessor": "LEGAL_ENTITY_FULL_NAME",
+                                "alignment": "justify",
+                                "filterable": true,
+                                "sortable": true,
+                                "show": true
+                            },
+                            {
+                                "label": "Service Group",
+                                "id": "serviceGroup",
+                                "accessor": "PRODUCT_CATEGORY_NAME",
+                                "alignment": "justify",
+                                "filterable": true,
+                                "sortable": true,
+                                "show": true
+                            },
+                            {
+                                "label": "Product",
+                                "id": "product",
+                                "accessor": "PRODUCT_NAME",
+                                "alignment": "justify",
+                                "filterable": true,
+                                "sortable": true,
+                                "show": true
+                            },
+                            {
+                                "label": "Approval Status",
+                                "id": "approvalStatus",
+                                "accessor": "STATUS",
+                                "alignment": "justify",
+                                "filterable": true,
+                                "sortable": true,
+                                "show": true
+                            }, {
+                                "label": "Approval Type",
+                                "id": "approvalType",
+                                "accessor": "APPROVAL_TYPE",
+                                "alignment": "justify",
+                                "filterable": true,
+                                "sortable": true,
+                                "show": true
+                            }, {
+                                "label": "Actions",
+                                "id": "menu",
+                                "alignment": "right",
+                                "component": {
+                                    "type": "buttonGroup",
+                                    "extraSettings": {
+                                        "asDropdown": true
+                                    },
+                                    "alignment": "right",
+                                    "buttonDefinitions": [
+                                        {
+                                            "type": "scriptButton",
+                                            "extraSettings": {
+                                                "text": "Edit",
+                                                "tooltip": "Edit",
+                                                "script": {
+                                                    "key": "Edit",
+                                                    "vendorList":"{{ $item }}"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                "filterable": false,
+                                "sortable": false,
+                                "show": true
+                            }
+                        ],
+                        "filterable": true,
+                        "sortable": true,
+                        "multiSort": true,
+                        "pageSize": 20,
+                        "pageSizeOptions": [
+                            5,
+                            10,
+                            20,
+                            25,
+                            50,
+                            100
+                        ],
+                        "showTotalRecords": false,
+                        "response": {
+                            "total": "totalHits"
+                        },
+                        "showRefreshButton": false,
+                        "dataPollingOnInit": false,
+                        "target": "_blank",
+                        "noDataMessage": "No Data found",
+                        "nodataPosition": "middle-center",
+                        "conditionalFormatting": []
+                    },
+                    "labelAlign": "top",
+                    "size": 12,
+                    "ignore": false,
+                    "visible": true,
+                    "isRequired": false,
+                    "id": "vendorSearchdatatable",
+                    "i18n": {
+                        "en_us": {
+                            "extraSettings": {
+                                "columns": [
+                                    {
+                                        "label": "Vendor",
+                                        "id": "vendor",
+                                        "accessor": "LEGAL_ENTITY_FULL_NAME",
+                                        "alignment": "justify",
+                                        "filterable": true,
+                                        "sortable": true,
+                                        "show": true
+                                    },
+                                    {
+                                        "label": "Service Group",
+                                        "id": "serviceGroup",
+                                        "accessor": "PRODUCT_CATEGORY_NAME",
+                                        "alignment": "justify",
+                                        "filterable": true,
+                                        "sortable": true,
+                                        "show": true
+                                    },
+                                    {
+                                        "label": "Product",
+                                        "id": "product",
+                                        "accessor": "PRODUCT_NAME",
+                                        "alignment": "justify",
+                                        "filterable": true,
+                                        "sortable": true,
+                                        "show": true
+                                    },
+                                    {
+                                        "label": "Approval Status",
+                                        "id": "approvalStatus",
+                                        "accessor": "STATUS",
+                                        "alignment": "justify",
+                                        "filterable": true,
+                                        "sortable": true,
+                                        "show": true
+                                    }, {
+                                        "label": "Approval Type",
+                                        "id": "approvalType",
+                                        "accessor": "APPROVAL_TYPE",
+                                        "alignment": "justify",
+                                        "filterable": true,
+                                        "sortable": true,
+                                        "show": true
+                                    }, {
+                                        "label": "Actions",
+                                        "id": "menu",
+                                        "alignment": "right",
+                                        "component": {
+                                            "type": "buttonGroup",
+                                            "extraSettings": {
+                                                "asDropdown": true
+                                            },
+                                            "alignment": "right",
+                                            "buttonDefinitions": [
+                                                {
+                                                    "type": "scriptButton",
+                                                    "extraSettings": {
+                                                        "text": "Edit",
+                                                        "tooltip": "Edit",
+                                                        "script": {
+                                                            "key": "Edit",
+                                                            "vendorList":"{{ $item }}"
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "filterable": false,
+                                        "sortable": false,
+                                        "show": true
+                                    }
+                                ],
+                                "noDataMessage": "No Data found"
+                            }
+                        }
+                    },
+                    "type": "dataTable"
+                }
+            ]
+        }
+    ],
+    "metadata": {
+        "key": "vendorSearchListUpdated",
+        "name": "vendorSearchListUpdated",
+        "description": "",
+        "version": "3",
+        "type": "2",
+        "flowableDesignVersion": 3090
+    }
+}

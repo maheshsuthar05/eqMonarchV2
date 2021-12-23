@@ -1,0 +1,95 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "type": "text",
+          "extraSettings": {},
+          "i18n": {
+            "en_us": {
+              "label": "Category"
+            },
+            "de_de": {},
+            "fr_fr": {},
+            "it_it": {},
+            "es_es": {}
+          },
+          "labelAlign": "top",
+          "value": "{{fileCategoryType}}",
+          "defaultValue": "Template",
+          "size": 12,
+          "ignore": false,
+          "visible": false,
+          "enabled": false,
+          "isRequired": false,
+          "label": "Category",
+          "id": "text16",
+          "col": 0
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "type": "upload",
+          "labelAlign": "top",
+          "i18n": {
+            "en_us": {
+              "label": "Input Template"
+            }
+          },
+          "value": "{{InputAttachments}}",
+          "size": 6,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": true,
+          "label": "Input Template",
+          "id": "InputTemplateAttachment",
+          "extraSettings": {
+            "autoupload": false,
+            "downloadUrl": "rest/file/{{id}}",
+            "allowDelete": "{{uploadAccess}}",
+            "preview": "none"
+          },
+          "col": 0
+        },
+        {
+          "type": "upload",
+          "labelAlign": "top",
+          "i18n": {
+            "en_us": {
+              "label": "Output Template"
+            }
+          },
+          "value": "{{OutputAttachments}}",
+          "size": 6,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "label": "Output Template",
+          "id": "attachment1",
+          "extraSettings": {
+            "autoupload": false,
+            "downloadUrl": "rest/file/{{id}}",
+            "allowDelete": "newOnly",
+            "preview": "none"
+          },
+          "col": 6
+        }
+      ]
+    }
+  ],
+  "outcomes": [
+    {
+      "label": "Upload",
+      "value": "Upload",
+      "visible": "{{uploadAccess}}",
+      "enabled": "{{$formValid}}",
+      "ignorePayload": false,
+      "styleClass": "altisource__button_primary",
+      "navigationUrl": ""
+    }
+  ]
+}

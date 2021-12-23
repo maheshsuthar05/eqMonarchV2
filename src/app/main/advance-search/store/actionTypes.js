@@ -1,0 +1,1 @@
+export const SEARCH_FORMDEFIINITION = '[Advance Search] SEARCH_FORMDEFIINITION';

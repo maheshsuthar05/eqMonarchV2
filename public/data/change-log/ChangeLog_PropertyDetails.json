@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 25 },
+              "lowerRight": { "x": 984, "y": 93 }
+            },
+            "stencilSuperIds": ["base-datatable", "Component"],
+            "stencilId": "cloud-datatable",
+            "customStencilId": null
+          },
+          "enabled": true,
+          "extraSettings": {
+            "dataSource": "Rest",
+            "queryUrl": "/eq-api/change-logs/property/field-level",
+            "path": "hits",
+            "linkTargetView": "browse",
+            "storage": "Full",
+            "linkTarget": "_blank",
+            "infiniteScroll": false,
+            "showPagination": true,
+            "autoHidePagination": true,
+            "clientPagination": true,
+            "sortableColumns": false,
+            "columns": [
+              {
+                "label": "Field Name",
+                "id": "DATA_KEY",
+                "accessor": "DATA_KEY",
+                "alignment": "left",
+                "component": {
+                  "type": "htmlComponent",
+                  "value": "<span>{{startCase($item.DATA_KEY)}}</span>"
+                },
+                "filterable": "true",
+                "sortable": "true",
+                "show": true
+              },
+              {
+                "label": "Comments",
+                "id": "COMMENTS",
+                "accessor": "COMMENTS",
+                "alignment": "left",
+                "filterable": "true",
+                "sortable": "true",
+                "show": true
+              },
+              {
+                "label": "Previous Value",
+                "id": "PREVIOUS_VALUE",
+                "accessor": "PREVIOUS_VALUE",
+                "alignment": "left",
+                "filterable": "true",
+                "sortable": "true",
+                "show": true
+              },
+              {
+                "label": "Current Value",
+                "id": "CURRENT_VALUE",
+                "accessor": "CURRENT_VALUE",
+                "alignment": "left",
+                "filterable": "true",
+                "sortable": "true",
+                "show": true
+              },
+              {
+                "label": "Created Date",
+                "id": "RECORD_TIME",
+                "accessor": "RECORD_TIME",
+                "alignment": "left",
+                "component": {
+                  "type": "htmlComponent",
+                  "value": "<span>{{$item.RECORD_TIME !== null ?flw.formatDate(flw.parseDate($item.RECORD_TIME), 'MM/DD/YY HH:mm') : null}}</span>"
+                },
+                "show": true
+              },
+              {
+                "label": "Updated By",
+                "id": "UPDATED_BY",
+                "accessor": "UPDATED_BY",
+                "alignment": "left",
+                "filterable": "true",
+                "sortable": "true",
+                "show": true
+              },
+              {
+                "label": "Updated Date",
+                "id": "UPDATED_DATE",
+                "accessor": "UPDATED_DATE",
+                "alignment": "left",
+                "component": {
+                  "type": "htmlComponent",
+                  "value": "<span>{{$item.UPDATED_DATE !== null ?flw.formatDate(flw.parseDate($item.UPDATED_DATE), 'MM/DD/YY HH:mm') : null}}</span>"
+                },
+                "filterable": "true",
+                "sortable": "true",
+                "show": true
+              }
+            ],
+            "filterable": true,
+            "sortable": true,
+            "multiSort": false,
+            "pageSize": 20,
+            "pageSizeOptions": [5, 10, 20, 25, 50, 100],
+            "showTotalRecords": false,
+            "response": {},
+            "dataPollingOnInit": false,
+            "target": "_blank",
+            "noDataMessage": "No Data Found",
+            "nodataPosition": "middle-center"
+          },
+          "labelAlign": "top",
+          "value": "{{propertyDetails}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "isRequired": false,
+          "styleClass": "dataTranferLeft",
+          "id": "datatable1",
+          "i18n": {
+            "en_us": {
+              "extraSettings": {
+                "columns": [
+                  {
+                    "label": "Field Name",
+                    "id": "DATA_KEY",
+                    "accessor": "DATA_KEY",
+                    "alignment": "left",
+                    "component": {
+                      "type": "htmlComponent",
+                      "value": "<span>{{startCase($item.DATA_KEY)}}</span>"
+                    },
+                    "filterable": "true",
+                    "sortable": "true",
+                    "show": true
+                  },
+                  {
+                    "label": "Comments",
+                    "id": "COMMENTS",
+                    "accessor": "COMMENTS",
+                    "alignment": "left",
+                    "filterable": "true",
+                    "sortable": "true",
+                    "show": true
+                  },
+                  {
+                    "label": "Previous Value",
+                    "id": "PREVIOUS_VALUE",
+                    "accessor": "PREVIOUS_VALUE",
+                    "alignment": "left",
+                    "filterable": "true",
+                    "sortable": "true",
+                    "show": true
+                  },
+                  {
+                    "label": "Current Value",
+                    "id": "CURRENT_VALUE",
+                    "accessor": "CURRENT_VALUE",
+                    "alignment": "left",
+                    "filterable": "true",
+                    "sortable": "true",
+                    "show": true
+                  },
+                  {
+                    "label": "Created Date",
+                    "id": "RECORD_TIME",
+                    "accessor": "RECORD_TIME",
+                    "alignment": "left",
+                    "component": {
+                      "type": "htmlComponent",
+                      "value": "<span>{{$item.RECORD_TIME !== null ?flw.formatDate(flw.parseDate($item.RECORD_TIME), 'MM/DD/YY HH:mm') : null}}</span>"
+                    },
+                    "show": true
+                  },
+                  {
+                    "label": "Updated By",
+                    "id": "UPDATED_BY",
+                    "accessor": "UPDATED_BY",
+                    "alignment": "left",
+                    "filterable": "true",
+                    "sortable": "true",
+                    "show": true
+                  },
+                  {
+                    "label": "Updated Date",
+                    "id": "UPDATED_DATE",
+                    "accessor": "UPDATED_DATE",
+                    "alignment": "left",
+                    "component": {
+                      "type": "htmlComponent",
+                      "value": "<span>{{$item.UPDATED_DATE !== null ?flw.formatDate(flw.parseDate($item.UPDATED_DATE), 'MM/DD/YY HH:mm') : null}}</span>"
+                    },
+                    "filterable": "true",
+                    "sortable": "true",
+                    "show": true
+                  }
+                ],
+                "noDataMessage": "No Data Found"
+              }
+            }
+          },
+          "type": "dataTable"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "key": "changeLogPropertyDetails",
+    "name": "ChangeLog-Property Details",
+    "description": "",
+    "version": "38",
+    "type": "2",
+    "flowableDesignVersion": 3090
+  }
+}

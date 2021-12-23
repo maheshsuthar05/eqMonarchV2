@@ -1,0 +1,34 @@
+{
+  "contacts": [
+    {
+      "ContactType": "Asset Manager",
+      "Name": "DEBRA GETZ",
+      "CompanyName": "Altisource",
+      "Address1": "3660 Brushwood StreetX",
+      "City": "Atlanta, GA, 30348",
+      "Phone": "2701541350",
+      "Fax": "4931560560",
+      "Email": "DEBRA.GETZ@ALTISOURCE.COM"
+    },
+    {
+      "ContactType": "Selling Agent",
+      "Name": "J. Doe",
+      "CompanyName": "Altisource",
+      "Address1": "3660 Brushwood StreetX",
+      "City": "Atlanta, GA, 30348",
+      "Phone": "2701541350",
+      "Fax": "4931560560",
+      "Email": "JDOE@ALTISOURCE.COM"
+    },
+    {
+      "ContactType": "Buyer",
+      "Name": "Doe J",
+      "CompanyName": "OCWEN",
+      "Address1": "3660 Brushwood StreetX",
+      "City": "Atlanta, GA, 30348",
+      "Phone": "2701541350",
+      "Fax": "4931560560",
+      "Email": "DOEJ@ALTISOURCE.COM"
+    }
+  ]
+}

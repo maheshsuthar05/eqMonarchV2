@@ -1,0 +1,158 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 25 },
+              "lowerRight": { "x": 984, "y": 95 }
+            },
+            "stencilSuperIds": ["base-text", "Component"],
+            "stencilId": "cloud-text",
+            "customStencilId": null
+          },
+          "type": "text",
+          "labelAlign": "top",
+          "value": "{{name}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": "{{additionalData.isAdd}}",
+          "isRequired": true,
+          "label": "Name",
+          "i18n": { "en_us": { "label": "Name" } },
+          "id": "text3",
+          "extraSettings": {}
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 120 },
+              "lowerRight": { "x": 984, "y": 215 }
+            },
+            "stencilSuperIds": ["base-multi-select", "Component"],
+            "stencilId": "cloud-multi-select",
+            "customStencilId": null
+          },
+          "type": "select",
+          "extraSettings": {
+            "tagsEnabled": false,
+            "preselectAll": false,
+            "clientSideFiltering": false,
+            "enableAutocomplete": true,
+            "autocompleteMinLength": 0,
+            "dataSource": "Rest",
+            "queryUrl": "{{additionalData.url}}",
+            "lookupUrl": "{{additionalData.url}}",
+            "path": "data",
+            "linkTargetView": "browse",
+            "formatItem": "{{$item.displayName}}",
+            "storage": "Full",
+            "linkTarget": "_blank",
+            "multi": true
+          },
+          "enabled": true,
+          "labelAlign": "top",
+          "value": "{{selectedList}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "isRequired": true,
+          "label": "Available Users",
+          "i18n": { "en_us": { "label": "Available Users" } },
+          "id": "multi-select3"
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 0, "y": 0 },
+              "lowerRight": { "x": 0, "y": 0 }
+            },
+            "stencilSuperIds": [],
+            "stencilId": null,
+            "customStencilId": null
+          },
+          "type": "",
+          "size": 8
+        },
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 671, "y": 216 },
+              "lowerRight": { "x": 820, "y": 242 }
+            },
+            "stencilSuperIds": ["Button"],
+            "stencilId": "cloud-script-button",
+            "customStencilId": null
+          },
+          "type": "scriptButton",
+          "extraSettings": {
+            "text": "Save",
+            "script": "{{$formValid}}",
+            "autoExecute": false,
+            "executeAlways": false,
+            "alignment": "left",
+            "iconAlignment": "right"
+          },
+          "i18n": { "en_us": { "extraSettings": { "text": "Save" } } },
+          "primary": false,
+          "labelAlign": "top",
+          "size": 2,
+          "ignore": false,
+          "visible": true,
+          "enabled": "{{$formValid}}",
+          "isRequired": false,
+          "styleClass": "altisource__button_primary",
+          "id": "script-button3"
+        },
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 835, "y": 216 },
+              "lowerRight": { "x": 984, "y": 242 }
+            },
+            "stencilSuperIds": ["Button"],
+            "stencilId": "cloud-link-button",
+            "customStencilId": null
+          },
+          "type": "linkButton",
+          "extraSettings": {
+            "target": "_self",
+            "alignment": "left",
+            "iconAlignment": "right",
+            "showAsButton": true,
+            "type": "one"
+          },
+          "primary": false,
+          "labelAlign": "top",
+          "value": "Cancel",
+          "size": 2,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "styleClass": "altisource__button_secondary",
+          "id": "link-button4",
+          "i18n": { "en_us": { "value": "Cancel" } }
+        }
+      ]
+    }
+  ],
+  "forceValidation": true,
+  "metadata": {
+    "key": "addGroup",
+    "name": "add group",
+    "description": "add group",
+    "version": "16",
+    "type": "2"
+  }
+}

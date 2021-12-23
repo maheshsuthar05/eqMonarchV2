@@ -1,0 +1,38 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 25 },
+              "lowerRight": { "x": 984, "y": 51 }
+            },
+            "stencilSuperIds": ["base-text", "Component"],
+            "stencilId": "cloud-text",
+            "customStencilId": null
+          },
+          "type": "text",
+          "labelAlign": "left",
+          "value": "{{legalEntityName}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": true,
+          "label": "Legal Entity Name:",
+          "i18n": { "en_us": { "label": "Legal Entity Name:" } },
+          "id": "text1",
+          "extraSettings": {}
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "key": "addLegalEntity",
+    "name": "Add Legal Entity",
+    "description": "Add Legal Entity",
+    "version": "4",
+    "type": "2"
+  }
+}

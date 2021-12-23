@@ -1,0 +1,303 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "type": "linkButton",
+          "extraSettings": {
+            "target": "_self",
+            "alignment": "left",
+            "iconAlignment": "right",
+            "showAsButton": true,
+            "type": "one"
+          },
+          "i18n": {
+            "en_us": {
+              "value": "Bulk Import"
+            }
+          },
+          "primary": false,
+          "labelAlign": "top",
+          "value": "Bulk Import",
+          "size": 2,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "styleClass": "altisource__model_primary",
+          "id": "bulkImport",
+          "col": 10
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "type": "dataTable",
+          "i18n": {
+            "en_us": {
+              "extraSettings": {
+                "columns": [
+                  {
+                    "label": "Batch ID",
+                    "id": "BATCH_ID",
+                    "alignment": "left",
+                    "show": true,
+                    "accessor": "BATCH_ID",
+                    "sortable": true
+                  },
+                  {
+                    "label": "Date",
+                    "id": "CREATED_DATE",
+                    "alignment": "left",
+                    "show": true,
+                    "sortable": true,
+                    "accessor": "CREATED_DATE",
+                    "component": {
+                      "type": "htmlComponent",
+                      "value": "<span>{{flw.formatDate($item.CREATED_DATE)}}</span>"
+                    }
+                  },
+                  {
+                    "label": "Filename",
+                    "id": "FILE_NAME",
+                    "alignment": "left",
+                    "show": true,
+                    "accessor": "FILE_NAME",
+                    "sortable": true
+                  },
+                  {
+                    "label": "Templates",
+                    "id": "TEMPLATE_TYPE",
+                    "alignment": "left",
+                    "show": true,
+                    "accessor": "TEMPLATE_TYPE",
+                    "sortable": true
+                  },
+                  {
+                    "label": "Status",
+                    "id": "BATCH_STATUS_TYPE",
+                    "alignment": "left",
+                    "show": true,
+                    "accessor": "BATCH_STATUS_TYPE",
+                    "sortable": true
+                  },
+                  {
+                    "label": "Details",
+                    "id": "BATCH_DETAILS",
+                    "alignment": "right",
+                    "show": true,
+                    "accessor": "BATCH_DETAILS",
+                    "component": {
+                      "type": "htmlComponent",
+                      "value": "<span>{{$item.SUCCESS_COUNT}}&nbsp;Success &nbsp;|&nbsp; {{$item.EXCEPTION_COUNT}}&nbsp;Error&nbsp;{{details($item)}}</span>"
+                    },
+                    "sortable": false,
+                    "filterable": false
+                  },
+                  {
+                    "id": "details",
+                    "alignment": "left",
+                    "component": {
+                      "type": "scriptButton",
+                      "size": 1,
+                      "visible": "{{$item.EXCEPTION_COUNT===0?false:true}}",
+                      "value": "{{$item}}",
+                      "extraSettings": {
+                        "text": "Detail",
+                        "tooltip": "Detail",
+                        "script": {
+                          "key": "Detail",
+                          "payload": "{{$item}}"
+                        }
+                      },
+                      "styleClass": "batch_list_error_button"
+                    },
+                    "show": true,
+                    "sortable": false,
+                    "filterable": false
+                  }
+                ],
+                "noDataMessage": "No Templates"
+              }
+            },
+            "de_de": {
+              "extraSettings": {}
+            },
+            "fr_fr": {
+              "extraSettings": {}
+            },
+            "it_it": {
+              "extraSettings": {}
+            },
+            "es_es": {
+              "extraSettings": {}
+            }
+          },
+          "enabled": true,
+          "extraSettings": {
+            "dataSource": "Rest",
+            "queryUrl": "/eq-api/bulk-upload/batch-listing/batchDataList?from=0&size=1000&sortFieldName=BATCH_ID&sortOrder=DESC",
+            "path": "hits",
+            "storage": "Full",
+            "linkTarget": "_blank",
+            "output": {},
+            "infiniteScroll": false,
+            "showPagination": true,
+            "autoHidePagination": true,
+            "clientPagination": true,
+            "sortableColumns": true,
+            "columns": [
+              {
+                "label": "Batch ID",
+                "id": "BATCH_ID",
+                "alignment": "left",
+                "show": true,
+                "accessor": "BATCH_ID",
+                "sortable": true
+              },
+              {
+                "label": "Date",
+                "id": "CREATED_DATE",
+                "alignment": "left",
+                "show": true,
+                "sortable": true,
+                "accessor": "CREATED_DATE",
+                "component": {
+                  "type": "htmlComponent",
+                  "value": "<span>{{flw.formatDate($item.CREATED_DATE)}}</span>"
+                }
+              },
+              {
+                "label": "Filename",
+                "id": "FILE_NAME",
+                "alignment": "left",
+                "show": true,
+                "accessor": "FILE_NAME",
+                "sortable": true
+              },
+              {
+                "label": "Templates",
+                "id": "TEMPLATE_TYPE",
+                "alignment": "left",
+                "show": true,
+                "accessor": "TEMPLATE_TYPE",
+                "sortable": true
+              },
+              {
+                "label": "Status",
+                "id": "BATCH_STATUS_TYPE",
+                "alignment": "left",
+                "show": true,
+                "accessor": "BATCH_STATUS_TYPE",
+                "sortable": true
+              },
+              {
+                "label": "Details",
+                "id": "BATCH_DETAILS",
+                "alignment": "right",
+                "show": true,
+                "accessor": "BATCH_DETAILS",
+                "component": {
+                  "type": "htmlComponent",
+                  "value": "<span>{{$item.SUCCESS_COUNT}}&nbsp;Success &nbsp;|&nbsp; {{$item.EXCEPTION_COUNT}}&nbsp;Error&nbsp;{{details($item)}}</span>"
+                },
+                "sortable": false,
+                "filterable": false
+              },
+              {
+                "id": "details",
+                "alignment": "left",
+                "component": {
+                  "type": "scriptButton",
+                  "size": 1,
+                  "visible": "{{$item.EXCEPTION_COUNT===0?false:true}}",
+                  "value": "{{$item}}",
+                  "extraSettings": {
+                    "text": "Detail",
+                    "tooltip": "Detail",
+                    "script": {
+                      "key": "Detail",
+                      "payload": "{{$item}}"
+                    }
+                  },
+                  "styleClass": "batch_list_error_button"
+                },
+                "show": true,
+                "sortable": false,
+                "filterable": false
+              }
+            ],
+            "filterable": true,
+            "sortable": true,
+            "multiSort": false,
+            "pageSize": 20,
+            "pageSizeOptions": [
+              5,
+              10,
+              20,
+              25,
+              50,
+              100
+            ],
+            "showTotalRecords": false,
+            "response": {},
+            "showRefreshButton": true,
+            "refreshTime": "{{tableRefresh}}",
+            "dataPollingOnInit": false,
+            "noDataMessage": "No Templates",
+            "nodataPosition": "middle-center"
+          },
+          "labelAlign": "top",
+          "value": "{{uploadOperationList}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "isRequired": false,
+          "id": "datatable1",
+          "col": 0
+        }
+      ]
+    }
+  ]
+}

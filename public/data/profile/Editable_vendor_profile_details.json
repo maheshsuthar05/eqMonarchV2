@@ -1,0 +1,1488 @@
+{
+    "rows": [
+      {
+        "cols": [
+          {
+            "type": "panel",
+            "label": "Account Details",
+            "i18n": {
+              "en_us": {
+                "label": "Account Details"
+              }
+            },
+            "labelAlign": "top",
+            "size": 4,
+            "ignore": false,
+            "visible": true,
+            "enabled": true,
+            "isRequired": false,
+            "styleClass": "property-layout-column",
+            "id": "sub-panel1",
+            "extraSettings": {
+              "collapsible": false,
+              "collapsed": false,
+              "showBorder": false,
+              "saveButtonVisible": true,
+              "saveButtonEnabled": true,
+              "cancelButtonVisible": true,
+              "cancelButtonEnabled": true,
+              "layoutDefinition": {
+                "rows": [
+                  {
+                    "cols": [
+                      {
+                        "type": "text",
+                        "extraSettings": {},
+                        "i18n": {
+                          "en_us": {
+                            "label": "First Name:"
+                          },
+                          "de_de": {},
+                          "fr_fr": {},
+                          "it_it": {},
+                          "es_es": {}
+                        },
+                        "labelAlign": "left",
+                        "value": "{{firstName}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "enabled": true,
+                        "isRequired": true,
+                        "label": "First Name:",
+                        "id": "text1",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "text",
+                        "extraSettings": {},
+                        "i18n": {
+                          "en_us": {
+                            "label": "Last Name:"
+                          },
+                          "de_de": {},
+                          "fr_fr": {},
+                          "it_it": {},
+                          "es_es": {}
+                        },
+                        "labelAlign": "left",
+                        "value": "{{lastName}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "enabled": true,
+                        "isRequired": true,
+                        "label": "Last Name:",
+                        "id": "text2",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "text",
+                        "extraSettings": {},
+                        "i18n": {
+                          "en_us": {
+                            "label": "Email Address:"
+                          },
+                          "de_de": {},
+                          "fr_fr": {},
+                          "it_it": {},
+                          "es_es": {}
+                        },
+                        "labelAlign": "left",
+                        "value": "{{email}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "enabled": true,
+                        "isRequired": true,
+                        "label": "Email Address:",
+                        "id": "text3",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "text",
+                        "extraSettings": {},
+                        "i18n": {
+                          "en_us": {
+                            "label": "Confirm Email:"
+                          },
+                          "de_de": {},
+                          "fr_fr": {},
+                          "it_it": {},
+                          "es_es": {}
+                        },
+                        "labelAlign": "left",
+                        "value": "{{confirmEmail}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "enabled": true,
+                        "isRequired": true,
+                        "label": "Confirm Email:",
+                        "id": "text4",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "text",
+                        "extraSettings": {},
+                        "i18n": {
+                          "en_us": {
+                            "label": "Mobile:"
+                          },
+                          "de_de": {},
+                          "fr_fr": {},
+                          "it_it": {},
+                          "es_es": {}
+                        },
+                        "labelAlign": "left",
+                        "value": "{{telephoneNumber}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "enabled": true,
+                        "isRequired": true,
+                        "label": "Mobile:",
+                        "id": "text5",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "panel",
+                        "label": "License Information:",
+                        "i18n": {
+                          "en_us": {
+                            "label": "License Information:"
+                          }
+                        },
+                        "labelAlign": "top",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": "{{!additionalData.isVendor}}",
+                        "enabled": true,
+                        "isRequired": false,
+                        "id": "sub-panel5",
+                        "extraSettings": {
+                          "collapsible": false,
+                          "collapsed": false,
+                          "showBorder": false,
+                          "saveButtonVisible": true,
+                          "saveButtonEnabled": true,
+                          "cancelButtonVisible": true,
+                          "cancelButtonEnabled": true,
+                          "layoutDefinition": {
+                            "rows": [
+                              {
+                                "cols": [
+                                  {
+                                    "type": "text",
+                                    "extraSettings": {},
+                                    "i18n": {
+                                      "en_us": {
+                                        "label": "Number"
+                                      },
+                                      "de_de": {},
+                                      "fr_fr": {},
+                                      "it_it": {},
+                                      "es_es": {}
+                                    },
+                                    "labelAlign": "left",
+                                    "value": "{{licenseInformation}}",
+                                    "size": 12,
+                                    "ignore": false,
+                                    "visible": true,
+                                    "enabled": true,
+                                    "isRequired": false,
+                                    "label": "Number",
+                                    "id": "text15",
+                                    "col": 0
+                                  }
+                                ]
+                              },
+                              {
+                                "cols": [
+                                  {
+                                    "type": "date",
+                                    "i18n": {
+                                      "en_us": {
+                                        "label": "Expiry Date"
+                                      }
+                                    },
+                                    "labelAlign": "left",
+                                    "value": "{{expiryDate}}",
+                                    "size": 12,
+                                    "ignore": false,
+                                    "visible": true,
+                                    "enabled": true,
+                                    "isRequired": false,
+                                    "label": "Expiry Date",
+                                    "id": "date1",
+                                    "extraSettings": {
+                                      "enableTime": false,
+                                      "storeWithoutTime": true
+                                    },
+                                    "col": 0
+                                  }
+                                ]
+                              },
+                              {
+                                "cols": [
+                                  {
+                                    "type": "text",
+                                    "extraSettings": {},
+                                    "i18n": {
+                                      "en_us": {
+                                        "label": "State"
+                                      },
+                                      "de_de": {},
+                                      "fr_fr": {},
+                                      "it_it": {},
+                                      "es_es": {}
+                                    },
+                                    "labelAlign": "left",
+                                    "value": "{{licenceState}}",
+                                    "size": 12,
+                                    "ignore": false,
+                                    "visible": true,
+                                    "enabled": true,
+                                    "isRequired": false,
+                                    "label": "State",
+                                    "id": "text20",
+                                    "col": 0
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "radio",
+                        "i18n": {
+                          "en_us": {
+                            "extraSettings": {
+                              "items": [
+                                {
+                                  "text": "Agent",
+                                  "value": "agent",
+                                  "checked": "true"
+                                },
+                                {
+                                  "text": "Broker",
+                                  "value": "broker"
+                                },
+                                {
+                                  "text": "Attorny",
+                                  "value": "attorny"
+                                }
+                              ]
+                            },
+                            "label": "License Type:"
+                          }
+                        },
+                        "enabled": true,
+                        "extraSettings": {
+                          "dataSource": "Static",
+                          "items": [
+                            {
+                              "text": "Agent",
+                              "value": "agent",
+                              "checked": "true"
+                            },
+                            {
+                              "text": "Broker",
+                              "value": "broker"
+                            },
+                            {
+                              "text": "Attorny",
+                              "value": "attorny"
+                            }
+                          ],
+                          "storage": "Id",
+                          "identity": "value",
+                          "linkTarget": "_blank",
+                          "display": "Horizontal"
+                        },
+                        "labelAlign": "left",
+                        "value": "{{licenseType}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": "{{!additionalData.isVendor}}",
+                        "isRequired": false,
+                        "label": "License Type:",
+                        "id": "radiobuttons8",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "select",
+                        "extraSettings": {
+                          "tagsEnabled": false,
+                          "preselectAll": false,
+                          "enableAutocomplete": true,
+                          "autocompleteMinLength": 0,
+                          "dataSource": "Static",
+                          "items": [
+                            {
+                              "text": "Aberdeen MLS",
+                              "value": "Aberdeen MLS"
+                            },
+                            {
+                              "text": "Abilene Board of Realtors",
+                              "value": "Abilene Board of Realtors"
+                            },
+                            {
+                              "text": "Ada Board of Realtors",
+                              "value": "Ada Board of Realtors"
+                            }
+                          ],
+                          "storage": "Id",
+                          "identity": "value",
+                          "linkTarget": "_blank",
+                          "multi": true
+                        },
+                        "i18n": {
+                          "en_us": {
+                            "extraSettings": {
+                              "items": [
+                                {
+                                  "text": "Aberdeen MLS",
+                                  "value": "Aberdeen MLS"
+                                },
+                                {
+                                  "text": "Abilene Board of Realtors",
+                                  "value": "Abilene Board of Realtors"
+                                },
+                                {
+                                  "text": "Ada Board of Realtors",
+                                  "value": "Ada Board of Realtors"
+                                }
+                              ]
+                            },
+                            "label": "MLS Names:"
+                          }
+                        },
+                        "enabled": true,
+                        "labelAlign": "left",
+                        "value": "{{mLSNames}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": "{{!additionalData.isVendor}}",
+                        "isRequired": false,
+                        "label": "MLS Names:",
+                        "id": "multi-select1",
+                        "col": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            "col": 0
+          },
+          {
+            "type": "panel",
+            "label": "Contact",
+            "i18n": {
+              "en_us": {
+                "label": "Contact"
+              }
+            },
+            "labelAlign": "top",
+            "size": 4,
+            "ignore": false,
+            "visible": true,
+            "enabled": true,
+            "isRequired": false,
+            "styleClass": "property-layout-column",
+            "id": "sub-panel3",
+            "extraSettings": {
+              "collapsible": false,
+              "collapsed": false,
+              "showBorder": false,
+              "saveButtonVisible": true,
+              "saveButtonEnabled": true,
+              "cancelButtonVisible": true,
+              "cancelButtonEnabled": true,
+              "layoutDefinition": {
+                "rows": [
+                  {
+                    "cols": [
+                      {
+                        "type": "htmlComponent",
+                        "i18n": {
+                          "en_us": {
+                            "value": "<h4><strong>Company</strong></h4>\n"
+                          },
+                          "de_de": {},
+                          "fr_fr": {},
+                          "it_it": {},
+                          "es_es": {}
+                        },
+                        "labelAlign": "top",
+                        "value": "<h4><strong>Company</strong></h4>\n",
+                        "defaultValue": false,
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "enabled": true,
+                        "isRequired": false,
+                        "id": "output1",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "text",
+                        "extraSettings": {},
+                        "i18n": {
+                          "en_us": {
+                            "label": "Company Name:"
+                          },
+                          "de_de": {},
+                          "fr_fr": {},
+                          "it_it": {},
+                          "es_es": {}
+                        },
+                        "labelAlign": "left",
+                        "value": "{{companyName}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "enabled": true,
+                        "isRequired": false,
+                        "label": "Company Name:",
+                        "id": "text11",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "text",
+                        "extraSettings": {},
+                        "i18n": {
+                          "en_us": {
+                            "label": "Address:"
+                          },
+                          "de_de": {},
+                          "fr_fr": {},
+                          "it_it": {},
+                          "es_es": {}
+                        },
+                        "labelAlign": "left",
+                        "value": "{{address}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "enabled": true,
+                        "isRequired": false,
+                        "label": "Address:",
+                        "id": "text13",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "text",
+                        "extraSettings": {},
+                        "i18n": {
+                          "en_us": {
+                            "label": "City:"
+                          },
+                          "de_de": {},
+                          "fr_fr": {},
+                          "it_it": {},
+                          "es_es": {}
+                        },
+                        "labelAlign": "left",
+                        "value": "{{city}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "enabled": true,
+                        "isRequired": false,
+                        "label": "City:",
+                        "id": "text14",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "text",
+                        "extraSettings": {},
+                        "i18n": {
+                          "en_us": {
+                            "label": "State:"
+                          },
+                          "de_de": {},
+                          "fr_fr": {},
+                          "it_it": {},
+                          "es_es": {}
+                        },
+                        "labelAlign": "left",
+                        "value": "{{selectedState}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "enabled": true,
+                        "isRequired": false,
+                        "label": "State:",
+                        "id": "text27",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "text",
+                        "extraSettings": {},
+                        "i18n": {
+                          "en_us": {
+                            "label": "Zip:"
+                          },
+                          "de_de": {},
+                          "fr_fr": {},
+                          "it_it": {},
+                          "es_es": {}
+                        },
+                        "labelAlign": "left",
+                        "value": "{{zip}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "enabled": true,
+                        "isRequired": false,
+                        "label": "Zip:",
+                        "id": "text16",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "text",
+                        "extraSettings": {},
+                        "i18n": {
+                          "en_us": {
+                            "label": "Phone:"
+                          },
+                          "de_de": {},
+                          "fr_fr": {},
+                          "it_it": {},
+                          "es_es": {}
+                        },
+                        "labelAlign": "left",
+                        "value": "{{phone}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "enabled": true,
+                        "isRequired": false,
+                        "label": "Phone:",
+                        "id": "text17",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "text",
+                        "extraSettings": {},
+                        "i18n": {
+                          "en_us": {
+                            "label": "Fax:"
+                          },
+                          "de_de": {},
+                          "fr_fr": {},
+                          "it_it": {},
+                          "es_es": {}
+                        },
+                        "labelAlign": "left",
+                        "value": "{{fax}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "enabled": true,
+                        "isRequired": false,
+                        "label": "Fax:",
+                        "id": "text18",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "panel",
+                        "i18n": {},
+                        "labelAlign": "top",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": "{{!additionalData.isVendor}}",
+                        "enabled": true,
+                        "isRequired": false,
+                        "id": "sub-panel6",
+                        "extraSettings": {
+                          "collapsible": false,
+                          "collapsed": false,
+                          "showBorder": false,
+                          "saveButtonVisible": true,
+                          "saveButtonEnabled": true,
+                          "cancelButtonVisible": true,
+                          "cancelButtonEnabled": true,
+                          "layoutDefinition": {
+                            "rows": [
+                              {
+                                "cols": [
+                                  {
+                                    "type": "htmlComponent",
+                                    "i18n": {
+                                      "en_us": {
+                                        "value": "<h4><strong>Broker</strong></h4>\n"
+                                      },
+                                      "de_de": {},
+                                      "fr_fr": {},
+                                      "it_it": {},
+                                      "es_es": {}
+                                    },
+                                    "labelAlign": "top",
+                                    "value": "<h4><strong>Broker</strong></h4>\n",
+                                    "defaultValue": false,
+                                    "size": 12,
+                                    "ignore": false,
+                                    "visible": true,
+                                    "enabled": true,
+                                    "isRequired": false,
+                                    "id": "output2",
+                                    "col": 0
+                                  }
+                                ]
+                              },
+                              {
+                                "cols": [
+                                  {
+                                    "type": "boolean",
+                                    "i18n": {
+                                      "en_us": {
+                                        "label": "My company and broker information same"
+                                      },
+                                      "de_de": {},
+                                      "fr_fr": {},
+                                      "it_it": {},
+                                      "es_es": {}
+                                    },
+                                    "labelAlign": "top",
+                                    "value": "{{myCompanyAndBrokerAddressAreSame}}",
+                                    "defaultValue": false,
+                                    "size": 12,
+                                    "ignore": false,
+                                    "visible": true,
+                                    "enabled": true,
+                                    "isRequired": false,
+                                    "label": "My company and broker information same",
+                                    "id": "checkbox1",
+                                    "col": 0
+                                  }
+                                ]
+                              },
+                              {
+                                "cols": [
+                                  {
+                                    "type": "text",
+                                    "extraSettings": {},
+                                    "i18n": {
+                                      "en_us": {
+                                        "label": "Broker of record name"
+                                      },
+                                      "de_de": {},
+                                      "fr_fr": {},
+                                      "it_it": {},
+                                      "es_es": {}
+                                    },
+                                    "labelAlign": "left",
+                                    "value": "{{companyName}}",
+                                    "size": 12,
+                                    "ignore": false,
+                                    "visible": true,
+                                    "enabled": true,
+                                    "isRequired": false,
+                                    "label": "Broker of record name",
+                                    "id": "text21",
+                                    "col": 0
+                                  }
+                                ]
+                              },
+                              {
+                                "cols": [
+                                  {
+                                    "type": "text",
+                                    "extraSettings": {},
+                                    "i18n": {
+                                      "en_us": {
+                                        "label": "Broker Company Name:"
+                                      },
+                                      "de_de": {},
+                                      "fr_fr": {},
+                                      "it_it": {},
+                                      "es_es": {}
+                                    },
+                                    "labelAlign": "left",
+                                    "value": "{{companyName}}",
+                                    "size": 12,
+                                    "ignore": false,
+                                    "visible": true,
+                                    "enabled": true,
+                                    "isRequired": false,
+                                    "label": "Broker Company Name:",
+                                    "id": "text22",
+                                    "col": 0
+                                  }
+                                ]
+                              },
+                              {
+                                "cols": [
+                                  {
+                                    "type": "text",
+                                    "extraSettings": {},
+                                    "i18n": {
+                                      "en_us": {
+                                        "label": "Broker Address:"
+                                      },
+                                      "de_de": {},
+                                      "fr_fr": {},
+                                      "it_it": {},
+                                      "es_es": {}
+                                    },
+                                    "labelAlign": "left",
+                                    "value": "{{address}}",
+                                    "size": 12,
+                                    "ignore": false,
+                                    "visible": true,
+                                    "enabled": true,
+                                    "isRequired": false,
+                                    "label": "Broker Address:",
+                                    "id": "text24",
+                                    "col": 0
+                                  }
+                                ]
+                              },
+                              {
+                                "cols": [
+                                  {
+                                    "type": "text",
+                                    "extraSettings": {},
+                                    "i18n": {
+                                      "en_us": {
+                                        "label": "Broker City:"
+                                      },
+                                      "de_de": {},
+                                      "fr_fr": {},
+                                      "it_it": {},
+                                      "es_es": {}
+                                    },
+                                    "labelAlign": "left",
+                                    "value": "{{city}}",
+                                    "size": 12,
+                                    "ignore": false,
+                                    "visible": true,
+                                    "enabled": true,
+                                    "isRequired": false,
+                                    "label": "Broker City:",
+                                    "id": "text25",
+                                    "col": 0
+                                  }
+                                ]
+                              },
+                              {
+                                "cols": [
+                                  {
+                                    "type": "text",
+                                    "extraSettings": {},
+                                    "i18n": {
+                                      "en_us": {
+                                        "label": "Broker State:"
+                                      },
+                                      "de_de": {},
+                                      "fr_fr": {},
+                                      "it_it": {},
+                                      "es_es": {}
+                                    },
+                                    "labelAlign": "left",
+                                    "value": "{{selectedState}}",
+                                    "size": 12,
+                                    "ignore": false,
+                                    "visible": true,
+                                    "enabled": true,
+                                    "isRequired": false,
+                                    "label": "Broker State:",
+                                    "id": "text26",
+                                    "col": 0
+                                  }
+                                ]
+                              },
+                              {
+                                "cols": [
+                                  {
+                                    "type": "text",
+                                    "extraSettings": {},
+                                    "i18n": {
+                                      "en_us": {
+                                        "label": "Broker Zip"
+                                      },
+                                      "de_de": {},
+                                      "fr_fr": {},
+                                      "it_it": {},
+                                      "es_es": {}
+                                    },
+                                    "labelAlign": "left",
+                                    "value": "{{zip}}",
+                                    "size": 12,
+                                    "ignore": false,
+                                    "visible": true,
+                                    "enabled": true,
+                                    "isRequired": false,
+                                    "label": "Broker Zip",
+                                    "id": "text28",
+                                    "col": 0
+                                  }
+                                ]
+                              },
+                              {
+                                "cols": [
+                                  {
+                                    "type": "text",
+                                    "extraSettings": {},
+                                    "i18n": {
+                                      "en_us": {
+                                        "label": "Broker Telephone Number"
+                                      },
+                                      "de_de": {},
+                                      "fr_fr": {},
+                                      "it_it": {},
+                                      "es_es": {}
+                                    },
+                                    "labelAlign": "left",
+                                    "value": "{{brokerTelephoneNumber}}",
+                                    "size": 12,
+                                    "ignore": false,
+                                    "visible": true,
+                                    "enabled": true,
+                                    "isRequired": false,
+                                    "label": "Broker Telephone Number",
+                                    "id": "text29",
+                                    "col": 0
+                                  }
+                                ]
+                              },
+                              {
+                                "cols": [
+                                  {
+                                    "type": "text",
+                                    "extraSettings": {},
+                                    "i18n": {
+                                      "en_us": {
+                                        "label": "Broker Web address"
+                                      },
+                                      "de_de": {},
+                                      "fr_fr": {},
+                                      "it_it": {},
+                                      "es_es": {}
+                                    },
+                                    "labelAlign": "left",
+                                    "value": "{{webaddress}}",
+                                    "size": 12,
+                                    "ignore": false,
+                                    "visible": true,
+                                    "enabled": true,
+                                    "isRequired": false,
+                                    "label": "Broker Web address",
+                                    "id": "text23",
+                                    "col": 0
+                                  }
+                                ]
+                              },
+                              {
+                                "cols": [
+                                  {
+                                    "type": "text",
+                                    "extraSettings": {},
+                                    "i18n": {
+                                      "en_us": {
+                                        "label": "Broker License number"
+                                      },
+                                      "de_de": {},
+                                      "fr_fr": {},
+                                      "it_it": {},
+                                      "es_es": {}
+                                    },
+                                    "labelAlign": "left",
+                                    "value": "{{brokerLicenceNumber}}",
+                                    "size": 12,
+                                    "ignore": false,
+                                    "visible": true,
+                                    "enabled": true,
+                                    "isRequired": false,
+                                    "label": "Broker License number",
+                                    "id": "text30",
+                                    "col": 0
+                                  }
+                                ]
+                              },
+                              {
+                                "cols": [
+                                  {
+                                    "type": "date",
+                                    "i18n": {
+                                      "en_us": {
+                                        "label": "Broker License Expire date"
+                                      }
+                                    },
+                                    "labelAlign": "left",
+                                    "value": "{{brokerLicenceExpireDate}}",
+                                    "size": 12,
+                                    "ignore": false,
+                                    "visible": true,
+                                    "enabled": true,
+                                    "isRequired": false,
+                                    "label": "Broker License Expire date",
+                                    "id": "date2",
+                                    "extraSettings": {
+                                      "enableTime": false,
+                                      "storeWithoutTime": true
+                                    },
+                                    "col": 0
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        "col": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            "col": 4
+          },
+          {
+            "type": "panel",
+            "label": "Communication",
+            "i18n": {
+              "en_us": {
+                "label": "Communication"
+              }
+            },
+            "labelAlign": "top",
+            "size": 4,
+            "ignore": false,
+            "visible": true,
+            "enabled": true,
+            "isRequired": false,
+            "styleClass": "property-layout-column communication-column",
+            "id": "sub-panel4",
+            "extraSettings": {
+              "collapsible": false,
+              "collapsed": false,
+              "showBorder": false,
+              "saveButtonVisible": true,
+              "saveButtonEnabled": true,
+              "cancelButtonVisible": true,
+              "cancelButtonEnabled": true,
+              "layoutDefinition": {
+                "rows": [
+                  {
+                    "cols": [
+                      {
+                        "type": "radio",
+                        "i18n": {
+                          "en_us": {
+                            "extraSettings": {
+                              "items": [
+                                {
+                                  "text": "Yes",
+                                  "value": "Yes"
+                                },
+                                {
+                                  "text": "No",
+                                  "value": "No"
+                                }
+                              ]
+                            },
+                            "tooltip": "Select \"Yes\" to receive any email generated by the Equator platform, including system updates, tasks, and Servicer-generated messages. Select \"No\" if you do not wish to receive these emails. Important messages from Equator may still be sent to you periodically.",
+                            "label": "Receive Equator Platform-related Emails?"
+                          }
+                        },
+                        "enabled": true,
+                        "extraSettings": {
+                          "dataSource": "Static",
+                          "items": [
+                            {
+                              "text": "Yes",
+                              "value": "Yes"
+                            },
+                            {
+                              "text": "No",
+                              "value": "No"
+                            }
+                          ],
+                          "storage": "Id",
+                          "identity": "value",
+                          "linkTarget": "_blank",
+                          "display": "Horizontal"
+                        },
+                        "labelAlign": "left",
+                        "tooltip": "Select \"Yes\" to receive any email generated by the Equator platform, including system updates, tasks, and Servicer-generated messages. Select \"No\" if you do not wish to receive these emails. Important messages from Equator may still be sent to you periodically.",
+                        "value": "{{receiveEquatorPlatformRelatedEmails}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "isRequired": false,
+                        "label": "Receive Equator Platform-related Emails?",
+                        "id": "radiobuttons1",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "radio",
+                        "i18n": {
+                          "en_us": {
+                            "extraSettings": {
+                              "items": [
+                                {
+                                  "text": "Yes",
+                                  "value": "Yes"
+                                },
+                                {
+                                  "text": "No",
+                                  "value": "No"
+                                }
+                              ]
+                            },
+                            "tooltip": "Select \"Yes\" to receive email generated by Equator for industry information and marketing of Equator products and services. Select \"No\" if you do not wish to receive these emails. Important messages from Equator may still be sent to you periodically.",
+                            "label": "Receive Equator Offers,News and Other Emails?"
+                          }
+                        },
+                        "enabled": true,
+                        "extraSettings": {
+                          "dataSource": "Static",
+                          "items": [
+                            {
+                              "text": "Yes",
+                              "value": "Yes"
+                            },
+                            {
+                              "text": "No",
+                              "value": "No"
+                            }
+                          ],
+                          "storage": "Id",
+                          "identity": "value",
+                          "linkTarget": "_blank",
+                          "display": "Horizontal"
+                        },
+                        "labelAlign": "left",
+                        "tooltip": "Select \"Yes\" to receive email generated by Equator for industry information and marketing of Equator products and services. Select \"No\" if you do not wish to receive these emails. Important messages from Equator may still be sent to you periodically.",
+                        "value": "{{receiveEquatorOffersNewsAndOtherEmails}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "isRequired": false,
+                        "label": "Receive Equator Offers,News and Other Emails?",
+                        "id": "radiobuttons2",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "radio",
+                        "i18n": {
+                          "en_us": {
+                            "extraSettings": {
+                              "items": [
+                                {
+                                  "text": "Yes",
+                                  "value": "Yes"
+                                },
+                                {
+                                  "text": "No",
+                                  "value": "No"
+                                }
+                              ]
+                            },
+                            "tooltip": "Select \"Yes\" to receive emails from Equator partners including discounts and special offers. Select \"No\" if you do not wish to receive these emails.",
+                            "label": "Receive Third Party Emails?"
+                          }
+                        },
+                        "enabled": true,
+                        "extraSettings": {
+                          "dataSource": "Static",
+                          "items": [
+                            {
+                              "text": "Yes",
+                              "value": "Yes"
+                            },
+                            {
+                              "text": "No",
+                              "value": "No"
+                            }
+                          ],
+                          "storage": "Id",
+                          "identity": "value",
+                          "linkTarget": "_blank",
+                          "display": "Horizontal"
+                        },
+                        "labelAlign": "left",
+                        "tooltip": "Select \"Yes\" to receive emails from Equator partners including discounts and special offers. Select \"No\" if you do not wish to receive these emails.",
+                        "value": "{{receiveThirdPartyEmails}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "isRequired": false,
+                        "label": "Receive Third Party Emails?",
+                        "id": "radiobuttons3",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "radio",
+                        "i18n": {
+                          "en_us": {
+                            "extraSettings": {
+                              "items": [
+                                {
+                                  "text": "HTML",
+                                  "value": "html",
+                                  "checked": "true"
+                                },
+                                {
+                                  "text": "Text",
+                                  "value": "text"
+                                }
+                              ]
+                            },
+                            "tooltip": "Do you wish to receive these emails in HTML or written text of the content.",
+                            "label": "Email Format"
+                          }
+                        },
+                        "enabled": true,
+                        "extraSettings": {
+                          "dataSource": "Static",
+                          "items": [
+                            {
+                              "text": "HTML",
+                              "value": "html",
+                              "checked": "true"
+                            },
+                            {
+                              "text": "Text",
+                              "value": "text"
+                            }
+                          ],
+                          "storage": "Id",
+                          "identity": "value",
+                          "linkTarget": "_blank",
+                          "display": "Horizontal"
+                        },
+                        "labelAlign": "left",
+                        "tooltip": "Do you wish to receive these emails in HTML or written text of the content.",
+                        "value": "{{emailFormat}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "isRequired": false,
+                        "label": "Email Format",
+                        "id": "radiobuttons4",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "textarea",
+                        "extraSettings": {},
+                        "i18n": {
+                          "en_us": {
+                            "label": "Signature:"
+                          },
+                          "de_de": {},
+                          "fr_fr": {},
+                          "it_it": {},
+                          "es_es": {}
+                        },
+                        "labelAlign": "left",
+                        "value": "{{signature}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "enabled": true,
+                        "isRequired": false,
+                        "label": "Signature:",
+                        "id": "text-area1",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "radio",
+                        "i18n": {
+                          "en_us": {
+                            "extraSettings": {
+                              "items": [
+                                {
+                                  "text": "Yes",
+                                  "value": "Yes"
+                                },
+                                {
+                                  "text": "No",
+                                  "value": "No"
+                                }
+                              ]
+                            },
+                            "label": "Out of Office:"
+                          }
+                        },
+                        "enabled": true,
+                        "extraSettings": {
+                          "dataSource": "Static",
+                          "items": [
+                            {
+                              "text": "Yes",
+                              "value": "Yes"
+                            },
+                            {
+                              "text": "No",
+                              "value": "No"
+                            }
+                          ],
+                          "storage": "Id",
+                          "identity": "value",
+                          "linkTarget": "_blank",
+                          "display": "Horizontal"
+                        },
+                        "labelAlign": "left",
+                        "value": "{{outOfOffice}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "isRequired": false,
+                        "label": "Out of Office:",
+                        "id": "radiobuttons5",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "textarea",
+                        "extraSettings": {},
+                        "i18n": {
+                          "en_us": {
+                            "label": "Message:"
+                          },
+                          "de_de": {},
+                          "fr_fr": {},
+                          "it_it": {},
+                          "es_es": {}
+                        },
+                        "labelAlign": "left",
+                        "value": "{{message}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "enabled": true,
+                        "isRequired": false,
+                        "label": "Message:",
+                        "id": "text-area2",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "radio",
+                        "i18n": {
+                          "en_us": {
+                            "extraSettings": {
+                              "items": [
+                                {
+                                  "text": "Yes",
+                                  "value": "Yes"
+                                },
+                                {
+                                  "text": "No",
+                                  "value": "No"
+                                }
+                              ]
+                            },
+                            "label": "CC Email:"
+                          }
+                        },
+                        "enabled": true,
+                        "extraSettings": {
+                          "dataSource": "Static",
+                          "items": [
+                            {
+                              "text": "Yes",
+                              "value": "Yes"
+                            },
+                            {
+                              "text": "No",
+                              "value": "No"
+                            }
+                          ],
+                          "storage": "Id",
+                          "identity": "value",
+                          "linkTarget": "_blank",
+                          "display": "Horizontal"
+                        },
+                        "labelAlign": "left",
+                        "value": "{{cCEmail}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "isRequired": false,
+                        "label": "CC Email:",
+                        "id": "radiobuttons6",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "text",
+                        "extraSettings": {},
+                        "i18n": {
+                          "en_us": {
+                            "label": "Email Field:"
+                          },
+                          "de_de": {},
+                          "fr_fr": {},
+                          "it_it": {},
+                          "es_es": {}
+                        },
+                        "labelAlign": "left",
+                        "value": "{{emailField}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "enabled": true,
+                        "isRequired": false,
+                        "label": "Email Field:",
+                        "id": "text19",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "radio",
+                        "i18n": {
+                          "en_us": {
+                            "extraSettings": {
+                              "items": [
+                                {
+                                  "text": "Yes",
+                                  "value": "Yes"
+                                },
+                                {
+                                  "text": "No",
+                                  "value": "No"
+                                }
+                              ]
+                            },
+                            "label": "Hide New Task/Deliverable Messages in Inbox"
+                          }
+                        },
+                        "enabled": true,
+                        "extraSettings": {
+                          "dataSource": "Static",
+                          "items": [
+                            {
+                              "text": "Yes",
+                              "value": "Yes"
+                            },
+                            {
+                              "text": "No",
+                              "value": "No"
+                            }
+                          ],
+                          "storage": "Id",
+                          "identity": "value",
+                          "linkTarget": "_blank",
+                          "display": "Horizontal"
+                        },
+                        "labelAlign": "left",
+                        "value": "{{hideMessagesInbox}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "isRequired": false,
+                        "label": "Hide New Task/Deliverable Messages in Inbox",
+                        "id": "radiobuttons7",
+                        "col": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            "col": 8
+          }
+        ]
+      }
+    ]
+  }

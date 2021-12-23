@@ -1,0 +1,340 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "type": "htmlComponent",
+          "i18n": {
+            "en_us": {
+              "value": "<div class=\"flex flex-col sm:flex sm:flex-row\">\n  <div class=\"flex w-full property-header-line\">\n\t<span class=\"MuiTypography-root text-20 font-300 leading-none MuiTypography-body1\">{{propertyAddresses[0].addressLineText}}, {{propertyAddresses[0].cityName}}, {{propertyAddresses[0].stateName}} {{propertyAddresses[0].postalCode}} Loan: {{loan.loanNumber}}</span>\n  </div>\n</div>"
+            },
+            "de_de": {},
+            "fr_fr": {},
+            "it_it": {},
+            "es_es": {}
+          },
+          "labelAlign": "top",
+          "value": "<div class=\"flex flex-col sm:flex sm:flex-row\">\n  <div class=\"flex w-full property-header-line\">\n\t<span class=\"MuiTypography-root text-20 font-300 leading-none MuiTypography-body1\">{{propertyAddresses[0].addressLineText}}, {{propertyAddresses[0].cityName}}, {{propertyAddresses[0].stateName}} {{propertyAddresses[0].postalCode}} Loan: {{loan.loanNumber}}</span>\n  </div>\n</div>",
+          "size": 4,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "html-component4",
+          "extraSettings": {
+            "showBorder": false
+          },
+          "col": 0
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "type": "htmlComponent",
+          "i18n": {
+            "en_us": {
+              "value": "<div class=\"flex flex-col sm:flex sm:flex-row\">\n    <div class=\"property-header-count flex w-full\">\n        <button class=\"MuiButtonBase-root MuiIconButton-root makeStyles-iconButton-508\" tabindex=\"0\" type=\"button\" aria-label=\"Airline\">\n            <span class=\"MuiIconButton-label\">\n                <span class=\"MuiBadge-root\">\n                    <svg class=\"MuiSvgIcon-root\" focusable=\"false\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M7 13c1.65 0 3-1.35 3-3S8.65 7 7 7s-3 1.35-3 3 1.35 3 3 3zm12-6h-8v7H3V7H1v10h22v-6c0-2.21-1.79-4-4-4z\"></path></svg>\n                    <span style=\"top: 10px; left: 16px; border: 0px solid #FFFFFF; padding: 0 8px;\" class=\"MuiBadge-anchorOriginTopRightRectangle MuiBadge-colorPrimary\">4</span>\n                </span>\n            </span>\n            <span class=\"MuiTouchRipple-root\"></span>\n        </button>\n        <button class=\"MuiButtonBase-root MuiIconButton-root makeStyles-iconButton-508\" tabindex=\"0\" type=\"button\" aria-label=\"Bath\">\n            <span class=\"MuiIconButton-label\">\n                <span class=\"MuiBadge-root\">\n                    <svg class=\"MuiSvgIcon-root\" focusable=\"false\" viewBox=\"0 0 24 24\" aria-hidden=\"true\">\n                        <circle cx=\"7\" cy=\"7\" r=\"2\"></circle>\n                        <path\n                            d=\"M20 13V4.83C20 3.27 18.73 2 17.17 2c-.75 0-1.47.3-2 .83l-1.25 1.25c-.16-.05-.33-.08-.51-.08-.4 0-.77.12-1.08.32l2.76 2.76c.2-.31.32-.68.32-1.08 0-.18-.03-.34-.07-.51l1.25-1.25c.15-.15.36-.24.58-.24.46 0 .83.37.83.83V13h-6.85c-.3-.21-.57-.45-.82-.72l-1.4-1.55c-.19-.21-.43-.38-.69-.5-.31-.15-.65-.23-1-.23C6 10.01 5 11.01 5 12.25V13H2v6c0 1.1.9 2 2 2 0 .55.45 1 1 1h14c.55 0 1-.45 1-1 1.1 0 2-.9 2-2v-6h-2zm0 6H4v-4h16v4z\"\n                        ></path>\n                    </svg>\n                    <span style=\"top: 10px; left: 16px; border: 0px solid #FFFFFF; padding: 0 8px;\"class=\"MuiBadge-anchorOriginTopRightRectangle MuiBadge-colorPrimary\">4</span>\n                </span>\n            </span>\n            <span class=\"MuiTouchRipple-root\"></span>\n        </button>\n        <button class=\"MuiButtonBase-root MuiIconButton-root makeStyles-iconButton-508\" tabindex=\"0\" type=\"button\" aria-label=\"Aquare\">\n            <span class=\"MuiIconButton-label\">\n                <span class=\"MuiBadge-root\">\n                    <svg class=\"MuiSvgIcon-root\" focusable=\"false\" viewBox=\"0 0 24 24\" aria-hidden=\"true\">\n                        <path\n                            d=\"M17.66 17.66l-1.06 1.06-.71-.71 1.06-1.06-1.94-1.94-1.06 1.06-.71-.71 1.06-1.06-1.94-1.94-1.06 1.06-.71-.71 1.06-1.06L9.7 9.7l-1.06 1.06-.71-.71 1.06-1.06-1.94-1.94-1.06 1.06-.71-.71 1.06-1.06L4 4v14c0 1.1.9 2 2 2h14l-2.34-2.34zM7 17v-5.76L12.76 17H7z\"\n                        ></path>\n                    </svg>\n                    <span style=\"top: 10px; left: 16px; border: 0px solid #FFFFFF; padding: 0 8px;\" class=\"MuiBadge-anchorOriginTopRightRectangle MuiBadge-colorPrimary\">4</span>\n                </span>\n            </span>\n            <span class=\"MuiTouchRipple-root\"></span>\n        </button>\n    </div>\n</div>\n"
+            },
+            "de_de": {},
+            "fr_fr": {},
+            "it_it": {},
+            "es_es": {}
+          },
+          "labelAlign": "top",
+          "value": "<div class=\"flex flex-col sm:flex sm:flex-row\">\n    <div class=\"property-header-count flex w-full\">\n        <button class=\"MuiButtonBase-root MuiIconButton-root makeStyles-iconButton-508\" tabindex=\"0\" type=\"button\" aria-label=\"Airline\">\n            <span class=\"MuiIconButton-label\">\n                <span class=\"MuiBadge-root\">\n                    <svg class=\"MuiSvgIcon-root\" focusable=\"false\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M7 13c1.65 0 3-1.35 3-3S8.65 7 7 7s-3 1.35-3 3 1.35 3 3 3zm12-6h-8v7H3V7H1v10h22v-6c0-2.21-1.79-4-4-4z\"></path></svg>\n                    <span style=\"top: 10px; left: 16px; border: 0px solid #FFFFFF; padding: 0 8px;\" class=\"MuiBadge-anchorOriginTopRightRectangle MuiBadge-colorPrimary\">4</span>\n                </span>\n            </span>\n            <span class=\"MuiTouchRipple-root\"></span>\n        </button>\n        <button class=\"MuiButtonBase-root MuiIconButton-root makeStyles-iconButton-508\" tabindex=\"0\" type=\"button\" aria-label=\"Bath\">\n            <span class=\"MuiIconButton-label\">\n                <span class=\"MuiBadge-root\">\n                    <svg class=\"MuiSvgIcon-root\" focusable=\"false\" viewBox=\"0 0 24 24\" aria-hidden=\"true\">\n                        <circle cx=\"7\" cy=\"7\" r=\"2\"></circle>\n                        <path\n                            d=\"M20 13V4.83C20 3.27 18.73 2 17.17 2c-.75 0-1.47.3-2 .83l-1.25 1.25c-.16-.05-.33-.08-.51-.08-.4 0-.77.12-1.08.32l2.76 2.76c.2-.31.32-.68.32-1.08 0-.18-.03-.34-.07-.51l1.25-1.25c.15-.15.36-.24.58-.24.46 0 .83.37.83.83V13h-6.85c-.3-.21-.57-.45-.82-.72l-1.4-1.55c-.19-.21-.43-.38-.69-.5-.31-.15-.65-.23-1-.23C6 10.01 5 11.01 5 12.25V13H2v6c0 1.1.9 2 2 2 0 .55.45 1 1 1h14c.55 0 1-.45 1-1 1.1 0 2-.9 2-2v-6h-2zm0 6H4v-4h16v4z\"\n                        ></path>\n                    </svg>\n                    <span style=\"top: 10px; left: 16px; border: 0px solid #FFFFFF; padding: 0 8px;\"class=\"MuiBadge-anchorOriginTopRightRectangle MuiBadge-colorPrimary\">4</span>\n                </span>\n            </span>\n            <span class=\"MuiTouchRipple-root\"></span>\n        </button>\n        <button class=\"MuiButtonBase-root MuiIconButton-root makeStyles-iconButton-508\" tabindex=\"0\" type=\"button\" aria-label=\"Aquare\">\n            <span class=\"MuiIconButton-label\">\n                <span class=\"MuiBadge-root\">\n                    <svg class=\"MuiSvgIcon-root\" focusable=\"false\" viewBox=\"0 0 24 24\" aria-hidden=\"true\">\n                        <path\n                            d=\"M17.66 17.66l-1.06 1.06-.71-.71 1.06-1.06-1.94-1.94-1.06 1.06-.71-.71 1.06-1.06-1.94-1.94-1.06 1.06-.71-.71 1.06-1.06L9.7 9.7l-1.06 1.06-.71-.71 1.06-1.06-1.94-1.94-1.06 1.06-.71-.71 1.06-1.06L4 4v14c0 1.1.9 2 2 2h14l-2.34-2.34zM7 17v-5.76L12.76 17H7z\"\n                        ></path>\n                    </svg>\n                    <span style=\"top: 10px; left: 16px; border: 0px solid #FFFFFF; padding: 0 8px;\" class=\"MuiBadge-anchorOriginTopRightRectangle MuiBadge-colorPrimary\">4</span>\n                </span>\n            </span>\n            <span class=\"MuiTouchRipple-root\"></span>\n        </button>\n    </div>\n</div>\n",
+          "size": 2,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "html-component5",
+          "extraSettings": {
+            "showBorder": false
+          },
+          "col": 8
+        },
+        {
+          "type": "panel",
+          "i18n": {},
+          "labelAlign": "top",
+          "size": 2,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "sub-panel15",
+          "extraSettings": {
+            "collapsible": false,
+            "collapsed": false,
+            "showBorder": false,
+            "saveButtonVisible": true,
+            "saveButtonEnabled": true,
+            "cancelButtonVisible": true,
+            "cancelButtonEnabled": true,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "type": "link",
+                      "extraSettings": {
+                        "target": "_self"
+                      },
+                      "i18n": {
+                        "en_us": {
+                          "value": "{{additionalData.currentStageOverviewName}}"
+                        }
+                      },
+                      "labelAlign": "top",
+                      "value": "{{additionalData.currentStageOverviewName}}",
+                      "size": 6,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "styleClass": "truncate font-bold items-end property-header-link case-link",
+                      "id": "link-instance-diagram-currentStageOverviewName",
+                      "col": 0
+                    },
+                    {
+                      "type": "link",
+                      "extraSettings": {
+                        "target": "_self"
+                      },
+                      "i18n": {
+                        "en_us": {
+                          "value": "{{additionalData.EditHeader}}"
+                        }
+                      },
+                      "labelAlign": "top",
+                      "value": "{{additionalData.EditHeader}}",
+                      "size": 6,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "styleClass": "truncate font-bold vl property-header-link case-link-two",
+                      "id": "link4",
+                      "col": 6
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "col": 10
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "type": "tabs",
+          "i18n": {
+            "en_us": {},
+            "de_de": {},
+            "fr_fr": {},
+            "it_it": {},
+            "es_es": {}
+          },
+          "labelAlign": "top",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "tabs1",
+          "extraSettings": {
+            "tabsorder": ["tab-panel1", "tab-panel2"],
+            "showBorder": false,
+            "sections": [
+              {
+                "type": "panel",
+                "label": "Default",
+                "i18n": {
+                  "en_us": {
+                    "label": "Default"
+                  },
+                  "de_de": {},
+                  "fr_fr": {},
+                  "it_it": {},
+                  "es_es": {}
+                },
+                "labelAlign": "top",
+                "ignore": false,
+                "visible": true,
+                "enabled": true,
+                "isRequired": false,
+                "id": "tab-Detail",
+                "extraSettings": {
+                  "serverValidationMethod": "GET",
+                  "layoutDefinition": {
+                    "rows": [
+                      {
+                        "cols": [
+                          {
+                            "type": "panel",
+                            "i18n": {},
+                            "labelAlign": "top",
+                            "size": 12,
+                            "ignore": false,
+                            "visible": true,
+                            "enabled": true,
+                            "isRequired": false,
+                            "id": "sub-panel21",
+                            "extraSettings": {
+                              "collapsible": false,
+                              "collapsed": false,
+                              "showBorder": false,
+                              "saveButtonVisible": true,
+                              "saveButtonEnabled": true,
+                              "cancelButtonVisible": true,
+                              "cancelButtonEnabled": true,
+                              "layoutDefinition": {
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "type": "htmlComponent",
+                                        "i18n": {
+                                          "en_us": {
+                                            "value": "<div class=\"flex flex-col sm:flex sm:flex-row\">\n\t<div class=\"sm:w-1/4\">\n\t\t<table>\n\t\t\t<tbody>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Loan number </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{loan.loanNumber}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Division </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{propertyREO.division}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Address </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{propertyAddresses[0].addressLineText}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> County </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{propertyAddresses[0].countyName}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> MI/PAID </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{loan.miCertificationStatusType}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Status </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{property.propertyStatus}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t</tbody>\n\t\t</table>\n\t</div>\n\t<div class=\"sm:w-1/4\">\n\t\t<table>\n\t\t\t<tbody>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> List DT </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{property.listDate}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> List Agree Exp </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{propertyREOlistingAgreement.legalEntityName}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> FC Date </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{foreclosure.foreclosureSaleActualDate}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Prior </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{property.propertyPriorOwnerFullName}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Strategy </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{marketingplan.strategyType}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Litigation </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{loan.activeLitigationIndicator}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t</tbody>\n\t\t</table>\n\t</div>\n\t<div class=\"sm:w-1/4\">\n\t\t<table>\n\t\t\t<tbody>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> List Price </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{listingInformation.currentlistPriceAmount}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> FMV </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{marketingPlan.asIsFairMarketValueAmount}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> FC Value </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{foreclosure.foreclosureSaleMarketValueAmount}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Asset Manager </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{assetManager.individualFullName}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Agent </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{agent.individualFullName}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Agent Grade </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{agentGrade}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t</tbody>\n\t\t</table>\n\t</div>\n\t<div class=\"sm:w-1/4\">\n\t\t<table>\n\t\t\t<tbody>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Occupancy </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{property.propertyCurrentOccupancyType}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Close DT </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{propertyclosingsale.closingDate}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Listing Type </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{property.listingType}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> # of Views </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{PropertyListingAuctionSaleDetail.numberOfViewsCount}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Auction Status </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{PropertyListingAuctionSaleDetail.auctionStatusType}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Auction Cycle </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{PropertyListingAuctionSaleDetail.currentAuctionNumber}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t</tbody>\n\t\t</table>\n\t</div>\n</div>"
+                                          },
+                                          "de_de": {},
+                                          "fr_fr": {},
+                                          "it_it": {},
+                                          "es_es": {}
+                                        },
+                                        "labelAlign": "top",
+                                        "value": "<div class=\"flex flex-col sm:flex sm:flex-row\">\n\t<div class=\"sm:w-1/4\">\n\t\t<table>\n\t\t\t<tbody>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Loan number </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{loan.loanNumber}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Division </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{propertyREO.division}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Address </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{propertyAddresses[0].addressLineText}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> County </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{propertyAddresses[0].countyName}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> MI/PAID </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{loan.miCertificationStatusType}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Status </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{property.propertyStatus}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t</tbody>\n\t\t</table>\n\t</div>\n\t<div class=\"sm:w-1/4\">\n\t\t<table>\n\t\t\t<tbody>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> List DT </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{property.listDate}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> List Agree Exp </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{propertyREOlistingAgreement.legalEntityName}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> FC Date </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{foreclosure.foreclosureSaleActualDate}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Prior </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{property.propertyPriorOwnerFullName}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Strategy </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{marketingplan.strategyType}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Litigation </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{loan.activeLitigationIndicator}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t</tbody>\n\t\t</table>\n\t</div>\n\t<div class=\"sm:w-1/4\">\n\t\t<table>\n\t\t\t<tbody>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> List Price </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{listingInformation.currentlistPriceAmount}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> FMV </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{marketingPlan.asIsFairMarketValueAmount}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> FC Value </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{foreclosure.foreclosureSaleMarketValueAmount}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Asset Manager </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{assetManager.individualFullName}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Agent </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{agent.individualFullName}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Agent Grade </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{agentGrade}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t</tbody>\n\t\t</table>\n\t</div>\n\t<div class=\"sm:w-1/4\">\n\t\t<table>\n\t\t\t<tbody>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Occupancy </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{property.propertyCurrentOccupancyType}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Close DT </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{propertyclosingsale.closingDate}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Listing Type </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{property.listingType}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> # of Views </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{PropertyListingAuctionSaleDetail.numberOfViewsCount}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Auction Status </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{PropertyListingAuctionSaleDetail.auctionStatusType}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Auction Cycle </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{PropertyListingAuctionSaleDetail.currentAuctionNumber}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t</tbody>\n\t\t</table>\n\t</div>\n</div>",
+                                        "size": 12,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "enabled": true,
+                                        "isRequired": false,
+                                        "id": "html-component3",
+                                        "extraSettings": {
+                                          "showBorder": false
+                                        },
+                                        "col": 0
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            },
+                            "col": 0
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "col": 0
+              },
+              {
+                "type": "panel",
+                "label": "Extended Fields",
+                "i18n": {
+                  "en_us": {
+                    "label": "Extended Fields"
+                  },
+                  "de_de": {},
+                  "fr_fr": {},
+                  "it_it": {},
+                  "es_es": {}
+                },
+                "labelAlign": "top",
+                "size": 1,
+                "ignore": false,
+                "visible": true,
+                "enabled": true,
+                "isRequired": false,
+                "id": "tab-ExtendedFields",
+                "extraSettings": {
+                  "serverValidationMethod": "GET",
+                  "layoutDefinition": {
+                    "rows": [
+                      {
+                        "cols": [
+                          {
+                            "type": "panel",
+                            "i18n": {},
+                            "labelAlign": "top",
+                            "size": 12,
+                            "ignore": false,
+                            "visible": true,
+                            "enabled": true,
+                            "isRequired": false,
+                            "id": "sub-panel21",
+                            "extraSettings": {
+                              "collapsible": false,
+                              "collapsed": false,
+                              "showBorder": false,
+                              "saveButtonVisible": true,
+                              "saveButtonEnabled": true,
+                              "cancelButtonVisible": true,
+                              "cancelButtonEnabled": true,
+                              "layoutDefinition": {
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "type": "htmlComponent",
+                                        "i18n": {
+                                          "en_us": {
+                                            "value": "<div class=\"flex flex-col sm:flex sm:flex-row\">\n\t<div class=\"sm:w-1/4\">\n\t\t<table>\n\t\t\t<tbody>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Red Exp DT </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{reoredemption.redemptionPeriodExpirationDate}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Title </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{title}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Reserve Price </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{PropertyListingAuctionSaleDetail.reservePriceAmount}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> # of Watches </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{PropertyListingAuctionSaleDetail.numberOfWatchesCount}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Investor Group </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{investorLoanInformations[0].investorGroup}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Inv Name (ID) </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{investorLoanInformations[0].investorName}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t</tbody>\n\t\t</table>\n\t</div>\n</div>"
+                                          },
+                                          "de_de": {},
+                                          "fr_fr": {},
+                                          "it_it": {},
+                                          "es_es": {}
+                                        },
+                                        "labelAlign": "top",
+                                        "value": "<div class=\"flex flex-col sm:flex sm:flex-row\">\n\t<div class=\"sm:w-1/4\">\n\t\t<table>\n\t\t\t<tbody>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Red Exp DT </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{reoredemption.redemptionPeriodExpirationDate}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Title </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{title}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Reserve Price </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{PropertyListingAuctionSaleDetail.reservePriceAmount}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> # of Watches </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{PropertyListingAuctionSaleDetail.numberOfWatchesCount}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Investor Group </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{investorLoanInformations[0].investorGroup}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p style=\"color: #122230; font-size: 12px; font-weight: bold !important;\"> Inv Name (ID) </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{investorLoanInformations[0].investorName}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t</tbody>\n\t\t</table>\n\t</div>\n</div>",
+                                        "size": 12,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "enabled": true,
+                                        "isRequired": false,
+                                        "id": "html-component3",
+                                        "extraSettings": {
+                                          "showBorder": false
+                                        },
+                                        "col": 0
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            },
+                            "col": 0
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "col": 0
+              }
+            ]
+          },
+          "col": 0
+        }
+      ]
+    }
+  ]
+}

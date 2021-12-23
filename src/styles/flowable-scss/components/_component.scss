@@ -1,0 +1,135 @@
+.flw__component__input:required,
+.flw__component__input:invalid {
+  box-shadow: none;
+}
+
+.flw__component--disabled__input {
+  background-color: $flw-forms-muted-background-color;
+  background-color: var(
+    --flw-forms-muted-background-color,
+    $flw-forms-muted-background-color
+  );
+  color: $flw-forms-muted-text-color;
+  color: var(--flw-forms-muted-text-color, $flw-forms-muted-text-color);
+  border-color: $flw-forms-border-muted-color;
+  border-color: var(--flw-forms-border-muted-color, $flw-forms-border-muted-color);
+  height: $flw-input-height;
+}
+
+.flw__component--disabled__label {
+  pointer-events: none;
+}
+
+/* Customize button style */
+$asps_primary_button_bgcolor: #00769b;
+$asps_primary_button_bgcolor_hover: #ffffff !important;
+$asps_primary_button_color: #ffffff !important;
+$asps_primary_button_color_hover: #000000 !important;
+$asps_primary_button_disabled-text-color: #999999 !important;
+
+.taskClaim .flw__component__button, .taskClaim .flw__component__button:hover:enabled, .taskClaim .flw__component__button:disabled{
+  padding: 8px 12px;
+}
+
+.flw__component__button,
+.flw__subform__add-button,
+.flw__wizard__footer__next,
+.flw__wizard__footer__previous {
+  margin: 0;
+  border: none;
+  overflow: visible;
+  font-family: $flw-font-sans;
+  font-family: var(--flw-font-sans, $flw-font-sans);
+  color: $flw-forms-color;
+  color: var(--flw-forms-color, $flw-forms-color);
+  border-color: $flw-forms-color;
+  border-color: var(--flw-forms-color, $flw-forms-color);
+  line-height: 0.5; //1.4
+  position: relative;
+  background: #000000;
+  color: $asps_primary_button_color;
+  color: var(--flw-forms-label-text-color, $asps_primary_button_color);
+  border-radius: 15px;
+  transition: 0.3s;
+  text-transform: capitalize;
+  font-size: 10px !important;
+  font-weight: bold;
+  box-shadow: rgba(0,0,0,0.3) 0 0 3px;
+  text-transform: none;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  vertical-align: middle;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.flw__component__button:hover:enabled,
+.flw__subform__add-button:hover:enabled,
+.flw__wizard__footer__next:hover:enabled,
+.flw__wizard__footer__previous:hover:enabled,
+.flw__component__button:focus:enabled,
+.flw__subform__add-button:focus:enabled,
+.flw__wizard__footer__next:focus:enabled,
+.flw__wizard__footer__previous:focus:enabled {
+  background-color: $asps_primary_button_bgcolor_hover;
+  background-color: var(--flw-forms-transparent, $asps_primary_button_bgcolor_hover);
+  color: $asps_primary_button_color_hover;
+  color: var(--flw-forms-label-text-color, $asps_primary_button_color_hover);
+  box-shadow: 0 2px 0 $flw-forms-shadow-color-0-15;
+  box-shadow: 0 2px 0
+    var(--flw-forms-shadow-color-0-15, $flw-forms-shadow-color-0-15);
+}
+
+.flw__component__button:hover:enabled::after,
+.flw__subform__add-button:hover:enabled::after,
+.flw__wizard__footer__next:hover:enabled::after,
+.flw__wizard__footer__previous:hover:enabled::after,
+.flw__component__button:focus:enabled::after,
+.flw__subform__add-button:focus:enabled::after,
+.flw__wizard__footer__next:focus:enabled::after,
+.flw__wizard__footer__previous:focus:enabled::after {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  content: '';
+}
+
+.flw__component__button:focus,
+.flw__subform__add-button:focus,
+.flw__wizard__footer__next:focus,
+.flw__wizard__footer__previous:focus {
+  outline: none;
+}
+
+.flw__component__button:disabled,
+.flw__subform__add-button:disabled,
+.flw__wizard__footer__next:disabled,
+.flw__wizard__footer__previous:disabled {
+  background-color: $flw-forms-disable-btn;
+  background-color: var(--flw-forms-disable-btn, $flw-forms-disable-btn);
+  color: $flw-forms-disablebtn-text-color;
+  color: var(--flw-forms-disablebtn-text-color, $flw-forms-disablebtn-text-color);
+  border-color: $flw-forms-border-color;
+  border-color: var(--flw-forms-border-color, $flw-forms-border-color);
+}
+
+.flw__component--primary__button {
+  background-color: $flw-forms-color;
+  background-color: var(--flw-forms-color, $flw-forms-color);
+  color: $flw-forms-background-color;
+  color: var(--flw-forms-background-color, $flw-forms-background-color);
+  border: 1px solid $flw-forms-transparent;
+  border: 1px solid var(--flw-forms-transparent, $flw-forms-transparent);
+}
+
+.flw__component--primary__button:focus:enabled,
+.flw__component--primary__button:hover:enabled {
+  background-color: $flw-forms-color-hover;
+  background-color: var(--flw-forms-color-hover, $flw-forms-color-hover);
+  color: $flw-forms-background-color;
+  color: var(--flw-forms-background-color, $flw-forms-background-color);
+}

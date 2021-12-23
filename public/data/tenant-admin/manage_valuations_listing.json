@@ -1,0 +1,239 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 25 },
+              "lowerRight": { "x": 984, "y": 93 }
+            },
+            "stencilSuperIds": ["base-datatable", "Component"],
+            "stencilId": "cloud-datatable",
+            "customStencilId": null
+          },
+          "enabled": true,
+          "extraSettings": {
+            "dataSource": "Rest",
+            "queryUrl": "{{additionalData.url}}?key=adminValuation&latest=true&tenantId=internal&tempTenantCode={{additionalData.tenantCode}}&page={{$page}}&size={{$pageSize}}&order={{$sortDirection}}&sort={{$sortColumn}}",
+            "path": "data",
+            "linkTargetView": "browse",
+            "storage": "Full",
+            "identity": "caseDefinitionId",
+            "linkTarget": "_blank",
+            "output": { "numRows": "total" },
+            "infiniteScroll": false,
+            "showPagination": true,
+            "autoHidePagination": true,
+            "clientPagination": true,
+            "sortableColumns": false,
+            "columns": [
+              {
+                "label": "Valuation ID",
+                "id": "valuationId",
+                "alignment": "left",
+                "component": {
+                  "type": "htmlComponent",
+                  "value": "<span>{{flw.find($item.variables, 'name', 'valuationId').value}}</span>"
+                },
+                "filterable": true,
+                "sortable": true,
+                "show": true
+              },
+              {
+                "label": "Investor Group",
+                "id": "investorGroups",
+                "alignment": "left",
+                "component": {
+                  "type": "htmlComponent",
+                  "value": "<span>{{flw.find($item.variables, 'name', 'investorGroups').value}}</span>"
+                },
+                "filterable": true,
+                "sortable": true,
+                "show": true
+              },
+              {
+                "label": "Value Band",
+                "id": "valueBand",
+                "alignment": "left",
+                "component": {
+                  "type": "htmlComponent",
+                  "value": "<span>{{flw.find($item.variables, 'name', 'valueBand').value}}</span>"
+                },
+                "filterable": true,
+                "sortable": true,
+                "show": true
+              },
+              {
+                "label": "LRV Required",
+                "id": "lRVRequired",
+                "accessor": "lRVRequired",
+                "alignment": "left",
+                "component": {
+                  "type": "htmlComponent",
+                  "value": "<span>{{flw.find($item.variables, 'name', 'lRVRequired').value}}</span>"
+                },
+                "filterable": true,
+                "sortable": true,
+                "show": true
+              },
+              {
+                "label": "Action",
+                "id": "dropdown",
+                "accessor": "dropdown",
+                "alignment": "left",
+                "component": {
+                  "type": "buttonGroup",
+                  "value": "{{$item}}",
+                  "extraSettings": { "asDropdown": true },
+                  "alignment": "right",
+                  "buttonDefinitions": [
+                    {
+                      "type": "scriptButton",
+                      "extraSettings": {
+                        "text": "Edit",
+                        "tooltip": "Edit",
+                        "script": { "key": "Edit", "DATA": "{{$item}}" }
+                      }
+                    },
+                    {
+                      "type": "scriptButton",
+                      "extraSettings": {
+                        "text": "Delete",
+                        "tooltip": "Delete",
+                        "script": { "key": "Delete", "DATA": "{{$item}}" }
+                      }
+                    }
+                  ]
+                },
+                "filterable": false,
+                "maxWidth": 75,
+                "sortable": false,
+                "show": true
+              }
+            ],
+            "filterable": true,
+            "sortable": true,
+            "multiSort": false,
+            "pageSize": 20,
+            "pageSizeOptions": [20, 25, 50, 100],
+            "showTotalRecords": false,
+            "response": { "total": "total" },
+            "showRefreshButton": true,
+            "refreshTime": "{{$payload.refreshForm}}",
+            "dataPollingOnInit": false,
+            "target": "_blank",
+            "nodataPosition": "middle-center"
+          },
+          "labelAlign": "top",
+          "value": "{{manageValuationsList}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "isRequired": false,
+          "id": "manageValuationsList",
+          "i18n": {
+            "en_us": {
+              "extraSettings": {
+                "columns": [
+                  {
+                    "label": "Valuation ID",
+                    "id": "valuationId",
+                    "alignment": "left",
+                    "component": {
+                      "type": "htmlComponent",
+                      "value": "<span>{{flw.find($item.variables, 'name', 'valuationId').value}}</span>"
+                    },
+                    "filterable": true,
+                    "sortable": true,
+                    "show": true
+                  },
+                  {
+                    "label": "Investor Group",
+                    "id": "investorGroups",
+                    "alignment": "left",
+                    "component": {
+                      "type": "htmlComponent",
+                      "value": "<span>{{flw.find($item.variables, 'name', 'investorGroups').value}}</span>"
+                    },
+                    "filterable": true,
+                    "sortable": true,
+                    "show": true
+                  },
+                  {
+                    "label": "Value Band",
+                    "id": "valueBand",
+                    "alignment": "left",
+                    "component": {
+                      "type": "htmlComponent",
+                      "value": "<span>{{flw.find($item.variables, 'name', 'valueBand').value}}</span>"
+                    },
+                    "filterable": true,
+                    "sortable": true,
+                    "show": true
+                  },
+                  {
+                    "label": "LRV Required",
+                    "id": "lRVRequired",
+                    "accessor": "lRVRequired",
+                    "alignment": "left",
+                    "component": {
+                      "type": "htmlComponent",
+                      "value": "<span>{{flw.find($item.variables, 'name', 'lRVRequired').value}}</span>"
+                    },
+                    "filterable": true,
+                    "sortable": true,
+                    "show": true
+                  },
+                  {
+                    "label": "Action",
+                    "id": "dropdown",
+                    "accessor": "dropdown",
+                    "alignment": "left",
+                    "component": {
+                      "type": "buttonGroup",
+                      "value": "{{$item}}",
+                      "extraSettings": { "asDropdown": true },
+                      "alignment": "right",
+                      "buttonDefinitions": [
+                        {
+                          "type": "scriptButton",
+                          "extraSettings": {
+                            "text": "Edit",
+                            "tooltip": "Edit",
+                            "script": { "key": "Edit", "DATA": "{{$item}}" }
+                          }
+                        },
+                        {
+                          "type": "scriptButton",
+                          "extraSettings": {
+                            "text": "Delete",
+                            "tooltip": "Delete",
+                            "script": { "key": "Delete", "DATA": "{{$item}}" }
+                          }
+                        }
+                      ]
+                    },
+                    "filterable": false,
+                    "maxWidth": 75,
+                    "sortable": false,
+                    "show": true
+                  }
+                ]
+              }
+            }
+          },
+          "type": "dataTable"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "key": "manageValuations",
+    "name": "Manage Valuations",
+    "description": "",
+    "version": "4",
+    "type": "2",
+    "flowableDesignVersion": 3090
+  }
+}

@@ -1,0 +1,62 @@
+{
+    "rows": [
+      {
+        "cols": [
+          {
+            "type": "select",
+            "extraSettings": {
+              "tagsEnabled": false,
+              "preselectAll": false,
+              "enableAutocomplete": false,
+              "dataSource": "Static",
+              "items": [
+                {
+                  "text": "Approved",
+                  "value": "1"
+                },
+                {
+                  "text": "UnApproved",
+                  "value": "0"
+                }
+              ],
+              "storage": "Id",
+              "identity": "value",
+              "linkTarget": "_blank",
+              "multi": false
+            },
+            "i18n": {
+              "en_us": {
+                "extraSettings": {
+                  "items": [
+                    {
+                      "text": "Approved",
+                      "value": "1"
+                    },
+                    {
+                      "text": "UnApproved",
+                      "value": "0"
+                    }
+                  ]
+                },
+                "placeholder": "Approval Status",
+                "tooltip": "Approval Status",
+                "label": "Approval Status"
+              }
+            },
+            "placeholder": "Approval Status",
+            "enabled": true,
+            "labelAlign": "top",
+            "tooltip": "Approval Status",
+            "value": "{{approvalStatus}}",
+            "size": 12,
+            "ignore": false,
+            "visible": true,
+            "isRequired": true,
+            "label": "Approval Status",
+            "id": "single-select1",
+            "col": 0
+          }
+        ]
+      }
+    ]
+  }

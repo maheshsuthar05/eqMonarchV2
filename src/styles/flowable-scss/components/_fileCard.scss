@@ -1,0 +1,250 @@
+.flw__fileCard {
+  box-sizing: border-box;
+  border: none;
+  padding: 4px 4px 0px 4px;
+  width: 160px;
+  min-height: 50px;
+  position: relative;
+  background-color: $flw-forms-background-color;
+  background-color: var(--flw-forms-background-color, $flw-forms-background-color);
+  display: inline-block;
+  cursor: pointer;
+}
+
+.flw__fileCard--deleted {
+  background-color: none;
+  opacity: 0.5;
+}
+
+.flw__fileCard__fileName {
+  font-family: $flw-font-sans;
+  font-family: var(--flw-font-sans, $flw-font-sans);
+  font-size: $flw-text-xs;
+  font-size: var(--flw-text-xs, $flw-text-xs);
+  line-height: 19px;
+  vertical-align: top;
+  left: 34px;
+  top: 6px;
+  position: absolute;
+  color: $flw-forms-text-color;
+  color: var(--flw-forms-text-color, $flw-forms-text-color);
+  height: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 110px;
+}
+
+.flw__fileCard__fileName--no-icon {
+  max-width: 130px;
+  left: 8px;
+}
+
+.flw__fileCard__fileName--downloadable {
+  cursor: pointer;
+  color: $flw-forms-color;
+  color: var(--flw-forms-color, $flw-forms-color);
+  text-decoration: underline;
+}
+
+.flw__fileCard__fileName--downloadable:before {
+  content: "";
+  background-image: url(svg-encode($flw-arrow-down-icon, #000, #3b99fc));
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  transform: scale(0.8) translateY(4px);
+}
+
+.flw__fileCard__fileIcon {
+  position: relative;
+  top: 5px;
+}
+
+.flw__fileCard__fileSize {
+  font-family: $flw-font-sans;
+  font-family: var(--flw-font-sans, $flw-font-sans);
+  font-size: $flw-text-tiny;
+  font-size: var(--flw-text-tiny, $flw-text-tiny);
+  line-height: 19px;
+  vertical-align: top;
+  right: 10px;
+  top: 27px;
+  position: absolute;
+  color: $flw-forms-text-color;
+  color: var(--flw-forms-text-color, $flw-forms-text-color);
+}
+
+.flw__fileCard__content-type {
+  top: 29px;
+  position: absolute;
+  padding: 0 20px 0 0;
+  font-size: $flw-text-tiny;
+  font-size: var(--flw-text-tiny, $flw-text-tiny);
+  background-image: url(svg-encode($flw-triangle-down-icon, #000, #888888));
+  background-position: right center;
+  background-repeat: no-repeat;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 16px;
+  text-decoration: none;
+  color: $flw-forms-text-color;
+  color: var(--flw-forms-text-color, $flw-forms-text-color);
+  left: 35px;
+  max-width: 62px;
+}
+
+.flw__fileCard__content-type--no-icon {
+  left: 8px;
+  max-width: 92px;
+}
+
+.flw__fileCard__fileStatus {
+  font-family: $flw-font-sans;
+  font-family: var(--flw-font-sans, $flw-font-sans);
+  font-size: $flw-text-tiny;
+  font-size: var(--flw-text-tiny, $flw-text-tiny);
+  color: $flw-color-lightgray;
+  color: var(--flw-color-lightgray, $flw-color-lightgray);
+  cursor: pointer;
+  position: absolute;
+  left: 34px;
+  top: 36px;
+}
+
+.flw__fileCard__fileAction {
+  position: absolute;
+  right: 4px;
+  top: 2px;
+  font-family: $flw-font-sans;
+  font-family: var(--flw-font-sans, $flw-font-sans);
+  cursor: pointer;
+  color: $flw-forms-text-color;
+  color: var(--flw-forms-text-color, $flw-forms-text-color);
+  padding: 4px 7px;
+  font-size: $flw-text-base;
+  font-size: var(--flw-text-base, $flw-text-base);
+}
+
+.flw__fileCard__button {
+  border-color: 1px solid $flw-forms-muted-background-color;
+  border-color: 1px solid var(--flw-forms-muted-background-color, $flw-forms-muted-background-color);
+}
+
+.flw__fileCard__button:hover {
+  background-color: $flw-forms-muted-background-color;
+  background-color: var(--flw-forms-muted-background-color, $flw-forms-muted-background-color);
+}
+
+.flw__fileCard__info {
+  background-color: $flw-forms-transparent;
+  background-color: var(--flw-forms-transparent, $flw-forms-transparent);
+}
+
+.flw__fileCard__uploading {
+  line-height: 1;
+  font-size: $flw-text-sm;
+  font-size: var(--flw-text-sm, $flw-text-sm);
+  animation: uploadPulse 1s infinite;
+  border-radius: 50%;
+}
+
+.flw__fileCard__progressbar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: $flw-forms-border-color;
+  background-color: var(--flw-forms-border-color, $flw-forms-border-color);
+}
+
+.flw__fileCard__progressbar__value {
+  height: 4px;
+  background-color: $flw-forms-color;
+  background-color: var(--flw-forms-color, $flw-forms-color);
+}
+
+.flw__fileCard__progressbar--error {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: $flw-forms-border-color;
+  background-color: var(--flw-forms-border-color, $flw-forms-border-color);
+}
+
+.flw__fileCard__progressbar--error__value {
+  height: 2px;
+  background-color: $flw-forms-error-color;
+  background-color: var(--flw-forms-error-color, $flw-forms-error-color);
+}
+
+.flw__fileCard__progressbar--success {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: $flw-forms-border-color;
+  background-color: var(--flw-forms-border-color, $flw-forms-border-color);
+}
+
+.flw__fileCard__progressbar--success__value {
+  height: 2px;
+  background-color: $flw-forms-success-color;
+  background-color: var(--flw-forms-success-color, $flw-forms-success-color);
+}
+
+.flw__fileCard:hover .flw__fileCard__content-type {
+  color: $flw-forms-color;
+  color: var(--flw-forms-color, $flw-forms-color);
+  background-image: url(svg-encode($flw-triangle-down-icon, #000, #1e87f0));
+}
+
+.flw__fileCard--invalid .flw__fileCard__content-type,
+.flw__fileCard--invalid:hover .flw__fileCard__content-type {
+  color: $flw-forms-error-color;
+  color: var(--flw-forms-error-color, $flw-forms-error-color);
+  background-image: url(svg-encode($flw-triangle-down-icon, #000, #f0506e));
+}
+
+.flw__fileCard--invalid .flw__fileCard__content-type:hover,
+.flw__fileCard--invalid:hover .flw__fileCard__content-type:hover {
+  color: $flw-forms-error-color;
+  color: var(--flw-forms-error-color, $flw-forms-error-color);
+  background-image: url(svg-encode($flw-triangle-down-icon, #000, #f0506e));
+}
+
+@-webkit-keyframes uploadPulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(59, 153, 252, 0.58);
+  }
+
+  70% {
+    -webkit-box-shadow: 0 0 0 10px rgba(59, 153, 252, 0);
+  }
+
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(59, 153, 252, 0);
+  }
+}
+
+@keyframes uploadPulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(59, 153, 252, 0.58);
+    box-shadow: 0 0 0 0 rgba(59, 153, 252, 0.58);
+  }
+
+  70% {
+    -moz-box-shadow: 0 0 0 10px rgba(59, 153, 252, 0);
+    box-shadow: 0 0 0 10px rgba(59, 153, 252, 0);
+  }
+
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(59, 153, 252, 0);
+    box-shadow: 0 0 0 0 rgba(59, 153, 252, 0);
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 25 },
+              "lowerRight": { "x": 984, "y": 93 }
+            },
+            "stencilSuperIds": ["base-datatable", "Component"],
+            "stencilId": "cloud-datatable",
+            "customStencilId": null
+          },
+          "type": "dataTable",
+          "enabled": true,
+          "extraSettings": {
+            "dataSource": "Rest",
+            "queryUrl": "{{additionalData.url}}",
+            "path": "data",
+            "linkTargetView": "browse",
+            "storage": "Full",
+            "linkTarget": "_blank",
+            "showPagination": true,
+            "autoHidePagination": true,
+            "clientPagination": true,
+            "sortableColumns": false,
+            "columns": [
+              {
+                "label": "Task Name",
+                "id": "name",
+                "accessor": "name",
+                "alignment": "justify",
+                "filterable": true,
+                "sortable": true,
+                "show": true
+              },
+              {
+                "label": "Assignee",
+                "id": "assignee",
+                "accessor": "assignee",
+                "alignment": "justify",
+                "filterable": true,
+                "sortable": true,
+                "show": true
+              },
+              {
+                "label": "Open Date",
+                "id": "create_date",
+                "accessor": "create_date",
+                "alignment": "justify",
+                "component": {
+                  "type": "htmlComponent",
+                  "value": "<span>{{$item.create_date !== null ?flw.formatDate(flw.parseDate($item.create_date), 'MM/DD/YY HH:mm') : null}}</span>"
+                },
+                "filterable": true,
+                "sortable": false,
+                "show": true
+              },
+              {
+                "label": "Due Date",
+                "id": "dueDate",
+                "accessor": "dueDate",
+                "alignment": "justify",
+                "component": {
+                  "type": "htmlComponent",
+                  "value": "<span>{{$item.dueDate !== null ?flw.formatDate(flw.parseDate($item.dueDate), 'MM/DD/YY HH:mm') : null}}</span>"
+                },
+                "filterable": true,
+                "sortable": true,
+                "show": true
+              },
+              {
+                "label": "ClaimTime",
+                "id": "claimTime",
+                "accessor": "toLocaleDateString(claimTime)",
+                "alignment": "justify",
+                "component": {
+                  "type": "htmlComponent",
+                  "value": "<span>{{$item.claimTime !== null ?flw.formatDate(flw.parseDate($item.claimTime), 'MM/DD/YY HH:mm') : null}}</span>"
+                },
+                "filterable": true,
+                "sortable": true,
+                "show": true
+              },
+              {
+                "id": "claimButton",
+                "alignment": "right",
+                "component": {
+                  "type": "scriptButton",
+                  "size": 2,
+                  "value": "{{$item.id}}",
+                  "extraSettings": {
+                    "text": "Claim",
+                    "tooltip": "Claim",
+                    "script": { "key": "claim", "id": "{{$item.id}}" }
+                  }
+                },
+                "filterable": false,
+                "maxWidth": 100,
+                "minWidth": 100,
+                "sortable": false,
+                "show": true
+              },
+              {
+                "id": "taskButtons",
+                "alignment": "right",
+                "component": {
+                  "type": "buttonGroup",
+                  "extraSettings": { "asDropdown": true },
+                  "alignment": "right",
+                  "buttonDefinitions": [
+                    {
+                      "type": "scriptButton",
+                      "extraSettings": {
+                        "text": "Skip",
+                        "tooltip": "skip",
+                        "script": { "key": "skip", "id": "{{$item.id}}" }
+                      }
+                    }
+                  ]
+                },
+                "filterable": false,
+                "maxWidth": 100,
+                "minWidth": 100,
+                "sortable": false,
+                "show": true
+              }
+            ],
+            "filterable": false,
+            "sortable": true,
+            "multiSort": false,
+            "pageSize": 20,
+            "pageSizeOptions": [20, 25, 50, 100],
+            "showTotalRecords": false,
+            "response": {},
+            "showRefreshButton": false,
+            "target": "_blank"
+          },
+          "labelAlign": "top",
+          "value": "{{taskList}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "isRequired": false,
+          "id": "datatable2",
+          "i18n": {
+            "en_us": {
+              "extraSettings": {
+                "columns": [
+                  {
+                    "label": "Task Name",
+                    "id": "name",
+                    "accessor": "name",
+                    "alignment": "justify",
+                    "filterable": true,
+                    "sortable": true,
+                    "show": true
+                  },
+                  {
+                    "label": "Assignee",
+                    "id": "assignee",
+                    "accessor": "assignee",
+                    "alignment": "justify",
+                    "filterable": true,
+                    "sortable": true,
+                    "show": true
+                  },
+                  {
+                    "label": "Open Date",
+                    "id": "create_date",
+                    "accessor": "create_date",
+                    "alignment": "justify",
+                    "component": {
+                      "type": "htmlComponent",
+                      "value": "<span>{{$item.create_date !== null ?flw.formatDate(flw.parseDate($item.create_date), 'MM/DD/YY HH:mm') : null}}</span>"
+                    },
+                    "filterable": true,
+                    "sortable": false,
+                    "show": true
+                  },
+                  {
+                    "label": "Due Date",
+                    "id": "dueDate",
+                    "accessor": "dueDate",
+                    "alignment": "justify",
+                    "component": {
+                      "type": "htmlComponent",
+                      "value": "<span>{{$item.dueDate !== null ?flw.formatDate(flw.parseDate($item.dueDate), 'MM/DD/YY HH:mm') : null}}</span>"
+                    },
+                    "filterable": true,
+                    "sortable": true,
+                    "show": true
+                  },
+                  {
+                    "label": "ClaimTime",
+                    "id": "claimTime",
+                    "accessor": "toLocaleDateString(claimTime)",
+                    "alignment": "justify",
+                    "component": {
+                      "type": "htmlComponent",
+                      "value": "<span>{{$item.claimTime !== null ?flw.formatDate(flw.parseDate($item.claimTime), 'MM/DD/YY HH:mm') : null}}</span>"
+                    },
+                    "filterable": true,
+                    "sortable": true,
+                    "show": true
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "key": "SERVICERClaimsTaskCloseList",
+    "name": "SERVICERClaimsTaskCloseList",
+    "description": null,
+    "version": "3",
+    "type": "2"
+  }
+}

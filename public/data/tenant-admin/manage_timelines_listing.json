@@ -1,0 +1,199 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 25 },
+              "lowerRight": { "x": 984, "y": 117 }
+            },
+            "stencilSuperIds": ["base-datatable", "Component"],
+            "stencilId": "cloud-datatable",
+            "customStencilId": null
+          },
+          "label": "Manage Timelines",
+          "i18n": {
+            "en_us": {
+              "label": "Manage Timelines",
+              "extraSettings": {
+                "columns": [
+                  {
+                    "label": "Investor Group",
+                    "id": "investorGroupList",
+                    "accessor": "investorGroupList",
+                    "alignment": "left",
+                    "filterable": "true",
+                    "sortable": "true",
+                    "show": true
+                  },
+                  {
+                    "label": "Vendor",
+                    "id": "vendorName",
+                    "accessor": "vendorName",
+                    "alignment": "left",
+                    "filterable": "true",
+                    "sortable": "true",
+                    "show": true
+                  },
+                  {
+                    "label": "Agent",
+                    "id": "AgentTypeList",
+                    "accessor": "AgentTypeList",
+                    "alignment": "left",
+                    "filterable": "true",
+                    "sortable": "true",
+                    "show": true
+                  },
+                  {
+                    "label": "Action",
+                    "id": "dropdown",
+                    "accessor": "dropdown",
+                    "alignment": "left",
+                    "component": {
+                      "type": "buttonGroup",
+                      "value": "{{$item}}",
+                      "extraSettings": { "asDropdown": true },
+                      "alignment": "right",
+                      "buttonDefinitions": [
+                        {
+                          "type": "scriptButton",
+                          "value": "{{$payload.addLegalEntityModal}}",
+                          "extraSettings": {
+                            "text": "Edit",
+                            "script": "Edit",
+                            "fileDetails": "{{$item}}"
+                          }
+                        },
+                        {
+                          "type": "scriptButton",
+                          "value": "{{operationListActionButton}}",
+                          "extraSettings": {
+                            "text": "Clone",
+                            "script": "Clone",
+                            "fileDetails": "{{$item}}"
+                          }
+                        }
+                      ]
+                    },
+                    "filterable": "false",
+                    "maxWidth": 75,
+                    "sortable": "false",
+                    "show": true
+                  }
+                ]
+              }
+            }
+          },
+          "enabled": true,
+          "extraSettings": {
+            "dataSource": "Rest",
+            "queryUrl": "{{additionalData.url}}?key=adminManageTimelines&latest=true&tenantId=internal&tempTenantCode={{additionalData.tenantCode}}&page={{$page}}&size={{$pageSize}}&order={{$sortDirection}}&sort={{$sortColumn}}",
+            "path": "data",
+            "linkTargetView": "browse",
+            "storage": "Full",
+            "identity": "caseDefinitionId",
+            "linkTarget": "_blank",
+            "infiniteScroll": false,
+            "showPagination": true,
+            "autoHidePagination": true,
+            "clientPagination": true,
+            "sortableColumns": false,
+            "columns": [
+              {
+                "label": "Investor Group",
+                "id": "investorGroupList",
+                "accessor": "investorGroupList",
+                "alignment": "left",
+                "filterable": "true",
+                "sortable": "true",
+                "show": true
+              },
+              {
+                "label": "Vendor",
+                "id": "vendorName",
+                "accessor": "vendorName",
+                "alignment": "left",
+                "filterable": "true",
+                "sortable": "true",
+                "show": true
+              },
+              {
+                "label": "Agent",
+                "id": "AgentTypeList",
+                "accessor": "AgentTypeList",
+                "alignment": "left",
+                "filterable": "true",
+                "sortable": "true",
+                "show": true
+              },
+              {
+                "label": "Action",
+                "id": "dropdown",
+                "accessor": "dropdown",
+                "alignment": "left",
+                "component": {
+                  "type": "buttonGroup",
+                  "value": "{{$item}}",
+                  "extraSettings": { "asDropdown": true },
+                  "alignment": "right",
+                  "buttonDefinitions": [
+                    {
+                      "type": "scriptButton",
+                      "value": "{{$payload.addLegalEntityModal}}",
+                      "extraSettings": {
+                        "text": "Edit",
+                        "script": "Edit",
+                        "fileDetails": "{{$item}}"
+                      }
+                    },
+                    {
+                      "type": "scriptButton",
+                      "value": "{{operationListActionButton}}",
+                      "extraSettings": {
+                        "text": "Clone",
+                        "script": "Clone",
+                        "fileDetails": "{{$item}}"
+                      }
+                    }
+                  ]
+                },
+                "filterable": "false",
+                "maxWidth": 75,
+                "sortable": "false",
+                "show": true
+              }
+            ],
+            "filterable": true,
+            "sortable": true,
+            "multiSort": false,
+            "pageSize": 20,
+            "pageSizeOptions": [20, 25, 50, 100],
+            "showTotalRecords": false,
+            "response": {},
+            "refreshTime": "{{$payload.refreshForm}}",
+            "dataPollingOnInit": false,
+            "target": "_blank",
+            "nodataPosition": "middle-center"
+          },
+          "labelAlign": "top",
+          "value": "{{manageTimelinesList}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "isRequired": false,
+          "id": "datatable1",
+          "type": "dataTable"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "key": "manageTimelines",
+    "name": "Manage Timelines",
+    "description": "Manage Timelines",
+    "version": "8",
+    "type": "2",
+    "flowableDesignVersion": 3090
+  }
+}

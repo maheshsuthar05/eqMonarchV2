@@ -1,0 +1,107 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 25 },
+              "lowerRight": { "x": 984, "y": 93 }
+            },
+            "stencilSuperIds": ["base-datatable", "Component"],
+            "stencilId": "cloud-datatable",
+            "customStencilId": null
+          },
+          "type": "dataTable",
+          "enabled": true,
+          "extraSettings": {
+            "dataSource": "Static",
+            "items": "{{customData}}",
+            "linkTargetView": "browse",
+            "storage": "Id",
+            "identity": "value",
+            "linkTarget": "_blank",
+            "infiniteScroll": false,
+            "showPagination": true,
+            "autoHidePagination": true,
+            "clientPagination": true,
+            "sortableColumns": false,
+            "columns": [
+              {
+                "label": "Roles",
+                "id": "partyRoleType",
+                "accessor": "partyRoleType",
+                "alignment": "left",
+                "filterable": true,
+                "sortable": true,
+                "show": true
+              },
+              {
+                "label": "Assigned Users",
+                "id": "individualFullName",
+                "accessor": "individualFullName",
+                "alignment": "left",
+                "filterable": true,
+                "sortable": true,
+                "show": true
+              }
+            ],
+            "filterable": true,
+            "sortable": true,
+            "multiSort": false,
+            "pageSize": 20,
+            "pageSizeOptions": [5, 10, 20, 25, 50, 100],
+            "showTotalRecords": false,
+            "response": {},
+            "dataPollingOnInit": false,
+            "target": "_blank",
+            "noDataMessage": "No data found",
+            "nodataPosition": "middle-center"
+          },
+          "labelAlign": "top",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "isRequired": false,
+          "styleClass": "property-roles-v2",
+          "id": "datatable1",
+          "i18n": {
+            "en_us": {
+              "extraSettings": {
+                "columns": [
+                  {
+                    "label": "Roles",
+                    "id": "partyRoleType",
+                    "accessor": "partyRoleType",
+                    "alignment": "left",
+                    "filterable": true,
+                    "sortable": true,
+                    "show": true
+                  },
+                  {
+                    "label": "Assigned Users",
+                    "id": "individualFullName",
+                    "accessor": "individualFullName",
+                    "alignment": "left",
+                    "filterable": true,
+                    "sortable": true,
+                    "show": true
+                  }
+                ],
+                "noDataMessage": "No data found"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "key": "propertyDetailsRolesList",
+    "name": "PropertyDetailsRolesList",
+    "description": "",
+    "version": "3",
+    "type": "2",
+    "flowableDesignVersion": 3087
+  }
+}

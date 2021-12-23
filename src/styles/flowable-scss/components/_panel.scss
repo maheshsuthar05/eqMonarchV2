@@ -1,0 +1,54 @@
+.flw__panel {
+  width: 100%;
+}
+
+.flw__panel__header {
+  min-height: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.flw__panel__label {
+  width: 100%;
+  color: inherit;
+  padding: 0;
+  font-size: $flw-text-lg;
+  font-size: var(--flw-text-lg, $flw-text-lg);
+  line-height: 1.4;
+  font-weight: 300;
+  padding-left: $flw-gutter;
+  padding-left: var(--flw-gutter, $flw-gutter);
+}
+
+.flw__panel__collapse-button {
+  float: right;
+  margin-right: 10px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.flw__panel--showBorder__content-wrapper {
+  box-sizing: border-box;
+  padding: $flw-gutter;
+  padding: var(--flw-gutter, $flw-gutter);
+  margin: $flw-gutter;
+  margin: var(--flw-gutter, $flw-gutter);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background: $flw-forms-background-color;
+}
+
+.flw__panel--noHeaderLine__header {
+  border-bottom: none;
+}
+
+.flw__panel__body {
+  width: 100%;
+}
+
+.flw__panel__error-list {
+  margin: $flw-gutter;
+  margin: var(--flw-gutter, $flw-gutter);
+}

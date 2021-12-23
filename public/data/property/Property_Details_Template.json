@@ -1,0 +1,401 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": {
+                "x": 15,
+                "y": 25
+              },
+              "lowerRight": {
+                "x": 984,
+                "y": 51
+              }
+            },
+            "stencilSuperIds": [
+              "Button"
+            ],
+            "stencilId": "cloud-rest-button",
+            "customStencilId": null
+          },
+          "extraSettings": {
+            "alignment": "left",
+            "iconAlignment": "right",
+            "url": "/eq-api/property/listingInformations/search/getAllListingInformationByPropertyId?propertyId={{property.propertyId}}",
+            "path": "_embedded.listingInformations",
+            "autoExecute": "{{property.propertyId}}",
+            "executeAlways": true
+          },
+          "primary": false,
+          "labelAlign": "top",
+          "value": "{{partyInfo}}",
+          "size": 12,
+          "ignore": false,
+          "visible": false,
+          "enabled": true,
+          "isRequired": false,
+          "id": "rest-button2",
+          "type": "restButton"
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": {
+                "x": 15,
+                "y": 74
+              },
+              "lowerRight": {
+                "x": 984,
+                "y": 100
+              }
+            },
+            "stencilSuperIds": [
+              "Button"
+            ],
+            "stencilId": "cloud-rest-button",
+            "customStencilId": null
+          },
+          "extraSettings": {
+            "alignment": "left",
+            "iconAlignment": "right",
+            "url": "/eq-api/party/miCompanies/search/findMiCompanyContactDetails?miCompanyCode={{miData[0].miCode}}",
+            "autoExecute": "{{miData[0].miCode}}",
+            "executeAlways": true
+          },
+          "primary": false,
+          "labelAlign": "top",
+          "value": "{{miDetails}}",
+          "size": 12,
+          "ignore": false,
+          "visible": false,
+          "enabled": true,
+          "isRequired": false,
+          "id": "rest-button3",
+          "type": "restButton"
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": {
+                "x": 15,
+                "y": 123
+              },
+              "lowerRight": {
+                "x": 984,
+                "y": 173
+              }
+            },
+            "stencilSuperIds": [
+              "HtmlComponent"
+            ],
+            "stencilId": "cloud-html-component",
+            "customStencilId": null
+          },
+          "labelAlign": "top",
+          "value": "<div class=\"grid grid-rows-3 grid-flow-col gap-8 lg:grid-flow-col md:grid-flow-col sm:grid-flow-row\">\n  <div class=\"row-span-3\">\n\t<div class=\"w-full p-0 border-0 rounded border-current border-solid mb-8\">\n   <div class=\"flex w-full\">\n      <h5 class=\"text-xs font-semibold pb-8 propertyDetailH5\">Loan</h5>\n   </div>\n   <div class=\"flex w-full details-box\">\n      <div class=\"w-1/3\">\n         <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Loan No</span>\n            <span class=\"deatils-Value\">{{loan.loanNumber==null?'-':loan.loanNumber}}</span>\n         </li>\n         <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Second Loan Number</span>\n            <span class=\"deatils-Value\">{{loan.otherLienLoanNumber==null?'-':loan.otherLienLoanNumber}}</span>\n         </li>\n         <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Investor Loan Number</span>\n            <span class=\"deatils-Value\">{{loan.investorLoanNumber==null?'-':loan.investorLoanNumber}}</span>\n         </li>\n         <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Property Status</span>\n            <span class=\"deatils-Value\">{{property.propertyStatus==null?'-':property.propertyStatus}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Property Type</span>\n            <span class=\"deatils-Value\">{{property.propertyType==null?'-':property.propertyType}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Division</span>\n            <span class=\"deatils-Value\">{{propertyReo.division==null?'-':propertyReo.division}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Workflow Type</span>\n            <span class=\"deatils-Value\">{{loan.currentWorkflowType==null?'-':loan.currentWorkflowType}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Legal Entity</span>\n            <span class=\"deatils-Value\">{{property.verifiedLegalEntityName==null?'-':property.verifiedLegalEntityName}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Verified Legal Entity</span>\n            <span class=\"deatils-Value\">{{property.verifiedLegalEntityIndicator==true? 'Verified' :'Non-Verified'}}</span>\n         </li>\n         \n      </div>\n\t  <div class=\"w-1/3\">\n\t  <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>List Price</span>\n            <span class=\"deatils-Value\">{{listingInformations[0].currentListPriceAmount==null?'-':listingInformations[0].currentListPriceAmount}}</span>\n         </li>\n\t\t<li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>List Date</span>\n            <span class=\"deatils-Value\">{{listingInformations[0].listDate==null?'None Assigned':flw.formatDate(listingInformations[0].listDate,\"MM/DD/YYYY\")}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>MLS Number</span>\n            <span class=\"deatils-Value\">{{listingInformations[0].mlsNumberIdentifier==null?'-':listingInformations[0].mlsNumberIdentifier}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Prior Owner First Name</span>\n            <span class=\"deatils-Value\">{{propertyTitles[0].titlePriorOwnerFirstName==null?'-':propertyTitles[0].titlePriorOwnerFirstName}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Prior Owner Last Name</span>\n            <span class=\"deatils-Value\">{{propertyTitles[0].titlePriorOwnerLastName==null?'-':propertyTitles[0].titlePriorOwnerLastName}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Red Exp Date</span>\n            <span class=\"deatils-Value\">{{foreclosure.redemptionPeriodExpirationDate ==null? '-': flw.formatDate(foreclosure.redemptionPeriodExpirationDate,\"MM/DD/YYYY\")}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Agent Type</span>\n            <span class=\"deatils-Value\">{{partyInfo[0].agentType ==null? '-': partyInfo[0].agentType}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Initial Services Complete Date</span>\n            <span class=\"deatils-Value\">{{eqOrder.completedDate ==null? '-': flw.formatDate(eqOrder.completedDate,\"MM/DD/YYYY\")}}</span>\n         </li>\n         \n\t  </div>\n      <div class=\"w-1/3\">\n\t  <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Address 1</span>\n            <span class=\"deatils-Value break-words\">{{propertyAddresses[0].addressLineText==null?'-':propertyAddresses[0].addressLineText}}</span>\n         </li>\n         <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Address 2</span>\n            <span class=\"deatils-Value break-words\">{{propertyAddresses[0].addressAdditionalLineText==null?'-':propertyAddresses[0].addressAdditionalLineText}}</span>\n         </li>\n         <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>City</span>\n            <span class=\"deatils-Value\">{{propertyAddresses[0].cityName==null?'-':propertyAddresses[0].cityName}}</span>\n         </li>\n         <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>State</span>\n            <span class=\"deatils-Value\">{{propertyAddresses[0].stateName==null?'-':propertyAddresses[0].stateName}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Zip code</span>\n            <span class=\"deatils-Value\">{{propertyAddresses[0].postalCode==null?'-':propertyAddresses[0].postalCode}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Country</span>\n            <span class=\"deatils-Value\">{{propertyAddresses[0].countyName==null?'-':propertyAddresses[0].countyName}}</span>\n         </li>\n      </div>\n   </div>\n</div>\n<div class=\"w-full p-0 border-0 rounded border-current border-solid mb-8\">\n   <div class=\"flex w-full\">\n      <h5 class=\"text-xs font-semibold pb-8 propertyDetailH5\">Mortgage Insurance</h5>\n   </div>\n   <div class=\"flex w-full details-box\">\n      <div class=\"w-1/3\">\n         <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Is there MI?</span>\n            <span class=\"deatils-Value\">{{loan.miCoverageExistsIndicator==null?'-':loan.miCoverageExistsIndicator}}</span>\n         </li>\n         <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>MI Company</span>\n            <span class=\"deatils-Value\">{{miData[0].miCompanyName==null?'-':miData[0].miCompanyName}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Contact</span>\n            <span class=\"deatils-Value\">{{miDetails[0]==null?'-':miDetails[0]}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286 break-words\">\n            <span>Email</span>\n            <span class=\"deatils-Value\">{{miDetails[1]==null?'-':miDetails[1]}}</span>\n         </li>\n      </div>\n\t  <div class=\"w-1/3\">\n\t\t<li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Code</span>\n            <span class=\"deatils-Value\">{{miData[0].miCode==null?'-':miData[0].miCode}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Pool number</span>\n            <span class=\"deatils-Value\">{{miData[0].miPoolInsuranceCertificateIdentifier==null?'-':miData[0].miPoolInsuranceCertificateIdentifier}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>MI Policy Number</span>\n            <span class=\"deatils-Value\">{{miData[0].miPolicyNumber==null?'-':miData[0].miPolicyNumber}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Phone</span>\n            <span class=\"deatils-Value\">{{miDetails[2]==null?'-':miDetails[2]}}</span>\n         </li>\n\t  </div>\n\t  <div class=\"w-1/3\">\n\t  <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Paid</span>\n            <span class=\"deatils-Value\">{{(insuranceClaims[0].insuranceClaimType==null||insuranceClaims[0].insuranceClaimType==\"null\")?'NA':insuranceClaims[0].insuranceClaimType}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Claim filed date</span>\n            <span class=\"deatils-Value\">{{insuranceClaims[0].insuranceClaimFiledDate==null?'-':flw.formatDate(insuranceClaims[0].insuranceClaimFiledDate,\"MM/DD/YYYY\")}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Claim amount</span>\n            <span class=\"deatils-Value\">{{insuranceClaims[0].actualInsuranceClaimAmount==null?'-':insuranceClaims[0].actualInsuranceClaimAmount}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Fax</span>\n            <span class=\"deatils-Value\">{{miDetails[3]==null?'-':miDetails[3]}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286 hidden\">\n            <span>MI Claim Paid Date</span>\n            <span class=\"deatils-Value\">{{insuranceClaims[0].insuranceClaimPaidDate==null?'-':flw.formatDate(insuranceClaims[0].insuranceClaimPaidDate,\"MM/DD/YYYY\")}}</span>\n         </li>\n\t  </div>\n   </div>\n</div>\n<div class=\"w-full p-0 border-0 rounded border-current border-solid\">\n   <div class=\"flex w-full\">\n      <h5 class=\"text-xs font-semibold pb-8 propertyDetailH5\">Investors</h5>\n   </div>\n   <div class=\"flex w-full details-box\">\n      <div class=\"w-full\">\n         <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Investor ID</span>\n            <span class=\"deatils-Value\">{{investorLoanInformations[0].investorCode==null?'-':investorLoanInformations[0].investorCode}}</span>\n         </li>\n      </div>\n   </div>\n</div>\n     \n  </div>\n  <div class=\"col-span-2 row-span-2 col-span-2\">\n\t<div class=\"w-full p-0 border-0 rounded border-current border-solid\">\n   <div class=\"flex w-full\">\n      <h5 class=\"text-xs font-semibold pb-8 propertyDetailH5\">Property</h5>\n   </div>\n   <div class=\"flex w-full details-box\">\n      <div class=\"w-1/4\">\n         <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Bedroom count</span>\n            <span class=\"deatils-Value\">{{property.propertyBedroomCount==null?'-':property.propertyBedroomCount}}</span>\n         </li>\n         <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Bathroom count</span>\n            <span class=\"deatils-Value\">{{property.propertyBathroomCount==null?'-':property.propertyBathroomCount}}</span>\n         </li>\n         <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Square Footage</span>\n            <span class=\"deatils-Value\">{{property.grossLivingAreaSquareFeetNumber==null?'-':property.grossLivingAreaSquareFeetNumber}}</span>\n         </li>\n         <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Year built</span>\n            <span class=\"deatils-Value\">{{property.propertyStructureBuiltYear==null?'-':property.propertyStructureBuiltYear}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Lot size</span>\n            <span class=\"deatils-Value\">{{property.lotSizeAreaNumber==null?'-':property.lotSizeAreaNumber}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Sale Date</span>\n            <span class=\"deatils-Value\">{{saleDate==null?'-':flw.formatDate(saleDate,\"MM/DD/YYYY\")}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Bid Amount</span>\n            <span class=\"deatils-Value\">{{foreclosure.bidActualAmount==null?'-':foreclosure.bidActualAmount}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>FMV</span>\n            <span class=\"deatils-Value\">{{marketingPlan.asIsFairMarketValueAmount==null?'-':marketingPlan.asIsFairMarketValueAmount}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Date File Rcv'd in REO</span>\n            <span class=\"deatils-Value\">{{propertyReoStepDecisions.fileRecdInReoDate==null?'-':flw.formatDate(propertyReoStepDecisions.fileRecdInReoDate,\"MM/DD/YYYY\")}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Principal Balance</span>\n            <span class=\"deatils-Value\">{{loan.upbAmount==null?'-':loan.upbAmount}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Manager Threshold</span>\n            <span class=\"deatils-Value\">{{managerThreshold==null?'-':managerThreshold}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Department Manager Threshold</span>\n            <span class=\"deatils-Value\">{{departmentManagerThreshold==null?'-':departmentManagerThreshold}}</span>\n         </li>\n      </div>\n\t  <div class=\"w-1/4\">\n\t  \n\t\t<li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Sale Inspection</span>\n            <span class=\"deatils-Value\">{{property.propertyCurrentOccupancyType==null?'-':property.propertyCurrentOccupancyType}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Net Proceed Amount</span>\n            <span class=\"deatils-Value\">{{netProceedAmount==null?'-': netProceedAmount}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Disclosure</span>\n            <span class=\"deatils-Value\">{{marketingPlanWriteUps.marketingPlanWriteUpDetails==null?'-':marketingPlanWriteUps.marketingPlanWriteUpDetails}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Agent Initial BPO Amount</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationAmount==null?'-': propertyValuations[0].propertyValuationAmount}}</span>\n         </li>\n         <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Agent Initial BPO Date</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationEffectiveDate==null?'-': flw.formatDate(propertyValuations[0].propertyValuationEffectiveDate,\"MM/DD/YYYY\")}}</span>\n         </li>\n         <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Current BPO Amount</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationAmount==null?'-': propertyValuations[0].propertyValuationAmount}}</span>\n         </li>\n         <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Current BPO Date</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationEffectiveDate==null?'-': flw.formatDate(propertyValuations[0].propertyValuationEffectiveDate,\"MM/DD/YYYY\")}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Vendor Initial BPO Amount</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationAmount==null?'-': propertyValuations[0].propertyValuationAmount}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Vendor Initial BPO Date</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationEffectiveDate==null?'-': flw.formatDate(propertyValuations[0].propertyValuationEffectiveDate,\"MM/DD/YYYY\")}}</span>\n         </li>\n\t  <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Vendor Initial BPO Repaired Amount</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationRepairAmount==null?'-': propertyValuations[0].propertyValuationRepairAmount}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Vendor Independent BPO Amount</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationAmount==null?'-': propertyValuations[0].propertyValuationAmount}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Vendor Independent BPO Repaired Amount</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationRepairAmount==null?'-': propertyValuations[0].propertyValuationRepairAmount}}</span>\n         </li>\n\t  </div>\n      <div class=\"w-1/4\">\n\t  \n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Vendor Independent BPO Date</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationEffectiveDate==null?'-': flw.formatDate(propertyValuations[0].propertyValuationEffectiveDate,\"MM/DD/YYYY\")}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>FC Sale Value 2 Exterior/Interior</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationAmount==null?'-': propertyValuations[0].propertyValuationAmount}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>FC Sale Value 2 Date</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationEffectiveDate==null?'-': flw.formatDate(propertyValuations[0].propertyValuationEffectiveDate,\"MM/DD/YYYY\")}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>FC Sale Value 2</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationAmount==null?'-': propertyValuations[0].propertyValuationAmount}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>FC Sale Value BPO/CMA 2</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationAmount==null?'-': propertyValuations[0].propertyValuationAmount}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>FC Sale Value BPO/CMA 1</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationAmount==null?'-': propertyValuations[0].propertyValuationAmount}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>FC Sale Value 1 Exterior/Interior</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationAmount==null?'-': propertyValuations[0].propertyValuationAmount}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>FC Sale Value 1 Date</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationEffectiveDate==null?'-': flw.formatDate(propertyValuations[0].propertyValuationEffectiveDate,\"MM/DD/YYYY\")}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>FC Sale Value 1</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationAmount==null?'-': propertyValuations[0].propertyValuationAmount}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Appraisal Amount</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationAmount==null?'-': propertyValuations[0].propertyValuationAmount}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Appraisal Date</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationEffectiveDate==null?'-': flw.formatDate(propertyValuations[0].propertyValuationEffectiveDate,\"MM/DD/YYYY\")}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Updated Appraisal Amount</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationAmount==null?'-': propertyValuations[0].propertyValuationAmount}}</span>\n         </li>\n\t\t \n\t\t \n      </div>\n\t  <div class=\"w-1/4\">\n\t  <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Updated Appraisal Date</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationEffectiveDate==null?'-': flw.formatDate(propertyValuations[0].propertyValuationEffectiveDate,\"MM/DD/YYYY\")}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Client Valuation Type</span>\n            <span class=\"deatils-Value\">{{propertyValuationsData.clientValuationType_PropertyValuationMethodType==null?'-':propertyValuationsData.clientValuationType_PropertyValuationMethodType}}</span>\n         </li>\n\t  <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Client Designated Value Amount</span>\n            <span class=\"deatils-Value\">{{propertyValuationsData.clientDesignatedValueAmount_PropertyValuationAmount==null?'-': propertyValuationsData.clientDesignatedValueAmount_PropertyValuationAmount}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Client Designated Value Date</span>\n            <span class=\"deatils-Value\">{{propertyValuationsData.clientDesignatedValueDate_PropertyValuationEffectiveDate==null?'-': propertyValuationsData.clientDesignatedValueDate_PropertyValuationEffectiveDate}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Client Valuation Amount</span>\n            <span class=\"deatils-Value\">{{propertyValuationsData.clientValuationAmount_PropertyValuationAmount==null?'-': propertyValuationsData.clientValuationAmount_PropertyValuationAmount}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Client Valuation Date</span>\n            <span class=\"deatils-Value\">{{propertyValuationsData.clientValuationDate_PropertyValuationEffectiveDate==null?'-': flw.formatDate(propertyValuationsData.clientValuationDate_PropertyValuationEffectiveDate,\"MM/DD/YYYY\")}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>LRV As Is</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationAmount==null?'-': propertyValuations[0].propertyValuationAmount}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>LRV Repaired</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationRepairAmount==null?'-': propertyValuations[0].propertyValuationRepairAmount}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Legacy</span>\n            <span class=\"deatils-Value\">{{property.propertyLoadType==null?'-':property.propertyLoadType}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Legacy ID</span>\n            <span class=\"deatils-Value\">{{property.sourceSystemId==null?'-':property.sourceSystemId}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Legacy Day in Inventory</span>\n            <span class=\"deatils-Value\">{{property.sourceSystemPreviousDaysInInventory==null?'-':property.sourceSystemPreviousDaysInInventory}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Legacy DOM</span>\n            <span class=\"deatils-Value\">{{property.sourceSystemPreviousDaysOnMarket==null?'-':property.sourceSystemPreviousDaysOnMarket}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Legacy DOM</span>\n            <span class=\"deatils-Value\">{{sendExternalTransactionOnOpen==null?'-':sendExternalTransactionOnOpen}}</span>\n         </li>\n\t  </div>\n   </div>\n</div>\n  </div>\n  <div class=\"col-span-2\">\n\t<div class=\"w-full p-0 border-0 rounded border-current border-solid\">\t\n<div class=\"flex w-full\">\n   <h5 class=\"text-xs font-semibold pb-8 propertyDetailH5\">Foreclosure</h5>\n</div>\n<div class=\"flex w-full details-box\">\n   <div class=\"w-1/4\">\n      <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n         <span>Title taken date</span>\n         <span class=\"deatils-Value\">{{foreclosure.titleTakenDate==null?'-':flw.formatDate(foreclosure.titleTakenDate,\"MM/DD/YYYY\")}}</span>\n      </li>\n      <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n         <span>DIL</span>\n         <span class=\"deatils-Value\">{{propertyTitles[0].foreclosureDilRecordedIndicator===2 ? '-': propertyTitles[0].foreclosureDilRecordedIndicator}}</span>\n      </li>\n      <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n         <span>JD/FCL</span>\n         <span class=\"deatils-Value\">{{foreclosure.foreclosureMethodType==null?'-':foreclosure.foreclosureMethodType}}</span>\n      </li>\n\n   </div>\n   <div class=\"w-1/4\">\n         <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n         <span>FC sale date</span>\n         <span class=\"deatils-Value\">{{foreclosure.foreclosureSaleActualDate==null?'-':flw.formatDate(foreclosure.foreclosureSaleActualDate,\"MM/DD/YYYY\")}}</span>\n      </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n         <span>FC sale value</span>\n         <span class=\"deatils-Value\">{{foreclosure.foreclosureSaleMarketValueAmount==null?'-':foreclosure.foreclosureSaleMarketValueAmount}}</span>\n      </li>\n      <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n         <span>FC sale valuation date</span>\n         <span class=\"deatils-Value\">{{foreclosure.foreclosureSaleMarketValueDate==null?'-':flw.formatDate(foreclosure.foreclosureSaleMarketValueDate,\"MM/DD/YYYY\")}}</span>\n      </li>\n   </div>\n   <div class=\"w-1/4\">\n\t<li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n         <span>Foreclosure Attorney Firm</span>\n         <span class=\"deatils-Value\">{{party.legalEntityFullName==null?'-':party.legalEntityFullName}}</span>\n      </li>\n      <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n         <span>Foreclosure Attorney Name</span>\n         <span class=\"deatils-Value\">{{party.individualFullName==null?'-':party.individualFullName}}</span>\n      </li>\n     <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n         <span>Foreclosure Attorney Address</span>\n         <span class=\"deatils-Value\">{{foreclosureAttorneyAddress==null?'-':foreclosureAttorneyAddress}}</span>\n      </li>\n   </div>\n   <div class=\"w-1/4\">\n   <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n         <span>Foreclosure Attorney Phone</span>\n         <span class=\"deatils-Value\">{{foreclosureAttorneyPhone==null?'-':foreclosureAttorneyPhone}}</span>\n      </li>\n     <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n         <span>Foreclosure Attorney Email</span>\n         <span class=\"deatils-Value\">-</span>\n      </li>\n   </div>\n\n</div>\n</div>\n  </div>\n</div>",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "html-component1",
+          "i18n": {
+            "en_us": {
+              "value": "<div class=\"grid grid-rows-3 grid-flow-col gap-8 lg:grid-flow-col md:grid-flow-col sm:grid-flow-row\">\n  <div class=\"row-span-3\">\n\t<div class=\"w-full p-0 border-0 rounded border-current border-solid mb-8\">\n   <div class=\"flex w-full\">\n      <h5 class=\"text-xs font-semibold pb-8 propertyDetailH5\">Loan</h5>\n   </div>\n   <div class=\"flex w-full details-box\">\n      <div class=\"w-1/3\">\n         <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Loan No</span>\n            <span class=\"deatils-Value\">{{loan.loanNumber==null?'-':loan.loanNumber}}</span>\n         </li>\n         <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Second Loan Number</span>\n            <span class=\"deatils-Value\">{{loan.otherLienLoanNumber==null?'-':loan.otherLienLoanNumber}}</span>\n         </li>\n         <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Investor Loan Number</span>\n            <span class=\"deatils-Value\">{{loan.investorLoanNumber==null?'-':loan.investorLoanNumber}}</span>\n         </li>\n         <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Property Status</span>\n            <span class=\"deatils-Value\">{{property.propertyStatus==null?'-':property.propertyStatus}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Property Type</span>\n            <span class=\"deatils-Value\">{{property.propertyType==null?'-':property.propertyType}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Division</span>\n            <span class=\"deatils-Value\">{{propertyReo.division==null?'-':propertyReo.division}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Workflow Type</span>\n            <span class=\"deatils-Value\">{{loan.currentWorkflowType==null?'-':loan.currentWorkflowType}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Legal Entity</span>\n            <span class=\"deatils-Value\">{{property.verifiedLegalEntityName==null?'-':property.verifiedLegalEntityName}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Verified Legal Entity</span>\n            <span class=\"deatils-Value\">{{property.verifiedLegalEntityIndicator==true? 'Verified' :'Non-Verified'}}</span>\n         </li>\n         \n      </div>\n\t  <div class=\"w-1/3\">\n\t  <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>List Price</span>\n            <span class=\"deatils-Value\">{{listingInformations[0].currentListPriceAmount==null?'-':listingInformations[0].currentListPriceAmount}}</span>\n         </li>\n\t\t<li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>List Date</span>\n            <span class=\"deatils-Value\">{{listingInformations[0].listDate==null?'None Assigned':flw.formatDate(listingInformations[0].listDate,\"MM/DD/YYYY\")}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>MLS Number</span>\n            <span class=\"deatils-Value\">{{listingInformations[0].mlsNumberIdentifier==null?'-':listingInformations[0].mlsNumberIdentifier}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Prior Owner First Name</span>\n            <span class=\"deatils-Value\">{{propertyTitles[0].titlePriorOwnerFirstName==null?'-':propertyTitles[0].titlePriorOwnerFirstName}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Prior Owner Last Name</span>\n            <span class=\"deatils-Value\">{{propertyTitles[0].titlePriorOwnerLastName==null?'-':propertyTitles[0].titlePriorOwnerLastName}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Red Exp Date</span>\n            <span class=\"deatils-Value\">{{foreclosure.redemptionPeriodExpirationDate ==null? '-': flw.formatDate(foreclosure.redemptionPeriodExpirationDate,\"MM/DD/YYYY\")}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Agent Type</span>\n            <span class=\"deatils-Value\">{{partyInfo[0].agentType ==null? '-': partyInfo[0].agentType}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Initial Services Complete Date</span>\n            <span class=\"deatils-Value\">{{eqOrder.completedDate ==null? '-': flw.formatDate(eqOrder.completedDate,\"MM/DD/YYYY\")}}</span>\n         </li>\n         \n\t  </div>\n      <div class=\"w-1/3\">\n\t  <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Address 1</span>\n            <span class=\"deatils-Value break-words\">{{propertyAddresses[0].addressLineText==null?'-':propertyAddresses[0].addressLineText}}</span>\n         </li>\n         <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Address 2</span>\n            <span class=\"deatils-Value break-words\">{{propertyAddresses[0].addressAdditionalLineText==null?'-':propertyAddresses[0].addressAdditionalLineText}}</span>\n         </li>\n         <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>City</span>\n            <span class=\"deatils-Value\">{{propertyAddresses[0].cityName==null?'-':propertyAddresses[0].cityName}}</span>\n         </li>\n         <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>State</span>\n            <span class=\"deatils-Value\">{{propertyAddresses[0].stateName==null?'-':propertyAddresses[0].stateName}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Zip code</span>\n            <span class=\"deatils-Value\">{{propertyAddresses[0].postalCode==null?'-':propertyAddresses[0].postalCode}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Country</span>\n            <span class=\"deatils-Value\">{{propertyAddresses[0].countyName==null?'-':propertyAddresses[0].countyName}}</span>\n         </li>\n      </div>\n   </div>\n</div>\n<div class=\"w-full p-0 border-0 rounded border-current border-solid mb-8\">\n   <div class=\"flex w-full\">\n      <h5 class=\"text-xs font-semibold pb-8 propertyDetailH5\">Mortgage Insurance</h5>\n   </div>\n   <div class=\"flex w-full details-box\">\n      <div class=\"w-1/3\">\n         <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Is there MI?</span>\n            <span class=\"deatils-Value\">{{loan.miCoverageExistsIndicator==null?'-':loan.miCoverageExistsIndicator}}</span>\n         </li>\n         <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>MI Company</span>\n            <span class=\"deatils-Value\">{{miData[0].miCompanyName==null?'-':miData[0].miCompanyName}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Contact</span>\n            <span class=\"deatils-Value\">{{miDetails[0]==null?'-':miDetails[0]}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286 break-words\">\n            <span>Email</span>\n            <span class=\"deatils-Value\">{{miDetails[1]==null?'-':miDetails[1]}}</span>\n         </li>\n      </div>\n\t  <div class=\"w-1/3\">\n\t\t<li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Code</span>\n            <span class=\"deatils-Value\">{{miData[0].miCode==null?'-':miData[0].miCode}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Pool number</span>\n            <span class=\"deatils-Value\">{{miData[0].miPoolInsuranceCertificateIdentifier==null?'-':miData[0].miPoolInsuranceCertificateIdentifier}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>MI Policy Number</span>\n            <span class=\"deatils-Value\">{{miData[0].miPolicyNumber==null?'-':miData[0].miPolicyNumber}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Phone</span>\n            <span class=\"deatils-Value\">{{miDetails[2]==null?'-':miDetails[2]}}</span>\n         </li>\n\t  </div>\n\t  <div class=\"w-1/3\">\n\t  <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Paid</span>\n            <span class=\"deatils-Value\">{{(insuranceClaims[0].insuranceClaimType==null||insuranceClaims[0].insuranceClaimType==\"null\")?'NA':insuranceClaims[0].insuranceClaimType}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Claim filed date</span>\n            <span class=\"deatils-Value\">{{insuranceClaims[0].insuranceClaimFiledDate==null?'-':flw.formatDate(insuranceClaims[0].insuranceClaimFiledDate,\"MM/DD/YYYY\")}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Claim amount</span>\n            <span class=\"deatils-Value\">{{insuranceClaims[0].actualInsuranceClaimAmount==null?'-':insuranceClaims[0].actualInsuranceClaimAmount}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Fax</span>\n            <span class=\"deatils-Value\">{{miDetails[3]==null?'-':miDetails[3]}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286 hidden\">\n            <span>MI Claim Paid Date</span>\n            <span class=\"deatils-Value\">{{insuranceClaims[0].insuranceClaimPaidDate==null?'-':flw.formatDate(insuranceClaims[0].insuranceClaimPaidDate,\"MM/DD/YYYY\")}}</span>\n         </li>\n\t  </div>\n   </div>\n</div>\n<div class=\"w-full p-0 border-0 rounded border-current border-solid\">\n   <div class=\"flex w-full\">\n      <h5 class=\"text-xs font-semibold pb-8 propertyDetailH5\">Investors</h5>\n   </div>\n   <div class=\"flex w-full details-box\">\n      <div class=\"w-full\">\n         <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Investor ID</span>\n            <span class=\"deatils-Value\">{{investorLoanInformations[0].investorCode==null?'-':investorLoanInformations[0].investorCode}}</span>\n         </li>\n      </div>\n   </div>\n</div>\n     \n  </div>\n  <div class=\"col-span-2 row-span-2 col-span-2\">\n\t<div class=\"w-full p-0 border-0 rounded border-current border-solid\">\n   <div class=\"flex w-full\">\n      <h5 class=\"text-xs font-semibold pb-8 propertyDetailH5\">Property</h5>\n   </div>\n   <div class=\"flex w-full details-box\">\n      <div class=\"w-1/4\">\n         <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Bedroom count</span>\n            <span class=\"deatils-Value\">{{property.propertyBedroomCount==null?'-':property.propertyBedroomCount}}</span>\n         </li>\n         <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Bathroom count</span>\n            <span class=\"deatils-Value\">{{property.propertyBathroomCount==null?'-':property.propertyBathroomCount}}</span>\n         </li>\n         <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Square Footage</span>\n            <span class=\"deatils-Value\">{{property.grossLivingAreaSquareFeetNumber==null?'-':property.grossLivingAreaSquareFeetNumber}}</span>\n         </li>\n         <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Year built</span>\n            <span class=\"deatils-Value\">{{property.propertyStructureBuiltYear==null?'-':property.propertyStructureBuiltYear}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Lot size</span>\n            <span class=\"deatils-Value\">{{property.lotSizeAreaNumber==null?'-':property.lotSizeAreaNumber}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Sale Date</span>\n            <span class=\"deatils-Value\">{{saleDate==null?'-':flw.formatDate(saleDate,\"MM/DD/YYYY\")}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Bid Amount</span>\n            <span class=\"deatils-Value\">{{foreclosure.bidActualAmount==null?'-':foreclosure.bidActualAmount}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>FMV</span>\n            <span class=\"deatils-Value\">{{marketingPlan.asIsFairMarketValueAmount==null?'-':marketingPlan.asIsFairMarketValueAmount}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Date File Rcv'd in REO</span>\n            <span class=\"deatils-Value\">{{propertyReoStepDecisions.fileRecdInReoDate==null?'-':flw.formatDate(propertyReoStepDecisions.fileRecdInReoDate,\"MM/DD/YYYY\")}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Principal Balance</span>\n            <span class=\"deatils-Value\">{{loan.upbAmount==null?'-':loan.upbAmount}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Manager Threshold</span>\n            <span class=\"deatils-Value\">{{managerThreshold==null?'-':managerThreshold}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Department Manager Threshold</span>\n            <span class=\"deatils-Value\">{{departmentManagerThreshold==null?'-':departmentManagerThreshold}}</span>\n         </li>\n      </div>\n\t  <div class=\"w-1/4\">\n\t  \n\t\t<li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Sale Inspection</span>\n            <span class=\"deatils-Value\">{{property.propertyCurrentOccupancyType==null?'-':property.propertyCurrentOccupancyType}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Net Proceed Amount</span>\n            <span class=\"deatils-Value\">{{netProceedAmount==null?'-': netProceedAmount}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Disclosure</span>\n            <span class=\"deatils-Value\">{{marketingPlanWriteUps.marketingPlanWriteUpDetails==null?'-':marketingPlanWriteUps.marketingPlanWriteUpDetails}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Agent Initial BPO Amount</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationAmount==null?'-': propertyValuations[0].propertyValuationAmount}}</span>\n         </li>\n         <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Agent Initial BPO Date</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationEffectiveDate==null?'-': flw.formatDate(propertyValuations[0].propertyValuationEffectiveDate,\"MM/DD/YYYY\")}}</span>\n         </li>\n         <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Current BPO Amount</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationAmount==null?'-': propertyValuations[0].propertyValuationAmount}}</span>\n         </li>\n         <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Current BPO Date</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationEffectiveDate==null?'-': flw.formatDate(propertyValuations[0].propertyValuationEffectiveDate,\"MM/DD/YYYY\")}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Vendor Initial BPO Amount</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationAmount==null?'-': propertyValuations[0].propertyValuationAmount}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Vendor Initial BPO Date</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationEffectiveDate==null?'-': flw.formatDate(propertyValuations[0].propertyValuationEffectiveDate,\"MM/DD/YYYY\")}}</span>\n         </li>\n\t  <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Vendor Initial BPO Repaired Amount</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationRepairAmount==null?'-': propertyValuations[0].propertyValuationRepairAmount}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Vendor Independent BPO Amount</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationAmount==null?'-': propertyValuations[0].propertyValuationAmount}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Vendor Independent BPO Repaired Amount</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationRepairAmount==null?'-': propertyValuations[0].propertyValuationRepairAmount}}</span>\n         </li>\n\t  </div>\n      <div class=\"w-1/4\">\n\t  \n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Vendor Independent BPO Date</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationEffectiveDate==null?'-': flw.formatDate(propertyValuations[0].propertyValuationEffectiveDate,\"MM/DD/YYYY\")}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>FC Sale Value 2 Exterior/Interior</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationAmount==null?'-': propertyValuations[0].propertyValuationAmount}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>FC Sale Value 2 Date</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationEffectiveDate==null?'-': flw.formatDate(propertyValuations[0].propertyValuationEffectiveDate,\"MM/DD/YYYY\")}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>FC Sale Value 2</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationAmount==null?'-': propertyValuations[0].propertyValuationAmount}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>FC Sale Value BPO/CMA 2</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationAmount==null?'-': propertyValuations[0].propertyValuationAmount}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>FC Sale Value BPO/CMA 1</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationAmount==null?'-': propertyValuations[0].propertyValuationAmount}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>FC Sale Value 1 Exterior/Interior</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationAmount==null?'-': propertyValuations[0].propertyValuationAmount}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>FC Sale Value 1 Date</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationEffectiveDate==null?'-': flw.formatDate(propertyValuations[0].propertyValuationEffectiveDate,\"MM/DD/YYYY\")}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>FC Sale Value 1</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationAmount==null?'-': propertyValuations[0].propertyValuationAmount}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Appraisal Amount</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationAmount==null?'-': propertyValuations[0].propertyValuationAmount}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Appraisal Date</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationEffectiveDate==null?'-': flw.formatDate(propertyValuations[0].propertyValuationEffectiveDate,\"MM/DD/YYYY\")}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Updated Appraisal Amount</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationAmount==null?'-': propertyValuations[0].propertyValuationAmount}}</span>\n         </li>\n\t\t \n\t\t \n      </div>\n\t  <div class=\"w-1/4\">\n\t  <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Updated Appraisal Date</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationEffectiveDate==null?'-': flw.formatDate(propertyValuations[0].propertyValuationEffectiveDate,\"MM/DD/YYYY\")}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Client Valuation Type</span>\n            <span class=\"deatils-Value\">{{propertyValuationsData.clientValuationType_PropertyValuationMethodType==null?'-':propertyValuationsData.clientValuationType_PropertyValuationMethodType}}</span>\n         </li>\n\t  <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Client Designated Value Amount</span>\n            <span class=\"deatils-Value\">{{propertyValuationsData.clientDesignatedValueAmount_PropertyValuationAmount==null?'-': propertyValuationsData.clientDesignatedValueAmount_PropertyValuationAmount}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Client Designated Value Date</span>\n            <span class=\"deatils-Value\">{{propertyValuationsData.clientDesignatedValueDate_PropertyValuationEffectiveDate==null?'-': propertyValuationsData.clientDesignatedValueDate_PropertyValuationEffectiveDate}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Client Valuation Amount</span>\n            <span class=\"deatils-Value\">{{propertyValuationsData.clientValuationAmount_PropertyValuationAmount==null?'-': propertyValuationsData.clientValuationAmount_PropertyValuationAmount}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Client Valuation Date</span>\n            <span class=\"deatils-Value\">{{propertyValuationsData.clientValuationDate_PropertyValuationEffectiveDate==null?'-': flw.formatDate(propertyValuationsData.clientValuationDate_PropertyValuationEffectiveDate,\"MM/DD/YYYY\")}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>LRV As Is</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationAmount==null?'-': propertyValuations[0].propertyValuationAmount}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>LRV Repaired</span>\n            <span class=\"deatils-Value\">{{propertyValuations[0].propertyValuationRepairAmount==null?'-': propertyValuations[0].propertyValuationRepairAmount}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Legacy</span>\n            <span class=\"deatils-Value\">{{property.propertyLoadType==null?'-':property.propertyLoadType}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Legacy ID</span>\n            <span class=\"deatils-Value\">{{property.sourceSystemId==null?'-':property.sourceSystemId}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Legacy Day in Inventory</span>\n            <span class=\"deatils-Value\">{{property.sourceSystemPreviousDaysInInventory==null?'-':property.sourceSystemPreviousDaysInInventory}}</span>\n         </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Legacy DOM</span>\n            <span class=\"deatils-Value\">{{property.sourceSystemPreviousDaysOnMarket==null?'-':property.sourceSystemPreviousDaysOnMarket}}</span>\n         </li>\n\t\t <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n            <span>Legacy DOM</span>\n            <span class=\"deatils-Value\">{{sendExternalTransactionOnOpen==null?'-':sendExternalTransactionOnOpen}}</span>\n         </li>\n\t  </div>\n   </div>\n</div>\n  </div>\n  <div class=\"col-span-2\">\n\t<div class=\"w-full p-0 border-0 rounded border-current border-solid\">\t\n<div class=\"flex w-full\">\n   <h5 class=\"text-xs font-semibold pb-8 propertyDetailH5\">Foreclosure</h5>\n</div>\n<div class=\"flex w-full details-box\">\n   <div class=\"w-1/4\">\n      <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n         <span>Title taken date</span>\n         <span class=\"deatils-Value\">{{foreclosure.titleTakenDate==null?'-':flw.formatDate(foreclosure.titleTakenDate,\"MM/DD/YYYY\")}}</span>\n      </li>\n      <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n         <span>DIL</span>\n         <span class=\"deatils-Value\">{{propertyTitles[0].foreclosureDilRecordedIndicator===2 ? '-': propertyTitles[0].foreclosureDilRecordedIndicator}}</span>\n      </li>\n      <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n         <span>JD/FCL</span>\n         <span class=\"deatils-Value\">{{foreclosure.foreclosureMethodType==null?'-':foreclosure.foreclosureMethodType}}</span>\n      </li>\n\n   </div>\n   <div class=\"w-1/4\">\n         <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n         <span>FC sale date</span>\n         <span class=\"deatils-Value\">{{foreclosure.foreclosureSaleActualDate==null?'-':flw.formatDate(foreclosure.foreclosureSaleActualDate,\"MM/DD/YYYY\")}}</span>\n      </li>\n        <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n         <span>FC sale value</span>\n         <span class=\"deatils-Value\">{{foreclosure.foreclosureSaleMarketValueAmount==null?'-':foreclosure.foreclosureSaleMarketValueAmount}}</span>\n      </li>\n      <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n         <span>FC sale valuation date</span>\n         <span class=\"deatils-Value\">{{foreclosure.foreclosureSaleMarketValueDate==null?'-':flw.formatDate(foreclosure.foreclosureSaleMarketValueDate,\"MM/DD/YYYY\")}}</span>\n      </li>\n   </div>\n   <div class=\"w-1/4\">\n\t<li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n         <span>Foreclosure Attorney Firm</span>\n         <span class=\"deatils-Value\">{{party.legalEntityFullName==null?'-':party.legalEntityFullName}}</span>\n      </li>\n      <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n         <span>Foreclosure Attorney Name</span>\n         <span class=\"deatils-Value\">{{party.individualFullName==null?'-':party.individualFullName}}</span>\n      </li>\n     <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n         <span>Foreclosure Attorney Address</span>\n         <span class=\"deatils-Value\">{{foreclosureAttorneyAddress==null?'-':foreclosureAttorneyAddress}}</span>\n      </li>\n   </div>\n   <div class=\"w-1/4\">\n   <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n         <span>Foreclosure Attorney Phone</span>\n         <span class=\"deatils-Value\">{{foreclosureAttorneyPhone==null?'-':foreclosureAttorneyPhone}}</span>\n      </li>\n     <li class=\"flex flex-col mb-4 makeStyles-textSmall-1286\">\n         <span>Foreclosure Attorney Email</span>\n         <span class=\"deatils-Value\">-</span>\n      </li>\n   </div>\n\n</div>\n</div>\n  </div>\n</div>"
+            }
+          },
+          "extraSettings": {
+            "showBorder": false,
+            "params": [],
+            "method": "GET"
+          },
+          "type": "htmlComponent"
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": {
+                "x": 15,
+                "y": 196
+              },
+              "lowerRight": {
+                "x": 493,
+                "y": 338
+              }
+            },
+            "stencilSuperIds": [
+              "SubSlotPanel"
+            ],
+            "stencilId": "cloud-sub-panel",
+            "customStencilId": null
+          },
+          "labelAlign": "top",
+          "size": 6,
+          "ignore": false,
+          "visible": false,
+          "enabled": true,
+          "isRequired": false,
+          "styleClass": "property-details-valuation-container",
+          "id": "sub-panel1",
+          "extraSettings": {
+            "collapsible": false,
+            "collapsed": false,
+            "showBorder": false,
+            "saveButtonVisible": true,
+            "saveButtonEnabled": true,
+            "cancelButtonVisible": true,
+            "cancelButtonEnabled": true,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": {
+                            "x": 15,
+                            "y": 25
+                          },
+                          "lowerRight": {
+                            "x": 463,
+                            "y": 117
+                          }
+                        },
+                        "stencilSuperIds": [
+                          "base-datatable",
+                          "Component"
+                        ],
+                        "stencilId": "cloud-datatable",
+                        "customStencilId": null
+                      },
+                      "label": "Valuation Data",
+                      "i18n": {
+                        "en_us": {
+                          "label": "Valuation Data",
+                          "extraSettings": {
+                            "columns": [
+                              {
+                                "label": "Date",
+                                "id": "propertyValuationEffectiveDate",
+                                "accessor": "propertyValuationEffectiveDate",
+                                "alignment": "left",
+                                "filterable": false,
+                                "sortable": false,
+                                "show": true
+                              },
+                              {
+                                "label": "Type",
+                                "id": "propertyValuationMethodType",
+                                "accessor": "propertyValuationMethodType",
+                                "alignment": "left",
+                                "filterable": false,
+                                "sortable": false,
+                                "show": true
+                              },
+                              {
+                                "label": "Product",
+                                "id": "product",
+                                "accessor": "product",
+                                "alignment": "left",
+                                "filterable": false,
+                                "sortable": false,
+                                "show": true
+                              },
+                              {
+                                "label": "Role",
+                                "id": "role",
+                                "accessor": "role",
+                                "alignment": "left",
+                                "filterable": false,
+                                "sortable": false,
+                                "show": true
+                              },
+                              {
+                                "label": "Person",
+                                "id": "person",
+                                "accessor": "person",
+                                "alignment": "left",
+                                "filterable": false,
+                                "sortable": false,
+                                "show": true
+                              },
+                              {
+                                "label": "As Is",
+                                "id": "propertyValuationAsIsSuggestedListPrice",
+                                "accessor": "propertyValuationAsIsSuggestedListPrice",
+                                "alignment": "left",
+                                "filterable": false,
+                                "sortable": false,
+                                "show": true
+                              },
+                              {
+                                "label": "Repaired",
+                                "id": "propertyValuationRepairAmount",
+                                "accessor": "propertyValuationRepairAmount",
+                                "alignment": "left",
+                                "filterable": false,
+                                "sortable": false,
+                                "show": true
+                              }
+                            ],
+                            "noDataMessage": "No Data found"
+                          }
+                        }
+                      },
+                      "enabled": true,
+                      "extraSettings": {
+                        "dataSource": "Static",
+                        "items": "{{propertyValuations}}",
+                        "linkTargetView": "browse",
+                        "storage": "Full",
+                        "linkTarget": "_blank",
+                        "infiniteScroll": false,
+                        "showPagination": false,
+                        "autoHidePagination": true,
+                        "clientPagination": true,
+                        "sortableColumns": false,
+                        "columns": [
+                          {
+                            "label": "Date",
+                            "id": "propertyValuationEffectiveDate",
+                            "accessor": "propertyValuationEffectiveDate",
+                            "alignment": "left",
+                            "filterable": false,
+                            "sortable": false,
+                            "show": true
+                          },
+                          {
+                            "label": "Type",
+                            "id": "propertyValuationMethodType",
+                            "accessor": "propertyValuationMethodType",
+                            "alignment": "left",
+                            "filterable": false,
+                            "sortable": false,
+                            "show": true
+                          },
+                          {
+                            "label": "Product",
+                            "id": "product",
+                            "accessor": "product",
+                            "alignment": "left",
+                            "filterable": false,
+                            "sortable": false,
+                            "show": true
+                          },
+                          {
+                            "label": "Role",
+                            "id": "role",
+                            "accessor": "role",
+                            "alignment": "left",
+                            "filterable": false,
+                            "sortable": false,
+                            "show": true
+                          },
+                          {
+                            "label": "Person",
+                            "id": "person",
+                            "accessor": "person",
+                            "alignment": "left",
+                            "filterable": false,
+                            "sortable": false,
+                            "show": true
+                          },
+                          {
+                            "label": "As Is",
+                            "id": "propertyValuationAsIsSuggestedListPrice",
+                            "accessor": "propertyValuationAsIsSuggestedListPrice",
+                            "alignment": "left",
+                            "filterable": false,
+                            "sortable": false,
+                            "show": true
+                          },
+                          {
+                            "label": "Repaired",
+                            "id": "propertyValuationRepairAmount",
+                            "accessor": "propertyValuationRepairAmount",
+                            "alignment": "left",
+                            "filterable": false,
+                            "sortable": false,
+                            "show": true
+                          }
+                        ],
+                        "filterable": false,
+                        "sortable": false,
+                        "multiSort": false,
+                        "pageSizeOptions": [
+                          5,
+                          10,
+                          20,
+                          25,
+                          50,
+                          100
+                        ],
+                        "showTotalRecords": false,
+                        "response": {},
+                        "dataPollingOnInit": false,
+                        "target": "_blank",
+                        "noDataMessage": "No Data found",
+                        "nodataPosition": "middle-center"
+                      },
+                      "labelAlign": "top",
+                      "value": "{{valautionData}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "isRequired": false,
+                      "styleClass": "property-details-valuation-data",
+                      "id": "datatable1",
+                      "type": "dataTable"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "type": "panel"
+        },
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": {
+                "x": 0,
+                "y": 0
+              },
+              "lowerRight": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            "stencilSuperIds": [],
+            "stencilId": null,
+            "customStencilId": null
+          },
+          "size": 6,
+          "type": ""
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "key": "propertyDetailsForm",
+    "name": "Property Details",
+    "description": "",
+    "version": "39",
+    "type": "2",
+    "flowableDesignVersion": 3090
+  }
+}

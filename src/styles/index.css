@@ -1,0 +1,200 @@
+@import-normalize;
+
+@import 'tailwind-base.css';
+@import '/node_modules/react-grid-layout/css/styles.css';
+@import '/node_modules/react-resizable/css/styles.css';
+
+
+body.no-animate *,
+body.no-animate *::before,
+body.no-animate *::after {
+  transition: none !important;
+  animation: none !important;
+}
+
+html {
+  /* font-size: 62.5%; */
+  /* font-size: 100%; */
+  /* font-size: 16px; */
+  /* font-family: 'Roboto', 'Muli', 'Helvetica', 'Arial', 'sans-serif' !important; */
+  /* font-family: "Arial", "sans-serif" !important; */
+}
+
+body {
+  /* font-size: 14px; */
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+
+/* @media (min-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1920px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 2560px) {
+  body {
+    font-size: 16px;
+  }
+} */
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  background: #e6e6f4;
+}
+
+/* h1,
+.h1 {
+  font-size: 24px;
+}
+
+h2,
+.h2 {
+  font-size: 20px;
+}
+
+h3,
+.h3 {
+  font-size: 16px;
+}
+
+h4,
+.h4 {
+  font-size: 15px;
+}
+
+h5,
+.h5 {
+  font-size: 13px;
+}
+
+h6,
+.h6 {
+  font-size: 12px;
+} */
+
+.ps > .ps__rail-y,
+.ps > .ps__rail-x {
+  z-index: 99;
+  width: 4px;
+}
+
+a[role='button'] {
+  text-decoration: none;
+}
+
+[role='tooltip'] {
+  z-index: 9999;
+}
+
+/* .text-12{
+  font-size: 1.2rem !important;
+} */
+
+.pagecontainer{
+  padding: 1.2rem;
+  position: relative;
+  top: -15px;
+}
+
+.Mui-focused{
+  border: 0;
+}
+
+.MuiTab-root{
+  text-transform: capitalize;
+  font-size: 1.2rem;
+}
+
+.iconsWidget{
+  font-size: 1.4rem;
+}
+
+/* Medium Devices, Desktops Only */
+@media only screen and (min-width: 992px) {
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  ::-webkit-scrollbar:hover {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(0, 0, 0, 0.06);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border: 2px solid transparent;
+    box-shadow: inset 0 0 0 20px rgba(0, 0, 0, 0.24);
+    border-radius: 20px;
+  }
+
+  ::-webkit-scrollbar-thumb:active {
+    box-shadow: inset 0 0 0 20px rgba(0, 0, 0, 0.37);
+    border-radius: 20px;
+  }
+}
+
+form label {
+  z-index: 99;
+}
+
+@keyframes autofill {
+  0%,
+  100% {
+    background: transparent;
+  }
+}
+input:-webkit-autofill {
+  animation-delay: 1s;
+  animation-name: autofill !important;
+  animation-fill-mode: both;
+  -webkit-box-shadow: 0 0 0 100px transparent inset !important;
+}
+
+.page-title {
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 23px;
+}
+
+.property-layout-column {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+  background: #ffffff;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 5%), 0px 1px 1px 0px rgb(0 0 0 / 7%), 0px 1px 3px 0px rgb(0 0 0 / 7%);
+}
+
+.ps__thumb-y {
+  /* width: 4px !important;
+  right: 1px !important; */
+}
+
+@import 'custom.css';
+
+@import 'print.css';
+
+@import 'tables.css';
+
+@import 'prism.css';
+
+@import 'tailwind.css';
+
+@import 'flwforms-override.css';

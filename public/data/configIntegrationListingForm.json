@@ -1,0 +1,182 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 0, "y": 0 },
+              "lowerRight": { "x": 0, "y": 0 }
+            },
+            "stencilSuperIds": [],
+            "stencilId": null,
+            "customStencilId": null
+          },
+          "type": "",
+          "size": 9
+        },
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 753, "y": 25 },
+              "lowerRight": { "x": 984, "y": 51 }
+            },
+            "stencilSuperIds": ["base-text", "Component"],
+            "stencilId": "cloud-text",
+            "customStencilId": null
+          },
+          "type": "text",
+          "placeholder": "search",
+          "i18n": { "en_us": { "placeholder": "search" } },
+          "labelAlign": "top",
+          "value": "{{searchValue}}",
+          "size": 3,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "text13",
+          "extraSettings": {}
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 74 },
+              "lowerRight": { "x": 984, "y": 166 }
+            },
+            "stencilSuperIds": ["base-datatable", "Component"],
+            "stencilId": "cloud-datatable",
+            "customStencilId": null
+          },
+          "type": "dataTable",
+          "label": "API Services",
+          "i18n": {
+            "en_us": {
+              "label": "API Services",
+              "extraSettings": {
+                "columns": [
+                  {
+                    "label": "Name",
+                    "id": "serviceName",
+                    "accessor": "serviceName",
+                    "alignment": "left",
+                    "filterable": false,
+                    "sortable": true,
+                    "show": true
+                  },
+                  {
+                    "label": "Key",
+                    "id": "serviceKey",
+                    "accessor": "serviceKey",
+                    "alignment": "left",
+                    "filterable": false,
+                    "sortable": true,
+                    "show": true
+                  },
+                  {
+                    "label": "Type",
+                    "id": "type",
+                    "accessor": "type",
+                    "alignment": "left",
+                    "filterable": false,
+                    "sortable": true,
+                    "show": true
+                  },
+                  {
+                    "label": "Base URL",
+                    "id": "baseUrl",
+                    "accessor": "baseUrl",
+                    "alignment": "left",
+                    "filterable": false,
+                    "sortable": true,
+                    "show": true
+                  }
+                ]
+              }
+            }
+          },
+          "enabled": true,
+          "extraSettings": {
+            "dataSource": "Rest",
+            "queryUrl": "/eq-api/integration/services?page={{$page}}&size={{$pageSize}}&sort={{$sortColumn}},{{$sortDirection}}&search={{searchValue}}",
+            "path": "_embedded.services",
+            "linkTargetView": "browse",
+            "storage": "Full",
+            "linkTarget": "_blank",
+            "selectable": "Multiple",
+            "showPagination": true,
+            "autoHidePagination": false,
+            "clientPagination": false,
+            "sortableColumns": false,
+            "columns": [
+              {
+                "label": "Name",
+                "id": "serviceName",
+                "accessor": "serviceName",
+                "alignment": "left",
+                "filterable": false,
+                "sortable": true,
+                "show": true
+              },
+              {
+                "label": "Key",
+                "id": "serviceKey",
+                "accessor": "serviceKey",
+                "alignment": "left",
+                "filterable": false,
+                "sortable": true,
+                "show": true
+              },
+              {
+                "label": "Type",
+                "id": "type",
+                "accessor": "type",
+                "alignment": "left",
+                "filterable": false,
+                "sortable": true,
+                "show": true
+              },
+              {
+                "label": "Base URL",
+                "id": "baseUrl",
+                "accessor": "baseUrl",
+                "alignment": "left",
+                "filterable": false,
+                "sortable": true,
+                "show": true
+              }
+            ],
+            "filterable": true,
+            "sortable": true,
+            "multiSort": false,
+            "pageSize": 20,
+            "pageSizeOptions": [5, 10, 20, 25, 50, 100],
+            "showTotalRecords": true,
+            "response": { "total": "page.totalElements" },
+            "showRefreshButton": false,
+            "refreshTime": "{{refresh}}",
+            "target": "_blank"
+          },
+          "labelAlign": "top",
+          "value": "{{integrationServiceApiList}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "isRequired": false,
+          "id": "integrationsListinDataTable"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "key": "configIntegrationListingForm",
+    "name": "configIntegrationListingForm",
+    "description": "",
+    "version": "102",
+    "type": "2"
+  }
+}

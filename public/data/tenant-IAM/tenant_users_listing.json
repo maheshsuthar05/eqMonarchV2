@@ -1,0 +1,284 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": {
+                "x": 15,
+                "y": 25
+              },
+              "lowerRight": {
+                "x": 984,
+                "y": 93
+              }
+            },
+            "stencilSuperIds": [
+              "base-datatable",
+              "Component"
+            ],
+            "stencilId": "cloud-datatable",
+            "customStencilId": null
+          },
+          "enabled": true,
+          "extraSettings": {
+            "dataSource": "Rest",
+            "queryUrl": "/eq-api/core/ldap/users?page={{$page}}&size={{$pageSize}}&sort={{$sortColumn}},{{$sortDirection}}",
+            "path": "data",
+            "linkTargetView": "browse",
+            "storage": "Full",
+            "identity": "id",
+            "linkTarget": "_blank",
+            "selectable": "Single",
+            "infiniteScroll": false,
+            "showPagination": true,
+            "autoHidePagination": true,
+            "clientPagination": true,
+            "sortableColumns": false,
+            "columns": [
+              {
+                "label": "E Mail",
+                "id": "email",
+                "accessor": "email",
+                "alignment": "left",
+                "filterable": true,
+                "sortable": true,
+                "show": true
+              },
+              {
+                "label": "First Name",
+                "id": "firstName",
+                "accessor": "firstName",
+                "alignment": "left",
+                "filterable": true,
+                "sortable": true,
+                "show": true
+              },
+              {
+                "label": "Last Name",
+                "id": "lastName",
+                "accessor": "lastName",
+                "alignment": "left",
+                "filterable": true,
+                "sortable": true,
+                "show": true
+              },
+              {
+                "label": "Status",
+                "id": "inetUserStatus",
+                "accessor": "inetUserStatus",
+                "alignment": "left",
+                "filterable": true,
+                "sortable": true,
+                "show": true
+              },
+              {
+                "label": "Action",
+                "id": "dropdown",
+                "accessor": "dropdown",
+                "alignment": "left",
+                "component": {
+                  "type": "buttonGroup",
+                  "extraSettings": {
+                    "asDropdown": true
+                  },
+                  "alignment": "center",
+                  "buttonDefinitions": [
+                    {
+                      "type": "scriptButton",
+                      "extraSettings": {
+                        "text": "Send Password Link",
+                        "tooltip": "Send Password Link",
+                        "script": {
+                          "key": "sendPasswordLink",
+                          "DATA": "{{$item}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "scriptButton",
+                      "extraSettings": {
+                        "text": "Edit",
+                        "tooltip": "Edit",
+                        "script": {
+                          "key": "edit",
+                          "DATA": "{{$item}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "scriptButton",
+                      "extraSettings": {
+                        "text": "{{$item.inetUserStatus === 'Inactive' ? 'Activate' : 'Inactivate'}}",
+                        "tooltip": "{{$item.inetUserStatus  === 'Inactive' ? 'Activate' : 'Inactivate'}}",
+                        "script": {
+                          "key": "activeDeactive",
+                          "DATA": "{{$item}}"
+                        }
+                      }
+                    }
+                  ]
+                },
+                "filterable": false,
+                "maxWidth": 75,
+                "sortable": false,
+                "show": true
+              },
+              {
+                "label": "id",
+                "id": "id",
+                "accessor": "id",
+                "alignment": "left",
+                "filterable": false,
+                "sortable": false,
+                "show": false
+              }
+            ],
+            "filterable": true,
+            "sortable": true,
+            "multiSort": false,
+            "pageSize": 20,
+            "pageSizeOptions": [
+              20,
+              25,
+              50,
+              100
+            ],
+            "showTotalRecords": true,
+            "response": {},
+            "showRefreshButton": false,
+            "refreshTime": "{{$payload.refreshForm}}",
+            "dataPollingOnInit": false,
+            "target": "_blank",
+            "noDataMessage": "NO_USERS",
+            "nodataPosition": "middle-center"
+          },
+          "labelAlign": "top",
+          "value": "{{userListData}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "isRequired": false,
+          "styleClass": "tenant-iam-users",
+          "id": "datatable1",
+          "i18n": {
+            "en_us": {
+              "extraSettings": {
+                "columns": [
+                  {
+                    "label": "E Mail",
+                    "id": "email",
+                    "accessor": "email",
+                    "alignment": "left",
+                    "filterable": true,
+                    "sortable": true,
+                    "show": true
+                  },
+                  {
+                    "label": "First Name",
+                    "id": "firstName",
+                    "accessor": "firstName",
+                    "alignment": "left",
+                    "filterable": true,
+                    "sortable": true,
+                    "show": true
+                  },
+                  {
+                    "label": "Last Name",
+                    "id": "lastName",
+                    "accessor": "lastName",
+                    "alignment": "left",
+                    "filterable": true,
+                    "sortable": true,
+                    "show": true
+                  },
+                  {
+                    "label": "Status",
+                    "id": "inetUserStatus",
+                    "accessor": "inetUserStatus",
+                    "alignment": "left",
+                    "filterable": true,
+                    "sortable": true,
+                    "show": true
+                  },
+                  {
+                    "label": "Action",
+                    "id": "dropdown",
+                    "accessor": "dropdown",
+                    "alignment": "left",
+                    "component": {
+                      "type": "buttonGroup",
+                      "extraSettings": {
+                        "asDropdown": true
+                      },
+                      "alignment": "center",
+                      "buttonDefinitions": [
+                        {
+                          "type": "scriptButton",
+                          "extraSettings": {
+                            "text": "Send Password Link",
+                            "tooltip": "Send Password Link",
+                            "script": {
+                              "key": "sendPasswordLink",
+                              "DATA": "{{$item}}"
+                            }
+                          }
+                        },
+                        {
+                          "type": "scriptButton",
+                          "extraSettings": {
+                            "text": "Edit",
+                            "tooltip": "Edit",
+                            "script": {
+                              "key": "edit",
+                              "DATA": "{{$item}}"
+                            }
+                          }
+                        },
+                        {
+                          "type": "scriptButton",
+                          "extraSettings": {
+                            "text": "{{$item.inetUserStatus === 'Inactive' ? 'Activate' : 'Inactivate'}}",
+                            "tooltip": "{{$item.inetUserStatus  === 'Inactive' ? 'Activate' : 'Inactivate'}}",
+                            "script": {
+                              "key": "activeDeactive",
+                              "DATA": "{{$item}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "filterable": false,
+                    "maxWidth": 75,
+                    "sortable": false,
+                    "show": true
+                  },
+                  {
+                    "label": "id",
+                    "id": "id",
+                    "accessor": "id",
+                    "alignment": "left",
+                    "filterable": false,
+                    "sortable": false,
+                    "show": false
+                  }
+                ],
+                "noDataMessage": "NO_USERS"
+              }
+            }
+          },
+          "type": "dataTable"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "key": "userListTenantIAM",
+    "name": "UserListTenantIAM",
+    "description": "",
+    "version": "12",
+    "type": "2",
+    "flowableDesignVersion": 3090
+  }
+}

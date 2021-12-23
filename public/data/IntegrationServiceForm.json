@@ -1,0 +1,155 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 25 },
+              "lowerRight": { "x": 984, "y": 73 }
+            },
+            "stencilSuperIds": ["base-text", "Component"],
+            "stencilId": "cloud-text",
+            "customStencilId": null
+          },
+          "type": "text",
+          "labelAlign": "top",
+          "value": "{{payload.serviceName}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": true,
+          "label": "Name",
+          "i18n": { "en_us": { "label": "Name" } },
+          "id": "text1",
+          "extraSettings": {}
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 98 },
+              "lowerRight": { "x": 984, "y": 146 }
+            },
+            "stencilSuperIds": ["base-text", "Component"],
+            "stencilId": "cloud-text",
+            "customStencilId": null
+          },
+          "type": "text",
+          "labelAlign": "top",
+          "value": "{{payload.serviceKey}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": true,
+          "label": "Key",
+          "i18n": { "en_us": { "label": "Key" } },
+          "id": "text2",
+          "extraSettings": {}
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 171 },
+              "lowerRight": { "x": 984, "y": 219 }
+            },
+            "stencilSuperIds": ["base-text", "Component"],
+            "stencilId": "cloud-text",
+            "customStencilId": null
+          },
+          "type": "text",
+          "labelAlign": "top",
+          "value": "{{payload.type}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": true,
+          "label": "Type",
+          "i18n": { "en_us": { "label": "Type" } },
+          "id": "text3",
+          "extraSettings": {}
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 244 },
+              "lowerRight": { "x": 984, "y": 292 }
+            },
+            "stencilSuperIds": ["base-text", "Component"],
+            "stencilId": "cloud-text",
+            "customStencilId": null
+          },
+          "type": "text",
+          "labelAlign": "top",
+          "value": "{{payload.baseUrl}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "customValidations": [
+            {
+              "expression": "[(http(s)?):\\/\\/(www\\.)?a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)",
+              "errorMsg": "Plese enter valid base URL"
+            }
+          ],
+          "i18n": {
+            "en_us": {
+              "customValidations": [
+                {
+                  "expression": "[(http(s)?):\\/\\/(www\\.)?a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)",
+                  "errorMsg": "Plese enter valid base URL"
+                }
+              ],
+              "label": "Base Url"
+            }
+          },
+          "label": "Base Url",
+          "id": "text4",
+          "extraSettings": {}
+        }
+      ]
+    }
+  ],
+  "outcomes": [
+    {
+      "label": "Close",
+      "value": "Close.Click",
+      "visible": "true",
+      "enabled": "true",
+      "ignorePayload": false,
+      "styleClass": "altisource__button_secondary",
+      "navigationUrl": ""
+    },
+    {
+      "label": "Save",
+      "value": "Save.Click",
+      "visible": "true",
+      "enabled": "{{$formValid}}",
+      "ignorePayload": false,
+      "styleClass": "altisource__button_primary",
+      "navigationUrl": ""
+    }
+  ],
+  "metadata": {
+    "key": "integrationServiceForm",
+    "name": "IntegrationServiceForm",
+    "description": "",
+    "version": "3",
+    "type": "2"
+  }
+}

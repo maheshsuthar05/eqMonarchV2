@@ -1,0 +1,165 @@
+{
+    "rows": [
+        {
+            "cols": [
+                {
+                    "designInfo": {
+                        "bounds": {
+                            "upperLeft": {
+                                "x": 15,
+                                "y": 25
+                            },
+                            "lowerRight": {
+                                "x": 984,
+                                "y": 93
+                            }
+                        },
+                        "stencilSuperIds": [
+                            "base-datatable", "Component"
+                        ],
+                        "stencilId": "cloud-datatable",
+                        "customStencilId": null
+                    },
+                    "enabled": true,
+                    "extraSettings": {
+                        "dataSource": "Rest",
+                        "queryUrl": "/eq-api/venlisting/vendor/vendorList?searchText= {{ searchText }}&size=10000",
+                        "path": "hits",
+                        "linkTargetView": "browse",
+                        "storage": "Full",
+                        "linkTarget": "_blank",
+                        "infiniteScroll": false,
+                        "showPagination": true,
+                        "autoHidePagination": true,
+                        "clientPagination": true,
+                        "sortableColumns": false,
+                        "columns": [
+                            {
+                                "label": "Service Group",
+                                "id": "PRODUCT_CATEGORY_NAME",
+                                "accessor": "PRODUCT_CATEGORY_NAME",
+                                "alignment": "left",
+                                "filterable": "true",
+                                "sortable": "true",
+                                "show": true
+                            }, {
+                                "label": "Product",
+                                "id": "PRODUCT_NAME",
+                                "accessor": "PRODUCT_NAME",
+                                "alignment": "left",
+                                "filterable": "true",
+                                "sortable": "true",
+                                "show": true
+                            }, {
+                                "id": "deleteButtons",
+                                "accessor": "deleteButtons",
+                                "alignment": "left",
+                                "component": {
+                                    "type": "scriptButton",
+                                    "size": 2,
+                                    "value":"{{ $item }}",
+                                    "extraSettings": {
+                                        "text": "Delete",
+                                        "tooltip": "Delete",
+                                        "script": {
+                                            "key": "Delete",
+                                            "id":"{{ $item.PRODUCT_SUBSCRIPTION_ID }}",
+                                            "payload":"{{ $item }}"
+                                        }
+                                    }
+                                },
+                                "filterable": false,
+                                "maxWidth": 100,
+                                "minWidth": 100,
+                                "sortable": false,
+                                "show": true
+                            }
+                        ],
+                        "filterable": true,
+                        "sortable": true,
+                        "multiSort": false,
+                        "pageSize": 20,
+                        "pageSizeOptions": [
+                            5,
+                            10,
+                            20,
+                            25,
+                            50,
+                            100
+                        ],
+                        "showTotalRecords": false,
+                        "response": {},
+                        "dataPollingOnInit": false,
+                        "target": "_blank",
+                        "noDataMessage": "No data found",
+                        "nodataPosition": "middle-center"
+                    },
+                    "labelAlign": "top",
+                    "size": 12,
+                    "ignore": false,
+                    "visible": true,
+                    "isRequired": false,
+                    "id": "datatable1",
+                    "i18n": {
+                        "en_us": {
+                            "extraSettings": {
+                                "columns": [
+                                    {
+                                        "label": "Service Group",
+                                        "id": "PRODUCT_CATEGORY_NAME",
+                                        "accessor": "PRODUCT_CATEGORY_NAME",
+                                        "alignment": "left",
+                                        "filterable": "true",
+                                        "sortable": "true",
+                                        "show": true
+                                    }, {
+                                        "label": "Product",
+                                        "id": "PRODUCT_NAME",
+                                        "accessor": "PRODUCT_NAME",
+                                        "alignment": "left",
+                                        "filterable": "true",
+                                        "sortable": "true",
+                                        "show": true
+                                    }, {
+                                        "id": "deleteButtons",
+                                        "accessor": "deleteButtons",
+                                        "alignment": "left",
+                                        "component": {
+                                            "type": "scriptButton",
+                                            "size": 2,
+                                            "value":"{{ $item }}",
+                                            "extraSettings": {
+                                                "text": "Delete",
+                                                "tooltip": "Delete",
+                                                "script": {
+                                                    "key": "Delete",
+                                                    "id":"{{ $item.PRODUCT_SUBSCRIPTION_ID }}",
+                                                    "payload":"{{ $item }}"
+                                                }
+                                            }
+                                        },
+                                        "filterable": false,
+                                        "maxWidth": 100,
+                                        "minWidth": 100,
+                                        "sortable": false,
+                                        "show": true
+                                    }
+                                ],
+                                "noDataMessage": "No data found"
+                            }
+                        }
+                    },
+                    "type": "dataTable"
+                }
+            ]
+        }
+    ],
+    "metadata": {
+        "key": "vendorServicesList",
+        "name": "VendorServicesList",
+        "description": "",
+        "version": "9",
+        "type": "2",
+        "flowableDesignVersion": 3090
+    }
+}

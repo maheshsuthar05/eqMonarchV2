@@ -1,0 +1,12 @@
+{
+  "templates": [
+    {
+      "templateKey": "INITIALBPOONLINE1",
+      "templateId": "BPO_Online_template"
+    },
+    {
+      "templateKey": "OFFERWORKSHEET",
+      "templateId": "Offer_template"
+    }
+  ]
+}

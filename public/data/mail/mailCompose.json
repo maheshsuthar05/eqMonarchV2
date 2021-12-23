@@ -1,0 +1,879 @@
+{
+    "rows": [
+        {
+            "cols": [
+                {
+                    "designInfo": {
+                        "bounds": {
+                            "upperLeft": {
+                                "x": 15,
+                                "y": 25
+                            },
+                            "lowerRight": {
+                                "x": 985,
+                                "y": 708
+                            }
+                        },
+                        "stencilSuperIds": [
+                            "SubSlotPanel"
+                        ],
+                        "stencilId": "cloud-sub-panel",
+                        "customStencilId": null
+                    },
+                    "labelAlign": "top",
+                    "size": 12,
+                    "ignore": false,
+                    "visible": true,
+                    "enabled": true,
+                    "isRequired": false,
+                    "styleClass": "mail-compose",
+                    "id": "sub-panel1",
+                    "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonText": "SEND",
+                        "saveButtonVisible": false,
+                        "saveButtonEnabled": false,
+                        "cancelButtonText": "Cancel",
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                            "rows": [
+                                {
+                                    "cols": [
+                                        {
+                                            "designInfo": {
+                                                "bounds": {
+                                                    "upperLeft": {
+                                                        "x": 15,
+                                                        "y": 25
+                                                    },
+                                                    "lowerRight": {
+                                                        "x": 945,
+                                                        "y": 196
+                                                    }
+                                                },
+                                                "stencilSuperIds": [
+                                                    "SubSlotPanel"
+                                                ],
+                                                "stencilId": "cloud-sub-panel",
+                                                "customStencilId": null
+                                            },
+                                            "labelAlign": "top",
+                                            "size": 12,
+                                            "ignore": false,
+                                            "visible": true,
+                                            "enabled": true,
+                                            "isRequired": false,
+                                            "styleClass": "mail-message-section",
+                                            "id": "sub-panel2",
+                                            "extraSettings": {
+                                                "collapsible": false,
+                                                "collapsed": false,
+                                                "showBorder": false,
+                                                "saveButtonVisible": true,
+                                                "saveButtonEnabled": true,
+                                                "cancelButtonVisible": true,
+                                                "cancelButtonEnabled": true,
+                                                "layoutDefinition": {
+                                                    "rows": [
+                                                        {
+                                                            "cols": [
+                                                                {
+                                                                    "designInfo": {
+                                                                        "bounds": {
+                                                                            "upperLeft": {
+                                                                                "x": 15,
+                                                                                "y": 25
+                                                                            },
+                                                                            "lowerRight": {
+                                                                                "x": 305,
+                                                                                "y": 73
+                                                                            }
+                                                                        },
+                                                                        "stencilSuperIds": [
+                                                                            "base-single-select",
+                                                                            "Component"
+                                                                        ],
+                                                                        "stencilId": "cloud-single-select",
+                                                                        "customStencilId": null,
+                                                                        "conditionBuilderInfo": {
+                                                                            "visible": {
+                                                                                "children": [
+                                                                                    {
+                                                                                        "sourceValue": {
+                                                                                            "variableType": "customVariable",
+                                                                                            "name": "enableParentId"
+                                                                                        },
+                                                                                        "operator": "==",
+                                                                                        "targetValue": {
+                                                                                            "value": "false",
+                                                                                            "type": "string",
+                                                                                            "variableType": "value"
+                                                                                        }
+                                                                                    }
+                                                                                ],
+                                                                                "match": "all"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "extraSettings": {
+                                                                        "tagsEnabled": false,
+                                                                        "preselectAll": false,
+                                                                        "clientSideFiltering": false,
+                                                                        "selectionErrorMessage": "Please select Tenant Id",
+                                                                        "enableAutocomplete": false,
+                                                                        "autocompleteMinLength": 1,
+                                                                        "dataSource": "Static",
+                                                                        "items": "{{tenantList}}",
+                                                                        "linkTargetView": "browse",
+                                                                        "formatItem": "{{$item.tenantID}}",
+                                                                        "storage": "Full",
+                                                                        "linkTarget": "_blank",
+                                                                        "multi": false
+                                                                    },
+                                                                    "i18n": {
+                                                                        "en_us": {
+                                                                            "extraSettings": {
+                                                                                "selectionErrorMessage": "Please select Tenant Id",
+                                                                                "items": "{{tenantList}}"
+                                                                            },
+                                                                            "placeholder": "Tenant Id",
+                                                                            "tooltip": "Tenant Id",
+                                                                            "label": "Tenant Id"
+                                                                        }
+                                                                    },
+                                                                    "placeholder": "Tenant Id",
+                                                                    "enabled": true,
+                                                                    "labelAlign": "top",
+                                                                    "tooltip": "Tenant Id",
+                                                                    "value": "{{tenantId}}",
+                                                                    "defaultValue": "{{tenantId.encrypted}}",
+                                                                    "size": 4,
+                                                                    "ignore": false,
+                                                                    "visible": "{{enableParentId=='false'}}",
+                                                                    "isRequired": "{{enableParentId=='false'}}",
+                                                                    "label": "Tenant Id",
+                                                                    "id": "single-select2",
+                                                                    "type": "select"
+                                                                },
+                                                                {
+                                                                    "designInfo": {
+                                                                        "bounds": {
+                                                                            "upperLeft": {
+                                                                                "x": 320,
+                                                                                "y": 25
+                                                                            },
+                                                                            "lowerRight": {
+                                                                                "x": 610,
+                                                                                "y": 73
+                                                                            }
+                                                                        },
+                                                                        "stencilSuperIds": [
+                                                                            "base-single-select",
+                                                                            "Component"
+                                                                        ],
+                                                                        "stencilId": "cloud-single-select",
+                                                                        "customStencilId": null,
+                                                                        "conditionBuilderInfo": {
+                                                                            "visible": {
+                                                                                "children": [
+                                                                                    {
+                                                                                        "sourceValue": {
+                                                                                            "variableType": "customVariable",
+                                                                                            "name": "enableParentId "
+                                                                                        },
+                                                                                        "operator": "equals",
+                                                                                        "targetValue": {
+                                                                                            "value": "false",
+                                                                                            "type": "string",
+                                                                                            "variableType": "value"
+                                                                                        }
+                                                                                    }
+                                                                                ],
+                                                                                "match": "all"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "extraSettings": {
+                                                                        "tagsEnabled": false,
+                                                                        "preselectAll": false,
+                                                                        "clientSideFiltering": true,
+                                                                        "selectionErrorMessage": "Please select loan number",
+                                                                        "enableAutocomplete": true,
+                                                                        "autocompleteMinLength": 3,
+                                                                        "dataSource": "Rest",
+                                                                        "queryUrl": "/eq-api/loan/loans/search/getAllLoanNumberByLikeSearch?loanNumber={{$searchText}}&size=20",
+                                                                        "lookupUrl": "{{$id}}",
+                                                                        "path": "_embedded.loans",
+                                                                        "linkTargetView": "browse",
+                                                                        "formatItem": "{{$item.loanNumber}}",
+                                                                        "storage": "Id",
+                                                                        "identity": "propertyId",
+                                                                        "linkTarget": "_blank",
+                                                                        "multi": false
+                                                                    },
+                                                                    "i18n": {
+                                                                        "en_us": {
+                                                                            "extraSettings": {
+                                                                                "selectionErrorMessage": "Please select loan number"
+                                                                            },
+                                                                            "placeholder": "Loan Number (enter min 3 chars)",
+                                                                            "label": "Loan Number"
+                                                                        }
+                                                                    },
+                                                                    "placeholder": "Loan Number (enter min 3 chars)",
+                                                                    "enabled": {
+                                                                        "children": [],
+                                                                        "match": "all"
+                                                                    },
+                                                                    "labelAlign": "top",
+                                                                    "value": "{{propertyId}}",
+                                                                    "defaultValue": "{{defaultPropertyId}}",
+                                                                    "size": 4,
+                                                                    "ignore": false,
+                                                                    "visible": "{{enableParentId  == 'false'}}",
+                                                                    "isRequired": true,
+                                                                    "label": "Loan Number",
+                                                                    "id": "single-select3",
+                                                                    "type": "select"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cols": [
+                                                                {
+                                                                    "designInfo": {
+                                                                        "bounds": {
+                                                                            "upperLeft": {
+                                                                                "x": 15,
+                                                                                "y": 98
+                                                                            },
+                                                                            "lowerRight": {
+                                                                                "x": 305,
+                                                                                "y": 146
+                                                                            }
+                                                                        },
+                                                                        "stencilSuperIds": [
+                                                                            "base-multi-select",
+                                                                            "Component"
+                                                                        ],
+                                                                        "stencilId": "cloud-multi-select",
+                                                                        "customStencilId": null,
+                                                                        "attributes": {
+                                                                            "autocomplete-min-length": "1"
+                                                                        }
+                                                                    },
+                                                                    "extraSettings": {
+                                                                        "tagsEnabled": false,
+                                                                        "preselectAll": false,
+                                                                        "clientSideFiltering": true,
+                                                                        "minItemsErrorMessage": "You need to add a minimum of 1 recipient Id",
+                                                                        "enableAutocomplete": false,
+                                                                        "autocompleteMinLength": 0,
+                                                                        "dataSource": "Rest",
+                                                                        "queryUrl": "/eq-api/xref/propertyPartyRoleLoanXrefs/search/findAllByPropertyId?propertyId={{propertyId}}",
+                                                                        "lookupUrl": "/eq-api/xref/propertyPartyRoleLoanXrefs/search/findAllByPropertyId?propertyId={{propertyId}}",
+                                                                        "path": "_embedded.propertyPartyRoleLoanXrefs",
+                                                                        "linkTargetView": "browse",
+                                                                        "formatItem": "{{$item.userId}} \n({{$item.partyRoleType}})",
+                                                                        "storage": "Id",
+                                                                        "identity": "userId",
+                                                                        "linkTarget": "_blank",
+                                                                        "multi": true
+                                                                    },
+                                                                    "i18n": {
+                                                                        "en_us": {
+                                                                            "extraSettings": {
+                                                                                "minItemsErrorMessage": "You need to add a minimum of 1 recipient Id"
+                                                                            },
+                                                                            "placeholder": "Select...",
+                                                                            "tooltip": "To",
+                                                                            "label": "To"
+                                                                        }
+                                                                    },
+                                                                    "placeholder": "Select...",
+                                                                    "enabled": true,
+                                                                    "labelAlign": "top",
+                                                                    "tooltip": "To",
+                                                                    "value": "{{to}}",
+                                                                    "size": 4,
+                                                                    "ignore": false,
+                                                                    "visible": true,
+                                                                    "isRequired": true,
+                                                                    "label": "To",
+                                                                    "id": "multi-select4",
+                                                                    "type": "select"
+                                                                },
+                                                                {
+                                                                    "designInfo": {
+                                                                        "bounds": {
+                                                                            "upperLeft": {
+                                                                                "x": 320,
+                                                                                "y": 98
+                                                                            },
+                                                                            "lowerRight": {
+                                                                                "x": 610,
+                                                                                "y": 146
+                                                                            }
+                                                                        },
+                                                                        "stencilSuperIds": [
+                                                                            "base-text",
+                                                                            "Component"
+                                                                        ],
+                                                                        "stencilId": "cloud-text",
+                                                                        "customStencilId": null
+                                                                    },
+                                                                    "placeholder": "Email ID",
+                                                                    "i18n": {
+                                                                        "en_us": {
+                                                                            "placeholder": "Email ID",
+                                                                            "tooltip": "cc",
+                                                                            "label": "cc"
+                                                                        }
+                                                                    },
+                                                                    "labelAlign": "top",
+                                                                    "tooltip": "cc",
+                                                                    "value": "{{cc}}",
+                                                                    "size": 4,
+                                                                    "ignore": false,
+                                                                    "visible": true,
+                                                                    "enabled": true,
+                                                                    "isRequired": false,
+                                                                    "styleClass": "mt-8 mb-16",
+                                                                    "label": "cc",
+                                                                    "id": "text6",
+                                                                    "validationRegExp": "^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5})$",
+                                                                    "type": "text",
+                                                                    "extraSettings": {}
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "type": "panel"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "cols": [
+                                        {
+                                            "designInfo": {
+                                                "bounds": {
+                                                    "upperLeft": {
+                                                        "x": 15,
+                                                        "y": 221
+                                                    },
+                                                    "lowerRight": {
+                                                        "x": 159,
+                                                        "y": 269
+                                                    }
+                                                },
+                                                "stencilSuperIds": [
+                                                    "base-multi-select",
+                                                    "Component"
+                                                ],
+                                                "stencilId": "cloud-multi-select",
+                                                "customStencilId": null
+                                            },
+                                            "extraSettings": {
+                                                "tagsEnabled": false,
+                                                "preselectAll": false,
+                                                "clientSideFiltering": true,
+                                                "minItemsErrorMessage": "You need to add a minimum of 1 recipient Id",
+                                                "enableAutocomplete": false,
+                                                "autocompleteMinLength": 1,
+                                                "dataSource": "Rest",
+                                                "queryUrl": "/eq-api/core/ldap/users?tc={{tenantId.encrypted}}",
+                                                "lookupUrl": "{{$id}}",
+                                                "path": "data",
+                                                "linkTargetView": "browse",
+                                                "formatItem": "{{$item.email}}",
+                                                "storage": "Id",
+                                                "identity": "id",
+                                                "linkTarget": "_blank",
+                                                "multi": true
+                                            },
+                                            "i18n": {
+                                                "en_us": {
+                                                    "extraSettings": {
+                                                        "minItemsErrorMessage": "You need to add a minimum of 1 recipient Id"
+                                                    },
+                                                    "placeholder": "Select...",
+                                                    "tooltip": "To",
+                                                    "label": "To"
+                                                }
+                                            },
+                                            "placeholder": "Select...",
+                                            "enabled": false,
+                                            "labelAlign": "top",
+                                            "tooltip": "To",
+                                            "value": "{{recipientId}}",
+                                            "size": 2,
+                                            "ignore": false,
+                                            "visible": false,
+                                            "isRequired": false,
+                                            "label": "To",
+                                            "id": "multi-select3",
+                                            "type": "select"
+                                        },
+                                        {
+                                            "designInfo": {
+                                                "bounds": {
+                                                    "upperLeft": {
+                                                        "x": 174,
+                                                        "y": 221
+                                                    },
+                                                    "lowerRight": {
+                                                        "x": 398,
+                                                        "y": 269
+                                                    }
+                                                },
+                                                "stencilSuperIds": [
+                                                    "base-multi-select",
+                                                    "Component"
+                                                ],
+                                                "stencilId": "cloud-multi-select",
+                                                "customStencilId": null
+                                            },
+                                            "extraSettings": {
+                                                "tagsEnabled": false,
+                                                "preselectAll": false,
+                                                "clientSideFiltering": true,
+                                                "minItemsErrorMessage": "You need to add a minimum of 1 recipient Id",
+                                                "enableAutocomplete": false,
+                                                "autocompleteMinLength": 1,
+                                                "dataSource": "Rest",
+                                                "queryUrl": "/eq-api/core/ldap/users?tc={{tenantId.encrypted}}",
+                                                "lookupUrl": "{{$id1}}",
+                                                "path": "data",
+                                                "linkTargetView": "browse",
+                                                "formatItem": "{{$item.email}}",
+                                                "storage": "Id",
+                                                "identity": "id1",
+                                                "linkTarget": "_blank",
+                                                "multi": true
+                                            },
+                                            "i18n": {
+                                                "en_us": {
+                                                    "extraSettings": {
+                                                        "minItemsErrorMessage": "You need to add a minimum of 1 recipient Id"
+                                                    },
+                                                    "placeholder": "Select...",
+                                                    "tooltip": "cc",
+                                                    "label": "cc"
+                                                }
+                                            },
+                                            "placeholder": "Select...",
+                                            "enabled": false,
+                                            "labelAlign": "top",
+                                            "tooltip": "cc",
+                                            "value": "{{recipientIdcc}}",
+                                            "size": 3,
+                                            "ignore": false,
+                                            "visible": false,
+                                            "isRequired": false,
+                                            "label": "cc",
+                                            "id": "recipientIdcc",
+                                            "type": "select"
+                                        },
+                                        {
+                                            "designInfo": {
+                                                "bounds": {
+                                                    "upperLeft": {
+                                                        "x": 413,
+                                                        "y": 221
+                                                    },
+                                                    "lowerRight": {
+                                                        "x": 637,
+                                                        "y": 269
+                                                    }
+                                                },
+                                                "stencilSuperIds": [
+                                                    "base-text",
+                                                    "Component"
+                                                ],
+                                                "stencilId": "cloud-text",
+                                                "customStencilId": null
+                                            },
+                                            "labelAlign": "top",
+                                            "value": "{{investorId}}",
+                                            "defaultValue": "123Investor",
+                                            "size": 3,
+                                            "ignore": false,
+                                            "visible": false,
+                                            "enabled": false,
+                                            "isRequired": false,
+                                            "label": "Investor Id",
+                                            "i18n": {
+                                                "en_us": {
+                                                    "label": "Investor Id"
+                                                }
+                                            },
+                                            "id": "text15",
+                                            "type": "text",
+                                            "extraSettings": {}
+                                        },
+                                        {
+                                            "designInfo": {
+                                                "bounds": {
+                                                    "upperLeft": {
+                                                        "x": 652,
+                                                        "y": 221
+                                                    },
+                                                    "lowerRight": {
+                                                        "x": 796,
+                                                        "y": 269
+                                                    }
+                                                },
+                                                "stencilSuperIds": [
+                                                    "base-text",
+                                                    "Component"
+                                                ],
+                                                "stencilId": "cloud-text",
+                                                "customStencilId": null
+                                            },
+                                            "labelAlign": "top",
+                                            "value": "{{fileCategoryType}}",
+                                            "defaultValue": "Message",
+                                            "size": 2,
+                                            "ignore": false,
+                                            "visible": false,
+                                            "enabled": false,
+                                            "isRequired": false,
+                                            "label": "Category",
+                                            "i18n": {
+                                                "en_us": {
+                                                    "label": "Category"
+                                                }
+                                            },
+                                            "id": "text14",
+                                            "type": "text",
+                                            "extraSettings": {}
+                                        },
+                                        {
+                                            "designInfo": {
+                                                "bounds": {
+                                                    "upperLeft": {
+                                                        "x": 811,
+                                                        "y": 221
+                                                    },
+                                                    "lowerRight": {
+                                                        "x": 955,
+                                                        "y": 269
+                                                    }
+                                                },
+                                                "stencilSuperIds": [
+                                                    "base-text",
+                                                    "Component"
+                                                ],
+                                                "stencilId": "cloud-text",
+                                                "customStencilId": null
+                                            },
+                                            "labelAlign": "top",
+                                            "value": "{{tags}}",
+                                            "defaultValue": "{{tenantId.tenantId}}, {{parentId}}",
+                                            "size": 2,
+                                            "ignore": false,
+                                            "visible": false,
+                                            "enabled": false,
+                                            "isRequired": false,
+                                            "label": "tags",
+                                            "i18n": {
+                                                "en_us": {
+                                                    "label": "tags"
+                                                }
+                                            },
+                                            "id": "text13",
+                                            "type": "text",
+                                            "extraSettings": {}
+                                        }
+                                    ]
+                                },
+                                {
+                                    "cols": [
+                                        {
+                                            "designInfo": {
+                                                "bounds": {
+                                                    "upperLeft": {
+                                                        "x": 15,
+                                                        "y": 294
+                                                    },
+                                                    "lowerRight": {
+                                                        "x": 955,
+                                                        "y": 342
+                                                    }
+                                                },
+                                                "stencilSuperIds": [
+                                                    "base-text",
+                                                    "Component"
+                                                ],
+                                                "stencilId": "cloud-text",
+                                                "customStencilId": null
+                                            },
+                                            "placeholder": "From",
+                                            "i18n": {
+                                                "en_us": {
+                                                    "placeholder": "From",
+                                                    "tooltip": "From",
+                                                    "label": "From"
+                                                }
+                                            },
+                                            "labelAlign": "top",
+                                            "tooltip": "From",
+                                            "value": "{{from}}",
+                                            "size": 12,
+                                            "ignore": false,
+                                            "visible": false,
+                                            "enabled": false,
+                                            "isRequired": false,
+                                            "styleClass": "mt-8 mb-16",
+                                            "label": "From",
+                                            "id": "from",
+                                            "type": "text",
+                                            "extraSettings": {}
+                                        }
+                                    ]
+                                },
+                                {
+                                    "cols": [
+                                        {
+                                            "designInfo": {
+                                                "bounds": {
+                                                    "upperLeft": {
+                                                        "x": 15,
+                                                        "y": 367
+                                                    },
+                                                    "lowerRight": {
+                                                        "x": 955,
+                                                        "y": 415
+                                                    }
+                                                },
+                                                "stencilSuperIds": [
+                                                    "base-text",
+                                                    "Component"
+                                                ],
+                                                "stencilId": "cloud-text",
+                                                "customStencilId": null
+                                            },
+                                            "extraSettings": {
+                                                "maxLength": 60
+                                            },
+                                            "placeholder": "Subject",
+                                            "i18n": {
+                                                "en_us": {
+                                                    "placeholder": "Subject",
+                                                    "tooltip": "Subject",
+                                                    "label": "Subject",
+                                                    "validationRegExpErrorMessage": "Please enter the valid Subject"
+                                                }
+                                            },
+                                            "labelAlign": "top",
+                                            "tooltip": "Subject",
+                                            "value": "{{mainContentType}}",
+                                            "size": 12,
+                                            "ignore": false,
+                                            "visible": true,
+                                            "enabled": true,
+                                            "isRequired": true,
+                                            "styleClass": "mail-subject",
+                                            "label": "Subject",
+                                            "id": "mainContentType",
+                                            "validationRegExp": "[a-zA-Z0-9@. ]*$",
+                                            "validationRegExpErrorMessage": "Please enter the valid Subject",
+                                            "type": "text"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "cols": [
+                                        {
+                                            "designInfo": {
+                                                "bounds": {
+                                                    "upperLeft": {
+                                                        "x": 0,
+                                                        "y": 0
+                                                    },
+                                                    "lowerRight": {
+                                                        "x": 0,
+                                                        "y": 0
+                                                    }
+                                                },
+                                                "stencilSuperIds": [],
+                                                "stencilId": null,
+                                                "customStencilId": null
+                                            },
+                                            "size": 10,
+                                            "type": ""
+                                        },
+                                        {
+                                            "designInfo": {
+                                                "bounds": {
+                                                    "upperLeft": {
+                                                        "x": 811,
+                                                        "y": 440
+                                                    },
+                                                    "lowerRight": {
+                                                        "x": 955,
+                                                        "y": 488
+                                                    }
+                                                },
+                                                "stencilSuperIds": [
+                                                    "base-checkbox",
+                                                    "Component"
+                                                ],
+                                                "stencilId": "cloud-checkbox",
+                                                "customStencilId": null
+                                            },
+                                            "labelAlign": "top",
+                                            "value": "{{highImportance}}",
+                                            "defaultValue": false,
+                                            "size": 2,
+                                            "ignore": false,
+                                            "visible": true,
+                                            "enabled": true,
+                                            "isRequired": false,
+                                            "label": "High Importance!",
+                                            "i18n": {
+                                                "en_us": {
+                                                    "label": "High Importance!"
+                                                }
+                                            },
+                                            "id": "checkbox1",
+                                            "type": "boolean",
+                                            "extraSettings": {}
+                                        }
+                                    ]
+                                },
+                                {
+                                    "cols": [
+                                        {
+                                            "designInfo": {
+                                                "bounds": {
+                                                    "upperLeft": {
+                                                        "x": 15,
+                                                        "y": 513
+                                                    },
+                                                    "lowerRight": {
+                                                        "x": 955,
+                                                        "y": 585
+                                                    }
+                                                },
+                                                "stencilSuperIds": [
+                                                    "base-rich-text",
+                                                    "Component"
+                                                ],
+                                                "stencilId": "cloud-rich-text",
+                                                "customStencilId": null
+                                            },
+                                            "placeholder": "Message",
+                                            "i18n": {
+                                                "en_us": {
+                                                    "placeholder": "Message",
+                                                    "tooltip": "Message",
+                                                    "label": "Message"
+                                                }
+                                            },
+                                            "labelAlign": "top",
+                                            "tooltip": "Message",
+                                            "value": "{{mainContent}}",
+                                            "size": 12,
+                                            "ignore": false,
+                                            "visible": true,
+                                            "enabled": true,
+                                            "isRequired": true,
+                                            "styleClass": "main-content",
+                                            "label": "Message",
+                                            "id": "rich-text1",
+                                            "type": "richText",
+                                            "extraSettings": {
+                                                "textFormat": "html",
+                                                "useSpellCheck": true,
+                                                "minRows": 3
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "cols": [
+                                        {
+                                            "designInfo": {
+                                                "bounds": {
+                                                    "upperLeft": {
+                                                        "x": 15,
+                                                        "y": 610
+                                                    },
+                                                    "lowerRight": {
+                                                        "x": 955,
+                                                        "y": 658
+                                                    }
+                                                },
+                                                "stencilSuperIds": [
+                                                    "base-attachment",
+                                                    "Component"
+                                                ],
+                                                "stencilId": "cloud-attachment",
+                                                "customStencilId": null
+                                            },
+                                            "labelAlign": "top",
+                                            "tooltip": "Attachment",
+                                            "i18n": {
+                                                "en_us": {
+                                                    "tooltip": "Attachment",
+                                                    "label": "Attachment",
+                                                    "extraSettings": {
+                                                        "minFilesErrorMessage": "Only 2 attachments are allowed"
+                                                    }
+                                                }
+                                            },
+                                            "value": "{{attachmentDtos}}",
+                                            "size": 12,
+                                            "ignore": false,
+                                            "visible": true,
+                                            "enabled": true,
+                                            "isRequired": false,
+                                            "styleClass": "mail-attachment",
+                                            "label": "Attachment",
+                                            "id": "attachmentDtos",
+                                            "extraSettings": {
+                                                "autoupload": true,
+                                                "uploadUrl": "/eq-files-v2/file?fileCategoryType=Message&propertyId={{enableParentId == false? parentId : propertyId}}&investorId=123Investor",
+                                                "downloadUrl": "rest/file/{{id}}",
+                                                "deleteUrl": "{{$item.fileS3Url}}",
+                                                "allowDelete": true,
+                                                "preview": "icon",
+                                                "minFilesErrorMessage": "Only 2 attachments are allowed",
+                                                "maxFiles": 2,
+                                                "hasFileType": false
+                                            },
+                                            "type": "upload"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "i18n": {
+                        "en_us": {
+                            "extraSettings": {
+                                "saveButtonText": "SEND",
+                                "cancelButtonText": "Cancel"
+                            }
+                        }
+                    },
+                    "type": "panel"
+                }
+            ]
+        }
+    ],
+    "metadata": {
+        "key": "mailCompose1",
+        "name": "mailCompose",
+        "description": "",
+        "version": "58",
+        "type": "2",
+        "flowableDesignVersion": 3090
+    }
+}

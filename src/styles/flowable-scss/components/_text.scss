@@ -1,0 +1,78 @@
+.flw__text__input,
+.flw__textarea__input,
+.flw__number__input {
+  box-sizing: border-box;
+  margin: 0;
+  border-radius: 0px;
+  font: inherit;
+  overflow: visible;
+  -webkit-appearance: none;
+  max-width: 100%;
+  width: 100%;
+  border: 0 none;
+  padding: 0 10px;
+  background: $flw-forms-background-color;
+  background: var(--flw-forms-background-color, $flw-forms-background-color);
+  color: $flw-forms-text-color;
+  color: var(--flw-forms-text-color, $flw-forms-text-color);
+  border: 1px solid $flw-forms-border-muted-color;
+  border: 1px solid var(--flw-forms-border-color, $flw-forms-border-muted-color);
+  transition: 0.2s ease-in-out;
+  transition-property: color, background-color, border;
+  height: $flw-input-height;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.flw__text__input:focus,
+.flw__textarea__input:focus,
+.flw__number__input:focus {
+  outline: none;
+  background-color: $flw-forms-background-color;
+  background-color: var(
+    --flw-forms-background-color,
+    $flw-forms-background-color
+  );
+  color: $flw-forms-text-color;
+  color: var(--flw-forms-text-color, $flw-forms-text-color);
+  border-color: $flw-forms-muted-text-color;
+  border-color: var(--flw-forms-color, $flw-forms-muted-text-color);
+}
+
+.flw__text__input::placeholder,
+.flw__textarea__input::placeholder,
+.flw__number__input::placeholder {
+  color: var(
+    --flw-forms-muted-text-color,
+    $flw-forms-muted-text-color
+  ) !important;
+  color: $flw-forms-muted-text-color;
+  color: var(--flw-forms-muted-text-color, $flw-forms-border-muted-color);
+}
+
+.flw__text--left-aligned {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+}
+
+.flw__text--left-aligned .flw__label {
+  width: auto;
+  flex: 0 0 200px;
+  padding-right: 10px;
+  max-width: 40%;
+}
+
+.flw__text--left-aligned .flw__component__input {
+  display: flex;
+  width: 0;
+  flex-grow: 1;
+  flex-flow: row wrap;
+}
+
+.flw__text--left-aligned .flw__description,
+.flw__text--left-aligned .flw__error-list {
+  display: block;
+  width: 100%;
+  text-align: right;
+}

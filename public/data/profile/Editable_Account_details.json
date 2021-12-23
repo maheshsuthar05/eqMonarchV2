@@ -1,0 +1,412 @@
+{
+    "rows": [
+      {
+        "cols": [
+          {
+            "type": "panel",
+            "label": "Account Details",
+            "i18n": {
+              "en_us": {
+                "label": "Account Details"
+              }
+            },
+            "labelAlign": "top",
+            "size": 12,
+            "ignore": false,
+            "visible": true,
+            "enabled": true,
+            "isRequired": false,
+            "styleClass": "property-layout-column",
+            "id": "sub-panel1",
+            "extraSettings": {
+              "collapsible": false,
+              "collapsed": false,
+              "showBorder": false,
+              "saveButtonVisible": true,
+              "saveButtonEnabled": true,
+              "cancelButtonVisible": true,
+              "cancelButtonEnabled": true,
+              "layoutDefinition": {
+                "rows": [
+                  {
+                    "cols": [
+                      {
+                        "type": "text",
+                        "extraSettings": {},
+                        "i18n": {
+                          "en_us": {
+                            "label": "First Name:"
+                          },
+                          "de_de": {},
+                          "fr_fr": {},
+                          "it_it": {},
+                          "es_es": {}
+                        },
+                        "labelAlign": "left",
+                        "value": "{{firstName}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "enabled": true,
+                        "isRequired": true,
+                        "label": "First Name:",
+                        "id": "text1",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "text",
+                        "extraSettings": {},
+                        "i18n": {
+                          "en_us": {
+                            "label": "Last Name:"
+                          },
+                          "de_de": {},
+                          "fr_fr": {},
+                          "it_it": {},
+                          "es_es": {}
+                        },
+                        "labelAlign": "left",
+                        "value": "{{lastName}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "enabled": true,
+                        "isRequired": true,
+                        "label": "Last Name:",
+                        "id": "text2",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "text",
+                        "extraSettings": {},
+                        "i18n": {
+                          "en_us": {
+                            "label": "Email Address:"
+                          },
+                          "de_de": {},
+                          "fr_fr": {},
+                          "it_it": {},
+                          "es_es": {}
+                        },
+                        "labelAlign": "left",
+                        "value": "{{email}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "enabled": true,
+                        "isRequired": true,
+                        "label": "Email Address:",
+                        "id": "text3",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "text",
+                        "extraSettings": {},
+                        "i18n": {
+                          "en_us": {
+                            "label": "Confirm Email:"
+                          },
+                          "de_de": {},
+                          "fr_fr": {},
+                          "it_it": {},
+                          "es_es": {}
+                        },
+                        "labelAlign": "left",
+                        "value": "{{confirmEmail}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "enabled": true,
+                        "isRequired": true,
+                        "label": "Confirm Email:",
+                        "id": "text4",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "text",
+                        "extraSettings": {},
+                        "i18n": {
+                          "en_us": {
+                            "label": "Mobile:"
+                          },
+                          "de_de": {},
+                          "fr_fr": {},
+                          "it_it": {},
+                          "es_es": {}
+                        },
+                        "labelAlign": "left",
+                        "value": "{{telephoneNumber}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "enabled": true,
+                        "isRequired": true,
+                        "label": "Mobile:",
+                        "id": "text5",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "panel",
+                        "label": "License Information:",
+                        "i18n": {
+                          "en_us": {
+                            "label": "License Information:"
+                          }
+                        },
+                        "labelAlign": "top",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": "{{!additionalData.isVendor}}",
+                        "enabled": true,
+                        "isRequired": false,
+                        "id": "sub-panel5",
+                        "extraSettings": {
+                          "collapsible": false,
+                          "collapsed": false,
+                          "showBorder": false,
+                          "saveButtonVisible": true,
+                          "saveButtonEnabled": true,
+                          "cancelButtonVisible": true,
+                          "cancelButtonEnabled": true,
+                          "layoutDefinition": {
+                            "rows": [
+                              {
+                                "cols": [
+                                  {
+                                    "type": "text",
+                                    "extraSettings": {},
+                                    "i18n": {
+                                      "en_us": {
+                                        "label": "Number"
+                                      },
+                                      "de_de": {},
+                                      "fr_fr": {},
+                                      "it_it": {},
+                                      "es_es": {}
+                                    },
+                                    "labelAlign": "left",
+                                    "value": "{{licenseInformation}}",
+                                    "size": 12,
+                                    "ignore": false,
+                                    "visible": true,
+                                    "enabled": true,
+                                    "isRequired": false,
+                                    "label": "Number",
+                                    "id": "text15",
+                                    "col": 0
+                                  }
+                                ]
+                              },
+                              {
+                                "cols": [
+                                  {
+                                    "type": "date",
+                                    "i18n": {
+                                      "en_us": {
+                                        "label": "Expiry Date"
+                                      }
+                                    },
+                                    "labelAlign": "left",
+                                    "value": "{{expiryDate}}",
+                                    "size": 12,
+                                    "ignore": false,
+                                    "visible": true,
+                                    "enabled": true,
+                                    "isRequired": false,
+                                    "label": "Expiry Date",
+                                    "id": "date1",
+                                    "extraSettings": {
+                                      "enableTime": false,
+                                      "storeWithoutTime": true
+                                    },
+                                    "col": 0
+                                  }
+                                ]
+                              },
+                              {
+                                "cols": [
+                                  {
+                                    "type": "text",
+                                    "extraSettings": {},
+                                    "i18n": {
+                                      "en_us": {
+                                        "label": "State"
+                                      },
+                                      "de_de": {},
+                                      "fr_fr": {},
+                                      "it_it": {},
+                                      "es_es": {}
+                                    },
+                                    "labelAlign": "left",
+                                    "value": "{{licenceState}}",
+                                    "size": 12,
+                                    "ignore": false,
+                                    "visible": true,
+                                    "enabled": true,
+                                    "isRequired": false,
+                                    "label": "State",
+                                    "id": "text20",
+                                    "col": 0
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "radio",
+                        "i18n": {
+                          "en_us": {
+                            "extraSettings": {
+                              "items": [
+                                {
+                                  "text": "Agent",
+                                  "value": "agent",
+                                  "checked": "true"
+                                },
+                                {
+                                  "text": "Broker",
+                                  "value": "broker"
+                                },
+                                {
+                                  "text": "Attorny",
+                                  "value": "attorny"
+                                }
+                              ]
+                            },
+                            "label": "License Type:"
+                          }
+                        },
+                        "enabled": true,
+                        "extraSettings": {
+                          "dataSource": "Static",
+                          "items": [
+                            {
+                              "text": "Agent",
+                              "value": "agent",
+                              "checked": "true"
+                            },
+                            {
+                              "text": "Broker",
+                              "value": "broker"
+                            },
+                            {
+                              "text": "Attorny",
+                              "value": "attorny"
+                            }
+                          ],
+                          "storage": "Id",
+                          "identity": "value",
+                          "linkTarget": "_blank",
+                          "display": "Horizontal"
+                        },
+                        "labelAlign": "left",
+                        "value": "{{licenseType}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": "{{!additionalData.isVendor}}",
+                        "isRequired": false,
+                        "label": "License Type:",
+                        "id": "radiobuttons8",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "select",
+                        "extraSettings": {
+                          "tagsEnabled": false,
+                          "preselectAll": false,
+                          "enableAutocomplete": true,
+                          "autocompleteMinLength": 1,
+                          "dataSource": "Static",
+                          "items": [
+                            {
+                              "text": "Aberdeen MLS",
+                              "value": "Aberdeen MLS"
+                            },
+                            {
+                              "text": "Abilene Board of Realtors",
+                              "value": "Abilene Board of Realtors"
+                            },
+                            {
+                              "text": "Ada Board of Realtors",
+                              "value": "Ada Board of Realtors"
+                            }
+                          ],
+                          "storage": "Id",
+                          "identity": "value",
+                          "linkTarget": "_blank",
+                          "multi": true
+                        },
+                        "i18n": {
+                          "en_us": {
+                            "extraSettings": {
+                              "items": [
+                                {
+                                  "text": "Aberdeen MLS",
+                                  "value": "Aberdeen MLS"
+                                },
+                                {
+                                  "text": "Abilene Board of Realtors",
+                                  "value": "Abilene Board of Realtors"
+                                },
+                                {
+                                  "text": "Ada Board of Realtors",
+                                  "value": "Ada Board of Realtors"
+                                }
+                              ]
+                            },
+                            "label": "MLS Names:"
+                          }
+                        },
+                        "enabled": true,
+                        "labelAlign": "left",
+                        "value": "{{mLSNames}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": "{{!additionalData.isVendor}}",
+                        "isRequired": false,
+                        "label": "MLS Names:",
+                        "id": "multi-select1",
+                        "col": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            "col": 0
+          }
+        ]
+      }
+    ]
+  }

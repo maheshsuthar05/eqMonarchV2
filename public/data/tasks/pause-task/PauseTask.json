@@ -1,0 +1,153 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 25 },
+              "lowerRight": { "x": 985, "y": 293 }
+            },
+            "stencilSuperIds": ["SubSlotPanel"],
+            "stencilId": "cloud-sub-panel",
+            "customStencilId": null
+          },
+          "labelAlign": "top",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "sub-panel1",
+          "extraSettings": {
+            "collapsible": false,
+            "collapsed": false,
+            "showBorder": false,
+            "saveButtonVisible": false,
+            "saveButtonEnabled": false,
+            "cancelButtonVisible": false,
+            "cancelButtonEnabled": false,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 25 },
+                          "lowerRight": { "x": 955, "y": 73 }
+                        },
+                        "stencilSuperIds": ["base-date", "Component"],
+                        "stencilId": "cloud-date",
+                        "customStencilId": null
+                      },
+                      "placeholder": "Re-Open Date",
+                      "i18n": {
+                        "en_us": {
+                          "placeholder": "Re-Open Date",
+                          "tooltip": "Re-Open Date",
+                          "label": "Re-Open Date"
+                        }
+                      },
+                      "labelAlign": "top",
+                      "tooltip": "Re-Open Date",
+                      "value": "{{reopenDate}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": true,
+                      "label": "Re-Open Date",
+                      "id": "date1",
+                      "extraSettings": {
+                        "enableTime": false,
+                        "storeWithoutTime": true,
+                        "timeInterval": 15,
+                        "format": "MM/DD/YYYY",
+                        "minDate": "P1D",
+                        "maxDate": "{{additionalData.maximumPauseDate}}"
+                      },
+                      "type": "date"
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 98 },
+                          "lowerRight": { "x": 955, "y": 170 }
+                        },
+                        "stencilSuperIds": ["base-text-area", "Component"],
+                        "stencilId": "cloud-text-area",
+                        "customStencilId": null
+                      },
+                      "placeholder": "Enter Reason for task pause",
+                      "i18n": {
+                        "en_us": {
+                          "placeholder": "Enter Reason for task pause",
+                          "tooltip": "Enter Reason for task pause",
+                          "label": "Enter Reason for task pause"
+                        }
+                      },
+                      "labelAlign": "top",
+                      "tooltip": "Enter Reason for task pause",
+                      "value": "{{reasonForTaskPause}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": true,
+                      "label": "Enter Reason for task pause",
+                      "id": "text-area1",
+                      "type": "textarea",
+                      "extraSettings": {}
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 195 },
+                          "lowerRight": { "x": 955, "y": 243 }
+                        },
+                        "stencilSuperIds": ["base-checkbox", "Component"],
+                        "stencilId": "cloud-checkbox",
+                        "customStencilId": null
+                      },
+                      "labelAlign": "top",
+                      "value": "{{isPauseStatus}}",
+                      "defaultValue": true,
+                      "size": 12,
+                      "ignore": false,
+                      "visible": false,
+                      "enabled": true,
+                      "isRequired": false,
+                      "label": "isPauseStatus",
+                      "i18n": { "en_us": { "label": "isPauseStatus" } },
+                      "id": "checkbox1",
+                      "type": "boolean",
+                      "extraSettings": {}
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "type": "panel"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "key": "pauseTask",
+    "name": "Pause Task",
+    "description": "",
+    "version": "2",
+    "type": "2",
+    "flowableDesignVersion": 3090
+  }
+}

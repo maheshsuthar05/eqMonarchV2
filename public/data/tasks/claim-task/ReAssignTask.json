@@ -1,0 +1,119 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 25 },
+              "lowerRight": { "x": 984, "y": 73 }
+            },
+            "stencilSuperIds": ["base-checkbox", "Component"],
+            "stencilId": "cloud-checkbox",
+            "customStencilId": null
+          },
+          "labelAlign": "top",
+          "tooltip": "Assign to me",
+          "i18n": {
+            "en_us": { "tooltip": "Assign to me", "label": "Assign to me" }
+          },
+          "value": "{{assignToMe}}",
+          "defaultValue": false,
+          "size": 12,
+          "visible": true,
+          "enabled": "{{assignee ==null ? true: false}}",
+          "isRequired": "{{assignee ==null ? true: false}}",
+          "styleClass": "task-assignToMe",
+          "label": "Assign to me",
+          "id": "task-assignToMe",
+          "type": "boolean",
+          "extraSettings": {}
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 98 },
+              "lowerRight": { "x": 984, "y": 108 }
+            },
+            "stencilSuperIds": ["Hline"],
+            "stencilId": "cloud-hline",
+            "customStencilId": null
+          },
+          "label": "or",
+          "i18n": { "en_us": { "label": "or" } },
+          "labelAlign": "top",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "hline1",
+          "type": "hline"
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 128 },
+              "lowerRight": { "x": 984, "y": 176 }
+            },
+            "stencilSuperIds": ["base-single-select", "Component"],
+            "stencilId": "cloud-single-select",
+            "customStencilId": null
+          },
+          "extraSettings": {
+            "tagsEnabled": false,
+            "preselectAll": false,
+            "clientSideFiltering": false,
+            "enableAutocomplete": true,
+            "autocompleteMinLength": 0,
+            "dataSource": "Rest",
+            "queryUrl": "/eq-api/core/ldap/users",
+            "lookupUrl": "/eq-api/core/ldap/users",
+            "path": "data",
+            "linkTargetView": "browse",
+            "formatItem": "{{$item.displayName}}",
+            "storage": "Full",
+            "linkTarget": "_blank",
+            "multi": false
+          },
+          "placeholder": "Please select Assignee",
+          "i18n": {
+            "en_us": {
+              "placeholder": "Please select Assignee",
+              "tooltip": "Assignee",
+              "label": "Assignee"
+            }
+          },
+          "enabled": "{{assignToMe===true ? false: true}}",
+          "labelAlign": "top",
+          "tooltip": "Assignee",
+          "value": "{{assignee}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "isRequired": "{{assignToMe===true ? false:true}}",
+          "styleClass": "task-assignee",
+          "label": "Assignee",
+          "id": "assignee",
+          "type": "select"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "key": "reAssignTask",
+    "name": "reAssignTask",
+    "description": "",
+    "version": "30",
+    "type": "2",
+    "flowableDesignVersion": 3090
+  }
+}

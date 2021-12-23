@@ -1,0 +1,303 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 0, "y": 0 },
+              "lowerRight": { "x": 0, "y": 0 }
+            },
+            "stencilSuperIds": [],
+            "stencilId": null,
+            "customStencilId": null
+          },
+          "type": "",
+          "size": 10
+        },
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 835, "y": 25 },
+              "lowerRight": { "x": 984, "y": 51 }
+            },
+            "stencilSuperIds": ["Button"],
+            "stencilId": "cloud-link-button",
+            "customStencilId": null
+          },
+          "type": "linkButton",
+          "extraSettings": {
+            "target": "_self",
+            "alignment": "left",
+            "iconAlignment": "right",
+            "showAsButton": true,
+            "type": "one"
+          },
+          "labelAlign": "top",
+          "value": "Add User",
+          "size": 2,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "styleClass": "altisource__model_primary",
+          "id": "add-user",
+          "i18n": { "en_us": { "value": "Add User" } }
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 74 },
+              "lowerRight": { "x": 984, "y": 166 }
+            },
+            "stencilSuperIds": ["base-datatable", "Component"],
+            "stencilId": "cloud-datatable",
+            "customStencilId": null
+          },
+          "type": "dataTable",
+          "label": "Users",
+          "i18n": {
+            "en_us": {
+              "label": "Users",
+              "extraSettings": {
+                "columns": [
+                  {
+                    "label": "Id",
+                    "id": "id",
+                    "accessor": "id",
+                    "alignment": "left",
+                    "filterable": true,
+                    "sortable": true,
+                    "show": true
+                  },
+                  {
+                    "label": "First Name",
+                    "id": "firstName",
+                    "accessor": "firstName",
+                    "alignment": "left",
+                    "filterable": true,
+                    "sortable": true,
+                    "show": true
+                  },
+                  {
+                    "label": "Last Name",
+                    "id": "lastName",
+                    "accessor": "lastName",
+                    "alignment": "left",
+                    "filterable": true,
+                    "sortable": true,
+                    "show": true
+                  },
+                  {
+                    "label": "Status",
+                    "id": "isDeleted",
+                    "accessor": "isDeleted",
+                    "alignment": "left",
+                    "component": {
+                      "type": "htmlComponent",
+                      "value": "<span>{{$item.isDeleted ? 'Inactive' : 'Active'}}</span>"
+                    },
+                    "filterable": true,
+                    "sortable": true,
+                    "show": true
+                  },
+                  {
+                    "label": "E Mail",
+                    "id": "email",
+                    "accessor": "email",
+                    "alignment": "left",
+                    "filterable": true,
+                    "sortable": true,
+                    "show": true
+                  },
+                  {
+                    "label": "Action",
+                    "id": "dropdown",
+                    "accessor": "dropdown",
+                    "alignment": "left",
+                    "component": {
+                      "type": "buttonGroup",
+                      "value": "{{$item}}",
+                      "extraSettings": { "asDropdown": true },
+                      "alignment": "right",
+                      "buttonDefinitions": [
+                        {
+                          "type": "scriptButton",
+                          "value": "{{operationListActionButton}}",
+                          "extraSettings": {
+                            "text": "Send Password Link",
+                            "script": "Send Password Link",
+                            "fileDetails": "{{$item}}"
+                          }
+                        },
+                        {
+                          "type": "scriptButton",
+                          "value": "{{operationListActionButton}}",
+                          "extraSettings": {
+                            "text": "View/Edit",
+                            "script": "View/Edit",
+                            "fileDetails": "{{$item}}"
+                          }
+                        },
+                        {
+                          "type": "scriptButton",
+                          "value": "{{operationListActionButton}}",
+                          "extraSettings": {
+                            "text": "{{!$item.isDeleted ? 'Inactivate' : 'Activate'}}",
+                            "script": "{{!$item.isDeleted ? 'Inactivate' : 'Activate'}}",
+                            "fileDetails": "{{$item}}"
+                          }
+                        }
+                      ]
+                    },
+                    "filterable": false,
+                    "maxWidth": 75,
+                    "sortable": false,
+                    "show": true
+                  }
+                ]
+              }
+            }
+          },
+          "enabled": true,
+          "extraSettings": {
+            "dataSource": "Rest",
+            "queryUrl": "/eq-api/core/ldap/users?page={{$page}}&size={{$pageSize}}&sort={{$sortColumn}},{{$sortDirection}}",
+            "path": "data",
+            "linkTargetView": "browse",
+            "storage": "Full",
+            "linkTarget": "_blank",
+            "selectable": "Single",
+            "showPagination": true,
+            "autoHidePagination": true,
+            "clientPagination": true,
+            "sortableColumns": false,
+            "columns": [
+              {
+                "label": "Id",
+                "id": "id",
+                "accessor": "id",
+                "alignment": "left",
+                "filterable": true,
+                "sortable": true,
+                "show": true
+              },
+              {
+                "label": "First Name",
+                "id": "firstName",
+                "accessor": "firstName",
+                "alignment": "left",
+                "filterable": true,
+                "sortable": true,
+                "show": true
+              },
+              {
+                "label": "Last Name",
+                "id": "lastName",
+                "accessor": "lastName",
+                "alignment": "left",
+                "filterable": true,
+                "sortable": true,
+                "show": true
+              },
+              {
+                "label": "Status",
+                "id": "isDeleted",
+                "accessor": "isDeleted",
+                "alignment": "left",
+                "component": {
+                  "type": "htmlComponent",
+                  "value": "<span>{{$item.isDeleted ? 'Inactive' : 'Active'}}</span>"
+                },
+                "filterable": true,
+                "sortable": true,
+                "show": true
+              },
+              {
+                "label": "E Mail",
+                "id": "email",
+                "accessor": "email",
+                "alignment": "left",
+                "filterable": true,
+                "sortable": true,
+                "show": true
+              },
+              {
+                "label": "Action",
+                "id": "dropdown",
+                "accessor": "dropdown",
+                "alignment": "left",
+                "component": {
+                  "type": "buttonGroup",
+                  "value": "{{$item}}",
+                  "extraSettings": { "asDropdown": true },
+                  "alignment": "right",
+                  "buttonDefinitions": [
+                    {
+                      "type": "scriptButton",
+                      "value": "{{operationListActionButton}}",
+                      "extraSettings": {
+                        "text": "Reset Password",
+                        "script": "Reset Password",
+                        "fileDetails": "{{$item}}"
+                      }
+                    },
+                    {
+                      "type": "scriptButton",
+                      "value": "{{operationListActionButton}}",
+                      "extraSettings": {
+                        "text": "View",
+                        "script": "Edit",
+                        "fileDetails": "{{$item}}"
+                      }
+                    },
+                    {
+                      "type": "scriptButton",
+                      "value": "{{operationListActionButton}}",
+                      "extraSettings": {
+                        "text": "{{!$item.isDeleted ? 'Inactivate' : 'Activate'}}",
+                        "script": "{{!$item.isDeleted ? 'Inactivate' : 'Activate'}}",
+                        "fileDetails": "{{$item}}"
+                      }
+                    }
+                  ]
+                },
+                "filterable": false,
+                "maxWidth": 75,
+                "sortable": false,
+                "show": true
+              }
+            ],
+            "filterable": true,
+            "sortable": true,
+            "multiSort": false,
+            "pageSize": 20,
+            "pageSizeOptions": [5, 10, 20, 25, 50, 100],
+            "showTotalRecords": true,
+            "response": {},
+            "showRefreshButton": true,
+            "target": "_blank"
+          },
+          "labelAlign": "top",
+          "value": "{{userListData}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "isRequired": false,
+          "id": "datatable1"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "key": "userList",
+    "name": "user list",
+    "description": "user list",
+    "version": "12",
+    "type": "2"
+  }
+}

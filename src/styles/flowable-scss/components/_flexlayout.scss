@@ -1,0 +1,78 @@
+.flw__flexlayout__wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.flw__flexlayout__wrapper--direction-row {
+  flex-direction: row;
+}
+
+.flw__flexlayout__wrapper--direction-column {
+  flex-direction: column;
+}
+
+.flw__flexlayout__wrapper--align-start {
+  align-items: flex-start;
+}
+
+.flw__flexlayout__wrapper--align-center {
+  align-items: center;
+}
+
+.flw__flexlayout__wrapper--align-end {
+  align-items: flex-end;
+}
+
+.flw__flexlayout__wrapper--align-stretch {
+  align-items: stretch;
+}
+
+.flw__flexlayout__wrapper--justify-start {
+  justify-content: flex-start;
+}
+
+.flw__flexlayout__wrapper--justify-center {
+  justify-content: center;
+}
+
+.flw__flexlayout__wrapper--justify-end {
+  justify-content: flex-end;
+}
+
+.flw__flexlayout__wrapper--justify-space-around {
+  justify-content: space-around;
+}
+
+.flw__flexlayout__wrapper--justify-space-between {
+  justify-content: space-between;
+}
+
+.flw__flexlayout__item {
+  overflow: hidden;
+}
+
+.flw__flexlayout__wrapper--direction-row.flw__flexlayout__wrapper--align-stretch > .flw__flexlayout__item > * {
+  height: 100%;
+}
+
+.flw__flexlayout__wrapper--direction-column.flw__flexlayout__wrapper--align-stretch > .flw__flexlayout__item > * {
+  width: 100%;
+}
+
+.custom_flexlayout {
+  background: $flw-forms-green-background-color;
+  background: var(--flw-forms-green-background-color, $flw-forms-green-background-color);
+  border: 1px dashed $flw-forms-success-color;
+  border: 1px dashed var(--flw-forms-success-color, $flw-forms-success-color);
+  height: 500px;
+}
+
+.custom_flexlayout_item {
+  overflow: hidden;
+  background: $flw-forms-green-background-color;
+  background: var(--flw-forms-green-background-color, $flw-forms-green-background-color);
+  border: 1px solid $flw-forms-error-color;
+  border: 1px solid var(--flw-forms-error-color, $flw-forms-error-color);
+  width: 100px;
+  height: 100px;
+}

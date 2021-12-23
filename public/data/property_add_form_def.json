@@ -1,0 +1,1817 @@
+{
+    "rows": [
+        {
+            "cols": [
+                {
+                    "type": "panel",
+                    "i18n": {},
+                    "labelAlign": "top",
+                    "size": 12,
+                    "ignore": false,
+                    "visible": true,
+                    "enabled": true,
+                    "isRequired": false,
+                    "id": "sub-panel7",
+                    "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                            "rows": [
+                                {
+                                    "cols": [
+                                        {
+                                            "type": "panel",
+                                            "i18n": {},
+                                            "labelAlign": "top",
+                                            "size": 3,
+                                            "ignore": false,
+                                            "visible": true,
+                                            "enabled": true,
+                                            "isRequired": false,
+                                            "styleClass": "property-layout-column",
+                                            "id": "sub-panel1",
+                                            "extraSettings": {
+                                                "collapsible": false,
+                                                "collapsed": false,
+                                                "showBorder": false,
+                                                "saveButtonVisible": true,
+                                                "saveButtonEnabled": true,
+                                                "cancelButtonVisible": true,
+                                                "cancelButtonEnabled": true,
+                                                "layoutDefinition": {
+                                                    "rows": [
+                                                        {
+                                                            "cols": [
+                                                                {
+                                                                    "type": "htmlComponent",
+                                                                    "i18n": {
+                                                                        "en_us": {
+                                                                            "value": "<p><span style=\"font-size:14px\"><strong>Loan</strong></span></p>\n"
+                                                                        },
+                                                                        "de_de": {},
+                                                                        "fr_fr": {},
+                                                                        "it_it": {},
+                                                                        "es_es": {}
+                                                                    },
+                                                                    "labelAlign": "top",
+                                                                    "value": "<p><span style=\"font-size:14px\"><strong>Loan</strong></span></p>\n",
+                                                                    "defaultValue": false,
+                                                                    "size": 12,
+                                                                    "ignore": false,
+                                                                    "visible": true,
+                                                                    "enabled": true,
+                                                                    "isRequired": false,
+                                                                    "id": "output2",
+                                                                    "col": 0
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cols": [
+                                                                {
+                                                                    "type": "text",
+                                                                    "extraSettings": {},
+                                                                    "i18n": {
+                                                                        "en_us": {
+                                                                            "placeholder": "Loan number",
+                                                                            "label": "Loan number"
+                                                                        },
+                                                                        "de_de": {},
+                                                                        "fr_fr": {},
+                                                                        "it_it": {},
+                                                                        "es_es": {}
+                                                                    },
+                                                                    "placeholder": "Loan number",
+                                                                    "labelAlign": "top",
+                                                                    "value": "{{loan.loanNumber}}",
+                                                                    "size": 12,
+                                                                    "ignore": false,
+                                                                    "visible": true,
+                                                                    "enabled": true,
+                                                                    "isRequired": true,
+                                                                    "label": "Loan number",
+                                                                    "id": "text-loan-loan_number",
+                                                                    "col": 0
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cols": [
+                                                                {
+                                                                    "type": "text",
+                                                                    "extraSettings": {},
+                                                                    "i18n": {
+                                                                        "en_us": {
+                                                                            "placeholder": "Second loan number",
+                                                                            "label": "Second loan number"
+                                                                        },
+                                                                        "de_de": {},
+                                                                        "fr_fr": {},
+                                                                        "it_it": {},
+                                                                        "es_es": {}
+                                                                    },
+                                                                    "placeholder": "Second loan number",
+                                                                    "labelAlign": "top",
+                                                                    "value": "{{loan.otherLienLoanNumber}}",
+                                                                    "size": 12,
+                                                                    "ignore": false,
+                                                                    "visible": true,
+                                                                    "enabled": true,
+                                                                    "isRequired": false,
+                                                                    "label": "Second loan number",
+                                                                    "id": "text-loan-other_lien_loan_number",
+                                                                    "col": 0
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cols": [
+                                                                {
+                                                                    "type": "text",
+                                                                    "extraSettings": {},
+                                                                    "i18n": {
+                                                                        "en_us": {
+                                                                            "placeholder": "REO number",
+                                                                            "label": "REO number"
+                                                                        },
+                                                                        "de_de": {},
+                                                                        "fr_fr": {},
+                                                                        "it_it": {},
+                                                                        "es_es": {}
+                                                                    },
+                                                                    "placeholder": "REO number",
+                                                                    "labelAlign": "top",
+                                                                    "value": "{{property.investorReoPropertyIdentifier}}",
+                                                                    "size": 12,
+                                                                    "ignore": false,
+                                                                    "visible": true,
+                                                                    "enabled": true,
+                                                                    "isRequired": false,
+                                                                    "label": "REO number",
+                                                                    "id": "text-property_investor_reo_property_identifier",
+                                                                    "col": 0
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cols": [
+                                                                {
+                                                                    "type": "select",
+                                                                    "extraSettings": {
+                                                                        "tagsEnabled": false,
+                                                                        "preselectAll": false,
+                                                                        "enableAutocomplete": false,
+                                                                        "dataSource": "Static",
+                                                                        "items": [
+                                                                            {
+                                                                                "text": "Residential – Single Family",
+                                                                                "value": "_1001"
+                                                                            },
+                                                                            {
+                                                                                "text": "Multi Family",
+                                                                                "value": "_1100"
+                                                                            },
+                                                                            {
+                                                                                "text": "Residential – Townhouse",
+                                                                                "value": "_1002"
+                                                                            },
+                                                                            {
+                                                                                "text": "Residential – Condo",
+                                                                                "value": "_1004"
+                                                                            },
+                                                                            {
+                                                                                "text": "Mobile Home",
+                                                                                "value": "Mobile Home"
+                                                                            },
+                                                                            {
+                                                                                "text": "Land Only",
+                                                                                "value": "Land Only"
+                                                                            },
+                                                                            {
+                                                                                "text": "New Construction",
+                                                                                "value": "New Construction"
+                                                                            },
+                                                                            {
+                                                                                "text": "Commercial",
+                                                                                "value": "Commercial"
+                                                                            },
+                                                                            {
+                                                                                "text": "Other",
+                                                                                "value": "Other"
+                                                                            }
+                                                                        ],
+                                                                        "storage": "Id",
+                                                                        "identity": "value",
+                                                                        "linkTarget": "_blank",
+                                                                        "multi": false
+                                                                    },
+                                                                    "i18n": {
+                                                                        "en_us": {
+                                                                            "extraSettings": {
+                                                                                "items": [
+                                                                                    {
+                                                                                        "text": "Residential – Single Family",
+                                                                                        "value": "_1001"
+                                                                                    },
+                                                                                    {
+                                                                                        "text": "Multi Family",
+                                                                                        "value": "_1100"
+                                                                                    },
+                                                                                    {
+                                                                                        "text": "Residential – Townhouse",
+                                                                                        "value": "_1002"
+                                                                                    },
+                                                                                    {
+                                                                                        "text": "Residential – Condo",
+                                                                                        "value": "_1004"
+                                                                                    },
+                                                                                    {
+                                                                                        "text": "Mobile Home",
+                                                                                        "value": "Mobile Home"
+                                                                                    },
+                                                                                    {
+                                                                                        "text": "Land Only",
+                                                                                        "value": "Land Only"
+                                                                                    },
+                                                                                    {
+                                                                                        "text": "New Construction",
+                                                                                        "value": "New Construction"
+                                                                                    },
+                                                                                    {
+                                                                                        "text": "Commercial",
+                                                                                        "value": "Commercial"
+                                                                                    },
+                                                                                    {
+                                                                                        "text": "Other",
+                                                                                        "value": "Other"
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            "placeholder": "Property type",
+                                                                            "label": "Property type"
+                                                                        }
+                                                                    },
+                                                                    "placeholder": "Property type",
+                                                                    "enabled": true,
+                                                                    "labelAlign": "top",
+                                                                    "value": "{{property.propertyType}}",
+                                                                    "size": 12,
+                                                                    "ignore": false,
+                                                                    "visible": true,
+                                                                    "isRequired": false,
+                                                                    "label": "Property type",
+                                                                    "id": "single-select-property-property_type",
+                                                                    "col": 0
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cols": [
+                                                                {
+                                                                    "type": "hline",
+                                                                    "i18n": {
+                                                                        "en_us": {},
+                                                                        "de_de": {},
+                                                                        "fr_fr": {},
+                                                                        "it_it": {},
+                                                                        "es_es": {}
+                                                                    },
+                                                                    "labelAlign": "top",
+                                                                    "size": 12,
+                                                                    "ignore": false,
+                                                                    "visible": true,
+                                                                    "enabled": true,
+                                                                    "isRequired": false,
+                                                                    "id": "hline2",
+                                                                    "col": 0
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cols": [
+                                                                {
+                                                                    "type": "htmlComponent",
+                                                                    "i18n": {
+                                                                        "en_us": {
+                                                                            "value": "<p><span style=\"font-size:14px\"><strong>Address</strong></span></p>\n"
+                                                                        },
+                                                                        "de_de": {},
+                                                                        "fr_fr": {},
+                                                                        "it_it": {},
+                                                                        "es_es": {}
+                                                                    },
+                                                                    "labelAlign": "top",
+                                                                    "value": "<p><span style=\"font-size:14px\"><strong>Address</strong></span></p>\n",
+                                                                    "defaultValue": false,
+                                                                    "size": 12,
+                                                                    "ignore": false,
+                                                                    "visible": true,
+                                                                    "enabled": true,
+                                                                    "isRequired": false,
+                                                                    "id": "output9",
+                                                                    "col": 0
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cols": [
+                                                                {
+                                                                    "type": "subform",
+                                                                    "labelAlign": "top",
+                                                                    "value": "{{propertyAddresses}}",
+                                                                    "defaultValue": "",
+                                                                    "description": "",
+                                                                    "i18n": {
+                                                                        "en_us": {
+                                                                            "description": "",
+                                                                            "customValidations": "",
+                                                                            "label": "",
+                                                                            "extraSettings": {
+                                                                                "minItemsErrorMessage": "",
+                                                                                "maxItemsErrorMessage": "",
+                                                                                "addButtonText": ""
+                                                                            }
+                                                                        },
+                                                                        "de_de": {
+                                                                            "description": "",
+                                                                            "customValidations": "",
+                                                                            "label": "",
+                                                                            "extraSettings": {
+                                                                                "minItemsErrorMessage": "",
+                                                                                "maxItemsErrorMessage": "",
+                                                                                "addButtonText": ""
+                                                                            }
+                                                                        },
+                                                                        "fr_fr": {
+                                                                            "description": "",
+                                                                            "customValidations": "",
+                                                                            "label": "",
+                                                                            "extraSettings": {
+                                                                                "minItemsErrorMessage": "",
+                                                                                "maxItemsErrorMessage": "",
+                                                                                "addButtonText": ""
+                                                                            }
+                                                                        },
+                                                                        "it_it": {
+                                                                            "description": "",
+                                                                            "customValidations": "",
+                                                                            "label": "",
+                                                                            "extraSettings": {
+                                                                                "minItemsErrorMessage": "",
+                                                                                "maxItemsErrorMessage": "",
+                                                                                "addButtonText": ""
+                                                                            }
+                                                                        },
+                                                                        "es_es": {
+                                                                            "description": "",
+                                                                            "customValidations": "",
+                                                                            "label": "",
+                                                                            "extraSettings": {
+                                                                                "minItemsErrorMessage": "",
+                                                                                "maxItemsErrorMessage": "",
+                                                                                "addButtonText": ""
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "size": 12,
+                                                                    "ignore": "",
+                                                                    "visible": true,
+                                                                    "enabled": true,
+                                                                    "isRequired": false,
+                                                                    "styleClass": "",
+                                                                    "customValidations": "",
+                                                                    "label": "",
+                                                                    "extraSettings": {
+                                                                        "showBorder": false,
+                                                                        "minItems": 1,
+                                                                        "minItemsErrorMessage": "",
+                                                                        "maxItems": 1,
+                                                                        "maxItemsErrorMessage": "",
+                                                                        "collapsible": false,
+                                                                        "collapsed": false,
+                                                                        "formRef": {
+                                                                            "id": "FORM_MODEL-ab717728-3053-4cbf-a65b-e619fc8ce934",
+                                                                            "key": "propertyAddresse"
+                                                                        },
+                                                                        "multipleEntries": true,
+                                                                        "showAddButton": false,
+                                                                        "showDeleteButton": false,
+                                                                        "addButtonText": "",
+                                                                        "layoutDefinition": {
+                                                                            "rows": [
+                                                                                {
+                                                                                    "cols": [
+                                                                                        {
+                                                                                            "type": "text",
+                                                                                            "extraSettings": {},
+                                                                                            "i18n": {
+                                                                                                "en_us": {
+                                                                                                    "placeholder": "Address 1",
+                                                                                                    "label": "Address 1"
+                                                                                                },
+                                                                                                "de_de": {},
+                                                                                                "fr_fr": {},
+                                                                                                "it_it": {},
+                                                                                                "es_es": {}
+                                                                                            },
+                                                                                            "placeholder": "Address 1",
+                                                                                            "labelAlign": "top",
+                                                                                            "value": "{{addressLineText}}",
+                                                                                            "size": 12,
+                                                                                            "ignore": false,
+                                                                                            "visible": true,
+                                                                                            "enabled": true,
+                                                                                            "isRequired": true,
+                                                                                            "label": "Address 1",
+                                                                                            "id": "text11",
+                                                                                            "col": 0
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "cols": [
+                                                                                        {
+                                                                                            "type": "text",
+                                                                                            "extraSettings": {},
+                                                                                            "i18n": {
+                                                                                                "en_us": {
+                                                                                                    "placeholder": "Address 2",
+                                                                                                    "label": "Address 2"
+                                                                                                },
+                                                                                                "de_de": {},
+                                                                                                "fr_fr": {},
+                                                                                                "it_it": {},
+                                                                                                "es_es": {}
+                                                                                            },
+                                                                                            "placeholder": "Address 2",
+                                                                                            "labelAlign": "top",
+                                                                                            "value": "{{addressAdditionalLineText}}",
+                                                                                            "size": 12,
+                                                                                            "ignore": false,
+                                                                                            "visible": true,
+                                                                                            "enabled": true,
+                                                                                            "isRequired": false,
+                                                                                            "label": "Address 2",
+                                                                                            "id": "text12",
+                                                                                            "col": 0
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "cols": [
+                                                                                        {
+                                                                                            "type": "text",
+                                                                                            "extraSettings": {},
+                                                                                            "i18n": {
+                                                                                                "en_us": {
+                                                                                                    "placeholder": "City",
+                                                                                                    "label": "City"
+                                                                                                },
+                                                                                                "de_de": {},
+                                                                                                "fr_fr": {},
+                                                                                                "it_it": {},
+                                                                                                "es_es": {}
+                                                                                            },
+                                                                                            "placeholder": "City",
+                                                                                            "labelAlign": "top",
+                                                                                            "value": "{{cityName}}",
+                                                                                            "size": 12,
+                                                                                            "ignore": false,
+                                                                                            "visible": true,
+                                                                                            "enabled": true,
+                                                                                            "isRequired": true,
+                                                                                            "label": "City",
+                                                                                            "id": "text13",
+                                                                                            "col": 0
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "cols": [
+                                                                                        {
+                                                                                            "type": "text",
+                                                                                            "extraSettings": {},
+                                                                                            "i18n": {
+                                                                                                "en_us": {
+                                                                                                    "placeholder": "State code",
+                                                                                                    "label": "State code"
+                                                                                                },
+                                                                                                "de_de": {},
+                                                                                                "fr_fr": {},
+                                                                                                "it_it": {},
+                                                                                                "es_es": {}
+                                                                                            },
+                                                                                            "placeholder": "State code",
+                                                                                            "labelAlign": "top",
+                                                                                            "value": "{{stateCode}}",
+                                                                                            "size": 12,
+                                                                                            "ignore": false,
+                                                                                            "visible": true,
+                                                                                            "enabled": true,
+                                                                                            "isRequired": true,
+                                                                                            "label": "State code",
+                                                                                            "id": "text14",
+                                                                                            "col": 0
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "cols": [
+                                                                                        {
+                                                                                            "type": "text",
+                                                                                            "extraSettings": {},
+                                                                                            "i18n": {
+                                                                                                "en_us": {
+                                                                                                    "placeholder": "Zip code",
+                                                                                                    "label": "Zip code"
+                                                                                                },
+                                                                                                "de_de": {},
+                                                                                                "fr_fr": {},
+                                                                                                "it_it": {},
+                                                                                                "es_es": {}
+                                                                                            },
+                                                                                            "placeholder": "Zip code",
+                                                                                            "labelAlign": "top",
+                                                                                            "value": "{{postalCode}}",
+                                                                                            "size": 12,
+                                                                                            "ignore": false,
+                                                                                            "visible": true,
+                                                                                            "enabled": true,
+                                                                                            "isRequired": true,
+                                                                                            "label": "Zip code",
+                                                                                            "id": "text15",
+                                                                                            "col": 0
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "cols": [
+                                                                                        {
+                                                                                            "type": "text",
+                                                                                            "extraSettings": {},
+                                                                                            "i18n": {
+                                                                                                "en_us": {
+                                                                                                    "placeholder": "County name",
+                                                                                                    "label": "County name"
+                                                                                                },
+                                                                                                "de_de": {},
+                                                                                                "fr_fr": {},
+                                                                                                "it_it": {},
+                                                                                                "es_es": {}
+                                                                                            },
+                                                                                            "placeholder": "County name",
+                                                                                            "labelAlign": "top",
+                                                                                            "value": "{{countyName}}",
+                                                                                            "size": 12,
+                                                                                            "ignore": false,
+                                                                                            "visible": true,
+                                                                                            "enabled": true,
+                                                                                            "isRequired": true,
+                                                                                            "label": "County name",
+                                                                                            "id": "text16",
+                                                                                            "col": 0
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    },
+                                                                    "id": "sub-form-propertyAddresses",
+                                                                    "col": 0
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "col": 0
+                                        },
+                                        {
+                                            "type": "panel",
+                                            "i18n": {},
+                                            "labelAlign": "top",
+                                            "size": 3,
+                                            "ignore": false,
+                                            "visible": true,
+                                            "enabled": true,
+                                            "isRequired": false,
+                                            "styleClass": "property-layout-column",
+                                            "id": "sub-panel2",
+                                            "extraSettings": {
+                                                "collapsible": false,
+                                                "collapsed": false,
+                                                "showBorder": false,
+                                                "saveButtonVisible": true,
+                                                "saveButtonEnabled": true,
+                                                "cancelButtonVisible": true,
+                                                "cancelButtonEnabled": true,
+                                                "layoutDefinition": {
+                                                    "rows": [
+                                                        {
+                                                            "cols": [
+                                                                {
+                                                                    "type": "htmlComponent",
+                                                                    "i18n": {
+                                                                        "en_us": {
+                                                                            "value": "<p><span style=\"font-size:14px\"><strong>Property Details</strong></span></p>\n"
+                                                                        },
+                                                                        "de_de": {},
+                                                                        "fr_fr": {},
+                                                                        "it_it": {},
+                                                                        "es_es": {}
+                                                                    },
+                                                                    "labelAlign": "top",
+                                                                    "value": "<p><span style=\"font-size:14px\"><strong>Property Details</strong></span></p>\n",
+                                                                    "defaultValue": false,
+                                                                    "size": 12,
+                                                                    "ignore": false,
+                                                                    "visible": true,
+                                                                    "enabled": true,
+                                                                    "isRequired": false,
+                                                                    "id": "output3",
+                                                                    "col": 0
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cols": [
+                                                                {
+                                                                    "type": "number",
+                                                                    "placeholder": "Bedroom count",
+                                                                    "i18n": {
+                                                                        "en_us": {
+                                                                            "placeholder": "Bedroom count",
+                                                                            "label": "Bedroom count"
+                                                                        }
+                                                                    },
+                                                                    "labelAlign": "top",
+                                                                    "value": "{{property.propertyBedroomCount}}",
+                                                                    "size": 12,
+                                                                    "ignore": false,
+                                                                    "visible": true,
+                                                                    "enabled": true,
+                                                                    "isRequired": false,
+                                                                    "label": "Bedroom count",
+                                                                    "id": "integer-number-property-property_bedroom_count",
+                                                                    "extraSettings": {
+                                                                        "numberType": "integer",
+                                                                        "fractionSize": 0,
+                                                                        "type": "one"
+                                                                    },
+                                                                    "col": 0
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cols": [
+                                                                {
+                                                                    "type": "number",
+                                                                    "placeholder": "Bathroom count",
+                                                                    "i18n": {
+                                                                        "en_us": {
+                                                                            "placeholder": "Bathroom count",
+                                                                            "label": "Bathroom count"
+                                                                        }
+                                                                    },
+                                                                    "labelAlign": "top",
+                                                                    "value": "{{property.propertyBathroomCount}}",
+                                                                    "size": 12,
+                                                                    "ignore": false,
+                                                                    "visible": true,
+                                                                    "enabled": true,
+                                                                    "isRequired": false,
+                                                                    "label": "Bathroom count",
+                                                                    "id": "integer-number-property-property_bathroom_count",
+                                                                    "extraSettings": {
+                                                                        "numberType": "integer",
+                                                                        "fractionSize": 0,
+                                                                        "type": "one"
+                                                                    },
+                                                                    "col": 0
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cols": [
+                                                                {
+                                                                    "type": "number",
+                                                                    "placeholder": "Living area (Sqft)",
+                                                                    "i18n": {
+                                                                        "en_us": {
+                                                                            "placeholder": "Living area (Sqft)",
+                                                                            "label": "Living area (Sqft)"
+                                                                        }
+                                                                    },
+                                                                    "labelAlign": "top",
+                                                                    "value": "{{property.grossLivingAreaSquareFeetNumber}}",
+                                                                    "size": 12,
+                                                                    "ignore": false,
+                                                                    "visible": true,
+                                                                    "enabled": true,
+                                                                    "isRequired": false,
+                                                                    "label": "Living area (Sqft)",
+                                                                    "id": "integer-number-property-gross_living_area_square_feet_number",
+                                                                    "extraSettings": {
+                                                                        "numberType": "integer",
+                                                                        "fractionSize": 0,
+                                                                        "type": "one"
+                                                                    },
+                                                                    "col": 0
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cols": [
+                                                                {
+                                                                    "type": "number",
+                                                                    "placeholder": "Year built",
+                                                                    "i18n": {
+                                                                        "en_us": {
+                                                                            "placeholder": "Year built",
+                                                                            "label": "Year built"
+                                                                        }
+                                                                    },
+                                                                    "labelAlign": "top",
+                                                                    "value": "{{property.propertyStructureBuiltYear}}",
+                                                                    "size": 12,
+                                                                    "ignore": false,
+                                                                    "visible": true,
+                                                                    "enabled": true,
+                                                                    "isRequired": false,
+                                                                    "label": "Year built",
+                                                                    "id": "integer-number-propertyStructureBuiltYear",
+                                                                    "extraSettings": {
+                                                                        "numberType": "integer",
+                                                                        "fractionSize": 0,
+                                                                        "type": "one"
+                                                                    },
+                                                                    "col": 0
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cols": [
+                                                                {
+                                                                    "type": "number",
+                                                                    "placeholder": "Lot size",
+                                                                    "i18n": {
+                                                                        "en_us": {
+                                                                            "placeholder": "Lot size",
+                                                                            "label": "Lot size"
+                                                                        }
+                                                                    },
+                                                                    "labelAlign": "top",
+                                                                    "value": "{{property.propertyAcreageNumber}}",
+                                                                    "size": 12,
+                                                                    "ignore": false,
+                                                                    "visible": true,
+                                                                    "enabled": true,
+                                                                    "isRequired": false,
+                                                                    "label": "Lot size",
+                                                                    "id": "integer-number5",
+                                                                    "extraSettings": {
+                                                                        "numberType": "integer",
+                                                                        "fractionSize": 0,
+                                                                        "type": "one"
+                                                                    },
+                                                                    "col": 0
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "col": 3
+                                        },
+                                        {
+                                            "type": "panel",
+                                            "i18n": {},
+                                            "labelAlign": "top",
+                                            "size": 3,
+                                            "ignore": false,
+                                            "visible": true,
+                                            "enabled": true,
+                                            "isRequired": false,
+                                            "styleClass": "property-layout-column",
+                                            "id": "sub-panel3",
+                                            "extraSettings": {
+                                                "collapsible": false,
+                                                "collapsed": false,
+                                                "showBorder": false,
+                                                "saveButtonVisible": true,
+                                                "saveButtonEnabled": true,
+                                                "cancelButtonVisible": true,
+                                                "cancelButtonEnabled": true,
+                                                "layoutDefinition": {
+                                                    "rows": [
+                                                        {
+                                                            "cols": [
+                                                                {
+                                                                    "type": "htmlComponent",
+                                                                    "i18n": {
+                                                                        "en_us": {
+                                                                            "value": "<p><span style=\"font-size:14px\"><strong>Mortgage Insurrance</strong></span></p>\n"
+                                                                        },
+                                                                        "de_de": {},
+                                                                        "fr_fr": {},
+                                                                        "it_it": {},
+                                                                        "es_es": {}
+                                                                    },
+                                                                    "labelAlign": "top",
+                                                                    "value": "<p><span style=\"font-size:14px\"><strong>Mortgage Insurrance</strong></span></p>\n",
+                                                                    "defaultValue": false,
+                                                                    "size": 12,
+                                                                    "ignore": false,
+                                                                    "visible": true,
+                                                                    "enabled": true,
+                                                                    "isRequired": false,
+                                                                    "id": "output4",
+                                                                    "col": 0
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cols": [
+                                                                {
+                                                                    "type": "select",
+                                                                    "extraSettings": {
+                                                                        "tagsEnabled": false,
+                                                                        "preselectAll": false,
+                                                                        "enableAutocomplete": false,
+                                                                        "dataSource": "Static",
+                                                                        "items": [
+                                                                            {
+                                                                                "text": "Yes",
+                                                                                "value": "1"
+                                                                            },
+                                                                            {
+                                                                                "text": "No",
+                                                                                "value": "0"
+                                                                            }
+                                                                        ],
+                                                                        "storage": "Id",
+                                                                        "identity": "value",
+                                                                        "linkTarget": "_blank",
+                                                                        "multi": false
+                                                                    },
+                                                                    "i18n": {
+                                                                        "en_us": {
+                                                                            "extraSettings": {
+                                                                                "items": [
+                                                                                    {
+                                                                                        "text": "Yes",
+                                                                                        "value": "1"
+                                                                                    },
+                                                                                    {
+                                                                                        "text": "No",
+                                                                                        "value": "0"
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            "placeholder": "Is there MI?",
+                                                                            "label": "Is there MI?"
+                                                                        }
+                                                                    },
+                                                                    "placeholder": "Is there MI?",
+                                                                    "enabled": true,
+                                                                    "labelAlign": "top",
+                                                                    "value": "{{loan.miCoverageExistsIndicator}}",
+                                                                    "size": 12,
+                                                                    "ignore": false,
+                                                                    "visible": true,
+                                                                    "isRequired": true,
+                                                                    "label": "Is there MI?",
+                                                                    "id": "single-select-loan-mi_coverage_exists_indicator",
+                                                                    "col": 0
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cols": [
+                                                                {
+                                                                    "type": "subform",
+                                                                    "labelAlign": "top",
+                                                                    "value": "{{miData}}",
+                                                                    "defaultValue": "",
+                                                                    "description": "",
+                                                                    "i18n": {
+                                                                        "en_us": {
+                                                                            "description": "",
+                                                                            "customValidations": "",
+                                                                            "label": "",
+                                                                            "extraSettings": {
+                                                                                "minItemsErrorMessage": "",
+                                                                                "maxItemsErrorMessage": "",
+                                                                                "addButtonText": ""
+                                                                            }
+                                                                        },
+                                                                        "de_de": {
+                                                                            "description": "",
+                                                                            "customValidations": "",
+                                                                            "label": "",
+                                                                            "extraSettings": {
+                                                                                "minItemsErrorMessage": "",
+                                                                                "maxItemsErrorMessage": "",
+                                                                                "addButtonText": ""
+                                                                            }
+                                                                        },
+                                                                        "fr_fr": {
+                                                                            "description": "",
+                                                                            "customValidations": "",
+                                                                            "label": "",
+                                                                            "extraSettings": {
+                                                                                "minItemsErrorMessage": "",
+                                                                                "maxItemsErrorMessage": "",
+                                                                                "addButtonText": ""
+                                                                            }
+                                                                        },
+                                                                        "it_it": {
+                                                                            "description": "",
+                                                                            "customValidations": "",
+                                                                            "label": "",
+                                                                            "extraSettings": {
+                                                                                "minItemsErrorMessage": "",
+                                                                                "maxItemsErrorMessage": "",
+                                                                                "addButtonText": ""
+                                                                            }
+                                                                        },
+                                                                        "es_es": {
+                                                                            "description": "",
+                                                                            "customValidations": "",
+                                                                            "label": "",
+                                                                            "extraSettings": {
+                                                                                "minItemsErrorMessage": "",
+                                                                                "maxItemsErrorMessage": "",
+                                                                                "addButtonText": ""
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "size": 12,
+                                                                    "ignore": false,
+                                                                    "visible": true,
+                                                                    "enabled": true,
+                                                                    "isRequired": false,
+                                                                    "styleClass": "",
+                                                                    "customValidations": "",
+                                                                    "label": "",
+                                                                    "extraSettings": {
+                                                                        "showBorder": false,
+                                                                        "minItems": 1,
+                                                                        "minItemsErrorMessage": "",
+                                                                        "maxItems": 1,
+                                                                        "maxItemsErrorMessage": "",
+                                                                        "collapsible": false,
+                                                                        "collapsed": false,
+                                                                        "formRef": {
+                                                                            "id": "FORM_MODEL-4ccd0a69-f485-4716-af67-3ba17adccd57",
+                                                                            "key": "propertyAddMortgageInsuranceSubForm"
+                                                                        },
+                                                                        "multipleEntries": true,
+                                                                        "showAddButton": false,
+                                                                        "showDeleteButton": false,
+                                                                        "addButtonText": "",
+                                                                        "layoutDefinition": {
+                                                                            "rows": [
+                                                                                {
+                                                                                    "cols": [
+                                                                                        {
+                                                                                            "type": "text",
+                                                                                            "extraSettings": {},
+                                                                                            "i18n": {
+                                                                                                "en_us": {
+                                                                                                    "placeholder": "Code",
+                                                                                                    "label": "Code"
+                                                                                                },
+                                                                                                "de_de": {},
+                                                                                                "fr_fr": {},
+                                                                                                "it_it": {},
+                                                                                                "es_es": {}
+                                                                                            },
+                                                                                            "placeholder": "Code",
+                                                                                            "labelAlign": "top",
+                                                                                            "value": "{{miCompanyNameType}}",
+                                                                                            "size": 12,
+                                                                                            "ignore": false,
+                                                                                            "visible": true,
+                                                                                            "enabled": "{{$payload.loan.miCoverageExistsIndicator === \"1\"}}",
+                                                                                            "isRequired": "{{$payload.loan.miCoverageExistsIndicator === \"1\"}}",
+                                                                                            "label": "Code",
+                                                                                            "id": "text-miCompanyNameType",
+                                                                                            "col": 0
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "cols": [
+                                                                                        {
+                                                                                            "type": "text",
+                                                                                            "extraSettings": {},
+                                                                                            "i18n": {
+                                                                                                "en_us": {
+                                                                                                    "placeholder": "Certificate Number",
+                                                                                                    "label": "Certificate Number"
+                                                                                                },
+                                                                                                "de_de": {},
+                                                                                                "fr_fr": {},
+                                                                                                "it_it": {},
+                                                                                                "es_es": {}
+                                                                                            },
+                                                                                            "placeholder": "Certificate Number",
+                                                                                            "labelAlign": "top",
+                                                                                            "value": "{{miCertificateIdentifier}}",
+                                                                                            "size": 12,
+                                                                                            "ignore": false,
+                                                                                            "visible": true,
+                                                                                            "enabled": "{{$payload.loan.miCoverageExistsIndicator === \"1\"}}",
+                                                                                            "isRequired": false,
+                                                                                            "label": "Certificate Number",
+                                                                                            "id": "text-miCertificateIdentifier",
+                                                                                            "col": 0
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "cols": [
+                                                                                        {
+                                                                                            "type": "text",
+                                                                                            "extraSettings": {},
+                                                                                            "i18n": {
+                                                                                                "en_us": {
+                                                                                                    "placeholder": "Pool number",
+                                                                                                    "label": "Pool number"
+                                                                                                },
+                                                                                                "de_de": {},
+                                                                                                "fr_fr": {},
+                                                                                                "it_it": {},
+                                                                                                "es_es": {}
+                                                                                            },
+                                                                                            "placeholder": "Pool number",
+                                                                                            "labelAlign": "top",
+                                                                                            "value": "{{miPoolInsuranceCertificateIdentifier}}",
+                                                                                            "size": 12,
+                                                                                            "ignore": false,
+                                                                                            "visible": true,
+                                                                                            "enabled": "{{$payload.loan.miCoverageExistsIndicator === \"1\"}}",
+                                                                                            "isRequired": false,
+                                                                                            "label": "Pool number",
+                                                                                            "id": "text15",
+                                                                                            "col": 0
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    },
+                                                                    "id": "sub-form-miData",
+                                                                    "col": 0
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cols": [
+                                                                {
+                                                                    "type": "subform",
+                                                                    "labelAlign": "top",
+                                                                    "value": "{{insuranceClaims}}",
+                                                                    "defaultValue": "",
+                                                                    "description": "",
+                                                                    "i18n": {
+                                                                        "en_us": {
+                                                                            "description": "",
+                                                                            "customValidations": "",
+                                                                            "label": "",
+                                                                            "extraSettings": {
+                                                                                "minItemsErrorMessage": "",
+                                                                                "maxItemsErrorMessage": "",
+                                                                                "addButtonText": ""
+                                                                            }
+                                                                        },
+                                                                        "de_de": {
+                                                                            "description": "",
+                                                                            "customValidations": "",
+                                                                            "label": "",
+                                                                            "extraSettings": {
+                                                                                "minItemsErrorMessage": "",
+                                                                                "maxItemsErrorMessage": "",
+                                                                                "addButtonText": ""
+                                                                            }
+                                                                        },
+                                                                        "fr_fr": {
+                                                                            "description": "",
+                                                                            "customValidations": "",
+                                                                            "label": "",
+                                                                            "extraSettings": {
+                                                                                "minItemsErrorMessage": "",
+                                                                                "maxItemsErrorMessage": "",
+                                                                                "addButtonText": ""
+                                                                            }
+                                                                        },
+                                                                        "it_it": {
+                                                                            "description": "",
+                                                                            "customValidations": "",
+                                                                            "label": "",
+                                                                            "extraSettings": {
+                                                                                "minItemsErrorMessage": "",
+                                                                                "maxItemsErrorMessage": "",
+                                                                                "addButtonText": ""
+                                                                            }
+                                                                        },
+                                                                        "es_es": {
+                                                                            "description": "",
+                                                                            "customValidations": "",
+                                                                            "label": "",
+                                                                            "extraSettings": {
+                                                                                "minItemsErrorMessage": "",
+                                                                                "maxItemsErrorMessage": "",
+                                                                                "addButtonText": ""
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "size": 12,
+                                                                    "ignore": false,
+                                                                    "visible": true,
+                                                                    "enabled": true,
+                                                                    "isRequired": false,
+                                                                    "styleClass": "",
+                                                                    "customValidations": "",
+                                                                    "label": "",
+                                                                    "extraSettings": {
+                                                                        "showBorder": false,
+                                                                        "minItems": 1,
+                                                                        "minItemsErrorMessage": "",
+                                                                        "maxItems": 1,
+                                                                        "maxItemsErrorMessage": "",
+                                                                        "collapsible": false,
+                                                                        "collapsed": false,
+                                                                        "formRef": {
+                                                                            "id": "FORM_MODEL-18293ac2-1963-4b49-9fe0-e51c1e775fcc",
+                                                                            "key": "insuranceClaimForm"
+                                                                        },
+                                                                        "multipleEntries": true,
+                                                                        "showAddButton": false,
+                                                                        "showDeleteButton": false,
+                                                                        "addButtonText": "",
+                                                                        "layoutDefinition": {
+                                                                            "rows": [
+                                                                                {
+                                                                                    "cols": [
+                                                                                        {
+                                                                                            "type": "select",
+                                                                                            "extraSettings": {
+                                                                                                "tagsEnabled": false,
+                                                                                                "preselectAll": false,
+                                                                                                "enableAutocomplete": false,
+                                                                                                "dataSource": "Static",
+                                                                                                "items": [
+                                                                                                    {
+                                                                                                        "text": "NA",
+                                                                                                        "value": "NA"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "text": "Paid",
+                                                                                                        "value": "Paid"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "text": "Unpaid",
+                                                                                                        "value": "Unpaid"
+                                                                                                    }
+                                                                                                ],
+                                                                                                "storage": "Id",
+                                                                                                "identity": "value",
+                                                                                                "linkTarget": "_blank",
+                                                                                                "multi": false
+                                                                                            },
+                                                                                            "i18n": {
+                                                                                                "en_us": {
+                                                                                                    "extraSettings": {
+                                                                                                        "items": [
+                                                                                                            {
+                                                                                                                "text": "NA",
+                                                                                                                "value": "NA"
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "text": "Paid",
+                                                                                                                "value": "Paid"
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "text": "Unpaid",
+                                                                                                                "value": "Unpaid"
+                                                                                                            }
+                                                                                                        ]
+                                                                                                    },
+                                                                                                    "placeholder": "Paid",
+                                                                                                    "label": "Paid"
+                                                                                                }
+                                                                                            },
+                                                                                            "placeholder": "Paid",
+                                                                                            "enabled": "{{$payload.loan.miCoverageExistsIndicator === \"1\"}}",
+                                                                                            "labelAlign": "top",
+                                                                                            "value": "{{insuranceClaimType}}",
+                                                                                            "size": 12,
+                                                                                            "ignore": false,
+                                                                                            "visible": true,
+                                                                                            "isRequired": false,
+                                                                                            "label": "Paid",
+                                                                                            "id": "single-select-insuranceClaimType",
+                                                                                            "col": 0
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "cols": [
+                                                                                        {
+                                                                                            "type": "date",
+                                                                                            "placeholder": "Claim filed date",
+                                                                                            "i18n": {
+                                                                                                "en_us": {
+                                                                                                    "placeholder": "Claim filed date",
+                                                                                                    "label": "Claim filed date"
+                                                                                                }
+                                                                                            },
+                                                                                            "labelAlign": "top",
+                                                                                            "value": "{{insuranceClaimFiledDate}}",
+                                                                                            "size": 12,
+                                                                                            "ignore": false,
+                                                                                            "visible": true,
+                                                                                            "enabled": "{{$payload.loan.miCoverageExistsIndicator === \"1\"}}",
+                                                                                            "isRequired": false,
+                                                                                            "label": "Claim filed date",
+                                                                                            "id": "date5",
+                                                                                            "extraSettings": {
+                                                                                                "enableTime": false
+                                                                                            },
+                                                                                            "col": 0
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "cols": [
+                                                                                        {
+                                                                                            "type": "number",
+                                                                                            "placeholder": "Claim amount",
+                                                                                            "i18n": {
+                                                                                                "en_us": {
+                                                                                                    "placeholder": "Claim amount",
+                                                                                                    "label": "Claim amount"
+                                                                                                }
+                                                                                            },
+                                                                                            "labelAlign": "top",
+                                                                                            "value": "{{actualInsuranceClaimAmount}}",
+                                                                                            "size": 12,
+                                                                                            "ignore": false,
+                                                                                            "visible": true,
+                                                                                            "enabled": "{{$payload.loan.miCoverageExistsIndicator === \"1\"}}",
+                                                                                            "isRequired": false,
+                                                                                            "label": "Claim amount",
+                                                                                            "id": "integer-number8",
+                                                                                            "extraSettings": {
+                                                                                                "numberType": "integer",
+                                                                                                "fractionSize": 0,
+                                                                                                "type": "one"
+                                                                                            },
+                                                                                            "col": 0
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    },
+                                                                    "id": "sub-form-insuranceClaims",
+                                                                    "col": 0
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "col": 6
+                                        },
+                                        {
+                                            "type": "panel",
+                                            "i18n": {},
+                                            "labelAlign": "top",
+                                            "size": 3,
+                                            "ignore": false,
+                                            "visible": true,
+                                            "enabled": true,
+                                            "isRequired": false,
+                                            "styleClass": "property-layout-column",
+                                            "id": "sub-panel4",
+                                            "extraSettings": {
+                                                "collapsible": false,
+                                                "collapsed": false,
+                                                "showBorder": false,
+                                                "saveButtonVisible": true,
+                                                "saveButtonEnabled": true,
+                                                "cancelButtonVisible": true,
+                                                "cancelButtonEnabled": true,
+                                                "layoutDefinition": {
+                                                    "rows": [
+                                                        {
+                                                            "cols": [
+                                                                {
+                                                                    "type": "htmlComponent",
+                                                                    "i18n": {
+                                                                        "en_us": {
+                                                                            "value": "<p><span style=\"font-size:14px\"><strong>Foreclosure</strong></span></p>\n"
+                                                                        },
+                                                                        "de_de": {},
+                                                                        "fr_fr": {},
+                                                                        "it_it": {},
+                                                                        "es_es": {}
+                                                                    },
+                                                                    "labelAlign": "top",
+                                                                    "value": "<p><span style=\"font-size:14px\"><strong>Foreclosure</strong></span></p>\n",
+                                                                    "defaultValue": false,
+                                                                    "size": 12,
+                                                                    "ignore": false,
+                                                                    "visible": true,
+                                                                    "enabled": true,
+                                                                    "isRequired": false,
+                                                                    "id": "output7",
+                                                                    "col": 0
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cols": [
+                                                                {
+                                                                    "type": "date",
+                                                                    "placeholder": "Title taken date",
+                                                                    "i18n": {
+                                                                        "en_us": {
+                                                                            "placeholder": "Title taken date",
+                                                                            "label": "Title taken date"
+                                                                        }
+                                                                    },
+                                                                    "labelAlign": "top",
+                                                                    "value": "{{foreclosure.titleTakenDate}}",
+                                                                    "size": 12,
+                                                                    "ignore": false,
+                                                                    "visible": true,
+                                                                    "enabled": true,
+                                                                    "isRequired": false,
+                                                                    "label": "Title taken date",
+                                                                    "id": "date-foreclosure-title_taken_date",
+                                                                    "extraSettings": {
+                                                                        "enableTime": false
+                                                                    },
+                                                                    "col": 0
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cols": [
+                                                                {
+                                                                    "type": "date",
+                                                                    "placeholder": "FC sale date",
+                                                                    "i18n": {
+                                                                        "en_us": {
+                                                                            "placeholder": "FC sale date",
+                                                                            "label": "FC sale date"
+                                                                        }
+                                                                    },
+                                                                    "labelAlign": "top",
+                                                                    "value": "{{foreclosure.foreclosureSaleActualDate}}",
+                                                                    "size": 12,
+                                                                    "ignore": false,
+                                                                    "visible": true,
+                                                                    "enabled": true,
+                                                                    "isRequired": true,
+                                                                    "label": "FC sale date",
+                                                                    "id": "date2",
+                                                                    "extraSettings": {
+                                                                        "enableTime": false
+                                                                    },
+                                                                    "col": 0
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cols": [
+                                                                {
+                                                                    "type": "number",
+                                                                    "placeholder": "FC sale value",
+                                                                    "i18n": {
+                                                                        "en_us": {
+                                                                            "placeholder": "FC sale value",
+                                                                            "label": "FC sale value"
+                                                                        }
+                                                                    },
+                                                                    "labelAlign": "top",
+                                                                    "value": "{{foreclosure.foreclosureSaleMarketValueAmount}}",
+                                                                    "size": 12,
+                                                                    "ignore": false,
+                                                                    "visible": true,
+                                                                    "enabled": true,
+                                                                    "isRequired": false,
+                                                                    "label": "FC sale value",
+                                                                    "id": "integer-number-foreclosure-foreclosure_sale_market_value_amount",
+                                                                    "extraSettings": {
+                                                                        "numberType": "integer",
+                                                                        "fractionSize": 0,
+                                                                        "type": "one"
+                                                                    },
+                                                                    "col": 0
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cols": [
+                                                                {
+                                                                    "type": "date",
+                                                                    "placeholder": "FC sale valuation date",
+                                                                    "i18n": {
+                                                                        "en_us": {
+                                                                            "placeholder": "FC sale valuation date",
+                                                                            "label": "FC sale valuation date"
+                                                                        }
+                                                                    },
+                                                                    "labelAlign": "top",
+                                                                    "value": "{{foreclosure.foreclosureSaleMarketValueDate}}",
+                                                                    "size": 12,
+                                                                    "ignore": false,
+                                                                    "visible": true,
+                                                                    "enabled": true,
+                                                                    "isRequired": false,
+                                                                    "label": "FC sale valuation date",
+                                                                    "id": "date-foreclosure-foreclosure_sale_market_value_date",
+                                                                    "extraSettings": {
+                                                                        "enableTime": false
+                                                                    },
+                                                                    "col": 0
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cols": [
+                                                                {
+                                                                    "type": "hline",
+                                                                    "i18n": {
+                                                                        "en_us": {},
+                                                                        "de_de": {},
+                                                                        "fr_fr": {},
+                                                                        "it_it": {},
+                                                                        "es_es": {}
+                                                                    },
+                                                                    "labelAlign": "top",
+                                                                    "size": 12,
+                                                                    "ignore": false,
+                                                                    "visible": true,
+                                                                    "enabled": true,
+                                                                    "isRequired": false,
+                                                                    "id": "hline1",
+                                                                    "col": 0
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cols": [
+                                                                {
+                                                                    "type": "htmlComponent",
+                                                                    "i18n": {
+                                                                        "en_us": {
+                                                                            "value": "<p><span style=\"font-size:14px\"><strong>Investor</strong></span></p>\n"
+                                                                        },
+                                                                        "de_de": {},
+                                                                        "fr_fr": {},
+                                                                        "it_it": {},
+                                                                        "es_es": {}
+                                                                    },
+                                                                    "labelAlign": "top",
+                                                                    "value": "<p><span style=\"font-size:14px\"><strong>Investor</strong></span></p>\n",
+                                                                    "defaultValue": false,
+                                                                    "size": 12,
+                                                                    "ignore": false,
+                                                                    "visible": true,
+                                                                    "enabled": true,
+                                                                    "isRequired": false,
+                                                                    "id": "output8",
+                                                                    "col": 0
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "cols": [
+                                                                {
+                                                                    "type": "subform",
+                                                                    "labelAlign": "top",
+                                                                    "value": "{{investorLoanInformations}}",
+                                                                    "defaultValue": "",
+                                                                    "description": "",
+                                                                    "i18n": {
+                                                                        "en_us": {
+                                                                            "description": "",
+                                                                            "customValidations": "",
+                                                                            "label": "",
+                                                                            "extraSettings": {
+                                                                                "minItemsErrorMessage": "",
+                                                                                "maxItemsErrorMessage": "",
+                                                                                "addButtonText": ""
+                                                                            }
+                                                                        },
+                                                                        "de_de": {
+                                                                            "description": "",
+                                                                            "customValidations": "",
+                                                                            "label": "",
+                                                                            "extraSettings": {
+                                                                                "minItemsErrorMessage": "",
+                                                                                "maxItemsErrorMessage": "",
+                                                                                "addButtonText": ""
+                                                                            }
+                                                                        },
+                                                                        "fr_fr": {
+                                                                            "description": "",
+                                                                            "customValidations": "",
+                                                                            "label": "",
+                                                                            "extraSettings": {
+                                                                                "minItemsErrorMessage": "",
+                                                                                "maxItemsErrorMessage": "",
+                                                                                "addButtonText": ""
+                                                                            }
+                                                                        },
+                                                                        "it_it": {
+                                                                            "description": "",
+                                                                            "customValidations": "",
+                                                                            "label": "",
+                                                                            "extraSettings": {
+                                                                                "minItemsErrorMessage": "",
+                                                                                "maxItemsErrorMessage": "",
+                                                                                "addButtonText": ""
+                                                                            }
+                                                                        },
+                                                                        "es_es": {
+                                                                            "description": "",
+                                                                            "customValidations": "",
+                                                                            "label": "",
+                                                                            "extraSettings": {
+                                                                                "minItemsErrorMessage": "",
+                                                                                "maxItemsErrorMessage": "",
+                                                                                "addButtonText": ""
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "size": 12,
+                                                                    "ignore": false,
+                                                                    "visible": true,
+                                                                    "enabled": true,
+                                                                    "isRequired": false,
+                                                                    "styleClass": "",
+                                                                    "customValidations": "",
+                                                                    "label": "",
+                                                                    "extraSettings": {
+                                                                        "showBorder": false,
+                                                                        "minItems": 1,
+                                                                        "minItemsErrorMessage": "",
+                                                                        "maxItems": 1,
+                                                                        "maxItemsErrorMessage": "",
+                                                                        "collapsible": false,
+                                                                        "collapsed": false,
+                                                                        "formRef": {
+                                                                            "id": "FORM_MODEL-dbf4d1d2-a880-4b5b-a843-7ba039768e47",
+                                                                            "key": "propertyAddInvestorLoanInformationSubForm"
+                                                                        },
+                                                                        "multipleEntries": true,
+                                                                        "showAddButton": false,
+                                                                        "showDeleteButton": false,
+                                                                        "addButtonText": "",
+                                                                        "layoutDefinition": {
+                                                                            "rows": [
+                                                                                {
+                                                                                    "cols": [
+                                                                                        {
+                                                                                            "type": "text",
+                                                                                            "extraSettings": {},
+                                                                                            "i18n": {
+                                                                                                "en_us": {
+                                                                                                    "placeholder": "Id",
+                                                                                                    "label": "Id"
+                                                                                                },
+                                                                                                "de_de": {},
+                                                                                                "fr_fr": {},
+                                                                                                "it_it": {},
+                                                                                                "es_es": {}
+                                                                                            },
+                                                                                            "placeholder": "Id",
+                                                                                            "labelAlign": "top",
+                                                                                            "value": "{{investorCode}}",
+                                                                                            "size": 12,
+                                                                                            "ignore": false,
+                                                                                            "visible": true,
+                                                                                            "enabled": true,
+                                                                                            "isRequired": true,
+                                                                                            "label": "Id",
+                                                                                            "id": "text13",
+                                                                                            "col": 0
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "cols": [
+                                                                                        {
+                                                                                            "type": "text",
+                                                                                            "extraSettings": {},
+                                                                                            "i18n": {
+                                                                                                "en_us": {
+                                                                                                    "placeholder": "Group",
+                                                                                                    "label": "Group"
+                                                                                                },
+                                                                                                "de_de": {},
+                                                                                                "fr_fr": {},
+                                                                                                "it_it": {},
+                                                                                                "es_es": {}
+                                                                                            },
+                                                                                            "placeholder": "Group",
+                                                                                            "labelAlign": "top",
+                                                                                            "value": "{{investorGroup}}",
+                                                                                            "size": 12,
+                                                                                            "ignore": false,
+                                                                                            "visible": true,
+                                                                                            "enabled": true,
+                                                                                            "isRequired": false,
+                                                                                            "label": "Group",
+                                                                                            "id": "text14",
+                                                                                            "col": 0
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "cols": [
+                                                                                        {
+                                                                                            "type": "text",
+                                                                                            "extraSettings": {},
+                                                                                            "i18n": {
+                                                                                                "en_us": {
+                                                                                                    "placeholder": "Investor name",
+                                                                                                    "label": "Investor name"
+                                                                                                },
+                                                                                                "de_de": {},
+                                                                                                "fr_fr": {},
+                                                                                                "it_it": {},
+                                                                                                "es_es": {}
+                                                                                            },
+                                                                                            "placeholder": "Investor name",
+                                                                                            "labelAlign": "top",
+                                                                                            "value": "{{investorName}}",
+                                                                                            "size": 12,
+                                                                                            "ignore": false,
+                                                                                            "visible": true,
+                                                                                            "enabled": true,
+                                                                                            "isRequired": false,
+                                                                                            "label": "Investor name",
+                                                                                            "id": "text15",
+                                                                                            "col": 0
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    },
+                                                                    "id": "sub-form-investorLoanInformations",
+                                                                    "col": 0
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "col": 9
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "col": 0
+                }
+            ]
+        },
+        {
+            "cols": [
+                {
+                    "size": 1,
+                    "type": ""
+                },
+                {
+                    "size": 1,
+                    "type": ""
+                },
+                {
+                    "size": 1,
+                    "type": ""
+                },
+                {
+                    "size": 1,
+                    "type": ""
+                },
+                {
+                    "size": 1,
+                    "type": ""
+                },
+                {
+                    "size": 1,
+                    "type": ""
+                },
+                {
+                    "size": 1,
+                    "type": ""
+                },
+                {
+                    "size": 1,
+                    "type": ""
+                },
+                {
+                    "size": 1,
+                    "type": ""
+                },
+                {
+                    "size": 1,
+                    "type": ""
+                },
+                {
+                    "type": "panel",
+                    "i18n": {},
+                    "labelAlign": "top",
+                    "size": 2,
+                    "ignore": false,
+                    "visible": true,
+                    "enabled": true,
+                    "isRequired": false,
+                    "id": "sub-panel8",
+                    "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                            "rows": [
+                                {
+                                    "cols": [
+                                        {
+                                            "type": "linkButton",
+                                            "extraSettings": {
+                                                "target": "_self",
+                                                "alignment": "left",
+                                                "iconAlignment": "right",
+                                                "showAsButton": true,
+                                                "type": "one"
+                                            },
+                                            "i18n": {
+                                                "en_us": {
+                                                    "value": "Cancel"
+                                                }
+                                            },
+                                            "labelAlign": "top",
+                                            "value": "Cancel",
+                                            "size": 6,
+                                            "ignore": false,
+                                            "visible": true,
+                                            "enabled": true,
+                                            "isRequired": false,
+                                            "id": "link-button-cancel",
+                                            "col": 0
+                                        },
+                                        {
+                                            "type": "scriptButton",
+                                            "extraSettings": {
+                                                "text": "Save",
+                                                "script": "{{$formValid}}",
+                                                "autoExecute": false,
+                                                "alignment": "left",
+                                                "iconAlignment": "right"
+                                            },
+                                            "i18n": {
+                                                "en_us": {
+                                                    "extraSettings": {
+                                                        "text": "Save"
+                                                    }
+                                                }
+                                            },
+                                            "labelAlign": "top",
+                                            "size": 6,
+                                            "ignore": false,
+                                            "visible": true,
+                                            "enabled": "{{$formValid}}",
+                                            "isRequired": false,
+                                            "id": "script-button-save",
+                                            "col": 6
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "col": 10
+                }
+            ]
+        }
+    ]
+}

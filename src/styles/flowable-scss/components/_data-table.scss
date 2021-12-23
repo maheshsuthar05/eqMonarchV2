@@ -1,0 +1,882 @@
+.flw__data-table {
+  @import "../thirdparty/react-table/react-table";
+}
+
+.flw__data-table {
+  font-weight: normal;
+}
+
+.flw__data-table .ReactTable {
+  border: 0;
+  border-radius: 5px;
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  padding-left: 12px;
+}
+
+.flw__data-table .ReactTable .rt-noData {
+  position: relative;
+  margin: 0;
+  padding: 10px 5px;
+  text-align: center;
+  color: #666;
+}
+
+.flw__data-table .ReactTable .rt-resizer {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.flw__data-table .ReactTable .rt-resizer::after {
+  content: "";
+  width: 1px;
+  border-right: 1px solid $flw-forms-border-color;
+  border-right: 1px solid var(--flw-forms-border-color, $flw-forms-border-color);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -2px;
+  height: 100%;
+}
+
+.flw__data-table .ReactTable .rt-resizer:hover {
+  opacity: 1;
+}
+
+.flw__data-table .ReactTable .rt-thead {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  overflow: hidden;
+  background-color: $flw-forms-color-secondary;
+  background-color: var(--flw-forms-color-secondary, $flw-forms-color-secondary);
+  border: 1px solid $flw-forms-color-secondary;
+  border: 1px solid var(--flw-forms-color-secondary, $flw-forms-color-secondary);
+}
+
+.flw__data-table .ReactTable .rt-thead.-header {
+  box-shadow: none;
+  padding: 0;
+  text-align: left;
+  vertical-align: bottom;
+  font-weight: normal;
+  color: $flw-forms-muted-text-color;
+  color: var(--flw-forms-muted-text-color, $flw-forms-muted-text-color);
+  text-transform: uppercase;
+  font-weight: 300;
+  text-transform: none;
+  // background: #00769b;
+}
+
+.flw__data-table .ReactTable .rt-thead.-filters {
+  border: none;
+  border-radius: 0;
+  margin-top: -8px;
+}
+
+.flw__data-table .ReactTable .rt-thead.-filters .rt-th {
+  border: 0;
+  padding-top: 0;
+  padding-bottom: $flw-gutter;
+  padding-bottom: var(--flw-gutter, $flw-gutter);
+}
+
+.flw__data-table .ReactTable .rt-thead .rt-th {
+  border: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.flw__data-table .ReactTable .rt-thead .rt-th .flw__data-table__header__sortable:hover {
+  color: $flw-forms-label-text-color;
+  color: var(--flw-forms-label-text-color, $flw-forms-label-text-color);
+}
+
+.flw__data-table .ReactTable .rt-thead .rt-th .flw__data-table__header__sortable:after {
+  content: "";
+  background-image: url(svg-encode($flw-triangle-up-down-icon, #fff, #fff));
+  width: 21px;
+  height: 9px;
+  display: inline-block;
+  margin-top: -10px;
+  opacity: 0.2;
+}
+
+.flw__data-table .ReactTable .rt-thead .rt-th.-sort-asc {
+  box-shadow: none;
+}
+
+.flw__data-table .ReactTable .rt-thead .rt-th.-sort-asc .flw__data-table__header__sortable:after {
+  content: "";
+  background-image: url(svg-encode($flw-triangle-up-icon, #fff, #fff));
+  width: 21px;
+  height: 15px;
+  display: inline-block;
+  margin-top: -10px;
+  opacity: 0.8;
+}
+
+.flw__data-table .ReactTable .rt-thead .rt-th.-sort-desc {
+  box-shadow: none;
+}
+
+.flw__data-table .ReactTable .rt-thead .rt-th.-sort-desc .flw__data-table__header__sortable:after {
+  content: "";
+  background-image: url(svg-encode($flw-triangle-down-icon, #000, #666));
+  width: 21px;
+  height: 15px;
+  display: inline-block;
+  margin-top: -10px;
+  opacity: 0.8;
+}
+
+.flw__data-table .ReactTable .rt-thead .rt-th:focus {
+  outline: none;
+}
+
+.flw__data-table .ReactTable .rt-thead .rt-th input[type="checkbox"] {
+  display: none;
+}
+
+.flw__data-table .ReactTable .rt-tbody .rt-tr-group {
+  border-bottom: none;
+  border-left: 1px solid $flw-forms-border-color;
+  border-left: 1px solid var(--flw-forms-border-color, $flw-forms-border-color);
+  border-right: 1px solid $flw-forms-border-color;
+  border-right: 1px solid var(--flw-forms-border-color, $flw-forms-border-color);
+}
+
+.flw__data-table .ReactTable .rt-tbody .rt-tr-group .rt-tr:not(.-padRow) {
+  // border-top: 1px solid $flw-forms-border-color;
+  // border-top: 1px solid var(--flw-forms-border-color, $flw-forms-border-color);
+  // border-left: 0.5px solid #666 !important;  //c6c6c6
+  // border-right: 0.5px solid #666 !important;
+  border-bottom: 0.5px solid #e5e5e5 !important;
+  // border-bottom-left-radius: 5px;
+  // border-bottom-right-radius: 5px;
+}
+
+.flw__data-table .ReactTable .rt-tbody .rt-tr-group .rt-tr.-padRow {
+  border-top: 1px solid $flw-forms-transparent;
+  border-top: 1px solid var(--flw-forms-transparent, $flw-forms-transparent);
+}
+
+.flw__data-table .ReactTable .rt-tbody .rt-tr-group .rt-tr.row-selected {
+  background: $flw-forms-selected-row-background-color;
+  background: var(--flw-forms-selected-row-background-color, $flw-forms-selected-row-background-color);
+}
+
+.flw__data-table .ReactTable .rt-tbody .rt-td {
+  vertical-align: top;
+  padding: 10px;
+  border-right: 0;
+}
+
+.flw__data-table .ReactTable .rt-tbody .rt-td.flw__data-table__cell--custom-component {
+  overflow: visible;
+}
+
+.flw__data-table .ReactTable .rt-tbody .rt-td[role="gridcell"] {
+  padding-left: 14px !important;
+}
+
+.flw__data-table .ReactTable .rt-tbody .rt-td input[type="checkbox"] {
+  margin-right: $flw-gutter;
+  margin-right: var(--flw-gutter, $flw-gutter);
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  overflow: hidden;
+  margin-top: -4px;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: $flw-forms-transparent;
+  background-color: var(--flw-forms-transparent, $flw-forms-transparent);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: 1px solid $flw-color-lightgray;
+  border: 1px solid var(--flw-color-lightgray, $flw-color-lightgray);
+  transition: 0.2s ease-in-out;
+  transition-property: background-color, border;
+  cursor: pointer;
+  margin-top: -1px;
+  margin-left: 0;
+  background-color: $flw-forms-background-color;
+  background-color: var(--flw-forms-background-color, $flw-forms-background-color);
+}
+
+.flw__data-table .ReactTable .rt-tbody .rt-td input[type="checkbox"]:focus {
+  outline: none;
+  border-color: $flw-forms-color;
+  border-color: var(--flw-forms-color, $flw-forms-color);
+}
+
+.flw__data-table .ReactTable .rt-tbody .rt-td input[type="checkbox"]:checked {
+  background-color: $flw-forms-color;
+  background-color: var(--flw-forms-color, $flw-forms-color);
+  border-color: $flw-forms-transparent;
+  border-color: var(--flw-forms-transparent, $flw-forms-transparent);
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2214%22%20height%3D%2211%22%20viewBox%3D%220%200%2014%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23fff%22%20points%3D%2212%201%205%207.5%202%205%201%205.5%205%2010%2013%201.5%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+
+.flw__data-table .ReactTable .rt-tbody .rt-td input[type="checkbox"][disabled] {
+  background-color: $flw-forms-muted-background-color;
+  background-color: var(--flw-forms-muted-background-color, $flw-forms-muted-background-color);
+  border: 1px solid $flw-forms-border-color;
+  border: 1px solid var(--flw-forms-border-color, $flw-forms-border-color);
+}
+
+.flw__data-table .ReactTable .rt-tbody .rt-td input[type="radio"] {
+  margin-right: $flw-gutter;
+  margin-right: var(--flw-gutter, $flw-gutter);
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  overflow: hidden;
+  margin-top: -4px;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: $flw-forms-transparent;
+  background-color: var(--flw-forms-transparent, $flw-forms-transparent);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: 1px solid $flw-color-lightgray;
+  border: 1px solid var(--flw-color-lightgray, $flw-color-lightgray);
+  transition: 0.2s ease-in-out;
+  transition-property: background-color, border;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -1px;
+}
+
+.flw__data-table .ReactTable .rt-tbody .rt-td input[type="radio"]:focus {
+  outline: none;
+  border-color: $flw-forms-color;
+  border-color: var(--flw-forms-color, $flw-forms-color);
+}
+
+.flw__data-table .ReactTable .rt-tbody .rt-td input[type="radio"]:checked {
+  background-color: $flw-forms-color;
+  background-color: var(--flw-forms-color, $flw-forms-color);
+  border-color: $flw-forms-transparent;
+  border-color: var(--flw-forms-transparent, $flw-forms-transparent);
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Ccircle%20fill%3D%22%23fff%22%20cx%3D%228%22%20cy%3D%228%22%20r%3D%222%22%20%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.flw__data-table .ReactTable .rt-tbody .rt-td > .flw__component {
+  margin: 0;
+}
+
+.flw__data-table .ReactTable .rt-tbody {
+  overflow: visible;
+}
+
+.flw__data-table .ReactTable .rt-table {
+  overflow: visible;
+  overflow-x: auto;
+  align-items: stretch;
+  z-index: 0;
+}
+
+.flw__data-table .ReactTable.-highlight .rt-tbody .rt-tr-group:hover > :not(.-padRow) {
+  // background-color: $flw-forms-muted-background-color;
+  // background-color: var(--flw-forms-muted-background-color, $flw-forms-muted-background-color);
+  background-color: #efefef !important;
+}
+
+.flw__data-table .ReactTable .pagination-bottom {
+  z-index: 1;
+}
+
+.flw__data-table .ReactTable .-pagination {
+  box-shadow: none;
+  border-top: 1px solid $flw-forms-border-color;
+  border-top: 1px solid var(--flw-forms-border-color, $flw-forms-border-color);
+  padding: 0;
+  border-left: 1px solid $flw-forms-border-color;
+  border-left: 1px solid var(--flw-forms-border-color, $flw-forms-border-color);
+  border-right: 1px solid $flw-forms-border-color;
+  border-right: 1px solid var(--flw-forms-border-color, $flw-forms-border-color);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  min-height: 41px;
+}
+
+.flw__data-table .ReactTable .-pagination input,
+.flw__data-table .ReactTable .-pagination select {
+  color: $flw-forms-text-color;
+  color: var(--flw-forms-text-color, $flw-forms-text-color);
+  background: $flw-forms-background-color;
+  background: var(--flw-forms-background-color, $flw-forms-background-color);
+  border: 1px solid $flw-forms-border-color;
+  border: 1px solid var(--flw-forms-border-color, $flw-forms-border-color);
+}
+
+.flw__data-table .ReactTable .-pagination option:checked,
+.flw__data-table .ReactTable .-pagination option:hover {
+  color: $flw-forms-label-text-color;
+  color: var(--flw-forms-label-text-color, $flw-forms-label-text-color);
+  background-color: $flw-forms-color;
+  background-color: var(--flw-forms-color, $flw-forms-color);
+}
+
+.flw__data-table .ReactTable .-pagination .-previous,
+.flw__data-table .ReactTable .-pagination .-next {
+  flex: 0 0 auto;
+  border-left: 1px solid $flw-forms-border-color;
+  border-left: 1px solid var(--flw-forms-border-color, $flw-forms-border-color);
+}
+
+.flw__data-table .ReactTable .-pagination .-previous .-btn,
+.flw__data-table .ReactTable .-pagination .-next .-btn {
+  height: 100%;
+}
+
+.flw__data-table .ReactTable .-pagination .-previous .-btn,
+.flw__data-table .ReactTable .-pagination .-previous .-btn[disabled],
+.flw__data-table .ReactTable .-pagination .-previous .-btn:not([disabled]) {
+  background: none;
+  overflow: hidden;
+  width: 40px;
+  background-image: url(svg-encode($flw-arrow-left-icon, #000, #999));
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 24px 24px;
+}
+
+.flw__data-table .ReactTable .-pagination .-next .-btn,
+.flw__data-table .ReactTable .-pagination .-next .-btn[disabled],
+.flw__data-table .ReactTable .-pagination .-next .-btn:not([disabled]) {
+  background: none;
+  overflow: hidden;
+  width: 40px;
+  background-image: url(svg-encode($flw-arrow-right-icon, #000, #999));
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 24px 24px;
+}
+
+.flw__data-table .ReactTable .-pagination .-previous .-btn[disabled],
+.flw__data-table .ReactTable .-pagination .-next .-btn[disabled] {
+  color: $flw-forms-muted-text-color;
+  color: var(--flw-forms-muted-text-color, $flw-forms-muted-text-color);
+}
+
+.flw__data-table .ReactTable .-pagination .-previous .-btn:not([disabled]),
+.flw__data-table .ReactTable .-pagination .-next .-btn:not([disabled]) {
+  color: $flw-forms-text-color;
+  color: var(--flw-forms-text-color, $flw-forms-text-color);
+}
+
+.flw__data-table .ReactTable .-pagination .-previous .-btn:not([disabled]):hover,
+.flw__data-table .ReactTable .-pagination .-next .-btn:not([disabled]):hover {
+  color: $flw-forms-color;
+  color: var(--flw-forms-color, $flw-forms-color);
+}
+
+.flw__data-table .ReactTable .-pagination input {
+  border: 1px solid $flw-forms-transparent;
+  border: 1px solid var(--flw-forms-transparent, $flw-forms-transparent);
+  width: 3em;
+  padding: 0;
+}
+
+.flw__data-table .ReactTable .-pagination .-center {
+  justify-content: flex-end;
+}
+
+.flw__data-table .ReactTable .-pagination .-pageJump input {
+  width: 3em;
+}
+
+.flw__data-table .ReactTable .-pagination .-pageSizeOptions {
+  margin: 0;
+}
+
+.flw__data-table .ReactTable .-pagination .-pageSizeOptions select {
+  padding: 12px 30px 12px 12px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  margin-right: 10px;
+  border: none;
+  border-right: 1px solid $flw-forms-border-color;
+  border-right: 1px solid var(--flw-forms-border-color, $flw-forms-border-color);
+  border-bottom-left-radius: 3px;
+  background-image: url(svg-encode($flw-chevron-down-icon, #000, #999));
+  background-repeat: no-repeat;
+  background-position: right 6px center;
+  cursor: pointer;
+}
+
+.flw__data-table .ReactTable .-pagination .-pageSizeOptions select::-ms-expand {
+  display: none;
+}
+
+.flw__data-table .ReactTable .rt-thead .flw__data-table__header {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  color: $flw-forms-background-color;
+  color: var(--flw-forms-background-color, $flw-forms-background-color);
+  // font-size: $flw-text-base;
+  // font-size: var(--flw-text-base, $flw-text-base);
+  font-weight: bold;
+  background-color: $flw-forms-transparent;
+  background-color: var(--flw-forms-transparent, $flw-forms-transparent);
+  color: #fff !important;
+}
+
+.flw__data-table .ReactTable .rt-thead .flw__data-table__header .flw__data-table__header__sortable:after {
+  opacity: 1;
+  color: #fff
+}
+
+.flw__data-table .ReactTable .rt-thead .flw__data-table__header .flw__data-table__header__sortable:hover {
+  color: $flw-forms-background-color;
+  color: var(--flw-forms-background-color, $flw-forms-background-color);
+  color: #fff !important;
+}
+
+.flw__data-table .ReactTable .rt-thead .flw__data-table__header .flw__data-table__header__sortable:hover:after {
+  opacity: 0.8;
+}
+
+.flw__data-table .ReactTable .rt-thead .flw__data-table__header.-sort-asc .flw__data-table__header__sortable:after {
+  opacity: 1;
+  color: #fff
+}
+
+.flw__data-table .ReactTable .rt-thead .flw__data-table__header.-sort-desc .flw__data-table__header__sortable:after {
+  opacity: 1;
+  color: #fff
+}
+
+.flw__data-table__cell--right,
+.flw__data-table__header--right {
+  text-align: right;
+}
+
+.flw__data-table__cell--left,
+.flw__data-table__header--left {
+  text-align: left;
+}
+
+.flw__data-table__cell--center,
+.flw__data-table__header--center {
+  text-align: center;
+}
+
+.flw__data-table__cell--justify,
+.flw__data-table__header--justify {
+  text-align: justify;
+}
+
+.flw__data-table__top__header {
+  display: flex;
+  padding: 2px 0;
+}
+
+.flw__data-table__top__header--left {
+  flex: 1 1 auto;
+  text-align: left;
+}
+
+.flw__data-table__top__header--right {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 20px;
+}
+
+.flw__data-table__top__header--right span {
+  margin-left: 10px;
+}
+
+.flw__data-table__top__header--right span.sort-columns:after {
+  content: "";
+  background-image: url(svg-encode($flw-gear-icon, #000, #21a9f9));
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  cursor: pointer;
+  background-size: contain;
+}
+
+.flw__data-table__top__header--right span.show-filters:after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  cursor: pointer;
+  background-size: contain;
+}
+
+.flw__data-table__top__header--right span.clear-filters:after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  cursor: pointer;
+  background-size: contain;
+}
+
+.flw__data-table__top__header--right span.refresh-data:after {
+  content: "";
+  background-image: url(svg-encode($flw-refresh-icon, #000, #21a9f9));
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  cursor: pointer;
+  background-size: contain;
+}
+
+.flw__data-table__top__header--right span.refreshing-data:after {
+  content: "";
+  background-image: url(svg-encode($flw-refresh-icon, #000, #999));
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  cursor: pointer;
+  background-size: contain;
+  animation: spin 0.5s infinite linear;
+}
+
+.flw__data-table__top__header--right div.sort-columns-menu {
+  display: none;
+  position: absolute;
+  z-index: 1020;
+  box-sizing: border-box;
+  min-width: 200px;
+  padding: 25px;
+  background: $flw-forms-background-color;
+  background: var(--flw-forms-background-color, $flw-forms-background-color);
+  color: $flw-forms-text-color;
+  color: var(--flw-forms-text-color, $flw-forms-text-color);
+  box-shadow: 0 5px 12px $flw-forms-shadow-color-0-15;
+  box-shadow: 0 5px 12px var(--flw-forms-shadow-color-0-15, $flw-forms-shadow-color-0-15);
+  margin-left: -205px;
+  display: block;
+  overflow-x: hidden;
+}
+
+.flw__data-table__top__header--right div.sort-columns-menu--hidden {
+  display: none;
+}
+
+.flw__data-table__top__header--right div.sort-columns-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 5px 0 0 7px;
+}
+
+.flw__data-table__top__header--right div.sort-columns-menu ul li {
+  cursor: pointer;
+  border-bottom: 1px solid $flw-forms-border-color;
+  border-bottom: 1px solid var(--flw-forms-border-color, $flw-forms-border-color);
+}
+
+.flw__data-table__top__header--right div.sort-columns-menu ul li div {
+  display: inline-block;
+}
+
+.flw__data-table__top__header--right div.sort-columns-menu ul li div.sort-column-label {
+  width: 120px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.flw__data-table__top__header--right div.sort-columns-menu ul li div.sort-column-label:before {
+  content: "";
+  background-image: url(svg-encode($flw-drag-list-icon, #000, #1e87f0));
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.flw__data-table__top__header--empty {
+  height: 0;
+  margin-bottom: 0;
+}
+
+.flw__data-table__title {
+  margin: 0 0 20px 0;
+  display: inline;
+  padding-left: 0;
+  margin-right: $flw-gutter;
+  margin-right: var(--flw-gutter, $flw-gutter);
+  font-size: $flw-table-header;
+  color: $flw-form-table-title-color;
+  color: var(--flw-form-table-title-color, $flw-form-table-title-color);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 23px;
+}
+
+.flw__data-table--linked .ReactTable.-highlight {
+  cursor: pointer;
+}
+
+.flw__data-table--disabled .ReactTable .rt-tbody .rt-td input[type="checkbox"],
+.flw__data-table--disabled .ReactTable .rt-tbody .rt-td input[type="radio"] {
+  background-color: $flw-forms-muted-background-color;
+  background-color: var(--flw-forms-muted-background-color, $flw-forms-muted-background-color);
+  border: 1px solid $flw-forms-border-color;
+  border: 1px solid var(--flw-forms-border-color, $flw-forms-border-color);
+  cursor: default;
+  pointer-events: none;
+}
+
+.flw__data-table--disabled .ReactTable .rt-tbody .rt-td input[type="checkbox"]:checked,
+.flw__data-table--disabled .ReactTable .rt-tbody .rt-td input[type="radio"]:checked {
+  background-color: $flw-forms-muted-background-color;
+  background-color: var(--flw-forms-muted-background-color, $flw-forms-muted-background-color);
+  border-color: $flw-forms-border-color;
+  border-color: var(--flw-forms-border-color, $flw-forms-border-color);
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2214%22%20height%3D%2211%22%20viewBox%3D%220%200%2014%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23999%22%20points%3D%2212%201%205%207.5%202%205%201%205.5%205%2010%2013%201.5%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+
+.flw__data-table--selectable .ReactTable .rt-td:first-child {
+  text-overflow: clip;
+}
+
+.flw__data-table--selectable .ReactTable .rt-tr-group {
+  cursor: pointer;
+}
+
+.flw__data-table__expandable {
+  padding: 0;
+  box-shadow: inset 0 5px 5px -5px $flw-forms-shadow-color-0-4;
+  box-shadow: inset 0 5px 5px -5px var(--flw-forms-shadow-color-0-4, $flw-forms-shadow-color-0-4);
+}
+
+.flw__data-table__expandable > .flw__component {
+  margin: 0;
+  background-color: $flw-forms-muted-background-color;
+  background-color: var(--flw-forms-muted-background-color, $flw-forms-muted-background-color);
+  border-left: 5px solid $flw-forms-color-secondary;
+  border-left: 5px solid var(--flw-forms-color-secondary, $flw-forms-color-secondary);
+  width: auto;
+}
+
+.flw__data-table__expander {
+  background-image: url(svg-encode($flw-chevron-down-icon, #000, #999));
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  margin: -4px;
+}
+
+.flw__data-table__expander--open {
+  background-image: url(svg-encode($flw-chevron-up-icon, #000, #999));
+}
+
+.flw-light-table.flw__data-table .flw__data-table__top__header {
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+.flw-light-table.flw__data-table .flw__data-table__top__header--right span.sort-columns:after,
+.flw-light-table.flw__data-table .flw__data-table__top__header--right span.show-filters:after,
+.flw-light-table.flw__data-table .flw__data-table__top__header--right span.clear-filters:after,
+.flw-light-table.flw__data-table .flw__data-table__top__header--right span.refresh-data:after,
+.flw-light-table.flw__data-table .flw__data-table__top__header--right span.refreshing-data:after {
+  width: 22px;
+  height: 22px;
+  background-size: contain;
+}
+
+.flw-light-table.flw__data-table .flw__data-table__title {
+  width: 100%;
+  color: inherit;
+  padding: 0;
+  font-size: $flw-text-lg;
+  font-size: var(--flw-text-lg, $flw-text-lg);
+  line-height: 1.4;
+  font-weight: 300;
+  padding-left: $flw-gutter;
+  padding-left: var(--flw-gutter, $flw-gutter);
+}
+
+.flw-light-table.flw__data-table .ReactTable {
+  border-bottom: none;
+  border-radius: 0;
+  margin-bottom: -20px;
+  overflow: hidden;
+}
+
+.flw-light-table.flw__data-table .ReactTable .rt-noData {
+  border: none;
+}
+
+.flw-light-table.flw__data-table .ReactTable.-highlight .rt-tbody .rt-tr-group:hover > :not(.-padRow) {
+  background-color: #efefef !important;
+}
+
+.flw-light-table.flw__data-table .ReactTable .rt-thead {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background-color: $flw-forms-background-color;
+  background-color: var(--flw-forms-background-color, $flw-forms-background-color);
+  border: none;
+}
+
+.flw-light-table.flw__data-table .ReactTable .flw__data-table__header {
+  padding: 5px;
+  color: $flw-forms-muted-text-color;
+  color: var(--flw-forms-muted-text-color, $flw-forms-muted-text-color);
+  font-size: $flw-text-sm;
+  font-size: var(--flw-text-sm, $flw-text-sm);
+  font-weight: 300;
+  background-color: $flw-forms-transparent;
+  background-color: var(--flw-forms-transparent, $flw-forms-transparent);
+}
+
+.flw-light-table.flw__data-table .ReactTable .flw__data-table__header .flw__data-table__header__sortable:after {
+  background-image: url(svg-encode($flw-triangle-up-down-icon, #000, #666));
+  opacity: 0.3;
+}
+
+.flw-light-table.flw__data-table .ReactTable .flw__data-table__header .flw__data-table__header__sortable:hover {
+  color: $flw-forms-label-text-color;
+  color: var(--flw-forms-label-text-color, $flw-forms-label-text-color);
+}
+
+.flw-light-table.flw__data-table .ReactTable .flw__data-table__header .flw__data-table__header__sortable:hover:after {
+  opacity: 0.8;
+}
+
+.flw-light-table.flw__data-table
+  .ReactTable
+  .flw__data-table__header.-sort-asc
+  .flw__data-table__header__sortable:after {
+  background-image: url(svg-encode($flw-triangle-up-icon, #fff, #666));
+}
+
+.flw-light-table.flw__data-table
+  .ReactTable
+  .flw__data-table__header.-sort-desc
+  .flw__data-table__header__sortable:after {
+  background-image: url(svg-encode($flw-triangle-down-icon, #fff, #666));
+}
+
+.flw-light-table.flw__data-table .ReactTable .rt-thead.-filters {
+  margin-top: 0;
+}
+
+.flw-light-table.flw__data-table .ReactTable .rt-thead.-filters .rt-th {
+  padding-bottom: $flw-gutter;
+  padding-bottom: var(--flw-gutter, $flw-gutter);
+}
+
+.flw-light-table.flw__data-table .ReactTable .rt-tr-group {
+  border-left: none;
+  border-right: none;
+}
+
+.flw-light-table.flw__data-table .ReactTable .-pagination {
+  border-left: none;
+  border-right: none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  min-height: 0;
+}
+
+.flw-light-table.flw__data-table .ReactTable .-pagination .-previous,
+.flw-light-table.flw__data-table .ReactTable .-pagination .-next {
+  border-left: none;
+}
+
+.flw-light-table.flw__data-table .ReactTable .-pagination .-previous .-btn,
+.flw-light-table.flw__data-table .ReactTable .-pagination .-previous .-btn[disabled],
+.flw-light-table.flw__data-table .ReactTable .-pagination .-previous .-btn:not([disabled]) {
+  background-image: url(svg-encode($flw-previous-icon-image, #000, #999));
+  background-size: auto;
+}
+
+.flw-light-table.flw__data-table .ReactTable .-pagination .-next .-btn,
+.flw-light-table.flw__data-table .ReactTable .-pagination .-next .-btn[disabled],
+.flw-light-table.flw__data-table .ReactTable .-pagination .-next .-btn:not([disabled]) {
+  background-image: url(svg-encode($flw-next-icon-image, #000, #999));
+  background-size: auto;
+}
+
+.flw-light-table.flw__data-table .ReactTable .-pagination .-pageSizeOptions select {
+  border-right: none;
+  border-bottom-left-radius: 0;
+}
+
+.flw-light-table.flw__data-table .ReactTable .flw__data-table__expandable {
+  padding: 10px 0 var(--flw-gutter, $flw-gutter) 10px;
+  box-shadow: none;
+}
+
+.flw-light-table.flw__data-table .ReactTable .flw__data-table__expandable > .flw__component {
+  margin: $flw-gutter;
+  margin: var(--flw-gutter, $flw-gutter);
+  background-color: $flw-forms-muted-background-color;
+  background-color: var(--flw-forms-muted-background-color, $flw-forms-muted-background-color);
+  border-left: 1px solid $flw-forms-border-color;
+  border-left: 1px solid var(--flw-forms-border-color, $flw-forms-border-color);
+  width: auto;
+}
+
+.flw-loading-bar,
+.flw__data-table .-loading {
+  height: 4px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: 1px;
+}
+
+.flw-loading-bar:before,
+.flw__data-table .-loading:before {
+  display: block;
+  position: absolute;
+  content: "";
+  left: -200px;
+  width: 200px;
+  height: 4px;
+  animation: flw-loading-bar-animation 2s linear infinite;
+}
+
+.flw__data-table .ReactTable .rt-thead.-filters input, .flw__data-table .ReactTable .rt-thead.-filters select{
+  color: #000000;
+}
+
+@keyframes flw-loading-bar-animation {
+  from {
+    left: -200px;
+    width: 30%;
+  }
+
+  50% {
+    width: 30%;
+  }
+
+  70% {
+    width: 70%;
+  }
+
+  80% {
+    left: 50%;
+  }
+
+  95% {
+    left: 120%;
+  }
+
+  to {
+    left: 100%;
+  }
+}

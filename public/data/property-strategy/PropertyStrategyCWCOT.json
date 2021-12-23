@@ -1,0 +1,4021 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "type": "panel",
+          "i18n": {},
+          "labelAlign": "top",
+          "size": 2,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "sub-panel190",
+          "extraSettings": {
+            "collapsible": false,
+            "collapsed": false,
+            "showBorder": false,
+            "saveButtonVisible": true,
+            "saveButtonEnabled": true,
+            "cancelButtonVisible": true,
+            "cancelButtonEnabled": true,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "type": "htmlComponent",
+                      "i18n": {
+                        "en_us": {
+                          "value": "<p>CWCOT  : {{propertyProjectionsResults.cwcot_net_loss_total}}</p>\n"
+                        },
+                        "de_de": {},
+                        "fr_fr": {},
+                        "it_it": {},
+                        "es_es": {}
+                      },
+                      "labelAlign": "top",
+                      "value": "<p>CWCOT  : {{propertyProjectionsResults.cwcot_net_loss_total}}</p>\n",
+                      "defaultValue": false,
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "output43",
+                      "col": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "col": 0
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "type": "panel",
+          "i18n": {},
+          "labelAlign": "top",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "sub-panel192",
+          "extraSettings": {
+            "collapsible": false,
+            "collapsed": false,
+            "showBorder": false,
+            "saveButtonVisible": true,
+            "saveButtonEnabled": true,
+            "cancelButtonVisible": true,
+            "cancelButtonEnabled": true,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel193",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p><strong>Item</strong></p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p><strong>Item</strong></p>\n",
+                                  "defaultValue": false,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output44",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p><strong>Months</strong></p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p><strong>Months</strong></p>\n",
+                                  "defaultValue": false,
+                                  "size": 1,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output67",
+                                  "col": 3
+                                },
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p><strong>$/mo</strong></p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p><strong>$/mo</strong></p>\n",
+                                  "defaultValue": false,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output45",
+                                  "col": 4
+                                },
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p><strong>Total</strong></p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p><strong>Total</strong></p>\n",
+                                  "defaultValue": false,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output46",
+                                  "col": 6
+                                },
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p><strong>Allowed</strong></p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p><strong>Allowed</strong></p>\n",
+                                  "defaultValue": false,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output47",
+                                  "col": 8
+                                },
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p><strong>Net</strong></p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p><strong>Net</strong></p>\n",
+                                  "defaultValue": false,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output48",
+                                  "col": 10
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel211",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Offer Value</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Offer Value</p>\n",
+                                  "defaultValue": false,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output49",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{value}}",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number517",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 4
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{value}}",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number516",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{value}}",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number515",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 8
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_net_loss_offer_value}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number514",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 10
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel210",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Servicer Contribution</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Servicer Contribution</p>\n",
+                                  "defaultValue": false,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output66",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{value}}",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number578",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 4
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{value}}",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number579",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{value}}",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number580",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 8
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_net_loss_servicer_contribution}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number581",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 10
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel194",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Eviction</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Eviction</p>\n",
+                                  "defaultValue": false,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output65",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{value}}",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number574",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 4
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_eviction_total}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number575",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_allowed_eviction}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number576",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 8
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_net_loss_eviction}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number577",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 10
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel195",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>CFK</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>CFK</p>\n",
+                                  "defaultValue": false,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output50",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{value}}",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number518",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 4
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_total_cfk}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number519",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_allowed_cfk}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number520",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 8
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_net_loss_cfk}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number521",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 10
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel196",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Baseline Debenture Interest Loss</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Baseline Debenture Interest Loss</p>\n",
+                                  "defaultValue": false,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output51",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{value}}",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number525",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 4
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_total_baseline_interest_loss}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number524",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_allowed_baseline_interest_loss}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number523",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 8
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_net_loss_baseline_interest_loss}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number522",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 10
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel197",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Curtailment Interest Loss</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Curtailment Interest Loss</p>\n",
+                                  "defaultValue": false,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output52",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{value}}",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number526",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 4
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_total_curtailment_interest_loss}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number527",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_allowed_curtailment_interest_loss}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number528",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 8
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_net_loss_curtailment_interest_loss}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number529",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 10
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel198",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>First 2 Months Interest</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>First 2 Months Interest</p>\n",
+                                  "defaultValue": false,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output53",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{value}}",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number533",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 4
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_total_first_two_months_interest}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number532",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_allowed_first_two_months_interest}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number531",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 8
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_net_loss_first_two_months_interest}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number530",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 10
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel200",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Carrying Costs</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Carrying Costs</p>\n",
+                                  "defaultValue": false,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output55",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_carrying_cost}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number538",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 4
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_total_carrying_costs}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number539",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_allowed_carrying_costs}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number540",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 8
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_net_loss_carrying_cost}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number541",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 10
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel201",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p><strong><em>HOA</em></strong> </p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p><strong><em>HOA</em></strong> </p>\n",
+                                  "defaultValue": false,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output56",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_months_hoa}}",
+                                  "defaultValue": 0,
+                                  "size": 1,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "float-number1",
+                                  "extraSettings": {
+                                    "numberType": "float",
+                                    "fractionSize": 2,
+                                    "type": "one"
+                                  },
+                                  "col": 3
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_hoa}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number545",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 4
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_total_hoa}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number544",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_allowed_hoa_costs}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number543",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 8
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_net_loss_hoa}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number542",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 10
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel202",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p><em><strong>Utilities</strong></em> </p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p><em><strong>Utilities</strong></em> </p>\n",
+                                  "defaultValue": false,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output57",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_months_utilities}}",
+                                  "defaultValue": 0,
+                                  "size": 1,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "float-number2",
+                                  "extraSettings": {
+                                    "numberType": "float",
+                                    "fractionSize": 2,
+                                    "type": "one"
+                                  },
+                                  "col": 3
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_utilities}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number549",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 4
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_total_utilities}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number548",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_allowed_utilities}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number547",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 8
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_net_loss_utilities}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number546",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 10
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel203",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p><em><strong>Maintenance</strong></em> </p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p><em><strong>Maintenance</strong></em> </p>\n",
+                                  "defaultValue": false,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output58",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_months_maintenance}}",
+                                  "defaultValue": 0,
+                                  "size": 1,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "float-number3",
+                                  "extraSettings": {
+                                    "numberType": "float",
+                                    "fractionSize": 2,
+                                    "type": "one"
+                                  },
+                                  "col": 3
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_maintenance}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number553",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 4
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_total_maintenance}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number552",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_allowed_maintenance}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number551",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 8
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_net_loss_maintenance}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number550",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 10
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel204",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p><em><strong>Taxes</strong></em> </p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p><em><strong>Taxes</strong></em> </p>\n",
+                                  "defaultValue": false,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output59",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_months_taxes}}",
+                                  "defaultValue": 0,
+                                  "size": 1,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "float-number4",
+                                  "extraSettings": {
+                                    "numberType": "float",
+                                    "fractionSize": 2,
+                                    "type": "one"
+                                  },
+                                  "col": 3
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_taxes}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number557",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 4
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_total_taxes}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number556",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_allowed_taxes}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number555",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 8
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_net_loss_taxes}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number554",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 10
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel205",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p><em><strong>Insurance</strong></em> </p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p><em><strong>Insurance</strong></em> </p>\n",
+                                  "defaultValue": false,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output60",
+                                  "col": 0
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_months_insurance}}",
+                                  "defaultValue": 0,
+                                  "size": 1,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "float-number5",
+                                  "extraSettings": {
+                                    "numberType": "float",
+                                    "fractionSize": 2,
+                                    "type": "one"
+                                  },
+                                  "col": 3
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_insurance}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number561",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 4
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_total_insurance}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number558",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_allowed_insurance}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number560",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 8
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_net_loss_insurance}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number559",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 10
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel206",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Repair</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Repair</p>\n",
+                                  "defaultValue": false,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output61",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{value}}",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number562",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 4
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_total_repair}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number563",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_allowed_repair}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number564",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 8
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_net_loss_repair}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number565",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 10
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel207",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Foreclosure Costs</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Foreclosure Costs</p>\n",
+                                  "defaultValue": false,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output62",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{value}}",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number566",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 4
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_total_foreclosure_costs}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number567",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 6
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_allowed_foreclosure_costs}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "integer-number568",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 8
+                                },
+                                {
+                                  "type": "number",
+                                  "i18n": {},
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_net_loss_foreclosure_cost}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "integer-number569",
+                                  "extraSettings": {
+                                    "numberType": "integer",
+                                    "fractionSize": 0,
+                                    "type": "one"
+                                  },
+                                  "col": 10
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "type": "panel",
+                      "i18n": {},
+                      "labelAlign": "top",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "sub-panel208",
+                      "extraSettings": {
+                        "collapsible": false,
+                        "collapsed": false,
+                        "showBorder": false,
+                        "saveButtonVisible": true,
+                        "saveButtonEnabled": true,
+                        "cancelButtonVisible": true,
+                        "cancelButtonEnabled": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "i18n": {
+                                    "en_us": {
+                                      "value": "<p>Total</p>\n"
+                                    },
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "<p>Total</p>\n",
+                                  "defaultValue": false,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "output63",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "text",
+                                  "extraSettings": {},
+                                  "i18n": {
+                                    "en_us": {},
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_month_total}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "text257",
+                                  "col": 4
+                                },
+                                {
+                                  "type": "text",
+                                  "extraSettings": {},
+                                  "i18n": {
+                                    "en_us": {},
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_total}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "text258",
+                                  "col": 6
+                                },
+                                {
+                                  "type": "text",
+                                  "extraSettings": {},
+                                  "i18n": {
+                                    "en_us": {},
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_allowed_total}}",
+                                  "defaultValue": 0,
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "text259",
+                                  "col": 8
+                                },
+                                {
+                                  "type": "text",
+                                  "extraSettings": {},
+                                  "i18n": {
+                                    "en_us": {},
+                                    "de_de": {},
+                                    "fr_fr": {},
+                                    "it_it": {},
+                                    "es_es": {}
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_net_loss_total}}",
+                                  "size": 2,
+                                  "ignore": false,
+                                  "visible": true,
+                                  "enabled": false,
+                                  "isRequired": false,
+                                  "id": "text260",
+                                  "col": 10
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "Month total",
+                                    "script": "{{propertyProjectionsResults.cwcot_carrying_cost+propertyProjectionsResults.cwcot_hoa_timeline+propertyProjectionsResults.cwcot_utilities+propertyProjectionsResults.cwcot_maintenance_timeline+propertyProjectionsResults.cwcot_taxes+propertyProjectionsResults.cwcot_insurance}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "Month total"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_month_total}}",
+                                  "defaultValue": 0,
+                                  "size": 4,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button13",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "net_loss_total",
+                                    "script": "{{propertyProjectionsResults.cwcot_net_loss_offer_value+propertyProjectionsResults.cwcot_net_loss_servicer_contribution+propertyProjectionsResults.cwcot_net_loss_eviction+propertyProjectionsResults.cwcot_net_loss_cfk+propertyProjectionsResults.cwcot_net_loss_baseline_interest_loss+propertyProjectionsResults.cwcot_net_loss_curtailment_interest_loss+propertyProjectionsResults.cwcot_net_loss_first_two_months_interest+propertyProjectionsResults.cwcot_net_loss_carrying_cost+propertyProjectionsResults.cwcot_net_loss_hoa+propertyProjectionsResults.cwcot_net_loss_utilities+propertyProjectionsResults.cwcot_net_loss_maintenance+propertyProjectionsResults.cwcot_net_loss_taxes+propertyProjectionsResults.cwcot_net_loss_repair+propertyProjectionsResults.cwcot_net_loss_foreclosure_cost}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "net_loss_total"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_net_loss_total_topTobottom}}",
+                                  "defaultValue": 0,
+                                  "size": 6,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button16",
+                                  "col": 6
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "Month carrying cost",
+                                    "script": "{{flw.sum([propertyProjectionsResults.cwcot_hoa,propertyProjectionsResults.cwcot_utilities,propertyProjectionsResults.cwcot_maintenance,propertyProjectionsResults.cwcot_taxes,propertyProjectionsResults.cwcot_insurance])}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "Month carrying cost"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_carrying_cost}}",
+                                  "defaultValue": 0,
+                                  "size": 4,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button35",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "total carrying cost",
+                                    "script": "{{flw.sum([propertyProjectionsResults.cwcot_total_hoa,propertyProjectionsResults.cwcot_total_utilities,propertyProjectionsResults.cwcot_total_maintenance,propertyProjectionsResults.cwcot_total_taxes,propertyProjectionsResults.cwcot_total_insurance])}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "total carrying cost"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_total_carrying_costs}}",
+                                  "defaultValue": 0,
+                                  "size": 4,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button36",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "allowed carrying cost",
+                                    "script": "{{flw.sum([propertyProjectionsResults.cwcot_allowed_hoa_costs,propertyProjectionsResults.cwcot_allowed_utilities,propertyProjectionsResults.cwcot_allowed_maintenance,propertyProjectionsResults.cwcot_allowed_taxes,propertyProjectionsResults.cwcot_allowed_insurance])}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "allowed carrying cost"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_allowed_carrying_costs}}",
+                                  "defaultValue": 0,
+                                  "size": 4,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button37",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "net loss carrying cost",
+                                    "script": "{{propertyProjectionsResults.cwcot_allowed_carrying_costs-propertyProjectionsResults.cwcot_total_carrying_costs}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "net loss carrying cost"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_net_loss_carrying_cost}}",
+                                  "defaultValue": 0,
+                                  "size": 4,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button38",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "net_loss_total_bottom",
+                                    "script": "{{flw.sum([propertyProjectionsResults.cwcot_allowed_total,-propertyProjectionsResults.cwcot_total,propertyProjectionsResults.cwcot_net_loss_servicer_contribution])}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "net_loss_total_bottom"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_net_loss_total}}",
+                                  "defaultValue": 0,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button22",
+                                  "col": 6
+                                },
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "net_loss_taxes",
+                                    "script": "{{propertyProjectionsResults.cwcot_allowed_taxes-propertyProjectionsResults.cwcot_total_taxes}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "net_loss_taxes"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_net_loss_taxes}}",
+                                  "defaultValue": 0,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button25",
+                                  "col": 9
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "net_loss_eviction",
+                                    "script": "{{propertyProjectionsResults.cwcot_allowed_eviction-propertyProjectionsResults.cwcot_eviction_total}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "net_loss_eviction"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_net_loss_eviction}}",
+                                  "defaultValue": 0,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button23",
+                                  "col": 6
+                                },
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "net_loss_insurance",
+                                    "script": "{{propertyProjectionsResults.cwcot_allowed_insurance-propertyProjectionsResults.cwcot_total_insurance}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "net_loss_insurance"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_net_loss_insurance}}",
+                                  "defaultValue": 0,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button26",
+                                  "col": 9
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "net_loss_cfk",
+                                    "script": "{{propertyProjectionsResults.cwcot_allowed_cfk-propertyProjectionsResults.cwcot_total_cfk}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "net_loss_cfk"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_net_loss_cfk}}",
+                                  "defaultValue": 0,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button24",
+                                  "col": 6
+                                },
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "net_loss_repair",
+                                    "script": "{{propertyProjectionsResults.cwcot_allowed_repair-propertyProjectionsResults.cwcot_total_repair}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "net_loss_repair"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_net_loss_repair}}",
+                                  "defaultValue": 0,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button27",
+                                  "col": 9
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "net_loss_baseline",
+                                    "script": "{{propertyProjectionsResults.cwcot_allowed_baseline_interest_loss-propertyProjectionsResults.cwcot_total_baseline_interest_loss}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "net_loss_baseline"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_net_loss_baseline_interest_loss}}",
+                                  "defaultValue": 0,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button32",
+                                  "col": 6
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "net_loss_curtailment",
+                                    "script": "{{propertyProjectionsResults.cwcot_allowed_curtailment_interest_loss-propertyProjectionsResults.cwcot_total_curtailment_interest_loss}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "net_loss_curtailment"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_net_loss_curtailment_interest_loss}}",
+                                  "defaultValue": 0,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button33",
+                                  "col": 6
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "net_loss_first2Month",
+                                    "script": "{{propertyProjectionsResults.cwcot_allowed_first_two_months_interest-propertyProjectionsResults.cwcot_total_first_two_months_interest}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "net_loss_first2Month"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_net_loss_first_two_months_interest}}",
+                                  "defaultValue": 0,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button34",
+                                  "col": 6
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "net_loss_foreclosure_cost",
+                                    "script": "{{propertyProjectionsResults.cwcot_allowed_foreclosure_costs-propertyProjectionsResults.cwcot_total_foreclosure_costs}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "net_loss_foreclosure_cost"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_net_loss_foreclosure_cost}}",
+                                  "defaultValue": 0,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button28",
+                                  "col": 9
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "net_loss_hoa",
+                                    "script": "{{propertyProjectionsResults.cwcot_allowed_hoa_costs-propertyProjectionsResults.cwcot_total_hoa}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "net_loss_hoa"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_net_loss_hoa}}",
+                                  "defaultValue": 0,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button29",
+                                  "col": 6
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "net_loss_utilities",
+                                    "script": "{{propertyProjectionsResults.cwcot_allowed_utilities-propertyProjectionsResults.cwcot_total_utilities}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "net_loss_utilities"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_net_loss_utilities}}",
+                                  "defaultValue": 0,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button30",
+                                  "col": 6
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "net_loss_maintenance",
+                                    "script": "{{propertyProjectionsResults.cwcot_allowed_maintenance-propertyProjectionsResults.cwcot_total_maintenance}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "net_loss_maintenance"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_net_loss_maintenance}}",
+                                  "defaultValue": 0,
+                                  "size": 3,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button31",
+                                  "col": 6
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "total_hoa",
+                                    "script": "{{flw.round(propertyProjectionsResults.cwcot_months_hoa*propertyProjectionsResults.cwcot_hoa)}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "total_hoa"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_total_hoa}}",
+                                  "defaultValue": 0,
+                                  "size": 4,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button17",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "total_utilities",
+                                    "script": "{{flw.round(propertyProjectionsResults.cwcot_months_utilities*propertyProjectionsResults.cwcot_utilities)}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "total_utilities"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_total_utilities}}",
+                                  "defaultValue": 0,
+                                  "size": 4,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button18",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "total_maintenance",
+                                    "script": "{{flw.round(propertyProjectionsResults.cwcot_months_maintenance*propertyProjectionsResults.cwcot_maintenance)}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "total_maintenance"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_total_maintenance}}",
+                                  "defaultValue": 0,
+                                  "size": 4,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button19",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "total_taxes",
+                                    "script": "{{flw.round(propertyProjectionsResults.cwcot_months_taxes*propertyProjectionsResults.cwcot_taxes)}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "total_taxes"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_total_taxes}}",
+                                  "defaultValue": 0,
+                                  "size": 4,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button20",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "total_insurance",
+                                    "script": "{{flw.round(propertyProjectionsResults.cwcot_months_insurance*propertyProjectionsResults.cwcot_insurance)}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "total_insurance"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_total_insurance}}",
+                                  "defaultValue": 0,
+                                  "size": 4,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button21",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "total total",
+                                    "script": "{{flw.sum([propertyProjectionsResults.cwcot_eviction_total,propertyProjectionsResults.cwcot_total_cfk,propertyProjectionsResults.cwcot_total_baseline_interest_loss,propertyProjectionsResults.cwcot_total_curtailment_interest_loss,propertyProjectionsResults.cwcot_total_first_two_months_interest,propertyProjectionsResults.cwcot_total_hoa,propertyProjectionsResults.cwcot_total_utilities,propertyProjectionsResults.cwcot_total_maintenance,propertyProjectionsResults.cwcot_total_taxes,propertyProjectionsResults.cwcot_total_insurance,propertyProjectionsResults.cwcot_total_repair,propertyProjectionsResults.cwcot_total_foreclosure_costs])}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "total total"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_total}}",
+                                  "size": 4,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button14",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                }
+                              ]
+                            },
+                            {
+                              "cols": [
+                                {
+                                  "type": "scriptButton",
+                                  "extraSettings": {
+                                    "text": "allowance total",
+                                    "script": "{{flw.sum([propertyProjectionsResults.cwcot_allowed_cfk,propertyProjectionsResults.cwcot_allowed_eviction,propertyProjectionsResults.cwcot_allowed_first_two_months_interest,propertyProjectionsResults.cwcot_allowed_curtailment_interest_loss,propertyProjectionsResults.cwcot_allowed_baseline_interest_loss,propertyProjectionsResults.cwcot_allowed_hoa_costs,propertyProjectionsResults.cwcot_allowed_utilities,propertyProjectionsResults.cwcot_allowed_maintenance,propertyProjectionsResults.cwcot_allowed_taxes,propertyProjectionsResults.cwcot_allowed_insurance,propertyProjectionsResults.cwcot_allowed_repair,propertyProjectionsResults.cwcot_allowed_foreclosure_costs])}}",
+                                    "timer": 2,
+                                    "autoExecute": true,
+                                    "alignment": "left",
+                                    "iconAlignment": "right"
+                                  },
+                                  "i18n": {
+                                    "en_us": {
+                                      "extraSettings": {
+                                        "text": "allowance total"
+                                      }
+                                    }
+                                  },
+                                  "labelAlign": "top",
+                                  "value": "{{propertyProjectionsResults.cwcot_allowed_total}}",
+                                  "defaultValue": 0,
+                                  "size": 4,
+                                  "ignore": false,
+                                  "visible": false,
+                                  "enabled": true,
+                                  "isRequired": false,
+                                  "id": "script-button15",
+                                  "col": 0
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                },
+                                {
+                                  "size": 1,
+                                  "type": ""
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "col": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "col": 0
+        }
+      ]
+    }
+  ]
+}

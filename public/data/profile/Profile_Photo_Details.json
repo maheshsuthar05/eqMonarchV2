@@ -1,0 +1,27 @@
+{
+    "rows": [
+      {
+        "cols": [
+          {
+            "type": "upload",
+            "labelAlign": "top",
+            "value": "{{usersProfilePhoto}}",
+            "i18n": {},
+            "size": 12,
+            "ignore": false,
+            "visible": true,
+            "enabled": true,
+            "isRequired": true,
+            "id": "profile-photo",
+            "extraSettings": {
+              "autoupload": true,
+              "downloadUrl": "rest/file/{{id}}",
+              "allowDelete": "newOnly",
+              "preview": "icon"
+            },
+            "col": 0
+          }
+        ]
+      }
+    ]
+  }

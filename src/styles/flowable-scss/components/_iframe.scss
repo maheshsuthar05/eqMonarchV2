@@ -1,0 +1,9 @@
+.flw__iframe__iframe {
+  width: 100%;
+}
+
+.flw__iframe--showBorder__iframe {
+  box-sizing: border-box;
+  border: 1px solid $flw-forms-border-color;
+  border: 1px solid var(--flw-forms-border-color, $flw-forms-border-color);
+}

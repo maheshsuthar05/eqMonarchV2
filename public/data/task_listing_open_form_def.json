@@ -1,0 +1,185 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": {
+                "x": 15,
+                "y": 25
+              },
+              "lowerRight": {
+                "x": 984,
+                "y": 117
+              }
+            },
+            "stencilSuperIds": ["base-datatable", "Component"],
+            "stencilId": "cloud-datatable",
+            "customStencilId": null
+          },
+          "type": "dataTable",
+          "label": "{{additionalData.title}}",
+          "i18n": {
+            "en_us": {
+              "label": "{{additionalData.title}}",
+              "extraSettings": {
+                "columns": [
+                  {
+                    "label": "Task Name",
+                    "id": "name",
+                    "accessor": "name",
+                    "alignment": "left",
+                    "filterable": true,
+                    "sortable": true,
+                    "show": true
+                  },
+                  {
+                    "label": "Role",
+                    "id": "owner",
+                    "accessor": "owner",
+                    "alignment": "left",
+                    "filterable": true,
+                    "sortable": true,
+                    "show": true
+                  },
+                  {
+                    "label": "Person",
+                    "id": "assignee",
+                    "accessor": "assignee",
+                    "alignment": "left",
+                    "filterable": true,
+                    "sortable": true,
+                    "show": true
+                  },
+                  {
+                    "label": "Open Date",
+                    "id": "createTime",
+                    "accessor": "createTime",
+                    "alignment": "left",
+                    "component": {
+                      "type": "htmlComponent",
+                      "value": "<span>{{flw.formatDate($item.createTime, 'MM/DD/YYYY HH:mm')}}</span>"
+                    },
+                    "filterable": true,
+                    "sortable": true,
+                    "show": true
+                  },
+                  {
+                    "label": "Due/Complete",
+                    "id": "dueDate",
+                    "accessor": "dueDate",
+                    "alignment": "left",
+                    "component": {
+                      "type": "htmlComponent",
+                      "value": "<span>{{flw.formatDate($item.dueDate, 'MM/DD/YYYY HH:mm')}}</span>"
+                    },
+                    "filterable": true,
+                    "sortable": true,
+                    "show": true
+                  }
+                ],
+                "noDataMessage": "No Tasks Found"
+              }
+            }
+          },
+          "enabled": true,
+          "extraSettings": {
+            "dataSource": "Rest",
+            "queryUrl": "{{additionalData.url}}?start={{$page * $pageSize}}&size={{$pageSize}}&order={{$sortDirection}}&sort={{$sortColumn}}",
+            "path": "data",
+            "linkTargetView": "browse",
+            "storage": "Full",
+            "linkTarget": "_blank",
+            "selectable": "Single",
+            "showPagination": true,
+            "autoHidePagination": true,
+            "clientPagination": false,
+            "sortableColumns": true,
+            "columns": [
+              {
+                "label": "Task Name",
+                "id": "name",
+                "accessor": "name",
+                "alignment": "left",
+                "filterable": true,
+                "sortable": true,
+                "show": true
+              },
+              {
+                "label": "Role",
+                "id": "owner",
+                "accessor": "owner",
+                "alignment": "left",
+                "filterable": true,
+                "sortable": true,
+                "show": true
+              },
+              {
+                "label": "Person",
+                "id": "assignee",
+                "accessor": "assignee",
+                "alignment": "left",
+                "filterable": true,
+                "sortable": true,
+                "show": true
+              },
+              {
+                "label": "Open Date",
+                "id": "createTime",
+                "accessor": "createTime",
+                "alignment": "left",
+                "component": {
+                  "type": "htmlComponent",
+                  "value": "<span>{{flw.formatDate($item.createTime, 'MM/DD/YYYY HH:mm')}}</span>"
+                },
+                "filterable": true,
+                "sortable": true,
+                "show": true
+              },
+              {
+                "label": "Due/Complete",
+                "id": "dueDate",
+                "accessor": "dueDate",
+                "alignment": "left",
+                "component": {
+                  "type": "htmlComponent",
+                  "value": "<span>{{flw.formatDate($item.dueDate, 'MM/DD/YYYY HH:mm')}}</span>"
+                },
+                "filterable": true,
+                "sortable": true,
+                "show": true
+              }
+            ],
+            "filterable": true,
+            "sortable": true,
+            "multiSort": false,
+            "pageSize": 20,
+            "pageSizeOptions": [5, 10, 20, 25, 50, 100],
+            "showTotalRecords": false,
+            "response": {
+              "total": "total"
+            },
+            "showRefreshButton": true,
+            "target": "_blank",
+            "noDataMessage": "No Tasks Found"
+          },
+          "labelAlign": "top",
+          "value": "{{selectedTask}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "isRequired": false,
+          "id": "datatable-property-task-list"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "key": "propertyTaskListForm",
+    "name": "Property Task List",
+    "description": "Property Task List",
+    "version": "35",
+    "type": "2"
+  }
+}

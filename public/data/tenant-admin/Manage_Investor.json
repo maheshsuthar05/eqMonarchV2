@@ -1,0 +1,206 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": {
+                "x": 15,
+                "y": 25
+              },
+              "lowerRight": {
+                "x": 984,
+                "y": 93
+              }
+            },
+            "stencilSuperIds": [
+              "base-datatable",
+              "Component"
+            ],
+            "stencilId": "cloud-datatable",
+            "customStencilId": null
+          },
+          "enabled": true,
+          "extraSettings": {
+            "dataSource": "Rest",
+            "queryUrl": "/eq-api/inlisting/investor/investorList?tempTenantCode=ASPS&page={{$page}}&size={{$pageSize}}&sortOrder={{$sort || 'DESC'}}{{$filter}}",
+            "path": "hits",
+            "linkTargetView": "browse",
+            "storage": "Full",
+            "identity": "INVESTOR_ID",
+            "linkTarget": "_blank",
+            "selectable": "Single",
+            "output": {
+              "numRows": "totalHits"
+            },
+            "infiniteScroll": false,
+            "showPagination": true,
+            "autoHidePagination": true,
+            "clientPagination": false,
+            "sortableColumns": false,
+            "columns": [
+              {
+                "label": "Investor Id",
+                "id": "INVESTOR_CODE",
+                "accessor": "INVESTOR_CODE",
+                "alignment": "left",
+                "filterable": "true",
+                "sortable": "true",
+                "show": true
+              },
+              {
+                "label": "Investor Name",
+                "id": "INVESTOR_NAME",
+                "accessor": "INVESTOR_NAME",
+                "alignment": "left",
+                "filterable": "true",
+                "sortable": "true",
+                "show": true
+              },
+              {
+                "label": "Investor Group",
+                "id": "INVESTOR_GROUP",
+                "accessor": "INVESTOR_GROUP",
+                "alignment": "left",
+                "filterable": "true",
+                "sortable": "true",
+                "show": true
+              },
+              {
+                "label": "Action",
+                "id": "Action",
+                "alignment": "right",
+                "component": {
+                  "type": "buttonGroup",
+                  "extraSettings": {
+                    "asDropdown": true
+                  },
+                  "alignment": "right",
+                  "buttonDefinitions": [
+                    {
+                      "type": "scriptButton",
+                      "extraSettings": {
+                        "text": "Edit",
+                        "tooltip": "Edit",
+                        "script": {
+                          "key": "Edit",
+                          "DATA": "{{$item}}"
+                        }
+                      }
+                    }
+                  ]
+                },
+                "filterable": false,
+                "sortable": false,
+                "show": true
+              }
+            ],
+            "filterable": true,
+            "sortable": true,
+            "multiSort": true,
+            "pageSize": 20,
+            "pageSizeOptions": [
+              20,
+              25,
+              50,
+              100
+            ],
+            "showTotalRecords": false,
+            "response": {
+              "total": "totalHits"
+            },
+            "refreshTime": "{{$payload.refreshForm}}",
+            "dataPollingOnInit": false,
+            "target": "_blank",
+            "sortAsc": "ASC",
+            "sortDesc": "DESC",
+            "sortPattern": "{{$sortItem.direction}}",
+            "sortSeparator": ",",
+            "filterPattern": "&{{$filterItem.id}}={{$filterItem.value}}",
+            "nodataPosition": "middle-center"
+          },
+          "labelAlign": "top",
+          "value": "{{manageInvestorListing}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "isRequired": false,
+          "id": "manageInvestorListingTable",
+          "i18n": {
+            "en_us": {
+              "extraSettings": {
+                "columns": [
+                  {
+                    "label": "Investor Id",
+                    "id": "INVESTOR_CODE",
+                    "accessor": "INVESTOR_CODE",
+                    "alignment": "left",
+                    "filterable": "true",
+                    "sortable": "true",
+                    "show": true
+                  },
+                  {
+                    "label": "Investor Name",
+                    "id": "INVESTOR_NAME",
+                    "accessor": "INVESTOR_NAME",
+                    "alignment": "left",
+                    "filterable": "true",
+                    "sortable": "true",
+                    "show": true
+                  },
+                  {
+                    "label": "Investor Group",
+                    "id": "INVESTOR_GROUP",
+                    "accessor": "INVESTOR_GROUP",
+                    "alignment": "left",
+                    "filterable": "true",
+                    "sortable": "true",
+                    "show": true
+                  },
+                  {
+                    "label": "Action",
+                    "id": "Action",
+                    "alignment": "right",
+                    "component": {
+                      "type": "buttonGroup",
+                      "extraSettings": {
+                        "asDropdown": true
+                      },
+                      "alignment": "right",
+                      "buttonDefinitions": [
+                        {
+                          "type": "scriptButton",
+                          "extraSettings": {
+                            "text": "Edit",
+                            "tooltip": "Edit",
+                            "script": {
+                              "key": "Edit",
+                              "DATA": "{{$item}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "filterable": false,
+                    "sortable": false,
+                    "show": true
+                  }
+                ]
+              }
+            }
+          },
+          "type": "dataTable"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "key": "manageInvestorListing",
+    "name": "Manage Investor Listing",
+    "description": "",
+    "version": "14",
+    "type": "2",
+    "flowableDesignVersion": 3090
+  }
+}

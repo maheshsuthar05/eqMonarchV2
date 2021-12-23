@@ -1,0 +1,278 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "size": 1,
+          "type": ""
+        },
+        {
+          "type": "linkButton",
+          "extraSettings": {
+            "target": "_self",
+            "alignment": "left",
+            "iconAlignment": "right",
+            "showAsButton": true,
+            "type": "one"
+          },
+          "i18n": {
+            "en_us": {
+              "value": "Add Property Roles"
+            }
+          },
+          "primary": false,
+          "labelAlign": "top",
+          "value": "Add Property Roles",
+          "size": 2,
+          "ignore": false,
+          "visible": false,
+          "enabled": true,
+          "isRequired": false,
+          "styleClass": "altisource__model_primary",
+          "id": "addPropertyRoles",
+          "col": 10
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "type": "dataTable",
+          "label": "Property Roles",
+          "i18n": {
+            "en_us": {
+              "label": "Property Roles",
+              "extraSettings": {
+                "columns": [
+                  {
+                    "label": "Role Type",
+                    "id": "partyRoleType",
+                    "accessor": "partyRoleType",
+                    "alignment": "left",
+                    "filterable": true,
+                    "sortable": true,
+                    "show": true
+                  },
+                  {
+                    "label": "Display Name",
+                    "id": "partyRoleTypeDisplay",
+                    "accessor": "partyRoleTypeDisplay",
+                    "alignment": "left",
+                    "filterable": true,
+                    "sortable": false,
+                    "show": true
+                  },
+                  {
+                    "label": "Description",
+                    "id": "partyRoleTypeDescription",
+                    "accessor": "partyRoleTypeDescription",
+                    "alignment": "left",
+                    "filterable": true,
+                    "sortable": false,
+                    "show": true
+                  },
+                  {
+                    "label": "Action",
+                    "id": "dropdown",
+                    "accessor": "dropdown",
+                    "alignment": "center",
+                    "component": {
+                      "type": "buttonGroup",
+                      "value": "{{$item}}",
+                      "extraSettings": {
+                        "asDropdown": true
+                      },
+                      "alignment": "right",
+                      "buttonDefinitions": [
+                        {
+                          "type": "scriptButton",
+                          "value": "Edit",
+                          "extraSettings": {
+                            "text": "Edit",
+                            "script": "Edit",
+                            "fileDetails": "{{$item}}"
+                          }
+                        },
+                        {
+                          "type": "scriptButton",
+                          "value": "Delete",
+                          "extraSettings": {
+                            "text": "Delete",
+                            "script": "Delete",
+                            "fileDetails": "{{$item}}"
+                          }
+                        }
+                      ]
+                    },
+                    "filterable": false,
+                    "maxWidth": 75,
+                    "sortable": false,
+                    "show": true
+                  }
+                ],
+                "noDataMessage": "No Property Roles"
+              }
+            },
+            "de_de": {
+              "extraSettings": {}
+            },
+            "fr_fr": {
+              "extraSettings": {}
+            },
+            "it_it": {
+              "extraSettings": {}
+            },
+            "es_es": {
+              "extraSettings": {}
+            }
+          },
+          "enabled": true,
+          "extraSettings": {
+            "dataSource": "Rest",
+            "queryUrl": "/eq-api/party/partyRoleTypes?size=100",
+            "path": "_embedded.partyRoleTypes",
+            "storage": "Full",
+            "linkTarget": "_blank",
+            "output": {},
+            "infiniteScroll": false,
+            "showPagination": true,
+            "autoHidePagination": true,
+            "clientPagination": true,
+            "sortableColumns": true,
+            "response": {
+              "total": "page.totalElements"
+            },
+            "columns": [
+              {
+                "label": "Role Type",
+                "id": "partyRoleType",
+                "accessor": "partyRoleType",
+                "alignment": "left",
+                "filterable": true,
+                "sortable": true,
+                "show": true
+              },
+              {
+                "label": "Display Name",
+                "id": "partyRoleTypeDisplay",
+                "accessor": "partyRoleTypeDisplay",
+                "alignment": "left",
+                "filterable": true,
+                "sortable": false,
+                "show": true
+              },
+              {
+                "label": "Description",
+                "id": "partyRoleTypeDescription",
+                "accessor": "partyRoleTypeDescription",
+                "alignment": "left",
+                "filterable": true,
+                "sortable": false,
+                "show": true
+              },
+              {
+                "label": "Action",
+                "id": "dropdown",
+                "accessor": "dropdown",
+                "alignment": "center",
+                "component": {
+                  "type": "buttonGroup",
+                  "value": "{{$item}}",
+                  "extraSettings": {
+                    "asDropdown": true
+                  },
+                  "alignment": "right",
+                  "buttonDefinitions": [
+                    {
+                      "type": "scriptButton",
+                      "value": "Edit",
+                      "extraSettings": {
+                        "text": "Edit",
+                        "script": "Edit",
+                        "fileDetails": "{{$item}}"
+                      }
+                    },
+                    {
+                      "type": "scriptButton",
+                      "value": "Delete",
+                      "extraSettings": {
+                        "text": "Delete",
+                        "script": "Delete",
+                        "fileDetails": "{{$item}}"
+                      }
+                    }
+                  ]
+                },
+                "filterable": false,
+                "maxWidth": 75,
+                "sortable": false,
+                "show": true
+              }
+            ],
+            "filterable": true,
+            "sortable": true,
+            "multiSort": false,
+            "pageSize": 20,
+            "pageSizeOptions": [
+              5,
+              10,
+              20,
+              25,
+              50,
+              100
+            ],
+            "showTotalRecords": true,
+            "showRefreshButton": true,
+            "refreshTime": "{{tableRefresh}}",
+            "dataPollingOnInit": false,
+            "noDataMessage": "No Property Roles",
+            "nodataPosition": "middle-center"
+          },
+          "labelAlign": "top",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "isRequired": false,
+          "id": "datatable1",
+          "col": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "type": "dataTable",
+          "label": "",
+          "i18n": {
+            "en_us": {
+              "label": "",
+              "extraSettings": {
+                "columns": [
+                  {
+                    "label": "Code",
+                    "id": "tenantCode",
+                    "accessor": "tenantCode",
+                    "alignment": "left",
+                    "filterable": true,
+                    "show": true
+                  },
+                  {
+                    "label": "Name",
+                    "id": "tenantName",
+                    "accessor": "tenantName",
+                    "alignment": "left",
+                    "filterable": true,
+                    "show": true
+                  },
+                  {
+                    "label": "Created On",
+                    "id": "createdDate",
+                    "accessor": "createdDate",
+                    "alignment": "left",
+                    "filterable": true,
+                    "show": true,
+                    "component": {
+                      "type": "htmlComponent",
+                      "value": "<span>{{flw.formatDate(flw.parseDate($item.createdDate), 'MM/DD/YY HH:mm')}}</span>"
+                    }
+                  },
+                  {
+                    "label": "Status",
+                    "id": "active",
+                    "accessor": "active",
+                    "alignment": "left",
+                    "filterable": true,
+                    "show": true
+                  },
+                  {
+                    "label": "Action",
+                    "id": "dropdown",
+                    "accessor": "dropdown",
+                    "alignment": "left",
+                    "component": {
+                      "type": "buttonGroup",
+                      "value": "{{$item}}",
+                      "extraSettings": {
+                        "asDropdown": true
+                      },
+                      "alignment": "right",
+                      "buttonDefinitions": [
+                        {
+                          "type": "scriptButton",
+                          "value": "{{operationListActionButton}}",
+                          "extraSettings": {
+                            "text": "View",
+                            "script": "Edit",
+                            "fileDetails": "{{$item}}"
+                          }
+                        },
+                        {
+                          "type": "scriptButton",
+                          "value": "{{operationListActionButton}}",
+                          "extraSettings": {
+                            "text": "Delete",
+                            "script": "Delete",
+                            "fileDetails": "{{$item}}"
+                          }
+                        }
+                      ]
+                    },
+                    "filterable": false,
+                    "show": true,
+                    "maxWidth": 75,
+                    "sortable": false
+                  }
+                ]
+              }
+            },
+            "de_de": {
+              "extraSettings": {}
+            },
+            "fr_fr": {
+              "extraSettings": {}
+            },
+            "it_it": {
+              "extraSettings": {}
+            },
+            "es_es": {
+              "extraSettings": {}
+            }
+          },
+          "enabled": true,
+          "extraSettings": {
+            "dataSource": "Rest",
+            "queryUrl": "{{additionalData.url}}?from={{$page}}&size={{$pageSize}}&sortOrder={{$sortDirection}}",
+            "path": "tenant.tenants",
+            "storage": "Full",
+            "identity": "ID",
+            "linkTarget": "_blank",
+            "selectable": "Single",
+            "output": {},
+            "showPagination": true,
+            "autoHidePagination": false,
+            "clientPagination": true,
+            "sortableColumns": true,
+            "columns": [
+              {
+                "label": "Code",
+                "id": "tenantCode",
+                "accessor": "tenantCode",
+                "alignment": "left",
+                "filterable": true,
+                "show": true
+              },
+              {
+                "label": "Name",
+                "id": "tenantName",
+                "accessor": "tenantName",
+                "alignment": "left",
+                "filterable": true,
+                "show": true
+              },
+              {
+                "label": "Created On",
+                "id": "createdDate",
+                "accessor": "createdDate",
+                "alignment": "left",
+                "filterable": true,
+                "show": true,
+                "component": {
+                  "type": "htmlComponent",
+                  "value": "<span>{{flw.formatDate(flw.parseDate($item.createdDate), 'MM/DD/YY HH:mm')}}</span>"
+                }
+              },
+              {
+                "label": "Status",
+                "id": "active",
+                "accessor": "active",
+                "alignment": "left",
+                "filterable": true,
+                "show": true
+              },
+              {
+                "label": "Action",
+                "id": "dropdown",
+                "accessor": "dropdown",
+                "alignment": "left",
+                "component": {
+                  "type": "buttonGroup",
+                  "value": "{{$item}}",
+                  "extraSettings": {
+                    "asDropdown": true
+                  },
+                  "alignment": "right",
+                  "buttonDefinitions": [
+                    {
+                      "type": "scriptButton",
+                      "value": "{{operationListActionButton}}",
+                      "extraSettings": {
+                        "text": "View",
+                        "script": "Edit",
+                        "fileDetails": "{{$item}}"
+                      }
+                    },
+                    {
+                      "type": "scriptButton",
+                      "value": "{{operationListActionButton}}",
+                      "extraSettings": {
+                        "text": "Delete",
+                        "script": "Delete",
+                        "fileDetails": "{{$item}}"
+                      }
+                    }
+                  ]
+                },
+                "filterable": false,
+                "show": true,
+                "maxWidth": 75,
+                "sortable": false
+              }
+            ],
+            "filterable": true,
+            "sortable": true,
+            "multiSort": false,
+            "pageSize": 20,
+            "pageSizeOptions": [5, 10, 20, 25, 50, 100],
+            "showTotalRecords": false,
+            "response": {},
+            "showRefreshButton": true
+          },
+          "labelAlign": "top",
+          "value": "{{tenantRecord}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "isRequired": false,
+          "id": "dataTableTenantList",
+          "col": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 25 },
+              "lowerRight": { "x": 985, "y": 196 }
+            },
+            "stencilSuperIds": ["SubSlotPanel"],
+            "stencilId": "cloud-sub-panel",
+            "customStencilId": null
+          },
+          "type": "panel",
+          "labelAlign": "top",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "sub-panel1",
+          "extraSettings": {
+            "collapsible": false,
+            "collapsed": false,
+            "showBorder": false,
+            "saveButtonVisible": false,
+            "saveButtonEnabled": false,
+            "cancelButtonVisible": false,
+            "cancelButtonEnabled": false,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 25 },
+                          "lowerRight": { "x": 955, "y": 75 }
+                        },
+                        "stencilSuperIds": ["Output"],
+                        "stencilId": "cloud-output",
+                        "customStencilId": null
+                      },
+                      "type": "htmlComponent",
+                      "labelAlign": "top",
+                      "value": "<p class='un-pause-task-html'><strong><span style=\"font-size:14px\">Are you sure, you want to Un-Pause task?</span></strong></p>\n",
+                      "defaultValue": false,
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "id": "output1",
+                      "i18n": {
+                        "en_us": {
+                          "value": "<p class='un-pause-task-html'><strong><span style=\"font-size:14px\">Are you sure, you want to Un-Pause task?</span></strong></p>\n"
+                        }
+                      },
+                      "extraSettings": {}
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 98 },
+                          "lowerRight": { "x": 955, "y": 146 }
+                        },
+                        "stencilSuperIds": ["base-checkbox", "Component"],
+                        "stencilId": "cloud-checkbox",
+                        "customStencilId": null
+                      },
+                      "type": "boolean",
+                      "labelAlign": "top",
+                      "value": "{{isPauseStatus}}",
+                      "defaultValue": false,
+                      "size": 12,
+                      "ignore": false,
+                      "visible": false,
+                      "enabled": true,
+                      "isRequired": false,
+                      "label": "isPauseStatus",
+                      "i18n": { "en_us": { "label": "isPauseStatus" } },
+                      "id": "checkbox1",
+                      "extraSettings": {}
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "forceValidation": false,
+  "metadata": {
+    "key": "unPauseTask",
+    "name": "Un Pause Task",
+    "description": null,
+    "version": "13",
+    "type": "2",
+    "flowableDesignVersion": 3087
+  }
+}

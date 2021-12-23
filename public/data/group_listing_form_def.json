@@ -1,0 +1,198 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 0, "y": 0 },
+              "lowerRight": { "x": 0, "y": 0 }
+            },
+            "stencilSuperIds": [],
+            "stencilId": null,
+            "customStencilId": null
+          },
+          "type": "",
+          "size": 10
+        },
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 835, "y": 25 },
+              "lowerRight": { "x": 984, "y": 51 }
+            },
+            "stencilSuperIds": ["Button"],
+            "stencilId": "cloud-link-button",
+            "customStencilId": null
+          },
+          "type": "linkButton",
+          "extraSettings": {
+            "target": "_self",
+            "alignment": "left",
+            "iconAlignment": "right",
+            "showAsButton": true,
+            "type": "one"
+          },
+          "labelAlign": "top",
+          "value": "Add Property Roles",
+          "size": 2,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "styleClass": "altisource__model_primary--button .flw__link--button__a",
+          "id": "add-group",
+          "i18n": { "en_us": { "value": "Add Property Roles" } }
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 74 },
+              "lowerRight": { "x": 984, "y": 166 }
+            },
+            "stencilSuperIds": ["base-datatable", "Component"],
+            "stencilId": "cloud-datatable",
+            "customStencilId": null
+          },
+          "type": "dataTable",
+          "label": "Property Roles",
+          "i18n": {
+            "en_us": {
+              "label": "Property Roles",
+              "extraSettings": {
+                "columns": [
+                  {
+                    "label": "Name",
+                    "id": "name",
+                    "accessor": "name",
+                    "alignment": "left",
+                    "filterable": true,
+                    "sortable": true,
+                    "show": true
+                  },
+                  {
+                    "label": "Action",
+                    "id": "dropdown",
+                    "accessor": "dropdown",
+                    "alignment": "left",
+                    "component": {
+                      "type": "buttonGroup",
+                      "extraSettings": { "asDropdown": true },
+                      "alignment": "right",
+                      "buttonDefinitions": [
+                        {
+                          "type": "scriptButton",
+                          "extraSettings": {
+                            "text": "Edit",
+                            "tooltip": "Edit",
+                            "script": { "key": "Edit", "DATA": "{{$item}}" }
+                          }
+                        },
+                        {
+                          "type": "scriptButton",
+                          "extraSettings": {
+                            "text": "Delete",
+                            "tooltip": "delete",
+                            "script": { "key": "Delete", "DATA": "{{$item}}" }
+                          }
+                        }
+                      ]
+                    },
+                    "filterable": false,
+                    "maxWidth": 75,
+                    "sortable": false,
+                    "show": true
+                  }
+                ]
+              }
+            }
+          },
+          "enabled": true,
+          "extraSettings": {
+            "dataSource": "Rest",
+            "queryUrl": "/eq-api/core/fam/groups?page={{$page}}&size={{$pageSize}}&sort={{$sortColumn}},{{$sortDirection}}",
+            "path": "data",
+            "linkTargetView": "browse",
+            "storage": "Full",
+            "linkTarget": "_blank",
+            "showPagination": true,
+            "autoHidePagination": true,
+            "clientPagination": true,
+            "sortableColumns": false,
+            "columns": [
+              {
+                "label": "Name",
+                "id": "name",
+                "accessor": "name",
+                "alignment": "left",
+                "filterable": true,
+                "sortable": true,
+                "show": true
+              },
+              {
+                "label": "Action",
+                "id": "dropdown",
+                "accessor": "dropdown",
+                "alignment": "left",
+                "component": {
+                  "type": "buttonGroup",
+                  "extraSettings": { "asDropdown": true },
+                  "alignment": "right",
+                  "buttonDefinitions": [
+                    {
+                      "type": "scriptButton",
+                      "extraSettings": {
+                        "text": "Edit",
+                        "tooltip": "Edit",
+                        "script": { "key": "Edit", "DATA": "{{$item}}" }
+                      }
+                    },
+                    {
+                      "type": "scriptButton",
+                      "extraSettings": {
+                        "text": "Delete",
+                        "tooltip": "delete",
+                        "script": { "key": "Delete", "DATA": "{{$item}}" }
+                      }
+                    }
+                  ]
+                },
+                "filterable": false,
+                "maxWidth": 75,
+                "sortable": false,
+                "show": true
+              }
+            ],
+            "filterable": true,
+            "sortable": true,
+            "multiSort": false,
+            "pageSize": 20,
+            "pageSizeOptions": [5, 10, 20, 25, 50, 100],
+            "showTotalRecords": true,
+            "response": { "total": "page.total" },
+            "showRefreshButton": true,
+            "target": "_blank"
+          },
+          "labelAlign": "top",
+          "value": "{{groupListData}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "isRequired": false,
+          "id": "grouplist"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "key": "groupList",
+    "name": "group list",
+    "description": "groupList",
+    "version": "12",
+    "type": "2"
+  }
+}

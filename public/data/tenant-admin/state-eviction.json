@@ -1,0 +1,347 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "type": "dataTable",
+          "i18n": {
+            "en_us": {
+              "extraSettings": {
+                "columns": [
+                  {
+                    "label": "State",
+                    "id": "stateCode",
+                    "accessor": "stateCode",
+                    "alignment": "left",
+                    "show": true,
+                    "filterable": "true",
+                    "sortable": "true"
+                  },
+                  {
+                    "label": "Order Type",
+                    "id": "orderType",
+                    "accessor": "orderType",
+                    "alignment": "left",
+                    "show": true,
+                    "filterable": "true",
+                    "sortable": "true"
+                  },
+                  {
+                    "label": "Eviction Type",
+                    "id": "subOrderType",
+                    "accessor": "subOrderType",
+                    "alignment": "left",
+                    "show": true,
+                    "filterable": "true",
+                    "sortable": "true"
+                  },
+                  {
+                    "label": "Timeline",
+                    "id": "timeline",
+                    "accessor": "timeline",
+                    "alignment": "left",
+                    "show": true,
+                    "filterable": "true",
+                    "sortable": "true"
+                  },
+                  {
+                    "label": "Deliverable Matrix",
+                    "id": "stateOrderDeliverableMatrices",
+                    "accessor": "stateOrderDeliverableMatrices",
+                    "alignment": "left",
+                    "component": {
+                      "type": "subform",
+                      "value": "{{$item.stateOrderDeliverableMatrices}}",
+                      "extraSettings": {
+                        "showAddButton": false,
+                        "showDeleteButton": false,
+                        "multipleEntries": true,
+                        "layoutDefinition": {
+                          "rows": [
+                            {
+                              "cols": [
+                                {
+                                  "type": "htmlComponent",
+                                  "value": "<span>{{stepNumber}} -  {{taskKey}}</span>"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    "show": true,
+                    "filterable": "true",
+                    "sortable": "true"
+                  },
+                  {
+                    "label": "Eviction Timeline",
+                    "id": "usafnEvictionTimelineDays",
+                    "accessor": "usafnEvictionTimelineDays",
+                    "alignment": "left",
+                    "show": true,
+                    "filterable": "true",
+                    "sortable": "true"
+                  },
+                  {
+                    "label": "PP Eviction By",
+                    "id": "usafnPpEvictionBy",
+                    "accessor": "usafnPpEvictionBy",
+                    "alignment": "left",
+                    "show": true,
+                    "filterable": "true",
+                    "sortable": "true"
+                  },
+                  {
+                    "label": "PP Threshold",
+                    "id": "usafnPpThreshold",
+                    "accessor": "usafnPpThreshold",
+                    "alignment": "left",
+                    "show": true,
+                    "filterable": "true",
+                    "sortable": "true"
+                  },
+                  {
+                    "label": "Actions",
+                    "id": "dropdown",
+                    "accessor": "dropdown",
+                    "alignment": "center",
+                    "component": {
+                      "type": "buttonGroup",
+                      "value": "{{$item}}",
+                      "extraSettings": {
+                        "asDropdown": true
+                      },
+                      "alignment": "right",
+                      "buttonDefinitions": [
+                        {
+                          "type": "scriptButton",
+                          "extraSettings": {
+                            "text": "Edit",
+                            "tooltip": "Edit",
+                            "script": {
+                              "key": "Edit",
+                              "DATA": "{{$item}}"
+                            }
+                          }
+                        },
+                        {
+                          "type": "scriptButton",
+                          "extraSettings": {
+                            "text": "Delete",
+                            "tooltip": "Delete",
+                            "script": {
+                              "key": "Delete",
+                              "DATA": "{{$item}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "maxWidth": 75,
+                    "show": true,
+                    "filterable": "false",
+                    "sortable": "false"
+                  }
+                ],
+                "noDataMessage": "No data found"
+              }
+            },
+            "de_de": {
+              "extraSettings": {}
+            },
+            "fr_fr": {
+              "extraSettings": {}
+            },
+            "it_it": {
+              "extraSettings": {}
+            },
+            "es_es": {
+              "extraSettings": {}
+            }
+          },
+          "enabled": true,
+          "extraSettings": {
+            "dataSource": "Rest",
+            "queryUrl": "/eq-api/adminservice/v1/stateOrderMatrixes?size=2000",
+            "path": "content",
+            "storage": "Full",
+            "linkTarget": "_blank",
+            "selectable": "Single",
+            "output": {
+              "numRows": "total"
+            },
+            "infiniteScroll": false,
+            "showPagination": true,
+            "autoHidePagination": false,
+            "clientPagination": true,
+            "sortableColumns": false,
+            "columns": [
+              {
+                "label": "State",
+                "id": "stateCode",
+                "accessor": "stateCode",
+                "alignment": "left",
+                "show": true,
+                "filterable": "true",
+                "sortable": "true"
+              },
+              {
+                "label": "Order Type",
+                "id": "orderType",
+                "accessor": "orderType",
+                "alignment": "left",
+                "show": true,
+                "filterable": "true",
+                "sortable": "true"
+              },
+              {
+                "label": "Eviction Type",
+                "id": "subOrderType",
+                "accessor": "subOrderType",
+                "alignment": "left",
+                "show": true,
+                "filterable": "true",
+                "sortable": "true"
+              },
+              {
+                "label": "Timeline",
+                "id": "timeline",
+                "accessor": "timeline",
+                "alignment": "left",
+                "show": true,
+                "filterable": "true",
+                "sortable": "true"
+              },
+              {
+                "label": "Deliverable Matrix",
+                "id": "stateOrderDeliverableMatrices",
+                "accessor": "stateOrderDeliverableMatrices",
+                "alignment": "left",
+                "component": {
+                  "type": "subform",
+                  "value": "{{$item.stateOrderDeliverableMatrices}}",
+                  "extraSettings": {
+                    "showAddButton": false,
+                    "showDeleteButton": false,
+                    "multipleEntries": true,
+                    "layoutDefinition": {
+                      "rows": [
+                        {
+                          "cols": [
+                            {
+                              "type": "htmlComponent",
+                              "value": "<span>{{stepNumber}} -  {{taskKey}}</span>"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                },
+                "show": true,
+                "filterable": "true",
+                "sortable": "true"
+              },
+              {
+                "label": "Eviction Timeline",
+                "id": "usafnEvictionTimelineDays",
+                "accessor": "usafnEvictionTimelineDays",
+                "alignment": "left",
+                "show": true,
+                "filterable": "true",
+                "sortable": "true"
+              },
+              {
+                "label": "PP Eviction By",
+                "id": "usafnPpEvictionBy",
+                "accessor": "usafnPpEvictionBy",
+                "alignment": "left",
+                "show": true,
+                "filterable": "true",
+                "sortable": "true"
+              },
+              {
+                "label": "PP Threshold",
+                "id": "usafnPpThreshold",
+                "accessor": "usafnPpThreshold",
+                "alignment": "left",
+                "show": true,
+                "filterable": "true",
+                "sortable": "true"
+              },
+              {
+                "label": "Actions",
+                "id": "dropdown",
+                "accessor": "dropdown",
+                "alignment": "center",
+                "component": {
+                  "type": "buttonGroup",
+                  "value": "{{$item}}",
+                  "extraSettings": {
+                    "asDropdown": true
+                  },
+                  "alignment": "right",
+                  "buttonDefinitions": [
+                    {
+                      "type": "scriptButton",
+                      "extraSettings": {
+                        "text": "Edit",
+                        "tooltip": "Edit",
+                        "script": {
+                          "key": "Edit",
+                          "DATA": "{{$item}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "scriptButton",
+                      "extraSettings": {
+                        "text": "Delete",
+                        "tooltip": "Delete",
+                        "script": {
+                          "key": "Delete",
+                          "DATA": "{{$item}}"
+                        }
+                      }
+                    }
+                  ]
+                },
+                "maxWidth": 75,
+                "show": true,
+                "filterable": "false",
+                "sortable": "false"
+              }
+            ],
+            "filterable": true,
+            "sortable": true,
+            "multiSort": false,
+            "pageSize": 20,
+            "pageSizeOptions": [
+              20,
+              25,
+              50,
+              100
+            ],
+            "showTotalRecords": false,
+            "response": {},
+            "showRefreshButton": false,
+            "refreshTime": "{{$payload.refreshForm}}",
+            "dataPollingOnInit": false,
+            "noDataMessage": "No data found",
+            "nodataPosition": "middle-center",
+            "favorite": {}
+          },
+          "labelAlign": "top",
+          "value": "{{selectedStateEviction}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "isRequired": false,
+          "id": "selectedStateEvictionDataTable",
+          "col": 0
+        }
+      ]
+    }
+  ]
+}

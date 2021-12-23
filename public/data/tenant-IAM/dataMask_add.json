@@ -1,0 +1,721 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 25 },
+              "lowerRight": { "x": 984, "y": 95 }
+            },
+            "stencilSuperIds": ["base-single-select", "Component"],
+            "stencilId": "cloud-single-select",
+            "customStencilId": null
+          },
+          "extraSettings": {
+            "tagsEnabled": false,
+            "preselectAll": false,
+            "clientSideFiltering": false,
+            "enableAutocomplete": false,
+            "autocompleteMinLength": 1,
+            "dataSource": "Static",
+            "items": [{ "text": "ASPS", "value": "ASPS" }],
+            "linkTargetView": "browse",
+            "storage": "Id",
+            "identity": "value",
+            "linkTarget": "_blank",
+            "multi": false
+          },
+          "placeholder": "Tenant Code",
+          "i18n": {
+            "en_us": {
+              "placeholder": "Tenant Code",
+              "extraSettings": {
+                "items": [{ "text": "ASPS", "value": "ASPS" }]
+              },
+              "label": "Tenant Code"
+            }
+          },
+          "enabled": true,
+          "labelAlign": "top",
+          "value": "{{tenantCode}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "isRequired": true,
+          "label": "Tenant Code",
+          "id": "single-select2",
+          "type": "select"
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 120 },
+              "lowerRight": { "x": 984, "y": 168 }
+            },
+            "stencilSuperIds": ["base-single-select", "Component"],
+            "stencilId": "cloud-single-select",
+            "customStencilId": null
+          },
+          "extraSettings": {
+            "tagsEnabled": false,
+            "preselectAll": false,
+            "clientSideFiltering": false,
+            "enableAutocomplete": false,
+            "autocompleteMinLength": 1,
+            "dataSource": "Static",
+            "items": [
+              { "text": "Property Details Screen", "value": "2" },
+              { "text": "Property view Screen", "value": "5" },
+              { "text": "Offer view Screen", "value": "7" }
+            ],
+            "linkTargetView": "browse",
+            "storage": "Id",
+            "identity": "value",
+            "linkTarget": "_blank",
+            "multi": false
+          },
+          "placeholder": "Service Name",
+          "i18n": {
+            "en_us": {
+              "placeholder": "Service Name",
+              "extraSettings": {
+                "items": [
+                  { "text": "Property Details Screen", "value": "2" },
+                  { "text": "Property view Screen", "value": "5" },
+                  { "text": "Offer view Screen", "value": "7" }
+                ]
+              },
+              "label": "Service Name"
+            }
+          },
+          "enabled": true,
+          "labelAlign": "top",
+          "value": "{{serviceName}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "isRequired": false,
+          "label": "Service Name",
+          "id": "single-select1",
+          "type": "select"
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 193 },
+              "lowerRight": { "x": 984, "y": 241 }
+            },
+            "stencilSuperIds": ["base-single-select", "Component"],
+            "stencilId": "cloud-single-select",
+            "customStencilId": null
+          },
+          "extraSettings": {
+            "tagsEnabled": false,
+            "preselectAll": false,
+            "clientSideFiltering": false,
+            "enableAutocomplete": false,
+            "autocompleteMinLength": 1,
+            "dataSource": "Static",
+            "items": [
+              { "text": "one", "value": "1" },
+              { "text": "two", "value": "2" },
+              { "text": "three", "value": "3" }
+            ],
+            "linkTargetView": "browse",
+            "storage": "Id",
+            "identity": "value",
+            "linkTarget": "_blank",
+            "multi": false
+          },
+          "placeholder": "Tenant Version",
+          "i18n": {
+            "en_us": {
+              "placeholder": "Tenant Version",
+              "extraSettings": {
+                "items": [
+                  { "text": "one", "value": "1" },
+                  { "text": "two", "value": "2" },
+                  { "text": "three", "value": "3" }
+                ]
+              },
+              "label": "Tenant Version"
+            }
+          },
+          "enabled": true,
+          "labelAlign": "top",
+          "value": "{{tenantVersion}}",
+          "size": 12,
+          "ignore": false,
+          "visible": false,
+          "isRequired": false,
+          "label": "Tenant Version",
+          "id": "single-select3",
+          "type": "select"
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 266 },
+              "lowerRight": { "x": 984, "y": 314 }
+            },
+            "stencilSuperIds": ["base-multi-select", "Component"],
+            "stencilId": "cloud-multi-select",
+            "customStencilId": null
+          },
+          "extraSettings": {
+            "tagsEnabled": false,
+            "preselectAll": false,
+            "clientSideFiltering": false,
+            "enableAutocomplete": false,
+            "autocompleteMinLength": 1,
+            "dataSource": "Static",
+            "items": [
+              { "text": "Address", "value": "addressLineText" },
+              { "text": "Loan Number", "value": "loanNumber" },
+              { "text": "Email Address", "value": "contactPointEmailValue" },
+              {
+                "text": "Tele Phone Number",
+                "value": "contactPointTelephoneValue"
+              },
+              { "text": "First Name", "value": "contactFirstName" },
+              { "text": "Last Name", "value": "contactLastName" },
+              { "text": "Full Name", "value": "contactFullName" },
+              { "text": "Tenant Email Address", "value": "tenantEmailValue" },
+              { "text": "Tenant Telephone", "value": "tenantTelephoneValue" },
+              { "text": "Tenant Name", "value": "tenantName" }
+            ],
+            "linkTargetView": "browse",
+            "storage": "Id",
+            "identity": "value",
+            "linkTarget": "_blank",
+            "multi": true
+          },
+          "placeholder": "Mask Columns",
+          "i18n": {
+            "en_us": {
+              "placeholder": "Mask Columns",
+              "extraSettings": {
+                "items": [
+                  { "text": "Address", "value": "addressLineText" },
+                  { "text": "Loan Number", "value": "loanNumber" },
+                  {
+                    "text": "Email Address",
+                    "value": "contactPointEmailValue"
+                  },
+                  {
+                    "text": "Tele Phone Number",
+                    "value": "contactPointTelephoneValue"
+                  },
+                  { "text": "First Name", "value": "contactFirstName" },
+                  { "text": "Last Name", "value": "contactLastName" },
+                  { "text": "Full Name", "value": "contactFullName" },
+                  {
+                    "text": "Tenant Email Address",
+                    "value": "tenantEmailValue"
+                  },
+                  {
+                    "text": "Tenant Telephone",
+                    "value": "tenantTelephoneValue"
+                  },
+                  { "text": "Tenant Name", "value": "tenantName" }
+                ]
+              },
+              "label": "Mask Columns"
+            }
+          },
+          "enabled": true,
+          "labelAlign": "top",
+          "value": "{{maskColumnsAsList}}",
+          "size": 12,
+          "ignore": false,
+          "visible": "{{serviceName == \"2\"}}",
+          "isRequired": false,
+          "label": "Mask Columns",
+          "id": "multi-select2",
+          "type": "select"
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 339 },
+              "lowerRight": { "x": 984, "y": 387 }
+            },
+            "stencilSuperIds": ["base-multi-select", "Component"],
+            "stencilId": "cloud-multi-select",
+            "customStencilId": null
+          },
+          "extraSettings": {
+            "tagsEnabled": false,
+            "preselectAll": false,
+            "clientSideFiltering": false,
+            "enableAutocomplete": false,
+            "autocompleteMinLength": 1,
+            "dataSource": "Static",
+            "items": [
+              { "text": "Address", "value": "ADDRESS" },
+              { "text": "Loan Number", "value": "LOAN_NUMBER" },
+              { "text": "Email Address", "value": "contactPointEmailValue" },
+              {
+                "text": "Tele Phone Number",
+                "value": "contactPointTelephoneValue"
+              },
+              { "text": "First Name", "value": "contactFirstName" },
+              { "text": "Last Name", "value": "contactLastName" },
+              { "text": "Full Name", "value": "contactFullName" },
+              { "text": "Tenant Email Address", "value": "tenantEmailValue" },
+              { "text": "Tenant Telephone", "value": "tenantTelephoneValue" },
+              { "text": "Tenant Name", "value": "tenantName" }
+            ],
+            "linkTargetView": "browse",
+            "storage": "Id",
+            "identity": "value",
+            "linkTarget": "_blank",
+            "multi": true
+          },
+          "placeholder": "Mask Columns",
+          "i18n": {
+            "en_us": {
+              "placeholder": "Mask Columns",
+              "extraSettings": {
+                "items": [
+                  { "text": "Address", "value": "ADDRESS" },
+                  { "text": "Loan Number", "value": "LOAN_NUMBER" },
+                  {
+                    "text": "Email Address",
+                    "value": "contactPointEmailValue"
+                  },
+                  {
+                    "text": "Tele Phone Number",
+                    "value": "contactPointTelephoneValue"
+                  },
+                  { "text": "First Name", "value": "contactFirstName" },
+                  { "text": "Last Name", "value": "contactLastName" },
+                  { "text": "Full Name", "value": "contactFullName" },
+                  {
+                    "text": "Tenant Email Address",
+                    "value": "tenantEmailValue"
+                  },
+                  {
+                    "text": "Tenant Telephone",
+                    "value": "tenantTelephoneValue"
+                  },
+                  { "text": "Tenant Name", "value": "tenantName" }
+                ]
+              },
+              "label": "Mask Columns"
+            }
+          },
+          "enabled": true,
+          "labelAlign": "top",
+          "value": "{{maskColumnsAsList}}",
+          "size": 12,
+          "ignore": false,
+          "visible": "{{serviceName == \"5\"}}",
+          "isRequired": false,
+          "label": "Mask Columns",
+          "id": "multi-select3",
+          "type": "select"
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 412 },
+              "lowerRight": { "x": 984, "y": 460 }
+            },
+            "stencilSuperIds": ["base-multi-select", "Component"],
+            "stencilId": "cloud-multi-select",
+            "customStencilId": null
+          },
+          "extraSettings": {
+            "tagsEnabled": false,
+            "preselectAll": false,
+            "clientSideFiltering": false,
+            "enableAutocomplete": false,
+            "autocompleteMinLength": 1,
+            "dataSource": "Static",
+            "items": [
+              { "text": "Address", "value": "ADDRESS" },
+              { "text": "Loan Number", "value": "LOAN_NUMBER" },
+              { "text": "Email Address", "value": "contactPointEmailValue" },
+              {
+                "text": "Tele Phone Number",
+                "value": "contactPointTelephoneValue"
+              },
+              { "text": "First Name", "value": "contactFirstName" },
+              { "text": "Last Name", "value": "contactLastName" },
+              { "text": "Full Name", "value": "contactFullName" },
+              { "text": "Tenant Email Address", "value": "tenantEmailValue" },
+              { "text": "Tenant Telephone", "value": "tenantTelephoneValue" },
+              { "text": "Tenant Name", "value": "tenantName" }
+            ],
+            "linkTargetView": "browse",
+            "storage": "Id",
+            "identity": "value",
+            "linkTarget": "_blank",
+            "multi": true
+          },
+          "placeholder": "Mask Columns",
+          "i18n": {
+            "en_us": {
+              "placeholder": "Mask Columns",
+              "extraSettings": {
+                "items": [
+                  { "text": "Address", "value": "ADDRESS" },
+                  { "text": "Loan Number", "value": "LOAN_NUMBER" },
+                  {
+                    "text": "Email Address",
+                    "value": "contactPointEmailValue"
+                  },
+                  {
+                    "text": "Tele Phone Number",
+                    "value": "contactPointTelephoneValue"
+                  },
+                  { "text": "First Name", "value": "contactFirstName" },
+                  { "text": "Last Name", "value": "contactLastName" },
+                  { "text": "Full Name", "value": "contactFullName" },
+                  {
+                    "text": "Tenant Email Address",
+                    "value": "tenantEmailValue"
+                  },
+                  {
+                    "text": "Tenant Telephone",
+                    "value": "tenantTelephoneValue"
+                  },
+                  { "text": "Tenant Name", "value": "tenantName" }
+                ]
+              },
+              "label": "Mask Columns"
+            }
+          },
+          "enabled": true,
+          "labelAlign": "top",
+          "value": "{{maskColumnsAsList}}",
+          "size": 12,
+          "ignore": false,
+          "visible": "{{serviceName == \"7\"}}",
+          "isRequired": false,
+          "label": "Mask Columns",
+          "id": "multi-select4",
+          "type": "select"
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 485 },
+              "lowerRight": { "x": 984, "y": 580 }
+            },
+            "stencilSuperIds": ["base-single-select", "Component"],
+            "stencilId": "cloud-single-select",
+            "customStencilId": null
+          },
+          "extraSettings": {
+            "tagsEnabled": false,
+            "preselectAll": false,
+            "clientSideFiltering": false,
+            "enableAutocomplete": false,
+            "autocompleteMinLength": 1,
+            "dataSource": "Static",
+            "items": [
+              { "text": "Text", "value": "text" },
+              { "text": "Number", "value": "number" }
+            ],
+            "linkTargetView": "browse",
+            "storage": "Id",
+            "identity": "value",
+            "linkTarget": "_blank",
+            "multi": false
+          },
+          "placeholder": "Column Type",
+          "i18n": {
+            "en_us": {
+              "placeholder": "Column Type",
+              "extraSettings": {
+                "items": [
+                  { "text": "Text", "value": "text" },
+                  { "text": "Number", "value": "number" }
+                ]
+              },
+              "label": "Column Type"
+            }
+          },
+          "enabled": true,
+          "labelAlign": "top",
+          "value": "{{patternType}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "isRequired": true,
+          "label": "Column Type",
+          "id": "single-select4",
+          "type": "select"
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 581 },
+              "lowerRight": { "x": 984, "y": 629 }
+            },
+            "stencilSuperIds": ["base-single-select", "Component"],
+            "stencilId": "cloud-single-select",
+            "customStencilId": null
+          },
+          "extraSettings": {
+            "tagsEnabled": false,
+            "preselectAll": false,
+            "clientSideFiltering": false,
+            "enableAutocomplete": false,
+            "autocompleteMinLength": 1,
+            "dataSource": "Static",
+            "items": [
+              { "text": "a", "value": "a" },
+              { "text": "b", "value": "b" },
+              { "text": "c", "value": "c" },
+              { "text": "d", "value": "d" },
+              { "text": "e", "value": "e" },
+              { "text": "f", "value": "f" },
+              { "text": "g", "value": "g" },
+              { "text": "h", "value": "h" },
+              { "text": "i", "value": "i" },
+              { "text": "j", "value": "j" },
+              { "text": "k", "value": "k" },
+              { "text": "l", "value": "l" },
+              { "text": "m", "value": "m" },
+              { "text": "n", "value": "n" },
+              { "text": "o", "value": "o" },
+              { "text": "p", "value": "p" },
+              { "text": "q", "value": "q" },
+              { "text": "r", "value": "r" },
+              { "text": "s", "value": "s" },
+              { "text": "t", "value": "t" },
+              { "text": "u", "value": "u" },
+              { "text": "v", "value": "v" },
+              { "text": "w", "value": "w" },
+              { "text": "x", "value": "x" },
+              { "text": "y", "value": "y" },
+              { "text": "z", "value": "z" }
+            ],
+            "queryUrl": "{{additionalData.patterns}}",
+            "linkTargetView": "browse",
+            "storage": "Id",
+            "identity": "value",
+            "linkTarget": "_blank",
+            "multi": false
+          },
+          "placeholder": "Pattern",
+          "i18n": {
+            "en_us": {
+              "placeholder": "Pattern",
+              "extraSettings": {
+                "items": [
+                  { "text": "a", "value": "a" },
+                  { "text": "b", "value": "b" },
+                  { "text": "c", "value": "c" },
+                  { "text": "d", "value": "d" },
+                  { "text": "e", "value": "e" },
+                  { "text": "f", "value": "f" },
+                  { "text": "g", "value": "g" },
+                  { "text": "h", "value": "h" },
+                  { "text": "i", "value": "i" },
+                  { "text": "j", "value": "j" },
+                  { "text": "k", "value": "k" },
+                  { "text": "l", "value": "l" },
+                  { "text": "m", "value": "m" },
+                  { "text": "n", "value": "n" },
+                  { "text": "o", "value": "o" },
+                  { "text": "p", "value": "p" },
+                  { "text": "q", "value": "q" },
+                  { "text": "r", "value": "r" },
+                  { "text": "s", "value": "s" },
+                  { "text": "t", "value": "t" },
+                  { "text": "u", "value": "u" },
+                  { "text": "v", "value": "v" },
+                  { "text": "w", "value": "w" },
+                  { "text": "x", "value": "x" },
+                  { "text": "y", "value": "y" },
+                  { "text": "z", "value": "z" }
+                ]
+              },
+              "label": "Pattern"
+            }
+          },
+          "enabled": true,
+          "labelAlign": "top",
+          "value": "{{patternText}}",
+          "defaultValue": "x",
+          "size": 12,
+          "ignore": false,
+          "visible": "{{patternType == \"text\"}}",
+          "isRequired": false,
+          "label": "Pattern",
+          "id": "single-select5",
+          "type": "select"
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 654 },
+              "lowerRight": { "x": 984, "y": 702 }
+            },
+            "stencilSuperIds": ["base-single-select", "Component"],
+            "stencilId": "cloud-single-select",
+            "customStencilId": null
+          },
+          "extraSettings": {
+            "tagsEnabled": false,
+            "preselectAll": false,
+            "clientSideFiltering": false,
+            "enableAutocomplete": false,
+            "autocompleteMinLength": 1,
+            "dataSource": "Static",
+            "items": [
+              { "text": "0", "value": "0" },
+              { "text": "1", "value": "1" },
+              { "text": "2", "value": "2" },
+              { "text": "3", "value": "3" },
+              { "text": "4", "value": "4" },
+              { "text": "5", "value": "5" },
+              { "text": "6", "value": "6" },
+              { "text": "7", "value": "7" },
+              { "text": "8", "value": "8" },
+              { "text": "9", "value": "9" }
+            ],
+            "queryUrl": "{{additionalData.patterns}}",
+            "linkTargetView": "browse",
+            "storage": "Id",
+            "identity": "value",
+            "linkTarget": "_blank",
+            "multi": false
+          },
+          "placeholder": "Pattern",
+          "i18n": {
+            "en_us": {
+              "placeholder": "Pattern",
+              "extraSettings": {
+                "items": [
+                  { "text": "0", "value": "0" },
+                  { "text": "1", "value": "1" },
+                  { "text": "2", "value": "2" },
+                  { "text": "3", "value": "3" },
+                  { "text": "4", "value": "4" },
+                  { "text": "5", "value": "5" },
+                  { "text": "6", "value": "6" },
+                  { "text": "7", "value": "7" },
+                  { "text": "8", "value": "8" },
+                  { "text": "9", "value": "9" }
+                ]
+              },
+              "label": "Pattern"
+            }
+          },
+          "enabled": true,
+          "labelAlign": "top",
+          "value": "{{patternNumber}}",
+          "defaultValue": 9,
+          "size": 12,
+          "ignore": false,
+          "visible": "{{patternType == \"number\"}}",
+          "isRequired": false,
+          "label": "Pattern",
+          "id": "single-select7",
+          "type": "select"
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 727 },
+              "lowerRight": { "x": 984, "y": 775 }
+            },
+            "stencilSuperIds": ["base-single-select", "Component"],
+            "stencilId": "cloud-single-select",
+            "customStencilId": null
+          },
+          "extraSettings": {
+            "tagsEnabled": false,
+            "preselectAll": false,
+            "clientSideFiltering": false,
+            "enableAutocomplete": false,
+            "autocompleteMinLength": 1,
+            "dataSource": "Static",
+            "items": [
+              { "text": "First", "value": "first" },
+              { "text": "Last", "value": "last" }
+            ],
+            "linkTargetView": "browse",
+            "storage": "Id",
+            "identity": "value",
+            "linkTarget": "_blank",
+            "multi": false
+          },
+          "placeholder": "Mask Padding",
+          "i18n": {
+            "en_us": {
+              "placeholder": "Mask Padding",
+              "extraSettings": {
+                "items": [
+                  { "text": "First", "value": "first" },
+                  { "text": "Last", "value": "last" }
+                ]
+              },
+              "label": "Mask Padding"
+            }
+          },
+          "enabled": true,
+          "labelAlign": "top",
+          "value": "{{maskPadding}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "isRequired": false,
+          "label": "Mask Padding",
+          "id": "single-select6",
+          "type": "select"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "key": "piiDataTaskForm",
+    "name": "PIIDataTaskForm",
+    "description": "",
+    "version": "3",
+    "type": "2",
+    "flowableDesignVersion": 3090
+  }
+}

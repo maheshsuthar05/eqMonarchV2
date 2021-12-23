@@ -1,0 +1,233 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": {
+                "x": 15,
+                "y": 25
+              },
+              "lowerRight": {
+                "x": 984,
+                "y": 73
+              }
+            },
+            "stencilSuperIds": [
+              "base-text",
+              "Component"
+            ],
+            "stencilId": "cloud-text",
+            "customStencilId": null
+          },
+          "type": "text",
+          "labelAlign": "top",
+          "value": "{{investorGroup}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": "{{!modificationMode}}",
+          "isRequired": true,
+          "label": "Investor Group",
+          "i18n": {
+            "en_us": {
+              "label": "Investor Group"
+            }
+          },
+          "id": "input_investor_group",
+          "extraSettings": {}
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": {
+                "x": 15,
+                "y": 98
+              },
+              "lowerRight": {
+                "x": 984,
+                "y": 161
+              }
+            },
+            "stencilSuperIds": [
+              "base-radiobuttons",
+              "Component"
+            ],
+            "stencilId": "cloud-radiobuttons",
+            "customStencilId": null
+          },
+          "type": "radio",
+          "enabled": true,
+          "extraSettings": {
+            "dataSource": "Static",
+            "items": [
+              {
+                "text": "ID",
+                "value": "id",
+                "checked": "true"
+              },
+              {
+                "text": "Name",
+                "value": "name"
+              }
+            ],
+            "linkTargetView": "browse",
+            "storage": "Id",
+            "identity": "value",
+            "linkTarget": "_blank",
+            "display": "Horizontal"
+          },
+          "i18n": {
+            "en_us": {
+              "extraSettings": {
+                "items": [
+                  {
+                    "text": "ID",
+                    "value": "id",
+                    "checked": "true"
+                  },
+                  {
+                    "text": "Name",
+                    "value": "name"
+                  }
+                ]
+              },
+              "label": ""
+            }
+          },
+          "labelAlign": "top",
+          "value": "{{selectType}}",
+          "defaultValue": "id",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "isRequired": false,
+          "label": "",
+          "id": "radio_display_toggle"
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": {
+                "x": 15,
+                "y": 186
+              },
+              "lowerRight": {
+                "x": 984,
+                "y": 234
+              }
+            },
+            "stencilSuperIds": [
+              "base-multi-select",
+              "Component"
+            ],
+            "stencilId": "cloud-multi-select",
+            "customStencilId": null
+          },
+          "type": "select",
+          "defaultValue": "{{defaultSelections}}",
+          "extraSettings": {
+            "tagsEnabled": false,
+            "preselectAll": false,
+            "clientSideFiltering": true,
+            "enableAutocomplete": true,
+            "autocompleteMinLength": 0,
+            "dataSource": "Static",
+            "items": "{{availableInvestors}}",
+            "linkTargetView": "browse",
+            "formatItem": "{{$item.investorCode}}",
+            "storage": "Id",
+            "identity": "investorId",
+            "linkTarget": "_blank",
+            "multi": true
+          },
+          "enabled": true,
+          "labelAlign": "top",
+          "value": "{{investorIds}}",
+          "size": 12,
+          "ignore": false,
+          "visible": "{{selectType == \"id\"}}",
+          "isRequired": false,
+          "label": "Investor",
+          "i18n": {
+            "en_us": {
+              "label": "Investor"
+            }
+          },
+          "id": "input_investor_id"
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": {
+                "x": 15,
+                "y": 259
+              },
+              "lowerRight": {
+                "x": 984,
+                "y": 307
+              }
+            },
+            "stencilSuperIds": [
+              "base-multi-select",
+              "Component"
+            ],
+            "stencilId": "cloud-multi-select",
+            "customStencilId": null
+          },
+          "type": "select",
+          "defaultValue": "{{defaultSelections}}",
+          "extraSettings": {
+            "tagsEnabled": false,
+            "preselectAll": false,
+            "clientSideFiltering": true,
+            "enableAutocomplete": true,
+            "autocompleteMinLength": 0,
+            "dataSource": "Static",
+            "items": "{{availableInvestors}}",
+            "linkTargetView": "browse",
+            "formatItem": "{{$item.investorName}}",
+            "storage": "Id",
+            "identity": "investorId",
+            "linkTarget": "_blank",
+            "multi": true
+          },
+          "enabled": true,
+          "labelAlign": "top",
+          "value": "{{investorIds}}",
+          "size": 12,
+          "ignore": false,
+          "visible": "{{selectType == \"name\"}}",
+          "isRequired": false,
+          "label": "Investor",
+          "i18n": {
+            "en_us": {
+              "label": "Investor"
+            }
+          },
+          "id": "input_investor_name"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "key": "investorGroupCreation",
+    "name": "Investor Group Creation",
+    "description": "",
+    "version": "11",
+    "type": "2"
+  }
+}

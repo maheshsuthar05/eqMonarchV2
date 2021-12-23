@@ -1,0 +1,149 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 25 },
+              "lowerRight": { "x": 984, "y": 93 }
+            },
+            "stencilSuperIds": ["base-datatable", "Component"],
+            "stencilId": "cloud-datatable",
+            "customStencilId": null
+          },
+          "enabled": true,
+          "extraSettings": {
+            "dataSource": "Rest",
+            "queryUrl": "eq-api/tbd/eqDataMaskingMetadatas",
+            "path": "content",
+            "linkTargetView": "browse",
+            "storage": "Full",
+            "linkTarget": "_blank",
+            "infiniteScroll": false,
+            "showPagination": true,
+            "autoHidePagination": true,
+            "clientPagination": true,
+            "sortableColumns": false,
+            "columns": [
+              {
+                "label": "Mask Columns",
+                "id": "maskColumns",
+                "accessor": "maskColumns",
+                "alignment": "left",
+                "filterable": "true",
+                "show": true
+              },
+              {
+                "label": "Mask Padding",
+                "id": "maskPadding",
+                "accessor": "maskPadding",
+                "alignment": "left",
+                "filterable": "true",
+                "show": true
+              },
+              {
+                "label": "Service Name",
+                "id": "serviceName",
+                "accessor": "serviceName",
+                "alignment": "left",
+                "filterable": "true",
+                "show": true
+              },
+              {
+                "label": "Pattern",
+                "id": "pattern",
+                "accessor": "pattern",
+                "alignment": "left",
+                "filterable": "true",
+                "show": true
+              },
+              {
+                "label": "Pattern Type",
+                "id": "patternType",
+                "accessor": "patternType",
+                "alignment": "left",
+                "filterable": "true",
+                "show": true
+              }
+            ],
+            "filterable": true,
+            "sortable": false,
+            "multiSort": false,
+            "pageSize": 20,
+            "pageSizeOptions": [5, 10, 20, 25, 50, 100],
+            "showTotalRecords": false,
+            "response": {},
+            "dataPollingOnInit": false,
+            "target": "_blank",
+            "nodataPosition": "middle-center"
+          },
+          "labelAlign": "top",
+          "value": "{{dataMakingList}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "isRequired": false,
+          "id": "datatable1",
+          "i18n": {
+            "en_us": {
+              "extraSettings": {
+                "columns": [
+                  {
+                    "label": "Mask Columns",
+                    "id": "maskColumns",
+                    "accessor": "maskColumns",
+                    "alignment": "left",
+                    "filterable": "true",
+                    "show": true
+                  },
+                  {
+                    "label": "Mask Padding",
+                    "id": "maskPadding",
+                    "accessor": "maskPadding",
+                    "alignment": "left",
+                    "filterable": "true",
+                    "show": true
+                  },
+                  {
+                    "label": "Service Name",
+                    "id": "serviceName",
+                    "accessor": "serviceName",
+                    "alignment": "left",
+                    "filterable": "true",
+                    "show": true
+                  },
+                  {
+                    "label": "Pattern",
+                    "id": "pattern",
+                    "accessor": "pattern",
+                    "alignment": "left",
+                    "filterable": "true",
+                    "show": true
+                  },
+                  {
+                    "label": "Pattern Type",
+                    "id": "patternType",
+                    "accessor": "patternType",
+                    "alignment": "left",
+                    "filterable": "true",
+                    "show": true
+                  }
+                ]
+              }
+            }
+          },
+          "type": "dataTable"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "key": "dataMaskingTemplate",
+    "name": "Data Masking Template",
+    "description": "Data Masking Template",
+    "version": "2",
+    "type": "2",
+    "flowableDesignVersion": 3090
+  }
+}

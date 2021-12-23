@@ -1,0 +1,32 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "type": "upload",
+          "labelAlign": "top",
+          "value": "{{propertyImages}}",
+          "i18n": {},
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "attachment1",
+          "extraSettings": {
+            "autoupload": true,
+            "uploadUrl": "/eq-files-v2/file?fileCategoryType=propertyimage&propertyId={{additionalData.propertyId}}&investorId={{additionalData.investorId}}",
+            "downloadUrl": "rest/file/{{id}}",
+            "deleteUrl": "{{$item.fileS3Url}}",
+            "allowDelete": true,
+            "preview": "thumbnail",
+            "acceptFileTypes": ".png,.jpeg,.jpg,.gif,.tiff,.JPEG,.JPG",
+            "hasFileType": true,
+            "requireFileType": false
+          },
+          "col": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 25 },
+              "lowerRight": { "x": 985, "y": 245 }
+            },
+            "stencilSuperIds": ["SubSlotPanel"],
+            "stencilId": "cloud-sub-panel",
+            "customStencilId": null
+          },
+          "type": "panel",
+          "labelAlign": "top",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "sub-panel2",
+          "extraSettings": {
+            "collapsible": false,
+            "collapsed": false,
+            "showBorder": false,
+            "saveButtonVisible": true,
+            "saveButtonEnabled": true,
+            "cancelButtonVisible": true,
+            "cancelButtonEnabled": true,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 25 },
+                          "lowerRight": { "x": 955, "y": 73 }
+                        },
+                        "stencilSuperIds": ["base-text", "Component"],
+                        "stencilId": "cloud-text",
+                        "customStencilId": null
+                      },
+                      "type": "text",
+                      "labelAlign": "top",
+                      "value": "{{name}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": "{{additionalData.isAdd}}",
+                      "isRequired": true,
+                      "tooltip": "Name",
+                      "label": "Name",
+                      "validationRegExp": "[-\\w\\s]+$",
+                      "validationRegExpErrorMessage": "Please enter the valid name",
+                      "i18n": {
+                        "en_us": { "label": "Name", "tooltip": "Name" }
+                      },
+                      "id": "text1",
+                      "extraSettings": {}
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 98 },
+                          "lowerRight": { "x": 955, "y": 146 }
+                        },
+                        "stencilSuperIds": ["base-text", "Component"],
+                        "stencilId": "cloud-text",
+                        "customStencilId": null
+                      },
+                      "type": "text",
+                      "labelAlign": "top",
+                      "value": "{{description}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": true,
+                      "label": "Description",
+                      "tooltip": "Description",
+                      "validationRegExp": "[-\\w\\s]+$",
+                      "validationRegExpErrorMessage": "Please enter the valid Description",
+                      "i18n": {
+                        "en_us": {
+                          "label": "Description",
+                          "tooltip": "Description"
+                        }
+                      },
+                      "id": "text2",
+                      "extraSettings": {}
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 0, "y": 0 },
+                          "lowerRight": { "x": 0, "y": 0 }
+                        },
+                        "stencilSuperIds": [],
+                        "stencilId": null,
+                        "customStencilId": null
+                      },
+                      "type": "",
+                      "size": 8
+                    },
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 652, "y": 171 },
+                          "lowerRight": { "x": 796, "y": 197 }
+                        },
+                        "stencilSuperIds": ["Button"],
+                        "stencilId": "cloud-script-button",
+                        "customStencilId": null
+                      },
+                      "type": "scriptButton",
+                      "extraSettings": {
+                        "text": "Save",
+                        "script": "{{$formValid}}",
+                        "autoExecute": false,
+                        "alignment": "left",
+                        "iconAlignment": "right"
+                      },
+                      "i18n": {
+                        "en_us": { "extraSettings": { "text": "Save" } }
+                      },
+                      "labelAlign": "top",
+                      "size": 2,
+                      "ignore": false,
+                      "visible": false,
+                      "enabled": "{{$formValid}}",
+                      "isRequired": false,
+                      "styleClass": "altisource__button_primary",
+                      "id": "script-button2"
+                    },
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 811, "y": 171 },
+                          "lowerRight": { "x": 955, "y": 197 }
+                        },
+                        "stencilSuperIds": ["Button"],
+                        "stencilId": "cloud-link-button",
+                        "customStencilId": null
+                      },
+                      "type": "linkButton",
+                      "extraSettings": {
+                        "target": "_self",
+                        "alignment": "left",
+                        "iconAlignment": "right",
+                        "showAsButton": true,
+                        "type": "one"
+                      },
+                      "labelAlign": "top",
+                      "value": "Cancel",
+                      "size": 2,
+                      "ignore": false,
+                      "visible": false,
+                      "enabled": true,
+                      "isRequired": false,
+                      "styleClass": "altisource__button_secondary",
+                      "id": "link-button8",
+                      "i18n": { "en_us": { "value": "Cancel" } }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "forceValidation": false,
+  "metadata": {
+    "key": "addPrivilege",
+    "name": "add privilege",
+    "description": "addPrivilege",
+    "version": "19",
+    "type": "2"
+  }
+}

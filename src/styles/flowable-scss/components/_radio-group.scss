@@ -1,0 +1,98 @@
+.flw__radio-group__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+
+.flw__radio-group__input {
+  margin-right: $flw-gutter;
+  margin-right: var(--flw-gutter, $flw-gutter);
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  overflow: hidden;
+  margin-top: -4px;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: $flw-forms-transparent;
+  background-color: var(--flw-forms-transparent, $flw-forms-transparent);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: 1px solid $flw-color-lightgray;
+  border: 1px solid var(--flw-color-lightgray, $flw-color-lightgray);
+  transition: 0.2s ease-in-out;
+  transition-property: background-color, border;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -1px;
+}
+
+.flw__radio-group__input:focus {
+  outline: none;
+  border-color: $flw-forms-color;
+  border-color: var(--flw-forms-color, $flw-forms-color);
+}
+
+.flw__radio-group__input:checked {
+  background-color: $flw-forms-color;
+  background-color: var(--flw-forms-color, $flw-forms-color);
+  border-color: $flw-forms-transparent;
+  border-color: var(--flw-forms-transparent, $flw-forms-transparent);
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Ccircle%20fill%3D%22%23fff%22%20cx%3D%228%22%20cy%3D%228%22%20r%3D%222%22%20%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.flw__radio-group__radio {
+  display: block;
+}
+
+.flw__radio-group__radio__label {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.flw__radio-group--horizontal__list {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flw__radio-group--horizontal__radio {
+  display: inline-block;
+  padding-right: 20px;
+  white-space: nowrap;
+}
+
+.flw__radio-group--disabled__input {
+  background-color: $flw-forms-muted-background-color;
+  background-color: var(--flw-forms-muted-background-color, $flw-forms-muted-background-color);
+  border-color: $flw-forms-border-color;
+  border-color: var(--flw-forms-border-color, $flw-forms-border-color);
+  cursor: default;
+}
+
+.flw__radio-group--disabled__input:checked {
+  background-color: $flw-forms-muted-background-color;
+  background-color: var(--flw-forms-muted-background-color, $flw-forms-muted-background-color);
+  border-color: $flw-forms-border-color;
+  border-color: var(--flw-forms-border-color, $flw-forms-border-color);
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Ccircle%20fill%3D%22%23999%22%20cx%3D%228%22%20cy%3D%228%22%20r%3D%222%22%20%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.flw__radio-group--disabled__label {
+  color: $flw-forms-muted-text-color;
+  color: var(--flw-forms-muted-text-color, $flw-forms-muted-text-color);
+  cursor: default;
+}
+
+.flw__radio-group--left-aligned.flw__radio-group--left-aligned,
+.left-aligned-labels.left-aligned-labels .flw__radio-group {
+  .flw__component__input {
+    display: inline-block;
+    width: 16px;
+  }
+
+  .flw__radio-group__list {
+    padding-left: 0;
+  }
+}

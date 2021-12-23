@@ -1,0 +1,254 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 25 },
+              "lowerRight": { "x": 984, "y": 73 }
+            },
+            "stencilSuperIds": ["base-text", "Component"],
+            "stencilId": "cloud-text",
+            "customStencilId": null
+          },
+          "type": "text",
+          "placeholder": "Name",
+          "i18n": {
+            "en_us": {
+              "placeholder": "Name",
+              "tooltip": "Name",
+              "label": "Name",
+              "validationRegExpErrorMessage": "Please enter the valid name"
+            }
+          },
+          "labelAlign": "top",
+          "tooltip": "Name",
+          "value": "{{name}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": "{{additionalData.isAdd}}",
+          "isRequired": true,
+          "label": "Name",
+          "id": "text8",
+          "validationRegExp": "[-\\w\\s]+$",
+          "validationRegExpErrorMessage": "Please enter the valid name",
+          "extraSettings": {}
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 98 },
+              "lowerRight": { "x": 984, "y": 146 }
+            },
+            "stencilSuperIds": ["base-text", "Component"],
+            "stencilId": "cloud-text",
+            "customStencilId": null
+          },
+          "type": "text",
+          "placeholder": "Description",
+          "i18n": {
+            "en_us": {
+              "placeholder": "Description",
+              "tooltip": "Description",
+              "label": "Description",
+              "validationRegExpErrorMessage": "Please enter the valid description"
+            }
+          },
+          "labelAlign": "top",
+          "tooltip": "Description",
+          "value": "{{description}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": true,
+          "label": "Description",
+          "id": "text9",
+          "validationRegExp": "[-\\w\\s]+$",
+          "validationRegExpErrorMessage": "Please enter the valid description",
+          "extraSettings": {}
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 171 },
+              "lowerRight": { "x": 984, "y": 219 }
+            },
+            "stencilSuperIds": ["base-multi-select", "Component"],
+            "stencilId": "cloud-multi-select",
+            "customStencilId": null
+          },
+          "type": "select",
+          "extraSettings": {
+            "tagsEnabled": false,
+            "preselectAll": false,
+            "clientSideFiltering": false,
+            "enableAutocomplete": true,
+            "autocompleteMinLength": 0,
+            "dataSource": "Rest",
+            "queryUrl": "/eq-api/core/ldap/users/v2",
+            "lookupUrl": "/eq-api/core/ldap/users/v2",
+            "path": "data",
+            "linkTargetView": "browse",
+            "formatItem": "{{$item.displayName}}",
+            "storage": "Full",
+            "linkTarget": "_blank",
+            "multi": true
+          },
+          "placeholder": "Additional Users",
+          "i18n": {
+            "en_us": {
+              "placeholder": "Additional Users",
+              "tooltip": "Additional Users",
+              "label": "Additional Users"
+            }
+          },
+          "enabled": true,
+          "labelAlign": "top",
+          "tooltip": "Additional Users",
+          "value": "{{selectedUsers}}",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "isRequired": false,
+          "label": "Additional Users",
+          "id": "multi-select5"
+        }
+      ]
+    },
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 244 },
+              "lowerRight": { "x": 973, "y": 318 }
+            },
+            "stencilSuperIds": ["SubSlotPanel"],
+            "stencilId": "cloud-sub-panel",
+            "customStencilId": null
+          },
+          "type": "panel",
+          "labelAlign": "top",
+          "size": 12,
+          "ignore": false,
+          "visible": false,
+          "enabled": true,
+          "isRequired": false,
+          "id": "sub-panel4",
+          "extraSettings": {
+            "collapsible": false,
+            "collapsed": false,
+            "showBorder": false,
+            "saveButtonVisible": true,
+            "saveButtonEnabled": true,
+            "cancelButtonVisible": true,
+            "cancelButtonEnabled": true,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 0, "y": 0 },
+                          "lowerRight": { "x": 0, "y": 0 }
+                        },
+                        "stencilSuperIds": [],
+                        "stencilId": null,
+                        "customStencilId": null
+                      },
+                      "type": "",
+                      "size": 8
+                    },
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 644, "y": 25 },
+                          "lowerRight": { "x": 786, "y": 51 }
+                        },
+                        "stencilSuperIds": ["Button"],
+                        "stencilId": "cloud-script-button",
+                        "customStencilId": null
+                      },
+                      "type": "scriptButton",
+                      "extraSettings": {
+                        "text": "Save",
+                        "script": "{{$formValid}}",
+                        "autoExecute": false,
+                        "executeAlways": false,
+                        "alignment": "left",
+                        "iconAlignment": "right"
+                      },
+                      "i18n": {
+                        "en_us": { "extraSettings": { "text": "Save" } }
+                      },
+                      "primary": false,
+                      "labelAlign": "top",
+                      "value": "{{scriptResult}}",
+                      "size": 2,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": "{{$formValid}}",
+                      "isRequired": false,
+                      "styleClass": "altisource__button_primary",
+                      "id": "script-button2"
+                    },
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 801, "y": 25 },
+                          "lowerRight": { "x": 943, "y": 51 }
+                        },
+                        "stencilSuperIds": ["Button"],
+                        "stencilId": "cloud-link-button",
+                        "customStencilId": null
+                      },
+                      "type": "linkButton",
+                      "extraSettings": {
+                        "target": "_self",
+                        "alignment": "left",
+                        "iconAlignment": "right",
+                        "showAsButton": true,
+                        "type": "one"
+                      },
+                      "primary": false,
+                      "labelAlign": "top",
+                      "value": "Cancel",
+                      "size": 2,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": false,
+                      "styleClass": "altisource__button_secondary",
+                      "id": "link-button4",
+                      "i18n": { "en_us": { "value": "Cancel" } }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "key": "addAccessGroupv2",
+    "name": "Add Access Group",
+    "description": "",
+    "version": "3",
+    "type": "2",
+    "flowableDesignVersion": 3087
+  }
+}

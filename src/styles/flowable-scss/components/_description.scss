@@ -1,0 +1,8 @@
+.flw__description:not(:empty) {
+  display: block;
+  padding: 2px 0;
+  font-size: $flw-text-sm;
+  font-size: var(--flw-text-sm, $flw-text-sm);
+  color: $flw-forms-muted-text-color;
+  color: var(--flw-forms-muted-text-color, $flw-forms-muted-text-color);
+}

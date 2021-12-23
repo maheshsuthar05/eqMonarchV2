@@ -1,0 +1,21 @@
+{
+    "rows": [
+      {
+        "cols": [
+          {
+            "type": "upload",
+            "value": "{{previewFile}}",
+            "enabled": "{{enabled}}",
+            "styleClass":"flw_propery_document_preview_form",
+            "extraSettings": {
+              "autoupload": false,
+              "downloadUrl": "rest/file/{{id}}",
+              "requireFileType": true,
+              "preview": "thumbnail"
+            },
+            "size": 48
+          }
+        ]
+      }
+    ]
+}

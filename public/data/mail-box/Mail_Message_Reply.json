@@ -1,0 +1,41 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 25 },
+              "lowerRight": { "x": 984, "y": 75 }
+            },
+            "stencilSuperIds": ["base-rich-text", "Component"],
+            "stencilId": "cloud-rich-text",
+            "customStencilId": null
+          },
+          "labelAlign": "top",
+          "value": "{{mainContent}}",
+          "size": 12,
+          "visible": true,
+          "enabled": true,
+          "isRequired": true,
+          "styleClass": "mail-message-reply",
+          "id": "rich-text1",
+          "type": "richText",
+          "extraSettings": {
+            "textFormat": "html",
+            "useSpellCheck": true,
+            "minRows": 3
+          }
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "key": "mailMessageReply",
+    "name": "MailMessageReply",
+    "description": "",
+    "version": "3",
+    "type": "2",
+    "flowableDesignVersion": 3090
+  }
+}

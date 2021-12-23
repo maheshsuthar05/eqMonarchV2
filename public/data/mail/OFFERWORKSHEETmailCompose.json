@@ -1,0 +1,415 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "designInfo": {
+            "bounds": {
+              "upperLeft": { "x": 15, "y": 25 },
+              "lowerRight": { "x": 985, "y": 649 }
+            },
+            "stencilSuperIds": ["SubSlotPanel"],
+            "stencilId": "cloud-sub-panel",
+            "customStencilId": null
+          },
+          "type": "panel",
+          "labelAlign": "top",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "sub-panel1",
+          "extraSettings": {
+            "collapsible": false,
+            "collapsed": false,
+            "showBorder": false,
+            "saveButtonVisible": false,
+            "saveButtonEnabled": false,
+            "cancelButtonVisible": false,
+            "cancelButtonEnabled": false,
+            "layoutDefinition": {
+              "rows": [
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 25 },
+                          "lowerRight": { "x": 238, "y": 73 }
+                        },
+                        "stencilSuperIds": ["base-single-select", "Component"],
+                        "stencilId": "cloud-single-select",
+                        "customStencilId": null
+                      },
+                      "type": "select",
+                      "extraSettings": {
+                        "tagsEnabled": false,
+                        "preselectAll": false,
+                        "clientSideFiltering": false,
+                        "selectionErrorMessage": "Please select Tenant Id",
+                        "enableAutocomplete": false,
+                        "autocompleteMinLength": 1,
+                        "dataSource": "Static",
+                        "linkTargetView": "browse",
+                        "formatItem": "{{$item.tenantID}}",
+                        "storage": "Full",
+                        "linkTarget": "_blank",
+                        "multi": false
+                      },
+                      "i18n": {
+                        "en_us": {
+                          "extraSettings": {
+                            "selectionErrorMessage": "Please select Tenant Id"
+                          },
+                          "placeholder": "Select...",
+                          "label": "Tenant Id"
+                        }
+                      },
+                      "placeholder": "Select...",
+                      "enabled": false,
+                      "labelAlign": "top",
+                      "value": "{{tenantId}}",
+                      "defaultValue": "{{tenantId.encrypted}}",
+                      "size": 3,
+                      "ignore": false,
+                      "visible": false,
+                      "isRequired": false,
+                      "label": "Tenant Id",
+                      "id": "single-select1"
+                    },
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 253, "y": 25 },
+                          "lowerRight": { "x": 477, "y": 73 }
+                        },
+                        "stencilSuperIds": ["base-text", "Component"],
+                        "stencilId": "cloud-text",
+                        "customStencilId": null
+                      },
+                      "type": "text",
+                      "labelAlign": "top",
+                      "value": "{{tags}}",
+                      "defaultValue": "{{tenantId.tenantId}}, {{parentId}}",
+                      "size": 3,
+                      "ignore": false,
+                      "visible": false,
+                      "enabled": false,
+                      "isRequired": false,
+                      "label": "Tags",
+                      "i18n": { "en_us": { "label": "Tags" } },
+                      "id": "text3",
+                      "extraSettings": {}
+                    },
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 492, "y": 25 },
+                          "lowerRight": { "x": 716, "y": 73 }
+                        },
+                        "stencilSuperIds": ["base-text", "Component"],
+                        "stencilId": "cloud-text",
+                        "customStencilId": null
+                      },
+                      "type": "text",
+                      "labelAlign": "top",
+                      "value": "{{investorId}}",
+                      "defaultValue": "123Investor",
+                      "size": 3,
+                      "ignore": false,
+                      "visible": false,
+                      "enabled": false,
+                      "isRequired": false,
+                      "label": "Investor ID",
+                      "i18n": { "en_us": { "label": "Investor ID" } },
+                      "id": "text1",
+                      "extraSettings": {}
+                    },
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 731, "y": 25 },
+                          "lowerRight": { "x": 955, "y": 73 }
+                        },
+                        "stencilSuperIds": ["base-text", "Component"],
+                        "stencilId": "cloud-text",
+                        "customStencilId": null
+                      },
+                      "type": "text",
+                      "labelAlign": "top",
+                      "value": "{{fileCategoryType}}",
+                      "defaultValue": "Message",
+                      "size": 3,
+                      "ignore": false,
+                      "visible": false,
+                      "enabled": false,
+                      "isRequired": false,
+                      "label": "file Category Type",
+                      "i18n": { "en_us": { "label": "file Category Type" } },
+                      "id": "text2",
+                      "extraSettings": {}
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 98 },
+                          "lowerRight": { "x": 955, "y": 146 }
+                        },
+                        "stencilSuperIds": ["base-text", "Component"],
+                        "stencilId": "cloud-text",
+                        "customStencilId": null
+                      },
+                      "type": "text",
+                      "labelAlign": "top",
+                      "value": "{{senderId}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": false,
+                      "enabled": false,
+                      "isRequired": false,
+                      "styleClass": "mt-8 mb-16",
+                      "label": "From",
+                      "i18n": { "en_us": { "label": "From" } },
+                      "id": "senderId",
+                      "extraSettings": {}
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 171 },
+                          "lowerRight": { "x": 955, "y": 219 }
+                        },
+                        "stencilSuperIds": ["base-single-select", "Component"],
+                        "stencilId": "cloud-single-select",
+                        "customStencilId": null
+                      },
+                      "type": "select",
+                      "extraSettings": {
+                        "tagsEnabled": false,
+                        "preselectAll": false,
+                        "clientSideFiltering": false,
+                        "enableAutocomplete": false,
+                        "autocompleteMinLength": 1,
+                        "dataSource": "Rest",
+                        "queryUrl": "/eq-api/core/ldap/users?tc={{tenantId.encrypted}}",
+                        "lookupUrl": "{{$id}}",
+                        "path": "data",
+                        "linkTargetView": "browse",
+                        "formatItem": "{{$item.email}}",
+                        "storage": "Full",
+                        "linkTarget": "_blank",
+                        "multi": false
+                      },
+                      "placeholder": "Select...",
+                      "i18n": {
+                        "en_us": { "placeholder": "Select...", "label": "To" }
+                      },
+                      "enabled": false,
+                      "labelAlign": "top",
+                      "value": "{{recipientId}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "isRequired": false,
+                      "label": "To",
+                      "id": "recipientId"
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 244 },
+                          "lowerRight": { "x": 955, "y": 307 }
+                        },
+                        "stencilSuperIds": ["base-radiobuttons", "Component"],
+                        "stencilId": "cloud-radiobuttons",
+                        "customStencilId": null
+                      },
+                      "type": "radio",
+                      "enabled": true,
+                      "extraSettings": {
+                        "dataSource": "Static",
+                        "items": "{{uiVariable.ccItems}}",
+                        "linkTargetView": "browse",
+                        "formatItem": "{{$item.text}}",
+                        "storage": "Id",
+                        "identity": "value",
+                        "linkTarget": "_blank",
+                        "display": "Horizontal",
+                        "textOption": "{{$item.text}}"
+                      },
+                      "i18n": {
+                        "en_us": {
+                          "extraSettings": {
+                            "items": "{{uiVariable.ccItems}}",
+                            "textOption": "{{$item.text}}"
+                          },
+                          "label": "CC"
+                        }
+                      },
+                      "labelAlign": "top",
+                      "value": "{{ccRecipientId}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "isRequired": false,
+                      "label": "CC",
+                      "id": "radiobuttons1"
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 332 },
+                          "lowerRight": { "x": 955, "y": 358 }
+                        },
+                        "stencilSuperIds": ["base-single-select", "Component"],
+                        "stencilId": "cloud-single-select",
+                        "customStencilId": null
+                      },
+                      "type": "select",
+                      "extraSettings": {
+                        "tagsEnabled": false,
+                        "preselectAll": false,
+                        "clientSideFiltering": false,
+                        "enableAutocomplete": false,
+                        "autocompleteMinLength": 1,
+                        "dataSource": "Rest",
+                        "queryUrl": "/eq-api/core/ldap/users?tc={{tenantId.encrypted}}",
+                        "lookupUrl": "{{$id}}",
+                        "path": "data",
+                        "linkTargetView": "browse",
+                        "formatItem": "{{$item.email}}",
+                        "storage": "Id",
+                        "identity": "id",
+                        "linkTarget": "_blank",
+                        "multi": false
+                      },
+                      "placeholder": "Select...",
+                      "i18n": { "en_us": { "placeholder": "Select..." } },
+                      "enabled": true,
+                      "labelAlign": "top",
+                      "value": "{{ccOtherRecipientId}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": "{{ccRecipientId === 'other'}}",
+                      "isRequired": "{{ccRecipientId === 'other'}}",
+                      "id": "single-select3"
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 381 },
+                          "lowerRight": { "x": 955, "y": 429 }
+                        },
+                        "stencilSuperIds": ["base-text", "Component"],
+                        "stencilId": "cloud-text",
+                        "customStencilId": null
+                      },
+                      "type": "text",
+                      "extraSettings": { "maxLength": 60 },
+                      "labelAlign": "top",
+                      "value": "{{mainContentType}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": true,
+                      "label": "Subject",
+                      "i18n": { "en_us": { "label": "Subject" } },
+                      "id": "text5"
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 454 },
+                          "lowerRight": { "x": 955, "y": 526 }
+                        },
+                        "stencilSuperIds": ["base-text-area", "Component"],
+                        "stencilId": "cloud-text-area",
+                        "customStencilId": null
+                      },
+                      "type": "textarea",
+                      "labelAlign": "top",
+                      "value": "{{mainContent}}",
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": true,
+                      "label": "Message",
+                      "i18n": { "en_us": { "label": "Message" } },
+                      "id": "text-area1",
+                      "extraSettings": {}
+                    }
+                  ]
+                },
+                {
+                  "cols": [
+                    {
+                      "designInfo": {
+                        "bounds": {
+                          "upperLeft": { "x": 15, "y": 551 },
+                          "lowerRight": { "x": 955, "y": 599 }
+                        },
+                        "stencilSuperIds": ["base-checkbox", "Component"],
+                        "stencilId": "cloud-checkbox",
+                        "customStencilId": null
+                      },
+                      "type": "boolean",
+                      "labelAlign": "top",
+                      "value": "{{offerWorkSheet}}",
+                      "defaultValue": true,
+                      "size": 12,
+                      "ignore": false,
+                      "visible": true,
+                      "enabled": true,
+                      "isRequired": true,
+                      "label": "Attachment - Offer Worksheet",
+                      "i18n": {
+                        "en_us": { "label": "Attachment - Offer Worksheet" }
+                      },
+                      "id": "checkbox1",
+                      "extraSettings": {}
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "key": "offerWorksheetMailCompose",
+    "name": "offer Worksheet Mail Compose",
+    "description": "",
+    "version": "23",
+    "type": "2",
+    "flowableDesignVersion": 3087
+  }
+}

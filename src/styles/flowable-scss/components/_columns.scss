@@ -1,0 +1,11 @@
+.flw__columns {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.flw__columns__column {
+  flex: 1;
+  vertical-align: top;
+  overflow: hidden;
+}

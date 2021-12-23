@@ -1,0 +1,3068 @@
+{
+  "rows": [
+    {
+      "cols": [
+        {
+          "type": "accordion",
+          "i18n": {
+            "en_us": {},
+            "de_de": {},
+            "fr_fr": {},
+            "it_it": {},
+            "es_es": {}
+          },
+          "labelAlign": "top",
+          "size": 12,
+          "ignore": false,
+          "visible": true,
+          "enabled": true,
+          "isRequired": false,
+          "id": "documentsTabAccordian",
+          "extraSettings": {
+            "initialSection": "{{additionalData.documentTabInitialTab}}",
+            "tabsorder": [
+              "tab-panel1",
+              "tab-panel2",
+              "tab-panel3",
+              "tab-panel4",
+              "tab-panel5"
+            ],
+            "showBorder": true,
+            "sections": [
+              {
+                "type": "panel",
+                "label": "Property Files ({{totalPropertyFiles}})",
+                "i18n": {
+                  "en_us": {
+                    "label": "Property Files ({{totalPropertyFiles}})",
+                    "tooltip": "Property Files"
+                  },
+                  "de_de": {},
+                  "fr_fr": {},
+                  "it_it": {},
+                  "es_es": {}
+                },
+                "labelAlign": "top",
+                "tooltip": "Property Files",
+                "ignore": false,
+                "visible":  "{{additionalData.viewPropertyFiles}}",
+                "enabled": true,
+                "isRequired": false,
+                "id": "propertyFilesPanel",
+                "extraSettings": {
+                  "serverValidationMethod": "GET",
+                  "layoutDefinition": {
+                    "rows": [
+                      {
+                        "cols": [
+                          {
+                            "type": "panel",
+                            "i18n": {},
+                            "labelAlign": "top",
+                            "size": 12,
+                            "ignore": false,
+                            "visible": true,
+                            "enabled": true,
+                            "isRequired": false,
+                            "id": "sub-panel9",
+                            "extraSettings": {
+                              "collapsible": false,
+                              "collapsed": false,
+                              "showBorder": false,
+                              "saveButtonVisible": true,
+                              "saveButtonEnabled": true,
+                              "cancelButtonVisible": true,
+                              "cancelButtonEnabled": true,
+                              "layoutDefinition": {
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "type": "dataTable",
+                                        "i18n": {
+                                          "en_us": {
+                                            "extraSettings": {
+                                              "columns": [
+                                                {
+                                                  "label": "File Name",
+                                                  "id": "fileName",
+                                                  "accessor": "fileName",
+                                                  "alignment": "left",
+                                                  "show": true,
+                                                  "sortable": true
+                                                },
+                                                {
+                                                  "label": "Created by",
+                                                  "id": "createdBy",
+                                                  "accessor": "createdBy",
+                                                  "alignment": "left",
+                                                  "show": true,
+                                                  "sortable": true
+                                                },
+                                                {
+                                                  "label": "Created on",
+                                                  "id": "createdOn",
+                                                  "accessor": "createdOn",
+                                                  "alignment": "left",
+                                                  "sortable": true,
+                                                  "show": true,
+                                                  "component": {
+                                                    "type": "htmlComponent",
+                                                    "value": "<span>{{flw.formatDate(flw.parseDate($item.createdOn), 'MM/DD/YY HH:mm')}}</span>"
+                                                  }
+                                                },
+                                                {
+                                                  "label": "Size",
+                                                  "id": "fileMetadata.fileSize",
+                                                  "accessor": "fileMetadata.fileSize",
+                                                  "alignment": "left",
+                                                  "show": true,
+                                                  "sortable": true,
+                                                  "component": {
+                                                    "type": "htmlComponent",
+                                                    "value": "<span>{{$item.fileMetadata.fileSize/1000}} KB</span>"
+                                                  }
+                                                },
+                                                {
+                                                  "id": "dropdown",
+                                                  "accessor": "dropdown",
+                                                  "alignment": "left",
+                                                  "component": {
+                                                    "type": "buttonGroup",
+                                                    "value": "{{$item}}",
+                                                    "extraSettings": {
+                                                      "asDropdown": true
+                                                    },
+                                                    "alignment": "right",
+                                                    "buttonDefinitions": [
+                                                      {
+                                                        "type": "scriptButton",
+                                                        "value": "{{operationListActionButton}}",
+                                                        "visible": "{{additionalData.canDownload}}",
+                                                        "extraSettings": {
+                                                          "text": "Download",
+                                                          "script": "Download",
+                                                          "fileDetails": "{{$item}}"
+                                                        }
+                                                      },
+                                                      {
+                                                        "type": "scriptButton",
+                                                        "value": "{{operationListActionButton}}",
+                                                        "visible": "{{additionalData.canDelete}}",
+                                                        "extraSettings": {
+                                                          "text": "Delete",
+                                                          "script": "Delete",
+                                                          "fileDetails": "{{$item}}"
+                                                        }
+                                                      }
+                                                    ]
+                                                  },
+                                                  "show": true,
+                                                  "sortable": false,
+                                                  "maxWidth": 75,
+                                                  "label": "Action",
+                                                  "filterable": false
+                                                }
+                                              ],
+                                              "noDataMessage": "Property files does not exists"
+                                            }
+                                          },
+                                          "de_de": {
+                                            "extraSettings": {}
+                                          },
+                                          "fr_fr": {
+                                            "extraSettings": {}
+                                          },
+                                          "it_it": {
+                                            "extraSettings": {}
+                                          },
+                                          "es_es": {
+                                            "extraSettings": {}
+                                          }
+                                        },
+                                        "enabled": true,
+                                        "extraSettings": {
+                                          "dataSource": "Rest",
+                                          "queryUrl": "/eq-api/fileDetails/search/findAllByFileCategoryTypeOrPropLoanId?fileCategoryType={{additionalData.propertyFileCategory}}&propLoanId={{additionalData.propertyId}}",
+                                          "path": "_embedded.eqFiles",
+                                          "storage": "Full",
+                                          "identity": "id",
+                                          "linkTarget": "_blank",
+                                          "selectable": "Single",
+                                          "output": {
+                                            "numRows": "{{totalPropertyFiles}}"
+                                          },
+                                          "showPagination": true,
+                                          "autoHidePagination": true,
+                                          "clientPagination": true,
+                                          "sortableColumns": true,
+                                          "columns": [
+                                            {
+                                              "label": "File Name",
+                                              "id": "fileName",
+                                              "accessor": "fileName",
+                                              "alignment": "left",
+                                              "show": true,
+                                              "sortable": true
+                                            },
+                                            {
+                                              "label": "Created by",
+                                              "id": "createdBy",
+                                              "accessor": "createdBy",
+                                              "alignment": "left",
+                                              "show": true,
+                                              "sortable": true
+                                            },
+                                            {
+                                              "label": "Created on",
+                                              "id": "createdOn",
+                                              "accessor": "createdOn",
+                                              "alignment": "left",
+                                              "sortable": true,
+                                              "show": true,
+                                              "component": {
+                                                "type": "htmlComponent",
+                                                "value": "<span>{{flw.formatDate(flw.parseDate($item.createdOn), 'MM/DD/YY HH:mm')}}</span>"
+                                              }
+                                            },
+                                            {
+                                              "label": "Size",
+                                              "id": "fileMetadata.fileSize",
+                                              "accessor": "fileMetadata.fileSize",
+                                              "alignment": "left",
+                                              "show": true,
+                                              "sortable": true,
+                                              "component": {
+                                                "type": "htmlComponent",
+                                                "value": "<span>{{$item.fileMetadata.fileSize/1000}} KB</span>"
+                                              }
+                                            },
+                                            {
+                                              "id": "dropdown",
+                                              "accessor": "dropdown",
+                                              "alignment": "left",
+                                              "component": {
+                                                "type": "buttonGroup",
+                                                "value": "{{$item}}",
+                                                "extraSettings": {
+                                                  "asDropdown": true
+                                                },
+                                                "alignment": "right",
+                                                "buttonDefinitions": [
+                                                  {
+                                                    "type": "scriptButton",
+                                                    "value": "{{operationListActionButton}}",
+                                                    "visible": "{{additionalData.canDownload}}",
+                                                    "extraSettings": {
+                                                      "text": "Download",
+                                                      "script": "Download",
+                                                      "fileDetails": "{{$item}}"
+                                                    }
+                                                  },
+                                                  {
+                                                    "type": "scriptButton",
+                                                    "value": "{{operationListActionButton}}",
+                                                    "visible": "{{additionalData.canDelete}}",
+                                                    "extraSettings": {
+                                                      "text": "Delete",
+                                                      "script": "Delete",
+                                                      "fileDetails": "{{$item}}"
+                                                    }
+                                                  }
+                                                ]
+                                              },
+                                              "show": true,
+                                              "sortable": false,
+                                              "maxWidth": 75,
+                                              "label": "Action",
+                                              "filterable": false
+                                            }
+                                          ],
+                                          "filterable": true,
+                                          "sortable": true,
+                                          "multiSort": false,
+                                          "pageSize": 20,
+                                          "pageSizeOptions": [
+                                            5,
+                                            10,
+                                            20,
+                                            25,
+                                            50,
+                                            100
+                                          ],
+                                          "showTotalRecords": false,
+                                          "response": {},
+                                          "showRefreshButton": true,
+                                          "refreshTime": "{{$payload.refreshTime}}",
+                                          "noDataMessage": "Property files does not exists"
+                                        },
+                                        "labelAlign": "top",
+                                        "value": "{{selectedPropertyFiles}}",
+                                        "size": 12,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "isRequired": false,
+                                        "id": "selectedPropertyFiles",
+                                        "col": 0
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "cols": [
+                                      {
+                                        "type": "linkButton",
+                                        "extraSettings": {
+                                          "target": "_self",
+                                          "alignment": "left",
+                                          "iconAlignment": "right",
+                                          "showAsButton": true,
+                                          "type": "one"
+                                        },
+                                        "i18n": {
+                                          "en_us": {
+                                            "value": "Delete"
+                                          }
+                                        },
+                                        "labelAlign": "top",
+                                        "value": "Delete",
+                                        "size": 1,
+                                        "ignore": false,
+                                        "visible": "{{selectedPropertyFiles.length > 0}}",
+                                        "enabled": true,
+                                        "isRequired": false,
+                                        "id": "link-button2",
+                                        "col": 0
+                                      },
+                                      {
+                                        "size": 1,
+                                        "type": ""
+                                      },
+                                      {
+                                        "size": 1,
+                                        "type": ""
+                                      },
+                                      {
+                                        "size": 1,
+                                        "type": ""
+                                      },
+                                      {
+                                        "size": 1,
+                                        "type": ""
+                                      },
+                                      {
+                                        "size": 1,
+                                        "type": ""
+                                      },
+                                      {
+                                        "size": 1,
+                                        "type": ""
+                                      },
+                                      {
+                                        "size": 1,
+                                        "type": ""
+                                      },
+                                      {
+                                        "size": 1,
+                                        "type": ""
+                                      },
+                                      {
+                                        "size": 1,
+                                        "type": ""
+                                      },
+                                      {
+                                        "size": 1,
+                                        "type": ""
+                                      },
+                                      {
+                                        "type": "scriptButton",
+                                        "extraSettings": {
+                                          "text": "Upload",
+                                          "script": 1,
+                                          "autoExecute": false,
+                                          "alignment": "left",
+                                          "iconAlignment": "right"
+                                        },
+                                        "i18n": {
+                                          "en_us": {
+                                            "extraSettings": {
+                                              "text": "Upload"
+                                            }
+                                          }
+                                        },
+                                        "labelAlign": "top",
+                                        "value": "{{$payload.uploadPropertyFileModal}}",
+                                        "size": 1,
+                                        "ignore": false,
+                                        "visible":  "{{additionalData.canUpload}}",
+                                        "enabled": true,
+                                        "isRequired": false,
+                                        "styleClass": "altisource__button_primary",
+                                        "id": "script-button1",
+                                        "col": 11
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "cols": [
+                                      {
+                                        "type": "modal",
+                                        "label": "Upload Property Files",
+                                        "i18n": {
+                                          "en_us": {
+                                            "label": "Upload Property Files",
+                                            "extraSettings": {
+                                              "saveButtonText": "Save"
+                                            }
+                                          }
+                                        },
+                                        "labelAlign": "top",
+                                        "value": "{{propertyFileUploadModel}}",
+                                        "size": 12,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "enabled": true,
+                                        "isRequired": false,
+                                        "id": "propertyFileUploadModel",
+                                        "extraSettings": {
+                                          "modalOpen": "{{$payload.uploadPropertyFileModal}}",
+                                          "collapsible": false,
+                                          "collapsed": false,
+                                          "showBorder": false,
+                                          "saveButtonText": "Save",
+                                          "saveButtonVisible": false,
+                                          "saveButtonEnabled": false,
+                                          "cancelButtonVisible": false,
+                                          "cancelButtonEnabled": false,
+                                          "layoutDefinition": {
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "type": "panel",
+                                                    "i18n": {},
+                                                    "labelAlign": "top",
+                                                    "size": 12,
+                                                    "ignore": false,
+                                                    "visible": true,
+                                                    "enabled": true,
+                                                    "isRequired": false,
+                                                    "id": "propertyFileUploadPanel",
+                                                    "extraSettings": {
+                                                      "collapsible": false,
+                                                      "collapsed": false,
+                                                      "showBorder": true,
+                                                      "saveButtonVisible": true,
+                                                      "saveButtonEnabled": true,
+                                                      "cancelButtonVisible": true,
+                                                      "cancelButtonEnabled": true,
+                                                      "layoutDefinition": {
+                                                        "rows": [
+                                                          {
+                                                            "cols": [
+                                                              {
+                                                                "type": "text",
+                                                                "extraSettings": {},
+                                                                "i18n": {
+                                                                  "en_us": {
+                                                                    "placeholder": "Description",
+                                                                    "description": "File Description"
+                                                                  },
+                                                                  "de_de": {},
+                                                                  "fr_fr": {},
+                                                                  "it_it": {},
+                                                                  "es_es": {}
+                                                                },
+                                                                "placeholder": "Description",
+                                                                "labelAlign": "top",
+                                                                "value": "{{propertyFileUploadDescription}}",
+                                                                "description": "File Description",
+                                                                "size": 12,
+                                                                "ignore": false,
+                                                                "visible": true,
+                                                                "enabled": true,
+                                                                "isRequired": true,
+                                                                "id": "text1",
+                                                                "col": 0
+                                                              }
+                                                            ]
+                                                          },
+                                                          {
+                                                            "cols": [
+                                                              {
+                                                                "type": "upload",
+                                                                "labelAlign": "top",
+                                                                "value": "{{propertyFileUpload}}",
+                                                                "description": "Property Files",
+                                                                "i18n": {
+                                                                  "en_us": {
+                                                                    "description": "Property Files"
+                                                                  }
+                                                                },
+                                                                "size": 12,
+                                                                "ignore": false,
+                                                                "visible": true,
+                                                                "enabled": "{{propertyFileUploadDescription.length}}",
+                                                                "isRequired": true,
+                                                                "id": "attachment1",
+                                                                "extraSettings": {
+                                                                  "autoupload": false,
+                                                                  "downloadUrl": "rest/file/{{id}}",
+                                                                  "allowDelete": "newOnly",
+                                                                  "preview": "none",
+                                                                  "minFiles": 1,
+                                                                  "maxFiles": 1,
+                                                                  "hasFileType": false
+                                                                },
+                                                                "col": 0
+                                                              }
+                                                            ]
+                                                          },
+                                                          {
+                                                            "cols": [
+                                                              {
+                                                                "size": 1,
+                                                                "type": ""
+                                                              },
+                                                              {
+                                                                "size": 1,
+                                                                "type": ""
+                                                              },
+                                                              {
+                                                                "size": 1,
+                                                                "type": ""
+                                                              },
+                                                              {
+                                                                "size": 1,
+                                                                "type": ""
+                                                              },
+                                                              {
+                                                                "size": 1,
+                                                                "type": ""
+                                                              },
+                                                              {
+                                                                "size": 1,
+                                                                "type": ""
+                                                              },
+                                                              {
+                                                                "size": 1,
+                                                                "type": ""
+                                                              },
+                                                              {
+                                                                "type": "panel",
+                                                                "i18n": {},
+                                                                "labelAlign": "top",
+                                                                "size": 5,
+                                                                "ignore": false,
+                                                                "visible": true,
+                                                                "enabled": true,
+                                                                "isRequired": false,
+                                                                "id": "sub-panel10",
+                                                                "extraSettings": {
+                                                                  "collapsible": false,
+                                                                  "collapsed": false,
+                                                                  "showBorder": false,
+                                                                  "saveButtonVisible": true,
+                                                                  "saveButtonEnabled": true,
+                                                                  "cancelButtonVisible": true,
+                                                                  "cancelButtonEnabled": true,
+                                                                  "layoutDefinition": {
+                                                                    "rows": [
+                                                                      {
+                                                                        "cols": [
+                                                                          {
+                                                                            "size": 1,
+                                                                            "type": ""
+                                                                          },
+                                                                          {
+                                                                            "size": 1,
+                                                                            "type": ""
+                                                                          },
+                                                                          {
+                                                                            "type": "scriptButton",
+                                                                            "extraSettings": {
+                                                                              "text": "Cancel",
+                                                                              "script": 0,
+                                                                              "autoExecute": false,
+                                                                              "alignment": "left",
+                                                                              "iconAlignment": "right"
+                                                                            },
+                                                                            "i18n": {
+                                                                              "en_us": {
+                                                                                "extraSettings": {
+                                                                                  "text": "Cancel"
+                                                                                }
+                                                                              }
+                                                                            },
+                                                                            "labelAlign": "top",
+                                                                            "value": "{{$payload.uploadPropertyFileModal}}",
+                                                                            "size": 5,
+                                                                            "ignore": false,
+                                                                            "visible": true,
+                                                                            "enabled": true,
+                                                                            "isRequired": false,
+                                                                            "styleClass": "altisource__button_secondary",
+                                                                            "id": "propertyFileUploadCancelButton",
+                                                                            "col": 2
+                                                                          },
+                                                                          {
+                                                                            "type": "linkButton",
+                                                                            "extraSettings": {
+                                                                              "target": "_self",
+                                                                              "alignment": "left",
+                                                                              "iconAlignment": "right",
+                                                                              "showAsButton": true,
+                                                                              "type": "one"
+                                                                            },
+                                                                            "i18n": {
+                                                                              "en_us": {
+                                                                                "value": "Save"
+                                                                              }
+                                                                            },
+                                                                            "labelAlign": "top",
+                                                                            "value": "Save",
+                                                                            "size": 5,
+                                                                            "ignore": false,
+                                                                            "visible": true,
+                                                                            "enabled": true,
+                                                                            "isRequired": false,
+                                                                            "styleClass": "altisource__button_primary",
+                                                                            "id": "propertyFileUploadButton",
+                                                                            "col": 7
+                                                                          }
+                                                                        ]
+                                                                      }
+                                                                    ]
+                                                                  }
+                                                                },
+                                                                "col": 7
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    },
+                                                    "col": 0
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        "col": 0
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            },
+                            "col": 0
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "col": 0
+              },
+              {
+                "type": "panel",
+                "label": "Message Files ({{totalMessageFiles}})",
+                "i18n": {
+                  "en_us": {
+                    "label": "Message Files ({{totalMessageFiles}})",
+                    "tooltip": "Message Files"
+                  },
+                  "de_de": {},
+                  "fr_fr": {},
+                  "it_it": {},
+                  "es_es": {}
+                },
+                "labelAlign": "top",
+                "tooltip": "Message Files",
+                "size": 1,
+                "ignore": false,
+                "visible": "{{additionalData.viewMessageFiles}}",
+                "enabled": true,
+                "isRequired": false,
+                "id": "messageFilesPanel",
+                "extraSettings": {
+                  "serverValidationMethod": "GET",
+                  "layoutDefinition": {
+                    "rows": [
+                      {
+                        "cols": [
+                          {
+                            "type": "dataTable",
+                            "i18n": {
+                              "en_us": {
+                                "extraSettings": {
+                                  "columns": [
+                                    {
+                                      "label": "File Name",
+                                      "id": "fileName",
+                                      "accessor": "fileName",
+                                      "alignment": "left",
+                                      "show": true,
+                                      "sortable": true
+                                    },
+                                    {
+                                      "label": "Created by",
+                                      "id": "createdBy",
+                                      "accessor": "createdBy",
+                                      "alignment": "left",
+                                      "show": true,
+                                      "sortable": true
+                                    },
+                                    {
+                                      "label": "Created on",
+                                      "id": "createdOn",
+                                      "accessor": "createdOn",
+                                      "alignment": "left",
+                                      "sortable": true,
+                                      "show": true,
+                                      "component": {
+                                        "type": "htmlComponent",
+                                        "value": "<span>{{flw.formatDate(flw.parseDate($item.createdOn), 'MM/DD/YY HH:mm')}}</span>"
+                                      }
+                                    },
+                                    {
+                                      "label": "Size",
+                                      "id": "fileMetadata.fileSize",
+                                      "accessor": "fileMetadata.fileSize",
+                                      "alignment": "left",
+                                      "show": true,
+                                      "sortable": true,
+                                      "component": {
+                                        "type": "htmlComponent",
+                                        "value": "<span>{{$item.fileMetadata.fileSize/1000}} KB</span>"
+                                      }
+                                    },
+                                    {
+                                      "id": "dropdown",
+                                      "accessor": "dropdown",
+                                      "alignment": "left",
+                                      "component": {
+                                        "type": "buttonGroup",
+                                        "value": "{{$item}}",
+                                        "extraSettings": {
+                                          "asDropdown": true
+                                        },
+                                        "alignment": "right",
+                                        "buttonDefinitions": [
+                                          {
+                                            "type": "scriptButton",
+                                            "value": "{{operationListActionButton}}",
+                                            "visible": "{{additionalData.canDownload}}",
+                                            "extraSettings": {
+                                              "text": "Download",
+                                              "script": "Download",
+                                              "fileDetails": "{{$item}}"
+                                            }
+                                          },
+                                          {
+                                            "type": "scriptButton",
+                                            "value": "{{operationListActionButton}}",
+                                            "visible": "{{additionalData.canDelete}}",
+                                            "extraSettings": {
+                                              "text": "Delete",
+                                              "script": "Delete",
+                                              "fileDetails": "{{$item}}"
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      "show": true,
+                                      "sortable": false,
+                                      "maxWidth": 75,
+                                      "label": "Action",
+                                      "filterable": false
+                                    }
+                                  ],
+                                  "noDataMessage": "Message files does not exists"
+                                }
+                              },
+                              "de_de": {
+                                "extraSettings": {}
+                              },
+                              "fr_fr": {
+                                "extraSettings": {}
+                              },
+                              "it_it": {
+                                "extraSettings": {}
+                              },
+                              "es_es": {
+                                "extraSettings": {}
+                              }
+                            },
+                            "enabled": true,
+                            "extraSettings": {
+                              "dataSource": "Rest",
+                              "queryUrl": "/eq-api/fileDetails/search/findAllByFileCategoryTypeOrPropLoanId?fileCategoryType={{additionalData.messageFileCategory}}&propLoanId={{additionalData.propertyId}}",
+                              "path": "_embedded.eqFiles",
+                              "storage": "Full",
+                              "identity": "id",
+                              "linkTarget": "_blank",
+                              "selectable": "Single",
+                              "output": {
+                                "numRows": "{{totalMessageFiles}}"
+                              },
+                              "showPagination": true,
+                              "autoHidePagination": true,
+                              "clientPagination": true,
+                              "sortableColumns": true,
+                              "columns": [
+                                {
+                                  "label": "File Name",
+                                  "id": "fileName",
+                                  "accessor": "fileName",
+                                  "alignment": "left",
+                                  "show": true,
+                                  "sortable": true
+                                },
+                                {
+                                  "label": "Created by",
+                                  "id": "createdBy",
+                                  "accessor": "createdBy",
+                                  "alignment": "left",
+                                  "show": true,
+                                  "sortable": true
+                                },
+                                {
+                                  "label": "Created on",
+                                  "id": "createdOn",
+                                  "accessor": "createdOn",
+                                  "alignment": "left",
+                                  "sortable": true,
+                                  "show": true,
+                                  "component": {
+                                    "type": "htmlComponent",
+                                    "value": "<span>{{flw.formatDate(flw.parseDate($item.createdOn), 'MM/DD/YY HH:mm')}}</span>"
+                                  }
+                                },
+                                {
+                                  "label": "Size",
+                                  "id": "fileMetadata.fileSize",
+                                  "accessor": "fileMetadata.fileSize",
+                                  "alignment": "left",
+                                  "show": true,
+                                  "sortable": true,
+                                  "component": {
+                                    "type": "htmlComponent",
+                                    "value": "<span>{{$item.fileMetadata.fileSize/1000}} KB</span>"
+                                  }
+                                },
+                                {
+                                  "id": "dropdown",
+                                  "accessor": "dropdown",
+                                  "alignment": "left",
+                                  "component": {
+                                    "type": "buttonGroup",
+                                    "value": "{{$item}}",
+                                    "extraSettings": {
+                                      "asDropdown": true
+                                    },
+                                    "alignment": "right",
+                                    "buttonDefinitions": [
+                                      {
+                                        "type": "scriptButton",
+                                        "value": "{{operationListActionButton}}",
+                                        "visible": "{{additionalData.canDownload}}",
+                                        "extraSettings": {
+                                          "text": "Download",
+                                          "script": "Download",
+                                          "fileDetails": "{{$item}}"
+                                        }
+                                      },
+                                      {
+                                        "type": "scriptButton",
+                                        "value": "{{operationListActionButton}}",
+                                        "visible": "{{additionalData.canDelete}}",
+                                        "extraSettings": {
+                                          "text": "Delete",
+                                          "script": "Delete",
+                                          "fileDetails": "{{$item}}"
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "show": true,
+                                  "sortable": false,
+                                  "maxWidth": 75,
+                                  "label": "Action",
+                                  "filterable": false
+                                }
+                              ],
+                              "filterable": true,
+                              "sortable": true,
+                              "multiSort": false,
+                              "pageSize": 20,
+                              "pageSizeOptions": [5, 10, 20, 25, 50, 100],
+                              "showTotalRecords": false,
+                              "response": {},
+                              "showRefreshButton": true,
+                              "noDataMessage": "Message files does not exists"
+                            },
+                            "labelAlign": "top",
+                            "value": "{{selectedMessageFiles}}",
+                            "size": 12,
+                            "ignore": false,
+                            "visible": true,
+                            "isRequired": false,
+                            "id": "datatable8",
+                            "col": 0
+                          }
+                        ]
+                      },
+                      {
+                        "cols": [
+                          {
+                            "type": "linkButton",
+                            "extraSettings": {
+                              "target": "_self",
+                              "alignment": "left",
+                              "iconAlignment": "right",
+                              "showAsButton": true,
+                              "type": "one"
+                            },
+                            "i18n": {
+                              "en_us": {
+                                "value": "Delete"
+                              }
+                            },
+                            "labelAlign": "top",
+                            "value": "Delete",
+                            "size": 1,
+                            "ignore": false,
+                            "visible": "{{selectedPropertyFiles.length > 0}}",
+                            "enabled": true,
+                            "isRequired": false,
+                            "id": "link-button20",
+                            "col": 0
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "type": "scriptButton",
+                            "extraSettings": {
+                              "text": "Upload",
+                              "script": 1,
+                              "autoExecute": false,
+                              "alignment": "left",
+                              "iconAlignment": "right"
+                            },
+                            "i18n": {
+                              "en_us": {
+                                "extraSettings": {
+                                  "text": "Upload"
+                                }
+                              }
+                            },
+                            "labelAlign": "top",
+                            "value": "{{$payload.uploadMessageFileModal}}",
+                            "size": 1,
+                            "ignore": false,
+                            "visible": "{{additionalData.canUpload}}",
+                            "enabled": true,
+                            "isRequired": false,
+                            "styleClass": "altisource__button_primary",
+                            "id": "script-button13",
+                            "col": 11
+                          }
+                        ]
+                      },
+                      {
+                        "cols": [
+                          {
+                            "type": "modal",
+                            "label": "Upload Message Files",
+                            "i18n": {
+                              "en_us": {
+                                "label": "Upload Message Files",
+                                "extraSettings": {
+                                  "saveButtonText": "Save"
+                                }
+                              }
+                            },
+                            "labelAlign": "top",
+                            "value": "{{messageFileUploadModal}}",
+                            "size": 12,
+                            "ignore": false,
+                            "visible": true,
+                            "enabled": true,
+                            "isRequired": false,
+                            "id": "modal-dialog7",
+                            "extraSettings": {
+                              "modalOpen": "{{$payload.uploadMessageFileModal}}",
+                              "collapsible": false,
+                              "collapsed": false,
+                              "showBorder": false,
+                              "saveButtonText": "Save",
+                              "saveButtonVisible": false,
+                              "saveButtonEnabled": false,
+                              "cancelButtonVisible": false,
+                              "cancelButtonEnabled": false,
+                              "layoutDefinition": {
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "type": "panel",
+                                        "i18n": {},
+                                        "labelAlign": "top",
+                                        "size": 12,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "enabled": true,
+                                        "isRequired": false,
+                                        "id": "sub-panel25",
+                                        "extraSettings": {
+                                          "collapsible": false,
+                                          "collapsed": false,
+                                          "showBorder": true,
+                                          "saveButtonVisible": true,
+                                          "saveButtonEnabled": true,
+                                          "cancelButtonVisible": true,
+                                          "cancelButtonEnabled": true,
+                                          "layoutDefinition": {
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "type": "text",
+                                                    "extraSettings": {},
+                                                    "i18n": {
+                                                      "en_us": {
+                                                        "placeholder": "Description",
+                                                        "description": "File Description"
+                                                      },
+                                                      "de_de": {},
+                                                      "fr_fr": {},
+                                                      "it_it": {},
+                                                      "es_es": {}
+                                                    },
+                                                    "placeholder": "Description",
+                                                    "labelAlign": "top",
+                                                    "value": "{{messageFileUploadDescription}}",
+                                                    "description": "File Description",
+                                                    "size": 12,
+                                                    "ignore": false,
+                                                    "visible": true,
+                                                    "enabled": true,
+                                                    "isRequired": true,
+                                                    "id": "text13",
+                                                    "col": 0
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "type": "upload",
+                                                    "labelAlign": "top",
+                                                    "value": "{{messageFileUpload}}",
+                                                    "description": "Message Files",
+                                                    "i18n": {
+                                                      "en_us": {
+                                                        "description": "Message Files"
+                                                      }
+                                                    },
+                                                    "size": 12,
+                                                    "ignore": false,
+                                                    "visible": true,
+                                                    "enabled": "{{messageFileUploadDescription.length}}",
+                                                    "isRequired": true,
+                                                    "id": "attachment13",
+                                                    "extraSettings": {
+                                                      "autoupload": false,
+                                                      "downloadUrl": "rest/file/{{id}}",
+                                                      "allowDelete": "newOnly",
+                                                      "preview": "none",
+                                                      "minFiles": 1,
+                                                      "maxFiles": 1,
+                                                      "hasFileType": false
+                                                    },
+                                                    "col": 0
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "size": 1,
+                                                    "type": ""
+                                                  },
+                                                  {
+                                                    "size": 1,
+                                                    "type": ""
+                                                  },
+                                                  {
+                                                    "size": 1,
+                                                    "type": ""
+                                                  },
+                                                  {
+                                                    "size": 1,
+                                                    "type": ""
+                                                  },
+                                                  {
+                                                    "size": 1,
+                                                    "type": ""
+                                                  },
+                                                  {
+                                                    "size": 1,
+                                                    "type": ""
+                                                  },
+                                                  {
+                                                    "size": 1,
+                                                    "type": ""
+                                                  },
+                                                  {
+                                                    "type": "panel",
+                                                    "i18n": {},
+                                                    "labelAlign": "top",
+                                                    "size": 5,
+                                                    "ignore": false,
+                                                    "visible": true,
+                                                    "enabled": true,
+                                                    "isRequired": false,
+                                                    "id": "sub-panel26",
+                                                    "extraSettings": {
+                                                      "collapsible": false,
+                                                      "collapsed": false,
+                                                      "showBorder": false,
+                                                      "saveButtonVisible": true,
+                                                      "saveButtonEnabled": true,
+                                                      "cancelButtonVisible": true,
+                                                      "cancelButtonEnabled": true,
+                                                      "layoutDefinition": {
+                                                        "rows": [
+                                                          {
+                                                            "cols": [
+                                                              {
+                                                                "size": 1,
+                                                                "type": ""
+                                                              },
+                                                              {
+                                                                "size": 1,
+                                                                "type": ""
+                                                              },
+                                                              {
+                                                                "type": "scriptButton",
+                                                                "extraSettings": {
+                                                                  "text": "Cancel",
+                                                                  "script": 0,
+                                                                  "autoExecute": false,
+                                                                  "alignment": "left",
+                                                                  "iconAlignment": "right"
+                                                                },
+                                                                "i18n": {
+                                                                  "en_us": {
+                                                                    "extraSettings": {
+                                                                      "text": "Cancel"
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "labelAlign": "top",
+                                                                "value": "{{$payload.uploadMessageFileModal}}",
+                                                                "size": 5,
+                                                                "ignore": false,
+                                                                "visible": true,
+                                                                "enabled": true,
+                                                                "isRequired": false,
+                                                                "styleClass": "altisource__button_secondary",
+                                                                "id": "messageFileUploadCancelButton",
+                                                                "col": 2
+                                                              },
+                                                              {
+                                                                "type": "linkButton",
+                                                                "extraSettings": {
+                                                                  "target": "_self",
+                                                                  "alignment": "left",
+                                                                  "iconAlignment": "right",
+                                                                  "showAsButton": true,
+                                                                  "type": "one"
+                                                                },
+                                                                "i18n": {
+                                                                  "en_us": {
+                                                                    "value": "Save"
+                                                                  }
+                                                                },
+                                                                "labelAlign": "top",
+                                                                "value": "Save",
+                                                                "size": 5,
+                                                                "ignore": false,
+                                                                "visible": true,
+                                                                "enabled": true,
+                                                                "isRequired": false,
+                                                                "styleClass": "altisource__button_primary",
+                                                                "id": "messageFileUploadButton",
+                                                                "col": 7
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    },
+                                                    "col": 7
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        "col": 0
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            },
+                            "col": 0
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "col": 0
+              },
+              {
+                "type": "panel",
+                "label": "Order Files ({{totalOrderFiles}})",
+                "i18n": {
+                  "en_us": {
+                    "label": "Order Files ({{totalOrderFiles}})",
+                    "tooltip": "Order Files"
+                  },
+                  "de_de": {},
+                  "fr_fr": {},
+                  "it_it": {},
+                  "es_es": {}
+                },
+                "labelAlign": "top",
+                "tooltip": "Order Files",
+                "size": 1,
+                "ignore": false,
+                "visible": "{{additionalData.viewOrderFiles}}",
+                "enabled": true,
+                "isRequired": false,
+                "id": "orderFilesPanel",
+                "extraSettings": {
+                  "serverValidationMethod": "GET",
+                  "layoutDefinition": {
+                    "rows": [
+                      {
+                        "cols": [
+                          {
+                            "type": "dataTable",
+                            "i18n": {
+                              "en_us": {
+                                "extraSettings": {
+                                  "columns": [
+                                    {
+                                      "label": "File Name",
+                                      "id": "fileName",
+                                      "accessor": "fileName",
+                                      "alignment": "left",
+                                      "show": true,
+                                      "sortable": true
+                                    },
+                                    {
+                                      "label": "Created by",
+                                      "id": "createdBy",
+                                      "accessor": "createdBy",
+                                      "alignment": "left",
+                                      "show": true,
+                                      "sortable": true
+                                    },
+                                    {
+                                      "label": "Created on",
+                                      "id": "createdOn",
+                                      "accessor": "createdOn",
+                                      "alignment": "left",
+                                      "sortable": true,
+                                      "show": true,
+                                      "component": {
+                                        "type": "htmlComponent",
+                                        "value": "<span>{{flw.formatDate(flw.parseDate($item.createdOn), 'MM/DD/YY HH:mm')}}</span>"
+                                      }
+                                    },
+                                    {
+                                      "label": "Size",
+                                      "id": "fileMetadata.fileSize",
+                                      "accessor": "fileMetadata.fileSize",
+                                      "alignment": "left",
+                                      "show": true,
+                                      "sortable": true,
+                                      "component": {
+                                        "type": "htmlComponent",
+                                        "value": "<span>{{$item.fileMetadata.fileSize/1000}} KB</span>"
+                                      }
+                                    },
+                                    {
+                                      "id": "dropdown",
+                                      "accessor": "dropdown",
+                                      "alignment": "left",
+                                      "component": {
+                                        "type": "buttonGroup",
+                                        "value": "{{$item}}",
+                                        "extraSettings": {
+                                          "asDropdown": true
+                                        },
+                                        "alignment": "right",
+                                        "buttonDefinitions": [
+                                          {
+                                            "type": "scriptButton",
+                                            "value": "{{operationListActionButton}}",
+                                            "visible": "{{additionalData.canDownload}}",
+                                            "extraSettings": {
+                                              "text": "Download",
+                                              "script": "Download",
+                                              "fileDetails": "{{$item}}"
+                                            }
+                                          },
+                                          {
+                                            "type": "scriptButton",
+                                            "value": "{{operationListActionButton}}",
+                                            "visible": "{{additionalData.canDelete}}",                                       
+                                            "extraSettings": {
+                                              "text": "Delete",
+                                              "script": "Delete",
+                                              "fileDetails": "{{$item}}"
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      "show": true,
+                                      "sortable": false,
+                                      "maxWidth": 75,
+                                      "label": "Action",
+                                      "filterable": false
+                                    }
+                                  ],
+                                  "noDataMessage": "Order files does not exists"
+                                }
+                              },
+                              "de_de": {
+                                "extraSettings": {}
+                              },
+                              "fr_fr": {
+                                "extraSettings": {}
+                              },
+                              "it_it": {
+                                "extraSettings": {}
+                              },
+                              "es_es": {
+                                "extraSettings": {}
+                              }
+                            },
+                            "enabled": true,
+                            "extraSettings": {
+                              "dataSource": "Rest",
+                              "queryUrl": "/eq-api/fileDetails/search/findAllByFileCategoryTypeOrPropLoanId?fileCategoryType={{additionalData.orderFileCategory}}&propLoanId={{additionalData.propertyId}}",
+                              "path": "_embedded.eqFiles",
+                              "storage": "Full",
+                              "identity": "id",
+                              "linkTarget": "_blank",
+                              "selectable": "Single",
+                              "output": {
+                                "numRows": "{{totalOrderFiles}}"
+                              },
+                              "showPagination": true,
+                              "autoHidePagination": true,
+                              "clientPagination": true,
+                              "sortableColumns": true,
+                              "columns": [
+                                {
+                                  "label": "File Name",
+                                  "id": "fileName",
+                                  "accessor": "fileName",
+                                  "alignment": "left",
+                                  "show": true,
+                                  "sortable": true
+                                },
+                                {
+                                  "label": "Created by",
+                                  "id": "createdBy",
+                                  "accessor": "createdBy",
+                                  "alignment": "left",
+                                  "show": true,
+                                  "sortable": true
+                                },
+                                {
+                                  "label": "Created on",
+                                  "id": "createdOn",
+                                  "accessor": "createdOn",
+                                  "alignment": "left",
+                                  "sortable": true,
+                                  "show": true,
+                                  "component": {
+                                    "type": "htmlComponent",
+                                    "value": "<span>{{flw.formatDate(flw.parseDate($item.createdOn), 'MM/DD/YY HH:mm')}}</span>"
+                                  }
+                                },
+                                {
+                                  "label": "Size",
+                                  "id": "fileMetadata.fileSize",
+                                  "accessor": "fileMetadata.fileSize",
+                                  "alignment": "left",
+                                  "show": true,
+                                  "sortable": true,
+                                  "component": {
+                                    "type": "htmlComponent",
+                                    "value": "<span>{{$item.fileMetadata.fileSize/1000}} KB</span>"
+                                  }
+                                },
+                                {
+                                  "id": "dropdown",
+                                  "accessor": "dropdown",
+                                  "alignment": "left",
+                                  "component": {
+                                    "type": "buttonGroup",
+                                    "value": "{{$item}}",
+                                    "extraSettings": {
+                                      "asDropdown": true
+                                    },
+                                    "alignment": "right",
+                                    "buttonDefinitions": [
+                                      {
+                                        "type": "scriptButton",
+                                        "value": "{{operationListActionButton}}",
+                                        "visible": "{{additionalData.canDownload}}",
+                                        "extraSettings": {
+                                          "text": "Download",
+                                          "script": "Download",
+                                          "fileDetails": "{{$item}}"
+                                        }
+                                      },
+                                      {
+                                        "type": "scriptButton",
+                                        "value": "{{operationListActionButton}}",
+                                        "visible": "{{additionalData.canDelete}}",
+                                        "extraSettings": {
+                                          "text": "Delete",
+                                          "script": "Delete",
+                                          "fileDetails": "{{$item}}"
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "show": true,
+                                  "sortable": false,
+                                  "maxWidth": 75,
+                                  "label": "Action",
+                                  "filterable": false
+                                }
+                              ],
+                              "filterable": true,
+                              "sortable": true,
+                              "multiSort": false,
+                              "pageSize": 20,
+                              "pageSizeOptions": [5, 10, 20, 25, 50, 100],
+                              "showTotalRecords": false,
+                              "response": {},
+                              "showRefreshButton": true,
+                              "noDataMessage": "Order files does not exists"
+                            },
+                            "labelAlign": "top",
+                            "value": "{{selectedOrderFiles}}",
+                            "size": 12,
+                            "ignore": false,
+                            "visible": true,
+                            "isRequired": false,
+                            "id": "datatable9",
+                            "col": 0
+                          }
+                        ]
+                      },
+                      {
+                        "cols": [
+                          {
+                            "type": "linkButton",
+                            "extraSettings": {
+                              "target": "_self",
+                              "alignment": "left",
+                              "iconAlignment": "right",
+                              "showAsButton": true,
+                              "type": "one"
+                            },
+                            "i18n": {
+                              "en_us": {
+                                "value": "Delete"
+                              }
+                            },
+                            "labelAlign": "top",
+                            "value": "Delete",
+                            "size": 1,
+                            "ignore": false,
+                            "visible": "{{selectedPropertyFiles.length > 0}}",
+                            "enabled": true,
+                            "isRequired": false,
+                            "id": "link-button22",
+                            "col": 0
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "type": "scriptButton",
+                            "extraSettings": {
+                              "text": "Upload",
+                              "script": 1,
+                              "autoExecute": false,
+                              "alignment": "left",
+                              "iconAlignment": "right"
+                            },
+                            "i18n": {
+                              "en_us": {
+                                "extraSettings": {
+                                  "text": "Upload"
+                                }
+                              }
+                            },
+                            "labelAlign": "top",
+                            "value": "{{$payload.uploadOrderFileModal}}",
+                            "size": 1,
+                            "ignore": false,
+                            "visible": "{{additionalData.canUpload}}",
+                            "enabled": true,
+                            "isRequired": false,
+                            "styleClass": "altisource__button_primary",
+                            "id": "script-button15",
+                            "col": 11
+                          }
+                        ]
+                      },
+                      {
+                        "cols": [
+                          {
+                            "type": "modal",
+                            "label": "Upload Order Files",
+                            "i18n": {
+                              "en_us": {
+                                "label": "Upload Order Files",
+                                "extraSettings": {
+                                  "saveButtonText": "Save"
+                                }
+                              }
+                            },
+                            "labelAlign": "top",
+                            "value": "{{orderFileUploadModal}}",
+                            "size": 12,
+                            "ignore": false,
+                            "visible": true,
+                            "enabled": true,
+                            "isRequired": false,
+                            "id": "modal-dialog8",
+                            "extraSettings": {
+                              "modalOpen": "{{$payload.uploadOrderFileModal}}",
+                              "collapsible": false,
+                              "collapsed": false,
+                              "showBorder": false,
+                              "saveButtonText": "Save",
+                              "saveButtonVisible": false,
+                              "saveButtonEnabled": false,
+                              "cancelButtonVisible": false,
+                              "cancelButtonEnabled": false,
+                              "layoutDefinition": {
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "type": "panel",
+                                        "i18n": {},
+                                        "labelAlign": "top",
+                                        "size": 12,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "enabled": true,
+                                        "isRequired": false,
+                                        "id": "sub-panel27",
+                                        "extraSettings": {
+                                          "collapsible": false,
+                                          "collapsed": false,
+                                          "showBorder": true,
+                                          "saveButtonVisible": true,
+                                          "saveButtonEnabled": true,
+                                          "cancelButtonVisible": true,
+                                          "cancelButtonEnabled": true,
+                                          "layoutDefinition": {
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "type": "text",
+                                                    "extraSettings": {},
+                                                    "i18n": {
+                                                      "en_us": {
+                                                        "placeholder": "Description",
+                                                        "description": "File Description"
+                                                      },
+                                                      "de_de": {},
+                                                      "fr_fr": {},
+                                                      "it_it": {},
+                                                      "es_es": {}
+                                                    },
+                                                    "placeholder": "Description",
+                                                    "labelAlign": "top",
+                                                    "value": "{{orderFileUploadDescription}}",
+                                                    "description": "File Description",
+                                                    "size": 12,
+                                                    "ignore": false,
+                                                    "visible": true,
+                                                    "enabled": true,
+                                                    "isRequired": true,
+                                                    "id": "text14",
+                                                    "col": 0
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "type": "upload",
+                                                    "labelAlign": "top",
+                                                    "value": "{{orderFileUpload}}",
+                                                    "description": "Order Files",
+                                                    "i18n": {
+                                                      "en_us": {
+                                                        "description": "Order Files"
+                                                      }
+                                                    },
+                                                    "size": 12,
+                                                    "ignore": false,
+                                                    "visible": true,
+                                                    "enabled": "{{orderFileUploadDescription.length}}",
+                                                    "isRequired": true,
+                                                    "id": "attachment14",
+                                                    "extraSettings": {
+                                                      "autoupload": false,
+                                                      "downloadUrl": "rest/file/{{id}}",
+                                                      "allowDelete": "newOnly",
+                                                      "preview": "none",
+                                                      "minFiles": 1,
+                                                      "maxFiles": 1,
+                                                      "hasFileType": false
+                                                    },
+                                                    "col": 0
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "size": 1,
+                                                    "type": ""
+                                                  },
+                                                  {
+                                                    "size": 1,
+                                                    "type": ""
+                                                  },
+                                                  {
+                                                    "size": 1,
+                                                    "type": ""
+                                                  },
+                                                  {
+                                                    "size": 1,
+                                                    "type": ""
+                                                  },
+                                                  {
+                                                    "size": 1,
+                                                    "type": ""
+                                                  },
+                                                  {
+                                                    "size": 1,
+                                                    "type": ""
+                                                  },
+                                                  {
+                                                    "size": 1,
+                                                    "type": ""
+                                                  },
+                                                  {
+                                                    "type": "panel",
+                                                    "i18n": {},
+                                                    "labelAlign": "top",
+                                                    "size": 5,
+                                                    "ignore": false,
+                                                    "visible": true,
+                                                    "enabled": true,
+                                                    "isRequired": false,
+                                                    "id": "sub-panel28",
+                                                    "extraSettings": {
+                                                      "collapsible": false,
+                                                      "collapsed": false,
+                                                      "showBorder": false,
+                                                      "saveButtonVisible": true,
+                                                      "saveButtonEnabled": true,
+                                                      "cancelButtonVisible": true,
+                                                      "cancelButtonEnabled": true,
+                                                      "layoutDefinition": {
+                                                        "rows": [
+                                                          {
+                                                            "cols": [
+                                                              {
+                                                                "size": 1,
+                                                                "type": ""
+                                                              },
+                                                              {
+                                                                "size": 1,
+                                                                "type": ""
+                                                              },
+                                                              {
+                                                                "type": "scriptButton",
+                                                                "extraSettings": {
+                                                                  "text": "Cancel",
+                                                                  "script": 0,
+                                                                  "autoExecute": false,
+                                                                  "alignment": "left",
+                                                                  "iconAlignment": "right"
+                                                                },
+                                                                "i18n": {
+                                                                  "en_us": {
+                                                                    "extraSettings": {
+                                                                      "text": "Cancel"
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "labelAlign": "top",
+                                                                "value": "{{$payload.uploadOrderFileModal}}",
+                                                                "size": 5,
+                                                                "ignore": false,
+                                                                "visible": true,
+                                                                "enabled": true,
+                                                                "isRequired": false,
+                                                                "styleClass": "altisource__button_secondary",
+                                                                "id": "orderFileUploadCancelButton",
+                                                                "col": 2
+                                                              },
+                                                              {
+                                                                "type": "linkButton",
+                                                                "extraSettings": {
+                                                                  "target": "_self",
+                                                                  "alignment": "left",
+                                                                  "iconAlignment": "right",
+                                                                  "showAsButton": true,
+                                                                  "type": "one"
+                                                                },
+                                                                "i18n": {
+                                                                  "en_us": {
+                                                                    "value": "Save"
+                                                                  }
+                                                                },
+                                                                "labelAlign": "top",
+                                                                "value": "Save",
+                                                                "size": 5,
+                                                                "ignore": false,
+                                                                "visible": true,
+                                                                "enabled": true,
+                                                                "isRequired": false,
+                                                                "styleClass": "altisource__button_primary",
+                                                                "id": "orderFileUploadButton",
+                                                                "col": 7
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    },
+                                                    "col": 7
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        "col": 0
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            },
+                            "col": 0
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "col": 0
+              },
+              {
+                "type": "panel",
+                "label": "Property Images ({{totalPropertyImageFiles}})",
+                "i18n": {
+                  "en_us": {
+                    "label": "Property Images ({{totalPropertyImageFiles}})",
+                    "tooltip": "Property Images"
+                  },
+                  "de_de": {},
+                  "fr_fr": {},
+                  "it_it": {},
+                  "es_es": {}
+                },
+                "labelAlign": "top",
+                "tooltip": "Property Images",
+                "ignore": false,
+                "visible": "{{additionalData.viewPropertyImages}}",
+                "enabled": true,
+                "isRequired": false,
+                "id": "propertyImagesPanel",
+                "extraSettings": {
+                  "serverValidationMethod": "GET",
+                  "layoutDefinition": {
+                    "rows": [
+                      {
+                        "cols": [
+                          {
+                            "type": "dataTable",
+                            "i18n": {
+                              "en_us": {
+                                "extraSettings": {
+                                  "columns": [
+                                    {
+                                      "label": "File Name",
+                                      "id": "fileName",
+                                      "accessor": "fileName",
+                                      "alignment": "left",
+                                      "show": true,
+                                      "sortable": true
+                                    },
+                                    {
+                                      "label": "Created by",
+                                      "id": "createdBy",
+                                      "accessor": "createdBy",
+                                      "alignment": "left",
+                                      "show": true,
+                                      "sortable": true
+                                    },
+                                    {
+                                      "label": "Created on",
+                                      "id": "createdOn",
+                                      "accessor": "createdOn",
+                                      "alignment": "left",
+                                      "sortable": true,
+                                      "show": true,
+                                      "component": {
+                                        "type": "htmlComponent",
+                                        "value": "<span>{{flw.formatDate(flw.parseDate($item.createdOn), 'MM/DD/YY HH:mm')}}</span>"
+                                      }
+                                    },
+                                    {
+                                      "label": "Size",
+                                      "id": "fileMetadata.fileSize",
+                                      "accessor": "fileMetadata.fileSize",
+                                      "alignment": "left",
+                                      "show": true,
+                                      "sortable": true,
+                                      "component": {
+                                        "type": "htmlComponent",
+                                        "value": "<span>{{$item.fileMetadata.fileSize/1000}} KB</span>"
+                                      }
+                                    },
+                                    {
+                                      "id": "dropdown",
+                                      "accessor": "dropdown",
+                                      "alignment": "left",
+                                      "component": {
+                                        "type": "buttonGroup",
+                                        "value": "{{$item}}",
+                                        "extraSettings": {
+                                          "asDropdown": true
+                                        },
+                                        "alignment": "right",
+                                        "buttonDefinitions": [
+                                          {
+                                            "type": "scriptButton",
+                                            "value": "{{operationListActionButton}}",
+                                            "visible": "{{additionalData.canDownload}}",
+                                            "extraSettings": {
+                                              "text": "Download",
+                                              "script": "Download",
+                                              "fileDetails": "{{$item}}"
+                                            }
+                                          },
+                                          {
+                                            "type": "scriptButton",
+                                            "value": "{{operationListActionButton}}",
+                                            "visible": "{{additionalData.canDelete}}",
+                                            "extraSettings": {
+                                              "text": "Delete",
+                                              "script": "Delete",
+                                              "fileDetails": "{{$item}}"
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      "show": true,
+                                      "sortable": false,
+                                      "maxWidth": 75,
+                                      "label": "Action",
+                                      "filterable": false
+                                    }
+                                  ],
+                                  "noDataMessage": "Property image files does not exists"
+                                }
+                              },
+                              "de_de": {
+                                "extraSettings": {}
+                              },
+                              "fr_fr": {
+                                "extraSettings": {}
+                              },
+                              "it_it": {
+                                "extraSettings": {}
+                              },
+                              "es_es": {
+                                "extraSettings": {}
+                              }
+                            },
+                            "enabled": true,
+                            "extraSettings": {
+                              "dataSource": "Rest",
+                              "queryUrl": "/eq-api/fileDetails/search/findAllByFileCategoryTypeOrPropLoanId?fileCategoryType={{additionalData.propertyImageFileCategory}}&propLoanId={{additionalData.propertyId}}",
+                              "path": "_embedded.eqFiles",
+                              "storage": "Full",
+                              "identity": "id",
+                              "linkTarget": "_blank",
+                              "selectable": "Single",
+                              "output": {
+                                "numRows": "{{totalPropertyImageFiles}}"
+                              },
+                              "showPagination": true,
+                              "autoHidePagination": true,
+                              "clientPagination": true,
+                              "sortableColumns": true,
+                              "columns": [
+                                {
+                                  "label": "File Name",
+                                  "id": "fileName",
+                                  "accessor": "fileName",
+                                  "alignment": "left",
+                                  "show": true,
+                                  "sortable": true
+                                },
+                                {
+                                  "label": "Created by",
+                                  "id": "createdBy",
+                                  "accessor": "createdBy",
+                                  "alignment": "left",
+                                  "show": true,
+                                  "sortable": true
+                                },
+                                {
+                                  "label": "Created on",
+                                  "id": "createdOn",
+                                  "accessor": "createdOn",
+                                  "alignment": "left",
+                                  "sortable": true,
+                                  "show": true,
+                                  "component": {
+                                    "type": "htmlComponent",
+                                    "value": "<span>{{flw.formatDate(flw.parseDate($item.createdOn), 'MM/DD/YY HH:mm')}}</span>"
+                                  }
+                                },
+                                {
+                                  "label": "Size",
+                                  "id": "fileMetadata.fileSize",
+                                  "accessor": "fileMetadata.fileSize",
+                                  "alignment": "left",
+                                  "show": true,
+                                  "sortable": true,
+                                  "component": {
+                                    "type": "htmlComponent",
+                                    "value": "<span>{{$item.fileMetadata.fileSize/1000}} KB</span>"
+                                  }
+                                },
+                                {
+                                  "id": "dropdown",
+                                  "accessor": "dropdown",
+                                  "alignment": "left",
+                                  "component": {
+                                    "type": "buttonGroup",
+                                    "value": "{{$item}}",
+                                    "extraSettings": {
+                                      "asDropdown": true
+                                    },
+                                    "alignment": "right",
+                                    "buttonDefinitions": [
+                                      {
+                                        "type": "scriptButton",
+                                        "value": "{{operationListActionButton}}",
+                                        "visible": "{{additionalData.canDownload}}",
+                                        "extraSettings": {
+                                          "text": "Download",
+                                          "script": "Download",
+                                          "fileDetails": "{{$item}}"
+                                        }
+                                      },
+                                      {
+                                        "type": "scriptButton",
+                                        "value": "{{operationListActionButton}}",
+                                        "visible": "{{additionalData.canDelete}}",
+                                        "extraSettings": {
+                                          "text": "Delete",
+                                          "script": "Delete",
+                                          "fileDetails": "{{$item}}"
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "show": true,
+                                  "sortable": false,
+                                  "maxWidth": 75,
+                                  "label": "Action",
+                                  "filterable": false
+                                }
+                              ],
+                              "filterable": true,
+                              "sortable": true,
+                              "multiSort": false,
+                              "pageSize": 20,
+                              "pageSizeOptions": [5, 10, 20, 25, 50, 100],
+                              "showTotalRecords": false,
+                              "response": {},
+                              "showRefreshButton": true,
+                              "noDataMessage": "Property image files does not exists"
+                            },
+                            "labelAlign": "top",
+                            "value": "{{selectedPropertyImageFiles}}",
+                            "size": 12,
+                            "ignore": false,
+                            "visible": true,
+                            "isRequired": false,
+                            "id": "datatable10",
+                            "col": 0
+                          }
+                        ]
+                      },
+                      {
+                        "cols": [
+                          {
+                            "type": "linkButton",
+                            "extraSettings": {
+                              "target": "_self",
+                              "alignment": "left",
+                              "iconAlignment": "right",
+                              "showAsButton": true,
+                              "type": "one"
+                            },
+                            "i18n": {
+                              "en_us": {
+                                "value": "Delete"
+                              }
+                            },
+                            "labelAlign": "top",
+                            "value": "Delete",
+                            "size": 1,
+                            "ignore": false,
+                            "visible": "{{selectedPropertyFiles.length > 0}}",
+                            "enabled": true,
+                            "isRequired": false,
+                            "id": "link-button25",
+                            "col": 0
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "type": "scriptButton",
+                            "extraSettings": {
+                              "text": "Upload",
+                              "script": 1,
+                              "autoExecute": false,
+                              "alignment": "left",
+                              "iconAlignment": "right"
+                            },
+                            "i18n": {
+                              "en_us": {
+                                "extraSettings": {
+                                  "text": "Upload"
+                                }
+                              }
+                            },
+                            "labelAlign": "top",
+                            "value": "{{$payload.uploadPropertyImageFileModal}}",
+                            "size": 1,
+                            "ignore": false,
+                            "visible": "{{additionalData.canUpload}}",
+                            "enabled": true,
+                            "isRequired": false,
+                            "styleClass": "altisource__button_primary",
+                            "id": "script-button18",
+                            "col": 11
+                          }
+                        ]
+                      },
+                      {
+                        "cols": [
+                          {
+                            "type": "modal",
+                            "label": "Upload Property Images",
+                            "i18n": {
+                              "en_us": {
+                                "label": "Upload Property Images",
+                                "extraSettings": {
+                                  "saveButtonText": "Save"
+                                }
+                              }
+                            },
+                            "labelAlign": "top",
+                            "value": "{{propertyImageFileUploadModal}}",
+                            "size": 12,
+                            "ignore": false,
+                            "visible": true,
+                            "enabled": true,
+                            "isRequired": false,
+                            "id": "modal-dialog9",
+                            "extraSettings": {
+                              "modalOpen": "{{$payload.uploadPropertyImageFileModal}}",
+                              "collapsible": false,
+                              "collapsed": false,
+                              "showBorder": false,
+                              "saveButtonText": "Save",
+                              "saveButtonVisible": false,
+                              "saveButtonEnabled": false,
+                              "cancelButtonVisible": false,
+                              "cancelButtonEnabled": false,
+                              "layoutDefinition": {
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "type": "panel",
+                                        "i18n": {},
+                                        "labelAlign": "top",
+                                        "size": 12,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "enabled": true,
+                                        "isRequired": false,
+                                        "id": "sub-panel29",
+                                        "extraSettings": {
+                                          "collapsible": false,
+                                          "collapsed": false,
+                                          "showBorder": true,
+                                          "saveButtonVisible": true,
+                                          "saveButtonEnabled": true,
+                                          "cancelButtonVisible": true,
+                                          "cancelButtonEnabled": true,
+                                          "layoutDefinition": {
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "type": "text",
+                                                    "extraSettings": {},
+                                                    "i18n": {
+                                                      "en_us": {
+                                                        "placeholder": "Description",
+                                                        "description": "File Description"
+                                                      },
+                                                      "de_de": {},
+                                                      "fr_fr": {},
+                                                      "it_it": {},
+                                                      "es_es": {}
+                                                    },
+                                                    "placeholder": "Description",
+                                                    "labelAlign": "top",
+                                                    "value": "{{propertyImageFileUploadDescription}}",
+                                                    "description": "File Description",
+                                                    "size": 12,
+                                                    "ignore": false,
+                                                    "visible": true,
+                                                    "enabled": true,
+                                                    "isRequired": true,
+                                                    "id": "text15",
+                                                    "col": 0
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "type": "upload",
+                                                    "labelAlign": "top",
+                                                    "value": "{{propertyImageFileUpload}}",
+                                                    "description": "Property Images",
+                                                    "i18n": {
+                                                      "en_us": {
+                                                        "description": "Property Images"
+                                                      }
+                                                    },
+                                                    "size": 12,
+                                                    "ignore": false,
+                                                    "visible": true,
+                                                    "enabled": "{{propertyImageFileUploadDescription.length}}",
+                                                    "isRequired": true,
+                                                    "id": "attachment15",
+                                                    "extraSettings": {
+                                                      "autoupload": false,
+                                                      "downloadUrl": "rest/file/{{id}}",
+                                                      "allowDelete": "newOnly",
+                                                      "preview": "none",
+                                                      "minFiles": 1,
+                                                      "maxFiles": 1,
+                                                      "hasFileType": false
+                                                    },
+                                                    "col": 0
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "size": 1,
+                                                    "type": ""
+                                                  },
+                                                  {
+                                                    "size": 1,
+                                                    "type": ""
+                                                  },
+                                                  {
+                                                    "size": 1,
+                                                    "type": ""
+                                                  },
+                                                  {
+                                                    "size": 1,
+                                                    "type": ""
+                                                  },
+                                                  {
+                                                    "size": 1,
+                                                    "type": ""
+                                                  },
+                                                  {
+                                                    "size": 1,
+                                                    "type": ""
+                                                  },
+                                                  {
+                                                    "size": 1,
+                                                    "type": ""
+                                                  },
+                                                  {
+                                                    "type": "panel",
+                                                    "i18n": {},
+                                                    "labelAlign": "top",
+                                                    "size": 5,
+                                                    "ignore": false,
+                                                    "visible": true,
+                                                    "enabled": true,
+                                                    "isRequired": false,
+                                                    "id": "sub-panel30",
+                                                    "extraSettings": {
+                                                      "collapsible": false,
+                                                      "collapsed": false,
+                                                      "showBorder": false,
+                                                      "saveButtonVisible": true,
+                                                      "saveButtonEnabled": true,
+                                                      "cancelButtonVisible": true,
+                                                      "cancelButtonEnabled": true,
+                                                      "layoutDefinition": {
+                                                        "rows": [
+                                                          {
+                                                            "cols": [
+                                                              {
+                                                                "size": 1,
+                                                                "type": ""
+                                                              },
+                                                              {
+                                                                "size": 1,
+                                                                "type": ""
+                                                              },
+                                                              {
+                                                                "type": "scriptButton",
+                                                                "extraSettings": {
+                                                                  "text": "Cancel",
+                                                                  "script": 0,
+                                                                  "autoExecute": false,
+                                                                  "alignment": "left",
+                                                                  "iconAlignment": "right"
+                                                                },
+                                                                "i18n": {
+                                                                  "en_us": {
+                                                                    "extraSettings": {
+                                                                      "text": "Cancel"
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "labelAlign": "top",
+                                                                "value": "{{$payload.uploadPropertyImageFileModal}}",
+                                                                "size": 5,
+                                                                "ignore": false,
+                                                                "visible": true,
+                                                                "enabled": true,
+                                                                "isRequired": false,
+                                                                "styleClass": "altisource__button_secondary",
+                                                                "id": "propertyImageUploadCancelButton",
+                                                                "col": 2
+                                                              },
+                                                              {
+                                                                "type": "linkButton",
+                                                                "extraSettings": {
+                                                                  "target": "_self",
+                                                                  "alignment": "left",
+                                                                  "iconAlignment": "right",
+                                                                  "showAsButton": true,
+                                                                  "type": "one"
+                                                                },
+                                                                "i18n": {
+                                                                  "en_us": {
+                                                                    "value": "Save"
+                                                                  }
+                                                                },
+                                                                "labelAlign": "top",
+                                                                "value": "Save",
+                                                                "size": 5,
+                                                                "ignore": false,
+                                                                "visible": true,
+                                                                "enabled": true,
+                                                                "isRequired": false,
+                                                                "styleClass": "altisource__button_primary",
+                                                                "id": "propertyImageUploadButton",
+                                                                "col": 7
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    },
+                                                    "col": 7
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        "col": 0
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            },
+                            "col": 0
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "col": 0
+              },
+              {
+                "type": "panel",
+                "label": "Task Files ({{totalTaskFiles}})",
+                "i18n": {
+                  "en_us": {
+                    "label": "Task Files ({{totalTaskFiles}})"
+                  },
+                  "de_de": {},
+                  "fr_fr": {},
+                  "it_it": {},
+                  "es_es": {}
+                },
+                "labelAlign": "top",
+                "size": 1,
+                "ignore": false,
+                "visible": "{{additionalData.viewTaskFiles}}",
+                "enabled": true,
+                "isRequired": false,
+                "id": "taskFilesPanel",
+                "extraSettings": {
+                  "serverValidationMethod": "GET",
+                  "layoutDefinition": {
+                    "rows": [
+                      {
+                        "cols": [
+                          {
+                            "type": "dataTable",
+                            "i18n": {
+                              "en_us": {
+                                "extraSettings": {
+                                  "columns": [
+                                    {
+                                      "label": "File Name",
+                                      "id": "fileName",
+                                      "accessor": "fileName",
+                                      "alignment": "left",
+                                      "show": true,
+                                      "sortable": true
+                                    },
+                                    {
+                                      "label": "Created by",
+                                      "id": "createdBy",
+                                      "accessor": "createdBy",
+                                      "alignment": "left",
+                                      "show": true,
+                                      "sortable": true
+                                    },
+                                    {
+                                      "label": "Created on",
+                                      "id": "createdOn",
+                                      "accessor": "createdOn",
+                                      "alignment": "left",
+                                      "sortable": true,
+                                      "show": true,
+                                      "component": {
+                                        "type": "htmlComponent",
+                                        "value": "<span>{{flw.formatDate(flw.parseDate($item.createdOn), 'MM/DD/YY HH:mm')}}</span>"
+                                      }
+                                    },
+                                    {
+                                      "label": "Size",
+                                      "id": "fileMetadata.fileSize",
+                                      "accessor": "fileMetadata.fileSize",
+                                      "alignment": "left",
+                                      "show": true,
+                                      "sortable": true,
+                                      "component": {
+                                        "type": "htmlComponent",
+                                        "value": "<span>{{$item.fileMetadata.fileSize/1000}} KB</span>"
+                                      }
+                                    },
+                                    {
+                                      "id": "dropdown",
+                                      "accessor": "dropdown",
+                                      "alignment": "left",
+                                      "component": {
+                                        "type": "buttonGroup",
+                                        "value": "{{$item}}",
+                                        "extraSettings": {
+                                          "asDropdown": true
+                                        },
+                                        "alignment": "right",
+                                        "buttonDefinitions": [
+                                          {
+                                            "type": "scriptButton",
+                                            "value": "{{operationListActionButton}}",
+                                            "visible": "{{additionalData.canDownload}}",
+                                            "extraSettings": {
+                                              "text": "Download",
+                                              "script": "Download",
+                                              "fileDetails": "{{$item}}"
+                                            }
+                                          },
+                                          {
+                                            "type": "scriptButton",
+                                            "value": "{{operationListActionButton}}",
+                                            "visible": "{{additionalData.canDelete}}",
+                                            "extraSettings": {
+                                              "text": "Delete",
+                                              "script": "Delete",
+                                              "fileDetails": "{{$item}}"
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      "show": true,
+                                      "sortable": false,
+                                      "maxWidth": 75,
+                                      "label": "Action",
+                                      "filterable": false
+                                    }
+                                  ],
+                                  "noDataMessage": "Task files does not exists"
+                                }
+                              },
+                              "de_de": {
+                                "extraSettings": {}
+                              },
+                              "fr_fr": {
+                                "extraSettings": {}
+                              },
+                              "it_it": {
+                                "extraSettings": {}
+                              },
+                              "es_es": {
+                                "extraSettings": {}
+                              }
+                            },
+                            "enabled": true,
+                            "extraSettings": {
+                              "dataSource": "Rest",
+                              "queryUrl": "/eq-api/fileDetails/search/findAllByFileCategoryTypeOrPropLoanId?fileCategoryType={{additionalData.taskFileCategory}}&propLoanId={{additionalData.propertyId}}",
+                              "path": "_embedded.eqFiles",
+                              "storage": "Full",
+                              "identity": "id",
+                              "linkTarget": "_blank",
+                              "selectable": "Single",
+                              "output": {
+                                "numRows": "{{totalTaskFiles}}"
+                              },
+                              "showPagination": true,
+                              "autoHidePagination": true,
+                              "clientPagination": true,
+                              "sortableColumns": true,
+                              "columns": [
+                                {
+                                  "label": "File Name",
+                                  "id": "fileName",
+                                  "accessor": "fileName",
+                                  "alignment": "left",
+                                  "show": true,
+                                  "sortable": true
+                                },
+                                {
+                                  "label": "Created by",
+                                  "id": "createdBy",
+                                  "accessor": "createdBy",
+                                  "alignment": "left",
+                                  "show": true,
+                                  "sortable": true
+                                },
+                                {
+                                  "label": "Created on",
+                                  "id": "createdOn",
+                                  "accessor": "createdOn",
+                                  "alignment": "left",
+                                  "sortable": true,
+                                  "show": true,
+                                  "component": {
+                                    "type": "htmlComponent",
+                                    "value": "<span>{{flw.formatDate(flw.parseDate($item.createdOn), 'MM/DD/YY HH:mm')}}</span>"
+                                  }
+                                },
+                                {
+                                  "label": "Size",
+                                  "id": "fileMetadata.fileSize",
+                                  "accessor": "fileMetadata.fileSize",
+                                  "alignment": "left",
+                                  "show": true,
+                                  "sortable": true,
+                                  "component": {
+                                    "type": "htmlComponent",
+                                    "value": "<span>{{$item.fileMetadata.fileSize/1000}} KB</span>"
+                                  }
+                                },
+                                {
+                                  "id": "dropdown",
+                                  "accessor": "dropdown",
+                                  "alignment": "left",
+                                  "component": {
+                                    "type": "buttonGroup",
+                                    "value": "{{$item}}",
+                                    "extraSettings": {
+                                      "asDropdown": true
+                                    },
+                                    "alignment": "right",
+                                    "buttonDefinitions": [
+                                      {
+                                        "type": "scriptButton",
+                                        "value": "{{operationListActionButton}}",
+                                        "visible": "{{additionalData.canDownload}}",
+                                        "extraSettings": {
+                                          "text": "Download",
+                                          "script": "Download",
+                                          "fileDetails": "{{$item}}"
+                                        }
+                                      },
+                                      {
+                                        "type": "scriptButton",
+                                        "value": "{{operationListActionButton}}",
+                                        "visible": "{{additionalData.canDelete}}",
+                                        "extraSettings": {
+                                          "text": "Delete",
+                                          "script": "Delete",
+                                          "fileDetails": "{{$item}}"
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "show": true,
+                                  "sortable": false,
+                                  "maxWidth": 75,
+                                  "label": "Action",
+                                  "filterable": false
+                                }
+                              ],
+                              "filterable": true,
+                              "sortable": true,
+                              "multiSort": false,
+                              "pageSize": 20,
+                              "pageSizeOptions": [5, 10, 20, 25, 50, 100],
+                              "showTotalRecords": false,
+                              "response": {},
+                              "showRefreshButton": true,
+                              "refreshTime": "{{$payload.taskFilesListRefreshTime}}",
+                              "noDataMessage": "Task files does not exists"
+                            },
+                            "labelAlign": "top",
+                            "value": "{{selectedTaskFiles}}",
+                            "size": 12,
+                            "ignore": false,
+                            "visible": true,
+                            "isRequired": false,
+                            "id": "datatable7",
+                            "col": 0
+                          }
+                        ]
+                      },
+                      {
+                        "cols": [
+                          {
+                            "type": "linkButton",
+                            "extraSettings": {
+                              "target": "_self",
+                              "alignment": "left",
+                              "iconAlignment": "right",
+                              "showAsButton": true,
+                              "type": "one"
+                            },
+                            "i18n": {
+                              "en_us": {
+                                "value": "Delete"
+                              }
+                            },
+                            "labelAlign": "top",
+                            "value": "Delete",
+                            "size": 1,
+                            "ignore": false,
+                            "visible": "{{selectedPropertyFiles.length > 0}}",
+                            "enabled": true,
+                            "isRequired": false,
+                            "id": "link-button19",
+                            "col": 0
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "size": 1,
+                            "type": ""
+                          },
+                          {
+                            "type": "scriptButton",
+                            "extraSettings": {
+                              "text": "Upload",
+                              "script": 1,
+                              "autoExecute": false,
+                              "alignment": "left",
+                              "iconAlignment": "right"
+                            },
+                            "i18n": {
+                              "en_us": {
+                                "extraSettings": {
+                                  "text": "Upload"
+                                }
+                              }
+                            },
+                            "labelAlign": "top",
+                            "value": "{{$payload.uploadTaskFileModal}}",
+                            "size": 1,
+                            "ignore": false,
+                            "visible": "{{additionalData.canUpload}}",
+                            "enabled": true,
+                            "isRequired": false,
+                            "styleClass": "altisource__button_primary",
+                            "id": "script-button12",
+                            "col": 11
+                          }
+                        ]
+                      },
+                      {
+                        "cols": [
+                          {
+                            "type": "modal",
+                            "label": "Upload Task Files",
+                            "i18n": {
+                              "en_us": {
+                                "label": "Upload Task Files",
+                                "extraSettings": {
+                                  "saveButtonText": "Save"
+                                }
+                              }
+                            },
+                            "labelAlign": "top",
+                            "value": "{{taskFileUploadModal}}",
+                            "size": 12,
+                            "ignore": false,
+                            "visible": true,
+                            "enabled": true,
+                            "isRequired": false,
+                            "id": "modal-dialog6",
+                            "extraSettings": {
+                              "modalOpen": "{{$payload.uploadTaskFileModal}}",
+                              "collapsible": false,
+                              "collapsed": false,
+                              "showBorder": false,
+                              "saveButtonText": "Save",
+                              "saveButtonVisible": false,
+                              "saveButtonEnabled": false,
+                              "cancelButtonVisible": false,
+                              "cancelButtonEnabled": false,
+                              "layoutDefinition": {
+                                "rows": [
+                                  {
+                                    "cols": [
+                                      {
+                                        "type": "panel",
+                                        "i18n": {},
+                                        "labelAlign": "top",
+                                        "size": 12,
+                                        "ignore": false,
+                                        "visible": true,
+                                        "enabled": true,
+                                        "isRequired": false,
+                                        "id": "sub-panel23",
+                                        "extraSettings": {
+                                          "collapsible": false,
+                                          "collapsed": false,
+                                          "showBorder": true,
+                                          "saveButtonVisible": true,
+                                          "saveButtonEnabled": true,
+                                          "cancelButtonVisible": true,
+                                          "cancelButtonEnabled": true,
+                                          "layoutDefinition": {
+                                            "rows": [
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "type": "text",
+                                                    "extraSettings": {},
+                                                    "i18n": {
+                                                      "en_us": {
+                                                        "placeholder": "Description",
+                                                        "description": "File Description"
+                                                      },
+                                                      "de_de": {},
+                                                      "fr_fr": {},
+                                                      "it_it": {},
+                                                      "es_es": {}
+                                                    },
+                                                    "placeholder": "Description",
+                                                    "labelAlign": "top",
+                                                    "value": "{{taskFileUploadDescription}}",
+                                                    "description": "File Description",
+                                                    "size": 12,
+                                                    "ignore": false,
+                                                    "visible": true,
+                                                    "enabled": true,
+                                                    "isRequired": true,
+                                                    "id": "text12",
+                                                    "col": 0
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "type": "upload",
+                                                    "labelAlign": "top",
+                                                    "value": "{{taskFileUpload}}",
+                                                    "description": "Task Files",
+                                                    "i18n": {
+                                                      "en_us": {
+                                                        "description": "Task Files"
+                                                      }
+                                                    },
+                                                    "size": 12,
+                                                    "ignore": false,
+                                                    "visible": true,
+                                                    "enabled": "{{taskFileUploadDescription.length}}",
+                                                    "isRequired": true,
+                                                    "id": "attachment12",
+                                                    "extraSettings": {
+                                                      "autoupload": false,
+                                                      "downloadUrl": "rest/file/{{id}}",
+                                                      "allowDelete": "newOnly",
+                                                      "preview": "none",
+                                                      "minFiles": 1,
+                                                      "maxFiles": 1,
+                                                      "hasFileType": false
+                                                    },
+                                                    "col": 0
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "cols": [
+                                                  {
+                                                    "size": 1,
+                                                    "type": ""
+                                                  },
+                                                  {
+                                                    "size": 1,
+                                                    "type": ""
+                                                  },
+                                                  {
+                                                    "size": 1,
+                                                    "type": ""
+                                                  },
+                                                  {
+                                                    "size": 1,
+                                                    "type": ""
+                                                  },
+                                                  {
+                                                    "size": 1,
+                                                    "type": ""
+                                                  },
+                                                  {
+                                                    "size": 1,
+                                                    "type": ""
+                                                  },
+                                                  {
+                                                    "size": 1,
+                                                    "type": ""
+                                                  },
+                                                  {
+                                                    "type": "panel",
+                                                    "i18n": {},
+                                                    "labelAlign": "top",
+                                                    "size": 5,
+                                                    "ignore": false,
+                                                    "visible": true,
+                                                    "enabled": true,
+                                                    "isRequired": false,
+                                                    "id": "sub-panel24",
+                                                    "extraSettings": {
+                                                      "collapsible": false,
+                                                      "collapsed": false,
+                                                      "showBorder": false,
+                                                      "saveButtonVisible": true,
+                                                      "saveButtonEnabled": true,
+                                                      "cancelButtonVisible": true,
+                                                      "cancelButtonEnabled": true,
+                                                      "layoutDefinition": {
+                                                        "rows": [
+                                                          {
+                                                            "cols": [
+                                                              {
+                                                                "size": 1,
+                                                                "type": ""
+                                                              },
+                                                              {
+                                                                "size": 1,
+                                                                "type": ""
+                                                              },
+                                                              {
+                                                                "type": "scriptButton",
+                                                                "extraSettings": {
+                                                                  "text": "Cancel",
+                                                                  "script": 0,
+                                                                  "autoExecute": false,
+                                                                  "alignment": "left",
+                                                                  "iconAlignment": "right"
+                                                                },
+                                                                "i18n": {
+                                                                  "en_us": {
+                                                                    "extraSettings": {
+                                                                      "text": "Cancel"
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "labelAlign": "top",
+                                                                "value": "{{$payload.uploadTaskFileModal}}",
+                                                                "size": 5,
+                                                                "ignore": false,
+                                                                "visible": true,
+                                                                "enabled": true,
+                                                                "isRequired": false,
+                                                                "styleClass": "altisource__button_secondary",
+                                                                "id": "taskFileUploadCancelButton",
+                                                                "col": 2
+                                                              },
+                                                              {
+                                                                "type": "linkButton",
+                                                                "extraSettings": {
+                                                                  "target": "_self",
+                                                                  "alignment": "left",
+                                                                  "iconAlignment": "right",
+                                                                  "showAsButton": true,
+                                                                  "type": "one"
+                                                                },
+                                                                "i18n": {
+                                                                  "en_us": {
+                                                                    "value": "Save"
+                                                                  }
+                                                                },
+                                                                "labelAlign": "top",
+                                                                "value": "Save",
+                                                                "size": 5,
+                                                                "ignore": false,
+                                                                "visible": true,
+                                                                "enabled": true,
+                                                                "isRequired": false,
+                                                                "styleClass": "altisource__button_primary",
+                                                                "id": "taskFileUploadButton",
+                                                                "col": 7
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    },
+                                                    "col": 7
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        "col": 0
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            },
+                            "col": 0
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "col": 0
+              }
+            ]
+          },
+          "col": 0
+        }
+      ]
+    }
+  ]
+}

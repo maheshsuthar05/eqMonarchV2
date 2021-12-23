@@ -1,0 +1,216 @@
+{
+    "rows": [
+      {
+        "cols": [
+          {
+            "type": "panel",
+            "i18n": {},
+            "labelAlign": "top",
+            "size": 12,
+            "ignore": false,
+            "visible": true,
+            "enabled": true,
+            "isRequired": false,
+            "id": "sub-panel1",
+            "extraSettings": {
+              "collapsible": false,
+              "collapsed": false,
+              "showBorder": true,
+              "saveButtonVisible": true,
+              "saveButtonEnabled": true,
+              "cancelButtonVisible": true,
+              "cancelButtonEnabled": true,
+              "layoutDefinition": {
+                "rows": [
+                  {
+                    "cols": [
+                      {
+                        "type": "select",
+                        "extraSettings": {
+                          "tagsEnabled": false,
+                          "preselectAll": false,
+                          "enableAutocomplete": false,
+                          "dataSource": "Static",
+                          "items": [
+                            {
+                              "text": "Lender documents",
+                              "value": "lenderDocuments"
+                            },
+                            {
+                              "text": "EQ Business logic",
+                              "value": "eqBusinessLogic"
+                            },
+                            {
+                              "text": "EQ releases",
+                              "value": "eqRelease"
+                            },
+                            {
+                              "text": "EQ training materials",
+                              "value": "eqTrainingMaterials"
+                            },
+                            {
+                              "text": "EQ status reports",
+                              "value": "eqStatusReports"
+                            },
+                            {
+                              "text": "Public lender files",
+                              "value": "eqPublicLenderFiles"
+                            }
+                          ],
+                          "storage": "Id",
+                          "identity": "value",
+                          "linkTarget": "_blank",
+                          "multi": false
+                        },
+                        "i18n": {
+                          "en_us": {
+                            "extraSettings": {
+                              "items": [
+                                {
+                                  "text": "Lender documents",
+                                  "value": "lenderDocuments"
+                                },
+                                {
+                                  "text": "EQ Business logic",
+                                  "value": "eqBusinessLogic"
+                                },
+                                {
+                                  "text": "EQ releases",
+                                  "value": "eqRelease"
+                                },
+                                {
+                                  "text": "EQ training materials",
+                                  "value": "eqTrainingMaterials"
+                                },
+                                {
+                                  "text": "EQ status reports",
+                                  "value": "eqStatusReports"
+                                },
+                                {
+                                  "text": "Public lender files",
+                                  "value": "eqPublicLenderFiles"
+                                }
+                              ]
+                            },
+                            "label": "File Category Type"
+                          }
+                        },
+                        "enabled": true,
+                        "labelAlign": "top",
+                        "value": "{{fileCategoryType}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "isRequired": false,
+                        "label": "File Category Type",
+                        "id": "single-select1",
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "type": "upload",
+                        "labelAlign": "top",
+                        "i18n": {
+                          "en_us": {
+                            "label": "Select File"
+                          }
+                        },
+                        "value": "{{lenderFileUpload}}",
+                        "size": 12,
+                        "ignore": false,
+                        "visible": true,
+                        "enabled": true,
+                        "isRequired": true,
+                        "label": "Select File",
+                        "id": "attachment1",
+                        "extraSettings": {
+                          "autoupload": false,
+                          "allowDelete": "newOnly",
+                          "preview": "none",
+                          "minFiles": 1,
+                          "maxFiles": 1,
+                          "hasFileType": false
+                        },
+                        "col": 0
+                      }
+                    ]
+                  },
+                  {
+                    "cols": [
+                      {
+                        "size": 1,
+                        "type": ""
+                      },
+                      {
+                        "size": 1,
+                        "type": ""
+                      },
+                      {
+                        "size": 1,
+                        "type": ""
+                      },
+                      {
+                        "size": 1,
+                        "type": ""
+                      },
+                      {
+                        "size": 1,
+                        "type": ""
+                      },
+                      {
+                        "size": 1,
+                        "type": ""
+                      },
+                      {
+                        "size": 1,
+                        "type": ""
+                      },
+                      {
+                        "size": 1,
+                        "type": ""
+                      },
+                      {
+                        "size": 1,
+                        "type": ""
+                      },
+                      {
+                        "type": "scriptButton",
+                        "extraSettings": {
+                          "text": "Upload",
+                          "script": "{{example + 1}}",
+                          "autoExecute": false,
+                          "alignment": "left",
+                          "iconAlignment": "right"
+                        },
+                        "i18n": {
+                          "en_us": {
+                            "extraSettings": {
+                              "text": "Upload"
+                            }
+                          }
+                        },
+                        "primary": false,
+                        "labelAlign": "top",
+                        "size": 3,
+                        "ignore": false,
+                        "visible": true,
+                        "enabled": "{{fileCategoryType.length && lenderFileUpload.length}}",
+                        "isRequired": false,
+                        "styleClass": "altisource__button_primary",
+                        "id": "script-button1",
+                        "col": 9
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            "col": 0
+          }
+        ]
+      }
+    ]
+  }

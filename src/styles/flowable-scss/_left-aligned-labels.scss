@@ -1,0 +1,54 @@
+/* each component may have more speciffic rules in its file, but these apply to a lot so it was cheaper to unify */
+
+%left-aligned-input {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+
+  .flw__label {
+    width: auto;
+    flex: 0 0 200px;
+    padding-right: 10px;
+    max-width: 40%;
+  }
+  .flw__component__input {
+    display: flex;
+    width: 0;
+    flex-grow: 1;
+    flex-flow: row wrap;
+  }
+  .flw__description,
+  .flw__error-list {
+    display: block;
+    width: 100%;
+    text-align: right;
+  }
+}
+
+$inputs: flw__text, flw__textarea, flw__select, flw__number, flw__date, flw__upload, flw__richText, flw__radio-group,
+  flw__string-list;
+@each $input in $inputs {
+  .#{$input}--left-aligned,
+  .left-aligned-labels .#{$input} {
+    @extend %left-aligned-input;
+  }
+}
+
+.left-aligned-labels {
+  .flw__select .flw__component__input,
+  .flw__select .flw__select__control {
+    display: flex;
+    width: auto;
+    flex-grow: 1;
+    flex-flow: row wrap;
+  }
+
+  .flw__date > div,
+  .flw__date .react-datepicker-wrapper,
+  .flw__date .react-datepicker__input-container {
+    display: flex;
+    width: auto;
+    flex-grow: 1;
+    flex-flow: row wrap;
+  }
+}

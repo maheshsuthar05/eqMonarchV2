@@ -1,0 +1,32 @@
+{
+    "rows": [
+      {
+        "cols": [
+          {
+            "type": "htmlComponent",
+            "i18n": {
+              "en_us": {
+                "value": "<table class=\"flex justify-center\">\n\t\t\t<tbody>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary\"> Company Name </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{tenantId[0]}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary\"> Address </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{postalAddress[0]}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary\">City </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> NA </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary\"> State </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{postalAddress[0]}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary\"> Zip </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{postalCode[0]}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n              <tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary\"> Phone </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{telephoneNumber[0]}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n              <tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary\"> Fax </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> NA </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t</tbody>\n\t\t</table>"
+              },
+              "de_de": {},
+              "fr_fr": {},
+              "it_it": {},
+              "es_es": {}
+            },
+            "labelAlign": "top",
+            "value": "<table class=\"flex justify-center\">\n\t\t\t<tbody>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary\"> Company Name </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{tenantId[0]}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary\"> Address </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{postalAddress[0]}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary\">City </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> NA </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary\"> State </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{postalAddress[0]}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary\"> Zip </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{postalCode[0]}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n              <tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary\"> Phone </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> {{telephoneNumber[0]}} </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n              <tr>\n\t\t\t\t\t<td class=\"text-right\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary\"> Fax </p>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"px-16 text-left\">\n\t\t\t\t\t\t<p class=\"MuiTypography-root MuiTypography-body1\"> NA </p>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t</tbody>\n\t\t</table>",
+            "size": 12,
+            "ignore": false,
+            "visible": true,
+            "enabled": true,
+            "isRequired": false,
+            "id": "html-component1",
+            "extraSettings": {
+              "showBorder": false
+            },
+            "col": 0
+          }
+        ]
+      }
+    ]
+  }
